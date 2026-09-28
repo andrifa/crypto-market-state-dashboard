@@ -1,0 +1,46 @@
+{
+  "updated_utc": "2026-09-09T09:21:47Z",
+  "date": "2026-09-09",
+  "price_btc": 79480,
+  "regime": "Neutral",
+  "headline": "NEUTRAL",
+  "headline_tag": "market in transition — direction unclear",
+  "direction": "strengthening",
+  "sentiment_band": "Greed",
+  "sentiment_label": "Greed",
+  "conviction": 15,
+  "conviction_level": "LOW",
+  "cycle": "transition",
+  "cycle_label": "transition phase",
+  "action": {
+    "title": "HOLD at planned level",
+    "detail": "Market is in transition — it could break either way. Not the time for big moves up or down; wait for the direction to confirm."
+  },
+  "reasons": [
+    "BTC price is 14% above its 200-day average.",
+    "The 200-day trend is falling (-10% over the last 90 days).",
+    "Price is still 36% below its all-time high."
+  ],
+  "watch": "Price and momentum are improving while the long-term trend is still down — a classic 'bottom turning' pattern. If the 200-day trend flattens, it may move up to BULLISH.",
+  "changed_today": null,
+  "scores": {
+    "trend": -0.005,
+    "momentum": 0.098,
+    "sentiment": 0.347
+  },
+  "context": {
+    "mayer_multiple": 1.137,
+    "ma200_slope_90d": -0.1036,
+    "ma_200w_multiple": 1.22,
+    "drawdown_from_ath": -0.363,
+    "rsi_weekly": 57.6,
+    "active_addr_ratio": 0.925,
+    "puell_multiple": 0.861,
+    "fear_greed": 66.0,
+    "funding_z": 1.11,
+    "vol_percentile": 0.72,
+    "btc_dominance": 59.0
+  },
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 9 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ NEUTRAL (market in transition — direction unclear)\n    Momentum strengthening · Sentiment: Greed\n    Phase: transition phase\n    Signal confidence: LOW\n\n  ➔ BUDGET ACTION: HOLD at planned level\n    Market is in transition — it could break either\n    way. Not the time for big moves up or down; wait\n    for the direction to confirm.\n\n  Why:\n  • BTC price is 14% above its 200-day average.\n  • The 200-day trend is falling (-10% over the last\n    90 days).\n  • Price is still 36% below its all-time high.\n\n  Changed today: —\n  Watch:\n    Price and momentum are improving while the\n    long-term trend is still down — a classic\n    'bottom turning' pattern. If the 200-day trend\n    flattens, it may move up to BULLISH.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
+}
