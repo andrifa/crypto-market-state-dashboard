@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T00:33:45.217783+00:00",
+  "generated": "2026-09-29T01:19:18.326115+00:00",
   "rows": 4396,
   "span": [
     "2014-09-17",
@@ -166,19 +166,19 @@
     },
     "funding": {
       "30": {
-        "rho": 0.021,
-        "p": 0.3087,
-        "n": 2427
+        "rho": null,
+        "p": null,
+        "n": 0
       },
       "90": {
-        "rho": 0.055,
-        "p": 0.0079,
-        "n": 2367
+        "rho": null,
+        "p": null,
+        "n": 0
       },
       "180": {
-        "rho": 0.125,
-        "p": 0.0,
-        "n": 2277
+        "rho": null,
+        "p": null,
+        "n": 0
       }
     },
     "ssr": {
@@ -232,7 +232,7 @@
         0.1425
       ],
       "90": [
-        0.0238,
+        0.0239,
         0.1372,
         0.1494,
         0.3411,
@@ -248,25 +248,25 @@
     },
     "sentiment": {
       "30": [
-        0.0479,
-        -0.0145,
-        0.0258,
-        0.0664,
-        0.0693
+        0.0356,
+        0.003,
+        0.0073,
+        0.0567,
+        0.0923
       ],
       "90": [
-        0.0452,
-        0.0431,
-        0.2046,
-        0.1947,
-        0.2019
+        0.0514,
+        0.0253,
+        0.1851,
+        0.2095,
+        0.2181
       ],
       "180": [
-        0.1262,
-        0.3024,
-        0.5386,
-        0.3685,
-        0.2966
+        0.132,
+        0.3376,
+        0.4687,
+        0.4599,
+        0.2344
       ]
     }
   },
@@ -352,21 +352,21 @@
   },
   "conviction": {
     "low <40": {
-      "n": 241,
-      "mean": -0.0645,
-      "se": 0.2859,
-      "win": 0.56
+      "n": 216,
+      "mean": -0.0916,
+      "se": 0.3098,
+      "win": 0.523
     },
     "mid 40-60": {
-      "n": 320,
-      "mean": -0.0545,
-      "se": 0.2179,
-      "win": 0.5
+      "n": 337,
+      "mean": -0.0537,
+      "se": 0.2006,
+      "win": 0.525
     },
     "high >=60": {
-      "n": 2987,
-      "mean": 0.2146,
-      "se": 0.1044,
+      "n": 2995,
+      "mean": 0.2157,
+      "se": 0.1043,
       "win": 0.645
     }
   },
@@ -434,8 +434,8 @@
     "flat_mean_fwd180": 0.5357,
     "regime_weighted_mean_fwd180": 0.6146,
     "uplift_pct_points": 7.89,
-    "equity_strategy_x": 206.31,
-    "equity_buyhold_x": 182.66,
+    "equity_strategy_x": 204.72,
+    "equity_buyhold_x": 181.17,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834
   },
@@ -526,8 +526,8 @@
     "turns_detected": "6/6",
     "turn_median_lag_days": 88,
     "decision_uplift_pp": 7.89,
-    "strategy_x": 206.31,
-    "buyhold_x": 182.66,
+    "strategy_x": 204.72,
+    "buyhold_x": 181.17,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834,
     "headline": "Over 4396 days (2014-09-17\u20132026-09-29, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 88 days after the price extreme. For shorter calls, 90-day directional accuracy is 62% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 58% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +7.9 points and cut the worst drawdown from 83% to 65%. Small sample (~2.9 cycles) \u2014 direction, not precision."
