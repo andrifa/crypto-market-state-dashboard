@@ -32,6 +32,7 @@ import os
 import re
 import sys
 import time
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -513,6 +514,46 @@ def public_company_btc_treasury_live() -> float | None:
         # otherwise, mangling the ₿ symbol just before the number
         m = re.search(r'href="/"[^>]*>.{0,600}?font-btc[^>]*>[^<]{0,6}</span>\s*([\d,]+)', r.text)
         return float(m.group(1).replace(",", "")) if m else None
+    except Exception:
+        return None
+
+
+_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December"]
+
+
+def next_fomc_meeting_live() -> str | None:
+    """
+    Next FOMC meeting date (YYYY-MM-DD), scraped from the Fed's own calendar
+    page -- plain server-rendered HTML, not behind any block. Meeting dates
+    read as "Month DD-DD[*]"; a negative lookbehind skips "Released Month DD,
+    YYYY" mentions of minutes/statements, which use the same month-day shape.
+    """
+    try:
+        today = datetime.now(timezone.utc).date()
+        r = requests.get("https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+                          headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", r.text))
+
+        def meetings_for_year(year):
+            i = text.find(f"{year} FOMC Meetings")
+            if i == -1:
+                return []
+            j = text.find(f"{year - 1} FOMC Meetings", i + 10)
+            block = text[i:j if j != -1 else i + 3000]
+            out = []
+            for dm in re.finditer(r"(?<!Released )(" + "|".join(_MONTHS) + r")\s+(\d{1,2})(?:-(\d{1,2}))?\*?", block):
+                month = _MONTHS.index(dm.group(1)) + 1
+                try:
+                    out.append(date(year, month, int(dm.group(2))))
+                except ValueError:
+                    pass
+            return out
+
+        candidates = sorted(set(meetings_for_year(today.year) + meetings_for_year(today.year + 1)))
+        upcoming = [d for d in candidates if d >= today]
+        return upcoming[0].isoformat() if upcoming else None
     except Exception:
         return None
 

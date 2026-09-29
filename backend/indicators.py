@@ -113,6 +113,15 @@ def vol_percentile(close: pd.Series, n: int = 30, window: int = 730) -> pd.Serie
     return trailing_pct_rank(realized_vol(close, n), window)
 
 
+def bollinger_width(close: pd.Series, n: int = 20, k: float = 2.0) -> pd.Series:
+    """(upper - lower) / middle, upper/lower = SMA +/- k std-dev. Needs no source
+    beyond price history we already fetch -- was marked "not tracked" before by
+    mistake, not because it needs a paid feed."""
+    mid = close.rolling(n, min_periods=n).mean()
+    sd = close.rolling(n, min_periods=n).std()
+    return (2 * k * sd) / mid
+
+
 # --------------------------------------------------------------------------- #
 # C — sentiment / positioning
 # --------------------------------------------------------------------------- #
@@ -154,6 +163,7 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
     out["roc90"] = roc(c, 90)
     out["pct_above_200"] = pct_days_above_ma(c, 200, 90)
     out["vol_pctl"] = vol_percentile(c, 30, 730)
+    out["bb_width"] = bollinger_width(c, 20, 2.0)
     out["activity"] = activity_ratio(df["adr_act"]) if "adr_act" in df else np.nan
 
     # C — sentiment / positioning

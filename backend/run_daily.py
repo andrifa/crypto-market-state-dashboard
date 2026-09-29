@@ -24,7 +24,7 @@ import pandas as pd
 from fetch import (
     build_frame, btc_dominance_live, open_interest_live, long_short_ratio_live,
     dvol_live, us_10y_yield_live, vix_live, fed_funds_rate_live,
-    etf_btc_flow_live, public_company_btc_treasury_live,
+    etf_btc_flow_live, public_company_btc_treasury_live, next_fomc_meeting_live,
 )
 from state import build_state
 from reading import friendly_row
@@ -76,6 +76,7 @@ def build_payload() -> dict:
     fed_funds = fed_funds_rate_live()
     etf = etf_btc_flow_live()
     corp_treasury = public_company_btc_treasury_live()
+    next_fomc = next_fomc_meeting_live()
 
     payload = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -111,6 +112,7 @@ def build_payload() -> dict:
             "fear_greed": _f(row["fng"]),
             "funding_z": _f(row["funding_z"]),
             "vol_percentile": _f(row["vol_pctl"]),
+            "bollinger_width": _f(row["bb_width"]),
             "btc_dominance": _carry("btc_dominance", None if dom is None else round(dom, 1)),
             "ma_cross": _f(row["ma_cross"]),
             "roc_90d": _f(row["roc90"]),
@@ -126,6 +128,7 @@ def build_payload() -> dict:
             "etf_daily_net_flow_usd": _carry("etf_daily_net_flow_usd", None if etf is None else etf["daily_net_flow_usd"]),
             "etf_cum_net_flow_usd": _carry("etf_cum_net_flow_usd", None if etf is None else etf["cum_net_flow_usd"]),
             "public_company_btc_treasury": _carry("public_company_btc_treasury", corp_treasury),
+            "next_fomc_meeting": _carry("next_fomc_meeting", next_fomc),
         },
         "text": fr["text"],
         "disclaimer": DISCLAIMER,

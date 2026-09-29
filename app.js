@@ -57,10 +57,12 @@ const CATALOG = [
       { label: "Realized Vol Percentile (30d)", key: "vol_percentile", fmt: (v) => fmtPct(v, 0), note: (v) => (v >= 0.7 ? "elevated" : "calm"),
         why: "Where 30-day realised volatility sits within its trailing two-year range." },
       { label: "Implied Volatility (DVOL)", key: "dvol", fmt: (v) => fmtNum(v, 1), why: "Deribit's 30-day implied-volatility index." },
-      { label: "Bollinger Band Width", key: null, why: "Derivable free from price history alone — just not wired in yet." },
+      { label: "Bollinger Band Width", key: "bollinger_width", fmt: (v) => fmtPct(v, 1), note: (v) => (v < 0.12 ? "squeeze forming" : v > 0.30 ? "wide / volatile" : "normal"),
+        why: "(Upper − lower) / middle band, 20-day SMA ± 2 std-dev. Narrow readings often precede a sharp move either way." },
     ]},
     { name: "Catalysts & Events", items: [
-      { label: "Macro Calendar", key: null, why: "No calendar feed wired in — FOMC/CPI dates tracked manually for now." },
+      { label: "Macro Calendar", key: "next_fomc_meeting", fmt: (v) => new Date(v + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }), note: () => "next FOMC",
+        why: "Scraped from the Fed's own published meeting calendar (federalreserve.gov)." },
       { label: "Raw News Headlines", key: null, why: "Needs a news/sentiment API." },
       { label: "VIX", key: "vix", fmt: (v) => fmtNum(v, 1), why: "CBOE equity volatility index — a read on broader risk appetite." },
     ]},
@@ -298,7 +300,8 @@ function renderSignals(d) {
     group.cats.forEach((cat) => {
       const card = el("div", { class: "catcard" }, el("h4", { text: cat.name }));
       cat.items.forEach((item) => {
-        const has = item.key != null && c[item.key] != null && !isNaN(c[item.key]);
+        const raw = item.key != null ? c[item.key] : null;
+        const has = raw != null && raw !== "" && (typeof raw === "string" || !isNaN(raw));
         const disp = has ? item.fmt(c[item.key]) : "not tracked";
         const note = has && item.note ? item.note(c[item.key], d) : (has ? "" : "");
         card.append(el("div", { class: "ind" },
