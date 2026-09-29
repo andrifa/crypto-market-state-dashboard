@@ -4,7 +4,7 @@
   "price_btc": 82774,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "market in an uptrend",
+  "headline_tag": "Uptrend intact, but the long-term trend is still rolling over",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -14,14 +14,15 @@
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "Uptrend is solid. Increase acquisition, prioritise non-stablecoin / active-trader channels (they benefit most in this phase)."
+    "detail": "The model reads a healthy uptrend, so the suggested posture is to lean into acquisition spend, favouring active-trader channels over stablecoin-led ones. Confidence is only medium: the longer-term trend has not turned up yet, and spot ETF flows were slightly negative today. Treat this as a budget-posture guide based on trailing data, not a forecast or trading advice."
   },
   "reasons": [
-    "BTC price is 16% above its 200-day average.",
-    "The 200-day trend is falling (-5% over the last 90 days).",
-    "Price is still 34% below its all-time high."
+    "Price sits 16% above its 200-day average (Mayer multiple 1.16) with 90-day return near +38%.",
+    "Weekly RSI is 61 and fear & greed is 73: momentum and sentiment are firm, not extreme.",
+    "The 200-day average itself is still falling (-5% over 90 days), so the trend score is only 0.22.",
+    "Price remains 34% below its all-time high; spot ETF flow was -$24M today against $57.5B cumulative inflows."
   ],
-  "watch": null,
+  "watch": "The main tension is that price has climbed above a 200-day average that is still sloping down (-5% over 90 days), so momentum (0.44) and sentiment (0.37) are running ahead of trend (0.22). Daily ETF flow turned slightly negative (-$24M), though cumulative flows remain large and public companies still hold about 1.28M BTC. Higher rates (10-year yield 5.24%) are a background headwind, while VIX at 16 and BTC volatility (DVOL 36) are calm. The read would firm up if the 200-day average flattens and turns up; it would weaken if price falls back below that average or ETF outflows persist. All inputs are trailing, not predictive.",
   "changed_today": null,
   "scores": {
     "trend": 0.216,
@@ -55,6 +56,6 @@
     "etf_cum_net_flow_usd": 57544365719.967995,
     "public_company_btc_treasury": 1275672.0
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 16% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 34% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, but the long-term trend is still rolling over)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model reads a healthy uptrend, so the\n    suggested posture is to lean into acquisition\n    spend, favouring active-trader channels over\n    stablecoin-led ones. Confidence is only medium:\n    the longer-term trend has not turned up yet, and\n    spot ETF flows were slightly negative today. Treat\n    this as a budget-posture guide based on trailing\n    data, not a forecast or trading advice.\n\n  Why:\n  • Price sits 16% above its 200-day average (Mayer\n    multiple 1.16) with 90-day return near +38%.\n  • Weekly RSI is 61 and fear & greed is 73: momentum\n    and sentiment are firm, not extreme.\n  • The 200-day average itself is still falling (-5%\n    over 90 days), so the trend score is only 0.22.\n  • Price remains 34% below its all-time high; spot\n    ETF flow was -$24M today against $57.5B cumulative\n    inflows.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
 }
