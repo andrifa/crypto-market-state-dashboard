@@ -19,7 +19,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-04-21,235.2689971923828,Bear,strengthening,—,,mid / late-bear,-0.668,-0.482,,TURUNKAN / jaga ketat dengan stop-loss
 2015-04-22,234.17599487304688,Bear,strengthening,—,,mid / late-bear,-0.672,-0.517,,TURUNKAN / jaga ketat dengan stop-loss
 2015-04-23,236.4620056152344,Bear,stable,—,,mid / late-bear,-0.66,-0.504,,TURUNKAN / jaga ketat dengan stop-loss
-2015-04-24,231.26800537109372,Bear,weakening,—,,mid / late-bear,-0.684,-0.59,,TURUNKAN / jaga ketat dengan stop-loss
+2015-04-24,231.2680053710937,Bear,weakening,—,,mid / late-bear,-0.684,-0.59,,TURUNKAN / jaga ketat dengan stop-loss
 2015-04-25,226.38999938964844,Bear,weakening,—,,mid / late-bear,-0.705,-0.63,,TURUNKAN / jaga ketat dengan stop-loss
 2015-04-26,219.42999267578125,Bear,weakening,—,,mid / late-bear,-0.734,-0.707,,TURUNKAN / jaga ketat dengan stop-loss
 2015-04-27,229.28599548339844,Bear,stable,—,,mid / late-bear,-0.688,-0.626,,TURUNKAN / jaga ketat dengan stop-loss
@@ -29,7 +29,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-05-01,232.07899475097656,Bear,strengthening,—,,mid / late-bear,-0.667,-0.426,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-02,234.92999267578125,Bear,strengthening,—,,mid / late-bear,-0.649,-0.459,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-03,240.3580017089844,Bear,stable,—,,mid / late-bear,-0.616,-0.486,,TURUNKAN / jaga ketat dengan stop-loss
-2015-05-04,239.01800537109372,Bear,stable,—,,mid / late-bear,-0.621,-0.39,,TURUNKAN / jaga ketat dengan stop-loss
+2015-05-04,239.0180053710937,Bear,stable,—,,mid / late-bear,-0.621,-0.39,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-05,236.1210021972656,Bear,stable,—,,mid / late-bear,-0.634,-0.401,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-06,229.7819976806641,Bear,stable,—,,mid / late-bear,-0.665,-0.383,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-07,237.33399963378903,Bear,stable,—,,mid / late-bear,-0.62,-0.373,,TURUNKAN / jaga ketat dengan stop-loss
@@ -45,7 +45,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-05-17,236.802001953125,Bear,strengthening,—,,mid / late-bear,-0.591,-0.413,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-18,233.1280059814453,Bear,stable,—,,mid / late-bear,-0.61,-0.506,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-19,231.9470062255859,Bear,stable,—,,mid / late-bear,-0.614,-0.481,,TURUNKAN / jaga ketat dengan stop-loss
-2015-05-20,234.01800537109372,Bear,stable,—,,mid / late-bear,-0.599,-0.489,,TURUNKAN / jaga ketat dengan stop-loss
+2015-05-20,234.0180053710937,Bear,stable,—,,mid / late-bear,-0.599,-0.489,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-21,235.343994140625,Bear,stable,—,,mid / late-bear,-0.589,-0.498,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-22,240.34800720214844,Bear,stable,—,,mid / late-bear,-0.555,-0.479,,TURUNKAN / jaga ketat dengan stop-loss
 2015-05-23,238.8719940185547,Bear,stable,—,,mid / late-bear,-0.562,-0.449,,TURUNKAN / jaga ketat dengan stop-loss
@@ -61,7 +61,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-06-02,225.8029937744141,Bear,weakening,—,,mid / late-bear,-0.6,-0.662,,TURUNKAN / jaga ketat dengan stop-loss
 2015-06-03,225.87399291992188,Bear,weakening,—,,mid / late-bear,-0.595,-0.669,,TURUNKAN / jaga ketat dengan stop-loss
 2015-06-04,224.32400512695312,Bear,weakening,—,,mid / late-bear,-0.598,-0.665,,TURUNKAN / jaga ketat dengan stop-loss
-2015-06-05,224.95199584960932,Bear,weakening,—,,mid / late-bear,-0.589,-0.672,,TURUNKAN / jaga ketat dengan stop-loss
+2015-06-05,224.9519958496093,Bear,weakening,—,,mid / late-bear,-0.589,-0.672,,TURUNKAN / jaga ketat dengan stop-loss
 2015-06-06,225.61900329589844,Bear,weakening,—,,mid / late-bear,-0.579,-0.666,,TURUNKAN / jaga ketat dengan stop-loss
 2015-06-07,222.8809967041016,Bear,weakening,—,,mid / late-bear,-0.59,-0.704,,TURUNKAN / jaga ketat dengan stop-loss
 2015-06-08,228.4889984130859,Bear,weakening,—,,mid / late-bear,-0.549,-0.659,,TURUNKAN / jaga ketat dengan stop-loss
@@ -143,12 +143,12 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-08-23,228.16900634765625,Neutral,weakening,—,39.0,transition,-0.182,-0.068,,TAHAN di level rencana
 2015-08-24,210.4949951171875,Neutral,weakening,—,47.0,transition,-0.267,-0.346,,TAHAN di level rencana
 2015-08-25,221.60899353027344,Bear,weakening,—,42.0,mid / late-bear,-0.218,-0.301,,TURUNKAN / jaga ketat dengan stop-loss
-2015-08-26,225.83099365234372,Bear,weakening,—,40.0,mid / late-bear,-0.197,-0.283,,TURUNKAN / jaga ketat dengan stop-loss
+2015-08-26,225.8309936523437,Bear,weakening,—,40.0,mid / late-bear,-0.197,-0.283,,TURUNKAN / jaga ketat dengan stop-loss
 2015-08-27,224.7689971923828,Bear,weakening,—,40.0,mid / late-bear,-0.203,-0.287,,TURUNKAN / jaga ketat dengan stop-loss
 2015-08-28,231.39599609375,Bear,weakening,—,37.0,mid / late-bear,-0.17,-0.241,,TURUNKAN / jaga ketat dengan stop-loss
 2015-08-29,229.77999877929688,Bear,weakening,—,38.0,mid / late-bear,-0.178,-0.234,,TURUNKAN / jaga ketat dengan stop-loss
 2015-08-30,228.7610015869141,Bear,weakening,—,38.0,mid / late-bear,-0.184,-0.205,,TURUNKAN / jaga ketat dengan stop-loss
-2015-08-31,230.05599975585932,Bear,weakening,—,38.0,mid / late-bear,-0.182,-0.102,,TURUNKAN / jaga ketat dengan stop-loss
+2015-08-31,230.0559997558593,Bear,weakening,—,38.0,mid / late-bear,-0.182,-0.102,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-01,228.1210021972656,Bear,weakening,—,39.0,mid / late-bear,-0.196,-0.112,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-02,229.28399658203125,Bear,weakening,—,39.0,mid / late-bear,-0.192,-0.099,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-03,227.18299865722656,Bear,weakening,—,41.0,mid / late-bear,-0.205,-0.112,,TURUNKAN / jaga ketat dengan stop-loss
@@ -165,7 +165,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-09-14,230.6439971923828,Bear,strengthening,—,42.0,mid / late-bear,-0.209,-0.193,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-15,230.3040008544922,Bear,strengthening,—,43.0,mid / late-bear,-0.217,-0.188,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-16,229.09100341796875,Bear,strengthening,—,44.0,mid / late-bear,-0.228,-0.192,,TURUNKAN / jaga ketat dengan stop-loss
-2015-09-17,229.80999755859372,Bear,stable,—,50.0,mid / late-bear,-0.229,-0.172,,TURUNKAN / jaga ketat dengan stop-loss
+2015-09-17,229.8099975585937,Bear,stable,—,50.0,mid / late-bear,-0.229,-0.172,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-18,232.9750061035156,Bear,stable,—,49.0,mid / late-bear,-0.215,-0.162,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-19,231.4929962158203,Bear,stable,—,50.0,mid / late-bear,-0.225,-0.163,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-20,231.2120056152344,Bear,stable,—,50.0,mid / late-bear,-0.228,-0.176,,TURUNKAN / jaga ketat dengan stop-loss
@@ -178,7 +178,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-09-27,232.7570037841797,Bear,weakening,—,50.0,mid / late-bear,-0.227,-0.227,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-28,239.1419982910156,Bear,weakening,—,47.0,mid / late-bear,-0.192,-0.159,,TURUNKAN / jaga ketat dengan stop-loss
 2015-09-29,236.68699645996097,Bear,weakening,—,48.0,mid / late-bear,-0.204,-0.158,,TURUNKAN / jaga ketat dengan stop-loss
-2015-09-30,236.05999755859372,Bear,weakening,—,48.0,mid / late-bear,-0.207,-0.155,,TURUNKAN / jaga ketat dengan stop-loss
+2015-09-30,236.0599975585937,Bear,weakening,—,48.0,mid / late-bear,-0.207,-0.155,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-01,237.5489959716797,Bear,weakening,—,47.0,mid / late-bear,-0.198,-0.158,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-02,237.29299926757807,Bear,weakening,—,47.0,mid / late-bear,-0.199,-0.181,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-03,238.72999572753903,Bear,weakening,—,47.0,mid / late-bear,-0.192,-0.216,,TURUNKAN / jaga ketat dengan stop-loss
@@ -187,7 +187,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2015-10-06,246.06300354003903,Bear,stable,—,43.0,mid / late-bear,-0.151,-0.191,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-07,242.968994140625,Bear,stable,—,44.0,mid / late-bear,-0.161,-0.202,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-08,242.3040008544922,Bear,weakening,—,43.0,mid / late-bear,-0.159,-0.256,,TURUNKAN / jaga ketat dengan stop-loss
-2015-10-09,243.93099975585932,Bear,weakening,—,42.0,mid / late-bear,-0.147,-0.277,,TURUNKAN / jaga ketat dengan stop-loss
+2015-10-09,243.9309997558593,Bear,weakening,—,42.0,mid / late-bear,-0.147,-0.277,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-10,244.9409942626953,Bear,weakening,—,41.0,mid / late-bear,-0.139,-0.316,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-11,247.0500030517578,Bear,stable,—,40.0,mid / late-bear,-0.124,-0.271,,TURUNKAN / jaga ketat dengan stop-loss
 2015-10-12,245.30799865722656,Bear,stable,—,40.0,mid / late-bear,-0.128,-0.24,,TURUNKAN / jaga ketat dengan stop-loss
@@ -4176,18 +4176,18 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-09-07,79112.01,Neutral,strengthening,Greed,16.0,transition,-0.025,0.096,0.208,HOLD at planned level
 2026-09-08,78455.8,Neutral,strengthening,Greed,16.0,transition,-0.024,0.105,0.297,HOLD at planned level
 2026-09-09,79479.99,Neutral,strengthening,Greed,15.0,transition,-0.005,0.098,0.347,HOLD at planned level
-2026-09-15,75612.5078125,Neutral,strengthening,Greed,21.0,transition,-0.003,0.125,-0.112,HOLD at planned level
-2026-09-16,76150.3203125,Neutral,stable,Neutral,22.0,transition,0.012,0.111,-0.274,HOLD at planned level
-2026-09-17,76403.7734375,Neutral,strengthening,Neutral,31.0,transition,0.022,0.174,0.028,HOLD at planned level
-2026-09-18,80901.4609375,Neutral,strengthening,Greed,40.0,transition,0.082,0.257,0.277,HOLD at planned level
-2026-09-19,81249.99,Neutral,strengthening,Greed,45.0,transition,0.097,0.103,0.478,HOLD at planned level
-2026-09-20,81178.0,Neutral,stable,Greed,49.0,transition,0.107,0.068,0.432,HOLD at planned level
-2026-09-21,86620.0,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.473,HOLD at planned level
-2026-09-22,86208.56,Neutral,strengthening,Extreme Greed,57.0,transition,0.177,0.397,0.501,HOLD at planned level
-2026-09-23,84397.6,Neutral,strengthening,Greed,56.0,transition,0.172,0.34,0.087,HOLD at planned level
-2026-09-24,84410.24,Neutral,strengthening,Greed,58.0,transition,0.183,0.362,0.12,HOLD at planned level
-2026-09-25,84099.99,Bull,strengthening,Greed,58.0,early-bull,0.19,0.425,0.018,SCALE UP acquisition budget
-2026-09-26,84433.1,Bull,strengthening,Greed,61.0,early-bull,0.203,0.301,0.16,SCALE UP acquisition budget
-2026-09-27,84472.0,Bull,strengthening,Greed,63.0,early-bull,0.213,0.241,0.183,SCALE UP acquisition budget
-2026-09-28,83500.01,Bull,strengthening,Greed,63.0,early-bull,0.213,0.423,0.019,SCALE UP acquisition budget
-2026-09-29,82975.67,Bull,strengthening,Greed,64.0,early-bull,0.217,0.417,0.286,SCALE UP acquisition budget
+2026-09-15,75612.5078125,Neutral,strengthening,Greed,13.0,transition,-0.003,0.125,0.045,HOLD at planned level
+2026-09-16,76150.3203125,Neutral,stable,Neutral,22.0,transition,0.012,0.111,-0.188,HOLD at planned level
+2026-09-17,76403.7734375,Neutral,strengthening,Neutral,31.0,transition,0.022,0.174,0.079,HOLD at planned level
+2026-09-18,80901.4609375,Neutral,strengthening,Greed,40.0,transition,0.082,0.257,0.303,HOLD at planned level
+2026-09-19,81233.6796875,Neutral,strengthening,Greed,45.0,transition,0.097,0.103,0.471,HOLD at planned level
+2026-09-20,81142.609375,Neutral,stable,Greed,49.0,transition,0.107,0.068,0.4,HOLD at planned level
+2026-09-21,86602.9140625,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.354,HOLD at planned level
+2026-09-22,86172.28125,Neutral,strengthening,Extreme Greed,57.0,transition,0.176,0.397,0.507,HOLD at planned level
+2026-09-23,84383.0078125,Neutral,strengthening,Greed,56.0,transition,0.172,0.34,0.332,HOLD at planned level
+2026-09-24,84379.0625,Neutral,strengthening,Greed,57.0,transition,0.182,0.362,0.056,HOLD at planned level
+2026-09-25,84034.921875,Bull,strengthening,Greed,58.0,early-bull,0.19,0.425,0.051,SCALE UP acquisition budget
+2026-09-26,84406.453125,Bull,strengthening,Greed,61.0,early-bull,0.203,0.301,0.076,SCALE UP acquisition budget
+2026-09-27,84458.0859375,Bull,strengthening,Greed,63.0,early-bull,0.213,0.241,0.018,SCALE UP acquisition budget
+2026-09-28,84458.0859375,Bull,strengthening,Greed,65.0,early-bull,0.222,0.444,0.129,SCALE UP acquisition budget
+2026-09-29,82774.2890625,Bull,strengthening,Greed,63.0,early-bull,0.216,0.435,0.373,SCALE UP acquisition budget
