@@ -4176,18 +4176,18 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-09-07,79112.01,Neutral,strengthening,Greed,16.0,transition,-0.025,0.096,0.208,HOLD at planned level
 2026-09-08,78455.8,Neutral,strengthening,Greed,16.0,transition,-0.024,0.105,0.297,HOLD at planned level
 2026-09-09,79479.99,Neutral,strengthening,Greed,15.0,transition,-0.005,0.098,0.347,HOLD at planned level
-2026-09-15,75612.5078125,Neutral,strengthening,Greed,21.0,transition,-0.003,0.125,-0.112,HOLD at planned level
-2026-09-16,76150.3203125,Neutral,stable,Neutral,22.0,transition,0.012,0.111,-0.274,HOLD at planned level
-2026-09-17,76403.7734375,Neutral,strengthening,Neutral,31.0,transition,0.022,0.174,0.028,HOLD at planned level
-2026-09-18,80901.4609375,Neutral,strengthening,Greed,40.0,transition,0.082,0.257,0.277,HOLD at planned level
-2026-09-19,81249.99,Neutral,strengthening,Greed,45.0,transition,0.097,0.103,0.478,HOLD at planned level
-2026-09-20,81178.0,Neutral,stable,Greed,49.0,transition,0.107,0.068,0.432,HOLD at planned level
-2026-09-21,86620.0,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.473,HOLD at planned level
-2026-09-22,86208.56,Neutral,strengthening,Extreme Greed,57.0,transition,0.177,0.397,0.501,HOLD at planned level
-2026-09-23,84397.6,Neutral,strengthening,Greed,56.0,transition,0.172,0.34,0.087,HOLD at planned level
-2026-09-24,84410.24,Neutral,strengthening,Greed,58.0,transition,0.183,0.362,0.12,HOLD at planned level
-2026-09-25,84099.99,Bull,strengthening,Greed,58.0,early-bull,0.19,0.425,0.018,SCALE UP acquisition budget
-2026-09-26,84433.1,Bull,strengthening,Greed,61.0,early-bull,0.203,0.301,0.16,SCALE UP acquisition budget
-2026-09-27,84472.0,Bull,strengthening,Greed,63.0,early-bull,0.213,0.241,0.183,SCALE UP acquisition budget
-2026-09-28,83500.01,Bull,strengthening,Greed,63.0,early-bull,0.213,0.423,0.019,SCALE UP acquisition budget
-2026-09-29,84005.42,Bull,strengthening,Greed,65.0,early-bull,0.227,0.421,0.286,SCALE UP acquisition budget
+2026-09-15,75612.5078125,Neutral,strengthening,Greed,13.0,transition,-0.003,0.125,0.039,HOLD at planned level
+2026-09-16,76150.3203125,Neutral,stable,Neutral,22.0,transition,0.012,0.111,-0.192,HOLD at planned level
+2026-09-17,76403.7734375,Neutral,strengthening,Neutral,31.0,transition,0.022,0.174,0.072,HOLD at planned level
+2026-09-18,80901.4609375,Neutral,strengthening,Greed,40.0,transition,0.082,0.257,0.3,HOLD at planned level
+2026-09-19,81233.6796875,Neutral,strengthening,Greed,45.0,transition,0.097,0.103,0.468,HOLD at planned level
+2026-09-20,81142.609375,Neutral,stable,Greed,49.0,transition,0.107,0.068,0.395,HOLD at planned level
+2026-09-21,86602.9140625,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.349,HOLD at planned level
+2026-09-22,86172.28125,Neutral,strengthening,Extreme Greed,57.0,transition,0.176,0.397,0.503,HOLD at planned level
+2026-09-23,84383.0078125,Neutral,strengthening,Greed,56.0,transition,0.172,0.34,0.327,HOLD at planned level
+2026-09-24,84379.0625,Neutral,strengthening,Greed,57.0,transition,0.182,0.362,0.051,HOLD at planned level
+2026-09-25,84034.921875,Bull,strengthening,Greed,58.0,early-bull,0.19,0.425,0.049,SCALE UP acquisition budget
+2026-09-26,84406.453125,Bull,strengthening,Greed,61.0,early-bull,0.203,0.301,0.075,SCALE UP acquisition budget
+2026-09-27,84458.0859375,Bull,strengthening,Greed,63.0,early-bull,0.213,0.241,0.018,SCALE UP acquisition budget
+2026-09-28,83502.609375,Bull,strengthening,Greed,63.0,early-bull,0.213,0.423,0.121,SCALE UP acquisition budget
+2026-09-29,83910.859375,Bull,strengthening,Greed,65.0,early-bull,0.226,0.421,0.365,SCALE UP acquisition budget
