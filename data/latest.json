@@ -4,7 +4,7 @@
   "price_btc": 83911,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend intact, but the long-term trend is still repairing",
+  "headline_tag": "Uptrend intact, though the long-term trend is still repairing",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -24,9 +24,9 @@
   ],
   "watch": "The key tension is between fast recent gains and a slow-moving long-term trend: price is up about 40% in 90 days and above its 200-day average, yet that average is still declining and only 47% of recent days closed above it. If the 200-day slope turns flat or positive and breadth broadens, the uptrend read would be better supported; if price slips back under the 200-day average, the read would weaken. These are trailing measures, not forecasts.",
   "analysis": [
-    "Short-term mood is warm rather than euphoric. Fear & Greed sits at 73 (Greed) and funding is modestly positive (z-score +0.44), while longs outnumber shorts 1.42 to 1 and open interest is about $2.4B, so leverage does not look stretched. Options-implied volatility (DVOL 35.8) and the VIX (16.1) are both subdued, and realised volatility is mid-range at the 50th percentile.",
-    "Momentum is the strongest leg of the read: BTC is up roughly 40% over 90 days, weekly RSI is 59.8 (firm, not overbought), and the 50-day average sits about 8% above the 200-day. Participation is thinner than the headline gain implies, with only 47% of recent days closing above the 200-day average. ETFs took in about $31M on the latest day, and the next FOMC meeting on 2026-10-27 is the nearest scheduled macro event.",
-    "Over the long view, price is 18% above its 200-day average (Mayer Multiple 1.18) and 1.27x its 200-week average, yet the 200-day line is still sloping down (-5.3% over 90 days) and price is 33% below its all-time high. That reads as a recovery rather than a mature bull. Macro is mixed, with the 10-year yield at 5.24% against a 3.63% fed funds rate, while cumulative ETF inflows of about $57.6B and roughly 1.28M BTC held by public companies point to sustained institutional holding."
+    "Short-term mood is warm but not euphoric: Fear & Greed reads 73 (Greed), funding is only mildly positive (z-score +0.44), and longs outnumber shorts 1.42 to 1 on roughly $2.4B of open interest, so leverage does not look stretched. Implied volatility is quiet (DVOL 35.8, VIX 16.1) and realised volatility sits mid-range, which fits a market drifting rather than panicking, even as BTC slipped about 1% over the past day.",
+    "Momentum is the strongest leg of the read. BTC is up roughly 40% over 90 days, weekly RSI of 59.8 is firm but not overbought, and the 50-day average sits about 8% above the 200-day. Participation is narrower than the headline gain suggests, with only 47% of recent days closing above the 200-day average, and ETF inflows cooled to about $31M on the latest day. The next FOMC meeting on 2026-10-27 is the nearest scheduled macro event.",
+    "Over the long view, price is 18% above its 200-day average (Mayer Multiple 1.18) and 1.27x its 200-week average, yet the 200-day line is still sloping down (-5.3% over 90 days) and price is 33% below its all-time high. That looks more like a recovery than a mature bull. Macro is mixed: the 10-year yield at 5.24% is well above the 3.63% fed funds rate, while cumulative ETF inflows near $57.6B and about 1.28M BTC held by public companies point to sustained institutional holding."
   ],
   "changed_today": null,
   "scores": {
@@ -79,6 +79,28 @@
     "whale_supply_pct": null,
     "sth_cost_basis_usd": null,
     "lth_sth_supply_ratio": null,
-    "headlines": null
+    "headlines": [
+      {
+        "title": "Bitcoin and ethereum prices today, Monday, September 28, 2026: Bitcoin loses ground after Trump rejects Iran's 7-day plan",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-september-28-2026-bitcoin-loses-ground-after-trump-rejects-irans-7-day-plan-113444329.html",
+        "source": "Yahoo Finance",
+        "date": "2026-09-28"
+      },
+      {
+        "title": "Bitcoin Slips as Iran Snub Lifts Oil; LatAm Sticks to Stablecoins",
+        "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-tuesday-september-29-2026/",
+        "source": "Rio Times",
+        "date": "2026-09-29"
+      },
+      {
+        "title": "Bitcoin ETFs Draw $2.39 Billion Despite Weekly BTC Decline",
+        "url": "https://www.cryptotimes.io/2026/09/29/bitcoin-etfs-draw-2-39-billion-despite-weekly-btc-decline/",
+        "source": "The Crypto Times",
+        "date": "2026-09-29"
+      }
+    ]
+  },
+  "team_notes": {
+    "marketing": "Lean into non-stablecoin, active-trader channels, where a 90-day gain near 40% and Greed-level sentiment (73) tend to draw engagement, while keeping a lighter stablecoin-first presence as a hedge. Lead messaging with momentum and participation rather than euphoria: funding is only mildly positive (z +0.44) and just 47% of recent days closed above the 200-day average, so claims of a broad boom would overreach. Medium conviction (65) argues for staged campaign spend that can be adjusted if the trend read weakens."
   }
 }
