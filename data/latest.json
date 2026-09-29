@@ -4,7 +4,7 @@
   "price_btc": 84005,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "market in an uptrend",
+  "headline_tag": "uptrend intact, but long-term trend still repairing",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -14,18 +14,19 @@
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "Uptrend is solid. Increase acquisition, prioritise non-stablecoin / active-trader channels (they benefit most in this phase)."
+    "detail": "The uptrend is intact, so the current posture supports increasing acquisition budget, with emphasis on active-trader channels that tend to respond most in this phase. Confidence is medium rather than high because the longer-term trend is still recovering and price is well below its previous peak, so a staged increase fits better than a single large one. This is budget-posture guidance based on trailing data, not trading advice."
   },
   "reasons": [
-    "BTC price is 18% above its 200-day average.",
-    "The 200-day trend is falling (-5% over the last 90 days).",
-    "Price is still 33% below its all-time high."
+    "Price is 18% above its 200-day average, and 90-day gain is about 40%.",
+    "Weekly RSI near 60 shows firm momentum without overbought conditions.",
+    "The 200-day average is still falling (-5.3% over 90 days), limiting conviction.",
+    "Price remains 33% below its all-time high; Fear & Greed is 73."
   ],
-  "watch": null,
+  "watch": "The key tension is between fast recent gains and a slow-moving long-term trend: price is up about 40% in 90 days and above its 200-day average, yet that average is still declining and only 47% of recent days closed above it. If the 200-day slope turns flat or positive and breadth broadens, the uptrend read would be better supported; if price slips back under the 200-day average, the read would weaken. These are trailing measures, not forecasts.",
   "analysis": [
-    "Short-term, Fear & Greed sits at 73 (Greed), funding is at a +0.10 z-score, the stablecoin supply ratio is 5.39. Realised volatility sits at the 50th percentile of its two-year range, with Bollinger band width at 19%.",
-    "Medium-term, weekly RSI is 60, the 90-day rate of change is +40%, breadth is 47% of the last 90 days above the 200-day average. The 50/200-day average gap is +8.0%, on the golden-cross side.",
-    "Long-term, price is above its 200-day average (Mayer Multiple 1.18), that average is falling (-5.3% over 90 days), the 200-week multiple is 1.28, price is 33% below its all-time high. The Puell Multiple is 1.28 (context only — not scored)."
+    "Sentiment is warm but not stretched: Fear & Greed reads 73 (Greed), yet funding is only marginally positive (z-score +0.10) and long positions outnumber shorts by a modest 1.36 to 1. Open interest of about $7.7B, an options-implied volatility (DVOL) of 35.9 and a VIX of 16.1 all point to a calm, not euphoric, backdrop, with realised volatility sitting mid-range at the 50th percentile.",
+    "Momentum is the strongest part of the picture: BTC is up roughly 40% over 90 days, weekly RSI is a healthy 60 without being overbought, and the 50/200-day average gap of +8.0% sits on the bullish side. Participation is less convincing, though, with under half (47%) of recent days closing above the 200-day average. ETFs added about $31M on the day, and the next FOMC meeting on 2026-10-27 is the nearest scheduled macro event.",
+    "On the long view, price is 18% above its 200-day average (Mayer Multiple 1.18) and 1.28x its 200-week average, but the 200-day line itself is still sloping down (-5.3% over 90 days) and price remains 33% below its all-time high, so this reads as a recovery rather than a mature bull. Macro is a mixed backdrop, with the 10-year yield at 5.24% against a 3.63% fed funds rate, while cumulative ETF inflows of roughly $57.6B and about 1.28M BTC held by public companies show sustained institutional holding."
   ],
   "changed_today": null,
   "scores": {
@@ -62,6 +63,6 @@
     "public_company_btc_treasury": 1275672.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 18% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (uptrend intact, but long-term trend still repairing)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The uptrend is intact, so the current posture\n    supports increasing acquisition budget, with\n    emphasis on active-trader channels that tend to\n    respond most in this phase. Confidence is medium\n    rather than high because the longer-term trend\n    is still recovering and price is well below its\n    previous peak, so a staged increase fits better\n    than a single large one. This is budget-posture\n    guidance based on trailing data, not trading\n    advice.\n\n  Why:\n  • Price is 18% above its 200-day average, and 90-day\n    gain is about 40%.\n  • Weekly RSI near 60 shows firm momentum without\n    overbought conditions.\n  • The 200-day average is still falling (-5.3% over\n    90 days), limiting conviction.\n  • Price remains 33% below its all-time high; Fear &\n    Greed is 73.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
 }
