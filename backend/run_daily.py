@@ -60,9 +60,10 @@ def build_payload() -> dict:
     # would otherwise blank out a value that was already good. Carry the previous run's
     # value forward instead of overwriting it with null.
     try:
-        old_ctx = json.loads(LATEST.read_text())["context"]
+        old_payload = json.loads(LATEST.read_text())
     except Exception:
-        old_ctx = {}
+        old_payload = {}
+    old_ctx = old_payload.get("context", {})
 
     def _carry(key, new_val):
         return new_val if new_val is not None else old_ctx.get(key)
@@ -134,6 +135,21 @@ def build_payload() -> dict:
         "text": fr["text"],
         "disclaimer": DISCLAIMER,
     }
+
+    # The narrative fields below are template text on first write each day, then
+    # the daily reasoning routine (a separate, later automation) overwrites them
+    # with a richer hand-written version. If this script re-runs later the SAME
+    # day -- a retry, a manual re-trigger -- rebuilding them from the template
+    # would stomp the routine's version even though nothing meaningful changed.
+    # So once today's row already exists, keep whatever is already there.
+    if old_payload.get("date") == payload["date"]:
+        for key in ("reasons", "watch", "analysis", "headline_tag"):
+            if old_payload.get(key):
+                payload[key] = old_payload[key]
+        old_detail = old_payload.get("action", {}).get("detail")
+        if old_detail:
+            payload["action"]["detail"] = old_detail
+
     return payload, st
 
 
