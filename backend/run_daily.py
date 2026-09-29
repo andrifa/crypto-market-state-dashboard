@@ -95,6 +95,7 @@ def build_payload() -> dict:
         "action": {"title": fr["action_title"], "detail": fr["action_detail"]},
         "reasons": fr["reasons"],
         "watch": fr["watch"],
+        "analysis": fr["analysis"],
         "changed_today": fr["change"],
         "scores": {
             "trend": _f(row["trend_score"]),

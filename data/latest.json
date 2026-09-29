@@ -1,14 +1,14 @@
 {
-  "updated_utc": "2026-09-29T05:56:03Z",
+  "updated_utc": "2026-09-29T07:12:56Z",
   "date": "2026-09-29",
-  "price_btc": 83375,
+  "price_btc": 84005,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "market in an uptrend",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 64,
+  "conviction": 65,
   "conviction_level": "MEDIUM",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
@@ -17,38 +17,43 @@
     "detail": "Uptrend is solid. Increase acquisition, prioritise non-stablecoin / active-trader channels (they benefit most in this phase)."
   },
   "reasons": [
-    "BTC price is 17% above its 200-day average.",
+    "BTC price is 18% above its 200-day average.",
     "The 200-day trend is falling (-5% over the last 90 days).",
     "Price is still 33% below its all-time high."
   ],
   "watch": null,
+  "analysis": [
+    "Short-term, Fear & Greed sits at 73 (Greed), funding is at a +0.10 z-score, the stablecoin supply ratio is 5.39. Realised volatility sits at the 50th percentile of its two-year range, with Bollinger band width at 19%.",
+    "Medium-term, weekly RSI is 60, the 90-day rate of change is +40%, breadth is 47% of the last 90 days above the 200-day average. The 50/200-day average gap is +8.0%, on the golden-cross side.",
+    "Long-term, price is above its 200-day average (Mayer Multiple 1.18), that average is falling (-5.3% over 90 days), the 200-week multiple is 1.28, price is 33% below its all-time high. The Puell Multiple is 1.28 (context only — not scored)."
+  ],
   "changed_today": null,
   "scores": {
-    "trend": 0.221,
-    "momentum": 0.437,
-    "sentiment": 0.365
+    "trend": 0.227,
+    "momentum": 0.421,
+    "sentiment": 0.286
   },
   "context": {
-    "mayer_multiple": 1.171,
+    "mayer_multiple": 1.18,
     "ma200_slope_90d": -0.0532,
-    "ma_200w_multiple": 1.27,
-    "drawdown_from_ath": -0.332,
-    "rsi_weekly": 61.1,
+    "ma_200w_multiple": 1.28,
+    "drawdown_from_ath": -0.327,
+    "rsi_weekly": 59.8,
     "active_addr_ratio": 1.072,
     "puell_multiple": 1.276,
     "fear_greed": 73.0,
-    "funding_z": 0.44,
+    "funding_z": 0.1,
     "vol_percentile": 0.5,
-    "bollinger_width": 0.1892,
+    "bollinger_width": 0.1889,
     "btc_dominance": 58.4,
     "ma_cross": 0.0798,
-    "roc_90d": 0.3895,
+    "roc_90d": 0.4,
     "breadth_90d": 0.467,
     "ssr": 5.39,
     "pi_cycle_gap": -0.5557,
-    "open_interest_usd": 2371371133.9926767,
-    "long_short_ratio": 1.4780051430759973,
-    "dvol": 36.01,
+    "open_interest_usd": 7745170466.6415,
+    "long_short_ratio": 1.3607,
+    "dvol": 35.89,
     "us_10y_yield": 5.24,
     "vix": 16.07,
     "fed_funds_rate": 3.63,
@@ -57,6 +62,6 @@
     "public_company_btc_treasury": 1275672.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 17% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 18% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
 }

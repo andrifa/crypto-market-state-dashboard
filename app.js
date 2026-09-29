@@ -217,12 +217,16 @@ function renderOutlook(d, k) {
 function renderAnalysis(d) {
   const box = document.getElementById("analysis");
   box.textContent = "";
-  if (d.reasons && d.reasons.length) {
+  if (d.analysis && d.analysis.length) {
+    // richer multi-paragraph narrative (routine-written when available, a
+    // real-numbers template otherwise) -- prefer this over the short bullets
+    d.analysis.forEach((p) => box.append(el("p", { html: p })));
+  } else if (d.reasons && d.reasons.length) {
     const ul = el("ul");
     d.reasons.forEach((r) => ul.append(el("li", { text: r })));
     box.append(ul);
   }
-  if (d.watch) box.append(el("div", { class: "takeaway" }, el("b", { text: "Watch" }), d.watch));
+  if (d.watch) box.append(el("div", { class: "takeaway" }, el("b", { text: "Key takeaway" }), d.watch));
 
   const c = d.context || {}, price = d.price_btc;
   const levels = [];
