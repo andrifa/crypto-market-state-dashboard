@@ -42,7 +42,8 @@ const CATALOG = [
     { name: "Sentiment & Crowd Behavior", items: [
       { label: "Fear & Greed Index", key: "fear_greed", fmt: (v) => numStr(v, 0), note: (v, d) => d.sentiment_band,
         why: "Daily composite of volatility, volume, social media and dominance (Alternative.me)." },
-      { label: "Social Volume (X, Reddit)", key: null, why: "Needs a paid social-listening feed (LunarCrush, Santiment)." },
+      { label: "Social Volume (X, Reddit)", key: "social_volume", search: true,
+        why: "No free metered feed (LunarCrush, Santiment are paid) — the daily routine web-searches for a reported read instead of a precise index." },
     ]},
     { name: "Positioning & Leverage", items: [
       { label: "Funding Rate (z-score)", key: "funding_z", fmt: (v) => fmtNum(v, 2, true), note: (v) => (Math.abs(v) >= 1.5 ? "stretched" : "normal"),
@@ -50,8 +51,10 @@ const CATALOG = [
       { label: "Open Interest", key: "open_interest_usd", fmt: (v) => fmtUSDb(v), why: "Total value of open futures positions." },
       { label: "Long / Short Ratio", key: "long_short_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v > 1 ? "long-tilted" : "short-tilted"),
         why: "Ratio of accounts positioned long vs short on futures." },
-      { label: "Liquidation Volume (24h)", key: null, why: "Needs a paid derivatives feed (e.g. CoinGlass API)." },
-      { label: "Exchange Netflow (7d)", key: null, why: "Needs a paid on-chain provider (CryptoQuant, Glassnode)." },
+      { label: "Liquidation Volume (24h)", key: "liquidation_24h_usd", search: true, fmt: (v) => fmtUSDm(v),
+        why: "CoinGlass's own feed needs a paid key — the daily routine web-searches for the figure as reported in news/analytics recaps instead." },
+      { label: "Exchange Netflow (7d)", key: "exchange_netflow_7d_btc", search: true, fmt: (v) => fmtBTC(v),
+        why: "Needs a paid on-chain provider (CryptoQuant, Glassnode) — the daily routine web-searches for a reported figure instead." },
     ]},
     { name: "Volatility", items: [
       { label: "Realized Vol Percentile (30d)", key: "vol_percentile", fmt: (v) => fmtPct(v, 0), note: (v) => (v >= 0.7 ? "elevated" : "calm"),
@@ -63,7 +66,8 @@ const CATALOG = [
     { name: "Catalysts & Events", items: [
       { label: "Macro Calendar", key: "next_fomc_meeting", fmt: (v) => new Date(v + "T00:00:00Z").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }), note: () => "next FOMC",
         why: "Scraped from the Fed's own published meeting calendar (federalreserve.gov)." },
-      { label: "Raw News Headlines", key: null, why: "Needs a news/sentiment API." },
+      { label: "Raw News Headlines", key: "headlines", search: true, headlines: true,
+        why: "The daily routine web-searches for today's major BTC headlines and lists them with their source." },
       { label: "VIX", key: "vix", fmt: (v) => fmtNum(v, 1), why: "CBOE equity volatility index — a read on broader risk appetite." },
     ]},
   ]},
@@ -79,8 +83,10 @@ const CATALOG = [
     { name: "On-Chain Demand", items: [
       { label: "Active Address Ratio", key: "active_addr_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 1 ? "expanding" : "contracting"),
         why: "Daily active addresses vs. their own 365-day average." },
-      { label: "Onchain / Spot Volume", key: null, why: "Needs a paid on-chain volume feed." },
-      { label: "Whale / Large-Holder Supply", key: null, why: "Needs a paid on-chain provider (wallet-cluster data)." },
+      { label: "Onchain / Spot Volume", key: "onchain_volume_usd", search: true, fmt: (v) => fmtUSDb(v),
+        why: "Needs a paid on-chain volume feed — the daily routine web-searches for a reported figure instead." },
+      { label: "Whale / Large-Holder Supply", key: "whale_supply_pct", search: true, fmt: (v) => fmtPct(v / 100, 1),
+        why: "Needs a paid on-chain provider (wallet-cluster data) — the daily routine web-searches for a reported figure instead." },
     ]},
     { name: "Sentiment (Aggregate)", items: [
       { label: "Stablecoin Supply Ratio", key: "ssr", fmt: (v) => fmtNum(v, 2), why: "BTC market cap divided by total stablecoin supply." },
@@ -104,8 +110,10 @@ const CATALOG = [
         why: "Price vs. its 200-week (~4-year) average." },
       { label: "Puell Multiple", key: "puell_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v <= 0.6 ? "miner capitulation" : v >= 3 ? "miner euphoria" : "normal"),
         why: "Daily miner revenue vs. its 365-day average." },
-      { label: "Short-Term Holder Cost Basis", key: null, why: "Needs a paid on-chain provider (UTXO-age data)." },
-      { label: "LTH vs. STH Supply", key: null, why: "Needs a paid on-chain provider (UTXO-age data)." },
+      { label: "Short-Term Holder Cost Basis", key: "sth_cost_basis_usd", search: true, fmt: (v) => fmtUSD(v),
+        why: "Needs a paid on-chain provider (UTXO-age data) — the daily routine web-searches for a reported figure instead." },
+      { label: "LTH vs. STH Supply", key: "lth_sth_supply_ratio", search: true, fmt: (v) => fmtNum(v, 2),
+        why: "Needs a paid on-chain provider (UTXO-age data) — the daily routine web-searches for a reported figure instead." },
       { label: "Drawdown from ATH", key: "drawdown_from_ath", fmt: (v) => fmtPct(v, 0), why: "How far below the all-time high price currently sits." },
     ]},
     { name: "Macro & Institutional", items: [
@@ -294,24 +302,57 @@ function renderTeams(d) {
 /* -------------------------- supporting signals: full 35-indicator catalog ----------- */
 function renderSignals(d) {
   const c = d.context || {};
+  const sf = d.search_findings || {};
   const grid = document.getElementById("grid");
   grid.textContent = "";
   grid.append(el("p", { class: "cat-note",
-    text: "35 indicators considered for this model. 25 have a free, live feed and show today's value below; the rest are marked \"not tracked\" with the real reason — hover a row for why it's in the model." }));
+    text: "35 indicators considered for this model. 27 have a free, direct live feed; the other 8 are attempted by the daily reasoning routine via web search instead (shown with a source + date, less precise than a real feed) — marked \"not tracked\" on days it finds nothing credible. Hover a row for why it's in the model." }));
   CATALOG.forEach((group) => {
     grid.append(el("div", { class: "sig-section" }, el("h3", { text: group.section })));
     const cg = el("div", { class: "catgrid" });
     group.cats.forEach((cat) => {
       const card = el("div", { class: "catcard" }, el("h4", { text: cat.name }));
       cat.items.forEach((item) => {
-        const raw = item.key != null ? c[item.key] : null;
-        const has = raw != null && raw !== "" && (typeof raw === "string" || !isNaN(raw));
-        const disp = has ? item.fmt(c[item.key]) : "not tracked";
-        const note = has && item.note ? item.note(c[item.key], d) : (has ? "" : "");
+        if (item.headlines) {
+          const list = Array.isArray(sf[item.key]) ? sf[item.key] : [];
+          const has = list.length > 0;
+          const ind = el("div", { class: "ind" },
+            el("div", { class: "ind-row", title: item.why },
+              el("span", { class: "ind-name", text: item.label }),
+              el("span", { class: "ind-val" + (has ? " searched" : " dim") }, has ? `${list.length} found` : "not tracked")));
+          if (has) {
+            const ul = el("ul", { class: "ind-headlines" });
+            list.slice(0, 5).forEach((h) => {
+              ul.append(el("li", {},
+                el("a", { href: h.url, target: "_blank", rel: "noopener", text: h.title }),
+                " ", el("span", { class: "src", text: h.source ? `— ${h.source}` : "" })));
+            });
+            ind.append(ul);
+          }
+          card.append(ind);
+          return;
+        }
+        let raw, has, disp, note, why = item.why;
+        if (item.search) {
+          const rec = sf[item.key];
+          raw = rec ? rec.value : null;
+          has = raw != null && raw !== "";
+          disp = has ? (item.fmt ? item.fmt(raw) : String(raw)) : "not tracked";
+          note = has ? "web search" : "";
+          if (has && rec.source_name) {
+            why = `${item.why} Source: ${rec.source_name}${rec.as_of ? ` (${rec.as_of})` : ""}.${rec.note ? " " + rec.note : ""}`;
+          }
+        } else {
+          raw = item.key != null ? c[item.key] : null;
+          has = raw != null && raw !== "" && (typeof raw === "string" || !isNaN(raw));
+          disp = has ? item.fmt(raw) : "not tracked";
+          note = has && item.note ? item.note(raw, d) : "";
+        }
         card.append(el("div", { class: "ind" },
-          el("div", { class: "ind-row", title: item.why },
+          el("div", { class: "ind-row", title: why },
             el("span", { class: "ind-name", text: item.label }),
-            el("span", { class: "ind-val" + (has ? "" : " dim") }, disp, note ? el("span", { class: "ind-note", text: note }) : ""))));
+            el("span", { class: "ind-val" + (has ? (item.search ? " searched" : "") : " dim") }, disp,
+              note ? el("span", { class: "ind-note" + (item.search ? " searched" : "") , text: note }) : ""))));
       });
       cg.append(card);
     });
@@ -374,7 +415,8 @@ function renderMethodology() {
     + "counterweight. <b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth and active-address trend; <b>Sentiment</b> blends Fear &amp; Greed, "
     + "perp funding and the stablecoin ratio. Momentum and Sentiment never move the label — they set confidence and the watch notes.<br><br>"
     + "The \"Supporting signals\" catalog lists 35 indicators considered for this model. Only the ones above feed the score; most of the rest are live "
-    + "context, and a handful are marked \"not tracked\" because they need a paid on-chain or derivatives provider not wired in yet.<br><br>"
+    + "context. 8 of them have no free API (paid on-chain/derivatives providers only) — the daily reasoning routine web-searches for a reported figure "
+    + "for those instead, shown with its source and date; on a day it finds nothing credible, that row reads \"not tracked\".<br><br>"
     + "Every input is trailing — it describes what already happened, it does not forecast. Validated on ~3 market cycles: it flagged every major cycle "
     + "top and bottom, a median of about three months after the price extreme. Thresholds and weights all live in one place (state.py → CONFIG)." });
   p.append(whyToggle("Regime logic, confidence, and limits", body));

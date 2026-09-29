@@ -134,6 +134,11 @@ def build_payload() -> dict:
         },
         "text": fr["text"],
         "disclaimer": DISCLAIMER,
+        # web-searched only by the daily reasoning routine (social volume, liquidation
+        # volume, exchange netflow, on-chain/whale/STH-LTH supply reads, news headlines) --
+        # this script has no search tool, so it just carries whatever the routine last
+        # found forward rather than ever writing/clearing it itself.
+        "search_findings": old_payload.get("search_findings", {}),
     }
 
     # The narrative fields below are template text on first write each day, then
