@@ -23,6 +23,12 @@ const el = (tag, attrs = {}, ...kids) => {
   return e;
 };
 const fmtUSD = (n) => (n == null ? "—" : "$" + Math.round(n).toLocaleString("en-US"));
+const fmtUSDk = (n) => (n == null ? "—" : "$" + (n / 1000).toFixed(0) + "k");
+const fmtUSDm = (n, signed) => (n == null ? "—" : (n < 0 ? "-" : signed ? "+" : "") + "$" + Math.abs(n / 1e6).toFixed(1) + "M");
+const fmtUSDb = (n, signed) => (n == null ? "—" : (n < 0 ? "-" : signed ? "+" : "") + "$" + Math.abs(n / 1e9).toFixed(2) + "B");
+const fmtBTC = (n) => (n == null ? "—" : Math.round(n).toLocaleString("en-US") + " BTC");
+const fmtPct = (v, d = 0, signed) => (v == null || isNaN(v) ? "—" : (signed && v > 0 ? "+" : "") + (v * 100).toFixed(d) + "%");
+const fmtNum = (v, d = 2, signed) => (v == null || isNaN(v) ? "—" : (signed && v > 0 ? "+" : "") + (+v).toFixed(d));
 const numStr = (v, d) => (v == null || isNaN(v) ? "—" : (+v).toFixed(d));
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const fmtDate = (s) => { const [y, m, d] = s.split("-"); return `${+d} ${MONTHS[+m - 1]} ${y}`; };
@@ -35,40 +41,110 @@ const DIM_WHY = {
   Momentum: "How fast and how broadly the market is moving right now — weekly RSI, 90-day rate of change, the share of recent days that closed above the 200-day line, and the trend in active on-chain addresses. Momentum, and on-chain usage in particular, turns weeks before the slow trend average does, so it is what flags a bottom forming or a top rolling over early.",
   Sentiment: "How crowded and emotional the market is — the Fear & Greed Index, perp funding, and the stablecoin ratio combined. At extremes it marks exhaustion (euphoria near tops, panic near bottoms); in the middle it simply confirms the trend. It never moves the headline label, only the confidence and the watch notes.",
 };
-const METERS = [
-  { key: "mayer_multiple", label: "Mayer Multiple", dp: 2, min: 0.5, max: 2.4, band: [0.8, 1.5],
-    note: (v) => (v >= 1 ? "above trend" : "below trend"),
-    why: "Price divided by the 200-day moving average — one number for “how far above or below trend are we”. Historically, readings below ~1 have been accumulation zones and above ~2.4 have marked blow-off tops. Coinbase Institutional's published market-regime rule is built on exactly this ratio." },
-  { key: "ma200_slope_90d", label: "MA200 trend · 90d", pctd: 1, min: -0.25, max: 0.25, band: [0, 0.25],
-    note: (v) => (v >= 0 ? "rising" : "falling"),
-    why: "The change in the 200-day average over the last 90 days. Price can jump above the average for a week on a bounce; the average itself only turns after a genuine shift in the market. A rising slope is the confirmation that an uptrend is structural, not a relief rally." },
-  { key: "ma_200w_multiple", label: "200-week MA multiple", dp: 2, min: 0.7, max: 6, band: [0.9, 3.0],
-    note: (v) => (v >= 3 ? "stretched" : v <= 1.1 ? "near the floor" : "mid-cycle"),
-    why: "Price divided by its 200-week (~4-year) moving average — a line BTC has only briefly traded below, at generational lows. Near 1 the market is historically cheap; 4–5× and above has marked every cycle blow-off top. It acts as a valuation counterweight to the trend signals: a market far above its long-term floor is scored more cautiously." },
-  { key: "active_addr_ratio", label: "Active addresses vs 1y avg", dp: 2, min: 0.6, max: 1.6, band: [0.95, 1.4],
-    note: (v) => (v >= 1 ? "expanding" : "contracting"),
-    why: "Daily active Bitcoin addresses divided by their own 365-day average — a direct read on whether the network is being used more or less than a year ago. In the backtest this was the single most predictive input: rising on-chain usage led higher prices more reliably than any price-only momentum measure." },
-  { key: "puell_multiple", label: "Puell Multiple", dp: 2, min: 0.3, max: 4, band: [0.5, 2.5],
-    note: (v) => (v <= 0.6 ? "miner capitulation" : v >= 3 ? "miner euphoria" : "normal"),
-    why: "Daily miner revenue divided by its 365-day average. Very low readings mean miners are under maximum stress and have historically sat near cycle bottoms; very high readings cluster around tops. Shown as context — on this ~3-cycle sample it was too noisy to score, but it is a widely-watched cycle gauge." },
-  { key: "drawdown_from_ath", label: "Drawdown from ATH", pctd: 0, min: -0.85, max: 0, band: [-0.15, 0],
-    note: () => "",
-    why: "How far below the all-time high price currently sits. It separates an early wobble (−10%) from a full bear market (−60% or more) — situations that call for opposite budget postures even if both read as “down”." },
-  { key: "rsi_weekly", label: "Weekly RSI", dp: 0, min: 20, max: 85, band: [35, 65],
-    note: (v) => (v >= 70 ? "overbought" : v <= 35 ? "oversold" : "neutral"),
-    why: "Relative Strength Index on a weekly candle, so it filters out daily noise. Above 70 is overbought (near-term pullback risk); below 35 is washed out (historically close to cycle lows). Weekly rather than daily because budget decisions run on weeks, not hours." },
-  { key: "fear_greed", label: "Fear & Greed Index", dp: 0, min: 0, max: 100, band: [46, 54],
-    note: (_, d) => d.sentiment_band,
-    why: "A daily composite of volatility, volume/momentum, social media, BTC dominance and survey data, published by Alternative.me. It is the crowd-emotion gauge the whole industry references, so it gives marketing, product and leadership one shared vocabulary for “how does the market feel”." },
-  { key: "funding_z", label: "Funding z-score", dp: 2, min: -3, max: 3, band: [-1.5, 1.5],
-    note: (v) => (Math.abs(v) >= 1.5 ? "stretched" : "normal"),
-    why: "The cost to hold a leveraged long on perpetual futures, standardised against its own recent range. Persistently high means too many crowded longs paying to stay in — fuel for a sharp correction. It is sentiment revealed by real money at risk, not a survey answer." },
-  { key: "vol_percentile", label: "Volatility · percentile", pctd: 0, min: 0, max: 1, band: [0, 0.7],
-    note: (v) => (v >= 0.7 ? "elevated" : "calm"),
-    why: "Where 30-day realised volatility sits within its trailing two-year range. Volatility spikes cluster around capitulations and violent reversals, so a high reading lowers confidence in whatever the trend is currently saying." },
-  { key: "btc_dominance", label: "BTC dominance", dp: 1, suffix: "%", min: 35, max: 70, band: null,
-    note: () => "",
-    why: "Bitcoin's share of total crypto market capitalisation. Rising dominance during a downturn signals a flight to relative safety; falling dominance during an uptrend signals risk appetite spreading into altcoins. Shown as context — it is not a scored input to the regime." },
+
+/* ---- full 35-indicator catalog, grouped horizon -> category -> items.
+   `key` reads data.context[key]; `key: null` means we don't have a free,
+   reliable source for it yet (see the "why not tracked" line) -- shown
+   honestly rather than guessed or hidden. */
+const CATALOG = [
+  { horizon: "Short-term signals", sub: "~1 week", cats: [
+    { name: "Sentiment & Crowd Behavior", items: [
+      { label: "Fear & Greed Index", key: "fear_greed", fmt: (v) => numStr(v, 0), note: (v, d) => d.sentiment_band,
+        why: "Daily composite of volatility, volume, social media and dominance, published by Alternative.me — the crowd-emotion gauge most of the industry references." },
+      { label: "Social Volume (X, Reddit)", key: null,
+        why: "Needs a paid social-listening feed (LunarCrush, Santiment) — not tracked yet." },
+    ]},
+    { name: "Positioning & Leverage", items: [
+      { label: "Funding Rate (z-score)", key: "funding_z", fmt: (v) => fmtNum(v, 2, true), note: (v) => (Math.abs(v) >= 1.5 ? "stretched" : "normal"),
+        why: "The cost to hold a leveraged long on perpetual futures, standardised against its own recent range. Persistently high means crowded longs paying to stay in — fuel for a sharp correction." },
+      { label: "Open Interest", key: "open_interest_usd", fmt: (v) => fmtUSDb(v),
+        why: "Total value of open futures positions. A fast rise alongside a price rally usually means the move is leverage-driven, not spot-led — more prone to a sharp unwind." },
+      { label: "Long / Short Ratio", key: "long_short_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v > 1 ? "long-tilted" : "short-tilted"),
+        why: "Ratio of accounts positioned long vs short on futures. Very one-sided readings are a contrarian flag — crowded positioning has historically preceded the opposite move." },
+      { label: "Liquidation Volume (24h)", key: null,
+        why: "Needs a paid derivatives feed (e.g. CoinGlass API) — not tracked yet." },
+      { label: "Exchange Netflow (7d)", key: null,
+        why: "Needs a paid on-chain provider (CryptoQuant, Glassnode) — not tracked yet." },
+    ]},
+    { name: "Volatility", items: [
+      { label: "Realized Vol Percentile (30d)", key: "vol_percentile", fmt: (v) => fmtPct(v, 0), note: (v) => (v >= 0.7 ? "elevated" : "calm"),
+        why: "Where 30-day realised volatility sits within its trailing two-year range. Spikes cluster around capitulations and violent reversals." },
+      { label: "Implied Volatility (DVOL)", key: "dvol", fmt: (v) => fmtNum(v, 1),
+        why: "Deribit's 30-day implied-volatility index — the options market's own forecast of near-term price swings, not a trailing measure like realised vol." },
+      { label: "Bollinger Band Width", key: null,
+        why: "Derivable free from price history alone — just not wired into the pipeline yet." },
+    ]},
+    { name: "Catalysts & Events", items: [
+      { label: "Macro Calendar", key: null,
+        why: "No calendar feed wired in yet — FOMC/CPI dates are currently tracked manually." },
+      { label: "Raw News Headlines", key: null,
+        why: "Needs a news/sentiment API — not tracked yet." },
+      { label: "VIX", key: "vix", fmt: (v) => fmtNum(v, 1),
+        why: "CBOE equity volatility index — a read on broader risk appetite. Crypto often (not always) moves with, not against, equity-market fear." },
+    ]},
+  ]},
+  { horizon: "Medium-term signals", sub: "~1 month", cats: [
+    { name: "Momentum", items: [
+      { label: "Weekly RSI", key: "rsi_weekly", fmt: (v) => numStr(v, 0), note: (v) => (v >= 70 ? "overbought" : v <= 35 ? "oversold" : "neutral"),
+        why: "Relative Strength Index on a weekly candle, filtering out daily noise. Above 70 is overbought; below 35 is washed out." },
+      { label: "90-Day Rate of Change", key: "roc_90d", fmt: (v) => fmtPct(v, 0, true),
+        why: "Price now vs. 90 days ago. A simple, direct read on whether the medium-term trend is accelerating or stalling." },
+      { label: "Breadth (% days > MA200)", key: "breadth_90d", fmt: (v) => fmtPct(v, 0),
+        why: "Share of the last 90 days that closed above the 200-day average. Widening breadth means the uptrend is broadening, not just a few sharp days." },
+      { label: "50 / 200-Day MA Cross", key: "ma_cross", fmt: (v) => fmtPct(v, 1, true), note: (v) => (v > 0 ? "golden-cross side" : "death-cross side"),
+        why: "Gap between the 50-day and 200-day averages. Positive means the shorter average sits above the longer one (the golden-cross side) — a classic trend-following signal." },
+    ]},
+    { name: "On-Chain Demand", items: [
+      { label: "Active Address Ratio", key: "active_addr_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 1 ? "expanding" : "contracting"),
+        why: "Daily active addresses vs. their own 365-day average. In the backtest this was the single most predictive input — rising on-chain usage led price more reliably than any price-only measure." },
+      { label: "Onchain / Spot Volume", key: null,
+        why: "Needs a paid on-chain volume feed — not tracked yet." },
+      { label: "Whale / Large-Holder Supply", key: null,
+        why: "Needs a paid on-chain provider (wallet-cluster data) — not tracked yet." },
+    ]},
+    { name: "Sentiment (Aggregate)", items: [
+      { label: "Stablecoin Supply Ratio", key: "ssr", fmt: (v) => fmtNum(v, 2),
+        why: "BTC market cap divided by total stablecoin supply. A falling ratio means more stablecoin \"dry powder\" relative to BTC's size — room to keep buying." },
+    ]},
+    { name: "Macro & Market Structure", items: [
+      { label: "BTC Dominance", key: "btc_dominance", fmt: (v) => fmtPct(v / 100, 1),
+        why: "Bitcoin's share of total crypto market cap. Falling dominance in an uptrend usually means risk appetite is spreading into altcoins." },
+      { label: "Fed Funds Rate", key: "fed_funds_rate", fmt: (v) => fmtPct(v / 100, 2),
+        why: "US policy rate (FRED). Hikes are a real headwind for risk assets generally, crypto included — a genuinely new variable, not a crypto-native one." },
+      { label: "Spot BTC ETF Flow (1d)", key: "etf_daily_net_flow_usd", fmt: (v) => fmtUSDm(v, true),
+        why: "Net daily flow into US spot BTC ETFs — the clearest read on real institutional spot demand, as opposed to leverage-driven futures activity." },
+    ]},
+  ]},
+  { horizon: "Long-term signals", sub: "~3–6 months", cats: [
+    { name: "Price Trend Structure", items: [
+      { label: "Mayer Multiple", key: "mayer_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 1 ? "above trend" : "below trend"),
+        why: "Price divided by the 200-day average. Readings below ~1 have historically been accumulation zones; above ~2.4 has marked blow-off tops." },
+      { label: "MA200 Slope (90d)", key: "ma200_slope_90d", fmt: (v) => fmtPct(v, 1, true), note: (v) => (v >= 0 ? "rising" : "falling"),
+        why: "Change in the 200-day average itself over 90 days. A rising slope confirms an uptrend is structural, not just a relief rally." },
+      { label: "Pi-Cycle Top Gap", key: "pi_cycle_gap", fmt: (v) => fmtPct(v, 1, true),
+        why: "SMA111 vs. 2×SMA350. Historically crosses at or above zero close to major cycle tops — shown as context, not scored." },
+    ]},
+    { name: "Cycle Valuation", items: [
+      { label: "200-Week Multiple", key: "ma_200w_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 3 ? "stretched" : v <= 1.1 ? "near the floor" : "mid-cycle"),
+        why: "Price vs. its 200-week (~4-year) average — a line BTC has only briefly traded below, at generational lows. A valuation counterweight to the trend signals." },
+      { label: "Puell Multiple", key: "puell_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v <= 0.6 ? "miner capitulation" : v >= 3 ? "miner euphoria" : "normal"),
+        why: "Daily miner revenue vs. its 365-day average. Very low readings have sat near cycle bottoms; very high readings cluster around tops. Shown as context — too noisy to score on this sample." },
+      { label: "Short-Term Holder Cost Basis", key: null,
+        why: "Needs a paid on-chain provider (UTXO-age data) — not tracked yet." },
+      { label: "LTH vs. STH Supply", key: null,
+        why: "Needs a paid on-chain provider (UTXO-age data) — not tracked yet." },
+      { label: "Drawdown from ATH", key: "drawdown_from_ath", fmt: (v) => fmtPct(v, 0),
+        why: "How far below the all-time high price currently sits — separates an early wobble from a full bear market even when both read as \"down\"." },
+    ]},
+    { name: "Macro & Institutional", items: [
+      { label: "US 10-Year Yield", key: "us_10y_yield", fmt: (v) => fmtPct(v / 100, 2),
+        why: "Benchmark long-term US rate. A rising 10-year makes cash/bonds more competitive with risk assets — a slow but real headwind or tailwind." },
+      { label: "Corporate Treasury Holdings", key: "public_company_btc_treasury", fmt: (v) => fmtBTC(v),
+        why: "Total BTC held by publicly traded companies (bitcointreasuries.net). A slow-moving read on corporate-balance-sheet demand." },
+      { label: "Spot BTC ETF Flow (cumulative)", key: "etf_cum_net_flow_usd", fmt: (v) => fmtUSDb(v, true),
+        why: "All-time net flow into US spot BTC ETFs since launch — the multi-month trend behind the single-day number above." },
+    ]},
+  ]},
 ];
 
 async function main() {
@@ -94,10 +170,12 @@ async function main() {
   app.textContent = "";
   app.append(
     heroPanel(d, k),
-    el("div", { class: "grid2" }, whyPanel(d), gaugePanel(d)),
     dimensionsPanel(d),
-    indicatorsPanel(d),
-    chartPanel(hist),
+    haloChartPanel(hist),
+    analysisPanel(d),
+    triggersPanel(d),
+    teamsPanel(d),
+    signalsPanel(d),
     scorecardPanel(bt),
     methodologyPanel(),
     el("p", { class: "disc", text: d.disclaimer || "" }),
@@ -140,67 +218,22 @@ function heroPanel(d, k) {
     el("div", { class: "lab", text: "Budget action" }),
     el("div", { class: "title", text: (d.action && d.action.title) || "—" }),
     el("div", { class: "detail", text: (d.action && d.action.detail) || "" }),
+    el("span", { class: "conf-tag " + (d.conviction_level || ""), text: "Overall confidence: " + (d.conviction_level || "—") }),
   ));
   return p;
 }
 
-/* ------------------------------- why ---------------------------- */
-function whyPanel(d) {
-  const p = panel(ptitle("Why this reading"));
-  if (d.reasons && d.reasons.length) {
-    const w = el("div", { class: "why" });
-    const ul = el("ul");
-    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
-    w.append(ul);
-    p.append(w);
-  }
-  if (d.watch) p.append(el("div", { class: "watch" }, el("b", { text: "Watch" }), document.createTextNode(d.watch)));
-  if (d.changed_today) p.append(el("div", { class: "changed", text: d.changed_today }));
+/* -------------------------- dimensions (= directional outlook) ------------------------- */
+function dimensionsPanel(d) {
+  const s = d.scores || {};
+  const p = panel(ptitle("Engine dimensions — score −1 to +1"));
+  [["Trend", s.trend], ["Momentum", s.momentum], ["Sentiment", s.sentiment]].forEach(([lab, v]) => {
+    const body = el("div", {},
+      divBar(v ?? 0),
+      el("div", { class: "why-panel", hidden: "", text: DIM_WHY[lab] }));
+    p.append(expander(lab, v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(2), null, body));
+  });
   return p;
-}
-
-/* ------------------------------ gauges ------------------------- */
-function gaugePanel(d) {
-  const p = panel(ptitle("Confidence & sentiment"));
-  const stack = el("div", { class: "gstack" });
-  stack.append(gaugeBlock("Signal confidence", `${d.conviction_level} · ${d.conviction ?? "—"}/100`,
-    arcGauge(d.conviction ?? 0, [45, 70])));
-  const fg = (d.context && d.context.fear_greed) ?? null;
-  stack.append(gaugeBlock("Fear & Greed", d.sentiment_band || "—", fngDial(fg)));
-  p.append(stack);
-  return p;
-}
-const gaugeBlock = (k, v, body) => el("div", {},
-  el("div", { class: "gcap" }, el("span", { class: "k", text: k }), el("span", { class: "v", text: v })), body);
-
-function arcGauge(value, ticks = []) {
-  const W = 240, H = 128, cx = 120, cy = 116, r = 96, sw = 11;
-  const pt = (f) => [cx + r * Math.cos(Math.PI * (1 - f)), cy - r * Math.sin(Math.PI * (1 - f))];
-  const arc = (f0, f1) => { const [x0, y0] = pt(f0), [x1, y1] = pt(f1); return `M ${x0.toFixed(1)} ${y0.toFixed(1)} A ${r} ${r} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
-  const f = clamp(value / 100, 0, 1);
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
-  svg.append(el("path", { d: arc(0, 1), fill: "none", stroke: "var(--hair)", "stroke-width": sw, "stroke-linecap": "round" }));
-  svg.append(el("path", { d: arc(0, f), fill: "none", stroke: "var(--rk-purple)", "stroke-width": sw, "stroke-linecap": "round" }));
-  ticks.forEach((tk) => { const [x, y] = pt(tk / 100); const xi = cx + (r - sw) * Math.cos(Math.PI * (1 - tk / 100)), yi = cy - (r - sw) * Math.sin(Math.PI * (1 - tk / 100)); svg.append(el("line", { x1: x, y1: y, x2: xi, y2: yi, stroke: "var(--surface)", "stroke-width": 2 })); });
-  const [mx, my] = pt(f);
-  svg.append(el("circle", { cx: mx, cy: my, r: 7, fill: "var(--ink)", stroke: "var(--surface)", "stroke-width": 2.5 }));
-  svg.append(el("text", { x: cx, y: cy - 8, "text-anchor": "middle", "font-family": "Space Grotesk, sans-serif", "font-size": 28, "font-weight": 600, fill: "var(--ink)" }, value == null ? "—" : String(Math.round(value))));
-  return svg;
-}
-function fngDial(value) {
-  const W = 240, H = 128, cx = 120, cy = 116, r = 96, sw = 11;
-  const pt = (f) => [cx + r * Math.cos(Math.PI * (1 - f)), cy - r * Math.sin(Math.PI * (1 - f))];
-  const arc = (f0, f1) => { const [x0, y0] = pt(f0), [x1, y1] = pt(f1); return `M ${x0.toFixed(1)} ${y0.toFixed(1)} A ${r} ${r} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`; };
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
-  [[0, 25, "var(--bear)"], [25, 46, "#CC7A5A"], [46, 54, "var(--gold)"], [54, 75, "#43B3A6"], [75, 100, "var(--bull)"]]
-    .forEach(([a, b, c]) => svg.append(el("path", { d: arc(a / 100, b / 100), fill: "none", stroke: c, "stroke-width": sw })));
-  if (value != null) {
-    const f = clamp(value / 100, 0, 1);
-    const [mx, my] = pt(f);
-    svg.append(el("circle", { cx: mx, cy: my, r: 7, fill: "var(--ink)", stroke: "var(--surface)", "stroke-width": 2.5 }));
-    svg.append(el("text", { x: cx, y: cy - 8, "text-anchor": "middle", "font-family": "Space Grotesk, sans-serif", "font-size": 28, "font-weight": 600, fill: "var(--ink)" }, String(Math.round(value))));
-  }
-  return svg;
 }
 function divBar(score) {
   const W = 260, H = 16, mid = W / 2, span = W / 2 - 6, s = clamp(score, -1, 1), x = mid + s * span;
@@ -212,48 +245,115 @@ function divBar(score) {
   return svg;
 }
 
-/* -------------------------- dimensions ------------------------- */
-function dimensionsPanel(d) {
-  const s = d.scores || {};
-  const p = panel(ptitle("Engine dimensions — score −1 to +1"));
-  [["Trend", s.trend], ["Momentum", s.momentum], ["Sentiment", s.sentiment]].forEach(([lab, v]) => {
-    const body = el("div", {},
-      divBar(v ?? 0),
-      el("div", { class: "why-panel", hidden: "" , text: DIM_WHY[lab] }));
-    p.append(expander(lab, v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(2), null, body));
-  });
+/* -------------------------- analysis (why + watch + levels) ------------------------ */
+function analysisPanel(d) {
+  const p = panel(ptitle("What's driving this"));
+  if (d.reasons && d.reasons.length) {
+    const ul = el("ul", { class: "why-ul" });
+    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
+    p.append(ul);
+  }
+  if (d.watch) p.append(el("div", { class: "watch" }, el("b", { text: "Watch" }), document.createTextNode(d.watch)));
+  if (d.changed_today) p.append(el("div", { class: "changed", text: d.changed_today }));
+
+  const c = d.context || {};
+  const price = d.price_btc;
+  const levels = [];
+  if (price != null && c.drawdown_from_ath != null) levels.push([fmtUSD(price / (1 + c.drawdown_from_ath)), "all-time high"]);
+  if (price != null && c.mayer_multiple) levels.push([fmtUSD(price / c.mayer_multiple), "200-day moving average"]);
+  if (price != null && c.ma_200w_multiple) levels.push([fmtUSD(price / c.ma_200w_multiple), "200-week moving average"]);
+  levels.push([fmtUSD(price), "spot price — today"]);
+  if (levels.length) {
+    const lv = el("div", { class: "levels" });
+    levels.forEach(([v, lab]) => lv.append(el("div", { class: "level" }, el("b", { text: v }), el("span", { text: lab }))));
+    p.append(lv);
+  }
   return p;
 }
 
-/* -------------------------- indicators ------------------------ */
-function indicatorsPanel(d) {
-  const x = d.context || {};
-  const p = panel(ptitle("Supporting indicators"));
-  METERS.forEach((m) => {
-    const v = x[m.key];
-    const has = v != null && !isNaN(v);
-    const disp = !has ? "—" : (m.pctd != null ? (v * 100).toFixed(m.pctd) + "%" : v.toFixed(m.dp) + (m.suffix || ""));
-    const note = has ? (m.note(v, d) || "").trim() : "";
+/* -------------------------- triggers (derived, not fabricated) ------------------------ */
+function triggersPanel(d) {
+  const p = panel(ptitle("What would change this view"));
+  const c = d.context || {};
+  const T = 0.15; // state.py CONFIG.regime_T
+  const ma200 = c.mayer_multiple ? d.price_btc / c.mayer_multiple : null;
+  const list = [];
+  if (d.regime !== "Bull") list.push([`Trend score closes above <b>+${T}</b> for 5 straight days`, "Regime upgrades toward BULLISH"]);
+  if (d.regime !== "Bear") list.push([`Trend score closes below <b>−${T}</b> for 5 straight days`, "Regime downgrades toward BEARISH"]);
+  if (ma200 != null) {
+    const side = d.price_btc >= ma200 ? "breaks back below" : "reclaims";
+    list.push([`Price ${side} the 200-day average (<b>${fmtUSD(ma200)}</b>)`, "Directly moves the Trend score — the single biggest lever on the headline"]);
+  }
+  list.push(["Weekly RSI moves past <b>70</b> (overbought) or below <b>35</b> (oversold)", "Flags a Momentum stretch — often precedes a change in the confidence score"]);
+  if (c.fear_greed != null) list.push([`Fear &amp; Greed moves to the opposite extreme of today's <b>${Math.round(c.fear_greed)}</b>`, "Sentiment dimension flips direction, changing overall confidence"]);
 
-    const track = el("div", { class: "track-lite" });
-    if (has) {
-      const f = clamp((v - m.min) / (m.max - m.min), 0, 1) * 100;
-      if (m.band) {
-        const b0 = clamp((m.band[0] - m.min) / (m.max - m.min), 0, 1) * 100;
-        const b1 = clamp((m.band[1] - m.min) / (m.max - m.min), 0, 1) * 100;
-        track.append(el("div", { class: "band", style: `left:${b0}%; width:${b1 - b0}%` }));
-      }
-      track.append(el("div", { class: "pin", style: `left:${f}%` }));
-    }
-    const body = el("div", {}, track, el("div", { class: "why-panel", hidden: "", text: m.why }));
-    p.append(expander(m.label, disp, note, body));
+  const box = el("div", {});
+  list.forEach(([cond, effect]) => box.append(el("div", { class: "trigger" }, el("span", { class: "arrow", text: "→" }),
+    el("div", { class: "cond" }, el("span", { html: cond }), " — ", effect))));
+  p.append(box);
+  return p;
+}
+
+/* -------------------------- implications by team (rule-based on regime) ------------------------ */
+const TEAM_NOTES = {
+  Bull: [
+    ["Leadership", "Uptrend is confirmed by the model — a reasonable base case for planning, not just an upside scenario."],
+    ["Marketing", "Setup supports scaling acquisition spend, prioritising non-stablecoin and active-trader channels."],
+    ["VIP / Commercial", "Good window for renewed high-value engagement and outreach."],
+    ["Product / Ops", "Watch for volume and volatility spikes typical of a live uptrend — capacity, not direction, is the risk."],
+    ["Research", "Owns: watching for the trend score to re-approach the neutral band, and validating which context indicators are worth promoting to scored."],
+  ],
+  Neutral: [
+    ["Leadership", "Market is in transition — treat any near-term GTV swing as noise, not signal, for planning."],
+    ["Marketing", "Hold current acquisition budget at plan; no clear direction to lean into yet."],
+    ["VIP / Commercial", "No change to outreach cadence until the direction resolves."],
+    ["Product / Ops", "No unusual load signal expected while the market stays directionless."],
+    ["Research", "Owns: watching which dimension — trend, momentum or sentiment — breaks the tie first."],
+  ],
+  Bear: [
+    ["Leadership", "Downtrend is confirmed by the model — plan for softer GTV, not a quick bounce."],
+    ["Marketing", "Defend spend with a strict ROI stop-loss; shift messaging toward stablecoin products."],
+    ["VIP / Commercial", "Expect reduced high-value engagement; hold outreach cadence rather than cutting it entirely."],
+    ["Product / Ops", "Elevated risk of fast, high-volume down-moves — capitulation phases are the most volatile."],
+    ["Research", "Owns: watching for capitulation signals (sentiment + volatility extremes) that flag a turn forming."],
+  ],
+};
+function teamsPanel(d) {
+  const p = panel(ptitle("Implications by team"));
+  const rows = TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral;
+  const grid = el("div", { class: "teamgrid" });
+  rows.forEach(([name, text]) => grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text }))));
+  p.append(grid);
+  return p;
+}
+
+/* -------------------------- supporting signals: full 35-indicator catalog ------------------------ */
+function signalsPanel(d) {
+  const c = d.context || {};
+  const p = panel(ptitle("Supporting signals — full catalog"));
+  p.append(el("p", { class: "cat-note", text: "35 indicators considered for this model. 25 have a free, live data feed and are shown with today's value; the rest are marked \"not tracked\" with the reason, not guessed." }));
+  CATALOG.forEach((group) => {
+    p.append(el("h3", { class: "sig-h", text: `${group.horizon} · ${group.sub}` }));
+    const cg = el("div", { class: "catgrid" });
+    group.cats.forEach((cat) => {
+      const card = el("div", { class: "catcard" }, el("h4", { text: cat.name }));
+      cat.items.forEach((item) => {
+        const has = item.key != null && c[item.key] != null && !isNaN(c[item.key]);
+        const disp = has ? item.fmt(c[item.key]) : "not tracked";
+        const note = has && item.note ? item.note(c[item.key], d) : "";
+        const body = el("div", { class: "why-panel", hidden: "", text: item.why });
+        card.append(expander(item.label, disp, note, body, !has));
+      });
+      cg.append(card);
+    });
+    p.append(cg);
   });
   return p;
 }
 
 /* generic expandable row */
-function expander(name, read, note, body) {
-  const btn = el("button", { class: "exp", type: "button", "aria-expanded": "false" },
+function expander(name, read, note, body, dim) {
+  const btn = el("button", { class: "exp" + (dim ? " dim" : ""), type: "button", "aria-expanded": "false" },
     el("div", { class: "exp-head" },
       el("span", { class: "name", text: name }),
       el("span", { class: "read", html: `${read}${note ? ` <em>${note}</em>` : ""}` }),
@@ -337,6 +437,9 @@ function methodologyPanel() {
     + "never move the label — they set the direction arrow, the confidence score and the watch notes.<br><br>"
     + "Confidence rises when the three dimensions agree, the trend score sits well clear of the neutral band, "
     + "sentiment is not at a froth or capitulation extreme, and volatility is calm.<br><br>"
+    + "The \"Supporting signals\" catalog below lists 35 indicators considered for this model. Only the ones above "
+    + "feed the score; most of the rest are shown as live context, and a handful are marked \"not tracked\" because "
+    + "they need a paid on-chain or derivatives data provider we haven't wired in.<br><br>"
     + "Every input is trailing — it describes what the market has already done, it does not forecast. Validated "
     + "on ~3 market cycles: it flagged every major cycle top and bottom in that window, a median of about three "
     + "months after the price extreme. Treat it as direction rather than a precise number. Thresholds and weights "
@@ -345,87 +448,199 @@ function methodologyPanel() {
   return p;
 }
 
-/* ----------------------------- chart ------------------------- */
-function chartPanel(rows) {
-  const p = panel();
-  const head = el("div", { class: "chart-head" });
-  head.append(el("p", { class: "ptitle", text: "BTC & regime — history", style: "margin:0; flex:0 1 auto;" }));
-  const rng = el("div", { class: "rng" });
-  head.append(rng);
-  p.append(head);
-  const readout = el("div", { class: "readout" });
-  const box = el("div", {});
-  p.append(readout, box);
-  const legend = el("div", { class: "legend" });
-  [["Bull", "Bullish"], ["Neutral", "Neutral"], ["Bear", "Bearish"]].forEach(([k, lab]) =>
-    legend.append(el("span", { html: `<i style="background:${REG_WASH[k]}"></i>${lab}` })));
-  p.append(legend);
+/* ----------------------- halving / 50-200 cross chart (real data) ------------------- */
+const HALVINGS = ["2016-07-09", "2020-05-11", "2024-04-20"]; // 2012-11-28 predates our price history
+const MS_DAY = 86400000;
+const LAST_HALVING = Date.parse("2024-04-20T00:00:00Z");
+const BLOCKS_PER_DAY = 144; // ~10-minute block target
+function halvingProgress() {
+  const daysSince = (Date.now() - LAST_HALVING) / MS_DAY;
+  const blocksSince = daysSince * BLOCKS_PER_DAY;
+  const pct = clamp((blocksSince / 210000) * 100, 0, 99.9);
+  const blocksLeft = Math.max(0, Math.round(210000 - blocksSince));
+  const nextDate = new Date(LAST_HALVING + (210000 / BLOCKS_PER_DAY) * MS_DAY);
+  return { pct, blocksLeft, nextDate };
+}
 
-  const ranges = { "1Y": 365, "3Y": 1095, "All": 1e9 };
-  let cur = "3Y";
+function haloChartPanel(rows) {
+  const p = panel();
+  p.append(el("p", { class: "ptitle", text: "BTC price history — halving cycles & the 50/200-day cross" }));
+  const prog = halvingProgress();
+  const progBox = el("div", { class: "halving-progress" },
+    el("div", { class: "pct", text: prog.pct.toFixed(0) + "%" }),
+    el("div", { class: "bar-col" },
+      el("div", { class: "bar" }, el("div", { class: "bar-fill", style: `width:${prog.pct}%` })),
+      el("div", { class: "cap", text: `Progress to the next halving — ~${prog.blocksLeft.toLocaleString()} blocks left, est. ${prog.nextDate.toLocaleDateString("en-US", { month: "short", year: "numeric" })}. Block-height math, not a price call.` })));
+  p.append(progBox);
+
+  const rngBox = el("div", { class: "rng chart-rng" });
+  p.append(rngBox);
+  const chartWrap = el("div", { class: "chart-wrap" });
+  const svg = el("svg", { viewBox: "0 0 900 320", preserveAspectRatio: "xMidYMid meet" });
+  chartWrap.append(svg);
+  p.append(chartWrap);
+
+  const ranges = [["1Y", 1], ["3Y", 3], ["5Y", 5], ["10Y", 10], ["All", null]];
+  let cur = null;
   const draw = () => {
-    rng.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.textContent === cur));
-    box.textContent = "";
-    box.append(renderChart(rows.slice(Math.max(0, rows.length - ranges[cur])), readout));
+    rngBox.querySelectorAll("button").forEach((b) => b.classList.toggle("on", +b.dataset.y === cur || (b.dataset.y === "null" && cur === null)));
+    renderHaloChart(svg, rows, cur, prog);
   };
-  Object.keys(ranges).forEach((k) => {
-    const b = el("button", { text: k });
-    b.onclick = () => { cur = k; draw(); };
-    rng.append(b);
+  ranges.forEach(([label, years]) => {
+    const b = el("button", { text: label, "data-y": String(years) });
+    b.onclick = () => { cur = years; draw(); };
+    rngBox.append(b);
   });
   draw();
+
+  const legend = el("div", { class: "legend chart-legend" });
+  [["up", "Price, up day"], ["down", "Price, down day"], ["sma50", "50-day MA"], ["sma200", "200-day MA"],
+   ["halving", "Halving"], ["golden", "Golden cross"], ["death", "Death cross"], ["next-halving", "Next halving (est.)"]]
+    .forEach(([cls, lab]) => legend.append(el("span", { class: "lg" }, el("i", { class: "sw " + cls }), lab)));
+  p.append(legend);
+  p.append(el("p", { class: "chart-note", text: "Purely historical — no projected path. Trend structure only; the read for what's next is in \"Engine dimensions\" above." }));
   return p;
 }
 
-function renderChart(data, readout) {
-  const W = 760, H = 290, P = { l: 42, r: 8, t: 10, b: 20 };
-  const iw = W - P.l - P.r, ih = H - P.t - P.b;
-  const xs = (i) => P.l + (iw * i) / Math.max(1, data.length - 1);
-  const lp = data.map((d) => Math.log10(d.close));
-  let lo = Math.min(...lp), hi = Math.max(...lp);
-  const pad = (hi - lo) * 0.06 || 0.1; lo -= pad; hi += pad;
-  const ys = (v) => P.t + ih - (ih * (Math.log10(v) - lo)) / (hi - lo);
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
+function renderHaloChart(svg, rows, years, prog) {
+  svg.innerHTML = "";
+  const series = rows.filter((r) => r.close > 0).map((r) => ({ t: Date.parse(r.date + "T00:00:00Z"), price: r.close }));
+  if (!series.length) return;
+  const sma = (n) => {
+    const out = new Array(series.length).fill(null);
+    let sum = 0;
+    for (let i = 0; i < series.length; i++) {
+      sum += series[i].price;
+      if (i >= n) sum -= series[i - n].price;
+      if (i >= n - 1) out[i] = sum / n;
+    }
+    return out;
+  };
+  const sma50 = sma(50), sma200 = sma(200);
+  const crosses = [];
+  for (let i = 1; i < series.length; i++) {
+    if (sma50[i - 1] == null || sma200[i - 1] == null) continue;
+    const prevDiff = sma50[i - 1] - sma200[i - 1], diff = sma50[i] - sma200[i];
+    if (prevDiff <= 0 && diff > 0) crosses.push({ t: series[i].t, type: "golden", price: (sma50[i] + sma200[i]) / 2 });
+    else if (prevDiff >= 0 && diff < 0) crosses.push({ t: series[i].t, type: "death", price: (sma50[i] + sma200[i]) / 2 });
+  }
 
-  let s = 0;
-  for (let i = 1; i <= data.length; i++) {
-    if (i === data.length || data[i].regime !== data[s].regime) {
-      svg.append(el("rect", { x: xs(s), y: P.t, width: Math.max(0.5, xs(i - 1) - xs(s)), height: ih, fill: REG_WASH[data[s].regime] || "transparent" }));
-      s = i;
+  const lastData = series[series.length - 1].t;
+  const tMax = years === null ? prog.nextDate.getTime() : lastData;
+  const tMin = years ? Math.max(series[0].t, lastData - years * 365 * MS_DAY) : series[0].t;
+  const W = 900, H = 320, padL = 48, padR = 12, padT = 16, padB = 26;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+
+  let i0 = series.findIndex((d) => d.t >= tMin);
+  if (i0 < 0) i0 = 0;
+  if (i0 > 0) i0--;
+  const idx = []; for (let i = i0; i < series.length; i++) idx.push(i);
+  const prices = idx.map((i) => series[i].price);
+  const logMin = Math.log10(Math.min(...prices) * 0.85);
+  const logMax = Math.log10(Math.max(...prices) * 1.15);
+  const x = (t) => padL + ((t - tMin) / (tMax - tMin)) * plotW;
+  const y = (p) => padT + (1 - (Math.log10(p) - logMin) / (logMax - logMin)) * plotH;
+
+  const make = (tag, attrs) => {
+    const e = document.createElementNS(SVGNS, tag);
+    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+    return e;
+  };
+
+  const epochBounds = [series[0].t, ...HALVINGS.map((d) => Date.parse(d + "T00:00:00Z")), prog.nextDate.getTime()];
+  const gb = make("g", { class: "epoch-bands" });
+  for (let e = 0; e < epochBounds.length - 1; e++) {
+    if (e % 2 !== 0) continue;
+    const es = epochBounds[e], ee = epochBounds[e + 1];
+    if (ee < tMin || es > tMax) continue;
+    const rx0 = x(Math.max(es, tMin)), rx1 = x(Math.min(ee, tMax));
+    gb.append(make("rect", { x: rx0.toFixed(1), y: padT, width: Math.max(0, rx1 - rx0).toFixed(1), height: (H - padT - padB).toFixed(1), class: "epoch-band" }));
+  }
+  svg.append(gb);
+
+  const gy = make("g", { class: "cy-axis" });
+  [1, 10, 100, 1000, 10000, 100000, 1000000].forEach((pv) => {
+    const lp = Math.log10(pv);
+    if (lp < logMin || lp > logMax) return;
+    const py = y(pv);
+    gy.append(make("line", { x1: padL, x2: W - padR, y1: py.toFixed(1), y2: py.toFixed(1) }));
+    const t = make("text", { x: 6, y: (py + 3).toFixed(1) });
+    t.textContent = pv >= 1000 ? "$" + Math.round(pv / 1000) + "k" : "$" + pv;
+    gy.append(t);
+  });
+  svg.append(gy);
+
+  const gx = make("g", { class: "cx-axis" });
+  for (let k = 0; k <= 4; k++) {
+    const t = tMin + ((tMax - tMin) * k) / 4;
+    const px = x(t);
+    const label = new Date(t).toLocaleDateString("en-US", years && years <= 3 ? { month: "short", year: "2-digit" } : { year: "numeric" });
+    const txt = make("text", { x: px.toFixed(1), y: H - 6, "text-anchor": k === 4 ? "end" : k === 0 ? "start" : "middle" });
+    txt.textContent = label;
+    gx.append(txt);
+  }
+  svg.append(gx);
+
+  const gh = make("g", { class: "c-halving" });
+  HALVINGS.forEach((dstr) => {
+    const t = Date.parse(dstr + "T00:00:00Z");
+    if (t < tMin || t > tMax) return;
+    const px = x(t);
+    gh.append(make("line", { x1: px.toFixed(1), x2: px.toFixed(1), y1: padT, y2: H - padB }));
+    const txt = make("text", { x: (px + 4).toFixed(1), y: padT + 10, "text-anchor": "start" });
+    txt.textContent = "Halving";
+    gh.append(txt);
+  });
+  svg.append(gh);
+
+  if (years === null) {
+    const t = prog.nextDate.getTime();
+    if (t >= tMin && t <= tMax) {
+      const px = x(t);
+      const gn = make("g", { class: "c-halving c-halving-next" });
+      gn.append(make("line", { x1: px.toFixed(1), x2: px.toFixed(1), y1: padT, y2: H - padB }));
+      const txt = make("text", { x: (px + 4).toFixed(1), y: padT + 10, "text-anchor": "start" });
+      txt.textContent = `Next halving (est., ${prog.pct.toFixed(0)}% there)`;
+      gn.append(txt);
+      svg.append(gn);
     }
   }
-  for (let e = -1; e <= 7; e++) for (const m of [1, 2, 5]) {
-    const v = m * Math.pow(10, e);
-    if (Math.log10(v) < lo || Math.log10(v) > hi) continue;
-    const y = ys(v);
-    svg.append(el("line", { x1: P.l, x2: W - P.r, y1: y, y2: y, stroke: "var(--hair)", "stroke-width": 1 }));
-    svg.append(el("text", { x: 2, y: y + 3, fill: "var(--muted)", "font-size": 10 }, v >= 1000 ? v / 1000 + "k" : "" + v));
-  }
-  let py = null;
-  data.forEach((d, i) => {
-    const yr = d.date.slice(0, 4);
-    if (yr !== py) { py = yr; svg.append(el("line", { x1: xs(i), x2: xs(i), y1: P.t, y2: P.t + ih, stroke: "var(--hair-strong)", "stroke-width": 1, "stroke-dasharray": "2 3" })); svg.append(el("text", { x: xs(i) + 3, y: H - 6, fill: "var(--muted)", "font-size": 10 }, yr)); }
-  });
-  svg.append(el("path", { d: data.map((d, i) => (i ? "L" : "M") + xs(i).toFixed(1) + " " + ys(d.close).toFixed(1)).join(" "), fill: "none", stroke: "var(--ink)", "stroke-width": 1.6, "stroke-linejoin": "round" }));
 
-  const vline = el("line", { y1: P.t, y2: P.t + ih, stroke: "var(--rk-teal)", "stroke-width": 1, opacity: 0 });
-  const dot = el("circle", { r: 3.4, fill: "var(--rk-teal)", opacity: 0 });
-  svg.append(vline, dot);
-  const move = (evt) => {
-    const b = svg.getBoundingClientRect();
-    const px = ((evt.touches ? evt.touches[0].clientX : evt.clientX) - b.left) * (W / b.width);
-    let i = clamp(Math.round(((px - P.l) / iw) * (data.length - 1)), 0, data.length - 1);
-    const d = data[i];
-    vline.setAttribute("x1", xs(i)); vline.setAttribute("x2", xs(i)); vline.setAttribute("opacity", 1);
-    dot.setAttribute("cx", xs(i)); dot.setAttribute("cy", ys(d.close)); dot.setAttribute("opacity", 1);
-    readout.innerHTML = `${d.date} &nbsp; <b>${fmtUSD(d.close)}</b> &nbsp; <span style="color:${REG_VAR[REG_KEY[d.regime]]}">${d.regime}</span> &nbsp; confidence ${d.conviction}`;
+  const gpx = make("g", { class: "c-price-seg" });
+  for (let kk = 1; kk < idx.length; kk++) {
+    const ia = idx[kk - 1], ib = idx[kk];
+    const p0 = series[ia].price, p1 = series[ib].price;
+    gpx.append(make("line", {
+      x1: x(series[ia].t).toFixed(1), y1: y(p0).toFixed(1),
+      x2: x(series[ib].t).toFixed(1), y2: y(p1).toFixed(1),
+      class: p1 >= p0 ? "up" : "down",
+    }));
+  }
+  svg.append(gpx);
+
+  const linePath = (getVal) => {
+    let dpath = "";
+    idx.forEach((i) => {
+      const v = getVal(i);
+      if (v == null) return;
+      const cmd = dpath ? "L" : "M";
+      dpath += `${cmd}${x(series[i].t).toFixed(1)} ${y(v).toFixed(1)} `;
+    });
+    return dpath.trim();
   };
-  const leave = () => { vline.setAttribute("opacity", 0); dot.setAttribute("opacity", 0); readout.textContent = ""; };
-  svg.addEventListener("mousemove", move);
-  svg.addEventListener("mouseleave", leave);
-  svg.addEventListener("touchmove", move, { passive: true });
-  svg.addEventListener("touchend", leave);
-  return svg;
+  svg.append(make("path", { class: "c-sma200", d: linePath((i) => sma200[i]) }));
+  svg.append(make("path", { class: "c-sma50", d: linePath((i) => sma50[i]) }));
+
+  crosses.forEach((c) => {
+    if (c.t < tMin || c.t > tMax) return;
+    const g = make("g", { class: "c-cross " + c.type });
+    const circle = make("circle", { cx: x(c.t).toFixed(1), cy: y(c.price).toFixed(1), r: 4 });
+    const title = make("title", {});
+    title.textContent = (c.type === "golden" ? "Golden cross — " : "Death cross — ") + new Date(c.t).toLocaleDateString("en-US", { month: "short", year: "numeric" });
+    circle.append(title);
+    g.append(circle);
+    svg.append(g);
+  });
 }
 
 main();

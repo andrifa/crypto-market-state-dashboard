@@ -172,6 +172,84 @@
   .err { color:var(--bear); font-size:15px; padding:24px; }
   .loading { color:var(--muted); padding:24px; }
   a { color:var(--rk-teal-ink); }
+
+  /* confidence tag (hero) */
+  .conf-tag { display:inline-block; font-family:"Space Grotesk", sans-serif; font-size:11px; font-weight:600;
+    padding:3px 9px; border-radius:6px; margin-top:12px; }
+  .conf-tag.HIGH { background:var(--bull-wash); color:var(--bull); }
+  .conf-tag.MEDIUM { background:var(--neutral-wash); color:var(--neutral); }
+  .conf-tag.LOW { background:var(--bear-wash); color:var(--bear); }
+
+  /* analysis: bullets + levels chips */
+  .why-ul { margin:0; padding:0; list-style:none; }
+  .why-ul li { position:relative; padding-left:18px; margin:8px 0; color:var(--ink-soft); font-size:14px; }
+  .why-ul li::before { content:""; position:absolute; left:0; top:8px; width:6px; height:6px; border-radius:50%; background:var(--rk-teal); }
+  .levels { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
+  .level { background:var(--paper); border-radius:10px; padding:8px 12px; font-size:12.5px; }
+  .level b { font-family:"Space Grotesk", sans-serif; font-size:13.5px; color:var(--ink); display:block; }
+  .level span { color:var(--muted); font-size:11px; }
+
+  /* triggers */
+  .trigger { display:flex; gap:10px; padding:10px 0; border-top:1px solid var(--hair); font-size:13.5px; }
+  .trigger:first-of-type { border-top:0; padding-top:2px; }
+  .trigger .arrow { color:var(--rk-purple-2); flex:none; font-family:"Space Grotesk", sans-serif; }
+  .trigger .cond { color:var(--ink-soft); }
+  .trigger .cond b { color:var(--ink); }
+
+  /* team implications */
+  .teamgrid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:640px){ .teamgrid { grid-template-columns:1fr; } }
+  .teamcard { background:var(--paper); border-radius:12px; padding:12px 14px; }
+  .teamcard h4 { font-family:"Space Grotesk", sans-serif; font-size:13px; margin:0 0 4px; color:var(--ink); }
+  .teamcard p { margin:0; font-size:12.5px; color:var(--ink-soft); line-height:1.5; }
+
+  /* supporting-signals catalog */
+  .cat-note { color:var(--muted); font-size:12px; margin:-6px 0 16px; line-height:1.5; }
+  .sig-h { font-family:"Space Grotesk", sans-serif; font-size:13px; font-weight:600; color:var(--rk-purple-2);
+    margin:24px 0 10px; }
+  .sig-h:first-of-type { margin-top:0; }
+  .catgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:6px; }
+  @media (max-width:640px){ .catgrid { grid-template-columns:1fr; } }
+  .catcard { background:var(--paper); border-radius:14px; padding:4px 16px; }
+  .catcard h4 { font-family:"Space Grotesk", sans-serif; font-size:13px; font-weight:600; margin:12px 0 2px; color:var(--ink); }
+  .exp.dim .exp-head .read { color:var(--muted); font-style:italic; }
+
+  /* halving / 50-200 cross chart */
+  .halving-progress { display:flex; align-items:center; gap:16px; margin-bottom:14px;
+    padding:12px 14px; background:var(--paper); border-radius:12px; flex-wrap:wrap; }
+  .halving-progress .pct { font-family:"Space Grotesk", sans-serif; font-weight:700; font-size:24px;
+    color:var(--rk-purple-2); line-height:1; }
+  .halving-progress .bar-col { flex:1; min-width:160px; }
+  .halving-progress .bar { position:relative; height:6px; border-radius:4px; background:var(--hair-strong);
+    overflow:hidden; margin-bottom:6px; }
+  .halving-progress .bar-fill { position:absolute; inset:0 auto 0 0; background:var(--rk-purple-2); border-radius:4px; }
+  .halving-progress .cap { font-size:11px; color:var(--muted); }
+  .chart-wrap { width:100%; margin-top:4px; }
+  .cx-axis text, .cy-axis text { font-size:10px; fill:var(--muted); }
+  .cx-axis line, .cy-axis line { stroke:var(--hair); }
+  .epoch-band { fill:var(--neutral-wash); opacity:.5; }
+  .c-halving line { stroke:var(--muted); stroke-width:1; stroke-dasharray:3 3; }
+  .c-halving text { font-size:9px; fill:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .c-halving-next line { stroke:var(--rk-purple-2); stroke-width:1; stroke-dasharray:1 4; opacity:.6; }
+  .c-halving-next text { fill:var(--rk-purple-2); opacity:.85; }
+  .c-price-seg line.up { stroke:var(--bull); stroke-width:1.1; opacity:.75; }
+  .c-price-seg line.down { stroke:var(--bear); stroke-width:1.1; opacity:.75; }
+  .c-sma50 { fill:none; stroke:var(--bull); stroke-width:1.6; }
+  .c-sma200 { fill:none; stroke:var(--rk-purple-2); stroke-width:1.6; }
+  .c-cross circle { stroke:var(--surface); stroke-width:1.5; }
+  .c-cross.golden circle { fill:var(--bull); }
+  .c-cross.death circle { fill:var(--bear); }
+  .chart-note { margin:10px 0 0; font-size:11.5px; color:var(--muted); }
+  .chart-legend .lg { display:inline-flex; align-items:center; gap:6px; }
+  .chart-legend .sw { width:14px; height:3px; border-radius:2px; display:inline-block; }
+  .chart-legend .sw.up { background:var(--bull); opacity:.75; }
+  .chart-legend .sw.down { background:var(--bear); opacity:.75; }
+  .chart-legend .sw.sma50 { background:var(--bull); }
+  .chart-legend .sw.sma200 { background:var(--rk-purple-2); }
+  .chart-legend .sw.halving { background:transparent; border-top:1px dashed var(--muted); height:0; }
+  .chart-legend .sw.golden { background:var(--bull); width:8px; height:8px; border-radius:50%; }
+  .chart-legend .sw.death { background:var(--bear); width:8px; height:8px; border-radius:50%; }
+  .chart-legend .sw.next-halving { background:transparent; border-top:1px dotted var(--rk-purple-2); height:0; }
 </style>
 </head>
 <body>
