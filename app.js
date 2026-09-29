@@ -268,36 +268,17 @@ function renderTriggers(d) {
     el("div", { class: "cond" }, el("b", { html: cond }), " — ", effect))));
 }
 
-/* -------------------------- implications by team (rule-based on regime) ------------- */
-const TEAM_NOTES = {
-  Bull: [
-    ["Leadership", "Uptrend is confirmed by the model — a reasonable base case for planning, not just an upside scenario."],
-    ["Marketing", "Setup supports scaling acquisition spend, prioritising non-stablecoin and active-trader channels."],
-    ["VIP / Commercial", "Good window for renewed high-value engagement and outreach."],
-    ["Product / Ops", "Watch for volume and volatility spikes typical of a live uptrend — capacity, not direction, is the risk."],
-    ["Research", "Owns: watching for the trend score to re-approach the neutral band, and validating which context indicators are worth promoting to scored."],
-  ],
-  Neutral: [
-    ["Leadership", "Market is in transition — treat any near-term GTV swing as noise, not signal, for planning."],
-    ["Marketing", "Hold current acquisition budget at plan; no clear direction to lean into yet."],
-    ["VIP / Commercial", "No change to outreach cadence until the direction resolves."],
-    ["Product / Ops", "No unusual load signal expected while the market stays directionless."],
-    ["Research", "Owns: watching which dimension — trend, momentum or sentiment — breaks the tie first."],
-  ],
-  Bear: [
-    ["Leadership", "Downtrend is confirmed by the model — plan for softer GTV, not a quick bounce."],
-    ["Marketing", "Defend spend with a strict ROI stop-loss; shift messaging toward stablecoin products."],
-    ["VIP / Commercial", "Expect reduced high-value engagement; hold outreach cadence rather than cutting it entirely."],
-    ["Product / Ops", "Elevated risk of fast, high-volume down-moves — capitulation phases are the most volatile."],
-    ["Research", "Owns: watching for capitulation signals (sentiment + volatility extremes) that flag a turn forming."],
-  ],
+/* -------------------------- implications for marketing (rule-based fallback) -------- */
+const MARKETING_FALLBACK = {
+  Bull: "Setup supports scaling acquisition spend, prioritising non-stablecoin and active-trader channels.",
+  Neutral: "Hold current acquisition budget at plan; no clear direction to lean into yet.",
+  Bear: "Defend spend with a strict ROI stop-loss; shift messaging toward stablecoin products.",
 };
 function renderTeams(d) {
   const grid = document.getElementById("teams");
   grid.textContent = "";
-  const dynamicNote = { Marketing: d.team_notes && d.team_notes.marketing };
-  (TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral).forEach(([name, fallback]) =>
-    grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text: dynamicNote[name] || fallback }))));
+  const text = (d.team_notes && d.team_notes.marketing) || MARKETING_FALLBACK[d.regime] || MARKETING_FALLBACK.Neutral;
+  grid.append(el("div", { class: "teamcard" }, el("h4", { text: "Marketing" }), el("p", { text })));
 }
 
 /* -------------------------- supporting signals: full 35-indicator catalog ----------- */

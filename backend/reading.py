@@ -138,23 +138,32 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
         band = row.get("sentiment_band", "")
         parts.append(f"Fear & Greed sits at {fng:.0f} ({band})")
     if pd.notna(fz):
-        parts.append(f"funding is at a {fz:+.2f} z-score")
+        stretch = "stretched" if abs(fz) >= 1.5 else "not stretched"
+        parts.append(f"funding is at a {fz:+.2f} z-score ({stretch} leverage positioning)")
     if pd.notna(ssr):
         parts.append(f"the stablecoin supply ratio is {ssr:.2f}")
     if parts:
         s = "Short-term, " + ", ".join(parts) + "."
         if pd.notna(vol):
-            s += f" Realised volatility sits at the {vol*100:.0f}th percentile of its two-year range"
+            calm = "calm" if vol < 0.5 else "elevated" if vol < 0.7 else "turbulent"
+            s += f" Realised volatility sits at the {vol*100:.0f}th percentile of its two-year range ({calm})"
             if pd.notna(bb):
-                s += f", with Bollinger band width at {bb*100:.0f}%."
+                squeeze = " — a narrow reading that has often preceded a sharper move either way" if bb < 0.12 else ""
+                s += f", with Bollinger band width at {bb*100:.0f}%{squeeze}."
             else:
                 s += "."
+        if pd.notna(fng) and pd.notna(fz):
+            if fng >= 70 and fz < 0.5:
+                s += " Sentiment is running warmer than actual leverage, a milder setup than a fully leveraged rally."
+            elif fng <= 30 and fz > -0.5:
+                s += " Sentiment is more fearful than positioning suggests, which historically has left less room for a leverage-driven flush."
         out.append(s)
 
-    rsi_w, roc90, breadth, cross = (row.get(k) for k in ("rsi_w", "roc90", "breadth", "ma_cross"))
+    rsi_w, roc90, breadth, cross, act = (row.get(k) for k in ("rsi_w", "roc90", "breadth", "ma_cross", "activity"))
     parts = []
     if pd.notna(rsi_w):
-        parts.append(f"weekly RSI is {rsi_w:.0f}")
+        state = "overbought" if rsi_w >= 70 else "oversold" if rsi_w <= 35 else "neutral-to-firm"
+        parts.append(f"weekly RSI is {rsi_w:.0f} ({state})")
     if pd.notna(roc90):
         parts.append(f"the 90-day rate of change is {roc90*100:+.0f}%")
     if pd.notna(breadth):
@@ -164,22 +173,34 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
         if pd.notna(cross):
             side = "the golden-cross side" if cross > 0 else "the death-cross side"
             s += f" The 50/200-day average gap is {cross*100:+.1f}%, on {side}."
+        if pd.notna(act):
+            trend_word = "expanding" if act >= 1 else "contracting"
+            s += f" On-chain activity is {trend_word} versus its own year-average (ratio {act:.2f})."
+        if pd.notna(breadth) and pd.notna(roc90) and roc90 > 0 and breadth < 0.5:
+            s += " The gap between the headline price gain and this thinner participation is the main tension in this window."
         out.append(s)
 
-    mayer, slope, ma200w, dd, puell = (row.get(k) for k in ("mayer", "ma_slope", "ma_200w", "drawdown", "puell"))
+    mayer, slope, ma200w, dd, puell, pi_gap = (
+        row.get(k) for k in ("mayer", "ma_slope", "ma_200w", "drawdown", "puell", "pi_gap")
+    )
     parts = []
     if pd.notna(mayer):
         parts.append(f"price is {'above' if mayer >= 1 else 'below'} its 200-day average (Mayer Multiple {mayer:.2f})")
     if pd.notna(slope):
         parts.append(f"that average is {'rising' if slope >= 0 else 'falling'} ({slope*100:+.1f}% over 90 days)")
     if pd.notna(ma200w):
-        parts.append(f"the 200-week multiple is {ma200w:.2f}")
+        val_word = "stretched" if ma200w >= 3 else "near the floor" if ma200w <= 1.1 else "mid-cycle"
+        parts.append(f"the 200-week multiple is {ma200w:.2f} ({val_word})")
     if pd.notna(dd) and dd < -0.05:
         parts.append(f"price is {abs(dd)*100:.0f}% below its all-time high")
     if parts:
         s = "Long-term, " + ", ".join(parts) + "."
         if pd.notna(puell):
-            s += f" The Puell Multiple is {puell:.2f} (context only — not scored)."
+            miner_word = "capitulation" if puell <= 0.6 else "euphoria" if puell >= 3 else "a normal range"
+            s += f" The Puell Multiple is {puell:.2f}, in {miner_word} for miner economics (context only — not scored)."
+        if pd.notna(pi_gap):
+            s += (f" The Pi-Cycle gap is {pi_gap*100:+.1f}% (context only — not scored; "
+                  "this measure has historically moved above zero near past cycle tops).")
         out.append(s)
 
     return out
