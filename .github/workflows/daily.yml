@@ -26,6 +26,8 @@ jobs:
       - run: pip install -r backend/requirements.txt
 
       - name: Build today's reading
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python backend/run_daily.py
 
       - name: Refresh backtest scorecard

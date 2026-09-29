@@ -55,6 +55,18 @@ def build_payload() -> dict:
     prev = st.iloc[-2] if len(st) > 1 else None
     fr = friendly_row(row, prev)
 
+    # live-only fields (dominance, OI, DVOL, ETF flow, etc.) have no history to fall
+    # back on, so a transient fetch failure -- or simply running without FRED_API_KEY --
+    # would otherwise blank out a value that was already good. Carry the previous run's
+    # value forward instead of overwriting it with null.
+    try:
+        old_ctx = json.loads(LATEST.read_text())["context"]
+    except Exception:
+        old_ctx = {}
+
+    def _carry(key, new_val):
+        return new_val if new_val is not None else old_ctx.get(key)
+
     dom = btc_dominance_live()
     oi = open_interest_live()
     ls_ratio = long_short_ratio_live()
@@ -99,21 +111,21 @@ def build_payload() -> dict:
             "fear_greed": _f(row["fng"]),
             "funding_z": _f(row["funding_z"]),
             "vol_percentile": _f(row["vol_pctl"]),
-            "btc_dominance": None if dom is None else round(dom, 1),
+            "btc_dominance": _carry("btc_dominance", None if dom is None else round(dom, 1)),
             "ma_cross": _f(row["ma_cross"]),
             "roc_90d": _f(row["roc90"]),
             "breadth_90d": _f(row["breadth"]),
             "ssr": _f(row["ssr"]),
             "pi_cycle_gap": _f(row["pi_gap"]),
-            "open_interest_usd": oi,
-            "long_short_ratio": ls_ratio,
-            "dvol": dvol,
-            "us_10y_yield": y10,
-            "vix": vix,
-            "fed_funds_rate": fed_funds,
-            "etf_daily_net_flow_usd": None if etf is None else etf["daily_net_flow_usd"],
-            "etf_cum_net_flow_usd": None if etf is None else etf["cum_net_flow_usd"],
-            "public_company_btc_treasury": corp_treasury,
+            "open_interest_usd": _carry("open_interest_usd", oi),
+            "long_short_ratio": _carry("long_short_ratio", ls_ratio),
+            "dvol": _carry("dvol", dvol),
+            "us_10y_yield": _carry("us_10y_yield", y10),
+            "vix": _carry("vix", vix),
+            "fed_funds_rate": _carry("fed_funds_rate", fed_funds),
+            "etf_daily_net_flow_usd": _carry("etf_daily_net_flow_usd", None if etf is None else etf["daily_net_flow_usd"]),
+            "etf_cum_net_flow_usd": _carry("etf_cum_net_flow_usd", None if etf is None else etf["cum_net_flow_usd"]),
+            "public_company_btc_treasury": _carry("public_company_btc_treasury", corp_treasury),
         },
         "text": fr["text"],
         "disclaimer": DISCLAIMER,
