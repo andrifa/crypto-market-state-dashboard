@@ -21,7 +21,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from fetch import build_frame, btc_dominance_live
+from fetch import (
+    build_frame, btc_dominance_live, open_interest_live, long_short_ratio_live,
+    dvol_live, us_10y_yield_live, vix_live, fed_funds_rate_live,
+)
 from state import build_state
 from reading import friendly_row
 
@@ -52,6 +55,12 @@ def build_payload() -> dict:
     fr = friendly_row(row, prev)
 
     dom = btc_dominance_live()
+    oi = open_interest_live()
+    ls_ratio = long_short_ratio_live()
+    dvol = dvol_live()
+    y10 = us_10y_yield_live()
+    vix = vix_live()
+    fed_funds = fed_funds_rate_live()
 
     payload = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -93,6 +102,12 @@ def build_payload() -> dict:
             "breadth_90d": _f(row["breadth"]),
             "ssr": _f(row["ssr"]),
             "pi_cycle_gap": _f(row["pi_gap"]),
+            "open_interest_usd": oi,
+            "long_short_ratio": ls_ratio,
+            "dvol": dvol,
+            "us_10y_yield": y10,
+            "vix": vix,
+            "fed_funds_rate": fed_funds,
         },
         "text": fr["text"],
         "disclaimer": DISCLAIMER,

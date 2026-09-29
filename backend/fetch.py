@@ -1,5 +1,5 @@
 """
-Data layer — 100% free sources, no API keys.
+Data layer — free sources; every one is keyless except fed_funds_rate_live.
 
 Sources
 -------
@@ -9,12 +9,22 @@ Fear & Greed Index .......... alternative.me /fng                        (histor
 Perp funding (BTC, ETH) ..... Binance        /fapi/v1/fundingRate        (history to ~2019-2020)
 Stablecoin total supply ..... DefiLlama      /stablecoincharts/all       (history to ~2018)
 BTC dominance (live only) ... CoinGecko      /global                     (context, forward-logged)
+Open interest (live only) ... Binance        /futures/data/openInterestHist        (~30d retention on the source)
+Long/short ratio (live) ..... Binance        /futures/data/globalLongShortAccountRatio (~30d retention on the source)
+DVOL (live only) ............ Deribit        /public/get_volatility_index_data
+US 10Y yield (live only) .... Yahoo Finance  /v8/finance/chart/%5ETNX
+VIX (live only) ............. Yahoo Finance  /v8/finance/chart/%5EVIX
+Fed Funds Rate (live, opt) .. FRED           /fred/series/observations   (needs FRED_API_KEY env var; skips to None without it)
 
-Every fetch is cached to data/raw/*.csv. Re-run with --refresh to force a re-pull.
-All series are indexed by tz-naive UTC midnight timestamps (daily).
+The five "live only" sources above have no useful public history (either the
+exchange only retains ~30 days, or it's simplest as a forward-logged context
+factor like dominance) — they're read fresh each run, not backfilled.
+Every other fetch is cached to data/raw/*.csv. Re-run with --refresh to force
+a re-pull. All series are indexed by tz-naive UTC midnight timestamps (daily).
 """
 from __future__ import annotations
 
+import os
 import sys
 import time
 from pathlib import Path
@@ -227,6 +237,85 @@ def btc_dominance_live() -> float | None:
     try:
         js = _get("https://api.coingecko.com/api/v3/global", tries=2)
         return float(js["data"]["market_cap_percentage"]["btc"])
+    except Exception:
+        return None
+
+
+# --------------------------------------------------------------------------- #
+# Positioning, volatility & macro — live snapshots only (context factors).
+# Binance's futures history endpoints only retain ~30 days regardless of the
+# limit requested, so (like btc_dominance_live) these just read today's value
+# rather than pretending to backfill years of history that isn't there.
+# --------------------------------------------------------------------------- #
+def open_interest_live(symbol: str = "BTCUSDT") -> float | None:
+    """BTC futures open interest, USD notional. Binance, no key."""
+    try:
+        js = _get("https://fapi.binance.com/futures/data/openInterestHist",
+                   {"symbol": symbol, "period": "1d", "limit": 1}, tries=2)
+        return float(js[-1]["sumOpenInterestValue"])
+    except Exception:
+        return None
+
+
+def long_short_ratio_live(symbol: str = "BTCUSDT") -> float | None:
+    """Binance global accounts long/short ratio (>1 = more accounts long). No key."""
+    try:
+        js = _get("https://fapi.binance.com/futures/data/globalLongShortAccountRatio",
+                   {"symbol": symbol, "period": "1d", "limit": 1}, tries=2)
+        return float(js[-1]["longShortRatio"])
+    except Exception:
+        return None
+
+
+def dvol_live(currency: str = "BTC") -> float | None:
+    """Deribit's DVOL — 30-day implied volatility index. Public endpoint, no key."""
+    try:
+        js = _get("https://www.deribit.com/api/v2/public/get_volatility_index_data",
+                   {"currency": currency, "resolution": 86400,
+                    "start_timestamp": int((time.time() - 3 * 86400) * 1000),
+                    "end_timestamp": int(time.time() * 1000)}, tries=2)
+        rows = js["result"]["data"]
+        return float(rows[-1][4])  # [ts, open, high, low, close]
+    except Exception:
+        return None
+
+
+def us_10y_yield_live() -> float | None:
+    """US 10-year Treasury yield, %. Yahoo Finance ^TNX, no key."""
+    try:
+        js = _get("https://query1.finance.yahoo.com/v8/finance/chart/%5ETNX",
+                   {"range": "5d", "interval": "1d"}, tries=2)
+        return float(js["chart"]["result"][0]["meta"]["regularMarketPrice"])
+    except Exception:
+        return None
+
+
+def vix_live() -> float | None:
+    """CBOE Volatility Index. Yahoo Finance ^VIX, no key."""
+    try:
+        js = _get("https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX",
+                   {"range": "5d", "interval": "1d"}, tries=2)
+        return float(js["chart"]["result"][0]["meta"]["regularMarketPrice"])
+    except Exception:
+        return None
+
+
+def fed_funds_rate_live() -> float | None:
+    """
+    Effective Fed Funds Rate, %. FRED (St. Louis Fed) — the one series here that
+    needs a free API key (https://fred.stlouisfed.org/docs/api/api_key.html),
+    read from the FRED_API_KEY env var. Returns None if the key isn't set, so
+    this degrades quietly rather than failing the whole run — the rate only
+    moves ~8x/year around FOMC meetings, so a missing day costs little.
+    """
+    api_key = os.environ.get("FRED_API_KEY")
+    if not api_key:
+        return None
+    try:
+        js = _get("https://api.stlouisfed.org/fred/series/observations",
+                   {"series_id": "FEDFUNDS", "api_key": api_key, "file_type": "json",
+                    "sort_order": "desc", "limit": 1}, tries=2)
+        return float(js["observations"][0]["value"])
     except Exception:
         return None
 
