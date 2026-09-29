@@ -24,6 +24,7 @@ import pandas as pd
 from fetch import (
     build_frame, btc_dominance_live, open_interest_live, long_short_ratio_live,
     dvol_live, us_10y_yield_live, vix_live, fed_funds_rate_live,
+    etf_btc_flow_live, public_company_btc_treasury_live,
 )
 from state import build_state
 from reading import friendly_row
@@ -61,6 +62,8 @@ def build_payload() -> dict:
     y10 = us_10y_yield_live()
     vix = vix_live()
     fed_funds = fed_funds_rate_live()
+    etf = etf_btc_flow_live()
+    corp_treasury = public_company_btc_treasury_live()
 
     payload = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -108,6 +111,9 @@ def build_payload() -> dict:
             "us_10y_yield": y10,
             "vix": vix,
             "fed_funds_rate": fed_funds,
+            "etf_daily_net_flow_usd": None if etf is None else etf["daily_net_flow_usd"],
+            "etf_cum_net_flow_usd": None if etf is None else etf["cum_net_flow_usd"],
+            "public_company_btc_treasury": corp_treasury,
         },
         "text": fr["text"],
         "disclaimer": DISCLAIMER,

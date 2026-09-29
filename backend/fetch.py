@@ -15,16 +15,21 @@ DVOL (live only) ............ Deribit        /public/get_volatility_index_data
 US 10Y yield (live only) .... Yahoo Finance  /v8/finance/chart/%5ETNX
 VIX (live only) ............. Yahoo Finance  /v8/finance/chart/%5EVIX
 Fed Funds Rate (live, opt) .. FRED           /fred/series/observations   (needs FRED_API_KEY env var; skips to None without it)
+BTC ETF flow (live only) .... SoSoValue      undocumented JSON endpoint, POST  (Farside is Cloudflare-blocked; this isn't)
+Corp. treasury BTC (live) ... bitcointreasuries.net homepage, HTML scrape (regex on server-rendered totals)
 
-The five "live only" sources above have no useful public history (either the
+The seven "live only" sources above have no useful public history (either the
 exchange only retains ~30 days, or it's simplest as a forward-logged context
-factor like dominance) — they're read fresh each run, not backfilled.
+factor like dominance) — they're read fresh each run, not backfilled. The
+last two are undocumented endpoints / HTML scrapes found by testing rather
+than a published API, so they're the most likely of anything here to break.
 Every other fetch is cached to data/raw/*.csv. Re-run with --refresh to force
 a re-pull. All series are indexed by tz-naive UTC midnight timestamps (daily).
 """
 from __future__ import annotations
 
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -54,6 +59,22 @@ def _get(url: str, params: dict | None = None, tries: int = 4, pause: float = 2.
             last = e
             time.sleep(pause * (i + 1))
     raise RuntimeError(f"GET failed after {tries} tries: {url} :: {last}")
+
+
+def _post(url: str, json_body: dict, tries: int = 3, pause: float = 2.0):
+    last = None
+    for i in range(tries):
+        try:
+            r = requests.post(url, json=json_body, headers=UA, timeout=TIMEOUT)
+            if r.status_code == 429:
+                time.sleep(pause * (i + 2))
+                continue
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:  # noqa: BLE001
+            last = e
+            time.sleep(pause * (i + 1))
+    raise RuntimeError(f"POST failed after {tries} tries: {url} :: {last}")
 
 
 def _daily_index(ts_ms) -> pd.DatetimeIndex:
@@ -316,6 +337,46 @@ def fed_funds_rate_live() -> float | None:
                    {"series_id": "FEDFUNDS", "api_key": api_key, "file_type": "json",
                     "sort_order": "desc", "limit": 1}, tries=2)
         return float(js["observations"][0]["value"])
+    except Exception:
+        return None
+
+
+def etf_btc_flow_live() -> dict | None:
+    """
+    US spot BTC ETF flows via SoSoValue's own JSON endpoint. Undocumented (found
+    by testing, not from published API docs) and no key needed — could change
+    shape or start requiring auth without notice, so treat as best-effort.
+    Farside (the more commonly cited source) blocks plain HTTP with a Cloudflare
+    JS challenge and isn't reachable this way at all.
+    Returns {"daily_net_flow_usd", "cum_net_flow_usd", "total_net_assets_usd"}.
+    """
+    try:
+        js = _post("https://api.sosovalue.xyz/openapi/v2/etf/currentEtfDataMetrics",
+                    {"type": "us-btc-spot"}, tries=2)
+        d = js["data"]
+        return {
+            "daily_net_flow_usd": float(d["dailyNetInflow"]["value"]),
+            "cum_net_flow_usd": float(d["cumNetInflow"]["value"]),
+            "total_net_assets_usd": float(d["totalNetAssets"]["value"]),
+        }
+    except Exception:
+        return None
+
+
+def public_company_btc_treasury_live() -> float | None:
+    """
+    BTC held by publicly traded companies, from bitcointreasuries.net's homepage.
+    Plain HTML scrape (regex on the server-rendered category totals) — no API,
+    no key, but depends on their markup staying the same shape. Unlike Farside,
+    this page isn't behind a Cloudflare JS challenge for a simple GET.
+    """
+    try:
+        r = requests.get("https://bitcointreasuries.net/", headers=UA, timeout=TIMEOUT)
+        r.raise_for_status()
+        r.encoding = "utf-8"  # the server doesn't declare charset, so requests mis-guesses
+        # otherwise, mangling the ₿ symbol just before the number
+        m = re.search(r'href="/"[^>]*>.{0,600}?font-btc[^>]*>[^<]{0,6}</span>\s*([\d,]+)', r.text)
+        return float(m.group(1).replace(",", "")) if m else None
     except Exception:
         return None
 

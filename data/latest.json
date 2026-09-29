@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-09-29T00:37:14Z",
+  "updated_utc": "2026-09-29T00:43:23Z",
   "date": "2026-09-29",
-  "price_btc": 83608,
+  "price_btc": 83524,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "market in an uptrend",
@@ -29,7 +29,7 @@
     "sentiment": 0.425
   },
   "context": {
-    "mayer_multiple": 1.174,
+    "mayer_multiple": 1.173,
     "ma200_slope_90d": -0.0532,
     "ma_200w_multiple": 1.27,
     "drawdown_from_ath": -0.33,
@@ -41,7 +41,7 @@
     "vol_percentile": 0.5,
     "btc_dominance": 58.3,
     "ma_cross": 0.0797,
-    "roc_90d": 0.3934,
+    "roc_90d": 0.392,
     "breadth_90d": 0.467,
     "ssr": 5.44,
     "pi_cycle_gap": -0.5557,
@@ -50,7 +50,10 @@
     "dvol": 36.02,
     "us_10y_yield": 5.24,
     "vix": 16.07,
-    "fed_funds_rate": null
+    "fed_funds_rate": null,
+    "etf_daily_net_flow_usd": -12871872.0,
+    "etf_cum_net_flow_usd": 57555266921.518,
+    "public_company_btc_treasury": 1275672.0
   },
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum stable · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 17% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
