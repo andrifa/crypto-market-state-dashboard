@@ -97,6 +97,7 @@ def build_payload() -> dict:
         "reasons": fr["reasons"],
         "watch": fr["watch"],
         "analysis": fr["analysis"],
+        "team_notes": {"marketing": fr["marketing_note"]},
         "changed_today": fr["change"],
         "scores": {
             "trend": _f(row["trend_score"]),
@@ -154,6 +155,9 @@ def build_payload() -> dict:
         old_detail = old_payload.get("action", {}).get("detail")
         if old_detail:
             payload["action"]["detail"] = old_detail
+        old_marketing = old_payload.get("team_notes", {}).get("marketing")
+        if old_marketing:
+            payload["team_notes"]["marketing"] = old_marketing
 
     return payload, st
 

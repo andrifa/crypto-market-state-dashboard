@@ -185,6 +185,56 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
     return out
 
 
+def marketing_note(row: pd.Series) -> str:
+    """
+    Rule-based fallback for the Marketing card in "Implications by team" -- unlike
+    action_detail (overall budget posture), this is channel/messaging-specific and
+    grounded in the day's actual momentum/sentiment/breadth numbers, not just regime.
+    """
+    regime = row.get("regime", "Unknown")
+    cycle = row.get("cycle", "—")
+    conv = row.get("conviction")
+    conv = int(conv) if conv is not None and not pd.isna(conv) else None
+    band = row.get("sentiment_band", "—")
+    roc90, breadth = row.get("roc90"), row.get("breadth")
+
+    if regime == "Bull":
+        if "late uptrend" in CYCLE_LABEL.get(cycle, "") or (conv is not None and conv < 55):
+            s = "Lean toward non-stablecoin and active-trader channels, but keep the increase modest"
+        else:
+            s = "Scale acquisition spend toward non-stablecoin and active-trader channels"
+        bits = []
+        if pd.notna(roc90):
+            bits.append(f"the {roc90*100:.0f}% 90-day move gives campaigns a real growth story to lead with")
+        if pd.notna(breadth) and breadth < 0.5:
+            bits.append(f"breadth is only {breadth*100:.0f}%, so don't frame this as a broad, settled uptrend")
+        if band in ("Greed", "Extreme Greed"):
+            bits.append(f"sentiment ({band}) is already warm, so lead with the trend, not FOMO urgency")
+        return s + (" — " + "; ".join(bits) + "." if bits else ".")
+
+    if regime == "Neutral":
+        s = "Hold acquisition spend at plan across channels; there isn't a clear enough directional story yet to favour one channel over another."
+        if band in ("Fear", "Extreme Fear"):
+            s += f" Sentiment is {band.lower()}, so avoid greed-framed messaging until the picture clarifies."
+        elif band in ("Greed", "Extreme Greed"):
+            s += f" Sentiment ({band}) is running ahead of the actual trend, so avoid hype-driven creative."
+        return s
+
+    if regime == "Bear":
+        if cycle == "capitulation":
+            return ("Defend spend with a strict ROI stop-loss, but keep a scale-up plan ready — capitulation "
+                    "phases can turn quickly, and stablecoin-first messaging still fits until a turn is confirmed.")
+        s = "Shift messaging toward stablecoin products and defend spend with a strict ROI stop-loss"
+        if pd.notna(roc90) and roc90 < 0:
+            s += (f"; the {abs(roc90)*100:.0f}% 90-day decline is reason enough to trim active-trader channel "
+                  "spend specifically, since it tends to churn hardest here.")
+        else:
+            s += "."
+        return s
+
+    return "Not enough data yet to give channel-specific guidance."
+
+
 def watch(row: pd.Series) -> str | None:
     regime = row.get("regime")
     ts, ms = row.get("trend_score"), row.get("momentum_score")
@@ -233,6 +283,7 @@ def friendly_row(row: pd.Series, prev: pd.Series | None = None) -> dict:
         "change": change,
         "watch": watch(row),
         "analysis": analysis_paragraphs(row),
+        "marketing_note": marketing_note(row),
         "price": None if pd.isna(row.get("close")) else round(float(row["close"])),
     }
     d["text"] = render_text(d)

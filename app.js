@@ -295,8 +295,9 @@ const TEAM_NOTES = {
 function renderTeams(d) {
   const grid = document.getElementById("teams");
   grid.textContent = "";
-  (TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral).forEach(([name, text]) =>
-    grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text }))));
+  const dynamicNote = { Marketing: d.team_notes && d.team_notes.marketing };
+  (TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral).forEach(([name, fallback]) =>
+    grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text: dynamicNote[name] || fallback }))));
 }
 
 /* -------------------------- supporting signals: full 35-indicator catalog ----------- */
