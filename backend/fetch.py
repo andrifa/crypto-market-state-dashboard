@@ -191,6 +191,58 @@ def funding_rate(symbol: str = "BTCUSDT", refresh: bool = False) -> pd.Series:
     return daily
 
 
+def funding_rate_bybit(symbol: str = "BTCUSDT", refresh: bool = False) -> pd.Series:
+    """
+    Fallback for funding_rate(): Binance's futures API (fapi.binance.com) returns
+    HTTP 451 from US-hosted IPs, including GitHub Actions' shared runners — a
+    geo-block, confirmed by testing, not transient. Bybit's public funding-rate
+    endpoint isn't blocked the same way. History only goes back to ~Sep 2020
+    (vs Binance's ~2019), which just means funding_z has no value before that
+    -- it doesn't affect current scoring.
+    """
+    cache = RAW / f"funding_bybit_{symbol}.csv"
+    if cache.exists() and not refresh:
+        return pd.read_csv(cache, index_col=0, parse_dates=True)["funding"]
+
+    rows, end = [], int(time.time() * 1000)
+    floor = 1_598_918_400_000  # 2020-09-01, before Bybit's linear-perp launch
+    while end > floor:
+        js = _get("https://api.bybit.com/v5/market/funding/history",
+                   {"category": "linear", "symbol": symbol, "limit": 200, "endTime": end})
+        lst = js.get("result", {}).get("list", [])
+        if not lst:
+            break
+        rows.extend(lst)
+        end = min(int(x["fundingRateTimestamp"]) for x in lst) - 1
+        time.sleep(0.2)
+
+    raw = pd.Series(
+        [float(x["fundingRate"]) for x in rows],
+        index=pd.to_datetime([int(x["fundingRateTimestamp"]) for x in rows], unit="ms"),
+        name="funding",
+    )
+    daily = raw.groupby(raw.index.normalize()).mean()
+    daily.index.name = None
+    daily = daily[~daily.index.duplicated(keep="last")].sort_index()
+    daily.to_frame().to_csv(cache)
+    return daily
+
+
+def funding_rate_any(symbol_binance: str = "BTCUSDT", symbol_bybit: str = "BTCUSDT",
+                      refresh: bool = False) -> pd.Series:
+    """Binance first (longer history), Bybit if that's geo-blocked, empty series
+    (not a crash) if both fail -- a missing sentiment input shouldn't take down
+    the whole daily run."""
+    try:
+        return funding_rate(symbol_binance, refresh)
+    except Exception:
+        pass
+    try:
+        return funding_rate_bybit(symbol_bybit, refresh)
+    except Exception:
+        return pd.Series(dtype=float, name="funding")
+
+
 # --------------------------------------------------------------------------- #
 # Stablecoin total supply — DefiLlama
 # --------------------------------------------------------------------------- #
@@ -269,21 +321,42 @@ def btc_dominance_live() -> float | None:
 # rather than pretending to backfill years of history that isn't there.
 # --------------------------------------------------------------------------- #
 def open_interest_live(symbol: str = "BTCUSDT") -> float | None:
-    """BTC futures open interest, USD notional. Binance, no key."""
+    """
+    BTC futures open interest, USD notional. Binance's futures API blocks
+    US-hosted IPs (GitHub Actions included) with a 403/451 geo-block, so this
+    falls back to Bybit -- converted to USD via Binance's SPOT ticker, which
+    isn't blocked (only fapi.* is).
+    """
     try:
         js = _get("https://fapi.binance.com/futures/data/openInterestHist",
                    {"symbol": symbol, "period": "1d", "limit": 1}, tries=2)
         return float(js[-1]["sumOpenInterestValue"])
     except Exception:
+        pass
+    try:
+        js = _get("https://api.bybit.com/v5/market/open-interest",
+                   {"category": "linear", "symbol": symbol, "intervalTime": "1d", "limit": 1}, tries=2)
+        oi_coin = float(js["result"]["list"][0]["openInterest"])
+        price = float(_get("https://api.binance.com/api/v3/ticker/price", {"symbol": symbol}, tries=2)["price"])
+        return oi_coin * price
+    except Exception:
         return None
 
 
 def long_short_ratio_live(symbol: str = "BTCUSDT") -> float | None:
-    """Binance global accounts long/short ratio (>1 = more accounts long). No key."""
+    """Accounts long/short ratio (>1 = more accounts long). Binance first (futures
+    API, geo-blocked on GitHub Actions), Bybit as fallback."""
     try:
         js = _get("https://fapi.binance.com/futures/data/globalLongShortAccountRatio",
                    {"symbol": symbol, "period": "1d", "limit": 1}, tries=2)
         return float(js[-1]["longShortRatio"])
+    except Exception:
+        pass
+    try:
+        js = _get("https://api.bybit.com/v5/market/account-ratio",
+                   {"category": "linear", "symbol": symbol, "period": "1d", "limit": 1}, tries=2)
+        row = js["result"]["list"][0]
+        return float(row["buyRatio"]) / float(row["sellRatio"])
     except Exception:
         return None
 
@@ -411,12 +484,12 @@ def build_frame(refresh: bool = False) -> pd.DataFrame:
 
     fng = fear_greed(refresh).reindex(close.index)
 
-    f_btc = funding_rate("BTCUSDT", refresh)
-    try:
-        f_eth = funding_rate("ETHUSDT", refresh)
+    f_btc = funding_rate_any("BTCUSDT", "BTCUSDT", refresh)
+    f_eth = funding_rate_any("ETHUSDT", "ETHUSDT", refresh)
+    if len(f_btc) and len(f_eth):
         funding = pd.concat([f_btc, f_eth], axis=1).mean(axis=1)
-    except Exception:
-        funding = f_btc
+    else:
+        funding = f_btc if len(f_btc) else f_eth
     funding = funding.reindex(close.index)
 
     stbl = stablecoin_supply(refresh).reindex(close.index).ffill()
