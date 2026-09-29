@@ -1,13 +1,11 @@
 "use strict";
 
-/* Crypto Market State — dashboard renderer. Reads data/latest.json + data/history.csv. */
+/* Crypto Market State — dashboard renderer. Reads data/latest.json + data/history.csv.
+   DOM/CSS structure matches dashboard-prototype.html exactly; only the data source
+   changed from hardcoded constants to the real backend output. */
 
 const SVGNS = "http://www.w3.org/2000/svg";
 const SVG_TAGS = new Set(["svg", "path", "rect", "line", "text", "circle", "g", "polyline"]);
-
-const REG_KEY = { Bull: "Bull", Bear: "Bear", Neutral: "Neutral", Unknown: "Neutral" };
-const REG_VAR = { Bull: "var(--bull)", Bear: "var(--bear)", Neutral: "var(--neutral)" };
-const REG_WASH = { Bull: "var(--bull-wash)", Bear: "var(--bear-wash)", Neutral: "var(--neutral-wash)", Unknown: "transparent" };
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
   "August", "September", "October", "November", "December"];
 
@@ -15,140 +13,108 @@ const el = (tag, attrs = {}, ...kids) => {
   const e = SVG_TAGS.has(tag) ? document.createElementNS(SVGNS, tag) : document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
     if (v == null) continue;
-    if (k === "html") e.innerHTML = v;
+    if (k === "class") e.className = v;
+    else if (k === "html") e.innerHTML = v;
     else if (k === "text") e.textContent = v;
     else e.setAttribute(k, v);
   }
-  for (const k of kids) e.append(k instanceof Node ? k : document.createTextNode(k));
+  kids.forEach((k) => e.append(k instanceof Node ? k : document.createTextNode(k)));
   return e;
 };
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const fmtUSD = (n) => (n == null ? "—" : "$" + Math.round(n).toLocaleString("en-US"));
-const fmtUSDk = (n) => (n == null ? "—" : "$" + (n / 1000).toFixed(0) + "k");
 const fmtUSDm = (n, signed) => (n == null ? "—" : (n < 0 ? "-" : signed ? "+" : "") + "$" + Math.abs(n / 1e6).toFixed(1) + "M");
 const fmtUSDb = (n, signed) => (n == null ? "—" : (n < 0 ? "-" : signed ? "+" : "") + "$" + Math.abs(n / 1e9).toFixed(2) + "B");
 const fmtBTC = (n) => (n == null ? "—" : Math.round(n).toLocaleString("en-US") + " BTC");
 const fmtPct = (v, d = 0, signed) => (v == null || isNaN(v) ? "—" : (signed && v > 0 ? "+" : "") + (v * 100).toFixed(d) + "%");
 const fmtNum = (v, d = 2, signed) => (v == null || isNaN(v) ? "—" : (signed && v > 0 ? "+" : "") + (+v).toFixed(d));
 const numStr = (v, d) => (v == null || isNaN(v) ? "—" : (+v).toFixed(d));
-const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const fmtDate = (s) => { const [y, m, d] = s.split("-"); return `${+d} ${MONTHS[+m - 1]} ${y}`; };
-const panel = (...kids) => el("div", { class: "panel" }, ...kids);
-const ptitle = (t) => el("p", { class: "ptitle", text: t });
 
-/* ---- explanations: why each signal is in the model ---- */
-const DIM_WHY = {
-  Trend: "Where price sits versus its own 200-day average and whether that average is itself rising or falling — the cleanest definition of an up- or down-trend. A price spike above a still-falling average is what separates a real bull from a bear-market bounce. It also carries a valuation counterweight, the 200-week multiple, so a market stretched far above its long-term floor is scored more cautiously.",
-  Momentum: "How fast and how broadly the market is moving right now — weekly RSI, 90-day rate of change, the share of recent days that closed above the 200-day line, and the trend in active on-chain addresses. Momentum, and on-chain usage in particular, turns weeks before the slow trend average does, so it is what flags a bottom forming or a top rolling over early.",
-  Sentiment: "How crowded and emotional the market is — the Fear & Greed Index, perp funding, and the stablecoin ratio combined. At extremes it marks exhaustion (euphoria near tops, panic near bottoms); in the middle it simply confirms the trend. It never moves the headline label, only the confidence and the watch notes.",
-};
+const REG_CLASS = { Bull: "up", Bear: "down", Neutral: "mid", Unknown: "mid" };
 
 /* ---- full 35-indicator catalog, grouped horizon -> category -> items.
-   `key` reads data.context[key]; `key: null` means we don't have a free,
-   reliable source for it yet (see the "why not tracked" line) -- shown
-   honestly rather than guessed or hidden. */
+   key: null items have no free, reliable live source yet -- shown as "not tracked"
+   with the real reason, never guessed. `why` is exposed as a title= tooltip so the
+   flat ind-row layout (matching the prototype) doesn't need an expand affordance. */
 const CATALOG = [
-  { horizon: "Short-term signals", sub: "~1 week", cats: [
+  { section: "Short-term signals · ~1 week", cats: [
     { name: "Sentiment & Crowd Behavior", items: [
       { label: "Fear & Greed Index", key: "fear_greed", fmt: (v) => numStr(v, 0), note: (v, d) => d.sentiment_band,
-        why: "Daily composite of volatility, volume, social media and dominance, published by Alternative.me — the crowd-emotion gauge most of the industry references." },
-      { label: "Social Volume (X, Reddit)", key: null,
-        why: "Needs a paid social-listening feed (LunarCrush, Santiment) — not tracked yet." },
+        why: "Daily composite of volatility, volume, social media and dominance (Alternative.me)." },
+      { label: "Social Volume (X, Reddit)", key: null, why: "Needs a paid social-listening feed (LunarCrush, Santiment)." },
     ]},
     { name: "Positioning & Leverage", items: [
       { label: "Funding Rate (z-score)", key: "funding_z", fmt: (v) => fmtNum(v, 2, true), note: (v) => (Math.abs(v) >= 1.5 ? "stretched" : "normal"),
-        why: "The cost to hold a leveraged long on perpetual futures, standardised against its own recent range. Persistently high means crowded longs paying to stay in — fuel for a sharp correction." },
-      { label: "Open Interest", key: "open_interest_usd", fmt: (v) => fmtUSDb(v),
-        why: "Total value of open futures positions. A fast rise alongside a price rally usually means the move is leverage-driven, not spot-led — more prone to a sharp unwind." },
+        why: "Cost to hold a leveraged long, standardised against its own recent range." },
+      { label: "Open Interest", key: "open_interest_usd", fmt: (v) => fmtUSDb(v), why: "Total value of open futures positions." },
       { label: "Long / Short Ratio", key: "long_short_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v > 1 ? "long-tilted" : "short-tilted"),
-        why: "Ratio of accounts positioned long vs short on futures. Very one-sided readings are a contrarian flag — crowded positioning has historically preceded the opposite move." },
-      { label: "Liquidation Volume (24h)", key: null,
-        why: "Needs a paid derivatives feed (e.g. CoinGlass API) — not tracked yet." },
-      { label: "Exchange Netflow (7d)", key: null,
-        why: "Needs a paid on-chain provider (CryptoQuant, Glassnode) — not tracked yet." },
+        why: "Ratio of accounts positioned long vs short on futures." },
+      { label: "Liquidation Volume (24h)", key: null, why: "Needs a paid derivatives feed (e.g. CoinGlass API)." },
+      { label: "Exchange Netflow (7d)", key: null, why: "Needs a paid on-chain provider (CryptoQuant, Glassnode)." },
     ]},
     { name: "Volatility", items: [
       { label: "Realized Vol Percentile (30d)", key: "vol_percentile", fmt: (v) => fmtPct(v, 0), note: (v) => (v >= 0.7 ? "elevated" : "calm"),
-        why: "Where 30-day realised volatility sits within its trailing two-year range. Spikes cluster around capitulations and violent reversals." },
-      { label: "Implied Volatility (DVOL)", key: "dvol", fmt: (v) => fmtNum(v, 1),
-        why: "Deribit's 30-day implied-volatility index — the options market's own forecast of near-term price swings, not a trailing measure like realised vol." },
-      { label: "Bollinger Band Width", key: null,
-        why: "Derivable free from price history alone — just not wired into the pipeline yet." },
+        why: "Where 30-day realised volatility sits within its trailing two-year range." },
+      { label: "Implied Volatility (DVOL)", key: "dvol", fmt: (v) => fmtNum(v, 1), why: "Deribit's 30-day implied-volatility index." },
+      { label: "Bollinger Band Width", key: null, why: "Derivable free from price history alone — just not wired in yet." },
     ]},
     { name: "Catalysts & Events", items: [
-      { label: "Macro Calendar", key: null,
-        why: "No calendar feed wired in yet — FOMC/CPI dates are currently tracked manually." },
-      { label: "Raw News Headlines", key: null,
-        why: "Needs a news/sentiment API — not tracked yet." },
-      { label: "VIX", key: "vix", fmt: (v) => fmtNum(v, 1),
-        why: "CBOE equity volatility index — a read on broader risk appetite. Crypto often (not always) moves with, not against, equity-market fear." },
+      { label: "Macro Calendar", key: null, why: "No calendar feed wired in — FOMC/CPI dates tracked manually for now." },
+      { label: "Raw News Headlines", key: null, why: "Needs a news/sentiment API." },
+      { label: "VIX", key: "vix", fmt: (v) => fmtNum(v, 1), why: "CBOE equity volatility index — a read on broader risk appetite." },
     ]},
   ]},
-  { horizon: "Medium-term signals", sub: "~1 month", cats: [
+  { section: "Medium-term signals · ~1 month", cats: [
     { name: "Momentum", items: [
       { label: "Weekly RSI", key: "rsi_weekly", fmt: (v) => numStr(v, 0), note: (v) => (v >= 70 ? "overbought" : v <= 35 ? "oversold" : "neutral"),
-        why: "Relative Strength Index on a weekly candle, filtering out daily noise. Above 70 is overbought; below 35 is washed out." },
-      { label: "90-Day Rate of Change", key: "roc_90d", fmt: (v) => fmtPct(v, 0, true),
-        why: "Price now vs. 90 days ago. A simple, direct read on whether the medium-term trend is accelerating or stalling." },
-      { label: "Breadth (% days > MA200)", key: "breadth_90d", fmt: (v) => fmtPct(v, 0),
-        why: "Share of the last 90 days that closed above the 200-day average. Widening breadth means the uptrend is broadening, not just a few sharp days." },
-      { label: "50 / 200-Day MA Cross", key: "ma_cross", fmt: (v) => fmtPct(v, 1, true), note: (v) => (v > 0 ? "golden-cross side" : "death-cross side"),
-        why: "Gap between the 50-day and 200-day averages. Positive means the shorter average sits above the longer one (the golden-cross side) — a classic trend-following signal." },
+        why: "Relative Strength Index on a weekly candle." },
+      { label: "90-Day Rate of Change", key: "roc_90d", fmt: (v) => fmtPct(v, 0, true), why: "Price now vs. 90 days ago." },
+      { label: "Breadth (% days > MA200)", key: "breadth_90d", fmt: (v) => fmtPct(v, 0), why: "Share of the last 90 days closing above the 200-day average." },
+      { label: "50/200-Day MA Cross", key: "ma_cross", fmt: (v) => fmtPct(v, 1, true), note: (v) => (v > 0 ? "golden-cross side" : "death-cross side"),
+        why: "Gap between the 50-day and 200-day averages." },
     ]},
     { name: "On-Chain Demand", items: [
       { label: "Active Address Ratio", key: "active_addr_ratio", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 1 ? "expanding" : "contracting"),
-        why: "Daily active addresses vs. their own 365-day average. In the backtest this was the single most predictive input — rising on-chain usage led price more reliably than any price-only measure." },
-      { label: "Onchain / Spot Volume", key: null,
-        why: "Needs a paid on-chain volume feed — not tracked yet." },
-      { label: "Whale / Large-Holder Supply", key: null,
-        why: "Needs a paid on-chain provider (wallet-cluster data) — not tracked yet." },
+        why: "Daily active addresses vs. their own 365-day average." },
+      { label: "Onchain / Spot Volume", key: null, why: "Needs a paid on-chain volume feed." },
+      { label: "Whale / Large-Holder Supply", key: null, why: "Needs a paid on-chain provider (wallet-cluster data)." },
     ]},
     { name: "Sentiment (Aggregate)", items: [
-      { label: "Stablecoin Supply Ratio", key: "ssr", fmt: (v) => fmtNum(v, 2),
-        why: "BTC market cap divided by total stablecoin supply. A falling ratio means more stablecoin \"dry powder\" relative to BTC's size — room to keep buying." },
+      { label: "Stablecoin Supply Ratio", key: "ssr", fmt: (v) => fmtNum(v, 2), why: "BTC market cap divided by total stablecoin supply." },
     ]},
     { name: "Macro & Market Structure", items: [
-      { label: "BTC Dominance", key: "btc_dominance", fmt: (v) => fmtPct(v / 100, 1),
-        why: "Bitcoin's share of total crypto market cap. Falling dominance in an uptrend usually means risk appetite is spreading into altcoins." },
-      { label: "Fed Funds Rate", key: "fed_funds_rate", fmt: (v) => fmtPct(v / 100, 2),
-        why: "US policy rate (FRED). Hikes are a real headwind for risk assets generally, crypto included — a genuinely new variable, not a crypto-native one." },
-      { label: "Spot BTC ETF Flow (1d)", key: "etf_daily_net_flow_usd", fmt: (v) => fmtUSDm(v, true),
-        why: "Net daily flow into US spot BTC ETFs — the clearest read on real institutional spot demand, as opposed to leverage-driven futures activity." },
+      { label: "BTC Dominance", key: "btc_dominance", fmt: (v) => fmtPct(v / 100, 1), why: "Bitcoin's share of total crypto market cap." },
+      { label: "Fed Funds Rate", key: "fed_funds_rate", fmt: (v) => fmtPct(v / 100, 2), why: "US policy rate (FRED)." },
+      { label: "Spot BTC ETF Flow (1d)", key: "etf_daily_net_flow_usd", fmt: (v) => fmtUSDm(v, true), why: "Net daily flow into US spot BTC ETFs." },
     ]},
   ]},
-  { horizon: "Long-term signals", sub: "~3–6 months", cats: [
+  { section: "Long-term signals · ~3–6 months", cats: [
     { name: "Price Trend Structure", items: [
       { label: "Mayer Multiple", key: "mayer_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 1 ? "above trend" : "below trend"),
-        why: "Price divided by the 200-day average. Readings below ~1 have historically been accumulation zones; above ~2.4 has marked blow-off tops." },
+        why: "Price divided by the 200-day average." },
       { label: "MA200 Slope (90d)", key: "ma200_slope_90d", fmt: (v) => fmtPct(v, 1, true), note: (v) => (v >= 0 ? "rising" : "falling"),
-        why: "Change in the 200-day average itself over 90 days. A rising slope confirms an uptrend is structural, not just a relief rally." },
-      { label: "Pi-Cycle Top Gap", key: "pi_cycle_gap", fmt: (v) => fmtPct(v, 1, true),
-        why: "SMA111 vs. 2×SMA350. Historically crosses at or above zero close to major cycle tops — shown as context, not scored." },
+        why: "Change in the 200-day average itself over 90 days." },
+      { label: "Pi-Cycle Top Gap", key: "pi_cycle_gap", fmt: (v) => fmtPct(v, 1, true), why: "SMA111 vs. 2×SMA350 — historically crosses near cycle tops." },
     ]},
     { name: "Cycle Valuation", items: [
       { label: "200-Week Multiple", key: "ma_200w_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v >= 3 ? "stretched" : v <= 1.1 ? "near the floor" : "mid-cycle"),
-        why: "Price vs. its 200-week (~4-year) average — a line BTC has only briefly traded below, at generational lows. A valuation counterweight to the trend signals." },
+        why: "Price vs. its 200-week (~4-year) average." },
       { label: "Puell Multiple", key: "puell_multiple", fmt: (v) => fmtNum(v, 2), note: (v) => (v <= 0.6 ? "miner capitulation" : v >= 3 ? "miner euphoria" : "normal"),
-        why: "Daily miner revenue vs. its 365-day average. Very low readings have sat near cycle bottoms; very high readings cluster around tops. Shown as context — too noisy to score on this sample." },
-      { label: "Short-Term Holder Cost Basis", key: null,
-        why: "Needs a paid on-chain provider (UTXO-age data) — not tracked yet." },
-      { label: "LTH vs. STH Supply", key: null,
-        why: "Needs a paid on-chain provider (UTXO-age data) — not tracked yet." },
-      { label: "Drawdown from ATH", key: "drawdown_from_ath", fmt: (v) => fmtPct(v, 0),
-        why: "How far below the all-time high price currently sits — separates an early wobble from a full bear market even when both read as \"down\"." },
+        why: "Daily miner revenue vs. its 365-day average." },
+      { label: "Short-Term Holder Cost Basis", key: null, why: "Needs a paid on-chain provider (UTXO-age data)." },
+      { label: "LTH vs. STH Supply", key: null, why: "Needs a paid on-chain provider (UTXO-age data)." },
+      { label: "Drawdown from ATH", key: "drawdown_from_ath", fmt: (v) => fmtPct(v, 0), why: "How far below the all-time high price currently sits." },
     ]},
     { name: "Macro & Institutional", items: [
-      { label: "US 10-Year Yield", key: "us_10y_yield", fmt: (v) => fmtPct(v / 100, 2),
-        why: "Benchmark long-term US rate. A rising 10-year makes cash/bonds more competitive with risk assets — a slow but real headwind or tailwind." },
-      { label: "Corporate Treasury Holdings", key: "public_company_btc_treasury", fmt: (v) => fmtBTC(v),
-        why: "Total BTC held by publicly traded companies (bitcointreasuries.net). A slow-moving read on corporate-balance-sheet demand." },
-      { label: "Spot BTC ETF Flow (cumulative)", key: "etf_cum_net_flow_usd", fmt: (v) => fmtUSDb(v, true),
-        why: "All-time net flow into US spot BTC ETFs since launch — the multi-month trend behind the single-day number above." },
+      { label: "US 10-Year Yield", key: "us_10y_yield", fmt: (v) => fmtPct(v / 100, 2), why: "Benchmark long-term US rate." },
+      { label: "Corporate Treasury Holdings", key: "public_company_btc_treasury", fmt: (v) => fmtBTC(v), why: "BTC held by publicly traded companies (bitcointreasuries.net)." },
+      { label: "Spot BTC ETF Flow (cumulative)", key: "etf_cum_net_flow_usd", fmt: (v) => fmtUSDb(v, true), why: "All-time net flow into US spot BTC ETFs since launch." },
     ]},
   ]},
 ];
 
 async function main() {
-  const app = document.getElementById("app");
   let d, hist, bt = null;
   try {
     const [a, b] = await Promise.all([
@@ -157,30 +123,30 @@ async function main() {
     ]);
     d = a; hist = parseCSV(b);
   } catch (e) {
-    app.innerHTML = `<p class="err">Failed to load data: ${e.message}</p>`;
+    document.getElementById("app").innerHTML = `<p class="err">Failed to load data: ${e.message}</p>`;
     return;
   }
   try { bt = await fetch("data/backtest.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) { /* optional */ }
 
-  const k = REG_KEY[d.regime] || "Neutral";
-  document.getElementById("brandDot").style.background = REG_VAR[k];
+  const k = REG_CLASS[d.regime] || "mid";
+  document.getElementById("brandDot").style.background =
+    k === "up" ? "var(--teal-deep)" : k === "down" ? "var(--bear)" : "var(--purple)";
   document.getElementById("stamp").textContent =
     `${fmtDate(d.date)} · updated ${(d.updated_utc || "").replace("T", " ").replace("Z", " UTC")}`;
 
-  app.textContent = "";
-  app.append(
-    heroPanel(d, k),
-    dimensionsPanel(d),
-    haloChartPanel(hist),
-    analysisPanel(d),
-    triggersPanel(d),
-    teamsPanel(d),
-    signalsPanel(d),
-    scorecardPanel(bt),
-    methodologyPanel(),
-    el("p", { class: "disc", text: d.disclaimer || "" }),
-  );
-  wireExpanders(app);
+  renderHero(d, k);
+  renderOutlook(d, k);
+  renderAnalysis(d);
+  renderTriggers(d);
+  renderTeams(d);
+  renderSignals(d);
+  renderScorecard(bt);
+  renderMethodology();
+  document.getElementById("footer").textContent = d.disclaimer || "";
+
+  renderHalvingProgress();
+  renderRangeButtons();
+  renderChart(hist);
 }
 
 function parseCSV(txt) {
@@ -195,85 +161,80 @@ function parseCSV(txt) {
 }
 
 /* ------------------------------- hero ---------------------------- */
-function heroPanel(d, k) {
-  const p = el("div", { class: "panel hero" });
-  p.style.background = `color-mix(in srgb, ${REG_VAR[k]} 7%, var(--surface))`;
-  p.append(el("div", { class: "hero-row" },
+function renderHero(d, k) {
+  const hero = document.getElementById("hero");
+  hero.textContent = "";
+  hero.append(el("div", { class: "hero-top" },
     el("div", {},
-      el("h1", { class: "regime " + k, text: d.headline || "—" }),
-      el("div", { class: "regime-tag", text: d.headline_tag || "" })),
-    el("div", { class: "price" },
-      el("span", { class: "n", text: fmtUSD(d.price_btc) }),
-      el("span", { class: "l", text: "BTC" })),
-  ));
+      el("p", { class: "regime " + k, text: d.headline || "—" }),
+      el("div", { class: "regime-tag", text: d.headline_tag || "" }),
+      el("span", { class: "conf-tag " + (d.conviction_level || ""), text: "Overall confidence: " + (d.conviction_level || "—") })),
+    el("div", { class: "asof" }, fmtUSD(d.price_btc), el("br"), "BTC · as of " + fmtDate(d.date))));
 
-  const t = clamp((d.scores && d.scores.trend) ?? 0, -1, 1);
-  p.append(el("div", { class: "spectrum" },
-    el("div", { class: "track" }, el("div", { class: "mark", style: `left:${clamp(((t + 1) / 2) * 100, 3, 97)}%; color:${REG_VAR[k]}` })),
-    el("div", { class: "labels" }, el("span", { text: "Bearish" }), el("span", { text: "Neutral" }), el("span", { text: "Bullish" })),
-  ));
-
-  p.append(el("hr"));
-  p.append(el("div", { class: "action" },
-    el("div", { class: "lab", text: "Budget action" }),
-    el("div", { class: "title", text: (d.action && d.action.title) || "—" }),
-    el("div", { class: "detail", text: (d.action && d.action.detail) || "" }),
-    el("span", { class: "conf-tag " + (d.conviction_level || ""), text: "Overall confidence: " + (d.conviction_level || "—") }),
-  ));
-  return p;
-}
-
-/* -------------------------- dimensions (= directional outlook) ------------------------- */
-function dimensionsPanel(d) {
-  const s = d.scores || {};
-  const p = panel(ptitle("Engine dimensions — score −1 to +1"));
-  [["Trend", s.trend], ["Momentum", s.momentum], ["Sentiment", s.sentiment]].forEach(([lab, v]) => {
-    const body = el("div", {},
-      divBar(v ?? 0),
-      el("div", { class: "why-panel", hidden: "", text: DIM_WHY[lab] }));
-    p.append(expander(lab, v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(2), null, body));
-  });
-  return p;
-}
-function divBar(score) {
-  const W = 260, H = 16, mid = W / 2, span = W / 2 - 6, s = clamp(score, -1, 1), x = mid + s * span;
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
-  svg.append(el("rect", { x: 0, y: 5, width: W, height: 6, rx: 3, fill: "var(--hair)" }));
-  svg.append(el("rect", { x: Math.min(mid, x), y: 5, width: Math.abs(x - mid), height: 6, rx: 3, fill: s >= 0 ? "var(--rk-teal)" : "var(--bear)" }));
-  svg.append(el("line", { x1: mid, y1: 1, x2: mid, y2: 15, stroke: "var(--hair-strong)", "stroke-width": 1.5 }));
-  svg.append(el("circle", { cx: x, cy: 8, r: 4.5, fill: "var(--ink)" }));
-  return svg;
-}
-
-/* -------------------------- analysis (why + watch + levels) ------------------------ */
-function analysisPanel(d) {
-  const p = panel(ptitle("What's driving this"));
-  if (d.reasons && d.reasons.length) {
-    const ul = el("ul", { class: "why-ul" });
-    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
-    p.append(ul);
+  if (d.action && d.action.title) {
+    hero.append(el("div", { class: "takeaway", style: "margin-top:16px" },
+      el("b", { text: "Budget action — " + d.action.title }), d.action.detail || ""));
   }
-  if (d.watch) p.append(el("div", { class: "watch" }, el("b", { text: "Watch" }), document.createTextNode(d.watch)));
-  if (d.changed_today) p.append(el("div", { class: "changed", text: d.changed_today }));
+}
 
-  const c = d.context || {};
-  const price = d.price_btc;
+/* -------------------------- outlook (real trend/momentum/sentiment, ordered near->far) ---- */
+function renderOutlook(d, k) {
+  const c = d.context || {}, s = d.scores || {};
+  const conf = d.conviction_level || "MEDIUM";
+  const rows = [
+    { h: "Short-term", sub: "sentiment · ~1 week", score: s.sentiment,
+      text: c.fear_greed != null
+        ? `Fear &amp; Greed reads <b>${numStr(c.fear_greed, 0)} (${d.sentiment_band || "—"})</b>, funding sits at a <b>${fmtNum(c.funding_z, 2, true)}</b> z-score, and the stablecoin supply ratio is <b>${fmtNum(c.ssr, 2)}</b>.`
+        : "Sentiment inputs unavailable today." },
+    { h: "Medium-term", sub: "momentum · ~1 month", score: s.momentum,
+      text: c.rsi_weekly != null
+        ? `Weekly RSI is <b>${numStr(c.rsi_weekly, 0)}</b>, the 90-day rate of change is <b>${fmtPct(c.roc_90d, 0, true)}</b>, and breadth is <b>${fmtPct(c.breadth_90d, 0)}</b> of the last 90 days above the 200-day average.`
+        : "Momentum inputs unavailable today." },
+    { h: "Long-term", sub: "trend · ~3–6 months", score: s.trend,
+      text: c.mayer_multiple != null
+        ? `Price is <b>${c.mayer_multiple >= 1 ? "above" : "below"}</b> its 200-day average (Mayer Multiple <b>${fmtNum(c.mayer_multiple, 2)}</b>), which is itself <b>${c.ma200_slope_90d >= 0 ? "rising" : "falling"}</b> (${fmtPct(c.ma200_slope_90d, 1, true)} over 90 days). The 200-week multiple is <b>${fmtNum(c.ma_200w_multiple, 2)}</b>.`
+        : "Trend inputs unavailable today." },
+  ];
+  const box = document.getElementById("outlook");
+  box.textContent = "";
+  rows.forEach((o) => {
+    const score = clamp(o.score ?? 0, -1, 1);
+    const pct = ((score + 1) / 2) * 100;
+    const color = score > 0.15 ? "var(--teal-deep)" : score < -0.15 ? "var(--bear)" : "var(--purple-2)";
+    box.append(el("div", { class: "outlook-row" },
+      el("div", { class: "outlook-head" },
+        el("div", { class: "h" }, o.h, el("span", { text: o.sub })),
+        el("span", { class: "conf-tag " + conf, text: conf })),
+      el("div", { class: "spectrum" }, el("div", { class: "mark", style: `left:${pct}%; color:${color}` })),
+      el("div", { class: "spectrum-labels" }, el("span", { text: "Bearish" }), el("span", { text: "Neutral" }), el("span", { text: "Bullish" })),
+      el("p", { class: "scenario", html: o.text })));
+  });
+}
+
+/* -------------------------- analysis: reasons + watch + levels ---------------------- */
+function renderAnalysis(d) {
+  const box = document.getElementById("analysis");
+  box.textContent = "";
+  if (d.reasons && d.reasons.length) {
+    const ul = el("ul");
+    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
+    box.append(ul);
+  }
+  if (d.watch) box.append(el("div", { class: "takeaway" }, el("b", { text: "Watch" }), d.watch));
+
+  const c = d.context || {}, price = d.price_btc;
   const levels = [];
   if (price != null && c.drawdown_from_ath != null) levels.push([fmtUSD(price / (1 + c.drawdown_from_ath)), "all-time high"]);
   if (price != null && c.mayer_multiple) levels.push([fmtUSD(price / c.mayer_multiple), "200-day moving average"]);
   if (price != null && c.ma_200w_multiple) levels.push([fmtUSD(price / c.ma_200w_multiple), "200-week moving average"]);
   levels.push([fmtUSD(price), "spot price — today"]);
-  if (levels.length) {
-    const lv = el("div", { class: "levels" });
-    levels.forEach(([v, lab]) => lv.append(el("div", { class: "level" }, el("b", { text: v }), el("span", { text: lab }))));
-    p.append(lv);
-  }
-  return p;
+  const lv = el("div", { class: "levels" });
+  levels.forEach(([v, lab]) => lv.append(el("div", { class: "level" }, el("b", { text: v }), el("span", { text: lab }))));
+  box.append(lv);
 }
 
-/* -------------------------- triggers (derived, not fabricated) ------------------------ */
-function triggersPanel(d) {
-  const p = panel(ptitle("What would change this view"));
+/* -------------------------- triggers (derived from real numbers) -------------------- */
+function renderTriggers(d) {
   const c = d.context || {};
   const T = 0.15; // state.py CONFIG.regime_T
   const ma200 = c.mayer_multiple ? d.price_btc / c.mayer_multiple : null;
@@ -284,17 +245,16 @@ function triggersPanel(d) {
     const side = d.price_btc >= ma200 ? "breaks back below" : "reclaims";
     list.push([`Price ${side} the 200-day average (<b>${fmtUSD(ma200)}</b>)`, "Directly moves the Trend score — the single biggest lever on the headline"]);
   }
-  list.push(["Weekly RSI moves past <b>70</b> (overbought) or below <b>35</b> (oversold)", "Flags a Momentum stretch — often precedes a change in the confidence score"]);
-  if (c.fear_greed != null) list.push([`Fear &amp; Greed moves to the opposite extreme of today's <b>${Math.round(c.fear_greed)}</b>`, "Sentiment dimension flips direction, changing overall confidence"]);
+  list.push(["Weekly RSI moves past <b>70</b> (overbought) or below <b>35</b> (oversold)", "Flags a Momentum stretch — often precedes a change in confidence"]);
+  if (c.fear_greed != null) list.push([`Fear &amp; Greed moves to the opposite extreme of today's <b>${numStr(c.fear_greed, 0)}</b>`, "Sentiment dimension flips direction, changing overall confidence"]);
 
-  const box = el("div", {});
+  const box = document.getElementById("triggers");
+  box.textContent = "";
   list.forEach(([cond, effect]) => box.append(el("div", { class: "trigger" }, el("span", { class: "arrow", text: "→" }),
-    el("div", { class: "cond" }, el("span", { html: cond }), " — ", effect))));
-  p.append(box);
-  return p;
+    el("div", { class: "cond" }, el("b", { html: cond }), " — ", effect))));
 }
 
-/* -------------------------- implications by team (rule-based on regime) ------------------------ */
+/* -------------------------- implications by team (rule-based on regime) ------------- */
 const TEAM_NOTES = {
   Bull: [
     ["Leadership", "Uptrend is confirmed by the model — a reasonable base case for planning, not just an upside scenario."],
@@ -318,72 +278,53 @@ const TEAM_NOTES = {
     ["Research", "Owns: watching for capitulation signals (sentiment + volatility extremes) that flag a turn forming."],
   ],
 };
-function teamsPanel(d) {
-  const p = panel(ptitle("Implications by team"));
-  const rows = TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral;
-  const grid = el("div", { class: "teamgrid" });
-  rows.forEach(([name, text]) => grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text }))));
-  p.append(grid);
-  return p;
+function renderTeams(d) {
+  const grid = document.getElementById("teams");
+  grid.textContent = "";
+  (TEAM_NOTES[d.regime] || TEAM_NOTES.Neutral).forEach(([name, text]) =>
+    grid.append(el("div", { class: "teamcard" }, el("h4", { text: name }), el("p", { text }))));
 }
 
-/* -------------------------- supporting signals: full 35-indicator catalog ------------------------ */
-function signalsPanel(d) {
+/* -------------------------- supporting signals: full 35-indicator catalog ----------- */
+function renderSignals(d) {
   const c = d.context || {};
-  const p = panel(ptitle("Supporting signals — full catalog"));
-  p.append(el("p", { class: "cat-note", text: "35 indicators considered for this model. 25 have a free, live data feed and are shown with today's value; the rest are marked \"not tracked\" with the reason, not guessed." }));
+  const grid = document.getElementById("grid");
+  grid.textContent = "";
+  grid.append(el("p", { class: "cat-note",
+    text: "35 indicators considered for this model. 25 have a free, live feed and show today's value below; the rest are marked \"not tracked\" with the real reason — hover a row for why it's in the model." }));
   CATALOG.forEach((group) => {
-    p.append(el("h3", { class: "sig-h", text: `${group.horizon} · ${group.sub}` }));
+    grid.append(el("div", { class: "sig-section" }, el("h3", { text: group.section })));
     const cg = el("div", { class: "catgrid" });
     group.cats.forEach((cat) => {
       const card = el("div", { class: "catcard" }, el("h4", { text: cat.name }));
       cat.items.forEach((item) => {
         const has = item.key != null && c[item.key] != null && !isNaN(c[item.key]);
         const disp = has ? item.fmt(c[item.key]) : "not tracked";
-        const note = has && item.note ? item.note(c[item.key], d) : "";
-        const body = el("div", { class: "why-panel", hidden: "", text: item.why });
-        card.append(expander(item.label, disp, note, body, !has));
+        const note = has && item.note ? item.note(c[item.key], d) : (has ? "" : "");
+        card.append(el("div", { class: "ind" },
+          el("div", { class: "ind-row", title: item.why },
+            el("span", { class: "ind-name", text: item.label }),
+            el("span", { class: "ind-val" + (has ? "" : " dim") }, disp, note ? el("span", { class: "ind-note", text: note }) : ""))));
       });
       cg.append(card);
     });
-    p.append(cg);
-  });
-  return p;
-}
-
-/* generic expandable row */
-function expander(name, read, note, body, dim) {
-  const btn = el("button", { class: "exp" + (dim ? " dim" : ""), type: "button", "aria-expanded": "false" },
-    el("div", { class: "exp-head" },
-      el("span", { class: "name", text: name }),
-      el("span", { class: "read", html: `${read}${note ? ` <em>${note}</em>` : ""}` }),
-      el("span", { class: "chev", text: "▶" })),
-    body);
-  return btn;
-}
-function wireExpanders(root) {
-  root.querySelectorAll("button.exp").forEach((b) => {
-    b.addEventListener("click", () => {
-      const open = b.getAttribute("aria-expanded") === "true";
-      b.setAttribute("aria-expanded", String(!open));
-      const wp = b.querySelector(".why-panel");
-      if (wp) wp.hidden = open;
-    });
+    grid.append(cg);
   });
 }
 
-/* -------------------------- scorecard ----------------------- */
-function scorecardPanel(bt) {
+/* -------------------------- scorecard (same visual system) -------------------------- */
+function renderScorecard(bt) {
+  const p = document.getElementById("scorecard");
+  p.textContent = "";
   const sc = bt && bt.scorecard;
-  if (!sc) return document.createTextNode("");
+  if (!sc) { p.remove(); return; }
   const D = sc.directional || {};
   const d90 = D[90] || D["90"] || {};
   const pc = (x) => (x == null ? "—" : Math.round(x * 100) + "%");
-  const p = panel(ptitle("Backtest accuracy"));
+  p.append(el("p", { class: "kicker", text: "Backtest accuracy" }));
 
   const stats = el("div", { class: "stats" });
-  const stat = (big, lab) => el("div", { class: "stat" },
-    el("div", { class: "big", text: big }), el("div", { class: "lab", text: lab }));
+  const stat = (big, lab) => el("div", { class: "stat" }, el("div", { class: "big", text: big }), el("div", { class: "lab", text: lab }));
   stats.append(
     stat(pc(sc.phase_agree_rate), "days the label matched the market's actual bull / bear phase"),
     stat(sc.turns_detected || "—", `major cycle turns flagged (median ${sc.turn_median_lag_days ?? "—"} days late)`),
@@ -399,53 +340,46 @@ function scorecardPanel(bt) {
     const r = D[h] || D[String(h)];
     if (!r) return;
     tbl.append(el("tr", { style: h >= 365 ? "opacity:.6" : null },
-      el("td", { text: lbl }), el("td", { text: pc(r.bull_up_rate) }),
-      el("td", { text: pc(r.bear_down_rate) }), el("td", { text: pc(r.directional_accuracy) })));
+      el("td", { text: lbl }), el("td", { text: pc(r.bull_up_rate) }), el("td", { text: pc(r.bear_down_rate) }), el("td", { text: pc(r.directional_accuracy) })));
   });
   p.append(tbl);
-
   p.append(el("p", { class: "sc-note", text:
     `${sc.span ? sc.span[0] + "–" + sc.span[1] : ""} · ~${sc.cycles} market cycles · ${sc.days} days · `
     + `${sc.transitions} regime changes (${sc.per_year}/yr) · median lag at a cycle turn ${sc.turn_median_lag_days ?? "—"} days. Recomputed daily.` }));
 
-  const body = el("div", { class: "why-panel", hidden: "", html:
-    "This tool's job is the <b>daily glance</b>: is the market bull, bear or neutral right now? So the headline "
-    + "number is <b>phase agreement</b> — on what share of days did the label match the cycle the market was "
-    + "actually in (dated after the fact from the price history). It missed on "
-    + `${pc(sc.phase_wrong_rate)} of days, almost all of them in the ~3 months after a turn while a `
-    + "200-day-average system catches up. It is a lagging summary: it tells you the <i>established</i> regime, "
-    + "not the one just beginning — the confidence score and the “watch” note cover “is a change coming”.<br><br>"
-    + "The table below is a stricter test — on every BULLISH day, was BTC actually higher N days later? — but that "
-    + "asks the label to <i>predict</i>, which no trailing indicator does well. Bear rows score low because by the "
-    + "time BEARISH is confirmed, most of the drop is done and price is often already bouncing. The 1–3 year rows "
-    + "(greyed) are meaningless: over multi-year windows BTC almost always rose, so any bearish call is scored "
-    + "“wrong” and only ~2–4 independent windows exist.<br><br>"
+  const body = el("div", { class: "why-body", hidden: "", html:
+    "This tool's job is the <b>daily glance</b>: is the market bull, bear or neutral right now? So the headline number is <b>phase agreement</b> — "
+    + "on what share of days did the label match the cycle the market was actually in (dated after the fact). It missed on "
+    + `${pc(sc.phase_wrong_rate)} of days, almost all in the ~3 months after a turn while a 200-day-average system catches up.<br><br>`
+    + "The table is a stricter test — on every BULLISH day, was BTC actually higher N days later? — which asks the label to <i>predict</i>, which no "
+    + "trailing indicator does well. The 1–3 year rows (greyed) are near-meaningless: over multi-year windows BTC almost always rose.<br><br>"
     + "Built on ~3 cycles of history — read as direction and magnitude, not precision." });
-  p.append(expander("How to read these numbers", "read", null, body));
-  return p;
+  p.append(whyToggle("How to read these numbers", body));
 }
 
-/* -------------------------- methodology ---------------------- */
-function methodologyPanel() {
-  const p = panel(ptitle("How the reading is built"));
-  const body = el("div", { class: "why-panel", hidden: "", html:
-    "The headline regime comes from the <b>Trend</b> dimension only: BULLISH above +0.15, BEARISH below −0.15, "
-    + "NEUTRAL in between, with a five-day confirmation so the label does not flip on noise. Trend blends the "
-    + "Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation counterweight. "
-    + "<b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth and the on-chain active-address trend; "
-    + "<b>Sentiment</b> blends Fear &amp; Greed, perp funding and the stablecoin ratio. Momentum and Sentiment "
-    + "never move the label — they set the direction arrow, the confidence score and the watch notes.<br><br>"
-    + "Confidence rises when the three dimensions agree, the trend score sits well clear of the neutral band, "
-    + "sentiment is not at a froth or capitulation extreme, and volatility is calm.<br><br>"
-    + "The \"Supporting signals\" catalog below lists 35 indicators considered for this model. Only the ones above "
-    + "feed the score; most of the rest are shown as live context, and a handful are marked \"not tracked\" because "
-    + "they need a paid on-chain or derivatives data provider we haven't wired in.<br><br>"
-    + "Every input is trailing — it describes what the market has already done, it does not forecast. Validated "
-    + "on ~3 market cycles: it flagged every major cycle top and bottom in that window, a median of about three "
-    + "months after the price extreme. Treat it as direction rather than a precise number. Thresholds and weights "
-    + "are all in one place in the source (state.py → CONFIG)." });
-  p.append(expander("Regime logic, confidence, and limits", "read", null, body));
-  return p;
+/* -------------------------- methodology (same visual system) ------------------------ */
+function renderMethodology() {
+  const p = document.getElementById("methodology");
+  p.append(el("p", { class: "kicker", text: "How the reading is built" }));
+  const body = el("div", { class: "why-body", hidden: "", html:
+    "The headline regime comes from the <b>Trend</b> dimension only: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between, with a five-day "
+    + "confirmation so the label doesn't flip on noise. Trend blends the Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation "
+    + "counterweight. <b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth and active-address trend; <b>Sentiment</b> blends Fear &amp; Greed, "
+    + "perp funding and the stablecoin ratio. Momentum and Sentiment never move the label — they set confidence and the watch notes.<br><br>"
+    + "The \"Supporting signals\" catalog lists 35 indicators considered for this model. Only the ones above feed the score; most of the rest are live "
+    + "context, and a handful are marked \"not tracked\" because they need a paid on-chain or derivatives provider not wired in yet.<br><br>"
+    + "Every input is trailing — it describes what already happened, it does not forecast. Validated on ~3 market cycles: it flagged every major cycle "
+    + "top and bottom, a median of about three months after the price extreme. Thresholds and weights all live in one place (state.py → CONFIG)." });
+  p.append(whyToggle("Regime logic, confidence, and limits", body));
+}
+function whyToggle(label, body) {
+  const btn = el("button", { class: "why-toggle", type: "button", text: label + " ▸" });
+  btn.addEventListener("click", () => {
+    body.hidden = !body.hidden;
+    btn.textContent = label + (body.hidden ? " ▸" : " ▾");
+  });
+  const wrap = el("div", {}, btn, body);
+  return wrap;
 }
 
 /* ----------------------- halving / 50-200 cross chart (real data) ------------------- */
@@ -461,52 +395,40 @@ function halvingProgress() {
   const nextDate = new Date(LAST_HALVING + (210000 / BLOCKS_PER_DAY) * MS_DAY);
   return { pct, blocksLeft, nextDate };
 }
-
-function haloChartPanel(rows) {
-  const p = panel();
-  p.append(el("p", { class: "ptitle", text: "BTC price history — halving cycles & the 50/200-day cross" }));
+function renderHalvingProgress() {
   const prog = halvingProgress();
-  const progBox = el("div", { class: "halving-progress" },
+  const box = document.getElementById("halvingProgress");
+  box.textContent = "";
+  const dateLabel = prog.nextDate.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+  box.append(
     el("div", { class: "pct", text: prog.pct.toFixed(0) + "%" }),
     el("div", { class: "bar-col" },
       el("div", { class: "bar" }, el("div", { class: "bar-fill", style: `width:${prog.pct}%` })),
-      el("div", { class: "cap", text: `Progress to the next halving — ~${prog.blocksLeft.toLocaleString()} blocks left, est. ${prog.nextDate.toLocaleDateString("en-US", { month: "short", year: "numeric" })}. Block-height math, not a price call.` })));
-  p.append(progBox);
-
-  const rngBox = el("div", { class: "rng chart-rng" });
-  p.append(rngBox);
-  const chartWrap = el("div", { class: "chart-wrap" });
-  const svg = el("svg", { viewBox: "0 0 900 320", preserveAspectRatio: "xMidYMid meet" });
-  chartWrap.append(svg);
-  p.append(chartWrap);
-
-  const ranges = [["1Y", 1], ["3Y", 3], ["5Y", 5], ["10Y", 10], ["All", null]];
-  let cur = null;
-  const draw = () => {
-    rngBox.querySelectorAll("button").forEach((b) => b.classList.toggle("on", +b.dataset.y === cur || (b.dataset.y === "null" && cur === null)));
-    renderHaloChart(svg, rows, cur, prog);
-  };
-  ranges.forEach(([label, years]) => {
-    const b = el("button", { text: label, "data-y": String(years) });
-    b.onclick = () => { cur = years; draw(); };
-    rngBox.append(b);
-  });
-  draw();
-
-  const legend = el("div", { class: "legend chart-legend" });
-  [["up", "Price, up day"], ["down", "Price, down day"], ["sma50", "50-day MA"], ["sma200", "200-day MA"],
-   ["halving", "Halving"], ["golden", "Golden cross"], ["death", "Death cross"], ["next-halving", "Next halving (est.)"]]
-    .forEach(([cls, lab]) => legend.append(el("span", { class: "lg" }, el("i", { class: "sw " + cls }), lab)));
-  p.append(legend);
-  p.append(el("p", { class: "chart-note", text: "Purely historical — no projected path. Trend structure only; the read for what's next is in \"Engine dimensions\" above." }));
-  return p;
+      el("div", { class: "cap" }, `Progress to the next halving — ~${prog.blocksLeft.toLocaleString()} blocks left, est. ${dateLabel}. Block-height math, not a price call.`)));
 }
 
-function renderHaloChart(svg, rows, years, prog) {
+const CHART_RANGES = [{ label: "1Y", years: 1 }, { label: "3Y", years: 3 }, { label: "5Y", years: 5 }, { label: "10Y", years: 10 }, { label: "All", years: null }];
+let chartYears = null;
+let CHART_ROWS = null;
+function renderRangeButtons() {
+  const box = document.getElementById("chartRange");
+  box.textContent = "";
+  CHART_RANGES.forEach((r) => {
+    const btn = el("button", { class: "rng" + (chartYears === r.years ? " on" : "") }, r.label);
+    btn.addEventListener("click", () => { chartYears = r.years; renderRangeButtons(); renderChart(CHART_ROWS); });
+    box.append(btn);
+  });
+}
+
+function renderChart(rows) {
+  if (rows) CHART_ROWS = rows;
+  const svg = document.getElementById("chartSvg");
   svg.innerHTML = "";
-  const series = rows.filter((r) => r.close > 0).map((r) => ({ t: Date.parse(r.date + "T00:00:00Z"), price: r.close }));
+  const series = CHART_ROWS.filter((r) => r.close > 0).map((r) => ({ t: Date.parse(r.date + "T00:00:00Z"), price: r.close }));
   if (!series.length) return;
-  const sma = (n) => {
+  const prog = halvingProgress();
+
+  const smaCalc = (n) => {
     const out = new Array(series.length).fill(null);
     let sum = 0;
     for (let i = 0; i < series.length; i++) {
@@ -516,7 +438,7 @@ function renderHaloChart(svg, rows, years, prog) {
     }
     return out;
   };
-  const sma50 = sma(50), sma200 = sma(200);
+  const sma50 = smaCalc(50), sma200 = smaCalc(200);
   const crosses = [];
   for (let i = 1; i < series.length; i++) {
     if (sma50[i - 1] == null || sma200[i - 1] == null) continue;
@@ -526,8 +448,8 @@ function renderHaloChart(svg, rows, years, prog) {
   }
 
   const lastData = series[series.length - 1].t;
-  const tMax = years === null ? prog.nextDate.getTime() : lastData;
-  const tMin = years ? Math.max(series[0].t, lastData - years * 365 * MS_DAY) : series[0].t;
+  const tMax = chartYears === null ? prog.nextDate.getTime() : lastData;
+  const tMin = chartYears ? Math.max(series[0].t, lastData - chartYears * 365 * MS_DAY) : series[0].t;
   const W = 900, H = 320, padL = 48, padR = 12, padT = 16, padB = 26;
   const plotW = W - padL - padR, plotH = H - padT - padB;
 
@@ -541,11 +463,7 @@ function renderHaloChart(svg, rows, years, prog) {
   const x = (t) => padL + ((t - tMin) / (tMax - tMin)) * plotW;
   const y = (p) => padT + (1 - (Math.log10(p) - logMin) / (logMax - logMin)) * plotH;
 
-  const make = (tag, attrs) => {
-    const e = document.createElementNS(SVGNS, tag);
-    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
-    return e;
-  };
+  const make = (tag, attrs) => { const e = document.createElementNS(SVGNS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
 
   const epochBounds = [series[0].t, ...HALVINGS.map((d) => Date.parse(d + "T00:00:00Z")), prog.nextDate.getTime()];
   const gb = make("g", { class: "epoch-bands" });
@@ -574,7 +492,7 @@ function renderHaloChart(svg, rows, years, prog) {
   for (let k = 0; k <= 4; k++) {
     const t = tMin + ((tMax - tMin) * k) / 4;
     const px = x(t);
-    const label = new Date(t).toLocaleDateString("en-US", years && years <= 3 ? { month: "short", year: "2-digit" } : { year: "numeric" });
+    const label = new Date(t).toLocaleDateString("en-US", chartYears && chartYears <= 3 ? { month: "short", year: "2-digit" } : { year: "numeric" });
     const txt = make("text", { x: px.toFixed(1), y: H - 6, "text-anchor": k === 4 ? "end" : k === 0 ? "start" : "middle" });
     txt.textContent = label;
     gx.append(txt);
@@ -593,7 +511,7 @@ function renderHaloChart(svg, rows, years, prog) {
   });
   svg.append(gh);
 
-  if (years === null) {
+  if (chartYears === null) {
     const t = prog.nextDate.getTime();
     if (t >= tMin && t <= tMax) {
       const px = x(t);
@@ -610,22 +528,13 @@ function renderHaloChart(svg, rows, years, prog) {
   for (let kk = 1; kk < idx.length; kk++) {
     const ia = idx[kk - 1], ib = idx[kk];
     const p0 = series[ia].price, p1 = series[ib].price;
-    gpx.append(make("line", {
-      x1: x(series[ia].t).toFixed(1), y1: y(p0).toFixed(1),
-      x2: x(series[ib].t).toFixed(1), y2: y(p1).toFixed(1),
-      class: p1 >= p0 ? "up" : "down",
-    }));
+    gpx.append(make("line", { x1: x(series[ia].t).toFixed(1), y1: y(p0).toFixed(1), x2: x(series[ib].t).toFixed(1), y2: y(p1).toFixed(1), class: p1 >= p0 ? "up" : "down" }));
   }
   svg.append(gpx);
 
   const linePath = (getVal) => {
     let dpath = "";
-    idx.forEach((i) => {
-      const v = getVal(i);
-      if (v == null) return;
-      const cmd = dpath ? "L" : "M";
-      dpath += `${cmd}${x(series[i].t).toFixed(1)} ${y(v).toFixed(1)} `;
-    });
+    idx.forEach((i) => { const v = getVal(i); if (v == null) return; dpath += `${dpath ? "L" : "M"}${x(series[i].t).toFixed(1)} ${y(v).toFixed(1)} `; });
     return dpath.trim();
   };
   svg.append(make("path", { class: "c-sma200", d: linePath((i) => sma200[i]) }));
@@ -641,6 +550,23 @@ function renderHaloChart(svg, rows, years, prog) {
     g.append(circle);
     svg.append(g);
   });
+
+  // "same stage of the cycle": today's halving-progress % replayed at the equivalent
+  // point of every era, so past cycles can be visually compared at today's stage.
+  const gm = make("g", { class: "epoch-marker" });
+  for (let e = 0; e < epochBounds.length - 1; e++) {
+    const es = epochBounds[e], ee = epochBounds[e + 1];
+    const mt = e === epochBounds.length - 2 ? lastData : es + (prog.pct / 100) * (ee - es);
+    if (mt < tMin || mt > tMax) continue;
+    const px = x(mt);
+    gm.append(make("line", { x1: px.toFixed(1), x2: px.toFixed(1), y1: padT, y2: H - padB }));
+    const bw = 34, bh = 14, by = H - padB - bh - 5;
+    gm.append(make("rect", { x: (px - bw / 2).toFixed(1), y: by.toFixed(1), width: bw, height: bh, rx: 3 }));
+    const txt = make("text", { x: px.toFixed(1), y: (by + bh - 4).toFixed(1), "text-anchor": "middle" });
+    txt.textContent = prog.pct.toFixed(0) + "%";
+    gm.append(txt);
+  }
+  svg.append(gm);
 }
 
 main();
