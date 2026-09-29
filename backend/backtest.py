@@ -108,6 +108,28 @@ def run():
         print(f"{col:14s} {cells}")
     report["per_indicator"] = per_ind
 
+    # ---- 1b. context-only indicators  —  candidates for promotion to scored ---- #
+    # These 5 are computed from data we already have full history for (price,
+    # miner revenue), unlike the rest of the "context" catalog (dominance, OI,
+    # DVOL, VIX, ETF flow, ...) which is fetched live-only -- no historical series
+    # exists to backtest those against. Raw (unscored) values, tested the same way,
+    # so a consistently monotone rho here is the actual evidence for promoting one
+    # to the scored model instead of leaving it display-only.
+    print("\n" + "=" * 78)
+    print("1b. CONTEXT-ONLY INDICATORS  —  not in the score; same test, to flag promotion candidates")
+    print("=" * 78)
+    print(f"{'indicator':14s} " + "".join(f"{'rho@'+str(h):>12s}{'p':>7s}" for h in HORIZONS))
+    ctx_ind = {}
+    for col in ["drawdown", "pi_gap", "vol_pctl", "bb_width", "puell"]:
+        row, cells = {}, ""
+        for h in HORIZONS:
+            rho, p, n = spearman(ind[col], fwd[h])
+            row[h] = {"rho": None if np.isnan(rho) else round(rho, 3), "p": None if np.isnan(p) else round(p, 4), "n": n}
+            cells += f"{rho:>12.3f}{p:>7.3f}" if not np.isnan(rho) else f"{'--':>12s}{'--':>7s}"
+        ctx_ind[col] = row
+        print(f"{col:14s} {cells}")
+    report["context_indicators"] = ctx_ind
+
     # ---- 2. dimension scores ------------------------------------------- #
     print("\n" + "=" * 78)
     print("2. DIMENSION SCORES  —  quintile mean forward return (%)  [want monotone increasing]")
