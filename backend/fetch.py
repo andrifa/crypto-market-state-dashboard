@@ -228,19 +228,60 @@ def funding_rate_bybit(symbol: str = "BTCUSDT", refresh: bool = False) -> pd.Ser
     return daily
 
 
+def funding_rate_okx(inst_id: str = "BTC-USDT-SWAP", refresh: bool = False) -> pd.Series:
+    """
+    Second fallback for funding_rate(): confirmed both Binance (451) and Bybit
+    (403) block GitHub Actions' shared runners entirely -- not just the futures
+    host, their whole API, spot included. OKX's public endpoint isn't blocked,
+    but its funding-rate-history only retains ~3 months via REST (a documented
+    OKX limit, not a block), so this can't backfill years like Binance can --
+    only useful for keeping funding_z alive on recent data when the other two
+    are unreachable.
+    """
+    cache = RAW / f"funding_okx_{inst_id}.csv"
+    if cache.exists() and not refresh:
+        return pd.read_csv(cache, index_col=0, parse_dates=True)["funding"]
+
+    rows, after = [], None
+    for _ in range(40):  # ~3 months / (100 recs * 8h) is well under this
+        params = {"instId": inst_id, "limit": 100}
+        if after:
+            params["after"] = after
+        js = _get("https://www.okx.com/api/v5/public/funding-rate-history", params, tries=2)
+        lst = js.get("data", [])
+        if not lst:
+            break
+        rows.extend(lst)
+        after = min(int(x["fundingTime"]) for x in lst)
+        time.sleep(0.3)
+
+    raw = pd.Series(
+        [float(x["fundingRate"]) for x in rows],
+        index=pd.to_datetime([int(x["fundingTime"]) for x in rows], unit="ms"),
+        name="funding",
+    )
+    daily = raw.groupby(raw.index.normalize()).mean()
+    daily.index.name = None
+    daily = daily[~daily.index.duplicated(keep="last")].sort_index()
+    daily.to_frame().to_csv(cache)
+    return daily
+
+
 def funding_rate_any(symbol_binance: str = "BTCUSDT", symbol_bybit: str = "BTCUSDT",
-                      refresh: bool = False) -> pd.Series:
-    """Binance first (longer history), Bybit if that's geo-blocked, empty series
-    (not a crash) if both fail -- a missing sentiment input shouldn't take down
-    the whole daily run."""
-    try:
-        return funding_rate(symbol_binance, refresh)
-    except Exception:
-        pass
-    try:
-        return funding_rate_bybit(symbol_bybit, refresh)
-    except Exception:
-        return pd.Series(dtype=float, name="funding")
+                      inst_id_okx: str = "BTC-USDT-SWAP", refresh: bool = False) -> pd.Series:
+    """Binance first (longest history), then Bybit, then OKX (~3mo only), empty
+    series (not a crash) if all three fail -- a missing sentiment input
+    shouldn't take down the whole daily run. Which one actually answers depends
+    on where this runs: none of them block every environment the same way."""
+    for fn, arg in ((funding_rate, symbol_binance), (funding_rate_bybit, symbol_bybit),
+                     (funding_rate_okx, inst_id_okx)):
+        try:
+            s = fn(arg, refresh)
+            if len(s):
+                return s
+        except Exception:
+            continue
+    return pd.Series(dtype=float, name="funding")
 
 
 # --------------------------------------------------------------------------- #
@@ -320,12 +361,14 @@ def btc_dominance_live() -> float | None:
 # limit requested, so (like btc_dominance_live) these just read today's value
 # rather than pretending to backfill years of history that isn't there.
 # --------------------------------------------------------------------------- #
-def open_interest_live(symbol: str = "BTCUSDT") -> float | None:
+def open_interest_live(symbol: str = "BTCUSDT", inst_id_okx: str = "BTC-USDT-SWAP") -> float | None:
     """
-    BTC futures open interest, USD notional. Binance's futures API blocks
-    US-hosted IPs (GitHub Actions included) with a 403/451 geo-block, so this
-    falls back to Bybit -- converted to USD via Binance's SPOT ticker, which
-    isn't blocked (only fapi.* is).
+    BTC futures open interest, USD notional. Binance blocks GitHub Actions'
+    runners with a 451 on its ENTIRE API, spot included (confirmed by testing --
+    not just fapi.*), so a Binance spot price can't be used to convert a
+    coin-denominated fallback. OKX gives USD directly and isn't blocked, so it
+    goes first; Bybit (also confirmed reachable in some environments, though
+    blocked on GitHub Actions) is the last resort, priced via CoinGecko.
     """
     try:
         js = _get("https://fapi.binance.com/futures/data/openInterestHist",
@@ -334,22 +377,34 @@ def open_interest_live(symbol: str = "BTCUSDT") -> float | None:
     except Exception:
         pass
     try:
+        js = _get("https://www.okx.com/api/v5/public/open-interest", {"instId": inst_id_okx}, tries=2)
+        return float(js["data"][0]["oiUsd"])
+    except Exception:
+        pass
+    try:
         js = _get("https://api.bybit.com/v5/market/open-interest",
                    {"category": "linear", "symbol": symbol, "intervalTime": "1d", "limit": 1}, tries=2)
         oi_coin = float(js["result"]["list"][0]["openInterest"])
-        price = float(_get("https://api.binance.com/api/v3/ticker/price", {"symbol": symbol}, tries=2)["price"])
+        price = float(_get("https://api.coingecko.com/api/v3/simple/price",
+                            {"ids": "bitcoin", "vs_currencies": "usd"}, tries=2)["bitcoin"]["usd"])
         return oi_coin * price
     except Exception:
         return None
 
 
-def long_short_ratio_live(symbol: str = "BTCUSDT") -> float | None:
-    """Accounts long/short ratio (>1 = more accounts long). Binance first (futures
-    API, geo-blocked on GitHub Actions), Bybit as fallback."""
+def long_short_ratio_live(symbol: str = "BTCUSDT", inst_id_okx: str = "BTC-USDT-SWAP") -> float | None:
+    """Accounts long/short ratio (>1 = more accounts long). Binance first, OKX
+    and Bybit as fallbacks -- see open_interest_live for why this order."""
     try:
         js = _get("https://fapi.binance.com/futures/data/globalLongShortAccountRatio",
                    {"symbol": symbol, "period": "1d", "limit": 1}, tries=2)
         return float(js[-1]["longShortRatio"])
+    except Exception:
+        pass
+    try:
+        js = _get("https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio-contract",
+                   {"instId": inst_id_okx, "period": "1D", "limit": 1}, tries=2)
+        return float(js["data"][0][1])
     except Exception:
         pass
     try:
@@ -484,8 +539,8 @@ def build_frame(refresh: bool = False) -> pd.DataFrame:
 
     fng = fear_greed(refresh).reindex(close.index)
 
-    f_btc = funding_rate_any("BTCUSDT", "BTCUSDT", refresh)
-    f_eth = funding_rate_any("ETHUSDT", "ETHUSDT", refresh)
+    f_btc = funding_rate_any("BTCUSDT", "BTCUSDT", "BTC-USDT-SWAP", refresh)
+    f_eth = funding_rate_any("ETHUSDT", "ETHUSDT", "ETH-USDT-SWAP", refresh)
     if len(f_btc) and len(f_eth):
         funding = pd.concat([f_btc, f_eth], axis=1).mean(axis=1)
     else:
