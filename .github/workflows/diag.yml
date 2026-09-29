@@ -1,0 +1,37 @@
+name: network-diag
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r backend/requirements.txt
+      - name: Isolate each fallback call with its own hard timeout
+        working-directory: backend
+        run: |
+          python - <<'PY'
+          import subprocess, sys, time
+
+          calls = [
+              ("funding_rate (Binance)", "from fetch import funding_rate as f; s=f('BTCUSDT', True); print('len', len(s))"),
+              ("funding_rate_bybit", "from fetch import funding_rate_bybit as f; s=f('BTCUSDT', True); print('len', len(s))"),
+              ("funding_rate_okx", "from fetch import funding_rate_okx as f; s=f('BTC-USDT-SWAP', True); print('len', len(s))"),
+              ("open_interest_live", "from fetch import open_interest_live as f; print(f())"),
+              ("long_short_ratio_live", "from fetch import long_short_ratio_live as f; print(f())"),
+          ]
+          for name, code in calls:
+              t0 = time.time()
+              try:
+                  r = subprocess.run([sys.executable, "-c", code], timeout=30, capture_output=True, text=True)
+                  dt = time.time() - t0
+                  print(f"[{dt:5.1f}s] {name}: rc={r.returncode} out={r.stdout.strip()[:200]!r} err={r.stderr.strip()[-300:]!r}")
+              except subprocess.TimeoutExpired:
+                  dt = time.time() - t0
+                  print(f"[{dt:5.1f}s] {name}: TIMED OUT (>30s) -- this is the hang")
+          PY
