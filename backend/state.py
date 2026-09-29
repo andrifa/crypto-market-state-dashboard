@@ -256,6 +256,13 @@ def build_state(df: pd.DataFrame) -> pd.DataFrame:
     st["fng"] = ind["fng"]
     st["funding_z"] = ind["funding_z"].round(2)
     st["vol_pctl"] = ind["vol_pctl"].round(2)
+    # these already feed the score (cross/roc90/breadth/ssr -> trend & momentum & sentiment;
+    # pi_gap -> cycle_series) but were never surfaced for the dashboard/reasoning layer to see
+    st["ma_cross"] = ind["ma_cross"].round(4)
+    st["roc90"] = ind["roc90"].round(4)
+    st["breadth"] = ind["pct_above_200"].round(3)
+    st["ssr"] = df["ssr"].round(2)
+    st["pi_gap"] = ind["pi_gap"].round(4)
     return st
 
 

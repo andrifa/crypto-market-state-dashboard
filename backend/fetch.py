@@ -241,7 +241,7 @@ def build_frame(refresh: bool = False) -> pd.DataFrame:
       fng       Fear & Greed 0-100
       funding   mean(BTC, ETH) daily perp funding rate
       stbl      stablecoin total supply USD
-      ssr       close / stbl   (Stablecoin Supply Ratio proxy; used z-scored)
+      ssr       BTC market cap / stbl   (Stablecoin Supply Ratio)
     """
     y = btc_close_yahoo(refresh)
     try:
@@ -270,7 +270,6 @@ def build_frame(refresh: bool = False) -> pd.DataFrame:
     funding = funding.reindex(close.index)
 
     stbl = stablecoin_supply(refresh).reindex(close.index).ffill()
-    ssr = (close / stbl).rename("ssr")
 
     try:
         miner_rev = miner_revenue(refresh).reindex(close.index).ffill(limit=3)
@@ -281,6 +280,11 @@ def build_frame(refresh: bool = False) -> pd.DataFrame:
         adr_act, mcap = ns["adr_act"], ns["mcap"]
     except Exception:
         adr_act = mcap = pd.Series(np.nan, index=close.index)
+
+    # SSR = BTC market cap / stablecoin supply. Prefer the real market cap (CoinMetrics);
+    # fall back to a price-only proxy (still trends the same direction) if that feed is missing.
+    mcap_for_ssr = mcap.where(mcap.notna(), close * 19_800_000)
+    ssr = (mcap_for_ssr / stbl).rename("ssr")
 
     df = pd.DataFrame({
         "close": close, "fng": fng, "funding": funding, "stbl": stbl, "ssr": ssr,
