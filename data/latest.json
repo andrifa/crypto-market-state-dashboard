@@ -4,7 +4,7 @@
   "price_btc": 83911,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "uptrend intact, but long-term trend still repairing",
+  "headline_tag": "Uptrend intact, but the long-term trend is still repairing",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -17,16 +17,16 @@
     "detail": "The uptrend is intact, so the current posture supports increasing acquisition budget, with emphasis on active-trader channels that tend to respond most in this phase. Confidence is medium rather than high because the longer-term trend is still recovering and price is well below its previous peak, so a staged increase fits better than a single large one. This is budget-posture guidance based on trailing data, not trading advice."
   },
   "reasons": [
-    "Price is 18% above its 200-day average, and 90-day gain is about 40%.",
+    "Price is 18% above its 200-day average; 90-day gain is about 40%.",
     "Weekly RSI near 60 shows firm momentum without overbought conditions.",
     "The 200-day average is still falling (-5.3% over 90 days), limiting conviction.",
-    "Price remains 33% below its all-time high; Fear & Greed is 73."
+    "Price is 33% below its all-time high; Fear & Greed is 73 (Greed)."
   ],
   "watch": "The key tension is between fast recent gains and a slow-moving long-term trend: price is up about 40% in 90 days and above its 200-day average, yet that average is still declining and only 47% of recent days closed above it. If the 200-day slope turns flat or positive and breadth broadens, the uptrend read would be better supported; if price slips back under the 200-day average, the read would weaken. These are trailing measures, not forecasts.",
   "analysis": [
-    "Sentiment is warm but not stretched: Fear & Greed reads 73 (Greed), yet funding is only marginally positive (z-score +0.10) and long positions outnumber shorts by a modest 1.36 to 1. Open interest of about $7.7B, an options-implied volatility (DVOL) of 35.9 and a VIX of 16.1 all point to a calm, not euphoric, backdrop, with realised volatility sitting mid-range at the 50th percentile.",
-    "Momentum is the strongest part of the picture: BTC is up roughly 40% over 90 days, weekly RSI is a healthy 60 without being overbought, and the 50/200-day average gap of +8.0% sits on the bullish side. Participation is less convincing, though, with under half (47%) of recent days closing above the 200-day average. ETFs added about $31M on the day, and the next FOMC meeting on 2026-10-27 is the nearest scheduled macro event.",
-    "On the long view, price is 18% above its 200-day average (Mayer Multiple 1.18) and 1.28x its 200-week average, but the 200-day line itself is still sloping down (-5.3% over 90 days) and price remains 33% below its all-time high, so this reads as a recovery rather than a mature bull. Macro is a mixed backdrop, with the 10-year yield at 5.24% against a 3.63% fed funds rate, while cumulative ETF inflows of roughly $57.6B and about 1.28M BTC held by public companies show sustained institutional holding."
+    "Short-term mood is warm rather than euphoric. Fear & Greed sits at 73 (Greed) and funding is modestly positive (z-score +0.44), while longs outnumber shorts 1.42 to 1 and open interest is about $2.4B, so leverage does not look stretched. Options-implied volatility (DVOL 35.8) and the VIX (16.1) are both subdued, and realised volatility is mid-range at the 50th percentile.",
+    "Momentum is the strongest leg of the read: BTC is up roughly 40% over 90 days, weekly RSI is 59.8 (firm, not overbought), and the 50-day average sits about 8% above the 200-day. Participation is thinner than the headline gain implies, with only 47% of recent days closing above the 200-day average. ETFs took in about $31M on the latest day, and the next FOMC meeting on 2026-10-27 is the nearest scheduled macro event.",
+    "Over the long view, price is 18% above its 200-day average (Mayer Multiple 1.18) and 1.27x its 200-week average, yet the 200-day line is still sloping down (-5.3% over 90 days) and price is 33% below its all-time high. That reads as a recovery rather than a mature bull. Macro is mixed, with the 10-year yield at 5.24% against a 3.63% fed funds rate, while cumulative ETF inflows of about $57.6B and roughly 1.28M BTC held by public companies point to sustained institutional holding."
   ],
   "changed_today": null,
   "scores": {
@@ -64,5 +64,21 @@
     "next_fomc_meeting": "2026-10-27"
   },
   "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 18% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-  "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number."
+  "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
+  "search_findings": {
+    "social_volume": null,
+    "liquidation_24h_usd": null,
+    "exchange_netflow_7d_btc": null,
+    "onchain_volume_usd": {
+      "value": 16060000000,
+      "source_name": "CoinDesk (BTC price page)",
+      "source_url": "https://www.coindesk.com/price/bitcoin",
+      "as_of": "2026-09-29",
+      "note": "24-hour BTC trading volume as shown on the price page; not a verified on-chain measure."
+    },
+    "whale_supply_pct": null,
+    "sth_cost_basis_usd": null,
+    "lth_sth_supply_ratio": null,
+    "headlines": null
+  }
 }
