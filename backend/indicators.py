@@ -116,7 +116,11 @@ def vol_percentile(close: pd.Series, n: int = 30, window: int = 730) -> pd.Serie
 # --------------------------------------------------------------------------- #
 # C — sentiment / positioning
 # --------------------------------------------------------------------------- #
-def funding_z(funding: pd.Series, window: int = 365) -> pd.Series:
+def funding_z(funding: pd.Series, window: int = 90) -> pd.Series:
+    # shorter than the other z-scores' 365-day window: funding's fallback source
+    # (OKX, used when Binance/Bybit are geo-blocked -- see fetch.funding_rate_any)
+    # only retains ~3 months via REST, so 365 would leave funding_z permanently
+    # null whenever that fallback is the one actually answering.
     return trailing_z(funding, window)
 
 
@@ -154,7 +158,7 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
 
     # C — sentiment / positioning
     out["fng"] = df["fng"]
-    out["funding_z"] = funding_z(df["funding"], 365)
+    out["funding_z"] = funding_z(df["funding"], 90)
     out["ssr_z"] = ssr_z(df["ssr"], 365)
 
     return out
