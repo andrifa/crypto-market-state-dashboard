@@ -45,6 +45,9 @@ UA = {"User-Agent": "Mozilla/5.0 (market-regime-monitor research)"}
 TIMEOUT = 45
 
 
+_PERMANENT_CODES = {401, 403, 451}  # geo-block / auth failure -- retrying never helps
+
+
 def _get(url: str, params: dict | None = None, tries: int = 4, pause: float = 2.0):
     last = None
     for i in range(tries):
@@ -55,6 +58,11 @@ def _get(url: str, params: dict | None = None, tries: int = 4, pause: float = 2.
                 continue
             r.raise_for_status()
             return r.json()
+        except requests.HTTPError as e:
+            if e.response is not None and e.response.status_code in _PERMANENT_CODES:
+                raise
+            last = e
+            time.sleep(pause * (i + 1))
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(pause * (i + 1))
