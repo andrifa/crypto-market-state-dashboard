@@ -24,8 +24,8 @@
   ],
   "watch": "The main tension is between fast recent gains and a slow long-term trend: price is up about 40% in 90 days, yet the 200-day average is still falling and only 47% of recent days closed above it. With the 10-year yield at 5.24% and markets focused on inflation data, a slip below the 200-day average would weaken the read, while a flattening 200-day slope and broader participation would strengthen it. These are trailing measures, not forecasts.",
   "analysis": [
-    "Short-term mood is warm but not stretched: Fear & Greed reads 73 (Greed), funding is only mildly positive (z +0.44) and longs outnumber shorts 1.42 to 1 on about $2.4B of open interest, so leverage looks measured. Implied volatility is subdued (DVOL 35.8, VIX 16.1) even as BTC eased to roughly $83K on the day; CoinDesk attributes the pullback to rising Treasury yields and oil, with markets positioning ahead of Wednesday's PCE inflation print.",
-    "Momentum remains the strongest leg of the read. BTC is up about 40% over 90 days, weekly RSI of 59.8 is firm without being overbought, and the 50-day average sits roughly 8% above the 200-day. Participation is thinner than the headline gain implies, with only 47% of recent days closing above the 200-day average, and spot ETF inflows cooled to about $31M on the latest day, even though the week to 26 September brought about $2.39B of US spot ETF inflows, the largest weekly total of 2026 per Yahoo Finance. On the calendar, JOLTS (29 September), PCE (30 September) and nonfarm payrolls (2 October) are the near-term macro prints; the SEC's proposed Regulation Crypto Assets has a comment deadline of 20 October, and the next FOMC meeting is 27 October.",
+    "Short-term mood is warm but not stretched: Fear & Greed reads 73 (Greed), funding is only mildly positive (z +0.44) and longs outnumber shorts 1.42 to 1 on about $2.4B of open interest, so leverage looks measured rather than crowded. Implied volatility is subdued (DVOL 35.8, VIX 16.1) and Bollinger width of 0.19 with a mid-range volatility percentile (0.50) says price is neither compressed nor in a stress regime, while a stablecoin supply ratio of 5.39 gives no strong signal either way. Sentiment is therefore running a little ahead of positioning, which is the more cautious reading of a Greed print. Context from published coverage: BTC eased to roughly $83K after failing to hold $85,000, with markets awaiting the August PCE inflation print due 30 September and a 10-year Treasury yield near 5.25%, reported as its highest level since 2007.",
+    "Momentum remains the strongest leg of the read. BTC is up about 40% over 90 days, weekly RSI of 59.8 is firm without being overbought, and the 50-day average sits roughly 8% above the 200-day. Participation is thinner than the headline gain implies, with only 47% of recent days closing above the 200-day average, and spot ETF inflows cooled to about $31M on the latest day, even though the week to 26 September brought about $2.39B of US spot ETF inflows, the largest weekly total of 2026 including a record $999M single session, per Cryptonomist and InvestorIdeas coverage. Looking ahead on the calendar, nonfarm payrolls (2 October), the SEC's proposed Regulation Crypto Assets comment deadline (20 October) and the next FOMC meeting (27 October) are scheduled; coverage cites CME FedWatch odds of a 25bp hike at that meeting above 60%, which is reported context, not a forecast of price.",
     "On the long view, price sits 18% above its 200-day average (Mayer Multiple 1.18) and 1.27x its 200-week average, but the 200-day line is still sloping down (-5.3% over 90 days) and price is 33% below its all-time high, which reads more like a recovery than a mature bull phase. Macro is mixed: the 10-year yield at 5.24% is well above the 3.63% fed funds rate. Against that, cumulative ETF inflows near $57.6B and about 1.28M BTC held by public companies point to sustained institutional holding."
   ],
   "changed_today": null,
@@ -102,6 +102,12 @@
         "title": "BTC, ETH price news: Bitcoin slips to $83,000 as ZEC drops 12% and oil climbs again",
         "url": "https://www.coindesk.com/markets/2026/09/29/bitcoin-holds-usd83-000-as-zec-drops-12-and-oil-climbs-again",
         "source": "CoinDesk",
+        "date": "2026-09-29"
+      },
+      {
+        "title": "Bitcoin ETFs Post 2026's Strongest Weekly Inflows as Markets Turn to October Rate, Inflation and Liquidity Risks",
+        "url": "https://www.investorideas.com/news/2026/cryptocurrency/09292-bitcoin-etfs-post-2026s-strongest-weekly-inflows-as-markets-turn-to-october-rate-inflation-and-liquidity-risks.asp",
+        "source": "InvestorIdeas",
         "date": "2026-09-29"
       }
     ]
