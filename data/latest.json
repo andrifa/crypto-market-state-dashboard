@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-09-29T07:24:18Z",
-  "date": "2026-09-29",
-  "price_btc": 83911,
+  "updated_utc": "2026-09-30T07:14:41Z",
+  "date": "2026-09-30",
+  "price_btc": 82978,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend intact, long-term trend still repairing",
+  "headline_tag": "market in an uptrend",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -14,56 +14,58 @@
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The uptrend is intact, so the current posture supports increasing acquisition budget, with emphasis on active-trader channels that tend to respond most in this phase. Confidence is medium rather than high because the longer-term trend is still recovering and price is well below its previous peak, so a staged increase fits better than a single large one. This is budget-posture guidance based on trailing data, not trading advice."
+    "detail": "Uptrend is solid. Increase acquisition, prioritise non-stablecoin / active-trader channels (they benefit most in this phase)."
   },
   "reasons": [
-    "Price is 18% above its 200-day average; 90-day gain is about 40%.",
-    "Weekly RSI near 60 shows firm momentum without overbought conditions.",
-    "The 200-day average is still falling (-5.3% over 90 days), limiting conviction.",
-    "Price is 33% below its all-time high; Fear & Greed is 73 (Greed)."
+    "BTC price is 16% above its 200-day average.",
+    "The 200-day trend is falling (-5% over the last 90 days).",
+    "Price is still 34% below its all-time high."
   ],
-  "watch": "The main tension is between fast recent gains and a slow long-term trend: price is up about 40% in 90 days, yet the 200-day average is still falling and only 47% of recent days closed above it. With the 10-year yield at 5.24% and markets focused on inflation data, a slip below the 200-day average would weaken the read, while a flattening 200-day slope and broader participation would strengthen it. These are trailing measures, not forecasts.",
+  "watch": null,
   "analysis": [
-    "Short-term mood is warm but not stretched: Fear & Greed reads 73 (Greed), funding is only mildly positive (z +0.44) and longs outnumber shorts 1.42 to 1 on about $2.4B of open interest, so leverage looks measured rather than crowded. Implied volatility is subdued (DVOL 35.8, VIX 16.1) and Bollinger width of 0.19 with a mid-range volatility percentile (0.50) says price is neither compressed nor in a stress regime, while a stablecoin supply ratio of 5.39 gives no strong signal either way. Sentiment is therefore running a little ahead of positioning, which is the more cautious reading of a Greed print. Context from published coverage: BTC eased to roughly $83K after failing to hold $85,000, with markets awaiting the August PCE inflation print due 30 September and a 10-year Treasury yield near 5.25%, reported as its highest level since 2007.",
-    "Momentum remains the strongest leg of the read. BTC is up about 40% over 90 days, weekly RSI of 59.8 is firm without being overbought, and the 50-day average sits roughly 8% above the 200-day. Participation is thinner than the headline gain implies, with only 47% of recent days closing above the 200-day average, and spot ETF inflows cooled to about $31M on the latest day, even though the week to 26 September brought about $2.39B of US spot ETF inflows, the largest weekly total of 2026 including a record $999M single session, per Cryptonomist and InvestorIdeas coverage. Looking ahead on the calendar, nonfarm payrolls (2 October), the SEC's proposed Regulation Crypto Assets comment deadline (20 October) and the next FOMC meeting (27 October) are scheduled; coverage cites CME FedWatch odds of a 25bp hike at that meeting above 60%, which is reported context, not a forecast of price.",
-    "On the long view, price sits 18% above its 200-day average (Mayer Multiple 1.18) and 1.27x its 200-week average, but the 200-day line is still sloping down (-5.3% over 90 days) and price is 33% below its all-time high, which reads more like a recovery than a mature bull phase. Macro is mixed: the 10-year yield at 5.24% is well above the 3.63% fed funds rate. Against that, cumulative ETF inflows near $57.6B and about 1.28M BTC held by public companies point to sustained institutional holding."
+    "Short-term, Fear & Greed sits at 71 (Greed), funding is at a +1.22 z-score (not stretched leverage positioning), the stablecoin supply ratio is 5.40. Realised volatility sits at the 50th percentile of its two-year range (elevated), with Bollinger band width at 18%.",
+    "Medium-term, weekly RSI is 60 (neutral-to-firm), the 90-day rate of change is +35%, breadth is 48% of the last 90 days above the 200-day average. The 50/200-day average gap is +8.4%, on the golden-cross side. On-chain activity is expanding versus its own year-average (ratio 1.05). The gap between the headline price gain and this thinner participation is the main tension in this window.",
+    "Long-term, price is above its 200-day average (Mayer Multiple 1.16), that average is falling (-5.1% over 90 days), the 200-week multiple is 1.26 (mid-cycle), price is 34% below its all-time high. The Puell Multiple is 1.28, in a normal range for miner economics (context only — not scored). The Pi-Cycle gap is -55.4% (context only — not scored; this measure has historically moved above zero near past cycle tops)."
   ],
+  "team_notes": {
+    "marketing": "Scale acquisition spend toward non-stablecoin and active-trader channels — the 35% 90-day move gives campaigns a real growth story to lead with; breadth is only 48%, so don't frame this as a broad, settled uptrend; sentiment (Greed) is already warm, so lead with the trend, not FOMO urgency."
+  },
   "changed_today": null,
   "scores": {
     "trend": 0.226,
-    "momentum": 0.421,
-    "sentiment": 0.365
+    "momentum": 0.386,
+    "sentiment": 0.472
   },
   "context": {
-    "mayer_multiple": 1.178,
-    "ma200_slope_90d": -0.0532,
-    "ma_200w_multiple": 1.27,
-    "drawdown_from_ath": -0.327,
+    "mayer_multiple": 1.164,
+    "ma200_slope_90d": -0.0508,
+    "ma_200w_multiple": 1.26,
+    "drawdown_from_ath": -0.335,
     "rsi_weekly": 59.8,
-    "active_addr_ratio": 1.072,
-    "puell_multiple": 1.276,
-    "fear_greed": 73.0,
-    "funding_z": 0.44,
+    "active_addr_ratio": 1.049,
+    "puell_multiple": 1.277,
+    "fear_greed": 71.0,
+    "funding_z": 1.22,
     "vol_percentile": 0.5,
-    "bollinger_width": 0.1882,
+    "bollinger_width": 0.181,
     "btc_dominance": 58.3,
-    "ma_cross": 0.0797,
-    "roc_90d": 0.3984,
-    "breadth_90d": 0.467,
-    "ssr": 5.39,
-    "pi_cycle_gap": -0.5557,
-    "open_interest_usd": 2359599941.1427383,
-    "long_short_ratio": 1.421450470451422,
-    "dvol": 35.84,
-    "us_10y_yield": 5.24,
-    "vix": 16.07,
+    "ma_cross": 0.0842,
+    "roc_90d": 0.3496,
+    "breadth_90d": 0.478,
+    "ssr": 5.4,
+    "pi_cycle_gap": -0.5541,
+    "open_interest_usd": 2387186064.282367,
+    "long_short_ratio": 1.5243396638288582,
+    "dvol": 35.49,
+    "us_10y_yield": 5.255,
+    "vix": 16.04,
     "fed_funds_rate": 3.63,
-    "etf_daily_net_flow_usd": 31070566.45000001,
-    "etf_cum_net_flow_usd": 57599209359.967995,
-    "public_company_btc_treasury": 1275672.0,
+    "etf_daily_net_flow_usd": 66194702.4,
+    "etf_cum_net_flow_usd": 57665404062.368,
+    "public_company_btc_treasury": 1275684.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 29 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 18% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 30 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 16% above its 200-day average.\n  • The 200-day trend is falling (-5% over the last\n    90 days).\n  • Price is still 34% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -111,8 +113,5 @@
         "date": "2026-09-29"
       }
     ]
-  },
-  "team_notes": {
-    "marketing": "Lean into non-stablecoin, active-trader channels, where a 90-day gain near 40% and Greed-level sentiment (73) tend to draw engagement, and keep a lighter stablecoin-first presence as a hedge. Lead messaging with momentum and participation rather than euphoria: funding is only mildly positive (z +0.44), just 47% of recent days closed above the 200-day average, and yields and oil are pressuring risk appetite today. Medium conviction (65) argues for staged campaign spend that can be adjusted if the trend read weakens."
   }
 }
