@@ -145,7 +145,7 @@ async function main() {
     `${fmtDate(d.date)} · updated ${(d.updated_utc || "").replace("T", " ").replace("Z", " UTC")}`;
 
   renderHero(d, k);
-  renderOutlook(d, k);
+  renderOutlook(d, k, bt);
   renderAnalysis(d);
   renderTriggers(d);
   renderTeams(d);
@@ -188,19 +188,47 @@ function renderHero(d, k) {
 }
 
 /* -------------------------- outlook (real trend/momentum/sentiment, ordered near->far) ---- */
-function renderOutlook(d, k) {
+/* Historical base-rate note per outlook row, computed from backtest.json's own
+   already-disclosed regime/conviction tables -- a real hit rate from the
+   2014-onward sample, not an invented probability. Framed as a historical
+   pattern, not a promise: this dashboard is trailing by design, so any
+   forward-looking note has to be an empirical base rate with its sample size
+   attached, never a bare "will happen" statement. */
+function convictionBand(conv) {
+  if (conv == null) return null;
+  if (conv < 40) return "low <40";
+  if (conv < 60) return "mid 40-60";
+  return "high >=60";
+}
+function historicalNote(bt, regime, conviction, horizonDays, horizonLabel) {
+  if (!bt || !bt.regime) return "";
+  const reg = bt.regime[String(horizonDays)] && bt.regime[String(horizonDays)][regime];
+  if (!reg || reg.n < 30) return "";
+  let s = `Historically, ${regime.toLowerCase()}-regime days like today's saw price higher ${horizonLabel} later ${Math.round(reg.win * 100)}% of the time (average move ${reg.mean >= 0 ? "+" : ""}${Math.round(reg.mean * 100)}%, from ${reg.n.toLocaleString()} such days since 2014).`;
+  if ((regime === "Bull" || regime === "Bear") && horizonDays === 90 && bt.conviction) {
+    const band = convictionBand(conviction);
+    const cv = band && bt.conviction[band];
+    if (cv && cv.n >= 30) {
+      s += ` At today's conviction level, that same 90-day hit rate (in the regime's own direction) has run ${Math.round(cv.win * 100)}% historically (n=${cv.n.toLocaleString()}).`;
+    }
+  }
+  s += " A historical pattern, not a guarantee — this covers ~2.9 market cycles.";
+  return s;
+}
+
+function renderOutlook(d, k, bt) {
   const c = d.context || {}, s = d.scores || {};
   const conf = d.conviction_level || "MEDIUM";
   const rows = [
-    { h: "Short-term", sub: "sentiment · ~1 week", score: s.sentiment,
+    { h: "Short-term", sub: "sentiment · ~1 week", score: s.sentiment, horizon: 30, horizonLabel: "30 days",
       text: c.fear_greed != null
         ? `Fear &amp; Greed reads <b>${numStr(c.fear_greed, 0)} (${d.sentiment_band || "—"})</b>, funding sits at a <b>${fmtNum(c.funding_z, 2, true)}</b> z-score, and the stablecoin supply ratio is <b>${fmtNum(c.ssr, 2)}</b>.`
         : "Sentiment inputs unavailable today." },
-    { h: "Medium-term", sub: "momentum · ~1 month", score: s.momentum,
+    { h: "Medium-term", sub: "momentum · ~1 month", score: s.momentum, horizon: 90, horizonLabel: "90 days",
       text: c.rsi_weekly != null
         ? `Weekly RSI is <b>${numStr(c.rsi_weekly, 0)}</b>, the 90-day rate of change is <b>${fmtPct(c.roc_90d, 0, true)}</b>, and breadth is <b>${fmtPct(c.breadth_90d, 0)}</b> of the last 90 days above the 200-day average.`
         : "Momentum inputs unavailable today." },
-    { h: "Long-term", sub: "trend · ~3–6 months", score: s.trend,
+    { h: "Long-term", sub: "trend · ~3–6 months", score: s.trend, horizon: 180, horizonLabel: "180 days",
       text: c.mayer_multiple != null
         ? `Price is <b>${c.mayer_multiple >= 1 ? "above" : "below"}</b> its 200-day average (Mayer Multiple <b>${fmtNum(c.mayer_multiple, 2)}</b>), which is itself <b>${c.ma200_slope_90d >= 0 ? "rising" : "falling"}</b> (${fmtPct(c.ma200_slope_90d, 1, true)} over 90 days). The 200-week multiple is <b>${fmtNum(c.ma_200w_multiple, 2)}</b>.`
         : "Trend inputs unavailable today." },
@@ -211,13 +239,15 @@ function renderOutlook(d, k) {
     const score = clamp(o.score ?? 0, -1, 1);
     const pct = ((score + 1) / 2) * 100;
     const color = score > 0.15 ? "var(--teal-deep)" : score < -0.15 ? "var(--bear)" : "var(--purple-2)";
+    const note = historicalNote(bt, d.regime, d.conviction, o.horizon, o.horizonLabel);
     box.append(el("div", { class: "outlook-row" },
       el("div", { class: "outlook-head" },
         el("div", { class: "h" }, o.h, el("span", { text: o.sub })),
         el("span", { class: "conf-tag " + conf, text: conf })),
       el("div", { class: "spectrum" }, el("div", { class: "mark", style: `left:${pct}%; color:${color}` })),
       el("div", { class: "spectrum-labels" }, el("span", { text: "Bearish" }), el("span", { text: "Neutral" }), el("span", { text: "Bullish" })),
-      el("p", { class: "scenario", html: o.text })));
+      el("p", { class: "scenario", html: o.text }),
+      note ? el("p", { class: "scenario outlook-hist", text: note }) : ""));
   });
 }
 
