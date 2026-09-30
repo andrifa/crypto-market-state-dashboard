@@ -122,13 +122,33 @@ def reasons(row: pd.Series) -> list[str]:
     return out
 
 
+def _lean(score) -> str:
+    """Plain-English direction for a -1..1 dimension score, so a reader gets the
+    verdict up front instead of having to infer it from a list of numbers."""
+    if score is None or pd.isna(score):
+        return "unclear (inputs missing)"
+    if score >= 0.45:
+        label = "strongly bullish"
+    elif score >= 0.15:
+        label = "bullish-leaning"
+    elif score <= -0.45:
+        label = "strongly bearish"
+    elif score <= -0.15:
+        label = "bearish-leaning"
+    else:
+        label = "neutral"
+    return f"{label} ({score:+.2f} of a possible ±1)"
+
+
 def analysis_paragraphs(row: pd.Series) -> list[str]:
     """
     Fallback for the richer multi-paragraph narrative panel: rule-based, real
     numbers only, no invented specifics. This is what shows before the daily
     reasoning routine's first pass of the day, and whenever it's unavailable --
     the routine's LLM-written version (grounded in the same context numbers)
-    normally overwrites this with a more natural read.
+    normally overwrites this with a more natural read. Each paragraph opens
+    with an explicit lean verdict (bullish/neutral/bearish + score) before the
+    supporting detail, so the direction isn't left for the reader to infer.
     """
     out = []
 
@@ -143,7 +163,7 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
     if pd.notna(ssr):
         parts.append(f"the stablecoin supply ratio is {ssr:.2f}")
     if parts:
-        s = "Short-term, " + ", ".join(parts) + "."
+        s = f"Short-term sentiment is {_lean(row.get('sentiment_score'))}: " + ", ".join(parts) + "."
         if pd.notna(vol):
             calm = "calm" if vol < 0.5 else "elevated" if vol < 0.7 else "turbulent"
             s += f" Realised volatility sits at the {vol*100:.0f}th percentile of its two-year range ({calm})"
@@ -169,7 +189,7 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
     if pd.notna(breadth):
         parts.append(f"breadth is {breadth*100:.0f}% of the last 90 days above the 200-day average")
     if parts:
-        s = "Medium-term, " + ", ".join(parts) + "."
+        s = f"Medium-term momentum is {_lean(row.get('momentum_score'))}: " + ", ".join(parts) + "."
         if pd.notna(cross):
             side = "the golden-cross side" if cross > 0 else "the death-cross side"
             s += f" The 50/200-day average gap is {cross*100:+.1f}%, on {side}."
@@ -194,7 +214,7 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
     if pd.notna(dd) and dd < -0.05:
         parts.append(f"price is {abs(dd)*100:.0f}% below its all-time high")
     if parts:
-        s = "Long-term, " + ", ".join(parts) + "."
+        s = f"Long-term trend is {_lean(row.get('trend_score'))}: " + ", ".join(parts) + "."
         if pd.notna(puell):
             miner_word = "capitulation" if puell <= 0.6 else "euphoria" if puell >= 3 else "a normal range"
             s += f" The Puell Multiple is {puell:.2f}, in {miner_word} for miner economics (context only — not scored)."
