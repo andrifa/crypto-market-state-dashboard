@@ -1,9 +1,11 @@
 name: daily-market-regime
 
 on:
-  schedule:
-    - cron: "30 1 * * *"      # 01:30 UTC daily — after the F&G + Binance daily close
-  workflow_dispatch:           # manual "Run workflow" button
+  # No schedule: the daily pipeline now runs as a single local scheduled task
+  # (fetch + compute + reasoning + push, one run, no separate GitHub Action vs.
+  # cloud-routine race). GitHub only hosts the static site (Pages) now. This
+  # workflow stays available as a manual fallback if the local machine misses a day.
+  workflow_dispatch:
 
 permissions:
   contents: write              # to commit the refreshed data files
