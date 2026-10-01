@@ -1,81 +1,81 @@
 {
-  "updated_utc": "2026-09-30T08:21:47Z",
-  "date": "2026-09-30",
-  "price_btc": 83241,
+  "updated_utc": "2026-10-01T00:11:54Z",
+  "date": "2026-10-01",
+  "price_btc": 83509,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Price above a still-falling 200-day average; leverage has cooled",
+  "headline_tag": "Price above a still-falling 200-day average; leverage rebuilding",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 65,
+  "conviction": 67,
   "conviction_level": "MEDIUM",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The market is in an early-stage uptrend with medium confidence (65/100). That supports a measured increase in acquisition spend, weighted toward active-trader and non-stablecoin channels, while holding some budget in reserve: fewer than half of recent days closed above the long-term average, that average is still declining, leveraged traders have become less willing to pay up for long exposure, and long-term interest rates are high. This is a budget-posture view built on past data, not trading advice and not a forecast."
+    "detail": "The market is in an early-stage uptrend with medium confidence (67/100). That supports a measured increase in acquisition spend, weighted toward active-trader and non-stablecoin channels, while keeping some budget in reserve: fewer than half of recent days closed above the long-term average, that average is still declining, short-term mood has turned warm quickly, and long-term interest rates are high. This is a budget-posture view built on past data, not trading advice and not a forecast."
   },
   "reasons": [
     "BTC is 17% above its 200-day average (Mayer Multiple 1.17).",
-    "90-day return of +35%; weekly RSI a firm 60; 50-day average 8% above the 200-day.",
-    "Only 48% of the last 90 days closed above the 200-day average.",
-    "200-day average still falling (-5% over 90 days); price 33% below all-time high."
+    "90-day return +34%; weekly RSI 60; 50-day average 9% above the 200-day.",
+    "Funding back positive (z +0.79) with Fear & Greed at 74.",
+    "Breadth only 49%; 200-day average still falling (-5% over 90 days)."
   ],
-  "watch": "The tension that stands out today is between mood and positioning: Fear & Greed is still at 71 (Greed) and price is up 35% over 90 days, yet the funding z-score has dropped to -0.15 and the sentiment score has roughly halved to +0.21, so leveraged traders are no longer paying up to be long. Underneath that, the trend remains only partly confirmed, with breadth at 48% and the 200-day average still sloping down 5% over 90 days. Funding recovering, breadth moving well above 50% and the 200-day slope turning positive would strengthen the read; price falling back below the 200-day average would weaken it. The 5.26% 10-year yield, and markets being split on a Fed rate rise at the 27 October FOMC meeting, remain the macro backdrop to monitor.",
+  "watch": "The tension today is between a rapidly warming short-term picture and a long-term trend that is still only partly confirmed. Sentiment jumped to +0.445, a hair under the strongly-bullish threshold, as funding swung from -0.15 to +0.79 in a single day with Fear & Greed at 74, yet fewer than half of the last 90 days (49%) closed above the 200-day average and that average is still sloping down 5% over 90 days. Glassnode-cited analysis (The Block, 29 September) placed the largest long-term-holder supply cluster at $84,000–85,000, right around today's ~$83,500 price. Breadth moving clearly above 50% and the 200-day slope turning up would confirm the read; funding running further into stretched territory without that confirmation, or price falling back below the 200-day average, would weaken it.",
   "analysis": [
-    "Short-term sentiment is bullish-leaning (+0.21 of a possible ±1), though only modestly so and noticeably softer than earlier readings: Fear & Greed at 71 (Greed) is what carries the lean, and most of the positioning data sits closer to neutral than that label implies. The clearest thing pulling against the read is funding, where the z-score has slipped to -0.15, meaning leveraged longs are no longer paying an above-normal premium; that fits the CryptoQuant analyst note (Axel Adler Jr., reported by ChainCatcher on 28 September) that futures positioning currently shows buyers with no advantage. The long/short ratio of 1.38 and open interest of about $7.7B still show a mild long tilt, which reinforces the lean without suggesting a crowded trade, and ChainCatcher, citing CoinGlass, put total crypto liquidations at about $241M over the 24 hours to 30 September ($144M longs, $98M shorts), a small, two-sided figure consistent with low leverage stress. Volatility is neither a support nor a threat: realised volatility is at the 50th percentile of its two-year range, Bollinger width is 18%, DVOL is 35.6 and the VIX is 15.9, so both crypto options and equities are pricing calm, while a stablecoin supply ratio of 5.4 indicates a moderate amount of sidelined stablecoin liquidity. As immediate context, Rio Times reported on 30 September that bitcoin closed Tuesday at US$83,622 (+0.14%) after weak US job-openings and consumer-confidence data cut market-implied odds of an October Fed rate rise to about 51.5% from 70.9%. The lean would strengthen if funding turned back positive alongside the greed reading, and would slip to neutral if Fear & Greed cooled while funding stayed flat or negative.",
-    "Medium-term momentum is bullish-leaning (+0.39 of a possible ±1), the strongest of the three dimensions. Reinforcing that, the 90-day rate of change is +35%, weekly RSI is 59.8 (firm, but well short of the overbought zone), and the 50-day average sits 8.4% above the 200-day, so the moving-average structure is on the golden-cross side. The main thing cutting against the lean is participation: only 47.8% of the last 90 days closed above the 200-day average, which means the headline gain comes from a relatively recent move rather than a long, consistent run of strength. Network and market-share data are mildly supportive rather than decisive, with active addresses 5% above their yearly average and BTC dominance at 58.3%, showing activity concentrated in bitcoin rather than rotating broadly into altcoins. Flows reinforce the lean: The Block reported on 26 September that US spot bitcoin ETFs took in about $2.4B in the week ending 25 September, their largest week since October 2025 and enough to turn 2026 year-to-date flows positive, although the daily figures shrank each day of that week; Rio Times, citing SoSoValue, reported about US$31M on Monday 28 September, an eighth straight session of net inflows, and the pipeline's latest daily reading is about +$66M. The next scheduled FOMC meeting is 27 October 2026, the main scheduled macro date inside this window, with markets currently split roughly evenly on a rate rise. The lean would strengthen if breadth moved clearly above 50% while ETF inflows held, and would weaken if weekly RSI rolled over or the daily flow streak turned negative.",
-    "The long-term trend is bullish-leaning (+0.23 of a possible ±1), but it is an early and not yet fully confirmed lean. What supports it is that price is 17% above its 200-day average (Mayer Multiple 1.17); what cuts against it is that the average itself is still falling, down 5.1% over 90 days. Price has reclaimed the trend line before the trend line has turned up, which is an early-recovery configuration rather than a mature uptrend, and that is why the score is only modestly positive. Valuation neither reinforces nor undermines the lean: the 200-week multiple of 1.26 is mid-range, price is still 33.3% below its all-time high, the Puell Multiple of 1.28 puts miner revenue in a normal band, and the Pi-Cycle gap of -55% is far from the zone that has historically accompanied cycle tops (context only, not scored). Macro is the clearest cross-current: the US 10-year yield is 5.26% against a fed funds rate of 3.63%, so long-dated government debt offers a meaningful competing return to risk assets. Structural demand reinforces the lean, with cumulative spot ETF net inflows of about $57.7B and public companies holding roughly 1.28M BTC; The Block noted on 26 September that year-to-date ETF flows have recovered from roughly -$5.8B in mid-July to positive. The lean would strengthen if the 200-day slope turned positive, and would flip toward neutral or bearish if price fell back below that average while long yields stayed this high."
+    "Short-term sentiment is bullish-leaning (+0.445 of a possible ±1), sitting just under the +0.45 line where it would be classed as strongly bullish, and it has roughly doubled from yesterday's +0.21. The main driver of that jump is funding: the z-score swung from -0.15 to +0.79 in a day, so leveraged longs are again paying a modestly above-normal premium, which reinforces the Fear & Greed reading of 74 (Greed) rather than contradicting it as it did yesterday. Positioning data reinforces the lean without looking crowded: the long/short ratio is 1.35 and open interest is about $7.98B, and The Block reported on 29 September that coin-denominated open interest was at its lowest since March, with Bitfinex analysts describing perpetual positioning as near neutral after the breakout leverage cleared, so today's funding uptick is a rebuild from a low base rather than an extreme. Liquidations stayed modest and two-sided, with TechFlow, citing CoinGlass, reporting about $281M over the 24 hours to 30 September ($145M longs, $136M shorts). Volatility is neutral for the lean: realised volatility is at the 49th percentile, Bollinger width is 18%, DVOL is 35.2 and the VIX is 16.3, while a stablecoin supply ratio of 5.4 indicates a moderate pool of sidelined stablecoin liquidity. As immediate context, The Block reported on 30 September that August core PCE rose 0.2% month-on-month (3.0% year-on-year), below expectations, with bitcoin steady around $83,700. The lean would tip into strongly bullish if funding held positive alongside the greed reading, and would cool toward neutral if funding slipped back below zero.",
+    "Medium-term momentum is bullish-leaning (+0.39 of a possible ±1), essentially unchanged from yesterday. Reinforcing that, the 90-day rate of change is +34%, weekly RSI is 59.8 (firm but well short of overbought), and the 50-day average is 8.9% above the 200-day, keeping the moving-average structure on the golden-cross side; CoinDesk noted on 30 September that bitcoin was on course for roughly a 42% third-quarter gain, its strongest quarter since late 2024. The main thing pulling against the lean is still participation: 48.9% of the last 90 days closed above the 200-day average, so the headline gain rests on a relatively recent move rather than a long run of consistent strength, though breadth edged up from 47.8% yesterday. Network and market-share data are mildly supportive, with active addresses 5% above their yearly average and BTC dominance at 58.3%, indicating activity concentrated in bitcoin rather than rotating into altcoins. Flows reinforce the lean but with fading intensity: BeInCrypto (via Yahoo Finance, 29 September) reported spot ETF inflows of about $2.98B over seven sessions from 17 September, but daily figures fell from $998.95M on 21 September to $134.47M on 25 September, and the pipeline's latest daily reading is about +$66M. The next FOMC meeting is 27–28 October, and CoinDesk reported on 30 September that the softer PCE print pulled implied odds of an October rate rise down to roughly 37–47% depending on the measure, from about 70% two days earlier. The lean would strengthen if breadth moved clearly above 50% with ETF inflows holding, and weaken if weekly RSI rolled over or daily flows turned negative.",
+    "The long-term trend is bullish-leaning (+0.24 of a possible ±1), an early and not yet fully confirmed lean. Supporting it, price is 17% above its 200-day average (Mayer Multiple 1.17); cutting against it, that average is still falling, down 4.9% over 90 days, though the decline is gradually flattening from -5.1% yesterday. This is an early-recovery configuration, price reclaiming the trend line before the line turns up, which is why the score is only modestly positive. Valuation is neutral for the lean: the 200-week multiple of 1.27 is mid-range, price is 33% below its all-time high, the Puell Multiple of 1.28 puts miner revenue in a normal band, and the Pi-Cycle gap of -55% is far from the zone historically seen near cycle tops (context only, not scored). Macro is the clearest cross-current: the US 10-year yield is 5.29% against a fed funds rate of 3.63%, a meaningful competing return for risk assets, and The Block (29 September) cited rising yields and crude prices as headwinds for non-yielding assets. Structural holdings reinforce the lean, with cumulative spot ETF net inflows of about $57.7B, public companies holding roughly 1.28M BTC, and Santiment data reported by KuCoin on 30 September showing wallets holding 10–10,000 BTC adding about 41,000 BTC over ten days to roughly 67.9% of supply. The lean would strengthen if the 200-day slope turned positive, and would flip toward neutral or bearish if price fell back below that average while long yields stayed this high."
   ],
   "team_notes": {
-    "marketing": "Lean into non-stablecoin and active-trader channels: the +35% 90-day move, Fear & Greed at 71 and the largest weekly spot ETF inflow since October 2025 (about $2.4B, per The Block) give campaigns a credible, sourced recovery story. With breadth at only 48%, funding now flat (z-score -0.15) and conviction at medium (65/100), lead with trend, institutional participation and product value rather than FOMO urgency, and avoid 'confirmed bull market' claims. Keep stablecoin-first channels defended and some spend flexible while rate expectations around the 27 October FOMC meeting remain unsettled."
+    "marketing": "Lean into non-stablecoin and active-trader channels: a +34% 90-day move, bitcoin's strongest quarter since late 2024 (per CoinDesk) and recent multi-billion spot ETF inflows give campaigns a credible, sourced recovery story. With Fear & Greed at 74 and funding turning positive again, sentiment is already warm, so lead with trend, institutional participation and product value rather than FOMO urgency, and avoid 'confirmed bull market' claims while breadth is 49% and conviction is medium (67/100). Keep stablecoin-first channels defended and some spend flexible ahead of the 27–28 October FOMC meeting."
   },
   "changed_today": null,
   "scores": {
-    "trend": 0.228,
-    "momentum": 0.387,
-    "sentiment": 0.209
+    "trend": 0.239,
+    "momentum": 0.386,
+    "sentiment": 0.445
   },
   "context": {
-    "mayer_multiple": 1.168,
-    "ma200_slope_90d": -0.0507,
-    "ma_200w_multiple": 1.26,
-    "drawdown_from_ath": -0.333,
+    "mayer_multiple": 1.171,
+    "ma200_slope_90d": -0.0485,
+    "ma_200w_multiple": 1.27,
+    "drawdown_from_ath": -0.331,
     "rsi_weekly": 59.8,
     "active_addr_ratio": 1.049,
-    "puell_multiple": 1.277,
-    "fear_greed": 71.0,
-    "funding_z": -0.15,
-    "vol_percentile": 0.5,
-    "bollinger_width": 0.1819,
+    "puell_multiple": 1.278,
+    "fear_greed": 74.0,
+    "funding_z": 0.79,
+    "vol_percentile": 0.49,
+    "bollinger_width": 0.1766,
     "btc_dominance": 58.3,
-    "ma_cross": 0.0843,
-    "roc_90d": 0.3538,
-    "breadth_90d": 0.478,
+    "ma_cross": 0.0892,
+    "roc_90d": 0.3352,
+    "breadth_90d": 0.489,
     "ssr": 5.4,
-    "pi_cycle_gap": -0.5541,
-    "open_interest_usd": 7733076124.345,
-    "long_short_ratio": 1.3832,
-    "dvol": 35.61,
-    "us_10y_yield": 5.255,
-    "vix": 15.89,
+    "pi_cycle_gap": -0.5525,
+    "open_interest_usd": 7975450876.830795,
+    "long_short_ratio": 1.3474,
+    "dvol": 35.24,
+    "us_10y_yield": 5.293,
+    "vix": 16.34,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": 66194702.4,
     "etf_cum_net_flow_usd": 57665404062.368,
     "public_company_btc_treasury": 1275684.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 30 September 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Price above a still-falling 200-day average; leverage has cooled)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The market is in an early-stage\n    uptrend with medium confidence\n    (65/100). That supports a measured\n    increase in acquisition spend,\n    weighted toward active-trader and non-\n    stablecoin channels, while holding\n    some budget in reserve: fewer than\n    half of recent days closed above the\n    long-term average, that average is\n    still declining, leveraged traders\n    have become less willing to pay up for\n    long exposure, and long-term interest\n    rates are high. This is a budget-\n    posture view built on past data, not\n    trading advice and not a forecast.\n\n  Why:\n  • BTC is 17% above its 200-day average (Mayer\n    Multiple 1.17).\n  • 90-day return of +35%; weekly RSI a firm 60;\n    50-day average 8% above the 200-day.\n  • Only 48% of the last 90 days closed above the\n    200-day average.\n  • 200-day average still falling (-5% over 90 days);\n    price 33% below all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 1 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Price above a still-falling 200-day average; leverage rebuilding)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The market is in an early-stage\n    uptrend with medium confidence\n    (67/100). That supports a measured\n    increase in acquisition spend,\n    weighted toward active-trader and non-\n    stablecoin channels, while keeping\n    some budget in reserve: fewer than\n    half of recent days closed above the\n    long-term average, that average is\n    still declining, short-term mood has\n    turned warm quickly, and long-term\n    interest rates are high. This is a\n    budget-posture view built on past\n    data, not trading advice and not a\n    forecast.\n\n  Why:\n  • BTC is 17% above its 200-day average (Mayer\n    Multiple 1.17).\n  • 90-day return +34%; weekly RSI 60; 50-day average\n    9% above the 200-day.\n  • Funding back positive (z +0.79) with Fear & Greed\n    at 74.\n  • Breadth only 49%; 200-day average still falling\n    (-5% over 90 days).\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 241000000,
-      "source_name": "ChainCatcher (citing CoinGlass)",
-      "source_url": "https://www.chaincatcher.com/en/article/2293135",
+      "value": 281000000,
+      "source_name": "TechFlow (citing CoinGlass)",
+      "source_url": "https://techflowpost.com/en-US/newsletter/138450",
       "as_of": "2026-09-30",
-      "note": "Total market; $144M longs, $97.7M shorts; BTC about $44M."
+      "note": "Total market; $145M longs, $136M shorts; BTC about $93M."
     },
     "exchange_netflow_7d_btc": {
       "value": -112700,
@@ -85,45 +85,51 @@
       "note": "Derived: reported 7-day average net outflow of 16,100 BTC/day, multiplied by 7."
     },
     "onchain_volume_usd": {
-      "value": 39706734856,
-      "source_name": "CoinGecko (BTC price page)",
-      "source_url": "https://www.coingecko.com/en/coins/bitcoin",
+      "value": 29007802596,
+      "source_name": "CoinGecko (BTC historical data)",
+      "source_url": "https://www.coingecko.com/en/coins/bitcoin/historical_data",
       "as_of": "2026-09-30",
-      "note": "24-hour BTC trading volume; aggregators differ widely ($29B-$40B); not an on-chain measure."
+      "note": "24h BTC trading volume; aggregators differ widely ($15.7B-$29B); not an on-chain measure."
     },
-    "whale_supply_pct": null,
+    "whale_supply_pct": {
+      "value": 67.93,
+      "source_name": "KuCoin News (citing Santiment)",
+      "source_url": "https://www.kucoin.com/news/flash/bitcoin-whales-accumulate-41-025-btc-in-10-days-as-etfs-attract-2-4b",
+      "as_of": "2026-09-30",
+      "note": "Wallets holding 10-10,000 BTC; 13.64M BTC after adding 41,025 BTC in 10 days."
+    },
     "sth_cost_basis_usd": null,
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Bitcoin Edges Up to US$83,622 as Weak US Data Trims Fed Hike Bets",
-        "url": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-wednesday-september-30-2026/",
-        "source": "Rio Times",
+        "title": "Bitcoin steadies as soft PCE cools October Fed rate hike bets",
+        "url": "https://www.theblock.co/news/markets/2026-09-30-bitcoin-pce-inflation-october-rate-hike-417335",
+        "source": "The Block",
         "date": "2026-09-30"
       },
       {
-        "title": "Data: In the past 24 hours, the total liquidation across the entire network was 241 million USD, with long positions liquidated at 144 million USD and short positions liquidated at 97.7191 million USD",
-        "url": "https://www.chaincatcher.com/en/article/2293135",
-        "source": "ChainCatcher",
+        "title": "Live updates: Bitcoin closing out best quarter since 2024, ether its best since 2021",
+        "url": "https://www.coindesk.com/markets/2026/09/30/live-updates-bitcoin-below-usd84-000-ahead-of-pce-inflation-data-micron-earnings",
+        "source": "CoinDesk",
         "date": "2026-09-30"
       },
       {
-        "title": "SOON up +46.64%, BTC -0.03%, Zebec Network is The Coin of The Day - Daily Market Update for Sep 30, 2026",
-        "url": "https://coincodex.com/article/92835/daily-market-update-for-september-30-2026",
-        "source": "CoinCodex",
-        "date": "2026-09-30"
-      },
-      {
-        "title": "Bitcoin ETFs Post 2026's Strongest Weekly Inflows as Markets Turn to October Rate, Inflation and Liquidity Risks",
-        "url": "https://www.investorideas.com/news/2026/cryptocurrency/09292-bitcoin-etfs-post-2026s-strongest-weekly-inflows-as-markets-turn-to-october-rate-inflation-and-liquidity-risks.asp",
-        "source": "InvestorIdeas",
+        "title": "Bitcoin tests long-term holder supply cluster as leverage clears, analysts say",
+        "url": "https://www.theblock.co/news/markets/2026-09-29-bitcoin-tests-long-term-holder-supply-cluster-leverage-clears-analysts-say-417162",
+        "source": "The Block",
         "date": "2026-09-29"
       },
       {
-        "title": "Analyst: Bitcoin's average daily net outflow from exchanges exceeds 16,000 coins, and the futures position indicator shows that buyers have no advantage at the moment",
-        "url": "https://www.chaincatcher.com/en/article/2292669",
-        "source": "ChainCatcher",
-        "date": "2026-09-28"
+        "title": "Bitcoin Whales Accumulate 41,025 BTC in 10 Days as ETFs Attract $2.4B",
+        "url": "https://www.kucoin.com/news/flash/bitcoin-whales-accumulate-41-025-btc-in-10-days-as-etfs-attract-2-4b",
+        "source": "KuCoin News",
+        "date": "2026-09-30"
+      },
+      {
+        "title": "Bitcoin Rides Risk Roller Coaster as Sepeculative Bets Wind Down",
+        "url": "https://bloomberg.com/news/articles/2026-09-30/bitcoin-rides-risk-roller-coaster-as-sepeculative-bets-wind-down",
+        "source": "Bloomberg",
+        "date": "2026-09-30"
       }
     ]
   }
