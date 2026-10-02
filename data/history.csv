@@ -4182,14 +4182,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-09-18,80901.4609375,Neutral,strengthening,Greed,40.0,transition,0.082,0.257,0.277,HOLD at planned level
 2026-09-19,81233.6796875,Neutral,strengthening,Greed,45.0,transition,0.097,0.103,0.478,HOLD at planned level
 2026-09-20,81142.609375,Neutral,stable,Greed,49.0,transition,0.107,0.068,0.432,HOLD at planned level
-2026-09-21,86620.0,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.473,HOLD at planned level
+2026-09-21,86602.9140625,Neutral,strengthening,Greed,56.0,transition,0.168,0.473,0.473,HOLD at planned level
 2026-09-22,86208.56,Neutral,strengthening,Extreme Greed,57.0,transition,0.177,0.397,0.501,HOLD at planned level
 2026-09-23,84397.6,Neutral,strengthening,Greed,56.0,transition,0.172,0.34,0.087,HOLD at planned level
-2026-09-24,84410.24,Neutral,strengthening,Greed,57.0,transition,0.183,0.362,0.12,HOLD at planned level
+2026-09-24,84410.24,Neutral,strengthening,Greed,58.0,transition,0.183,0.362,0.12,HOLD at planned level
 2026-09-25,84099.99,Bull,strengthening,Greed,58.0,early-bull,0.19,0.425,0.018,SCALE UP acquisition budget
 2026-09-26,84433.1,Bull,strengthening,Greed,61.0,early-bull,0.203,0.301,0.16,SCALE UP acquisition budget
 2026-09-27,84472.0,Bull,strengthening,Greed,63.0,early-bull,0.213,0.241,0.183,SCALE UP acquisition budget
 2026-09-28,83500.01,Bull,strengthening,Greed,63.0,early-bull,0.213,0.423,0.019,SCALE UP acquisition budget
 2026-09-29,83663.66,Bull,strengthening,Greed,65.0,early-bull,0.224,0.393,0.302,SCALE UP acquisition budget
-2026-09-30,83623.6,Bull,strengthening,Greed,66.0,early-bull,0.232,0.388,0.215,SCALE UP acquisition budget
-2026-10-01,83509.32,Bull,strengthening,Greed,67.0,early-bull,0.239,0.386,0.445,SCALE UP acquisition budget
+2026-09-30,83623.6,Bull,strengthening,Greed,66.0,early-bull,0.232,0.454,0.214,SCALE UP acquisition budget
+2026-10-01,84880.05,Bull,strengthening,Greed,69.0,early-bull,0.251,0.458,0.367,SCALE UP acquisition budget
+2026-10-02,84792.7,Bull,strengthening,Greed,69.0,early-bull,0.259,0.458,0.111,SCALE UP acquisition budget
