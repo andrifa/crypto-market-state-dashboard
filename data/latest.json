@@ -1,81 +1,81 @@
 {
-  "updated_utc": "2026-10-02T00:04:13Z",
-  "date": "2026-10-02",
-  "price_btc": 84793,
+  "updated_utc": "2026-10-03T03:11:55Z",
+  "date": "2026-10-03",
+  "price_btc": 84635,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend intact, but leverage cooled and ETF flows dipped",
+  "headline_tag": "Strong momentum, but leverage keeps cooling",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 69,
-  "conviction_level": "MEDIUM",
+  "conviction": 70,
+  "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The market is in an early-stage uptrend with medium confidence (69/100), and the one-month momentum picture is now strong. That supports a measured increase in acquisition spend, weighted toward active-trader and non-stablecoin channels, while holding part of the budget in reserve: only half of recent days closed above the long-term average, that average is still declining, ETF buying paused at the end of September, and long-term interest rates are high. This is a budget-posture view built on past data, not trading advice and not a forecast."
+    "detail": "The market is in an early-stage uptrend and signal confidence has stepped up to high (70/100), led by a strong one-month momentum picture. That supports increasing acquisition spend, weighted toward active-trader and non-stablecoin channels, while keeping some budget in reserve because the long-term average is still declining, only about half of recent days closed above it, and long-term interest rates remain high. This is a budget-posture view built on past data, not trading advice and not a forecast."
   },
   "reasons": [
     "BTC is 19% above its 200-day average (Mayer Multiple 1.19).",
-    "90-day return +34%; 50-day average 9.5% above the 200-day; momentum score +0.46.",
-    "Funding back below normal (z -0.68) despite Fear & Greed at 72.",
-    "200-day average still falling (-4.6% over 90 days); breadth only 50%."
+    "90-day return +33%; 50-day average 10.0% above the 200-day; momentum +0.48.",
+    "Funding further below normal (z -1.01) even with Fear & Greed at 67.",
+    "200-day average still falling (-4.4% over 90 days); breadth only 51%."
   ],
-  "watch": "The tension today is between momentum and short-term positioning. Momentum just crossed into strongly bullish territory (+0.46) on a +34% 90-day move, yet sentiment fell from +0.445 to +0.11 in one day as funding swung from +0.79 to -0.68, the long/short ratio dropped toward balance at 1.04, and spot ETFs posted about $148.7M of outflows on 30 September, ending a nine-day inflow streak. That means the trailing price trend is running ahead of fresh leveraged and ETF demand, with breadth still only at 50% and the 200-day average still sloping down. A return to ETF inflows and breadth moving clearly above 50% would confirm the read; several sessions of outflows, or price slipping back toward the roughly $73,700 short-term-holder cost basis, would weaken it.",
+  "watch": "The key tension is between strongly bullish momentum (+0.48) and leverage that keeps backing away: funding has dropped from z +0.79 to -1.01 over two days and sentiment has slid to a flat +0.02, while price has pushed higher and short positions, not longs, have been liquidated. That means the trailing price trend is advancing without a leveraged chase, with breadth still only 51% and the 200-day average still sloping down. Breadth moving clearly above 55% and the 200-day slope turning flat or positive would confirm the read; price slipping back toward the roughly $73,700 short-term-holder cost basis, or several sessions of ETF outflows, would weaken it.",
   "analysis": [
-    "Short-term sentiment is neutral (+0.11 of a possible ±1), a sharp step down from yesterday's +0.445, which was just shy of strongly bullish. The main driver of that drop is funding: the z-score swung back from +0.79 to -0.68 in a day, so leveraged longs are no longer paying an above-normal premium, which cuts against the still-warm Fear & Greed reading of 72 (Greed) and leaves mood and positioning disagreeing again. Positioning data points the same way as funding rather than the greed reading: the long/short ratio eased from 1.35 to 1.04, close to balanced, even as open interest rose to about $8.22B from roughly $7.98B, a mix that suggests new positions are not one-sidedly long. Bitcoin.com reported that market-wide liquidations on 1 October were about $193M, with bitcoin's share falling to around $35M from over $80M a day earlier, so the cooling came without a forced flush. Volatility is neutral for the lean, with realised volatility at the 50th percentile of its two-year range, Bollinger width at 17%, DVOL at 36.5 and the VIX at 16.4, while a stablecoin supply ratio of 5.4 indicates a moderate pool of sidelined stablecoin liquidity. The lean would move back toward bullish if funding turned positive again alongside the greed reading, and toward bearish if Fear & Greed dropped while open interest kept climbing on negative funding.",
-    "Medium-term momentum is strongly bullish (+0.46 of a possible ±1), crossing the +0.45 threshold today from +0.39 yesterday and now the strongest of the three dimensions. Reinforcing that, the 90-day rate of change is +34%, weekly RSI is 59.8 (firm but well short of overbought), and the 50-day average sits 9.5% above the 200-day, keeping the structure on the golden-cross side. Participation has also improved at the margin: 50% of the last 90 days closed above the 200-day average, up from 49% yesterday, though that is still only half and remains the weakest part of the momentum picture. Network and market-share data are supportive, with active addresses 11% above their yearly average (up from 5%) and BTC dominance at 58.6%, indicating activity concentrated in bitcoin rather than rotating into altcoins. The one clear item pulling against the lean is flows: spot bitcoin ETFs recorded about $148.7M of net outflows on 30 September per Farside data, led by Fidelity's FBTC (-$125.6M), ending a nine-day inflow streak that had brought in roughly $3.08B. The next FOMC meeting is on 27–28 October, and the softer August PCE print reported on 30 September had already lowered priced odds of an October hike. The lean would strengthen if breadth moved clearly above 50% with ETF flows returning to inflows, and weaken if weekly RSI rolled over or outflows persisted for several sessions.",
-    "The long-term trend is bullish-leaning (+0.26 of a possible ±1), a modest improvement from +0.24 yesterday but still an early, not yet confirmed lean. Supporting it, price is about 19% above its 200-day average (Mayer Multiple 1.19); cutting against it, that average is still falling, down 4.6% over 90 days, though the decline continues to flatten from -4.9% yesterday. That pattern of price reclaiming the trend line before the line itself turns up is why the trend score is positive but well below the momentum score. Valuation is neutral for the lean: the 200-week multiple of 1.28 is mid-range, price is 32% below its all-time high, the Puell Multiple of 1.08 puts miner revenue in a normal band, and the Pi-Cycle gap of -55% is far from the zone historically seen near cycle tops (context only, not scored). On-chain cost basis is supportive, with KuCoin News reporting the short-term-holder cost basis at about $73,700 as of 1 October, roughly 14% below price, meaning recent buyers are on average in profit. Macro remains the clearest cross-current: the US 10-year yield is 5.24% against a fed funds rate of 3.63%, a meaningful competing return for non-yielding assets, while structural holdings reinforce the lean, with cumulative spot ETF net inflows of about $57.5B and public companies holding roughly 1.28M BTC. The lean would strengthen if the 200-day slope turned positive, and would flip toward neutral or bearish if price fell back below that average or under the short-term-holder cost basis while long yields stayed this high."
+    "Short-term sentiment is neutral (+0.02 of a possible ±1), slipping further from +0.11 yesterday and +0.445 two days ago, so the near-term mood signal has now cooled to almost exactly flat. The main reason is positioning rather than mood: the funding z-score fell again to -1.01 from -0.68, meaning perpetual longs are paying noticeably less than normal, which cuts against the Fear & Greed Index still sitting in Greed at 67 (down from 72). That gap is the defining feature of the week — the crowd describes itself as greedy, but leveraged traders are not paying up to express it. The long/short ratio rose back to 1.19 from 1.04 and open interest edged up to about $8.29B from $8.22B, a mild tilt toward longs that slightly pulls against the neutral read, though without the funding premium that usually accompanies a crowded trade. Cointelegraph reported about $210M of crypto liquidations over 24 hours on 2 October, including roughly $122M of BTC shorts as price pushed toward $87K, consistent with shorts rather than longs being forced out. Volatility measures sit on the calm side and add little directional weight: realised volatility is at the 41st percentile of its two-year range, Bollinger width is 16%, DVOL is 34.8 and the VIX is 15.3, while a stablecoin supply ratio of 5.46 points to a moderate pool of sidelined liquidity. The lean would turn bullish if funding moved back above normal alongside the greed reading, and bearish if Fear & Greed fell while open interest kept building on negative funding.",
+    "Medium-term momentum is strongly bullish (+0.48 of a possible ±1), up from +0.46 and the strongest of the three dimensions for a second day. Reinforcing that, the 90-day rate of change is +33%, weekly RSI is 59.8 — firm but well short of overbought — and the 50-day average is now 10.0% above the 200-day, widening the golden-cross spread. Participation is improving only slowly: 51% of the last 90 days closed above the 200-day average, up from 50%, which is the weakest part of the picture and the main thing cutting against the strong lean, since the headline 90-day gain rests on a relatively narrow share of strong days. Network and market-share data reinforce the lean, with active addresses 14% above their yearly average (from 11%) and BTC dominance at 58.7%, so activity is concentrated in bitcoin rather than rotating into altcoins. Flows have steadied after the 30 September outflow: Yahoo Finance reported spot bitcoin ETFs took in about $103M on Thursday 1 October, reversing the prior day's outflows, and the pipeline's latest daily ETF figure is a smaller net inflow of about $31.7M. The next FOMC meeting is on 27–28 October. The lean would firm further if breadth moved clearly above 55% with ETF inflows sustained, and weaken if weekly RSI rolled over or outflows resumed for several sessions.",
+    "The long-term trend is bullish-leaning (+0.26 of a possible ±1), essentially unchanged from yesterday and still an early, unconfirmed lean. Supporting it, price is about 19% above its 200-day average (Mayer Multiple 1.19); cutting against it, that average is still falling, down 4.4% over 90 days, though the decline keeps flattening (from -4.6% yesterday and -4.9% the day before). That combination — price back above the trend line before the line itself turns up — is why trend trails momentum by a wide margin. Valuation is neutral for the lean: the 200-week multiple of 1.28 is mid-range, price is 32% below its all-time high, the Puell Multiple of 1.19 puts miner revenue in a normal band, and the Pi-Cycle gap of -55% is far from levels historically seen near cycle tops (context only, not scored). KuCoin News reported the short-term-holder cost basis at about $73,700 as of 1 October, so recent buyers are on average in profit, which supports the lean. Macro remains the clearest cross-current: the US 10-year yield is 5.28% against a fed funds rate of 3.63%, a substantial competing return for a non-yielding asset; Yahoo Finance reported a soft September payrolls print of 29,000 on 2 October, and on the structural side the SEC proposed a dedicated crypto custody framework for investment advisers, per Investing.com. Cumulative spot ETF net inflows of about $57.7B and roughly 1.28M BTC held by public companies reinforce the lean, which would strengthen if the 200-day slope turned positive and flip toward neutral if price fell back below that average or under the short-term-holder cost basis while long yields stayed this high."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels: the +34% 90-day move and a 50-day average 9.5% above the 200-day give campaigns a concrete recovery story to lead with. Keep messaging on the trend and the quarter just closed rather than urgency — leverage has cooled (funding z -0.68) and ETF flows dipped, so FOMO angles would run ahead of the data while Fear & Greed already sits at 72."
+    "marketing": "Lean into active-trader and non-stablecoin channels: a +33% 90-day move with the 50-day average 10% above the 200-day gives campaigns a concrete recovery story, and high signal confidence (70/100) supports a fuller push. Lead with the trend and the strengthening quarter-start rather than urgency — Fear & Greed is already at 67 while leverage is cooling (funding z -1.01), so FOMO angles would run ahead of the data; keep stablecoin-first channels at steady, not expanded, spend."
   },
   "changed_today": null,
   "scores": {
-    "trend": 0.259,
-    "momentum": 0.458,
-    "sentiment": 0.111
+    "trend": 0.264,
+    "momentum": 0.482,
+    "sentiment": 0.019
   },
   "context": {
-    "mayer_multiple": 1.188,
-    "ma200_slope_90d": -0.0461,
+    "mayer_multiple": 1.185,
+    "ma200_slope_90d": -0.044,
     "ma_200w_multiple": 1.28,
-    "drawdown_from_ath": -0.32,
+    "drawdown_from_ath": -0.322,
     "rsi_weekly": 59.8,
-    "active_addr_ratio": 1.11,
-    "puell_multiple": 1.08,
-    "fear_greed": 72.0,
-    "funding_z": -0.68,
-    "vol_percentile": 0.5,
-    "bollinger_width": 0.1735,
-    "btc_dominance": 58.6,
-    "ma_cross": 0.0947,
-    "roc_90d": 0.344,
-    "breadth_90d": 0.5,
-    "ssr": 5.4,
-    "pi_cycle_gap": -0.5509,
-    "open_interest_usd": 8222597768.1552,
-    "long_short_ratio": 1.0392,
-    "dvol": 36.45,
-    "us_10y_yield": 5.237,
-    "vix": 16.39,
+    "active_addr_ratio": 1.136,
+    "puell_multiple": 1.189,
+    "fear_greed": 67.0,
+    "funding_z": -1.01,
+    "vol_percentile": 0.41,
+    "bollinger_width": 0.1633,
+    "btc_dominance": 58.7,
+    "ma_cross": 0.0999,
+    "roc_90d": 0.3318,
+    "breadth_90d": 0.511,
+    "ssr": 5.46,
+    "pi_cycle_gap": -0.5495,
+    "open_interest_usd": 8294868181.472237,
+    "long_short_ratio": 1.1882,
+    "dvol": 34.78,
+    "us_10y_yield": 5.277,
+    "vix": 15.31,
     "fed_funds_rate": 3.63,
-    "etf_daily_net_flow_usd": -148687762.20000002,
-    "etf_cum_net_flow_usd": 57516716300.168,
+    "etf_daily_net_flow_usd": 31689246.200000003,
+    "etf_cum_net_flow_usd": 57651076103.443,
     "public_company_btc_treasury": 1275684.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 2 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, but leverage cooled and ETF flows dipped)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The market is in an early-stage\n    uptrend with medium confidence\n    (69/100), and the one-month momentum\n    picture is now strong. That supports a\n    measured increase in acquisition\n    spend, weighted toward active-trader\n    and non-stablecoin channels, while\n    holding part of the budget in reserve:\n    only half of recent days closed above\n    the long-term average, that average is\n    still declining, ETF buying paused at\n    the end of September, and long-term\n    interest rates are high. This is a\n    budget-posture view built on past\n    data, not trading advice and not a\n    forecast.\n\n  Why:\n  • BTC is 19% above its 200-day average (Mayer\n    Multiple 1.19).\n  • 90-day return +34%; 50-day average 9.5% above the\n    200-day; momentum score +0.46.\n  • Funding back below normal (z -0.68) despite Fear &\n    Greed at 72.\n  • 200-day average still falling (-4.6% over 90\n    days); breadth only 50%.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 3 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Strong momentum, but leverage keeps cooling)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The market is in an early-stage\n    uptrend and signal confidence has\n    stepped up to high (70/100), led by a\n    strong one-month momentum picture.\n    That supports increasing acquisition\n    spend, weighted toward active-trader\n    and non-stablecoin channels, while\n    keeping some budget in reserve because\n    the long-term average is still\n    declining, only about half of recent\n    days closed above it, and long-term\n    interest rates remain high. This is a\n    budget-posture view built on past\n    data, not trading advice and not a\n    forecast.\n\n  Why:\n  • BTC is 19% above its 200-day average (Mayer\n    Multiple 1.19).\n  • 90-day return +33%; 50-day average 10.0% above\n    the 200-day; momentum +0.48.\n  • Funding further below normal (z -1.01) even with\n    Fear & Greed at 67.\n  • 200-day average still falling (-4.4% over 90\n    days); breadth only 51%.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 193000000,
-      "source_name": "Bitcoin.com News (citing liquidation data)",
-      "source_url": "https://news.bitcoin.com/market-updates/bitcoin-price-begins-uptober-swing-back-85k",
-      "as_of": "2026-10-01",
-      "note": "Total market; ~$117M longs; BTC about $35M, down from $80M+ a day earlier."
+      "value": 210000000,
+      "source_name": "Cointelegraph (citing CoinGlass)",
+      "source_url": "https://cointelegraph.com/markets/bitcoin-87k-order-book-liquidity-wall-shifts-higher",
+      "as_of": "2026-10-02",
+      "note": "Cross-crypto total; about $122M were BTC short liquidations."
     },
     "exchange_netflow_7d_btc": {
       "value": -112700,
@@ -108,34 +108,34 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Bitcoin Price Begins 'Uptober' With a Swing Back to $85K",
-        "url": "https://news.bitcoin.com/market-updates/bitcoin-price-begins-uptober-swing-back-85k",
-        "source": "Bitcoin.com News",
-        "date": "2026-10-01"
-      },
-      {
-        "title": "Bitcoin and ethereum prices today, Thursday, October 1, 2026: Not much price movement this morning, but Citigroup says that will change",
-        "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-october-1-2026-not-much-price-movement-this-morning-but-citigroup-says-that-will-change-113313201.html",
+        "title": "Bitcoin and ethereum prices today, Friday, October 2, 2026: Crypto prices surging ahead of September jobs report",
+        "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-october-2-2026-crypto-prices-surging-ahead-of-september-jobs-report-112959413.html",
         "source": "Yahoo Finance",
-        "date": "2026-10-01"
+        "date": "2026-10-02"
       },
       {
-        "title": "Bitcoin Price Analysis October 1, 2026: BTC Holds $83.5K as 10-Year Treasury Yields Reach 5.3%",
-        "url": "https://usethebitcoin.com/bitcoin/bitcoin-price-october-1-2026/",
-        "source": "UseTheBitcoin",
-        "date": "2026-10-01"
+        "title": "Bitcoin Order-Book Liquidity Battle Brings BTC Price To $86.8K",
+        "url": "https://cointelegraph.com/markets/bitcoin-87k-order-book-liquidity-wall-shifts-higher",
+        "source": "Cointelegraph",
+        "date": "2026-10-02"
       },
       {
-        "title": "Bitcoin’s October outlook hinges on $82K support, analysts say",
-        "url": "https://crypto.news/bitcoin-october-outlook-hinges-on-82k-support/",
-        "source": "crypto.news",
-        "date": "2026-10-01"
+        "title": "Bitcoin’s October Momentum Faces a Jobs-Data Reality Check",
+        "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-october-momentum-faces-jobs-114826383.html",
+        "source": "Yahoo Finance",
+        "date": "2026-10-02"
       },
       {
-        "title": "BTC price is 14% above the cost basis of short-term holders, and long-term holders are up 72%.",
-        "url": "https://www.kucoin.com/news/flash/btc-price-14-above-short-term-holders-cost-basis-long-term-holders-up-72",
-        "source": "KuCoin News",
-        "date": "2026-10-01"
+        "title": "Bitcoin holds below $85,000 as SEC custody proposal boosts institutional outlook",
+        "url": "https://uk.investing.com/news/cryptocurrency-news/bitcoin-holds-below-85000-as-sec-custody-proposal-boosts-institutional-outlook-4894262",
+        "source": "Investing.com",
+        "date": "2026-10-02"
+      },
+      {
+        "title": "Current price of Bitcoin for Oct. 2, 2026",
+        "url": "https://fortune.com/article/price-of-bitcoin-10-02-2026/",
+        "source": "Fortune",
+        "date": "2026-10-02"
       }
     ]
   }
