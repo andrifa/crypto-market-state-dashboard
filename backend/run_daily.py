@@ -55,6 +55,19 @@ def build_payload() -> dict:
     prev = st.iloc[-2] if len(st) > 1 else None
     fr = friendly_row(row, prev)
 
+    close = df["close"].dropna()
+    ma200w = float(close.iloc[-1] / row["ma_200w"]) if pd.notna(row["ma_200w"]) else None
+    levels = {
+        "high_30d": round(float(close.iloc[-30:].max())),
+        "low_30d": round(float(close.iloc[-30:].min())),
+        "high_90d": round(float(close.iloc[-90:].max())),
+        "low_90d": round(float(close.iloc[-90:].min())),
+        "ma_50": round(float(close.iloc[-50:].mean())),
+        "ma_200": round(float(close.iloc[-200:].mean())),
+        "ma_200w": None if ma200w is None else round(ma200w),
+        "ath": round(float(close.max())),
+    }
+
     # live-only fields (dominance, OI, DVOL, ETF flow, etc.) have no history to fall
     # back on, so a transient fetch failure -- or simply running without FRED_API_KEY --
     # would otherwise blank out a value that was already good. Carry the previous run's
@@ -99,6 +112,7 @@ def build_payload() -> dict:
         "analysis": fr["analysis"],
         "team_notes": {"marketing": fr["marketing_note"]},
         "changed_today": fr["change"],
+        "levels": levels,
         "scores": {
             "trend": _f(row["trend_score"]),
             "momentum": _f(row["momentum_score"]),

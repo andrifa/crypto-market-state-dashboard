@@ -279,23 +279,42 @@ function renderAnalysis(d) {
 
 /* -------------------------- triggers (derived from real numbers) -------------------- */
 function renderTriggers(d) {
-  const c = d.context || {};
-  const T = 0.15; // state.py CONFIG.regime_T
-  const ma200 = c.mayer_multiple ? d.price_btc / c.mayer_multiple : null;
-  const list = [];
-  if (d.regime !== "Bull") list.push([`Trend score closes above <b>+${T}</b> for 5 straight days`, "Regime upgrades toward BULLISH"]);
-  if (d.regime !== "Bear") list.push([`Trend score closes below <b>−${T}</b> for 5 straight days`, "Regime downgrades toward BEARISH"]);
-  if (ma200 != null) {
-    const side = d.price_btc >= ma200 ? "breaks back below" : "reclaims";
-    list.push([`Price ${side} the 200-day average (<b>${fmtUSD(ma200)}</b>)`, "Directly moves the Trend score — the single biggest lever on the headline"]);
-  }
-  list.push(["Weekly RSI moves past <b>70</b> (overbought) or below <b>35</b> (oversold)", "Flags a Momentum stretch — often precedes a change in confidence"]);
-  if (c.fear_greed != null) list.push([`Fear &amp; Greed moves to the opposite extreme of today's <b>${numStr(c.fear_greed, 0)}</b>`, "Sentiment dimension flips direction, changing overall confidence"]);
-
+  const L = d.levels, price = d.price_btc;
   const box = document.getElementById("triggers");
   box.textContent = "";
-  list.forEach(([cond, effect]) => box.append(el("div", { class: "trigger" }, el("span", { class: "arrow", text: "→" }),
-    el("div", { class: "cond" }, el("b", { html: cond }), " — ", effect))));
+  if (!L || price == null) { box.closest(".panel").remove(); return; }
+
+  const NAMES = { high_30d: "30-day high", low_30d: "30-day low", high_90d: "90-day high", low_90d: "90-day low",
+    ma_50: "50-day average", ma_200: "200-day average", ma_200w: "200-week average", ath: "all-time high" };
+  const pts = Object.entries(L).filter(([, v]) => v != null).map(([k, v]) => ({ k, v, name: NAMES[k] }));
+  const pick = (arr) => {   // drop levels within 0.7% of one already kept
+    const out = [];
+    arr.forEach((p) => { if (!out.length || Math.abs(p.v - out[out.length - 1].v) / p.v > 0.007) out.push(p); });
+    return out;
+  };
+  const above = pick(pts.filter((p) => p.v > price * 1.003).sort((a, b) => a.v - b.v));
+  const below = pick(pts.filter((p) => p.v < price * 0.997).sort((a, b) => b.v - a.v));
+  const fmt = (p) => `<b>${fmtUSD(p.v)}</b> (${p.name})`;
+  const list = (arr) => arr.slice(0, 3).map(fmt).join(", ");
+
+  const rows = [];
+  if (above.length) {
+    rows.push(["up", "Turns up",
+      `A daily close above ${fmt(above[0])} would show buyers are in control.` +
+      (above.length > 1 ? ` Next levels to watch: ${list(above.slice(1))}.` : "")]);
+  } else {
+    rows.push(["up", "Turns up", `Price is at its all-time high area (${fmtUSD(L.ath)}); there is no resistance above, so watch how long it holds.`]);
+  }
+  const lo = below.length ? below[0].v : L.low_30d, hi = above.length ? above[0].v : L.high_30d;
+  rows.push(["mid", "Sideways", `While price stays between <b>${fmtUSD(lo)}</b> and <b>${fmtUSD(hi)}</b>, expect choppy back-and-forth moves with no clear direction. Neither buyers nor sellers have taken control inside this zone.`]);
+  if (below.length) {
+    rows.push(["down", "Turns down",
+      `A daily close below ${fmt(below[0])} would show sellers are taking over.` +
+      (below.length > 1 ? ` Next levels to watch: ${list(below.slice(1))}.` : "")]);
+  }
+  rows.forEach(([cls, tag, html]) => box.append(el("div", { class: "scn" },
+    el("span", { class: "scn-tag " + cls, text: tag }), el("p", { class: "scn-text", html }))));
+  box.append(el("p", { class: "chart-note", text: `Price now ${fmtUSD(price)}. Levels use daily closing prices and mark where a move would be confirmed or broken — they are reference points, not a forecast.` }));
 }
 
 /* -------------------------- implications for marketing (rule-based fallback) -------- */
