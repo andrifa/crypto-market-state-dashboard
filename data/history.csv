@@ -4195,5 +4195,5 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-01,84880.05,Bull,strengthening,Greed,69.0,early-bull,0.251,0.447,0.379,SCALE UP acquisition budget
 2026-10-02,84518.01,Bull,strengthening,Greed,69.0,early-bull,0.256,0.481,0.258,SCALE UP acquisition budget
 2026-10-03,84753.56,Bull,strengthening,Greed,54.0,early-bull,0.266,0.307,-0.025,HOLD at planned level
-2026-10-04,86530.0,Bull,strengthening,Greed,73.0,early-bull,0.288,0.317,0.005,SCALE UP acquisition budget
-2026-10-05,86346.01,Bull,strengthening,Greed,74.0,early-bull,0.294,0.36,0.517,SCALE UP acquisition budget
+2026-10-04,86530.0,Bull,stable,Greed,73.0,early-bull,0.288,0.18,0.022,SCALE UP acquisition budget
+2026-10-05,85518.71,Bull,strengthening,Greed,73.0,early-bull,0.287,0.21,0.534,SCALE UP acquisition budget

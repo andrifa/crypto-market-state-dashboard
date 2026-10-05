@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T00:03:18.888225+00:00",
+  "generated": "2026-10-05T05:04:38.771824+00:00",
   "rows": 4402,
   "span": [
     "2014-09-17",
@@ -167,24 +167,24 @@
     "funding": {
       "30": {
         "rho": -0.0,
-        "p": 0.9908,
+        "p": 0.9914,
         "n": 2524
       },
       "90": {
         "rho": 0.004,
-        "p": 0.8295,
+        "p": 0.8301,
         "n": 2464
       },
       "180": {
         "rho": -0.03,
-        "p": 0.1472,
+        "p": 0.1468,
         "n": 2374
       }
     },
     "ssr": {
       "30": {
         "rho": 0.049,
-        "p": 0.0067,
+        "p": 0.0068,
         "n": 3083
       },
       "90": {
@@ -213,14 +213,14 @@
       },
       "180": {
         "rho": -0.006,
-        "p": 0.7133,
+        "p": 0.7134,
         "n": 4222
       }
     },
     "pi_gap": {
       "30": {
         "rho": 0.028,
-        "p": 0.0763,
+        "p": 0.0761,
         "n": 4023
       },
       "90": {
@@ -242,7 +242,7 @@
       },
       "90": {
         "rho": 0.021,
-        "p": 0.186,
+        "p": 0.1859,
         "n": 4040
       },
       "180": {
@@ -254,7 +254,7 @@
     "bb_width": {
       "30": {
         "rho": 0.02,
-        "p": 0.1802,
+        "p": 0.1804,
         "n": 4353
       },
       "90": {
@@ -303,7 +303,7 @@
         0.4864
       ],
       "180": [
-        0.3284,
+        0.3283,
         0.1617,
         0.4819,
         0.4986,
@@ -369,7 +369,7 @@
       },
       "Neutral": {
         "n": 495,
-        "mean": 0.0543,
+        "mean": 0.0542,
         "se": 0.0522,
         "median": 0.0405,
         "win": 0.578,
@@ -404,7 +404,7 @@
       "Bear": {
         "n": 1193,
         "mean": 0.0967,
-        "se": 0.1211,
+        "se": 0.121,
         "median": -0.0342,
         "win": 0.469,
         "worst": -0.5861
@@ -521,8 +521,8 @@
     "flat_mean_fwd180": 0.5352,
     "regime_weighted_mean_fwd180": 0.6143,
     "uplift_pct_points": 7.91,
-    "equity_strategy_x": 213.25,
-    "equity_buyhold_x": 188.8,
+    "equity_strategy_x": 211.21,
+    "equity_buyhold_x": 186.99,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834
   },
@@ -598,7 +598,7 @@
       "bull": {
         "n": 10,
         "accuracy": 0.8,
-        "avg_move": 2.465
+        "avg_move": 2.464
       },
       "bear": {
         "n": 9,
@@ -613,8 +613,8 @@
     "turns_detected": "6/6",
     "turn_median_lag_days": 88,
     "decision_uplift_pp": 7.91,
-    "strategy_x": 213.25,
-    "buyhold_x": 188.8,
+    "strategy_x": 211.21,
+    "buyhold_x": 186.99,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834,
     "headline": "Over 4402 days (2014-09-17\u20132026-10-05, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 88 days after the price extreme. For shorter calls, 90-day directional accuracy is 62% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 58% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +7.9 points and cut the worst drawdown from 83% to 65%. Small sample (~2.9 cycles) \u2014 direction, not precision."
