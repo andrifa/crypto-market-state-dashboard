@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-05T05:18:24Z",
+  "updated_utc": "2026-10-05T05:19:54Z",
   "date": "2026-10-05",
-  "price_btc": 85470,
+  "price_btc": 85515,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend holds, but leverage is crowding back in",
+  "headline_tag": "Uptrend holds, but the crowd is getting eager",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -14,22 +14,22 @@
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The market is in an early uptrend and signal confidence is high (73/100), so the posture is to increase acquisition spend, weighted toward active-trader and non-stablecoin channels that historically respond best in this phase. The caution is that leveraged traders have crowded back in quickly, which in past cycles has made sharp, short-lived pullbacks more likely, and the long-term average has not yet turned up. That argues for scaling up in steps and keeping some budget in reserve. This is a budget-posture view built on trailing data, not trading advice and not a forecast."
+    "detail": "The scoring model sees an early uptrend with high confidence (73/100), so the posture is to increase acquisition spend, weighted toward active-trader and non-stablecoin channels, which historically respond best in this phase. The caution is that the mood is running ahead of the trend: many traders are betting on rises with borrowed money, and the long-term average has not turned up yet. That argues for scaling up in steps and keeping part of the budget in reserve rather than committing it all at once. This is a budget-posture view built on trailing data, not trading advice and not a forecast."
   },
   "reasons": [
-    "BTC is about 20% above its 200-day average after a +35% 90-day gain.",
-    "Fear & Greed at 70 (Greed) and leveraged traders paying up to stay long.",
-    "Spot ETFs added about $190M on the latest day; signal confidence 73/100.",
+    "BTC is about 20% above its 200-day average after a 35% rise over 90 days.",
+    "Fear & Greed at 70 (Greed); traders are paying up to bet on further rises.",
+    "Spot Bitcoin funds added about $190M on the latest day; signal confidence 73/100.",
     "Caveat: the 200-day average is still falling and price is 31% below its peak."
   ],
-  "watch": "The main tension is that leverage has rebuilt faster than the trend underneath it. Traders are paying an above-normal premium to bet on rises just days after a $434M long flush, while only about half of recent days closed above the long-term average and that average is still sloping down. The read would firm up if that premium cooled without price losing ground; it would weaken if another long flush pushed both leverage and the mood gauge lower together.",
+  "watch": "The main tension is that betting with borrowed money has come back faster than the underlying trend has improved. The read firms up if that borrowing cools while price holds; it weakens if another wave of forced selling drags price and mood down together.",
   "analysis": [
-    "Bottom line: Bitcoin is still in an early uptrend, and the near-term mood is the strongest part of the picture, but that strength rests partly on borrowed money. Short term, the mood is clearly warm and close to frothy: the Fear & Greed gauge sits at 70 (Greed), and traders are again paying an above-normal premium to hold leveraged bets on rises, a sharp swing from paying to bet on falls only a few days ago. That swing follows a choppy week in which a failed push near $87,000 wiped out about $434M of mostly long positions on 3 October (CoinGlass data via The Crypto Times). The lean would firm up if that premium cooled while price held; another long flush would cut it quickly, and that is when newer, momentum-chasing users tend to pull back first.",
-    "Over the next month, the lean is mildly positive and softer than it was a day ago. Price is up about 35% over three months, but only about half of recent days closed above the long-term average, so the gain has been narrow rather than broad-based, and price has spent roughly two weeks stuck below its September high. The next scheduled event is the Federal Reserve meeting on 27–28 October. A clean break above the recent range with more days holding above the average would strengthen this; slipping back toward the low $80,000s would weaken it.",
-    "Long term, the picture is positive but still under construction. Price sits about 20% above its 200-day average, yet that average itself is still drifting down and Bitcoin remains about 31% below its all-time high, so this is a recovery inside a larger slump rather than a new-high market. Big-money demand is a steady support, with spot ETFs taking in about $190M on the latest day, while US 10-year borrowing costs near 5.3% remain the main headwind. The long-term case strengthens once the 200-day average turns up; a slide back toward that average with yields still high would weaken it, which argues for building long-horizon campaigns in stages."
+    "Bottom line: Bitcoin is still in an early recovery, and the mood is the hottest part of the picture. Short term, people feel confident but are starting to get carried away: the Fear & Greed index reads 70 (Greed), and many traders are again betting on a rise with borrowed money. That pattern already backfired once this week, when about $434M of such bets were forced to close as price slipped from near $87,000 on 3 October (CoinGlass data via The Crypto Times). Calmer borrowing with price holding steady would strengthen this read, while another forced sell-off would cool it fast, and newer users who chase moves usually step back first.",
+    "Over the next month, things lean mildly positive. Price is up about 35% over three months, but only about half of recent days finished above the long-term average, so the rise has been patchy, and price has been stuck in a range since late September (see the levels below). The next scheduled event is the US Federal Reserve meeting on 27–28 October. More days closing above the average would firm this up; a slide back toward the bottom of the range would soften it, which matters for timing any big campaign push.",
+    "Long term, the picture is positive but not yet settled. Price is about 20% above its 200-day average, yet that average is still slowly falling and Bitcoin sits about 31% below its all-time high, so this is a recovery, not a record-breaking market. Steady buying through US spot Bitcoin funds (about $190M added on the latest day) is a real support, while high US borrowing costs (10-year yield near 5.3%) are the main drag. The long-term case gets stronger once the 200-day average turns up, which argues for building long-horizon brand campaigns in stages."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels: a +35% three-month move and Bitcoin's strongest Q3 since 2017 give a factual growth story, and steady spot ETF inflows support an institutional-adoption angle. With the mood gauge at 70 and leveraged longs crowding back in after a $434M flush last week, avoid FOMO or urgency hooks and lead with education and risk-management features, while keeping stablecoin-first channels defended since the rally is still narrow."
+    "marketing": "Lean into active-trader and non-stablecoin channels: a 35% three-month rise and Bitcoin's best third quarter since 2017 give a factual growth story, and steady fund buying supports an institutional-adoption angle. With Fear & Greed at 70 and $434M of rise bets wiped out earlier this week, skip urgency or fear-of-missing-out hooks and lead with education and safety features, while keeping stablecoin-first channels defended because the rise is still patchy."
   },
   "changed_today": null,
   "levels": {
@@ -37,22 +37,22 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 79487,
+    "ma_50": 79488,
     "ma_200": 71581,
-    "ma_200w": 66256,
+    "ma_200w": 66291,
     "ath": 124753
   },
   "scores": {
-    "trend": 0.286,
-    "momentum": 0.209,
+    "trend": 0.287,
+    "momentum": 0.21,
     "sentiment": 0.534
   },
   "context": {
-    "mayer_multiple": 1.194,
-    "ma200_slope_90d": -0.039,
+    "mayer_multiple": 1.195,
+    "ma200_slope_90d": -0.0389,
     "ma_200w_multiple": 1.29,
     "drawdown_from_ath": -0.315,
-    "rsi_weekly": 61.5,
+    "rsi_weekly": 61.6,
     "active_addr_ratio": 0.848,
     "puell_multiple": 1.057,
     "fear_greed": 70.0,
@@ -60,14 +60,14 @@
     "vol_percentile": 0.42,
     "bollinger_width": 0.1391,
     "btc_dominance": 59.2,
-    "ma_cross": 0.1104,
-    "roc_90d": 0.3503,
+    "ma_cross": 0.1105,
+    "roc_90d": 0.351,
     "breadth_90d": 0.533,
     "ssr": 5.57,
     "pi_cycle_gap": -0.5464,
     "open_interest_usd": 8429005144.395119,
     "long_short_ratio": 1.0153,
-    "dvol": 36.7,
+    "dvol": 36.69,
     "us_10y_yield": 5.277,
     "vix": 15.31,
     "fed_funds_rate": 3.63,
@@ -76,7 +76,7 @@
     "public_company_btc_treasury": 1275684.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 5 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 19% above its 200-day average.\n  • The 200-day trend is falling (-4% over the last\n    90 days).\n  • Price is still 32% below its all-time high.\n  • Perp funding is high — long positions are\n    crowding (sharp-pullback risk).\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 5 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC is about 20% above its 200-day average after\n    a 35% rise over 90 days.\n  • Fear & Greed at 70 (Greed); traders are paying\n    up to bet on further rises.\n  • Spot Bitcoin funds added about $190M on the\n    latest day; signal confidence 73/100.\n  • Caveat: the 200-day average is still falling and\n    price is 31% below its peak.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T05:04:38.771824+00:00",
+  "generated": "2026-10-05T05:19:55.591047+00:00",
   "rows": 4402,
   "span": [
     "2014-09-17",
@@ -521,7 +521,7 @@
     "flat_mean_fwd180": 0.5352,
     "regime_weighted_mean_fwd180": 0.6143,
     "uplift_pct_points": 7.91,
-    "equity_strategy_x": 211.21,
+    "equity_strategy_x": 211.2,
     "equity_buyhold_x": 186.99,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834
@@ -613,7 +613,7 @@
     "turns_detected": "6/6",
     "turn_median_lag_days": 88,
     "decision_uplift_pp": 7.91,
-    "strategy_x": 211.21,
+    "strategy_x": 211.2,
     "buyhold_x": 186.99,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834,
