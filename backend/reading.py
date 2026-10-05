@@ -122,105 +122,69 @@ def reasons(row: pd.Series) -> list[str]:
     return out
 
 
-def _lean(score) -> str:
-    """Plain-English direction for a -1..1 dimension score, so a reader gets the
-    verdict up front instead of having to infer it from a list of numbers."""
+def _lean_word(score) -> str:
+    """Plain-language direction for a -1..1 dimension score (no decimals shown)."""
     if score is None or pd.isna(score):
-        return "unclear (inputs missing)"
+        return "unclear"
     if score >= 0.45:
-        label = "strongly bullish"
-    elif score >= 0.15:
-        label = "bullish-leaning"
-    elif score <= -0.45:
-        label = "strongly bearish"
-    elif score <= -0.15:
-        label = "bearish-leaning"
-    else:
-        label = "neutral"
-    return f"{label} ({score:+.2f} of a possible ±1)"
+        return "strongly positive"
+    if score >= 0.15:
+        return "leaning positive"
+    if score <= -0.45:
+        return "strongly negative"
+    if score <= -0.15:
+        return "leaning negative"
+    return "neutral"
 
 
 def analysis_paragraphs(row: pd.Series) -> list[str]:
     """
-    Fallback for the richer multi-paragraph narrative panel: rule-based, real
-    numbers only, no invented specifics. This is what shows before the daily
-    reasoning routine's first pass of the day, and whenever it's unavailable --
-    the routine's LLM-written version (grounded in the same context numbers)
-    normally overwrites this with a more natural read. Each paragraph opens
-    with an explicit lean verdict (bullish/neutral/bearish + score) before the
-    supporting detail, so the direction isn't left for the reader to infer.
+    Fallback for the "What's driving this" panel: rule-based, real numbers only.
+    Written for a non-technical reader -- one verdict, the one or two drivers that
+    actually matter, and what would change the picture; no indicator dump (the
+    full numbers live in the indicator catalog). The daily scheduled task's
+    LLM-written version normally replaces this with a more natural read.
     """
     out = []
 
-    fng, fz, ssr, vol, bb = (row.get(k) for k in ("fng", "funding_z", "ssr", "vol_pctl", "bb_width"))
-    parts = []
+    fng, fz = row.get("fng"), row.get("funding_z")
+    sent_lean = _lean_word(row.get("sentiment_score"))
     if pd.notna(fng):
-        band = row.get("sentiment_band", "")
-        parts.append(f"Fear & Greed sits at {fng:.0f} ({band})")
-    if pd.notna(fz):
-        stretch = "stretched" if abs(fz) >= 1.5 else "not stretched"
-        parts.append(f"funding is at a {fz:+.2f} z-score ({stretch} leverage positioning)")
-    if pd.notna(ssr):
-        parts.append(f"the stablecoin supply ratio is {ssr:.2f}")
-    if parts:
-        s = f"Short-term sentiment is {_lean(row.get('sentiment_score'))}: " + ", ".join(parts) + "."
-        if pd.notna(vol):
-            calm = "calm" if vol < 0.5 else "elevated" if vol < 0.7 else "turbulent"
-            s += f" Realised volatility sits at the {vol*100:.0f}th percentile of its two-year range ({calm})"
-            if pd.notna(bb):
-                squeeze = " — a narrow reading that has often preceded a sharper move either way" if bb < 0.12 else ""
-                s += f", with Bollinger band width at {bb*100:.0f}%{squeeze}."
+        band = str(row.get("sentiment_band", "")).lower()
+        s = f"Short term, the mood is {sent_lean}: the market is in a state of {band} (Fear & Greed {fng:.0f}/100)."
+        if pd.notna(fz):
+            if fz >= 1.5:
+                s += " Traders are paying a notable premium to bet on rises, a sign long positions are getting crowded, so a sharp pullback is more likely if sentiment cools."
+            elif fz <= -1.5:
+                s += " Traders are paying to bet on falls, a sign pessimism is crowded, which has often come near turning points."
             else:
-                s += "."
-        if pd.notna(fng) and pd.notna(fz):
-            if fng >= 70 and fz < 0.5:
-                s += " Sentiment is running warmer than actual leverage, a milder setup than a fully leveraged rally."
-            elif fng <= 30 and fz > -0.5:
-                s += " Sentiment is more fearful than positioning suggests, which historically has left less room for a leverage-driven flush."
+                s += " Leverage looks normal rather than crowded, so the mood isn't being pushed by risky bets."
         out.append(s)
 
-    rsi_w, roc90, breadth, cross, act = (row.get(k) for k in ("rsi_w", "roc90", "breadth", "ma_cross", "activity"))
-    parts = []
-    if pd.notna(rsi_w):
-        state = "overbought" if rsi_w >= 70 else "oversold" if rsi_w <= 35 else "neutral-to-firm"
-        parts.append(f"weekly RSI is {rsi_w:.0f} ({state})")
+    rsi_w, roc90, breadth = row.get("rsi_w"), row.get("roc90"), row.get("breadth")
+    mom_lean = _lean_word(row.get("momentum_score"))
     if pd.notna(roc90):
-        parts.append(f"the 90-day rate of change is {roc90*100:+.0f}%")
-    if pd.notna(breadth):
-        parts.append(f"breadth is {breadth*100:.0f}% of the last 90 days above the 200-day average")
-    if parts:
-        s = f"Medium-term momentum is {_lean(row.get('momentum_score'))}: " + ", ".join(parts) + "."
-        if pd.notna(cross):
-            side = "the golden-cross side" if cross > 0 else "the death-cross side"
-            s += f" The 50/200-day average gap is {cross*100:+.1f}%, on {side}."
-        if pd.notna(act):
-            trend_word = "expanding" if act >= 1 else "contracting"
-            s += f" On-chain activity is {trend_word} versus its own year-average (ratio {act:.2f})."
-        if pd.notna(breadth) and pd.notna(roc90) and roc90 > 0 and breadth < 0.5:
-            s += " The gap between the headline price gain and this thinner participation is the main tension in this window."
+        s = f"Over the coming weeks, momentum is {mom_lean}: price is {roc90*100:+.0f}% over the last 90 days."
+        if pd.notna(breadth) and roc90 > 0 and breadth < 0.55:
+            s += f" But only {breadth*100:.0f}% of those days closed above the long-term average, so the gain is concentrated in a recent push rather than broad strength."
+        elif pd.notna(rsi_w) and rsi_w >= 70:
+            s += " Buying has run hot, so the move is more stretched than usual."
+        elif pd.notna(rsi_w) and rsi_w <= 35:
+            s += " Selling has run hot, which has often come near a bottom."
         out.append(s)
 
-    mayer, slope, ma200w, dd, puell, pi_gap = (
-        row.get(k) for k in ("mayer", "ma_slope", "ma_200w", "drawdown", "puell", "pi_gap")
-    )
-    parts = []
+    mayer, slope, dd = row.get("mayer"), row.get("ma_slope"), row.get("drawdown")
+    trend_lean = _lean_word(row.get("trend_score"))
     if pd.notna(mayer):
-        parts.append(f"price is {'above' if mayer >= 1 else 'below'} its 200-day average (Mayer Multiple {mayer:.2f})")
-    if pd.notna(slope):
-        parts.append(f"that average is {'rising' if slope >= 0 else 'falling'} ({slope*100:+.1f}% over 90 days)")
-    if pd.notna(ma200w):
-        val_word = "stretched" if ma200w >= 3 else "near the floor" if ma200w <= 1.1 else "mid-cycle"
-        parts.append(f"the 200-week multiple is {ma200w:.2f} ({val_word})")
-    if pd.notna(dd) and dd < -0.05:
-        parts.append(f"price is {abs(dd)*100:.0f}% below its all-time high")
-    if parts:
-        s = f"Long-term trend is {_lean(row.get('trend_score'))}: " + ", ".join(parts) + "."
-        if pd.notna(puell):
-            miner_word = "capitulation" if puell <= 0.6 else "euphoria" if puell >= 3 else "a normal range"
-            s += f" The Puell Multiple is {puell:.2f}, in {miner_word} for miner economics (context only — not scored)."
-        if pd.notna(pi_gap):
-            s += (f" The Pi-Cycle gap is {pi_gap*100:+.1f}% (context only — not scored; "
-                  "this measure has historically moved above zero near past cycle tops).")
+        side = "above" if mayer >= 1 else "below"
+        s = f"Over the longer run, the trend is {trend_lean}: price sits {side} its 200-day average"
+        if pd.notna(slope):
+            s += f", and that average is itself {'rising' if slope >= 0 else 'still falling'}"
+        s += "."
+        if pd.notna(slope) and mayer >= 1 and slope < 0:
+            s += " That is an early recovery, not yet a confirmed uptrend."
+        if pd.notna(dd) and dd < -0.15:
+            s += f" Price is also still {abs(dd)*100:.0f}% below its all-time high."
         out.append(s)
 
     return out
