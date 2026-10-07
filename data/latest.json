@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-10-07T10:40:37Z",
+  "updated_utc": "2026-10-07T10:41:17Z",
   "date": "2026-10-07",
-  "price_btc": 83690,
+  "price_btc": 83689,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Recovery still holding, mood warm but calm",
+  "headline_tag": "Recovery still holding, but this week turned shaky",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
@@ -14,22 +14,22 @@
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The longer-term picture is good enough to support spending more on acquiring new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and the mood is already warm, scale up in steps rather than all at once, and keep part of the budget flexible so it can be pulled back if price falls back below its long-term average. This describes today's conditions, not a forecast."
+    "detail": "The longer-term picture is good enough to support spending more on acquiring new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and this week has been shaky, scale up in steps rather than all at once, and keep part of the budget flexible so it can be pulled back if price falls back below its long-term averages. This describes today's conditions, not a forecast."
   },
   "reasons": [
-    "Price is about 17% above its 200-day average.",
-    "Up about 33% over the last 90 days.",
-    "200-day average still sloping down (-3% over 90 days): early recovery, not confirmed.",
-    "Still about 33% below the all-time high, so not overheated."
+    "Price is about 17% above its 200-day average, so the recovery is still intact.",
+    "Up about 32% over 90 days, but only about half of those days closed above the long-term average.",
+    "The 200-day average still slopes slightly down (-3% over 90 days): early recovery, not confirmed.",
+    "Mood index at 71 (greed) while more traders than usual are betting on a fall."
   ],
-  "watch": "The mood is already in greed while the long-term average has not yet turned up, so the recovery rests on fairly recent gains. If price slips back toward its 200-day average or fund outflows grow, today's positive read would weaken quickly.",
+  "watch": "The mood index says greed at 71, yet more traders than usual are betting on a fall and BTC slipped below $84,000 overnight. A daily close above $86,603 would ease that tension; a close below $80,292 (the 50-day average) would weaken today's positive read.",
   "analysis": [
-    "Bottom line: the recovery is still in place, but it is an early one, so lean in step by step. Short term, the mood is warm but not reckless: the Fear & Greed index reads 71 out of 100 (greed), yet bets on a rise with borrowed money look normal rather than crowded. On 6 October about $172M of bets were forced to close and US Bitcoin funds saw small net outflows ahead of the Fed minutes (Crypto Times), a reminder this week is choppy. A cooler mood or bigger fund outflows would soften this read; for now, active-trader segments are the ones most likely to respond.",
-    "Over the next month, the picture is clearly positive. Price is up about 33% over the last 90 days, though only about half of recent days closed above the long-term average, so the climb has been uneven. The next Fed rate decision is on 27 October, a scheduled date worth keeping in mind for campaign timing; a slide back toward the 30-day low would weaken this view (see the levels below).",
-    "Over three to six months, the direction is positive but not yet confirmed. Price is about 17% above its 200-day average, but that average itself is still sloping down slightly, and price is still about a third below its all-time high. The read would firm up once the 200-day average starts rising; until then, treat this as a recovery phase rather than a full boom, which favours steady rather than splashy brand spend."
+    "Bottom line: the recovery is still in place, but this week is shaky, so lean in step by step. Short term, the picture is roughly balanced: the mood index reads 71 out of 100 (greed), yet more traders than usual are betting on a fall, and early on 7 October BTC briefly slipped from about $85,500 to below $84,000 as bets on a rise were forced to close (PANews, citing CryptoQuant). A daily close above $86,603 (the 30-day high) would turn the week clearly up, a close below $80,292 (the 50-day average) would turn it down, and in between it stays choppy. More money leaving US Bitcoin funds, like the roughly $92M on 6 October (Lookonchain via PANews), would weaken this; active traders are the segment most likely to react.",
+    "Over the next month, the picture is clearly positive. Price is up about 32% over the last 90 days, though only about half of those days finished above the long-term average, so the climb has been uneven. There is room to climb if price gets back above $86,603 (the 90-day high), while the month's gains fade if it falls below $80,292 (the 50-day average). The next Fed rate decision is on 27 October, a scheduled date worth planning campaign timing around.",
+    "Over three to six months, the direction is positive but not yet confirmed. Price is about 17% above its 200-day average, but that average still slopes slightly down and price remains about a third below its all-time high. The recovery stays intact while price holds above $71,732 (the 200-day average), with $66,420 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. It firms up once the 200-day average starts rising; until then this is a recovery phase, which favours steady rather than splashy brand spend."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels: a 33% rise over 90 days gives a real recovery story, and the Fear & Greed reading of 71 means people are paying attention. Lead with steady recovery and product strength rather than urgency or 'don't miss out' messaging, since the mood is already warm and only about half of recent days closed above the long-term average. Keep stablecoin-first campaigns running as a safety net in case this week stays choppy around the Fed minutes and the 27 October rate decision."
+    "marketing": "Keep leaning into active-trader and non-stablecoin channels: price is still up about 32% over 90 days and the mood index sits at 71, so attention is there. Lead with steady recovery and product reliability rather than 'don't miss out' urgency, since only about half of recent days closed above the long-term average and the overnight dip below $84,000 showed how fast things swing. Keep stablecoin-first campaigns running as a cushion through the Fed decision on 27 October."
   },
   "changed_today": null,
   "levels": {
@@ -39,11 +39,11 @@
     "low_90d": 62239,
     "ma_50": 80292,
     "ma_200": 71732,
-    "ma_200w": 66421,
+    "ma_200w": 66420,
     "ath": 124753
   },
   "scenarios": {
-    "price": 83690,
+    "price": 83689,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -92,7 +92,7 @@
     "bollinger_width": 0.0777,
     "btc_dominance": 59.3,
     "ma_cross": 0.1193,
-    "roc_90d": 0.3244,
+    "roc_90d": 0.3243,
     "breadth_90d": 0.556,
     "ssr": 5.49,
     "pi_cycle_gap": -0.5432,
@@ -100,14 +100,14 @@
     "long_short_ratio": 1.1142,
     "dvol": 36.0,
     "us_10y_yield": 5.269,
-    "vix": 15.57,
+    "vix": 15.56,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": 118862451.88,
     "etf_cum_net_flow_usd": 57838195612.323,
     "public_company_btc_treasury": 1279076.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 17% above its 200-day average.\n  • The 200-day trend is falling (-3% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n  • Perp funding is negative — short positions are\n    crowded (often seen near bottoms).\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 17% above its 200-day average, so\n    the recovery is still intact.\n  • Up about 32% over 90 days, but only about half\n    of those days closed above the long-term\n    average.\n  • The 200-day average still slopes slightly down\n    (-3% over 90 days): early recovery, not\n    confirmed.\n  • Mood index at 71 (greed) while more traders than\n    usual are betting on a fall.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -171,6 +171,105 @@
         "url": "https://www.kucoin.com/news/flash/data-186m-in-crypto-futures-liquidations-in-24-hours",
         "source": "KuCoin News",
         "date": "2026-10-05"
+      }
+    ]
+  },
+  "narratives": {
+    "as_of": "2026-10-07",
+    "items": [
+      {
+        "theme": "Broad altcoin pullback",
+        "why": "BTC slipped from about $85,500 to below $84,000 early on 7 October as sellers dominated and bets on a rise were forced to close, according to CryptoQuant's Axel Adler Jr. ETH fell below $2,600, and many mid-size altcoins dropped harder, around 8-11% in a day. The reports point to selling pressure rather than a single news event.",
+        "tokens": [
+          {
+            "symbol": "ETH",
+            "change_24h_pct": -4.99
+          },
+          {
+            "symbol": "OP",
+            "change_24h_pct": -11.33
+          },
+          {
+            "symbol": "UNI",
+            "change_24h_pct": -9.91
+          },
+          {
+            "symbol": "DOT",
+            "change_24h_pct": -9.76
+          }
+        ],
+        "marketing_angle": "A good day for content on handling price swings rather than promo pushes on smaller coins.",
+        "sources": [
+          {
+            "title": "Analysis: Bitcoin briefly fell below $84,000 as active selling pressure and long liquidations intensified simultaneously",
+            "url": "https://www.panews.io/articles/01a1151d-fa0b-7666-a485-7e3370a4d011"
+          },
+          {
+            "title": "ETH falls below $2,600, down 3.81% on the day",
+            "url": "https://www.panews.io/articles/01a11417-fb54-75f6-b913-20d3910722a3"
+          }
+        ]
+      },
+      {
+        "theme": "Hyperliquid expands its product line",
+        "why": "At TOKEN2049 in Singapore, Hyperliquid's founder said options will be the platform's next key product. Singapore's central bank said Hyperliquid, though headquartered there, is outside its regulatory reach. Its HYPE token fell with the market today but is still within about 9% of its all-time high.",
+        "tokens": [
+          {
+            "symbol": "HYPE",
+            "change_24h_pct": -4.24
+          }
+        ],
+        "marketing_angle": "Competitor watch: on-chain trading venues keep adding products, a talking point for product and content teams.",
+        "sources": [
+          {
+            "title": "Hyperliquid Founder: Options Will Be the Platform's Next Key Product Focus",
+            "url": "https://www.panews.io/articles/01a1150d-475c-74a3-8b3c-752c3eaecb9d"
+          },
+          {
+            "title": "Hyperliquid is headquartered in Singapore; MAS says it is not within its regulatory jurisdiction",
+            "url": "https://www.panews.io/articles/01a113c5-1394-729a-be23-074237469c94"
+          }
+        ]
+      },
+      {
+        "theme": "Tokenized stocks keep growing",
+        "why": "The total value of tokenized stocks hit a record $3.8 billion, per Token Terminal data cited by Cointelegraph. Binance is adding four tokenized stocks, including JPMorgan and Eli Lilly, as accepted collateral, and Polymarket's CEO said shareholder ICE is researching on-chain stocks.",
+        "tokens": [],
+        "marketing_angle": "Explainer content on what tokenized stocks are could meet rising curiosity from users who also hold shares.",
+        "sources": [
+          {
+            "title": "Tokenized stock market cap hits record high of $3.8 billion",
+            "url": "https://www.panews.io/articles/01a110df-a9d2-7393-8c20-5e8c64afb274"
+          },
+          {
+            "title": "Binance to Add 4 bStocks Tokenized Securities Including SECZB as Collateral Assets",
+            "url": "https://www.panews.io/articles/01a1148b-89e6-74ce-834c-595236a66de3"
+          },
+          {
+            "title": "Polymarket CEO: ICE is one of the company's largest shareholders and is researching on-chain stocks",
+            "url": "https://www.panews.io/articles/01a11463-346e-7091-9972-285a893e273e"
+          }
+        ]
+      },
+      {
+        "theme": "New exchange rules in the US and Russia",
+        "why": "The US CFTC chair said that under proposed rules only federally regulated crypto exchanges could offer trading with borrowed money, and the agency is seeking input on a framework for crypto spot markets. Russia's central bank registered its first licensed crypto exchanges and custodians, with Sberbank planning crypto products in December.",
+        "tokens": [],
+        "marketing_angle": "Licensing and regulation are a trust message worth leading with in regulated markets.",
+        "sources": [
+          {
+            "title": "CFTC Chair: Only Federally Regulated Crypto Exchanges Can Offer Leveraged Trading",
+            "url": "https://www.panews.io/articles/01a1146f-9a6d-7300-8829-4cdbd9cbb0c5"
+          },
+          {
+            "title": "US CFTC's latest ANPRM seeks to use existing authority to build a crypto spot market framework",
+            "url": "https://www.panews.io/articles/01a11184-0e20-714a-8764-9c08a555a7bf"
+          },
+          {
+            "title": "Russia approves first crypto exchanges and custodians, Sberbank plans to launch crypto products in December",
+            "url": "https://www.panews.io/articles/01a11583-8f50-73ce-b0da-7e75e0fc0068"
+          }
+        ]
       }
     ]
   }
