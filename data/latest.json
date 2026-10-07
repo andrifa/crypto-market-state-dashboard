@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-06T00:24:08Z",
-  "date": "2026-10-06",
-  "price_btc": 85964,
+  "updated_utc": "2026-10-07T04:13:34Z",
+  "date": "2026-10-07",
+  "price_btc": 84138,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Recovery holding, but the mood is mixed this week",
+  "headline_tag": "Recovery still holding, mood warm but calm",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 75,
+  "conviction": 73,
   "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The longer-term picture has improved enough to support spending more on acquiring new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and this week's mood is mixed, scale up in steps rather than all at once, and keep some budget flexible so it can be pulled back if price falls back below its long-term average. This describes today's conditions, not a forecast."
+    "detail": "The longer-term picture is good enough to support spending more on acquiring new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and the mood is already warm, scale up in steps rather than all at once, and keep part of the budget flexible so it can be pulled back if price falls back below its long-term average. This describes today's conditions, not a forecast."
   },
   "reasons": [
-    "BTC is about 20% above its 200-day average.",
-    "Price is up about 38% over the last 90 days.",
-    "The 200-day average is still sloping down (-4% over 90 days): early recovery, not confirmed.",
-    "Still about 31% below the all-time high, leaving room before the market looks overheated."
+    "Price is about 17% above its 200-day average.",
+    "Up about 33% over the last 90 days.",
+    "200-day average still sloping down (-3% over 90 days): early recovery, not confirmed.",
+    "Still about 33% below the all-time high, so not overheated."
   ],
-  "watch": "The headline mood says greed, but more traders are paying to bet on a fall than a rise. If price keeps holding up, those bets can unwind and add fuel; if price slips, the cheerful mood can sour quickly.",
+  "watch": "The mood is already in greed while the long-term average has not yet turned up, so the recovery rests on fairly recent gains. If price slips back toward its 200-day average or fund outflows grow, today's positive read would weaken quickly.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but this week is a coin flip. Short term, the mood is balanced: the Fear & Greed index reads a greedy 73, yet in the futures market more people are now paying to bet on a fall than on a rise. That split usually means nervous, choppy days rather than a clear direction; a calmer, one-sided mood would firm it up, and big promotions may land better once things settle.",
-    "Over the next month, the picture leans moderately positive. Price is up about 38% over the last 90 days, but only about half of those days finished above the long-term average, so much of the gain came from a recent push rather than steady climbing. The US spot Bitcoin funds also saw about $85M leave on the latest day, and the next Fed rate decision is on 27 October; steady money coming back into those funds would strengthen this lean, more outflows would weaken it.",
-    "Over the next 3-6 months, the trend leans positive but is still young. Price sits about 20% above its 200-day average, yet that average itself is still sloping down, which is what an early recovery looks like rather than a confirmed long uptrend. Price is also still about 31% below its all-time high (see the levels below); the 200-day average turning upward would confirm it, a fall back under it would undo it."
+    "Bottom line: the recovery is still in place, but it is an early one, so lean in step by step. Short term, the mood is warm but not reckless: the Fear & Greed index reads 71 out of 100 (greed), yet bets on a rise with borrowed money look normal rather than crowded. On 6 October about $172M of bets were forced to close and US Bitcoin funds saw small net outflows ahead of the Fed minutes (Crypto Times), a reminder this week is choppy. A cooler mood or bigger fund outflows would soften this read; for now, active-trader segments are the ones most likely to respond.",
+    "Over the next month, the picture leans clearly positive. Price is up about 33% over the last 90 days, though only about half of recent days closed above the long-term average, so the climb has been uneven. The next Fed rate decision is on 27 October, a scheduled date worth keeping in mind for campaign timing; a slide back toward the 30-day low would weaken this lean (see the levels below).",
+    "Over three to six months, the lean is positive but not yet confirmed. Price is about 17% above its 200-day average, but that average itself is still sloping down slightly, and price is still about a third below its all-time high. The read would firm up once the 200-day average starts rising; until then, treat this as a recovery phase rather than a full boom, which favours steady rather than splashy brand spend."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels, leading with the real story of a roughly 38% recovery over three months rather than urgency or fear-of-missing-out. The mood index is already greedy at 73 while many traders are betting on a fall, so avoid hype-heavy creative this week and keep stablecoin and savings messaging running as a steady base."
+    "marketing": "Lean into active-trader and non-stablecoin channels: a 33% rise over 90 days gives a real recovery story, and the Fear & Greed reading of 71 means people are paying attention. Lead with steady recovery and product strength rather than urgency or 'don't miss out' messaging, since the mood is already warm and only about half of recent days closed above the long-term average. Keep stablecoin-first campaigns running as a safety net in case this week stays choppy around the Fed minutes and the 27 October rate decision."
   },
   "changed_today": null,
   "levels": {
@@ -37,55 +37,55 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 79921,
-    "ma_200": 71659,
-    "ma_200w": 66126,
+    "ma_50": 80301,
+    "ma_200": 71734,
+    "ma_200w": 66250,
     "ath": 124753
   },
   "scores": {
-    "trend": 0.298,
-    "momentum": 0.225,
-    "sentiment": 0.011
+    "trend": 0.288,
+    "momentum": 0.358,
+    "sentiment": 0.19
   },
   "context": {
-    "mayer_multiple": 1.2,
-    "ma200_slope_90d": -0.0362,
-    "ma_200w_multiple": 1.3,
-    "drawdown_from_ath": -0.311,
+    "mayer_multiple": 1.173,
+    "ma200_slope_90d": -0.0336,
+    "ma_200w_multiple": 1.27,
+    "drawdown_from_ath": -0.326,
     "rsi_weekly": 61.8,
-    "active_addr_ratio": 0.849,
-    "puell_multiple": 1.058,
-    "fear_greed": 73.0,
-    "funding_z": -2.55,
-    "vol_percentile": 0.41,
-    "bollinger_width": 0.115,
-    "btc_dominance": 58.7,
-    "ma_cross": 0.1153,
-    "roc_90d": 0.3808,
-    "breadth_90d": 0.544,
-    "ssr": 5.57,
-    "pi_cycle_gap": -0.5447,
-    "open_interest_usd": 8083009900.536926,
-    "long_short_ratio": 1.0859,
-    "dvol": 36.03,
-    "us_10y_yield": 5.311,
-    "vix": 15.52,
+    "active_addr_ratio": 0.985,
+    "puell_multiple": 1.185,
+    "fear_greed": 71.0,
+    "funding_z": -0.35,
+    "vol_percentile": 0.42,
+    "bollinger_width": 0.0775,
+    "btc_dominance": 58.8,
+    "ma_cross": 0.1194,
+    "roc_90d": 0.3314,
+    "breadth_90d": 0.556,
+    "ssr": 5.49,
+    "pi_cycle_gap": -0.5431,
+    "open_interest_usd": 8182390891.9482,
+    "long_short_ratio": 1.1142,
+    "dvol": 35.99,
+    "us_10y_yield": 5.269,
+    "vix": 15.01,
     "fed_funds_rate": 3.63,
-    "etf_daily_net_flow_usd": -85205424.0,
-    "etf_cum_net_flow_usd": 57724025519.443,
-    "public_company_btc_treasury": 1279033.0,
+    "etf_daily_net_flow_usd": -3133268.12,
+    "etf_cum_net_flow_usd": 57716199892.323,
+    "public_company_btc_treasury": 1278772.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 6 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Recovery holding, but the mood is mixed this week)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The longer-term picture has improved enough to\n    support spending more on acquiring new users,\n    especially for products aimed at active\n    traders rather than stablecoin savers. Because\n    the 200-day average has not turned up yet and\n    this week's mood is mixed, scale up in steps\n    rather than all at once, and keep some budget\n    flexible so it can be pulled back if price\n    falls back below its long-term average. This\n    describes today's conditions, not a forecast.\n\n  Why:\n  • BTC is about 20% above its 200-day average.\n  • Price is up about 38% over the last 90 days.\n  • The 200-day average is still sloping down (-4%\n    over 90 days): early recovery, not confirmed.\n  • Still about 31% below the all-time high, leaving\n    room before the market looks overheated.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Recovery still holding, mood warm but calm)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The longer-term picture is good enough to\n    support spending more on acquiring new users,\n    especially for products aimed at active traders\n    rather than stablecoin savers. Because the\n    200-day average has not turned up yet and the\n    mood is already warm, scale up in steps rather\n    than all at once, and keep part of the budget\n    flexible so it can be pulled back if price falls\n    back below its long-term average. This describes\n    today's conditions, not a forecast.\n\n  Why:\n  • Price is about 17% above its 200-day average.\n  • Up about 33% over the last 90 days.\n  • 200-day average still sloping down (-3% over 90\n    days): early recovery, not confirmed.\n  • Still about 33% below the all-time high, so not\n    overheated.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 186000000,
-      "source_name": "KuCoin News (citing MyToken)",
-      "source_url": "https://www.kucoin.com/news/flash/data-186m-in-crypto-futures-liquidations-in-24-hours",
-      "as_of": "2026-10-05",
-      "note": "Cross-crypto 24h total; BTC led with $65.94M."
+      "value": 172000000,
+      "source_name": "The Crypto Times",
+      "source_url": "https://www.cryptotimes.io/2026/10/06/bitcoin-price-today-btc-holds-85500-as-172m-liquidations-etf-outflows-hit-before-fed-minutes/",
+      "as_of": "2026-10-06",
+      "note": "Reported in headline; BTC held near $85,500."
     },
     "exchange_netflow_7d_btc": {
       "value": -112700,
@@ -118,6 +118,18 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
+        "title": "Bitcoin Price Today: BTC Holds $85,500 as $172M Liquidations & ETF Outflows Hit Before Fed Minutes",
+        "url": "https://www.cryptotimes.io/2026/10/06/bitcoin-price-today-btc-holds-85500-as-172m-liquidations-etf-outflows-hit-before-fed-minutes/",
+        "source": "The Crypto Times",
+        "date": "2026-10-06"
+      },
+      {
+        "title": "Bitcoin News Digest October 5, 2026",
+        "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-5-2026",
+        "source": "Bitcoin News Digest (Substack)",
+        "date": "2026-10-05"
+      },
+      {
         "title": "BTC price fights to reclaim 2026 open: Three things to know in Bitcoin this week",
         "url": "https://cryptonews.net/news/bitcoin/33539551",
         "source": "Cryptonews.net",
@@ -128,24 +140,6 @@
         "url": "https://www.kucoin.com/news/flash/data-186m-in-crypto-futures-liquidations-in-24-hours",
         "source": "KuCoin News",
         "date": "2026-10-05"
-      },
-      {
-        "title": "Bitcoin Price Stalls at $87K as Analysts Flag 10% Correction",
-        "url": "https://thecoinrepublic.com/2026/10/04/bitcoin-price-stalls-at-87k-as-analysts-flag-10-correction",
-        "source": "The Coin Republic",
-        "date": "2026-10-04"
-      },
-      {
-        "title": "Week in review: Bitcoin posts best Q3 since 2017; MetaMask pulls validators after staking incident",
-        "url": "https://forklog.com/en/week-in-review-bitcoin-posts-best-q3-since-2017-metamask-pulls-validators-after-staking-incident",
-        "source": "ForkLog",
-        "date": "2026-10-04"
-      },
-      {
-        "title": "This Week in Crypto Law (October 4, 2026)",
-        "url": "https://news.bitcoin.com/regulation-and-legal/this-week-in-crypto-law-october-4-2026",
-        "source": "Bitcoin.com News",
-        "date": "2026-10-04"
       }
     ]
   }
