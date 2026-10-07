@@ -1,15 +1,15 @@
 {
-  "updated_utc": "2026-10-07T04:13:34Z",
+  "updated_utc": "2026-10-07T10:40:37Z",
   "date": "2026-10-07",
-  "price_btc": 84138,
+  "price_btc": 83690,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "Recovery still holding, mood warm but calm",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 73,
-  "conviction_level": "HIGH",
+  "conviction": 56,
+  "conviction_level": "MEDIUM",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
@@ -37,46 +37,77 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 80301,
-    "ma_200": 71734,
-    "ma_200w": 66250,
+    "ma_50": 80292,
+    "ma_200": 71732,
+    "ma_200w": 66421,
     "ath": 124753
   },
+  "scenarios": {
+    "price": 83690,
+    "up": {
+      "level": 86603,
+      "name": "30-day high",
+      "next": [
+        {
+          "level": 124753,
+          "name": "all-time high"
+        }
+      ]
+    },
+    "down": {
+      "level": 80292,
+      "name": "50-day average",
+      "next": [
+        {
+          "level": 75613,
+          "name": "30-day low"
+        },
+        {
+          "level": 71732,
+          "name": "200-day average"
+        }
+      ]
+    },
+    "range": [
+      80292,
+      86603
+    ]
+  },
   "scores": {
-    "trend": 0.288,
-    "momentum": 0.358,
-    "sentiment": 0.19
+    "trend": 0.284,
+    "momentum": 0.356,
+    "sentiment": -0.008
   },
   "context": {
-    "mayer_multiple": 1.173,
+    "mayer_multiple": 1.167,
     "ma200_slope_90d": -0.0336,
-    "ma_200w_multiple": 1.27,
-    "drawdown_from_ath": -0.326,
+    "ma_200w_multiple": 1.26,
+    "drawdown_from_ath": -0.329,
     "rsi_weekly": 61.8,
     "active_addr_ratio": 0.985,
     "puell_multiple": 1.185,
     "fear_greed": 71.0,
-    "funding_z": -0.35,
-    "vol_percentile": 0.42,
-    "bollinger_width": 0.0775,
-    "btc_dominance": 58.8,
-    "ma_cross": 0.1194,
-    "roc_90d": 0.3314,
+    "funding_z": -2.11,
+    "vol_percentile": 0.43,
+    "bollinger_width": 0.0777,
+    "btc_dominance": 59.3,
+    "ma_cross": 0.1193,
+    "roc_90d": 0.3244,
     "breadth_90d": 0.556,
     "ssr": 5.49,
-    "pi_cycle_gap": -0.5431,
+    "pi_cycle_gap": -0.5432,
     "open_interest_usd": 8182390891.9482,
     "long_short_ratio": 1.1142,
-    "dvol": 35.99,
+    "dvol": 36.0,
     "us_10y_yield": 5.269,
-    "vix": 15.01,
+    "vix": 15.57,
     "fed_funds_rate": 3.63,
-    "etf_daily_net_flow_usd": -3133268.12,
-    "etf_cum_net_flow_usd": 57716199892.323,
-    "public_company_btc_treasury": 1278772.0,
+    "etf_daily_net_flow_usd": 118862451.88,
+    "etf_cum_net_flow_usd": 57838195612.323,
+    "public_company_btc_treasury": 1279076.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Recovery still holding, mood warm but calm)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The longer-term picture is good enough to\n    support spending more on acquiring new users,\n    especially for products aimed at active traders\n    rather than stablecoin savers. Because the\n    200-day average has not turned up yet and the\n    mood is already warm, scale up in steps rather\n    than all at once, and keep part of the budget\n    flexible so it can be pulled back if price falls\n    back below its long-term average. This describes\n    today's conditions, not a forecast.\n\n  Why:\n  • Price is about 17% above its 200-day average.\n  • Up about 33% over the last 90 days.\n  • 200-day average still sloping down (-3% over 90\n    days): early recovery, not confirmed.\n  • Still about 33% below the all-time high, so not\n    overheated.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 17% above its 200-day average.\n  • The 200-day trend is falling (-3% over the last\n    90 days).\n  • Price is still 33% below its all-time high.\n  • Perp funding is negative — short positions are\n    crowded (often seen near bottoms).\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,

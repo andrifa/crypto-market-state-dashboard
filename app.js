@@ -148,6 +148,7 @@ async function main() {
   renderOutlook(d, k, bt);
   renderAnalysis(d);
   renderTriggers(d);
+  renderNarratives(d);
   renderTeams(d);
   renderSignals(d);
   renderScorecard(bt);
@@ -279,42 +280,58 @@ function renderAnalysis(d) {
 
 /* -------------------------- triggers (derived from real numbers) -------------------- */
 function renderTriggers(d) {
-  const L = d.levels, price = d.price_btc;
+  const S = d.scenarios, L = d.levels;
   const box = document.getElementById("triggers");
   box.textContent = "";
-  if (!L || price == null) { box.closest(".panel").remove(); return; }
-
-  const NAMES = { high_30d: "30-day high", low_30d: "30-day low", high_90d: "90-day high", low_90d: "90-day low",
-    ma_50: "50-day average", ma_200: "200-day average", ma_200w: "200-week average", ath: "all-time high" };
-  const pts = Object.entries(L).filter(([, v]) => v != null).map(([k, v]) => ({ k, v, name: NAMES[k] }));
-  const pick = (arr) => {   // drop levels within 0.7% of one already kept
-    const out = [];
-    arr.forEach((p) => { if (!out.length || Math.abs(p.v - out[out.length - 1].v) / p.v > 0.007) out.push(p); });
-    return out;
-  };
-  const above = pick(pts.filter((p) => p.v > price * 1.003).sort((a, b) => a.v - b.v));
-  const below = pick(pts.filter((p) => p.v < price * 0.997).sort((a, b) => b.v - a.v));
-  const fmt = (p) => `<b>${fmtUSD(p.v)}</b> (${p.name})`;
-  const list = (arr) => arr.slice(0, 3).map(fmt).join(", ");
-
+  if (!S || !L) { box.closest(".panel").remove(); return; }
+  const fmt = (p) => `<b>${fmtUSD(p.level)}</b> (${p.name})`;
+  const next = (p) => (p.next && p.next.length ? ` Next levels to watch: ${p.next.map(fmt).join(", ")}.` : "");
   const rows = [];
-  if (above.length) {
-    rows.push(["up", "Turns up",
-      `A daily close above ${fmt(above[0])} would show buyers are in control.` +
-      (above.length > 1 ? ` Next levels to watch: ${list(above.slice(1))}.` : "")]);
-  } else {
-    rows.push(["up", "Turns up", `Price is at its all-time high area (${fmtUSD(L.ath)}); there is no resistance above, so watch how long it holds.`]);
-  }
-  const lo = below.length ? below[0].v : L.low_30d, hi = above.length ? above[0].v : L.high_30d;
-  rows.push(["mid", "Sideways", `While price stays between <b>${fmtUSD(lo)}</b> and <b>${fmtUSD(hi)}</b>, expect choppy back-and-forth moves with no clear direction. Neither buyers nor sellers have taken control inside this zone.`]);
-  if (below.length) {
-    rows.push(["down", "Turns down",
-      `A daily close below ${fmt(below[0])} would show sellers are taking over.` +
-      (below.length > 1 ? ` Next levels to watch: ${list(below.slice(1))}.` : "")]);
-  }
+  rows.push(["up", "Turns up", S.up
+    ? `A daily close above ${fmt(S.up)} would show buyers are in control.${next(S.up)}`
+    : `Price is at its all-time high area (${fmtUSD(L.ath)}); there is no resistance above, so watch how long it holds.`]);
+  rows.push(["mid", "Sideways", `While price stays between <b>${fmtUSD(S.range[0])}</b> and <b>${fmtUSD(S.range[1])}</b>, expect choppy back-and-forth moves with no clear direction. Neither buyers nor sellers have taken control inside this zone.`]);
+  if (S.down) rows.push(["down", "Turns down", `A daily close below ${fmt(S.down)} would show sellers are taking over.${next(S.down)}`]);
   rows.forEach(([cls, tag, html]) => box.append(el("div", { class: "scn" },
     el("span", { class: "scn-tag " + cls, text: tag }), el("p", { class: "scn-text", html }))));
-  box.append(el("p", { class: "chart-note", text: `Price now ${fmtUSD(price)}. Levels use daily closing prices and mark where a move would be confirmed or broken — they are reference points, not a forecast.` }));
+  box.append(el("p", { class: "chart-note", text: `Price now ${fmtUSD(S.price)}. Levels use daily closing prices and mark where a move would be confirmed or broken — they are reference points, not a forecast.` }));
+}
+
+/* -------------------------- narratives & altcoins (written daily from PANews + CoinGecko) ---- */
+function renderNarratives(d) {
+  const panel = document.getElementById("narratives-panel");
+  const list = d.narratives && d.narratives.items;
+  if (!list || !list.length) { panel.remove(); return; }
+  const box = document.getElementById("narratives");
+  box.textContent = "";
+  if (d.narratives.as_of) panel.querySelector(".kicker").textContent = `Narratives & altcoins · ${fmtDate(d.narratives.as_of)}`;
+  list.forEach((n) => {
+    const card = el("div", { class: "narr" },
+      el("h4", { text: n.theme }),
+      el("p", { class: "narr-why", text: n.why }));
+    if (n.tokens && n.tokens.length) {
+      const row = el("div", { class: "narr-tokens" });
+      n.tokens.forEach((t) => {
+        const ch = t.change_24h_pct;
+        const cls = ch == null ? "" : ch >= 0 ? " up" : " down";
+        row.append(el("span", { class: "token" + cls, title: t.note || "" },
+          el("b", { text: t.symbol }), ch == null ? "" : ` ${ch >= 0 ? "+" : ""}${ch.toFixed(1)}%`,
+          t.note ? el("i", { text: ` · ${t.note}` }) : ""));
+      });
+      card.append(row);
+    }
+    if (n.marketing_angle) card.append(el("p", { class: "narr-angle" }, el("b", { text: "Campaign angle: " }), n.marketing_angle));
+    if (n.sources && n.sources.length) {
+      const src = el("p", { class: "narr-src", text: "Source: " });
+      n.sources.slice(0, 3).forEach((x, i) => {
+        if (i) src.append(", ");
+        src.append(el("a", { href: x.url, target: "_blank", rel: "noopener", text: x.title }));
+      });
+      card.append(src);
+    }
+    box.append(card);
+  });
+  box.append(el("p", { class: "chart-note", text: "Compiled from PANews newsflashes and CoinGecko 24h price data. Describes what is already moving; not a recommendation to buy any token." }));
 }
 
 /* -------------------------- implications for marketing (rule-based fallback) -------- */

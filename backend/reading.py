@@ -137,7 +137,51 @@ def _lean_word(score) -> str:
     return "neutral"
 
 
-def analysis_paragraphs(row: pd.Series) -> list[str]:
+def _usd(v) -> str:
+    return f"${v:,.0f}"
+
+
+def _level_lines(scen, levels):
+    """One plain sentence of concrete price levels per timeframe, or None."""
+    if not scen or not levels:
+        return None, None, None
+    price = scen["price"]
+    up, down = scen.get("up"), scen.get("down")
+    short = None
+    if up and down:
+        short = (f"A daily close above {_usd(up['level'])} ({up['name']}) would turn this clearly up; "
+                 f"below {_usd(down['level'])} ({down['name']}) it turns down; in between, expect choppy moves.")
+    elif up:
+        short = f"A daily close above {_usd(up['level'])} ({up['name']}) would turn this clearly up."
+    elif down:
+        short = f"A daily close below {_usd(down['level'])} ({down['name']}) would turn this down."
+
+    medium = None
+    hi90, ma50, lo90 = levels.get("high_90d"), levels.get("ma_50"), levels.get("low_90d")
+    if hi90 and ma50:
+        if price < hi90 and price > ma50:
+            medium = (f"Over the month, the climb gains room above {_usd(hi90)} (90-day high) and "
+                      f"starts to fade below {_usd(ma50)} (50-day average).")
+        elif price <= ma50:
+            medium = (f"Over the month, price needs to get back above {_usd(ma50)} (50-day average) to turn positive; "
+                      f"below {_usd(lo90)} (90-day low) the weakness deepens.")
+        else:
+            medium = f"Over the month, price is at a 90-day high ({_usd(hi90)}); losing {_usd(ma50)} (50-day average) would signal a fade."
+
+    long_ = None
+    ma200, ma200w, ath = levels.get("ma_200"), levels.get("ma_200w"), levels.get("ath")
+    if ma200 and ma200w and ath:
+        if price >= ma200:
+            long_ = (f"The recovery stays intact while price holds above {_usd(ma200)} (200-day average); "
+                     f"losing it, and then {_usd(ma200w)} (200-week average), would break the longer trend. "
+                     f"The all-time high ({_usd(ath)}) is the far marker.")
+        else:
+            long_ = (f"Price needs to reclaim {_usd(ma200)} (200-day average) to repair the longer trend; "
+                     f"{_usd(ma200w)} (200-week average) is the next floor.")
+    return short, medium, long_
+
+
+def analysis_paragraphs(row: pd.Series, scen=None, levels=None) -> list[str]:
     """
     Fallback for the "What's driving this" panel: rule-based, real numbers only.
     Written for a non-technical reader -- one verdict, the one or two drivers that
@@ -146,6 +190,7 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
     LLM-written version normally replaces this with a more natural read.
     """
     out = []
+    lvl_short, lvl_medium, lvl_long = _level_lines(scen, levels)
 
     fng, fz = row.get("fng"), row.get("funding_z")
     sent_lean = _lean_word(row.get("sentiment_score"))
@@ -159,6 +204,8 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
                 s += " Traders are paying to bet on falls, a sign pessimism is crowded, which has often come near turning points."
             else:
                 s += " Leverage looks normal rather than crowded, so the mood isn't being pushed by risky bets."
+        if lvl_short:
+            s += " " + lvl_short
         out.append(s)
 
     rsi_w, roc90, breadth = row.get("rsi_w"), row.get("roc90"), row.get("breadth")
@@ -171,6 +218,8 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
             s += " Buying has run hot, so the move is more stretched than usual."
         elif pd.notna(rsi_w) and rsi_w <= 35:
             s += " Selling has run hot, which has often come near a bottom."
+        if lvl_medium:
+            s += " " + lvl_medium
         out.append(s)
 
     mayer, slope, dd = row.get("mayer"), row.get("ma_slope"), row.get("drawdown")
@@ -185,6 +234,8 @@ def analysis_paragraphs(row: pd.Series) -> list[str]:
             s += " That is an early recovery, not yet a confirmed uptrend."
         if pd.notna(dd) and dd < -0.15:
             s += f" Price is also still {abs(dd)*100:.0f}% below its all-time high."
+        if lvl_long:
+            s += " " + lvl_long
         out.append(s)
 
     return out
@@ -261,7 +312,7 @@ def watch(row: pd.Series) -> str | None:
     return None
 
 
-def friendly_row(row: pd.Series, prev: pd.Series | None = None) -> dict:
+def friendly_row(row: pd.Series, prev: pd.Series | None = None, scen=None, levels=None) -> dict:
     regime = row.get("regime", "Unknown")
     conv = row.get("conviction")
     cycle = row.get("cycle", "—")
@@ -287,7 +338,7 @@ def friendly_row(row: pd.Series, prev: pd.Series | None = None) -> dict:
         "reasons": reasons(row),
         "change": change,
         "watch": watch(row),
-        "analysis": analysis_paragraphs(row),
+        "analysis": analysis_paragraphs(row, scen, levels),
         "marketing_note": marketing_note(row),
         "price": None if pd.isna(row.get("close")) else round(float(row["close"])),
     }

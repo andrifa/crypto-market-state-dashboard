@@ -45,6 +45,37 @@ HISTORY_COLS = [
 ]
 
 
+LEVEL_NAMES = {
+    "high_30d": "30-day high", "low_30d": "30-day low", "high_90d": "90-day high",
+    "low_90d": "90-day low", "ma_50": "50-day average", "ma_200": "200-day average",
+    "ma_200w": "200-week average", "ath": "all-time high",
+}
+
+
+def scenarios_from_levels(price: float, levels: dict) -> dict:
+    """Nearest closing-price levels above/below today's price. Single source of truth:
+    the dashboard panel renders this and the daily narrative quotes it, so they can't
+    disagree."""
+    pts = [(k, v) for k, v in levels.items() if v is not None]
+
+    def pick(cands):
+        out = []
+        for k, v in cands:
+            if not out or abs(v - out[-1][1]) / v > 0.007:   # drop levels within 0.7% of the last kept
+                out.append((k, v))
+        return out
+
+    above = pick(sorted([p for p in pts if p[1] > price * 1.003], key=lambda p: p[1]))
+    below = pick(sorted([p for p in pts if p[1] < price * 0.997], key=lambda p: -p[1]))
+    fmt = lambda p: {"level": p[1], "name": LEVEL_NAMES[p[0]]}
+    return {
+        "price": round(price),
+        "up": None if not above else {**fmt(above[0]), "next": [fmt(p) for p in above[1:3]]},
+        "down": None if not below else {**fmt(below[0]), "next": [fmt(p) for p in below[1:3]]},
+        "range": [below[0][1] if below else levels["low_30d"], above[0][1] if above else levels["high_30d"]],
+    }
+
+
 def build_payload() -> dict:
     df = build_frame(refresh=True)
     st = build_state(df).dropna(subset=["trend_score"])
@@ -53,8 +84,6 @@ def build_payload() -> dict:
 
     row = st.iloc[-1]
     prev = st.iloc[-2] if len(st) > 1 else None
-    fr = friendly_row(row, prev)
-
     close = df["close"].dropna()
     ma200w = float(close.iloc[-1] / row["ma_200w"]) if pd.notna(row["ma_200w"]) else None
     levels = {
@@ -67,6 +96,9 @@ def build_payload() -> dict:
         "ma_200w": None if ma200w is None else round(ma200w),
         "ath": round(float(close.max())),
     }
+    scen = scenarios_from_levels(float(close.iloc[-1]), levels)
+    fr = friendly_row(row, prev, scen, levels)
+
 
     # live-only fields (dominance, OI, DVOL, ETF flow, etc.) have no history to fall
     # back on, so a transient fetch failure -- or simply running without FRED_API_KEY --
@@ -113,6 +145,7 @@ def build_payload() -> dict:
         "team_notes": {"marketing": fr["marketing_note"]},
         "changed_today": fr["change"],
         "levels": levels,
+        "scenarios": scen,
         "scores": {
             "trend": _f(row["trend_score"]),
             "momentum": _f(row["momentum_score"]),
@@ -155,6 +188,10 @@ def build_payload() -> dict:
         # found forward rather than ever writing/clearing it itself.
         "search_findings": old_payload.get("search_findings", {}),
     }
+    # Written only by the daily task (PANews + CoinGecko); this script can't produce it, so
+    # keep the last one rather than blanking the panel on a manual re-run.
+    if old_payload.get("narratives"):
+        payload["narratives"] = old_payload["narratives"]
 
     # The narrative fields below are template text on first write each day, then
     # the daily reasoning routine (a separate, later automation) overwrites them
