@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T10:41:18.498640+00:00",
+  "generated": "2026-10-07T10:59:12.699867+00:00",
   "rows": 4404,
   "span": [
     "2014-09-17",
@@ -254,7 +254,7 @@
     "bb_width": {
       "30": {
         "rho": 0.02,
-        "p": 0.181,
+        "p": 0.1811,
         "n": 4355
       },
       "90": {
@@ -344,7 +344,7 @@
       "90": [
         0.0541,
         0.0954,
-        0.1602,
+        0.1603,
         0.1762,
         0.2066
       ],
@@ -521,8 +521,8 @@
     "flat_mean_fwd180": 0.535,
     "regime_weighted_mean_fwd180": 0.6143,
     "uplift_pct_points": 7.92,
-    "equity_strategy_x": 206.79,
-    "equity_buyhold_x": 182.99,
+    "equity_strategy_x": 206.94,
+    "equity_buyhold_x": 183.13,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834
   },
@@ -613,8 +613,8 @@
     "turns_detected": "6/6",
     "turn_median_lag_days": 88,
     "decision_uplift_pp": 7.92,
-    "strategy_x": 206.79,
-    "buyhold_x": 182.99,
+    "strategy_x": 206.94,
+    "buyhold_x": 183.13,
     "strategy_maxdd": -0.649,
     "buyhold_maxdd": -0.834,
     "headline": "Over 4404 days (2014-09-17\u20132026-10-07, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 88 days after the price extreme. For shorter calls, 90-day directional accuracy is 62% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 58% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +7.9 points and cut the worst drawdown from 83% to 65%. Small sample (~2.9 cycles) \u2014 direction, not precision."

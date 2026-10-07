@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-07T10:41:17Z",
+  "updated_utc": "2026-10-07T10:59:11Z",
   "date": "2026-10-07",
-  "price_btc": 83689,
+  "price_btc": 83752,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Recovery still holding, but this week turned shaky",
+  "headline_tag": "Recovery holds, but rising bond yields made this week shaky",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 56,
+  "conviction": 61,
   "conviction_level": "MEDIUM",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The longer-term picture is good enough to support spending more on acquiring new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and this week has been shaky, scale up in steps rather than all at once, and keep part of the budget flexible so it can be pulled back if price falls back below its long-term averages. This describes today's conditions, not a forecast."
+    "detail": "The longer-term picture is good enough to support spending more on bringing in new users, especially for products aimed at active traders rather than stablecoin savers. Because the 200-day average has not turned up yet and rising bond yields made this week shaky, scale up in steps rather than all at once, and keep part of the budget flexible so it can be pulled back if price falls back below its long-term averages. This describes today's conditions, not a forecast."
   },
   "reasons": [
     "Price is about 17% above its 200-day average, so the recovery is still intact.",
-    "Up about 32% over 90 days, but only about half of those days closed above the long-term average.",
+    "Up about 33% over 90 days, but only about half of those days closed above the long-term average.",
     "The 200-day average still slopes slightly down (-3% over 90 days): early recovery, not confirmed.",
     "Mood index at 71 (greed) while more traders than usual are betting on a fall."
   ],
-  "watch": "The mood index says greed at 71, yet more traders than usual are betting on a fall and BTC slipped below $84,000 overnight. A daily close above $86,603 would ease that tension; a close below $80,292 (the 50-day average) would weaken today's positive read.",
+  "watch": "The bigger picture is positive, but US 30-year bond yields just hit their highest since 2002 and BTC dipped below $84,000 overnight. A daily close above $86,603 would ease that pressure; a close below $80,293 (the 50-day average) would weaken today's positive read.",
   "analysis": [
-    "Bottom line: the recovery is still in place, but this week is shaky, so lean in step by step. Short term, the picture is roughly balanced: the mood index reads 71 out of 100 (greed), yet more traders than usual are betting on a fall, and early on 7 October BTC briefly slipped from about $85,500 to below $84,000 as bets on a rise were forced to close (PANews, citing CryptoQuant). A daily close above $86,603 (the 30-day high) would turn the week clearly up, a close below $80,292 (the 50-day average) would turn it down, and in between it stays choppy. More money leaving US Bitcoin funds, like the roughly $92M on 6 October (Lookonchain via PANews), would weaken this; active traders are the segment most likely to react.",
-    "Over the next month, the picture is clearly positive. Price is up about 32% over the last 90 days, though only about half of those days finished above the long-term average, so the climb has been uneven. There is room to climb if price gets back above $86,603 (the 90-day high), while the month's gains fade if it falls below $80,292 (the 50-day average). The next Fed rate decision is on 27 October, a scheduled date worth planning campaign timing around.",
-    "Over three to six months, the direction is positive but not yet confirmed. Price is about 17% above its 200-day average, but that average still slopes slightly down and price remains about a third below its all-time high. The recovery stays intact while price holds above $71,732 (the 200-day average), with $66,420 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. It firms up once the 200-day average starts rising; until then this is a recovery phase, which favours steady rather than splashy brand spend."
+    "Bottom line: the bigger recovery is still in place, but the next few days look shaky, so lean in step by step. Short term, the mood has cooled slightly to the negative side: the market's mood index still reads 71 (greed), yet more traders than usual are betting on a fall, and news is pulling it down a little after US 30-year bond yields topped 5.7%, the highest since 2002 (PANews), and BTC briefly slipped below $84,000 overnight. A daily close above $86,603 (the 30-day high) would turn the week clearly up, a close below $80,293 (the 50-day average) would turn it down, and in between it stays choppy. Calmer bond markets would strengthen this; another jump in yields would weaken it, and active traders are the group most likely to react.",
+    "Over the next month, the picture is clearly positive. Price is up about 33% over the last 90 days, though only about half of those days finished above the long-term average, so the climb has been uneven; a US regulator's move toward rules for crypto trading (CFTC, via PANews) is adding a little. There is room to climb if price gets back above $86,603 (the 90-day high), while the month's gains fade if it falls below $80,293 (the 50-day average). The Fed's next rate decision on 27 October is the date to plan campaign timing around.",
+    "Over three to six months, the direction is positive but not yet confirmed. Price is about 17% above its 200-day average, but that average still slopes slightly down and price is about a third below its all-time high; Russia licensing its first crypto exchanges, with Sberbank planning products in December (PANews), is a small long-run plus. The recovery stays intact while price holds above $71,732 (the 200-day average), with $66,470 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. It firms up once the 200-day average starts rising; until then steady brand spend fits better than splashy launches."
   ],
   "team_notes": {
-    "marketing": "Keep leaning into active-trader and non-stablecoin channels: price is still up about 32% over 90 days and the mood index sits at 71, so attention is there. Lead with steady recovery and product reliability rather than 'don't miss out' urgency, since only about half of recent days closed above the long-term average and the overnight dip below $84,000 showed how fast things swing. Keep stablecoin-first campaigns running as a cushion through the Fed decision on 27 October."
+    "marketing": "Keep leaning into active-trader and non-stablecoin channels: price is still up about 33% over 90 days and the mood index sits at 71, so attention is there. Lead with steady recovery, trust and licensing rather than 'don't miss out' urgency, since only about half of recent days closed above the long-term average and the overnight dip below $84,000 showed how fast things swing. Keep stablecoin-first campaigns running as a cushion through the Fed decision on 27 October."
   },
   "changed_today": null,
   "levels": {
@@ -37,13 +37,13 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 80292,
+    "ma_50": 80293,
     "ma_200": 71732,
-    "ma_200w": 66420,
+    "ma_200w": 66470,
     "ath": 124753
   },
   "scenarios": {
-    "price": 83689,
+    "price": 83752,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -55,7 +55,7 @@
       ]
     },
     "down": {
-      "level": 80292,
+      "level": 80293,
       "name": "50-day average",
       "next": [
         {
@@ -69,17 +69,17 @@
       ]
     },
     "range": [
-      80292,
+      80293,
       86603
     ]
   },
   "scores": {
-    "trend": 0.284,
-    "momentum": 0.356,
-    "sentiment": -0.008
+    "sentiment": -0.108,
+    "momentum": 0.406,
+    "trend": 0.335
   },
   "context": {
-    "mayer_multiple": 1.167,
+    "mayer_multiple": 1.168,
     "ma200_slope_90d": -0.0336,
     "ma_200w_multiple": 1.26,
     "drawdown_from_ath": -0.329,
@@ -92,22 +92,22 @@
     "bollinger_width": 0.0777,
     "btc_dominance": 59.3,
     "ma_cross": 0.1193,
-    "roc_90d": 0.3243,
+    "roc_90d": 0.3253,
     "breadth_90d": 0.556,
     "ssr": 5.49,
     "pi_cycle_gap": -0.5432,
     "open_interest_usd": 8182390891.9482,
     "long_short_ratio": 1.1142,
-    "dvol": 36.0,
+    "dvol": 36.08,
     "us_10y_yield": 5.269,
-    "vix": 15.56,
+    "vix": 15.62,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": 118862451.88,
     "etf_cum_net_flow_usd": 57838195612.323,
     "public_company_btc_treasury": 1279076.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 17% above its 200-day average, so\n    the recovery is still intact.\n  • Up about 32% over 90 days, but only about half\n    of those days closed above the long-term\n    average.\n  • The 200-day average still slopes slightly down\n    (-3% over 90 days): early recovery, not\n    confirmed.\n  • Mood index at 71 (greed) while more traders than\n    usual are betting on a fall.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 7 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 17% above its 200-day average,\n    so the recovery is still intact.\n  • Up about 33% over 90 days, but only about half\n    of those days closed above the long-term\n    average.\n  • The 200-day average still slopes slightly down\n    (-3% over 90 days): early recovery, not\n    confirmed.\n  • Mood index at 71 (greed) while more traders\n    than usual are betting on a fall.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -179,23 +179,23 @@
     "items": [
       {
         "theme": "Broad altcoin pullback",
-        "why": "BTC slipped from about $85,500 to below $84,000 early on 7 October as sellers dominated and bets on a rise were forced to close, according to CryptoQuant's Axel Adler Jr. ETH fell below $2,600, and many mid-size altcoins dropped harder, around 8-11% in a day. The reports point to selling pressure rather than a single news event.",
+        "why": "BTC slipped from about $85,500 to below $84,000 early on 7 October as sellers dominated and bets on a rise were forced to close, according to CryptoQuant's Axel Adler Jr. ETH fell below $2,600, and many mid-size altcoins dropped harder, around 8-11% in a day. The reports point to selling pressure, alongside US 30-year bond yields reaching their highest since 2002, rather than a single crypto event.",
         "tokens": [
           {
             "symbol": "ETH",
-            "change_24h_pct": -4.99
+            "change_24h_pct": -4.9
           },
           {
             "symbol": "OP",
-            "change_24h_pct": -11.33
+            "change_24h_pct": -10.95
           },
           {
             "symbol": "UNI",
-            "change_24h_pct": -9.91
+            "change_24h_pct": -10.02
           },
           {
             "symbol": "DOT",
-            "change_24h_pct": -9.76
+            "change_24h_pct": -9.69
           }
         ],
         "marketing_angle": "A good day for content on handling price swings rather than promo pushes on smaller coins.",
@@ -207,6 +207,10 @@
           {
             "title": "ETH falls below $2,600, down 3.81% on the day",
             "url": "https://www.panews.io/articles/01a11417-fb54-75f6-b913-20d3910722a3"
+          },
+          {
+            "title": "30-Year U.S. Treasury Yield Tops 5.7%, Highest Since 2002",
+            "url": "https://www.panews.io/articles/01a11600-b457-725f-ae77-76b861740c4a"
           }
         ]
       },
@@ -216,7 +220,7 @@
         "tokens": [
           {
             "symbol": "HYPE",
-            "change_24h_pct": -4.24
+            "change_24h_pct": -4.14
           }
         ],
         "marketing_angle": "Competitor watch: on-chain trading venues keep adding products, a talking point for product and content teams.",
@@ -272,5 +276,96 @@
         ]
       }
     ]
-  }
+  },
+  "news_impact": {
+    "as_of": "2026-10-07",
+    "items": [
+      {
+        "headline": "30-Year U.S. Treasury Yield Tops 5.7%, Highest Since 2002",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11600-b457-725f-ae77-76b861740c4a",
+        "horizon": "short",
+        "direction": "negative",
+        "size": "moderate",
+        "why": "Higher safe returns on government bonds make holding non-yielding assets like Bitcoin less attractive in the near term."
+      },
+      {
+        "headline": "Analysis: Bitcoin briefly fell below $84,000 as active selling pressure and long liquidations intensified simultaneously",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a1151d-fa0b-7666-a485-7e3370a4d011",
+        "horizon": "short",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Forced closing of bets on a rise added to selling and dented the short-term mood."
+      },
+      {
+        "headline": "Bitcoin ETFs saw a net outflow of 1,059 BTC today, while Ethereum ETFs saw a net outflow of 21,400 ETH",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a111cc-2464-74fe-b4ee-60642a9d19ed",
+        "horizon": "short",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Money leaving US spot funds removes a steady source of buying for a day."
+      },
+      {
+        "headline": "US CFTC's latest ANPRM seeks to use existing authority to build a crypto spot market framework",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11184-0e20-714a-8764-9c08a555a7bf",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "moderate",
+        "why": "A clearer US rulebook for crypto spot markets is a step toward broader regulated participation."
+      },
+      {
+        "headline": "OKX completes funding at $25 billion valuation, with Standard Chartered and Circle among investors",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11117-e176-7309-925a-b6836b4a6e08",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "minor",
+        "why": "A major bank investing in a top exchange signals continued institutional commitment to the sector."
+      },
+      {
+        "headline": "US Senate probe identifies USDT as key liquidity channel for Iran's \"shadow banking,\" Gulf VASPs may face stricter compliance scrutiny",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a115d9-ef3c-7254-b204-13190716efc3",
+        "horizon": "medium",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Could bring tighter compliance pressure on the largest stablecoin and some regional platforms."
+      },
+      {
+        "headline": "Russia approves first crypto exchanges and custodians, Sberbank plans to launch crypto products in December",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11583-8f50-73ce-b0da-7e75e0fc0068",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "moderate",
+        "why": "A licensing regime in a large economy, with its biggest bank following, widens structural access to crypto."
+      }
+    ],
+    "summary": {
+      "short": "Net negative: a jump in long-term US bond yields, a burst of forced selling and a day of fund outflows weighed on the near-term mood.",
+      "medium": "Mildly positive: a US regulator moved toward a crypto spot-market framework and a major bank backed OKX, partly offset by a Senate probe into USDT.",
+      "long": "Mildly positive: Russia licensed its first crypto exchanges and custodians, with Sberbank planning products."
+    },
+    "impact": {
+      "short": -1.0,
+      "medium": 0.5,
+      "long": 0.5
+    },
+    "cap": 0.1
+  },
+  "scores_base": {
+    "trend": 0.285,
+    "momentum": 0.356,
+    "sentiment": -0.008
+  },
+  "conviction_base": 56,
+  "news_adjustment": {
+    "sentiment": -0.1,
+    "momentum": 0.05,
+    "trend": 0.05
+  },
+  "news_flag": null
 }
