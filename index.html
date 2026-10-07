@@ -119,6 +119,23 @@
   .narr-angle b{color:var(--purple-2);}
   .narr-src{margin:0; font-size:11.5px; color:var(--muted);}
   .narr-src a{color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--muted);}
+  .outlook-news{margin-top:6px; font-size:12.5px; font-weight:500;}
+  .outlook-news.pos{color:var(--teal-deep);} .outlook-news.neg{color:var(--bear);}
+  .news-sums{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:12px;}
+  @media (max-width:640px){ .news-sums{grid-template-columns:1fr;} }
+  .news-sum .lab{font-size:11px; color:var(--muted);}
+  .news-sum .big{font-family:"Space Grotesk"; font-weight:700; font-size:20px; color:var(--ink-soft);}
+  .news-sum .big.pos{color:var(--teal-deep);} .news-sum .big.neg{color:var(--bear);}
+  .news-flag{margin:0 0 12px; padding:10px 12px; border-radius:10px; background:var(--purple-wash); color:var(--purple-2); font-size:12.5px; line-height:1.5;}
+  .news-h{font-family:"Space Grotesk"; font-size:12.5px; margin:14px 0 6px; color:var(--ink);}
+  .news-item{display:grid; grid-template-columns:128px 1fr; gap:12px; padding:8px 0; border-top:1px solid var(--hair);}
+  @media (max-width:640px){ .news-item{grid-template-columns:1fr; gap:4px;} }
+  .news-pill{display:inline-block; width:fit-content; height:fit-content; font-family:"IBM Plex Mono"; font-size:10.5px; font-weight:600; padding:3px 9px; border-radius:999px;}
+  .news-pill.positive{background:var(--teal-wash); color:var(--teal-deep);} .news-pill.negative{background:var(--bear-wash); color:var(--bear);}
+  .news-head{font-size:13px; font-weight:500; color:var(--ink);}
+  .news-head a{color:var(--ink); text-decoration:none; border-bottom:1px dotted var(--muted);}
+  .news-head i{font-style:normal; color:var(--muted); font-weight:400; font-size:11.5px;}
+  .news-why{margin:2px 0 0; font-size:12.5px; color:var(--ink-soft); line-height:1.5;}
   .outlook-hist{margin-top:6px; font-size:12px; color:var(--muted); font-style:italic;}
 
   /* analysis */
@@ -291,6 +308,11 @@
   <div class="panel">
     <p class="kicker">Scenarios &amp; key levels</p>
     <div id="triggers"></div>
+  </div>
+
+  <div class="panel" id="news-panel">
+    <p class="kicker">News impact on the score</p>
+    <div id="news"></div>
   </div>
 
   <div class="panel" id="narratives-panel">

@@ -148,6 +148,7 @@ async function main() {
   renderOutlook(d, k, bt);
   renderAnalysis(d);
   renderTriggers(d);
+  renderNews(d);
   renderNarratives(d);
   renderTeams(d);
   renderSignals(d);
@@ -221,15 +222,15 @@ function renderOutlook(d, k, bt) {
   const c = d.context || {}, s = d.scores || {};
   const conf = d.conviction_level || "MEDIUM";
   const rows = [
-    { h: "Short-term", sub: "sentiment · ~1 week", score: s.sentiment, horizon: 30, horizonLabel: "30 days",
+    { h: "Short-term", sub: "sentiment · ~1 week", dim: "sentiment", key: "short", score: s.sentiment, horizon: 30, horizonLabel: "30 days",
       text: c.fear_greed != null
         ? `Fear &amp; Greed reads <b>${numStr(c.fear_greed, 0)} (${d.sentiment_band || "—"})</b>, funding sits at a <b>${fmtNum(c.funding_z, 2, true)}</b> z-score, and the stablecoin supply ratio is <b>${fmtNum(c.ssr, 2)}</b>.`
         : "Sentiment inputs unavailable today." },
-    { h: "Medium-term", sub: "momentum · ~1 month", score: s.momentum, horizon: 90, horizonLabel: "90 days",
+    { h: "Medium-term", sub: "momentum · ~1 month", dim: "momentum", key: "medium", score: s.momentum, horizon: 90, horizonLabel: "90 days",
       text: c.rsi_weekly != null
         ? `Weekly RSI is <b>${numStr(c.rsi_weekly, 0)}</b>, the 90-day rate of change is <b>${fmtPct(c.roc_90d, 0, true)}</b>, and breadth is <b>${fmtPct(c.breadth_90d, 0)}</b> of the last 90 days above the 200-day average.`
         : "Momentum inputs unavailable today." },
-    { h: "Long-term", sub: "trend · ~3–6 months", score: s.trend, horizon: 180, horizonLabel: "180 days",
+    { h: "Long-term", sub: "trend · ~3–6 months", dim: "trend", key: "long", score: s.trend, horizon: 180, horizonLabel: "180 days",
       text: c.mayer_multiple != null
         ? `Price is <b>${c.mayer_multiple >= 1 ? "above" : "below"}</b> its 200-day average (Mayer Multiple <b>${fmtNum(c.mayer_multiple, 2)}</b>), which is itself <b>${c.ma200_slope_90d >= 0 ? "rising" : "falling"}</b> (${fmtPct(c.ma200_slope_90d, 1, true)} over 90 days). The 200-week multiple is <b>${fmtNum(c.ma_200w_multiple, 2)}</b>.`
         : "Trend inputs unavailable today." },
@@ -241,6 +242,9 @@ function renderOutlook(d, k, bt) {
     const pct = ((score + 1) / 2) * 100;
     const color = score > 0.15 ? "var(--teal-deep)" : score < -0.15 ? "var(--bear)" : "var(--purple-2)";
     const note = historicalNote(bt, d.regime, d.conviction, o.horizon, o.horizonLabel);
+    const adj = d.news_adjustment && d.news_adjustment[o.dim];
+    const nsum = d.news_impact && d.news_impact.summary && d.news_impact.summary[o.key];
+    const newsNote = adj ? `News effect on this score: ${adj > 0 ? "+" : ""}${adj.toFixed(2)}${nsum ? " — " + nsum : ""}` : "";
     box.append(el("div", { class: "outlook-row" },
       el("div", { class: "outlook-head" },
         el("div", { class: "h" }, o.h, el("span", { text: o.sub })),
@@ -248,6 +252,7 @@ function renderOutlook(d, k, bt) {
       el("div", { class: "spectrum" }, el("div", { class: "mark", style: `left:${pct}%; color:${color}` })),
       el("div", { class: "spectrum-labels" }, el("span", { text: "Bearish" }), el("span", { text: "Neutral" }), el("span", { text: "Bullish" })),
       el("p", { class: "scenario", html: o.text }),
+      newsNote ? el("p", { class: "scenario outlook-news " + (adj > 0 ? "pos" : "neg"), text: newsNote }) : "",
       note ? el("p", { class: "scenario outlook-hist", text: note }) : ""));
   });
 }
@@ -295,6 +300,43 @@ function renderTriggers(d) {
   rows.forEach(([cls, tag, html]) => box.append(el("div", { class: "scn" },
     el("span", { class: "scn-tag " + cls, text: tag }), el("p", { class: "scn-text", html }))));
   box.append(el("p", { class: "chart-note", text: `Price now ${fmtUSD(S.price)}. Levels use daily closing prices and mark where a move would be confirmed or broken — they are reference points, not a forecast.` }));
+}
+
+/* -------------------------- news impact on the score ---------------------------------------- */
+function renderNews(d) {
+  const panel = document.getElementById("news-panel");
+  const ni = d.news_impact, items = ni && ni.items;
+  if (!items || !items.length) { panel.remove(); return; }
+  const box = document.getElementById("news");
+  box.textContent = "";
+  const cap = ni.cap || 0.1, imp = ni.impact || {};
+  const HZ = { short: "Short term", medium: "Medium term", long: "Long term" };
+  const DIM = { short: "mood score", medium: "momentum score", long: "trend score" };
+  const sg = (v) => (v > 0 ? "+" : "") + v.toFixed(2);
+  const sums = el("div", { class: "news-sums" });
+  ["short", "medium", "long"].forEach((h) => {
+    const v = (imp[h] || 0) * cap;
+    sums.append(el("div", { class: "news-sum" },
+      el("div", { class: "lab", text: `${HZ[h]} · ${DIM[h]}` }),
+      el("div", { class: "big " + (v > 0 ? "pos" : v < 0 ? "neg" : ""), text: v === 0 ? "no change" : sg(v) })));
+  });
+  box.append(sums);
+  if (d.news_flag) box.append(el("p", { class: "news-flag", text: d.news_flag }));
+  ["short", "medium", "long"].forEach((h) => {
+    const group = items.filter((i) => i.horizon === h);
+    if (!group.length) return;
+    box.append(el("h4", { class: "news-h", text: HZ[h] }));
+    group.forEach((i) => {
+      const head = i.url
+        ? el("a", { href: i.url, target: "_blank", rel: "noopener", text: i.headline })
+        : el("span", { text: i.headline });
+      box.append(el("div", { class: "news-item" },
+        el("span", { class: "news-pill " + i.direction, text: `${i.direction === "positive" ? "Positive" : "Negative"} · ${i.size}` }),
+        el("div", {}, el("div", { class: "news-head" }, head, i.source ? el("i", { text: ` — ${i.source}` }) : ""),
+          el("p", { class: "news-why", text: i.why }))));
+    });
+  });
+  box.append(el("p", { class: "chart-note", text: `Each headline is classified by direction, size and time horizon, and the shift is calculated with a fixed formula (minor 0.25 / moderate 0.5 / major 1.0 per item), capped at ±${cap.toFixed(2)} per score. This adjustment is not part of the backtest, and the BULLISH / NEUTRAL / BEARISH label and budget action stay with the 11-indicator model.` }));
 }
 
 /* -------------------------- narratives & altcoins (written daily from PANews + CoinGecko) ---- */
@@ -465,6 +507,7 @@ function renderMethodology() {
     + "The \"Supporting signals\" catalog lists 35 indicators considered for this model. Only the ones above feed the score; most of the rest are live "
     + "context. 8 of them have no free API (paid on-chain/derivatives providers only) — the daily reasoning routine web-searches for a reported figure "
     + "for those instead, shown with its source and date; on a day it finds nothing credible, that row reads \"not tracked\".<br><br>"
+    + "The three scores shown include a small news adjustment (at most ±0.10 each, from headlines classified by size and time horizon). That part is not backtested, so the BULLISH / NEUTRAL / BEARISH label and the budget action stay with the 11-indicator model; if news pushes a score across a label threshold, the page flags it instead of changing the label.<br><br>"
     + "Every input is trailing — it describes what already happened, it does not forecast. Validated on ~3 market cycles: it flagged every major cycle "
     + "top and bottom, a median of about three months after the price extreme. Thresholds and weights all live in one place (state.py → CONFIG)." });
   p.append(whyToggle("Regime logic, confidence, and limits", body));
