@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-08T00:04:56Z",
-  "date": "2026-10-08",
-  "price_btc": 83266,
+  "updated_utc": "2026-10-09T00:04:06Z",
+  "date": "2026-10-09",
+  "price_btc": 81736,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend intact, but Fed rate worries cool the week",
+  "headline_tag": "Recovery intact, but the short-term mood has cooled",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 64,
+  "conviction": 62,
   "conviction_level": "MEDIUM",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's uptrend call holds at medium confidence (64/100 including today's news, 56 from the indicators alone), so this is a reasonable time to step up spending on bringing in new users, especially through active-trader and non-stablecoin channels. The longer-run picture is improving, with price well above its 200-day average and up about 30% over three months, but the recovery is still early and the Fed minutes have cooled the near-term mood. Release budget in stages rather than all at once, and keep part of it flexible so it can be pulled back if price closes below its 50-day average (around $80,564). This describes today's conditions, not a forecast."
+    "detail": "The 11-indicator model still reads the market as in an early uptrend, so the budget posture is to scale up acquisition, weighted toward channels that serve active, non-stablecoin traders, who tend to respond most in this phase. Conviction is medium rather than high: the long-term recovery is not yet confirmed and the short-term mood has cooled this week, so increase spend in steps rather than all at once and keep some budget flexible until price holds above its 50-day average. This is a budget posture based on trailing data, not a forecast or trading advice."
   },
   "reasons": [
-    "Price is about 16% above its 200-day average, so the recovery is intact.",
-    "Up about 30% over 90 days, though only 57% of those days closed above the long-term average.",
-    "The 200-day average still slopes slightly down (-3% over 90 days): early, unconfirmed recovery.",
-    "Mood index at 64 (greed) while many traders pay to bet on a fall; Fed minutes lean toward a hike."
+    "Price is about 14% above its 200-day average, so the recovery holds.",
+    "Up about 28% over 90 days; about 58% of those days closed above the long-term average.",
+    "The 200-day average still slopes down (-3% over 90 days): an early, unconfirmed recovery.",
+    "Mood index 59 (greed) while many traders pay to bet on a fall; $487M left US funds in a day."
   ],
-  "watch": "The mood index says greed, yet an unusually large number of traders are paying to bet on a fall, and the Fed minutes leaned toward another rate rise. A daily close below $80,564 (the 50-day average) would weaken the monthly picture, while a close above $86,603 would ease the tension.",
+  "watch": "The long-term picture is improving, but price is only about 1% above its 50-day average ($80,708) after a day of heavy fund withdrawals. A close below that line would cool the month view; a return of fund inflows and a move toward $86,603 would firm it up.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but the mood this week has cooled. Short term, the mood leans slightly cautious: the Fear & Greed index still reads 64 (greed), yet an unusually large number of traders are paying to bet on a fall, and the Fed's latest minutes, where most officials saw one more rate rise this year as likely, are nudging this read down. If price closes above $86,603 (the 30-day high) the week turns clearly up, a close below $80,564 (the 50-day average) turns it down, and in between expect choppy trading. A close back above the 30-day high would lift the mood; until then, steady messaging fits better than urgency pushes.",
-    "Over the next month, the picture leans clearly positive: Bitcoin is up about 30% over the last 90 days. The climb has been uneven, though, with only about 57% of recent days finishing above the long-term average. A move above $86,603 (the 90-day high) would give the climb more room, while a slip below $80,564 (the 50-day average) would start to fade it. The Fed decision on 27 October is the scheduled event in this window; a steady result would support active-trader campaigns, another rate rise would weaken this read.",
-    "Over the next 3-6 months, the trend leans positive but is still early: price is about 16% above its 200-day average, but that average is still sloping slightly down and Bitcoin remains 33% below its all-time high. News adds a little here, as Russia has approved its first licensed crypto exchanges and custodians, with Sberbank planning crypto products in December. The recovery stays intact while price holds above $71,807 (the 200-day average), with $66,084 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The 200-day average turning upward would confirm the recovery and favour longer brand and new-user campaigns."
+    "Bottom line: the bigger picture still points up, but this week the mood has cooled. Short term, the market leans slightly cautious: the public mood reading sits at 59 out of 100, yet many traders are paying to bet on a fall, and US Bitcoin funds saw about $487M leave in a single day. News is nudging this a little lower too, with a US government wallet moving about $1B of bitcoin and UK bond yields hitting a 28-year high. If price closes above $86,603 (the 30-day high) the short term turns clearly up; below $80,708 (the 50-day average) it turns down, and in between it likely stays choppy. Fresh money returning to the funds would lift this; for campaigns, this is a week for steady messaging rather than urgency.",
+    "Over the next month, the picture is still positive but less convincing than the headline number: price is up about 28% over 90 days, yet only about 58% of those days closed above the long-term average. Europe's order that platforms drop non-compliant stablecoins within three months (reported by PANews) is taking a little off this view, and the next Fed rate decision is scheduled for October 27. There is room to climb if price gets back above $86,603 (the 90-day high), while the gain starts to fade if price slips below $80,708 (the 50-day average), only about 1% under today's price. Holding above that average would keep the month on track; for the business, active traders tend to stay engaged while it holds.",
+    "Over 3-6 months, the recovery leans positive: price is about 14% above its 200-day average, though that average itself is still sloping slightly down, so this is an early recovery rather than a confirmed uptrend. A run of institutional groundwork, including Standard Chartered planning crypto custody in Singapore and the Moscow Exchange opening crypto trading from December 1, is adding a little here. The recovery stays intact while price holds above $71,854 (the 200-day average), with $66,452 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker, still about 34% away. The 200-day average turning upward would confirm it; a break below it would mean rethinking longer campaigns."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels: the 30% three-month climb gives campaigns a real growth story, but lead with the steady recovery rather than urgency, since the mood index at 64 is already warm and many traders are betting on a fall. Keep stablecoin-first channels running as a defensive base while rate worries linger ahead of the 27 October Fed decision, and consider security education (quantum-safe wallets is a live topic this week) as a trust-building content angle."
+    "marketing": "Keep leaning into active-trader and non-stablecoin channels, since price is still up about 28% over 90 days and the longer recovery holds, but lead with the steady recovery story rather than urgency, given the mood index at 59 and many traders betting on a fall. For EU audiences, stablecoin-first messaging needs a check: Europe has given platforms three months to drop non-compliant stablecoins, which makes 'which stablecoins are allowed' a useful education topic."
   },
   "changed_today": null,
   "levels": {
@@ -37,13 +37,13 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 80564,
-    "ma_200": 71807,
-    "ma_200w": 66084,
+    "ma_50": 80708,
+    "ma_200": 71854,
+    "ma_200w": 66452,
     "ath": 124753
   },
   "scenarios": {
-    "price": 83266,
+    "price": 81736,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -55,7 +55,7 @@
       ]
     },
     "down": {
-      "level": 80564,
+      "level": 80708,
       "name": "50-day average",
       "next": [
         {
@@ -63,55 +63,61 @@
           "name": "30-day low"
         },
         {
-          "level": 71807,
+          "level": 71854,
           "name": "200-day average"
         }
       ]
     },
     "range": [
-      80564,
+      80708,
       86603
     ]
   },
   "scores": {
-    "sentiment": -0.167,
-    "momentum": 0.377,
-    "trend": 0.361
+    "sentiment": -0.194,
+    "momentum": 0.28,
+    "trend": 0.35
   },
   "context": {
-    "mayer_multiple": 1.16,
-    "ma200_slope_90d": -0.031,
-    "ma_200w_multiple": 1.26,
-    "drawdown_from_ath": -0.333,
+    "mayer_multiple": 1.138,
+    "ma200_slope_90d": -0.0288,
+    "ma_200w_multiple": 1.23,
+    "drawdown_from_ath": -0.345,
     "rsi_weekly": 61.8,
-    "active_addr_ratio": 0.985,
-    "puell_multiple": 1.186,
-    "fear_greed": 64.0,
-    "funding_z": -3.06,
-    "vol_percentile": 0.43,
-    "bollinger_width": 0.0698,
-    "btc_dominance": 58.7,
-    "ma_cross": 0.122,
-    "roc_90d": 0.2985,
-    "breadth_90d": 0.567,
-    "ssr": 5.49,
-    "pi_cycle_gap": -0.5416,
-    "open_interest_usd": 7981234695.7,
-    "long_short_ratio": 1.6896,
-    "dvol": 36.79,
-    "us_10y_yield": 5.277,
-    "vix": 15.08,
+    "active_addr_ratio": 0.991,
+    "puell_multiple": 1.148,
+    "fear_greed": 59.0,
+    "funding_z": -2.05,
+    "vol_percentile": 0.45,
+    "bollinger_width": 0.072,
+    "btc_dominance": 59.1,
+    "ma_cross": 0.1232,
+    "roc_90d": 0.2811,
+    "breadth_90d": 0.578,
+    "ssr": 5.36,
+    "pi_cycle_gap": -0.5401,
+    "open_interest_usd": 7599452309.9696,
+    "long_short_ratio": 1.8694,
+    "dvol": 37.69,
+    "us_10y_yield": 5.231,
+    "vix": 15.41,
     "fed_funds_rate": 3.63,
-    "etf_daily_net_flow_usd": 118862451.88,
-    "etf_cum_net_flow_usd": 57838195612.323,
+    "etf_daily_net_flow_usd": -487067411.5,
+    "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1278917.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 8 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 16% above its 200-day\n    average, so the recovery is intact.\n  • Up about 30% over 90 days, though only 57%\n    of those days closed above the long-term\n    average.\n  • The 200-day average still slopes slightly\n    down (-3% over 90 days): early,\n    unconfirmed recovery.\n  • Mood index at 64 (greed) while many\n    traders pay to bet on a fall; Fed minutes\n    lean toward a hike.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 9 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 14% above its 200-day\n    average, so the recovery holds.\n  • Up about 28% over 90 days; about 58% of\n    those days closed above the long-term\n    average.\n  • The 200-day average still slopes down (-3%\n    over 90 days): an early, unconfirmed\n    recovery.\n  • Mood index 59 (greed) while many traders\n    pay to bet on a fall; $487M left US funds\n    in a day.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
-    "liquidation_24h_usd": null,
+    "liquidation_24h_usd": {
+      "value": 754000000,
+      "source_name": "PANews",
+      "source_url": "https://www.panews.io/articles/01a11c22-b99b-77a1-9dd8-74b9c55beeba",
+      "as_of": "2026-10-08",
+      "note": "Network-wide 24h derivatives total, mostly bets on a rise; from PANews newsflash, not WebSearch."
+    },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
     "whale_supply_pct": null,
@@ -119,190 +125,221 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Bitcoin Falls as Treasury Yields Rise and Attention Turns to the FOMC Minutes",
-        "url": "https://www.investing.com/analysis/bitcoin-falls-as-treasury-yields-rise-and-attention-turns-to-the-fomc-minutes-200689112",
-        "source": "Investing.com",
-        "date": "2026-10-07"
+        "title": "ESMA requires crypto service providers to stop offering non-MiCA-compliant stablecoin services, with a 3-month wind-down",
+        "url": "https://www.panews.io/articles/01a11b05-15cf-7453-a5c5-29e037255063",
+        "source": "PANews",
+        "date": "2026-10-08"
       },
       {
-        "title": "US 10-year Treasury yield jumps to 24-year high ahead of Fed minutes",
-        "url": "https://economies.com/markets/americas-news/us-10-year-treasury-yield-jumps-to-24-year-high-ahead-of-fed-minutes-49997",
-        "source": "Economies.com",
-        "date": "2026-10-07"
+        "title": "Bitcoin spot ETFs saw net outflows of $487 million yesterday, with BlackRock's IBIT leading at $208 million",
+        "url": "https://www.panews.io/articles/01a119e8-8fc1-774f-bdc8-9b68023de376",
+        "source": "PANews",
+        "date": "2026-10-08"
       },
       {
-        "title": "Stock market today: Dow falls, S&P 500 and Nasdaq retreat from records amid bond market jitters",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-7-dow-sp-500-nasdaq-080241833.html",
-        "source": "Yahoo Finance",
-        "date": "2026-10-07"
+        "title": "Data: US Government Address Transfers Out 12,267 BTC, Worth About $1.01 Billion",
+        "url": "https://www.panews.io/articles/01a11bc6-bd4a-7576-bff2-f579ec823ba4",
+        "source": "PANews",
+        "date": "2026-10-08"
+      },
+      {
+        "title": "Moscow Exchange Plans to Open Cryptocurrency Trading from December 1",
+        "url": "https://www.panews.io/articles/01a11b35-bd82-71ac-95ec-962a9259fbb4",
+        "source": "PANews",
+        "date": "2026-10-08"
+      },
+      {
+        "title": "Standard Chartered's Singapore branch plans to offer custody services for crypto assets, stablecoins, and tokenized RWAs to institutional investors",
+        "url": "https://www.panews.io/articles/01a1196b-4b5b-740f-af49-39ece03917c8",
+        "source": "PANews",
+        "date": "2026-10-08"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-08",
+    "as_of": "2026-10-09",
     "items": [
       {
-        "theme": "Tokenized stocks keep spreading",
-        "why": "Several platforms moved real-world shares on-chain this week: US and Korean stock tokens from Stove Finance went live on Uniswap's Arbitrum deployment, and Binance said it will accept four tokenized securities as collateral. Securitize also announced a partnership with LG to develop tokenized assets in Korea, and Polymarket's CEO said ICE, one of its largest shareholders, is researching on-chain stocks.",
-        "tokens": [],
-        "marketing_angle": "A timely education topic: explain what a tokenized stock is and how it differs from owning the share directly.",
-        "sources": [
-          {
-            "title": "Uniswap: US and Korean stock tokens issued by Stove Finance are now live on Arbitrum",
-            "url": "https://www.panews.io/articles/01a116c7-2ae2-7406-b866-9fcd30a2ff34"
-          },
-          {
-            "title": "Binance to Add 4 bStocks Tokenized Securities Including SECZB as Collateral Assets",
-            "url": "https://www.panews.io/articles/01a1148b-89e6-74ce-834c-595236a66de3"
-          },
-          {
-            "title": "Securitize partners with Korean giant LG to develop tokenized assets in Korea",
-            "url": "https://www.panews.io/articles/01a113b6-42bf-7649-b3a5-8bbe587b494c"
-          }
-        ]
-      },
-      {
-        "theme": "Solana trading apps rally",
-        "why": "Several Solana trading-app tokens jumped while the wider market fell: Meteora rose about 36% and Raydium about 13% in a day. Orca, up about 73% over the week, announced a merger with Loopscale to form a new project called Formation. The reports don't give a clear reason for the Meteora and Raydium moves.",
+        "theme": "Broad altcoin sell-off",
+        "why": "Many large altcoins fell much harder than bitcoin in the last day: NEAR dropped about 16% and Curve, Lido and Uniswap about 10-12% each. PANews reported over $450M of bets on a rise were forced to close within one hour as BTC slipped below $81,000. The reports don't give a clear reason for the initial drop.",
         "tokens": [
           {
-            "symbol": "MET",
-            "change_24h_pct": 35.92
+            "symbol": "NEAR",
+            "change_24h_pct": -16.3
           },
           {
-            "symbol": "RAY",
-            "change_24h_pct": 13.0
+            "symbol": "CRV",
+            "change_24h_pct": -12.1
           },
           {
-            "symbol": "ORCA",
-            "change_24h_pct": -7.69
+            "symbol": "LDO",
+            "change_24h_pct": -11.4
           },
           {
-            "symbol": "SOL",
-            "change_24h_pct": -3.62
+            "symbol": "UNI",
+            "change_24h_pct": -10.2
           }
         ],
-        "marketing_angle": "Signals interest from active on-chain traders; worth watching for listing and content demand around Solana apps.",
+        "marketing_angle": "A good moment for risk-awareness content on borrowing to trade, rather than promotions on smaller coins.",
         "sources": [
           {
-            "title": "Solana Ecosystem's Orca and Loopscale Merge to Form Formation",
-            "url": "https://www.panews.io/articles/01a11890-ee1f-76c1-a57a-2710d76b02ca"
+            "title": "Over $450M liquidated across the network in the past hour, longs hit hardest",
+            "url": "https://www.panews.io/articles/01a11c39-5d55-74a1-a8ea-2a8946307b08"
+          },
+          {
+            "title": "BTC drops below $81,000, down 3.00% intraday",
+            "url": "https://www.panews.io/articles/01a11c2a-0990-7242-bfb7-69480eb7b2c5"
           }
         ]
       },
       {
-        "theme": "Hyperliquid plans its next step",
-        "why": "Hyperliquid's founder said options will be the platform's next key product, while Singapore's regulator said the Singapore-headquartered platform is outside its jurisdiction. The dev team also redeemed 3.75 million HYPE it had unstaked a week earlier. HYPE dipped with the market but sits about 10% below its all-time high.",
+        "theme": "Tokenized stocks and bonds keep spreading",
+        "why": "Securitize launched tokenized US stocks on Solana and plans a listing on an NYSE digital platform, and Ondo launched a note that lets people trade exposure to OpenAI's private shares around the clock. Japan's Ministry of Finance also proposed three ways to tokenize government bonds, and Standard Chartered's Singapore branch plans custody for tokenized assets.",
         "tokens": [
           {
-            "symbol": "HYPE",
-            "change_24h_pct": -3.77
+            "symbol": "ONDO",
+            "change_24h_pct": 0.0
           }
         ],
-        "marketing_angle": "Trading on-chain platforms stays a hot topic for active-trader audiences; compare product features in content rather than promoting the token.",
+        "marketing_angle": "Continues to be a strong education topic: what owning a tokenized stock or bond actually means.",
         "sources": [
           {
-            "title": "Hyperliquid Founder: Options Will Be the Platform's Next Key Product Focus",
-            "url": "https://www.panews.io/articles/01a1150d-475c-74a3-8b3c-752c3eaecb9d"
+            "title": "Securitize Launches Tokenized U.S. Stocks on Solana, Plans NYSE Digital Platform Listing",
+            "url": "https://www.panews.io/articles/01a11bb0-e222-76ef-8bd8-41db8e1f7139"
           },
           {
-            "title": "Hyperliquid is headquartered in Singapore; MAS says it is not within its regulatory jurisdiction",
-            "url": "https://www.panews.io/articles/01a113c5-1394-729a-be23-074237469c94"
+            "title": "Ondo Private Markets Launches OpenAI Private Markets Note, Enabling 24/7 On-Chain Trading Without Waiting for an IPO",
+            "url": "https://www.panews.io/articles/01a11bee-cebf-7562-991f-cb435459b3e2"
           },
           {
-            "title": "Hyperliquid dev team address successfully redeems 3.75 million HYPE unstaked 7 days ago",
-            "url": "https://www.panews.io/articles/01a1170f-933f-7766-af9e-6a9e66b268a1"
+            "title": "Japan's Ministry of Finance proposes \"three types\" of government bond tokenization",
+            "url": "https://www.panews.io/articles/01a11bcd-6b2b-7372-a2ff-1784b4a13d45"
           }
         ]
       },
       {
-        "theme": "Quantum computing risk to wallets",
-        "why": "Ethereum researcher Justin Drake warned that the cryptography protecting most wallets could be cracked within months in a worst case and advised large holders to move funds to new addresses. Europol separately named crypto wallets as the main risk point for quantum attacks, and the returning Stacks founder listed quantum resistance among his priorities.",
-        "tokens": [],
-        "marketing_angle": "A trust and security education angle: explain plainly what users can do and what the exchange does to protect funds.",
-        "sources": [
+        "theme": "Projects cutting token supply",
+        "why": "A few projects rose against the falling market after supply news. Pyth said it will use all product revenue received by its DAO to buy back PYTH, and the token rose about 10%. Aptos Foundation committed to permanently lock and stake 210 million APT, though APT still slipped about 3.5%. STRK rose about 13%, but the reports don't give a clear reason for that move.",
+        "tokens": [
           {
-            "title": "Justin Drake: ECDSA could be cracked within months in worst case, advises large holders to migrate assets to new addresses",
-            "url": "https://www.panews.io/articles/01a1172c-aeac-701c-8a78-d649d82bd652"
+            "symbol": "PYTH",
+            "change_24h_pct": 10.1
           },
           {
-            "title": "Europol: Crypto Wallets Are the Main Risk Point for Quantum Attacks",
-            "url": "https://www.panews.io/articles/01a1160e-303d-74bf-aed5-4ab1a7290d61"
+            "symbol": "STRK",
+            "change_24h_pct": 13.3
+          },
+          {
+            "symbol": "APT",
+            "change_24h_pct": -3.5
+          }
+        ],
+        "marketing_angle": "Buybacks and token locks are a timely explainer topic for users following individual projects.",
+        "sources": [
+          {
+            "title": "Pyth to use 100% of product revenue received by DAO for PYTH buybacks, ARR reaches $11.49 million",
+            "url": "https://www.panews.io/articles/01a11be4-a0a7-75af-b182-c855eac50477"
+          },
+          {
+            "title": "Aptos Foundation commits to permanently lock and stake 210 million APT",
+            "url": "https://www.panews.io/articles/01a11dc8-1098-716f-a9b3-66640680e783"
+          },
+          {
+            "title": "STRK up 17.4% in past 24 hours, ZEC down 7.5% to near 1,200 USDT",
+            "url": "https://www.panews.io/articles/01a11b6d-ec83-71af-8eae-be9500281d4d"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-08",
+    "as_of": "2026-10-09",
     "items": [
       {
-        "headline": "Fed Minutes: Most Officials See One More Rate Hike Before Year-End as Likely Appropriate",
+        "headline": "Data: US Government Address Transfers Out 12,267 BTC, Worth About $1.01 Billion",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11799-c97b-723b-8556-17982c9784f3",
-        "horizon": "short",
-        "direction": "negative",
-        "size": "moderate",
-        "why": "Signals of another rate rise make borrowing dearer and tend to cool appetite for assets like Bitcoin in the near term."
-      },
-      {
-        "headline": "US government address moved $165 million in assets in 24 hours, including 1,583.8 BTC to Coinbase Prime",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a116ed-b00f-716d-bd6f-3033d06ec279",
+        "url": "https://www.panews.io/articles/01a11bc6-bd4a-7576-bff2-f579ec823ba4",
         "horizon": "short",
         "direction": "negative",
         "size": "minor",
-        "why": "Government coins moving to an exchange desk are often read as possible extra supply for sale."
+        "why": "Large government coin movements are often read as possible selling, which weighs on mood for a few days."
       },
       {
-        "headline": "Winklevoss Files Application for Spot Zcash ETF with US SEC",
+        "headline": "UK 20-year government bond yield hits 6% for first time since March 1998",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a111de-b099-7546-8f93-81ed8561b4fa",
+        "url": "https://www.panews.io/articles/01a11b19-e9f9-7148-8afc-7e45dbc7a38b",
+        "horizon": "short",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Rising bond yields abroad add to pressure on riskier assets like crypto."
+      },
+      {
+        "headline": "ESMA requires crypto service providers to stop offering non-MiCA-compliant stablecoin services, with a 3-month wind-down",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11b05-15cf-7453-a5c5-29e037255063",
         "horizon": "medium",
-        "direction": "positive",
-        "size": "minor",
-        "why": "Another spot crypto ETF filing widens the regulated product pipeline, though it concerns a single altcoin."
-      },
-      {
-        "headline": "Russia approves first crypto exchanges and custodians, Sberbank plans to launch crypto products in December",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11583-8f50-73ce-b0da-7e75e0fc0068",
-        "horizon": "long",
-        "direction": "positive",
+        "direction": "negative",
         "size": "moderate",
-        "why": "A major economy moving from a crypto law to actually licensing exchanges and custodians opens a regulated route for a large new user base."
+        "why": "EU platforms must drop non-compliant stablecoins within three months, squeezing a key way money moves in and out of crypto in Europe."
       },
       {
-        "headline": "Robinhood adds $25 million worth of Bitcoin to its balance sheet",
+        "headline": "US Senator Investigates Cantor-Tether Relationship, Demands Explanation of Sanctions Compliance Measures",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1147e-c98f-71ed-8e68-6b6ccc08f1c2",
+        "url": "https://www.panews.io/articles/01a11dd1-576f-70f3-a183-46697b57b15d",
+        "horizon": "medium",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Political scrutiny of the largest stablecoin issuer adds regulatory uncertainty."
+      },
+      {
+        "headline": "Moscow Exchange Plans to Open Cryptocurrency Trading from December 1",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11b35-bd82-71ac-95ec-962a9259fbb4",
         "horizon": "long",
         "direction": "positive",
         "size": "minor",
-        "why": "A large listed broker holding Bitcoin as a treasury asset adds to slow corporate adoption, though the amount is small."
+        "why": "A national stock exchange adding crypto trading widens regulated access, though in one market."
+      },
+      {
+        "headline": "Standard Chartered's Singapore branch plans to offer custody services for crypto assets, stablecoins, and tokenized RWAs to institutional investors",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a1196b-4b5b-740f-af49-39ece03917c8",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "A global bank offering crypto custody makes it easier for institutions to hold crypto."
+      },
+      {
+        "headline": "Japan's Ministry of Finance proposes \"three types\" of government bond tokenization",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a11bcd-6b2b-7372-a2ff-1784b4a13d45",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "A major government exploring on-chain bonds supports the long-run case for blockchain-based markets."
       }
     ],
     "summary": {
-      "short": "A firmer-than-hoped tone in the Fed minutes and government coins moving to an exchange weigh slightly on the near-term mood.",
-      "medium": "A new spot Zcash ETF filing is a small positive for the regulated product pipeline.",
-      "long": "Russia licensing its first crypto exchanges and Robinhood holding Bitcoin add modestly to long-run adoption."
+      "short": "Two small negatives — a $1B US government coin transfer and UK bond yields at a 28-year high — slightly cool the near-term mood.",
+      "medium": "Europe's order to drop non-compliant stablecoins within three months, plus US scrutiny of Tether, is a modest headwind for the coming weeks.",
+      "long": "Steady institutional groundwork — a Moscow Exchange crypto launch, Standard Chartered custody in Singapore and Japan's bond tokenization plan — is a small long-run positive."
     },
     "impact": {
-      "short": -0.75,
-      "medium": 0.25,
+      "short": -0.5,
+      "medium": -0.75,
       "long": 0.75
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.286,
-    "momentum": 0.352,
-    "sentiment": -0.092
+    "trend": 0.275,
+    "momentum": 0.355,
+    "sentiment": -0.144
   },
-  "conviction_base": 56,
+  "conviction_base": 55,
   "news_adjustment": {
-    "sentiment": -0.075,
-    "momentum": 0.025,
+    "sentiment": -0.05,
+    "momentum": -0.075,
     "trend": 0.075
   },
   "news_flag": null
