@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-09T00:04:06Z",
-  "date": "2026-10-09",
-  "price_btc": 81736,
+  "updated_utc": "2026-10-10T06:39:15Z",
+  "date": "2026-10-10",
+  "price_btc": 82780,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Recovery intact, but the short-term mood has cooled",
+  "headline_tag": "Recovery holding, mood warm but a security scare tempers it",
   "direction": "strengthening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 62,
-  "conviction_level": "MEDIUM",
+  "conviction": 80,
+  "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The 11-indicator model still reads the market as in an early uptrend, so the budget posture is to scale up acquisition, weighted toward channels that serve active, non-stablecoin traders, who tend to respond most in this phase. Conviction is medium rather than high: the long-term recovery is not yet confirmed and the short-term mood has cooled this week, so increase spend in steps rather than all at once and keep some budget flexible until price holds above its 50-day average. This is a budget posture based on trailing data, not a forecast or trading advice."
+    "detail": "The model reads the market as an early recovery with high confidence, so this is a reasonable time to step up customer-acquisition spend rather than hold back. Price is well above its long-term average and has climbed about 30% over three months, and phases like this tend to bring active traders back first, so they are where extra budget usually works hardest. Because the long-term average has not yet turned up, scale in steps and review weekly rather than committing the whole quarter at once. This is a budget-posture signal based on past data, not a price forecast or trading advice."
   },
   "reasons": [
-    "Price is about 14% above its 200-day average, so the recovery holds.",
-    "Up about 28% over 90 days; about 58% of those days closed above the long-term average.",
+    "Price is about 15% above its 200-day average, so the recovery holds.",
+    "Up about 30% over 90 days; about 59% of those days closed above the long-term average.",
     "The 200-day average still slopes down (-3% over 90 days): an early, unconfirmed recovery.",
-    "Mood index 59 (greed) while many traders pay to bet on a fall; $487M left US funds in a day."
+    "Mood index 64 (greed), with more bets on a rise than a fall, but not extreme."
   ],
-  "watch": "The long-term picture is improving, but price is only about 1% above its 50-day average ($80,708) after a day of heavy fund withdrawals. A close below that line would cool the month view; a return of fund inflows and a move toward $86,603 would firm it up.",
+  "watch": "The longer picture is improving, but the 200-day average is still pointing slightly down and price sits only about 2% above its 50-day average ($80,814). A close below that line would cool the month view; a move above $86,603 would firm it up.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but this week the mood has cooled. Short term, the market leans slightly cautious: the public mood reading sits at 59 out of 100, yet many traders are paying to bet on a fall, and US Bitcoin funds saw about $487M leave in a single day. News is nudging this a little lower too, with a US government wallet moving about $1B of bitcoin and UK bond yields hitting a 28-year high. If price closes above $86,603 (the 30-day high) the short term turns clearly up; below $80,708 (the 50-day average) it turns down, and in between it likely stays choppy. Fresh money returning to the funds would lift this; for campaigns, this is a week for steady messaging rather than urgency.",
-    "Over the next month, the picture is still positive but less convincing than the headline number: price is up about 28% over 90 days, yet only about 58% of those days closed above the long-term average. Europe's order that platforms drop non-compliant stablecoins within three months (reported by PANews) is taking a little off this view, and the next Fed rate decision is scheduled for October 27. There is room to climb if price gets back above $86,603 (the 90-day high), while the gain starts to fade if price slips below $80,708 (the 50-day average), only about 1% under today's price. Holding above that average would keep the month on track; for the business, active traders tend to stay engaged while it holds.",
-    "Over 3-6 months, the recovery leans positive: price is about 14% above its 200-day average, though that average itself is still sloping slightly down, so this is an early recovery rather than a confirmed uptrend. A run of institutional groundwork, including Standard Chartered planning crypto custody in Singapore and the Moscow Exchange opening crypto trading from December 1, is adding a little here. The recovery stays intact while price holds above $71,854 (the 200-day average), with $66,452 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker, still about 34% away. The 200-day average turning upward would confirm it; a break below it would mean rethinking longer campaigns."
+    "Bottom line: the market is in a recovery and the bigger picture is firming, though nothing here is running hot. Short term, the mood is mildly warm: the public mood reading is 64 out of 100 (greed), and more people are betting on a rise than a fall, but not to an extreme degree. News is taking a little off this view: about $90M was stolen from people who bought tampered Ledger wallets from one Southeast Asian reseller (PANews). If price closes above $86,603 (the 30-day high) the short term turns clearly up; below $80,814 (the 50-day average) it turns down, and in between it likely stays choppy. A steady return of money into US Bitcoin funds would strengthen this; for campaigns, steady confidence messaging fits better than urgency this week.",
+    "Over the next month, the lean is clearly positive: price is up about 30% over 90 days, and about 59% of those days closed above the long-term average, so the climb has been fairly broad. A US Justice Department review of whether Binance kept to its 2023 settlement (Bloomberg, via PANews) is taking a little off this view, and the next Fed rate decision is scheduled for October 27. There is room to climb if price gets above $86,603 (the 90-day high), while the gain starts to fade if price slips below $80,814 (the 50-day average), about 2% under today's price. Holding that average keeps the month on track; active traders tend to stay engaged while it holds.",
+    "Over 3-6 months, the recovery leans positive: price is about 15% above its 200-day average, though that average is still sloping slightly down (about -3% over 90 days), so this is an early recovery rather than a confirmed uptrend. Telegram rolling out its built-in Money wallet to all users (PANews) is adding a little to this longer view. The recovery stays intact while price holds above $71,919 (the 200-day average), with $66,224 (the 200-week average) as the next floor and $124,753 (the all-time high, about 34% above today) as the far marker. A turn upward in the 200-day average would confirm it; for the business, that would support longer-horizon brand and onboarding spend."
   ],
   "team_notes": {
-    "marketing": "Keep leaning into active-trader and non-stablecoin channels, since price is still up about 28% over 90 days and the longer recovery holds, but lead with the steady recovery story rather than urgency, given the mood index at 59 and many traders betting on a fall. For EU audiences, stablecoin-first messaging needs a check: Europe has given platforms three months to drop non-compliant stablecoins, which makes 'which stablecoins are allowed' a useful education topic."
+    "marketing": "Keep leaning into active-trader and non-stablecoin channels, since price is up about 30% over 90 days and the mood reading sits at 64 without being extreme; lead with a steady 'recovery is holding' story rather than urgency. The Ledger reseller theft makes this a good week for security and self-custody education (buy devices only from official sources), which builds trust with both new and returning users."
   },
   "changed_today": null,
   "levels": {
@@ -37,13 +37,13 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62239,
-    "ma_50": 80708,
-    "ma_200": 71854,
-    "ma_200w": 66452,
+    "ma_50": 80814,
+    "ma_200": 71919,
+    "ma_200w": 66224,
     "ath": 124753
   },
   "scenarios": {
-    "price": 81736,
+    "price": 82780,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -55,7 +55,7 @@
       ]
     },
     "down": {
-      "level": 80708,
+      "level": 80814,
       "name": "50-day average",
       "next": [
         {
@@ -63,60 +63,60 @@
           "name": "30-day low"
         },
         {
-          "level": 71854,
+          "level": 71919,
           "name": "200-day average"
         }
       ]
     },
     "range": [
-      80708,
+      80814,
       86603
     ]
   },
   "scores": {
-    "sentiment": -0.194,
-    "momentum": 0.28,
-    "trend": 0.35
+    "sentiment": 0.192,
+    "momentum": 0.387,
+    "trend": 0.34
   },
   "context": {
-    "mayer_multiple": 1.138,
-    "ma200_slope_90d": -0.0288,
-    "ma_200w_multiple": 1.23,
-    "drawdown_from_ath": -0.345,
+    "mayer_multiple": 1.151,
+    "ma200_slope_90d": -0.0263,
+    "ma_200w_multiple": 1.25,
+    "drawdown_from_ath": -0.336,
     "rsi_weekly": 61.8,
-    "active_addr_ratio": 0.991,
-    "puell_multiple": 1.148,
-    "fear_greed": 59.0,
-    "funding_z": -2.05,
-    "vol_percentile": 0.45,
-    "bollinger_width": 0.072,
+    "active_addr_ratio": 1.051,
+    "puell_multiple": 1.089,
+    "fear_greed": 64.0,
+    "funding_z": 0.25,
+    "vol_percentile": 0.42,
+    "bollinger_width": 0.0616,
     "btc_dominance": 59.1,
-    "ma_cross": 0.1232,
-    "roc_90d": 0.2811,
-    "breadth_90d": 0.578,
-    "ssr": 5.36,
-    "pi_cycle_gap": -0.5401,
-    "open_interest_usd": 7599452309.9696,
-    "long_short_ratio": 1.8694,
-    "dvol": 37.69,
-    "us_10y_yield": 5.231,
-    "vix": 15.41,
+    "ma_cross": 0.1237,
+    "roc_90d": 0.2983,
+    "breadth_90d": 0.589,
+    "ssr": 5.34,
+    "pi_cycle_gap": -0.5385,
+    "open_interest_usd": 7641006984.56147,
+    "long_short_ratio": 1.4839,
+    "dvol": 36.7,
+    "us_10y_yield": 5.244,
+    "vix": 14.84,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1278917.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 9 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 14% above its 200-day\n    average, so the recovery holds.\n  • Up about 28% over 90 days; about 58% of\n    those days closed above the long-term\n    average.\n  • The 200-day average still slopes down (-3%\n    over 90 days): an early, unconfirmed\n    recovery.\n  • Mood index 59 (greed) while many traders\n    pay to bet on a fall; $487M left US funds\n    in a day.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 10 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • Price is about 15% above its 200-day\n    average, so the recovery holds.\n  • Up about 30% over 90 days; about 59% of\n    those days closed above the long-term\n    average.\n  • The 200-day average still slopes down (-3%\n    over 90 days): an early, unconfirmed\n    recovery.\n  • Mood index 64 (greed), with more bets on a\n    rise than a fall, but not extreme.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 754000000,
-      "source_name": "PANews",
-      "source_url": "https://www.panews.io/articles/01a11c22-b99b-77a1-9dd8-74b9c55beeba",
-      "as_of": "2026-10-08",
-      "note": "Network-wide 24h derivatives total, mostly bets on a rise; from PANews newsflash, not WebSearch."
+      "value": 609000000,
+      "source_name": "PANews (citing CoinGlass)",
+      "source_url": "https://www.panews.io/articles/01a12149-1649-7541-a172-681376bbde7f",
+      "as_of": "2026-10-09",
+      "note": "Network-wide 24h total, $431M bets on a rise; from PANews newsflash, not WebSearch."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
@@ -125,222 +125,193 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "ESMA requires crypto service providers to stop offering non-MiCA-compliant stablecoin services, with a 3-month wind-down",
-        "url": "https://www.panews.io/articles/01a11b05-15cf-7453-a5c5-29e037255063",
+        "title": "Tether freezes USDT linked to Ledger theft, losses near $90 million",
+        "url": "https://www.panews.io/articles/01a1213e-5ef5-7271-b196-f308d90a45f4",
         "source": "PANews",
-        "date": "2026-10-08"
+        "date": "2026-10-09"
       },
       {
-        "title": "Bitcoin spot ETFs saw net outflows of $487 million yesterday, with BlackRock's IBIT leading at $208 million",
-        "url": "https://www.panews.io/articles/01a119e8-8fc1-774f-bdc8-9b68023de376",
+        "title": "Bloomberg: US Department of Justice reviewing whether Binance complied with 2023 settlement",
+        "url": "https://www.panews.io/articles/01a122dd-5566-74c7-ae70-9ff9fdb8c598",
         "source": "PANews",
-        "date": "2026-10-08"
+        "date": "2026-10-10"
       },
       {
-        "title": "Data: US Government Address Transfers Out 12,267 BTC, Worth About $1.01 Billion",
-        "url": "https://www.panews.io/articles/01a11bc6-bd4a-7576-bff2-f579ec823ba4",
+        "title": "CFTC proposes to explicitly include sports, political and other event contracts in the swap definition",
+        "url": "https://www.panews.io/articles/01a12274-0641-7677-a600-e81b766f6a3d",
         "source": "PANews",
-        "date": "2026-10-08"
+        "date": "2026-10-10"
       },
       {
-        "title": "Moscow Exchange Plans to Open Cryptocurrency Trading from December 1",
-        "url": "https://www.panews.io/articles/01a11b35-bd82-71ac-95ec-962a9259fbb4",
+        "title": "Bitcoin spot ETFs saw total net inflows of $21.13 million yesterday, BlackRock IBIT led with $22.38 million",
+        "url": "https://www.panews.io/articles/01a1240a-ea19-77cc-8afc-f47e366efbfd",
         "source": "PANews",
-        "date": "2026-10-08"
+        "date": "2026-10-10"
       },
       {
-        "title": "Standard Chartered's Singapore branch plans to offer custody services for crypto assets, stablecoins, and tokenized RWAs to institutional investors",
-        "url": "https://www.panews.io/articles/01a1196b-4b5b-740f-af49-39ece03917c8",
+        "title": "Telegram rolls out Money wallet to all users",
+        "url": "https://www.panews.io/articles/01a12115-9599-72a6-b924-fa1076d7a0c3",
         "source": "PANews",
-        "date": "2026-10-08"
+        "date": "2026-10-09"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-09",
+    "as_of": "2026-10-10",
     "items": [
       {
-        "theme": "Broad altcoin sell-off",
-        "why": "Many large altcoins fell much harder than bitcoin in the last day: NEAR dropped about 16% and Curve, Lido and Uniswap about 10-12% each. PANews reported over $450M of bets on a rise were forced to close within one hour as BTC slipped below $81,000. The reports don't give a clear reason for the initial drop.",
+        "theme": "On-chain trading exchanges (Hyperliquid)",
+        "why": "Hyperliquid's total fees have passed $1.4B, almost 90% from its trading-with-borrowed-money products, and over $1.26B of that has gone to buying back its HYPE token (Castle Labs / Wu Blockchain via PANews). Pump.fun is reportedly building a similar trading product on top of Hyperliquid, and Blockchain.com, which already offers this via Hyperliquid, has applied for US CFTC licences. HYPE itself was slightly down on the day.",
         "tokens": [
           {
-            "symbol": "NEAR",
-            "change_24h_pct": -16.3
+            "symbol": "HYPE",
+            "change_24h_pct": -1.7
           },
           {
-            "symbol": "CRV",
-            "change_24h_pct": -12.1
-          },
-          {
-            "symbol": "LDO",
-            "change_24h_pct": -11.4
-          },
-          {
-            "symbol": "UNI",
-            "change_24h_pct": -10.2
+            "symbol": "PUMP",
+            "change_24h_pct": -1.9
           }
         ],
-        "marketing_angle": "A good moment for risk-awareness content on borrowing to trade, rather than promotions on smaller coins.",
+        "marketing_angle": "Competitive watch item: on-chain exchanges are pulling in active traders, so clear explainers on how ours compares can help retention.",
         "sources": [
           {
-            "title": "Over $450M liquidated across the network in the past hour, longs hit hardest",
-            "url": "https://www.panews.io/articles/01a11c39-5d55-74a1-a8ea-2a8946307b08"
+            "title": "Hyperliquid's cumulative protocol revenue exceeds $1.4 billion, with perpetual contracts contributing nearly 90%",
+            "url": "https://www.panews.io/articles/01a1244c-168a-758a-b918-3361095dce32"
           },
           {
-            "title": "BTC drops below $81,000, down 3.00% intraday",
-            "url": "https://www.panews.io/articles/01a11c2a-0990-7242-bfb7-69480eb7b2c5"
+            "title": "Pump.fun is developing perpetual contract trading based on Hyperliquid",
+            "url": "https://www.panews.io/articles/01a1239d-9a55-7500-beed-5c40c5316cd6"
+          },
+          {
+            "title": "Blockchain.com Applies for CFTC Licenses, Plans to Enter Prediction Markets and Derivatives",
+            "url": "https://www.panews.io/articles/01a12093-b7c4-76eb-b845-ee1dd915dfa5"
           }
         ]
       },
       {
-        "theme": "Tokenized stocks and bonds keep spreading",
-        "why": "Securitize launched tokenized US stocks on Solana and plans a listing on an NYSE digital platform, and Ondo launched a note that lets people trade exposure to OpenAI's private shares around the clock. Japan's Ministry of Finance also proposed three ways to tokenize government bonds, and Standard Chartered's Singapore branch plans custody for tokenized assets.",
-        "tokens": [
-          {
-            "symbol": "ONDO",
-            "change_24h_pct": 0.0
-          }
-        ],
-        "marketing_angle": "Continues to be a strong education topic: what owning a tokenized stock or bond actually means.",
+        "theme": "Hardware wallet security scare",
+        "why": "Hundreds of wallets were drained, about $90M in total, after people bought Ledger devices from Southeast Asian reseller CryptoBillis; Ledger asked the reseller to stop sales, and security researchers describe a hidden module that could read the recovery words off the screen. CZ called it a local supply-chain attack involving one distributor, and Tether froze part of the stolen USDT.",
+        "tokens": [],
+        "marketing_angle": "Strong education topic: buy wallets only from official sources and never trust a pre-set recovery phrase.",
         "sources": [
           {
-            "title": "Securitize Launches Tokenized U.S. Stocks on Solana, Plans NYSE Digital Platform Listing",
-            "url": "https://www.panews.io/articles/01a11bb0-e222-76ef-8bd8-41db8e1f7139"
+            "title": "Tether freezes USDT linked to Ledger theft, losses near $90 million",
+            "url": "https://www.panews.io/articles/01a1213e-5ef5-7271-b196-f308d90a45f4"
           },
           {
-            "title": "Ondo Private Markets Launches OpenAI Private Markets Note, Enabling 24/7 On-Chain Trading Without Waiting for an IPO",
-            "url": "https://www.panews.io/articles/01a11bee-cebf-7562-991f-cb435459b3e2"
+            "title": "SlowMist's 23pds: Module Implanted in Ledger Could Steal Mnemonic Phrases Displayed on Screen",
+            "url": "https://www.panews.io/articles/01a1233a-9bda-73c7-a92e-747668faaec9"
           },
           {
-            "title": "Japan's Ministry of Finance proposes \"three types\" of government bond tokenization",
-            "url": "https://www.panews.io/articles/01a11bcd-6b2b-7372-a2ff-1784b4a13d45"
+            "title": "CZ: Ledger User Theft Incident Suspected to Be a Supply Chain Attack Involving a Single Distributor",
+            "url": "https://www.panews.io/articles/01a12104-6b9d-779d-85cd-bfc47b3e2a5c"
           }
         ]
       },
       {
-        "theme": "Projects cutting token supply",
-        "why": "A few projects rose against the falling market after supply news. Pyth said it will use all product revenue received by its DAO to buy back PYTH, and the token rose about 10%. Aptos Foundation committed to permanently lock and stake 210 million APT, though APT still slipped about 3.5%. STRK rose about 13%, but the reports don't give a clear reason for that move.",
+        "theme": "Sharp bounces in older altcoins",
+        "why": "Several long-beaten-down tokens jumped in the last day, led by Kaia (about +55%), with Optimism and Worldcoin each up about 15%. The reports don't give a clear reason for most of these moves; for Optimism, the only related news is that Uniswap's Unichain network plans to move onto OP Enterprise later in October.",
         "tokens": [
           {
-            "symbol": "PYTH",
-            "change_24h_pct": 10.1
+            "symbol": "KAIA",
+            "change_24h_pct": 54.6
           },
           {
-            "symbol": "STRK",
-            "change_24h_pct": 13.3
+            "symbol": "OP",
+            "change_24h_pct": 15.4
           },
           {
-            "symbol": "APT",
-            "change_24h_pct": -3.5
+            "symbol": "WLD",
+            "change_24h_pct": 15.4
+          },
+          {
+            "symbol": "ZK",
+            "change_24h_pct": 14.6
           }
         ],
-        "marketing_angle": "Buybacks and token locks are a timely explainer topic for users following individual projects.",
+        "marketing_angle": "Expect search interest in these names, but these coins remain far below past highs, so pair any content with risk reminders.",
         "sources": [
           {
-            "title": "Pyth to use 100% of product revenue received by DAO for PYTH buybacks, ARR reaches $11.49 million",
-            "url": "https://www.panews.io/articles/01a11be4-a0a7-75af-b182-c855eac50477"
+            "title": "Unichain to migrate to OP Enterprise, mainnet migration in late October",
+            "url": "https://www.panews.io/articles/01a12350-ce7d-728f-83b4-8439eaf647f6"
+          }
+        ]
+      },
+      {
+        "theme": "Tokenized stocks reach mainstream apps",
+        "why": "Telegram made its Money wallet available to all users, linked to its Walt app where people can trade 300+ assets including tokenized stocks. Separately, Brazil's B3 exchange pushed its tokenized-stock platform to the first half of 2027, and Franklin Templeton met the SEC crypto task force about trading tokenized funds.",
+        "tokens": [],
+        "marketing_angle": "Keeps 'what is a tokenized stock' a useful education topic as big consumer apps add it.",
+        "sources": [
+          {
+            "title": "Telegram rolls out Money wallet to all users",
+            "url": "https://www.panews.io/articles/01a12115-9599-72a6-b924-fa1076d7a0c3"
           },
           {
-            "title": "Aptos Foundation commits to permanently lock and stake 210 million APT",
-            "url": "https://www.panews.io/articles/01a11dc8-1098-716f-a9b3-66640680e783"
+            "title": "Brazil's B3 plans to launch tokenized stock platform in H1 2027, later than planned",
+            "url": "https://www.panews.io/articles/01a12338-064e-74fb-9646-ac7fc26e1469"
           },
           {
-            "title": "STRK up 17.4% in past 24 hours, ZEC down 7.5% to near 1,200 USDT",
-            "url": "https://www.panews.io/articles/01a11b6d-ec83-71af-8eae-be9500281d4d"
+            "title": "Franklin Templeton discusses tokenized fund trading with SEC Crypto Task Force",
+            "url": "https://www.panews.io/articles/01a123b2-6e2f-70f9-8dea-eae4fc85e821"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-09",
+    "as_of": "2026-10-10",
     "items": [
       {
-        "headline": "Data: US Government Address Transfers Out 12,267 BTC, Worth About $1.01 Billion",
+        "headline": "Tether freezes USDT linked to Ledger theft, losses near $90 million",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11bc6-bd4a-7576-bff2-f579ec823ba4",
+        "url": "https://www.panews.io/articles/01a1213e-5ef5-7271-b196-f308d90a45f4",
         "horizon": "short",
         "direction": "negative",
-        "size": "minor",
-        "why": "Large government coin movements are often read as possible selling, which weighs on mood for a few days."
+        "size": "moderate",
+        "why": "Tampered hardware wallets sold by one Southeast Asian reseller led to about $90M in thefts, denting confidence in self-custody for a few days."
       },
       {
-        "headline": "UK 20-year government bond yield hits 6% for first time since March 1998",
+        "headline": "Bloomberg: US Justice Department reviewing whether Binance complied with its 2023 settlement",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11b19-e9f9-7148-8afc-7e45dbc7a38b",
-        "horizon": "short",
-        "direction": "negative",
-        "size": "minor",
-        "why": "Rising bond yields abroad add to pressure on riskier assets like crypto."
-      },
-      {
-        "headline": "ESMA requires crypto service providers to stop offering non-MiCA-compliant stablecoin services, with a 3-month wind-down",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11b05-15cf-7453-a5c5-29e037255063",
+        "url": "https://www.panews.io/articles/01a122dd-5566-74c7-ae70-9ff9fdb8c598",
         "horizon": "medium",
         "direction": "negative",
         "size": "moderate",
-        "why": "EU platforms must drop non-compliant stablecoins within three months, squeezing a key way money moves in and out of crypto in Europe."
+        "why": "A fresh US review of the largest exchange over possible Iran-sanctions breaches adds legal uncertainty that can play out over weeks."
       },
       {
-        "headline": "US Senator Investigates Cantor-Tether Relationship, Demands Explanation of Sanctions Compliance Measures",
+        "headline": "Telegram rolls out its Money wallet to all users",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11dd1-576f-70f3-a183-46697b57b15d",
-        "horizon": "medium",
-        "direction": "negative",
-        "size": "minor",
-        "why": "Political scrutiny of the largest stablecoin issuer adds regulatory uncertainty."
-      },
-      {
-        "headline": "Moscow Exchange Plans to Open Cryptocurrency Trading from December 1",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11b35-bd82-71ac-95ec-962a9259fbb4",
+        "url": "https://www.panews.io/articles/01a12115-9599-72a6-b924-fa1076d7a0c3",
         "horizon": "long",
         "direction": "positive",
-        "size": "minor",
-        "why": "A national stock exchange adding crypto trading widens regulated access, though in one market."
-      },
-      {
-        "headline": "Standard Chartered's Singapore branch plans to offer custody services for crypto assets, stablecoins, and tokenized RWAs to institutional investors",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1196b-4b5b-740f-af49-39ece03917c8",
-        "horizon": "long",
-        "direction": "positive",
-        "size": "minor",
-        "why": "A global bank offering crypto custody makes it easier for institutions to hold crypto."
-      },
-      {
-        "headline": "Japan's Ministry of Finance proposes \"three types\" of government bond tokenization",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a11bcd-6b2b-7372-a2ff-1784b4a13d45",
-        "horizon": "long",
-        "direction": "positive",
-        "size": "minor",
-        "why": "A major government exploring on-chain bonds supports the long-run case for blockchain-based markets."
+        "size": "moderate",
+        "why": "A messaging app with a huge user base now gives every user a built-in wallet linked to trading in 300+ assets, widening everyday access to crypto."
       }
     ],
     "summary": {
-      "short": "Two small negatives — a $1B US government coin transfer and UK bond yields at a 28-year high — slightly cool the near-term mood.",
-      "medium": "Europe's order to drop non-compliant stablecoins within three months, plus US scrutiny of Tether, is a modest headwind for the coming weeks.",
-      "long": "Steady institutional groundwork — a Moscow Exchange crypto launch, Standard Chartered custody in Singapore and Japan's bond tokenization plan — is a small long-run positive."
+      "short": "The Ledger reseller theft weighs a little on near-term confidence.",
+      "medium": "A US review of Binance's past settlement adds some legal uncertainty for the coming weeks.",
+      "long": "Telegram putting a wallet in front of all its users is a modest plus for long-run adoption."
     },
     "impact": {
       "short": -0.5,
-      "medium": -0.75,
-      "long": 0.75
+      "medium": -0.5,
+      "long": 0.5
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.275,
-    "momentum": 0.355,
-    "sentiment": -0.144
+    "trend": 0.29,
+    "momentum": 0.437,
+    "sentiment": 0.242
   },
-  "conviction_base": 55,
+  "conviction_base": 74,
   "news_adjustment": {
     "sentiment": -0.05,
-    "momentum": -0.075,
-    "trend": 0.075
+    "momentum": -0.05,
+    "trend": 0.05
   },
   "news_flag": null
 }
