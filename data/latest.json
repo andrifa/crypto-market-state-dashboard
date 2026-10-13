@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-12T00:36:06Z",
-  "date": "2026-10-12",
-  "price_btc": 83846,
+  "updated_utc": "2026-10-13T00:42:58Z",
+  "date": "2026-10-13",
+  "price_btc": 81421,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend holding, short-term mood near neutral",
-  "direction": "weakening",
+  "headline_tag": "Uptrend intact, but price is testing its 50-day line",
+  "direction": "stable",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 59,
-  "conviction_level": "MEDIUM",
+  "conviction": 80,
+  "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's posture is to scale up acquisition: both the longer trend and the last three months lean up, with medium confidence (59/100). In practice that means growing acquisition budget in measured steps rather than all at once, weighting toward active-trader and non-stablecoin channels, and keeping part of the budget flexible because the long-term average has not yet turned up and the Fed meets on 27 October. This is a budget posture based on trailing data, not a price call or trading advice."
+    "detail": "The model's call is to scale up acquisition budget: the longer-term trend and the last three months both lean up, with high confidence (80/100), so this is a reasonable time to fund growth, weighted toward channels that bring active traders rather than stablecoin-only users. Because price is sitting right on its 50-day average, big funds pulled money out last week and US inflation data plus the 27 October Fed meeting are close, grow the budget in steps rather than all at once and keep part of it flexible to pause if price closes below $81,081. This is a budget posture based on trailing data, not a price call or trading advice."
   },
   "reasons": [
-    "Price is 16% above its 200-day average and up 29% over 90 days.",
-    "About 61% of the last 90 days closed above the long-term average.",
-    "The 200-day average is still sloping down (-2% over 90 days).",
-    "Price remains 33% below its all-time high of $124,753."
+    "Price is 13% above its 200-day average and up 26% over 90 days.",
+    "About 62% of the last 90 days closed above the long-term average.",
+    "Price sits just above its 50-day average ($81,081) after slipping from $86,603.",
+    "The 200-day average still slopes down (-2%) and price is 35% below its record."
   ],
-  "watch": "The crowd mood reading says greed at 69, but fewer people than usual are betting on a rise with borrowed money and about $487M just left US bitcoin funds in a day. If fund money keeps leaving while price stalls below $86,603, that upbeat mood could cool quickly.",
+  "watch": "Price is resting almost exactly on its 50-day average ($81,081) while Bitcoin funds lost about $487M in a single day. A close below that line would test the uptrend; a return of fund inflows and a move back toward $86,603 would ease the worry.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but this week looks like wait-and-see. Short term, the mood is close to neutral: the crowd mood reading is upbeat at 69/100, yet fewer people than usual are betting on a rise with borrowed money, so nothing looks overheated. News of tampered Ledger hardware wallets sold by one Southeast Asian reseller is taking a little off the mood. A daily close above $86,603 (the 30-day high) would turn this clearly up, below $81,072 (the 50-day average) it turns down, and in between expect choppy moves, so steady messaging beats urgency-driven pushes this week.",
-    "Over the next month, the lean is moderately positive: price is up about 29% over 90 days and roughly six in ten recent days closed above the long-term average. The soft spot is fund money, with about $487M leaving US bitcoin funds on the latest reported day. If price gets above $86,603 (the 90-day high) the climb has room to run, while it fades if price slips below $81,072 (the 50-day average). Fund money returning would strengthen this; with the Fed meeting on 27 October, time bigger launches around that date.",
-    "Longer term, the lean is mildly positive but early: price is about 16% above its 200-day average, yet that average is still sloping down, so this is a recovery rather than a confirmed uptrend, with price still 33% below its record. The recovery stays intact while price holds above $72,057 (the 200-day average), with $66,544 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The long-term average turning upward would confirm it, which is when bigger brand and onboarding investment tends to pay off most."
+    "Bottom line: the bigger picture still points up, but this week is wait-and-see with price sitting right on an important line. Short term, the mood is flat rather than warm: the crowd mood reading is a middling 57/100, and Bitcoin funds saw about $487M leave in a single day after $681M left over the previous week (SoSoValue via PANews). A close above $86,603 (the 30-day high) would turn this clearly up, a close below $81,081 (the 50-day average) turns it down, and in between expect choppy moves. With US inflation figures due this week, calm always-on messaging beats urgency pushes; a return of fund inflows would firm this up.",
+    "Over the next month the picture leans up with real strength: Bitcoin is about 26% higher than three months ago, and about six in ten of the last 90 days finished above the long-term average. Fewer people than usual are betting on a rise with borrowed money, so the climb does not look overstretched. There is room to climb if price gets above $86,603 (the 90-day high), while the move fades if it slips below $81,081 (the 50-day average), which is only about $340 under today's price. The Fed's next decision is on 27 October and Cleveland Fed's Beth Hammack has called for tighter policy (PANews), so a hot inflation print would weaken this lean, while a calm one supports growth campaigns aimed at active traders.",
+    "On the 3-6 month view the recovery is intact but young: price is 13% above its 200-day average, though that average is still sloping down slightly and Bitcoin remains 35% below its record. A couple of structural stories are adding a little: Kraken received its full licence in Dubai and South Korea published draft rules to put bonds and funds on blockchains from 2027 (both via PANews). The recovery stays intact while price holds above $72,123 (the 200-day average), with $66,739 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The 200-day average turning upward would strengthen this; for the business it supports steady investment in onboarding rather than short bursts."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels with a story built on the 29% climb over three months rather than urgency, since the mood reading is already warm at 69 and the week looks choppy. The Ledger reseller scandal makes self-custody and account-security content timely; a 'how we keep your funds safe' angle can earn trust with newer and more cautious users. Keep stablecoin-first channels steady as a defensive base."
+    "marketing": "Lean into active-trader and non-stablecoin channels: Bitcoin is up 26% over 90 days and about six in ten recent days closed above the long-term average, which gives campaigns an honest 'the market is recovering' story. Keep the tone calm rather than urgent, since the crowd mood is a middling 57/100 and funds pulled money out last week, and keep stablecoin-first channels running as a steady base. Tokenized stocks are a timely education angle, with weekly trading on tokenized-stock exchanges up 447% since Robinhood Chain launched (PANews)."
   },
   "changed_today": null,
   "levels": {
@@ -37,13 +37,13 @@
     "low_30d": 75613,
     "high_90d": 86603,
     "low_90d": 62763,
-    "ma_50": 81072,
-    "ma_200": 72057,
-    "ma_200w": 66544,
+    "ma_50": 81081,
+    "ma_200": 72123,
+    "ma_200w": 66739,
     "ath": 124753
   },
   "scenarios": {
-    "price": 83846,
+    "price": 81421,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -55,7 +55,7 @@
       ]
     },
     "down": {
-      "level": 81072,
+      "level": 81081,
       "name": "50-day average",
       "next": [
         {
@@ -63,67 +63,67 @@
           "name": "30-day low"
         },
         {
-          "level": 72057,
+          "level": 72123,
           "name": "200-day average"
         }
       ]
     },
     "range": [
-      81072,
+      81081,
       86603
     ]
   },
   "scores": {
-    "sentiment": -0.06,
-    "momentum": 0.254,
-    "trend": 0.31
+    "sentiment": 0.012,
+    "momentum": 0.375,
+    "trend": 0.34
   },
   "context": {
-    "mayer_multiple": 1.164,
-    "ma200_slope_90d": -0.0213,
-    "ma_200w_multiple": 1.26,
-    "drawdown_from_ath": -0.328,
-    "rsi_weekly": 59.2,
-    "active_addr_ratio": 0.925,
-    "puell_multiple": 1.155,
-    "fear_greed": 69.0,
-    "funding_z": -1.48,
-    "vol_percentile": 0.43,
-    "bollinger_width": 0.0522,
-    "btc_dominance": 59.6,
-    "ma_cross": 0.1251,
-    "roc_90d": 0.2908,
-    "breadth_90d": 0.611,
-    "ssr": 5.36,
-    "pi_cycle_gap": -0.535,
-    "open_interest_usd": 7734132958.865111,
-    "long_short_ratio": 1.4125,
-    "dvol": 37.38,
-    "us_10y_yield": 5.244,
-    "vix": 14.84,
+    "mayer_multiple": 1.129,
+    "ma200_slope_90d": -0.0189,
+    "ma_200w_multiple": 1.22,
+    "drawdown_from_ath": -0.347,
+    "rsi_weekly": 56.7,
+    "active_addr_ratio": 1.046,
+    "puell_multiple": 1.21,
+    "fear_greed": 57.0,
+    "funding_z": -0.39,
+    "vol_percentile": 0.45,
+    "bollinger_width": 0.0638,
+    "btc_dominance": 59.3,
+    "ma_cross": 0.1242,
+    "roc_90d": 0.2582,
+    "breadth_90d": 0.622,
+    "ssr": 5.4,
+    "pi_cycle_gap": -0.5334,
+    "open_interest_usd": 7642933868.6864,
+    "long_short_ratio": 1.5013,
+    "dvol": 37.73,
+    "us_10y_yield": 5.24,
+    "vix": 15.21,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
-    "public_company_btc_treasury": 1278917.0,
+    "public_company_btc_treasury": 1278994.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 12 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend holding, short-term mood near neutral)\n    Momentum weakening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's posture is to scale up acquisition:\n    both the longer trend and the last three months\n    lean up, with medium confidence (59/100). In\n    practice that means growing acquisition budget\n    in measured steps rather than all at once,\n    weighting toward active-trader and non-\n    stablecoin channels, and keeping part of the\n    budget flexible because the long-term average\n    has not yet turned up and the Fed meets on 27\n    October. This is a budget posture based on\n    trailing data, not a price call or trading\n    advice.\n\n  Why:\n  • Price is 16% above its 200-day average and up\n    29% over 90 days.\n  • About 61% of the last 90 days closed above the\n    long-term average.\n  • The 200-day average is still sloping down (-2%\n    over 90 days).\n  • Price remains 33% below its all-time high of\n    $124,753.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 13 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, but price is testing its 50-day line)\n    Momentum stable · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up acquisition\n    budget: the longer-term trend and the last\n    three months both lean up, with high\n    confidence (80/100), so this is a reasonable\n    time to fund growth, weighted toward channels\n    that bring active traders rather than\n    stablecoin-only users. Because price is\n    sitting right on its 50-day average, big funds\n    pulled money out last week and US inflation\n    data plus the 27 October Fed meeting are\n    close, grow the budget in steps rather than\n    all at once and keep part of it flexible to\n    pause if price closes below $81,081. This is a\n    budget posture based on trailing data, not a\n    price call or trading advice.\n\n  Why:\n  • Price is 13% above its 200-day average and up\n    26% over 90 days.\n  • About 62% of the last 90 days closed above the\n    long-term average.\n  • Price sits just above its 50-day average\n    ($81,081) after slipping from $86,603.\n  • The 200-day average still slopes down (-2%)\n    and price is 35% below its record.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 65540700,
+      "value": 348000000,
       "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a12b95-d084-7203-bb3a-81536749a388",
-      "as_of": "2026-10-11",
-      "note": "Network-wide 24h total, $32.3M long and $33.2M short; from PANews newsflash, not WebSearch."
+      "source_url": "https://www.panews.io/articles/01a130bc-29d3-7591-9107-1ff9a522619c",
+      "as_of": "2026-10-12",
+      "note": "$195M long, $152M short; from PANews newsflash, not WebSearch."
     },
     "exchange_netflow_7d_btc": {
-      "value": -14978.95,
-      "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a12964-2a7d-7599-ab9e-43b3dfdab0be",
-      "as_of": "2026-10-11",
-      "note": "Net outflow from CEXs over 7 days; Binance -16,456 BTC. From PANews newsflash."
+      "value": -3863,
+      "source_name": "PANews (citing CryptoQuant analyst Axel Adler)",
+      "source_url": "https://www.panews.io/articles/01a12ff5-00aa-7074-8060-514366c455e9",
+      "as_of": "2026-10-12",
+      "note": "Last week's exchange net flow; from PANews newsflash."
     },
     "onchain_volume_usd": null,
     "whale_supply_pct": null,
@@ -131,194 +131,179 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Ledger says Southeast Asia reseller linked to $86M draining",
-        "url": "https://protos.com/ledger-says-southeast-asia-reseller-linked-to-86m-draining/",
-        "source": "Protos",
-        "date": "2026-10-11"
+        "title": "Three Consecutive Weeks of Net Inflows Come to an End, Bitcoin Spot ETFs See $681 Million in Net Outflows Last Week",
+        "url": "https://www.panews.io/articles/01a12e2f-53f5-75fd-92ab-d81a2b6b6ce3",
+        "source": "PANews",
+        "date": "2026-10-12"
       },
       {
-        "title": "Critical vulnerability over 10 years old found in XRP Ledger, could have caused excess XRP minting; fixed and upgraded",
-        "url": "https://www.panews.io/articles/01a12868-bf6c-73a7-8ee2-33a32a54dcca",
+        "title": "Fed voter Hammack: Need to shift to a restrictive stance, favors smaller, more frequent rate adjustments",
+        "url": "https://www.panews.io/articles/01a1310c-534b-72f8-88bd-b78328b64b81",
         "source": "PANews",
-        "date": "2026-10-11"
+        "date": "2026-10-12"
       },
       {
-        "title": "Argentina's Central Bank Reaffirms Crypto Ban, Says Economic Fragility Insufficient to Support Integrating Crypto Assets into the Banking System",
-        "url": "https://www.panews.io/articles/01a12a20-072a-746c-8285-1d622c93b4bf",
+        "title": "Standard Chartered's Dubai Branch Launches RLUSD Custody Service, Plans to Support It as Collateral for LMAX Trading",
+        "url": "https://www.panews.io/articles/01a132b2-9ac4-72dd-9cef-524d2715bbe3",
         "source": "PANews",
-        "date": "2026-10-11"
+        "date": "2026-10-13"
       },
       {
-        "title": "CEX platforms saw net outflow of about 15,000 BTC over past 7 days, with Binance outflow exceeding 16,000",
-        "url": "https://www.panews.io/articles/01a12964-2a7d-7599-ab9e-43b3dfdab0be",
+        "title": "Kraken parent Payward receives final regulatory approval in Dubai, to launch crypto business in UAE",
+        "url": "https://www.panews.io/articles/01a12f49-b0e5-77b0-8b5f-c192439fe598",
         "source": "PANews",
-        "date": "2026-10-11"
+        "date": "2026-10-12"
       },
       {
-        "title": "Robinhood to explore launching stock tokens tied to actively managed ETFs on Robinhood Chain",
-        "url": "https://www.panews.io/articles/01a1250c-b8d0-767b-93f2-a6dd74dee9d9",
+        "title": "Morgan Stanley to support tokenized stocks on its alternative trading system in Q1 2027",
+        "url": "https://www.panews.io/articles/01a12f35-b1cd-7132-ba46-a2db067de2f9",
         "source": "PANews",
-        "date": "2026-10-10"
+        "date": "2026-10-12"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-12",
+    "as_of": "2026-10-13",
     "items": [
       {
-        "theme": "Hardware wallet security scare widens",
-        "why": "Ledger confirmed an unauthorized hardware implant in a device sold through Southeast Asian reseller CryptoBilis, and on-chain investigators link the related thefts to around $86M, with the attacker moving about $7.45M of ETH through a mixer. Ledger's latest update says the affected devices are limited and all confirmed cases trace to that one reseller, not its own systems or direct sales.",
-        "tokens": [],
-        "marketing_angle": "A timely moment for plain-language security content on buying devices from trusted sources and protecting recovery phrases.",
-        "sources": [
-          {
-            "title": "Ledger confirms unauthorized hardware implant found in affected user's device",
-            "url": "https://www.panews.io/articles/01a1270f-47c9-7690-ab95-cbf332f2b063"
-          },
-          {
-            "title": "Ledger: Limited number of affected devices, all confirmed cases traced to reseller CryptoBilis",
-            "url": "https://www.panews.io/articles/01a12c17-6902-7304-b8f8-f922d2fe151f"
-          },
-          {
-            "title": "Ledger incident continues to escalate: Attacker has moved $7.45 million in ETH to Tornado Cash",
-            "url": "https://www.panews.io/articles/01a12a79-5c9f-77e7-99d5-69d8f497cd18"
-          }
-        ]
-      },
-      {
-        "theme": "Older network tokens keep bouncing",
-        "why": "Starknet's STRK is up again (about 14.7% in a day and more than double over a week), joined by Wormhole, Sonic and NEAR with double-digit daily gains, though all remain far below their record highs. The reports found don't give a clear reason for these moves; a scheduled STRK token unlock next week was reported, and a NEAR-focused treasury company announced an acquisition.",
+        "theme": "Broad altcoin pullback",
+        "why": "Most large tokens fell harder than Bitcoin over the last day, with Ethena, NEAR, Uniswap and Ondo down 11-16% while Bitcoin slipped about 3%. Ether funds saw $542M leave last week, but the reports found don't give a clear reason for today's wider drop.",
         "tokens": [
           {
-            "symbol": "STRK",
-            "change_24h_pct": 14.7
-          },
-          {
-            "symbol": "W",
-            "change_24h_pct": 25.6
-          },
-          {
-            "symbol": "S",
-            "change_24h_pct": 21.7
+            "symbol": "ENA",
+            "change_24h_pct": -15.81
           },
           {
             "symbol": "NEAR",
-            "change_24h_pct": 10.8
-          }
-        ],
-        "marketing_angle": "Sharp rebounds pull active traders back to smaller tokens, so simple explainers on what these networks do can catch that interest.",
-        "sources": [
-          {
-            "title": "Data: CRO, ARB and other tokens to see major unlocks next week, with CRO unlocking about $69.5 million",
-            "url": "https://www.panews.io/articles/01a12adb-fb53-7722-95ca-ad3ed36468b3"
+            "change_24h_pct": -13.99
           },
           {
-            "title": "NEAR Treasury Company SVRN Acquires Infrastructure Platform FastNEAR",
-            "url": "https://www.panews.io/articles/01a125e0-729e-7040-a22e-c9e5c44b7cd5"
+            "symbol": "UNI",
+            "change_24h_pct": -11.2
+          },
+          {
+            "symbol": "ETH",
+            "change_24h_pct": -4.48
+          }
+        ],
+        "marketing_angle": "Days like this bring questions from newer users, so plain explainers on why smaller tokens swing more than Bitcoin fit well.",
+        "sources": [
+          {
+            "title": "Ethereum spot ETFs saw $542 million in net outflows last week, with BlackRock's ETHA leading at $477 million",
+            "url": "https://www.panews.io/articles/01a12e30-2fea-74b8-962d-a09218553998"
+          },
+          {
+            "title": "ETH falls below $2,500, down 1.28% on the day",
+            "url": "https://www.panews.io/articles/01a13212-f63b-73e1-8111-a30e04457cf6"
           }
         ]
       },
       {
         "theme": "Stocks and funds moving on-chain",
-        "why": "Robinhood says it is exploring stock tokens tied to actively managed ETFs with T. Rowe Price, a $1.9T asset manager. Newly launched trading venue PaperTrade says its first six hours of volume beat the stock market's over the same period, while Hyperliquid's total protocol revenue has passed $1.4B, almost all from its trading products.",
+        "why": "Weekly trading on tokenized-stock exchanges has risen 447% since Robinhood Chain launched in July, to about $3.4B (Token Terminal via PANews). Morgan Stanley says it now expects to support tokenized stocks on its trading system in early 2027, and South Korea published draft rules to tokenize bonds and funds from February 2027.",
         "tokens": [
           {
-            "symbol": "HYPE",
-            "change_24h_pct": 1.6
+            "symbol": "ONDO",
+            "change_24h_pct": -12.28
           }
         ],
-        "marketing_angle": "Tokenized stocks are a growing education topic for users curious about trading traditional assets around the clock.",
+        "marketing_angle": "Tokenized stocks are a strong education topic for users curious about trading familiar company shares on crypto rails.",
         "sources": [
           {
-            "title": "Robinhood to explore launching stock tokens tied to actively managed ETFs on Robinhood Chain",
-            "url": "https://www.panews.io/articles/01a1250c-b8d0-767b-93f2-a6dd74dee9d9"
+            "title": "Data: Tokenized stock DEX weekly trading volume up 447% since Robinhood Chain launch",
+            "url": "https://www.panews.io/articles/01a12f6e-8534-7261-85b9-c7109f6955ff"
           },
           {
-            "title": "PaperTrade responds to fairness and manipulation concerns",
-            "url": "https://www.panews.io/articles/01a12ba6-1c64-71cd-a597-488f2d1091aa"
+            "title": "Morgan Stanley to support tokenized stocks on its alternative trading system in Q1 2027",
+            "url": "https://www.panews.io/articles/01a12f35-b1cd-7132-ba46-a2db067de2f9"
           },
           {
-            "title": "Hyperliquid's cumulative protocol revenue exceeds $1.4 billion, with perpetual contracts contributing nearly 90%",
-            "url": "https://www.panews.io/articles/01a1244c-168a-758a-b918-3361095dce32"
+            "title": "South Korea plans to open tokenization of bonds and funds; retail investors' annual net purchase cap for OTC investment may be set at 100 million won",
+            "url": "https://www.panews.io/articles/01a12f5c-d459-75bb-b0c1-480f8df34700"
           }
         ]
       },
       {
-        "theme": "XRP Ledger fixes a decade-old bug",
-        "why": "Ripple's engineering head said a serious flaw that had existed for over 10 years could have let XRP be created beyond its fixed supply; it was found through a bug bounty, never used, and fixed in version 3.4.1. The XRP Ledger Foundation stressed that no new XRP was ever created.",
+        "theme": "Korean exchange listings",
+        "why": "Reserve Rights' RSR rose about 23% on the day Upbit, South Korea's largest exchange, listed it on its won and USDT markets. The listing reports themselves don't comment on the price move.",
         "tokens": [
           {
-            "symbol": "XRP",
-            "change_24h_pct": 0.7
+            "symbol": "RSR",
+            "change_24h_pct": 22.76
           }
         ],
-        "marketing_angle": "Useful for reassurance content for XRP holders: the issue was caught and fixed before any harm.",
+        "marketing_angle": "Listing news on big regional exchanges still draws attention, which matters for how an exchange announces its own listings.",
         "sources": [
           {
-            "title": "Critical vulnerability over 10 years old found in XRP Ledger, could have caused excess XRP minting; fixed and upgraded",
-            "url": "https://www.panews.io/articles/01a12868-bf6c-73a7-8ee2-33a32a54dcca"
-          },
-          {
-            "title": "XRP Ledger Foundation clarifies misconceptions about security fix",
-            "url": "https://www.panews.io/articles/01a12d81-f2c6-77de-a4b8-aa0e9b3fe512"
+            "title": "Upbit to list RSR token on KRW and USDT markets",
+            "url": "https://www.panews.io/articles/01a12e76-430d-7592-b9c2-631c1f3abd79"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-12",
+    "as_of": "2026-10-13",
     "items": [
       {
-        "headline": "Ledger confirms unauthorized hardware implant found in affected user's device",
+        "headline": "Fed voter Hammack: Need to shift to a restrictive stance, favors smaller, more frequent rate adjustments",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1270f-47c9-7690-ab95-cbf332f2b063",
+        "url": "https://www.panews.io/articles/01a1310c-534b-72f8-88bd-b78328b64b81",
         "horizon": "short",
         "direction": "negative",
-        "size": "moderate",
-        "why": "Tampered hardware wallets sold by a Southeast Asian reseller were linked to reported thefts of around $86M, shaking user trust in self-custody."
-      },
-      {
-        "headline": "Argentina's Central Bank Reaffirms Crypto Ban, Says Economic Fragility Insufficient to Support Integrating Crypto Assets into the Banking System",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a12a20-072a-746c-8285-1d622c93b4bf",
-        "horizon": "medium",
-        "direction": "negative",
         "size": "minor",
-        "why": "Argentina's banks stay barred from offering crypto services, keeping a large retail market partly closed off."
+        "why": "A voting Fed official backing tighter policy adds to pressure from high borrowing costs, which tends to cool appetite for crypto."
       },
       {
-        "headline": "Robinhood to explore launching stock tokens tied to actively managed ETFs on Robinhood Chain",
+        "headline": "Standard Chartered's Dubai Branch Launches RLUSD Custody Service, Plans to Support It as Collateral for LMAX Trading",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1250c-b8d0-767b-93f2-a6dd74dee9d9",
+        "url": "https://www.panews.io/articles/01a132b2-9ac4-72dd-9cef-524d2715bbe3",
         "horizon": "medium",
         "direction": "positive",
         "size": "minor",
-        "why": "A $1.9T asset manager (T. Rowe Price) exploring tokenized ETF products adds to institutional interest in on-chain finance."
+        "why": "A global bank holding a stablecoin for institutions and letting it back trades is another step in banks plugging into crypto."
+      },
+      {
+        "headline": "Kraken parent Payward receives final regulatory approval in Dubai, to launch crypto business in UAE",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a12f49-b0e5-77b0-8b5f-c192439fe598",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "A full licence for a major exchange in the UAE widens regulated access to crypto in a growing region."
+      },
+      {
+        "headline": "South Korea plans to open tokenization of bonds and funds; retail investors' annual net purchase cap for OTC investment may be set at 100 million won",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a12f5c-d459-75bb-b0c1-480f8df34700",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "Korea's regulator is drafting rules to put stocks, bonds and funds on blockchains from February 2027, a structural step for on-chain finance."
       }
     ],
     "summary": {
-      "short": "A hardware-wallet tampering scandal tied to one Southeast Asian reseller is a modest drag on confidence this week.",
-      "medium": "Argentina keeping its bank crypto ban and Robinhood exploring tokenized ETFs with T. Rowe Price roughly cancel out.",
-      "long": ""
+      "short": "A Fed official calling for tighter policy is a small drag on the mood this week.",
+      "medium": "Standard Chartered offering stablecoin custody for institutions is a small plus.",
+      "long": "Kraken's full Dubai licence and South Korea's tokenization rules are small structural positives."
     },
     "impact": {
-      "short": -0.5,
-      "medium": 0.0,
-      "long": 0.0
+      "short": -0.25,
+      "medium": 0.25,
+      "long": 0.5
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.31,
-    "momentum": 0.254,
-    "sentiment": -0.01
+    "trend": 0.29,
+    "momentum": 0.35,
+    "sentiment": 0.037
   },
-  "conviction_base": 59,
+  "conviction_base": 74,
   "news_adjustment": {
-    "sentiment": -0.05,
-    "momentum": 0.0,
-    "trend": 0.0
+    "sentiment": -0.025,
+    "momentum": 0.025,
+    "trend": 0.05
   },
   "news_flag": null
 }
