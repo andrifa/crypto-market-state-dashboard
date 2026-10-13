@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-10-13T03:07:08Z",
+  "updated_utc": "2026-10-13T03:23:31Z",
   "date": "2026-10-13",
-  "price_btc": 82886,
+  "price_btc": 82893,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "Uptrend intact, but price is leaning on its 50-day line",
@@ -24,12 +24,12 @@
   ],
   "watch": "Price is resting just above its 50-day average ($81,110) while Bitcoin funds lost about $487M in a day and Korean stocks plunged. A close below that line would test the uptrend; a return of fund inflows and a move back toward $86,603 would ease the worry.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but this week the mood has cooled to neutral. Short term, people are cautious rather than excited: the crowd mood reading is a middling 57/100, Bitcoin funds saw about $487M leave in a single day, and news is pulling the mood down a little after South Korea's main stock index fell as much as 7% today (PANews). A close above $86,603 (the 30-day high) would turn this clearly up, a close below $81,110 (the 50-day average) turns it down, and in between expect choppy moves. With US inflation figures due this week, calm always-on messaging beats urgency pushes; a return of fund inflows would firm this up.",
-    "Over the next month the picture leans up with real strength: Bitcoin is about 28% higher than three months ago, and about six in ten of the last 90 days finished above the long-term average. Fewer people than usual are betting on a rise with borrowed money, so the climb does not look overstretched. There is room to climb if price gets above $86,603 (the 90-day high), while the move fades if it slips below $81,110 (the 50-day average), only about $1,800 under today's price. The Fed's next decision is on 27 October and a voting member, Beth Hammack, has called for tighter policy (PANews), so a hot inflation print would weaken this lean, while a calm one supports growth campaigns aimed at active traders.",
-    "On the 3-6 month view the recovery is intact but young: price is about 15% above its 200-day average, though that average still slopes down slightly and Bitcoin remains 34% below its record. A couple of structural stories are adding a little: Kraken received its full licence in Dubai and South Korea published draft rules to put bonds and funds on blockchains from 2027 (both via PANews). The recovery stays intact while price holds above $72,130 (the 200-day average), with $66,309 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The 200-day average turning upward would strengthen this; for the business it supports steady investment in onboarding rather than short bursts."
+    "Bottom line: the bigger picture still points up, but this week the mood has cooled to neutral. Short term, people are cautious rather than excited: the crowd mood reading is a middling 57/100, Bitcoin funds saw about $487M leave in a single day, and news is pulling the mood down a little after South Korea's main stock index fell as much as 7% today (PANews). A close above $86,603 (the 30-day high) would turn this clearly up, a close below $81,110 (the 50-day average) turns it down, and in between expect choppy moves. With US inflation figures due on 14 October, calm always-on messaging beats urgency pushes; a return of fund inflows would firm this up.",
+    "Over the next month the picture leans up with real strength: Bitcoin is about 28% higher than three months ago, and about six in ten of the last 90 days finished above the long-term average. Fewer people than usual are betting on a rise with borrowed money, so the climb does not look overstretched. There is room to climb if price gets above $86,603 (the 90-day high), while the move fades if it slips below $81,110 (the 50-day average), only about $1,800 under today's price. The Fed's next decision is on 27-28 October and a voting member, Beth Hammack, has called for tighter policy (PANews), so a hot inflation print would weaken this lean, while a calm one supports growth campaigns aimed at active traders.",
+    "On the 3-6 month view the recovery is intact but young: price is about 15% above its 200-day average, though that average still slopes down slightly and Bitcoin remains 34% below its record. A couple of structural stories are adding a little: Kraken received its full licence in Dubai and South Korea published draft rules to put bonds and funds on blockchains from 2027 (both via PANews). The recovery stays intact while price holds above $72,130 (the 200-day average), with $66,314 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The 200-day average turning upward would strengthen this; for the business it supports steady investment in onboarding rather than short bursts."
   ],
   "team_notes": {
-    "marketing": "Lean into active-trader and non-stablecoin channels: Bitcoin is up 28% over 90 days and about six in ten recent days closed above the long-term average, which gives campaigns an honest 'the market is recovering' story. Keep the tone calm rather than urgent, since the crowd mood is a middling 57/100, funds pulled money out and smaller tokens fell hard today, and keep stablecoin-first channels running as a steady base. In Korea-facing channels, the regulator's block on 27 unregistered offshore exchanges (PANews) makes 'trade on a registered platform' a timely trust message."
+    "marketing": "Keep growing, but calmly: the longer picture still leans up, yet the mood cooled today and no rally or drop window is open, so run steady campaigns aimed at active traders rather than urgent pushes. Have materials ready for both directions ahead of the 14 October US inflation figures."
   },
   "changed_today": null,
   "levels": {
@@ -39,11 +39,11 @@
     "low_90d": 62763,
     "ma_50": 81110,
     "ma_200": 72130,
-    "ma_200w": 66309,
+    "ma_200w": 66314,
     "ath": 124753
   },
   "scenarios": {
-    "price": 82886,
+    "price": 82893,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -239,7 +239,7 @@
   "scores": {
     "sentiment": -0.058,
     "momentum": 0.384,
-    "trend": 0.355
+    "trend": 0.356
   },
   "context": {
     "mayer_multiple": 1.149,
@@ -253,15 +253,15 @@
     "funding_z": -0.39,
     "vol_percentile": 0.45,
     "bollinger_width": 0.0587,
-    "btc_dominance": 59.4,
+    "btc_dominance": 59.3,
     "ma_cross": 0.1245,
-    "roc_90d": 0.2808,
+    "roc_90d": 0.2809,
     "breadth_90d": 0.622,
     "ssr": 5.29,
     "pi_cycle_gap": -0.5333,
     "open_interest_usd": 7642933868.6864,
     "long_short_ratio": 1.5013,
-    "dvol": 37.26,
+    "dvol": 37.25,
     "us_10y_yield": 5.24,
     "vix": 15.21,
     "fed_funds_rate": 3.63,
@@ -270,7 +270,7 @@
     "public_company_btc_treasury": 1278994.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 13 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, but price is leaning on its 50-day line)\n    Momentum stable · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up acquisition\n    budget: the longer-term trend and the last\n    three months both lean up, with medium\n    confidence (63/100) after today's news\n    cooled the short-term mood, so this is a\n    reasonable time to fund growth, weighted\n    toward channels that bring active traders\n    rather than stablecoin-only users. Because\n    price is sitting close to its 50-day\n    average, big funds pulled money out, and US\n    inflation data plus the 27 October Fed\n    meeting are near, grow the budget in steps\n    rather than all at once and keep part of it\n    flexible to pause if price closes below\n    $81,110. This is a budget posture based on\n    trailing data, not a price call or trading\n    advice.\n\n  Why:\n  • Price is 15% above its 200-day average and\n    up 28% over 90 days.\n  • About 62% of the last 90 days closed above\n    the long-term average.\n  • Price sits about 2% above its 50-day average\n    ($81,110) after slipping from $86,603.\n  • The 200-day average still slopes down (-2%)\n    and price is 34% below its record.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 13 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, but price is leaning on its 50-day line)\n    Momentum stable · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up\n    acquisition budget: the longer-term\n    trend and the last three months both\n    lean up, with medium confidence (63/100)\n    after today's news cooled the short-term\n    mood, so this is a reasonable time to\n    fund growth, weighted toward channels\n    that bring active traders rather than\n    stablecoin-only users. Because price is\n    sitting close to its 50-day average, big\n    funds pulled money out, and US inflation\n    data plus the 27 October Fed meeting are\n    near, grow the budget in steps rather\n    than all at once and keep part of it\n    flexible to pause if price closes below\n    $81,110. This is a budget posture based\n    on trailing data, not a price call or\n    trading advice.\n\n  Why:\n  • Price is 15% above its 200-day average and\n    up 28% over 90 days.\n  • About 62% of the last 90 days closed above\n    the long-term average.\n  • Price sits about 2% above its 50-day\n    average ($81,110) after slipping from\n    $86,603.\n  • The 200-day average still slopes down\n    (-2%) and price is 34% below its record.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -324,10 +324,10 @@
         "date": "2026-10-13"
       },
       {
-        "title": "Fed enters quiet period ahead of October meeting; bond market watches Warsh remarks and inflation report",
-        "url": "https://www.panews.io/articles/01a13046-8173-768e-b563-f3047061936c",
+        "title": "IMF: AI-driven sell-offs and sharply rising bond yields are potential threats to financial markets",
+        "url": "https://www.panews.io/articles/01a13344-54bd-772a-9cce-9218dab80aa9",
         "source": "PANews",
-        "date": "2026-10-12"
+        "date": "2026-10-13"
       }
     ]
   },
@@ -336,23 +336,23 @@
     "items": [
       {
         "theme": "Korea stock plunge drags altcoins",
-        "why": "South Korea's main stock index fell as much as 7% intraday, with chip makers SK Hynix and Samsung down 8-9%, and crypto sectors fell 2-7% across the board the same morning (SoSoValue via PANews). Smaller tokens fell hardest, with Starknet down about 23-29% and Ethena, NEAR and Wormhole down sharply; Tom Lee said the Korean sell-off may spill over into crypto.",
+        "why": "South Korea's main stock index fell as much as 7% intraday, with chip makers SK Hynix and Samsung down 8-9%, and crypto sectors fell 2-7% across the board the same morning (SoSoValue via PANews). Smaller tokens fell hardest, with Starknet down about 25-28% and Ethena, NEAR and Wormhole down sharply; Tom Lee said the Korean sell-off may spill over into crypto.",
         "tokens": [
           {
             "symbol": "STRK",
-            "change_24h_pct": -22.82
+            "change_24h_pct": -24.61
           },
           {
             "symbol": "W",
-            "change_24h_pct": -35.66
+            "change_24h_pct": -37.31
           },
           {
             "symbol": "ENA",
-            "change_24h_pct": -13.02
+            "change_24h_pct": -13.1
           },
           {
             "symbol": "NEAR",
-            "change_24h_pct": -9.64
+            "change_24h_pct": -9.23
           }
         ],
         "marketing_angle": "Days like this bring questions from newer users, so plain explainers on why smaller tokens swing more than Bitcoin fit well.",
@@ -485,7 +485,7 @@
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.305,
+    "trend": 0.306,
     "momentum": 0.359,
     "sentiment": 0.017
   },
@@ -495,5 +495,96 @@
     "momentum": 0.025,
     "trend": 0.05
   },
-  "news_flag": null
+  "news_flag": null,
+  "marketing_segments": {
+    "as_of": "2026-10-13",
+    "social": {
+      "stance": "Hold",
+      "strategy": "Keep the normal posting rhythm with a calm, explain-the-market tone: Bitcoin is up 28% over three months but slipped about 3% this week and smaller tokens fell hard today.",
+      "actions": [
+        {
+          "what": "Post a plain market recap",
+          "detail": "Explain that Bitcoin is about 28% above where it was three months ago but dipped about 3% this week as South Korea's stock index fell as much as 7% (PANews)."
+        },
+        {
+          "what": "Run a 'why small tokens swing more' explainer",
+          "detail": "Use today's moves (Starknet about -25%, Wormhole about -37%, Ethena about -13% in 24 hours, CoinGecko) to show why smaller coins move more than Bitcoin."
+        },
+        {
+          "what": "Share a wallet-safety tip",
+          "detail": "Blur is shutting its website on 12 November (PANews); post a short how-to on revoking old token approvals."
+        },
+        {
+          "what": "Prepare a CPI-day post",
+          "detail": "Draft a short explainer for the 14 October US inflation release so it can go out the same day whichever way it lands."
+        }
+      ]
+    },
+    "seo": {
+      "stance": "Prepare",
+      "strategy": "Refresh pages around questions people are likely to search after today's dip and this week's macro events, without chasing a rally that is not happening.",
+      "actions": [
+        {
+          "what": "Refresh 'why is crypto down today'",
+          "detail": "Likely to draw searches because altcoins fell across the board alongside a 7% intraday drop in Korean stocks; cite the KOSPI story."
+        },
+        {
+          "what": "Update the 'Bitcoin price today' page",
+          "detail": "Add the plain reference levels: $81,110 (50-day average) and $86,603 (30-day high)."
+        },
+        {
+          "what": "Publish a 'how US inflation data affects Bitcoin' guide",
+          "detail": "Likely to draw searches around the 14 October CPI release and the 27-28 October Fed meeting."
+        },
+        {
+          "what": "Refresh the 'registered exchange' trust page",
+          "detail": "Likely to draw searches because South Korea is blocking websites of 27 unregistered platforms including KuCoin and MEXC (PANews)."
+        }
+      ]
+    },
+    "paid": {
+      "stance": "Increase",
+      "strategy": "Follow the model's SCALE UP posture in steps: normal-to-rising spend on active-trader audiences, steady spend on stablecoin and new-user audiences, and keep part of the budget flexible.",
+      "actions": [
+        {
+          "what": "Raise active-trader spend in steps",
+          "detail": "Add budget gradually this week rather than all at once, since price sits only about 2% above its 50-day average of $81,110."
+        },
+        {
+          "what": "Keep a flexible reserve",
+          "detail": "Hold part of the increase back to pause if price closes below $81,110, which would turn the short-term read down."
+        },
+        {
+          "what": "Keep rally creatives ready",
+          "detail": "No rally window is open; have creatives prepared so they can go live within days if the rally trigger at $92,394 is hit."
+        },
+        {
+          "what": "Run steady stablecoin and onboarding ads",
+          "detail": "Keep new-user and stablecoin campaigns at normal levels with calm, trust-led messaging."
+        }
+      ]
+    },
+    "research": {
+      "stance": "Monitor",
+      "strategy": "Tell the other teams the market is quiet with a cautious short-term mood inside a longer uptrend, and flag the two macro dates this month.",
+      "actions": [
+        {
+          "what": "Share the Rally watch status",
+          "detail": "State is quiet: a rally window opens above $92,394 and a drop window below $78,706."
+        },
+        {
+          "what": "Share today's reference levels",
+          "detail": "A close above $86,603 (30-day high) turns the short term clearly up; below $81,110 (50-day average) turns it down."
+        },
+        {
+          "what": "Flag the macro calendar",
+          "detail": "US inflation data on 14 October and the Fed decision on 27-28 October could change today's read."
+        },
+        {
+          "what": "Watch fund flows",
+          "detail": "Bitcoin funds lost about $487M in a day; a return to inflows would firm up the short-term mood."
+        }
+      ]
+    }
+  }
 }
