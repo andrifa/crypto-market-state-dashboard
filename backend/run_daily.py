@@ -76,6 +76,55 @@ def scenarios_from_levels(price: float, levels: dict) -> dict:
     }
 
 
+GTV_SIGNAL = DATA / "gtv_signal.json"
+RALLY_THRESHOLD, RALLY_WINDOW = 0.08, 14
+
+
+def _episodes(close: pd.Series, up: bool) -> list:
+    """Dates a 7-day BTC move first crossed the line; triggers <14 days apart are one episode
+    (same rule as backend/gtv_study.py, so the history it learned from matches what is flagged)."""
+    r7 = close.pct_change(7)
+    hit = (r7 > RALLY_THRESHOLD) if up else (r7 < -RALLY_THRESHOLD)
+    out, last = [], None
+    for d in hit[hit].index:
+        if last is None or (d - last).days >= RALLY_WINDOW:
+            out.append(d)
+            last = d
+    return out
+
+
+def rally_watch(close: pd.Series) -> dict:
+    """Is a big 7-day BTC move inside its 14-day follow-through window right now?
+    Pure price arithmetic, plus the ratio-only stats from gtv_study.py (no rupiah amounts)."""
+    today = close.index[-1]
+    ref = float(close.iloc[-8])          # the close the 7-day return is measured against
+    ev = {"rally": _episodes(close, True), "drop": _episodes(close, False)}
+
+    def ago(kind):
+        if not ev[kind]:
+            return None
+        d = ev[kind][-1]
+        return {"date": str(d.date()), "days_ago": int((today - d).days)}
+
+    last = {k: ago(k) for k in ev}
+    active = [(k, v) for k, v in last.items() if v and v["days_ago"] <= RALLY_WINDOW]
+    state = min(active, key=lambda kv: kv[1]["days_ago"])[0] if active else "quiet"
+    out = {
+        "state": state,
+        "ret_7d": round(float(close.iloc[-1] / ref - 1), 4),
+        "threshold": RALLY_THRESHOLD,
+        "window_days": RALLY_WINDOW,
+        "needs_up": round(ref * (1 + RALLY_THRESHOLD)),
+        "needs_down": round(ref * (1 - RALLY_THRESHOLD)),
+        "last_rally": last["rally"],
+        "last_drop": last["drop"],
+        "episode": last[state] if state != "quiet" else None,
+    }
+    if GTV_SIGNAL.exists():
+        out["stats"] = json.loads(GTV_SIGNAL.read_text())
+    return out
+
+
 def build_payload() -> dict:
     df = build_frame(refresh=True)
     st = build_state(df).dropna(subset=["trend_score"])
@@ -146,6 +195,7 @@ def build_payload() -> dict:
         "changed_today": fr["change"],
         "levels": levels,
         "scenarios": scen,
+        "rally_watch": rally_watch(close),
         "scores": {
             "trend": _f(row["trend_score"]),
             "momentum": _f(row["momentum_score"]),

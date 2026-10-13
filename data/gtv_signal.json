@@ -1,0 +1,146 @@
+{
+  "generated": "2026-10-13",
+  "gtv_period": [
+    "2024-01-01",
+    "2026-08-31"
+  ],
+  "threshold": 0.08,
+  "window_days": 14,
+  "method": "GTV vs its own 28-day normal, weekday-adjusted, 7-day smoothed; each episode counted once; luck check vs random days. Ratios only.",
+  "rally": {
+    "non_stable": {
+      "episodes": 21,
+      "separate": 8,
+      "d0": {
+        "avg_pct": 16,
+        "typical_pct": 2,
+        "luck_p": 0.107,
+        "above_10pct_share": 38,
+        "above_10pct_share_random": 29,
+        "first_half_pct": 19,
+        "second_half_pct": 3,
+        "n_second_half": 5
+      },
+      "d7": {
+        "avg_pct": 42,
+        "typical_pct": 6,
+        "luck_p": 0.007,
+        "above_10pct_share": 52,
+        "above_10pct_share_random": 31,
+        "first_half_pct": 44,
+        "second_half_pct": 36,
+        "n_second_half": 5
+      },
+      "d14": {
+        "avg_pct": 55,
+        "typical_pct": 9,
+        "luck_p": 0.002,
+        "above_10pct_share": 71,
+        "above_10pct_share_random": 33,
+        "first_half_pct": 64,
+        "second_half_pct": 27,
+        "n_second_half": 5
+      },
+      "d28": {
+        "avg_pct": 63,
+        "typical_pct": 10,
+        "luck_p": 0.002,
+        "above_10pct_share": 43,
+        "above_10pct_share_random": 31,
+        "first_half_pct": 84,
+        "second_half_pct": -5,
+        "n_second_half": 5
+      }
+    },
+    "stable": {
+      "episodes": 21,
+      "separate": 8,
+      "d0": {
+        "avg_pct": 4,
+        "typical_pct": 1,
+        "luck_p": 0.28,
+        "above_10pct_share": 38,
+        "above_10pct_share_random": 28,
+        "first_half_pct": 3,
+        "second_half_pct": 9,
+        "n_second_half": 5
+      },
+      "d7": {
+        "avg_pct": 9,
+        "typical_pct": 1,
+        "luck_p": 0.102,
+        "above_10pct_share": 48,
+        "above_10pct_share_random": 29,
+        "first_half_pct": 7,
+        "second_half_pct": 14,
+        "n_second_half": 5
+      },
+      "d14": {
+        "avg_pct": 5,
+        "typical_pct": 1,
+        "luck_p": 0.279,
+        "above_10pct_share": 38,
+        "above_10pct_share_random": 29,
+        "first_half_pct": 2,
+        "second_half_pct": 13,
+        "n_second_half": 5
+      },
+      "d28": {
+        "avg_pct": 18,
+        "typical_pct": 1,
+        "luck_p": 0.001,
+        "above_10pct_share": 62,
+        "above_10pct_share_random": 31,
+        "first_half_pct": 20,
+        "second_half_pct": 10,
+        "n_second_half": 5
+      }
+    }
+  },
+  "drop": {
+    "non_stable": {
+      "episodes": 16,
+      "separate": 7,
+      "d0": {
+        "avg_pct": -2,
+        "typical_pct": 2,
+        "luck_p": 0.216,
+        "above_10pct_share": 38,
+        "above_10pct_share_random": 29,
+        "first_half_pct": -10,
+        "second_half_pct": 15,
+        "n_second_half": 5
+      },
+      "d7": {
+        "avg_pct": -5,
+        "typical_pct": 6,
+        "luck_p": 0.094,
+        "above_10pct_share": 31,
+        "above_10pct_share_random": 31,
+        "first_half_pct": -18,
+        "second_half_pct": 24,
+        "n_second_half": 5
+      },
+      "d14": {
+        "avg_pct": -15,
+        "typical_pct": 9,
+        "luck_p": 0.009,
+        "above_10pct_share": 19,
+        "above_10pct_share_random": 33,
+        "first_half_pct": -22,
+        "second_half_pct": 2,
+        "n_second_half": 5
+      },
+      "d28": {
+        "avg_pct": -10,
+        "typical_pct": 10,
+        "luck_p": 0.015,
+        "above_10pct_share": 25,
+        "above_10pct_share_random": 31,
+        "first_half_pct": -8,
+        "second_half_pct": -14,
+        "n_second_half": 5
+      }
+    }
+  }
+}

@@ -382,10 +382,54 @@ const MARKETING_FALLBACK = {
   Neutral: "Hold current acquisition budget at plan; no clear direction to lean into yet.",
   Bear: "Defend spend with a strict ROI stop-loss; shift messaging toward stablecoin products.",
 };
+/* -------------------------- rally watch: described in plain words inside "Implications for marketing" ---- */
+function rallyWatchBlock(d) {
+  const rw = d.rally_watch, st = rw && rw.stats;
+  if (!rw || !st) return null;
+  const R = st.rally.non_stable, S = st.rally.stable, D = st.drop.non_stable;
+  const pct = (v, dp = 1) => `${v > 0 ? "+" : "−"}${Math.abs(v * 100).toFixed(dp)}%`;
+  const line = Math.round(rw.threshold * 100), win = rw.window_days;
+  const share = Math.round((R.d0.avg_pct / R.d14.avg_pct) * 100 / 5) * 5;
+  const paras = [];
+  let pillClass = "mid", pillText = "No signal";
+
+  if (rw.state === "rally") {
+    const n = rw.episode.days_ago;
+    pillClass = "up"; pillText = `Rally signal · day ${n} of ${win}`;
+    paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days, past the +${line}% line. It first crossed that line on ${fmtDate(rw.episode.date)}, so we are on <b>day ${n} of a ${win}-day window</b>.`);
+    paras.push(`Since 2024 this has happened ${R.episodes} times (about ${R.separate} separate rallies). Each time, non-stablecoin trading value kept rising afterwards: on average <b>${R.d7.avg_pct}%</b> above its normal level after one week and <b>${R.d14.avg_pct}%</b> after two weeks, against about ${R.d14.typical_pct}% on a random day. Only about ${share}% of that rise had happened on the day the signal fired, so most of it comes after. Two weeks later, trading value was more than 10% above normal in ${R.d14.above_10pct_share}% of cases (${R.d14.above_10pct_share_random}% on a random day).`);
+    paras.push(n <= 7
+      ? `<b>What to do:</b> this is the window to act. Campaigns that go live in the next few days can reach users while activity is still building. Lead with active-trader and non-stablecoin channels. Plan stablecoin offers for about a month from now, because stablecoin trading value tended to follow later (about ${S.d28.avg_pct}% above normal after four weeks).`
+      : `<b>What to do:</b> the rise usually levels off around two weeks in, so only launch what can go live within a few days. Spend the rest of the effort on a follow-up for stablecoin users, whose trading value tended to rise later (about ${S.d28.avg_pct}% above normal after four weeks).`);
+  } else if (rw.state === "drop") {
+    const n = rw.episode.days_ago;
+    pillClass = "down"; pillText = `Drop signal · day ${n} of ${win}`;
+    paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days, past the −${line}% line. It first crossed that line on ${fmtDate(rw.episode.date)}, so we are on <b>day ${n} of a ${win}-day window</b>.`);
+    paras.push(`Since 2024 this has happened ${D.episodes} times. Two weeks later, non-stablecoin trading value was on average about <b>${Math.abs(D.d14.avg_pct)}% below</b> its normal level, while a random day is about ${D.d14.typical_pct}% above. In the most recent months this did not repeat (${D.d14.second_half_pct}% from ${D.d14.n_second_half} cases), so treat it as a caution, not a rule.`);
+    paras.push(`<b>What to do:</b> hold promotions aimed at active traders for now. Lead with safety and trust messages and stablecoin products, and keep some budget in reserve so you can move fast when the next rally signal fires.`);
+  } else {
+    paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days. A rally signal needs +${line}% (a close above <b>${fmtUSD(rw.needs_up)}</b>), and a drop signal needs −${line}% (a close below <b>${fmtUSD(rw.needs_down)}</b>).` +
+      (rw.last_rally ? ` The last rally signal was on ${fmtDate(rw.last_rally.date)}, ${rw.last_rally.days_ago} days ago, and its ${win}-day window has ended.` : ""));
+    paras.push(`When a rally signal fired in the past, non-stablecoin trading value kept rising for about two weeks, to on average <b>${R.d14.avg_pct}%</b> above its normal level (about ${R.d14.typical_pct}% on a random day). Only about ${share}% of that rise had happened when the signal fired.`);
+    paras.push(`<b>What to do:</b> keep normal spend, and use quiet days to prepare. Because most of the rise comes after the signal and lasts about two weeks, have a campaign ready that can go live within 2–3 days of a signal.`);
+  }
+  const caveat = rw.state === "drop" ? "" :
+    `How far to trust this: it rests on about ${R.separate} rallies. In the most recent months the effect was smaller (${R.d14.second_half_pct}% after two weeks, from ${R.d14.n_second_half} cases), so treat it as a strong hint, not a promise.`;
+
+  const box = el("div", { class: "rw" },
+    el("div", { class: "rw-head" }, el("span", { class: "rw-title", text: "Rally watch" }), el("span", { class: "scn-tag " + pillClass, text: pillText })));
+  paras.forEach((t) => box.append(el("p", { html: t })));
+  if (caveat) box.append(el("p", { class: "rw-caveat", text: caveat }));
+  box.append(el("p", { class: "chart-note", text: `"Normal level" means the average of the 4 weeks before the signal. Based on Reku's daily trading value since ${fmtDate(st.gtv_period[0])}; amounts are not shown. Signal = Bitcoin up or down more than ${line}% in 7 days.` }));
+  return box;
+}
+
 function renderTeams(d) {
   const grid = document.getElementById("teams");
   grid.textContent = "";
   const text = (d.team_notes && d.team_notes.marketing) || MARKETING_FALLBACK[d.regime] || MARKETING_FALLBACK.Neutral;
+  const rw = rallyWatchBlock(d);
+  if (rw) grid.append(rw);
   grid.append(el("div", { class: "teamcard" }, el("h4", { text: "Marketing" }), el("p", { text })));
 }
 
