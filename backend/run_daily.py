@@ -259,6 +259,8 @@ def build_payload() -> dict:
         old_marketing = old_payload.get("team_notes", {}).get("marketing")
         if old_marketing:
             payload["team_notes"]["marketing"] = old_marketing
+        if old_payload.get("marketing_segments"):
+            payload["marketing_segments"] = old_payload["marketing_segments"]
 
     return payload, st
 

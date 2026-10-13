@@ -424,13 +424,44 @@ function rallyWatchBlock(d) {
   return box;
 }
 
+const SEGMENTS = [
+  ["social", "Social media & content"],
+  ["seo", "SEO"],
+  ["paid", "Paid digital marketing (ads)"],
+  ["research", "Research (signals)"],
+];
+const STANCE_CLASS = { Increase: "up", Hold: "mid", Reduce: "down", Prepare: "mid", Monitor: "mid" };
+
 function renderTeams(d) {
   const grid = document.getElementById("teams");
   grid.textContent = "";
-  const text = (d.team_notes && d.team_notes.marketing) || MARKETING_FALLBACK[d.regime] || MARKETING_FALLBACK.Neutral;
   const rw = rallyWatchBlock(d);
   if (rw) grid.append(rw);
-  grid.append(el("div", { class: "teamcard" }, el("h4", { text: "Marketing" }), el("p", { text })));
+
+  const text = (d.team_notes && d.team_notes.marketing) || MARKETING_FALLBACK[d.regime] || MARKETING_FALLBACK.Neutral;
+  const seg = d.marketing_segments;
+  if (!seg || !SEGMENTS.some(([k]) => seg[k])) {          // task hasn't written the split yet
+    grid.append(el("div", { class: "teamcard" }, el("h4", { text: "Marketing" }), el("p", { text })));
+    return;
+  }
+  grid.append(el("p", { class: "seg-overall" }, el("b", { text: "Overall: " }), text));
+  const cards = el("div", { class: "seg-grid" });
+  SEGMENTS.forEach(([key, name]) => {
+    const s = seg[key];
+    if (!s) return;
+    const card = el("div", { class: "seg" },
+      el("div", { class: "seg-head" },
+        el("h4", { text: name }),
+        s.stance ? el("span", { class: "scn-tag " + (STANCE_CLASS[s.stance] || "mid"), text: s.stance }) : ""),
+      el("p", { class: "seg-strategy", text: s.strategy || "" }));
+    if (s.actions && s.actions.length) {
+      const ul = el("ul", { class: "seg-actions" });
+      s.actions.forEach((a) => ul.append(el("li", {}, el("b", { text: a.what }), a.detail ? ` — ${a.detail}` : "")));
+      card.append(ul);
+    }
+    cards.append(card);
+  });
+  grid.append(cards);
 }
 
 /* -------------------------- supporting signals: full 35-indicator catalog ----------- */
