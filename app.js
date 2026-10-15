@@ -5,7 +5,7 @@
    changed from hardcoded constants to the real backend output. */
 
 const SVGNS = "http://www.w3.org/2000/svg";
-const SVG_TAGS = new Set(["svg", "path", "rect", "line", "text", "circle", "g", "polyline"]);
+const SVG_TAGS = new Set(["svg", "path", "rect", "line", "text", "circle", "g", "polyline", "title"]);
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
   "August", "September", "October", "November", "December"];
 
@@ -146,6 +146,7 @@ async function main() {
 
   renderHero(d, k);
   renderOutlook(d, k, bt);
+  renderHeat(hist);
   renderAnalysis(d);
   renderTriggers(d);
   renderNews(d);
@@ -216,6 +217,84 @@ function historicalNote(bt, regime, conviction, horizonDays, horizonLabel) {
   }
   s += " A historical pattern, not a guarantee — this covers ~2.9 market cycles.";
   return s;
+}
+
+/* -------------------------- score history heatmap (model scores, per timeframe) -------------------- */
+const HEAT_RANGES = [{ label: "3M", days: 90 }, { label: "1Y", days: 365 }, { label: "3Y", days: 1095 }, { label: "All", days: null }];
+const HEAT_ROWS_DEF = [
+  { key: "sentiment_score", name: "Short-term", sub: "mood" },
+  { key: "momentum_score", name: "Medium-term", sub: "momentum" },
+  { key: "trend_score", name: "Long-term", sub: "trend" },
+];
+let heatDays = 365, HEAT_DATA = [];
+
+function renderHeat(hist) {
+  if (hist) HEAT_DATA = hist;
+  const rows = HEAT_DATA.filter((r) => r.date);
+  const root = document.getElementById("heat");
+  if (!rows.length) { root.remove(); return; }
+
+  const rb = document.getElementById("heatRange");
+  rb.textContent = "";
+  HEAT_RANGES.forEach((r) => {
+    const b = el("button", { class: "rng" + (heatDays === r.days ? " on" : "") }, r.label);
+    b.addEventListener("click", () => { heatDays = r.days; renderHeat(); });
+    rb.append(b);
+  });
+
+  const slice = heatDays ? rows.slice(-heatDays) : rows;
+  const size = Math.max(1, Math.ceil(slice.length / 150));           // days per column
+  const cols = [];
+  for (let i = 0; i < slice.length; i += size) {
+    const g = slice.slice(i, i + size);
+    const avg = (k) => { const v = g.map((x) => x[k]).filter((x) => Number.isFinite(x)); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
+    const regs = {}; g.forEach((x) => { regs[x.regime] = (regs[x.regime] || 0) + 1; });
+    cols.push({ from: g[0].date, to: g[g.length - 1].date, regime: Object.entries(regs).sort((a, b) => b[1] - a[1])[0][0],
+      sentiment_score: avg("sentiment_score"), momentum_score: avg("momentum_score"), trend_score: avg("trend_score") });
+  }
+
+  const W = 10, ROW = 24, GAP = 4, nRows = HEAT_ROWS_DEF.length + 1;
+  const H = nRows * ROW + (nRows - 1) * GAP;
+  const svg = document.getElementById("heatSvg");
+  svg.setAttribute("viewBox", `0 0 ${cols.length * W} ${H}`);
+  svg.style.height = H + "px";
+  svg.innerHTML = "";
+  const word = (v) => (v >= 0.45 ? "strongly bullish" : v >= 0.15 ? "bullish-leaning" : v <= -0.45 ? "strongly bearish" : v <= -0.15 ? "bearish-leaning" : "neutral");
+  const span = (c) => (c.from === c.to ? fmtDate(c.from) : `${fmtDate(c.from)} – ${fmtDate(c.to)}`);
+  const cell = (x, y, fill, opacity, tip) => {
+    const r = el("rect", { x, y, width: W, height: ROW, fill, "fill-opacity": opacity, "shape-rendering": "crispEdges" });
+    r.append(el("title", { text: tip }));
+    svg.append(r);
+  };
+  HEAT_ROWS_DEF.forEach((def, ri) => {
+    const y = ri * (ROW + GAP);
+    svg.append(el("rect", { x: 0, y, width: cols.length * W, height: ROW, fill: "var(--surface-2)" }));
+    cols.forEach((c, i) => {
+      const v = c[def.key];
+      if (v == null) return;
+      const op = 0.12 + 0.88 * Math.min(1, Math.abs(v) / 0.7);
+      cell(i * W, y, v >= 0 ? "var(--teal)" : "var(--bear)", op.toFixed(2), `${span(c)}\n${def.name} (${def.sub}): ${v >= 0 ? "+" : ""}${v.toFixed(2)} — ${word(v)}`);
+    });
+  });
+  const ry = HEAT_ROWS_DEF.length * (ROW + GAP);
+  const RC = { Bull: "var(--teal)", Bear: "var(--bear)", Neutral: "var(--purple-2)" };
+  cols.forEach((c, i) => cell(i * W, ry, RC[c.regime] || "var(--muted)", 0.7, `${span(c)}\nHeadline label: ${c.regime === "Bull" ? "BULLISH" : c.regime === "Bear" ? "BEARISH" : "NEUTRAL"}`));
+
+  const lab = document.getElementById("heatLabels");
+  lab.textContent = "";
+  HEAT_ROWS_DEF.forEach((d) => lab.append(el("span", {}, d.name, el("i", { text: d.sub }))));
+  lab.append(el("span", {}, "Label", el("i", { text: "headline" })));
+
+  const ax = document.getElementById("heatAxis");
+  ax.textContent = "";
+  const first = new Date(cols[0].from + "T00:00:00Z"), last = new Date(cols[cols.length - 1].to + "T00:00:00Z");
+  for (let i = 0; i <= 4; i++) {
+    const t = new Date(first.getTime() + ((last - first) * i) / 4);
+    const txt = t.toLocaleDateString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" });
+    ax.append(el("span", { style: `left:${i * 25}%`, text: txt }));
+  }
+  document.getElementById("heatNote").textContent =
+    `Each column is ${size === 1 ? "one day" : size + " days (averaged)"}. These are the model's own scores, so today's news adjustment is not in this history. Hover a cell for the exact value.`;
 }
 
 function renderOutlook(d, k, bt) {

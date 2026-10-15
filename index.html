@@ -153,6 +153,23 @@
   .seg-strategy{margin:0 0 8px; font-size:13px; line-height:1.55; color:var(--ink-soft);}
   .seg-actions{margin:0; padding-left:18px; font-size:12.5px; line-height:1.5; color:var(--ink-soft);}
   .seg-actions li{margin:0 0 6px;} .seg-actions b{color:var(--ink); font-weight:600;}
+  .heat{margin:2px 0 18px; padding-bottom:16px; border-bottom:1px solid var(--hair);}
+  .heat-top{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-bottom:10px;}
+  .heat-title{font-family:"Space Grotesk"; font-weight:600; font-size:13.5px; color:var(--ink);}
+  .heat-top .chart-controls{margin-bottom:0;}
+  .heat-grid{display:grid; grid-template-columns:128px 1fr; gap:10px;}
+  @media (max-width:640px){ .heat-grid{grid-template-columns:84px 1fr;} .heat-labels span i{display:none;} }
+  .heat-labels{display:flex; flex-direction:column; gap:4px;}
+  .heat-labels span{height:24px; display:flex; align-items:center; white-space:nowrap; font-size:11.5px; color:var(--ink-soft); line-height:1.1; font-weight:500;}
+  .heat-labels span i{font-style:normal; color:var(--muted); margin-left:4px; font-size:10.5px; font-weight:400;}
+  #heatSvg{width:100%; display:block; border-radius:6px;}
+  .heat-axis{position:relative; height:16px; margin-top:4px; font-family:"IBM Plex Mono"; font-size:10px; color:var(--muted);}
+  .heat-axis span{position:absolute; transform:translateX(-50%); white-space:nowrap;}
+  .heat-axis span:first-child{transform:none;} .heat-axis span:last-child{transform:translateX(-100%);}
+  @media (max-width:640px){ .heat-axis span:nth-child(2), .heat-axis span:nth-child(4){display:none;} .heat-legend em{display:none;} }
+  .heat-legend{display:flex; align-items:center; gap:8px; margin-top:8px; font-size:10.5px; color:var(--muted);}
+  .heat-legend em{font-style:normal; margin-left:auto;}
+  .heat-bar{display:inline-block; width:90px; height:8px; border-radius:4px; background:linear-gradient(90deg,var(--bear),var(--surface-2) 50%,var(--teal));}
   .outlook-hist{margin-top:6px; font-size:12px; color:var(--muted); font-style:italic;}
 
   /* analysis */
@@ -295,6 +312,21 @@
 
   <div class="panel">
     <p class="kicker">Directional outlook — short, medium &amp; long term</p>
+    <div class="heat" id="heat">
+      <div class="heat-top">
+        <span class="heat-title">How each score has looked over time</span>
+        <div class="chart-controls" id="heatRange"></div>
+      </div>
+      <div class="heat-grid">
+        <div class="heat-labels" id="heatLabels"></div>
+        <div class="heat-body">
+          <svg id="heatSvg" preserveAspectRatio="none" role="img" aria-label="Heatmap of the short, medium and long-term scores over time"></svg>
+          <div class="heat-axis" id="heatAxis"></div>
+        </div>
+      </div>
+      <div class="heat-legend"><span>Bearish</span><i class="heat-bar"></i><span>Bullish</span><em>Darker = stronger. Blank = no data yet.</em></div>
+      <p class="chart-note" id="heatNote"></p>
+    </div>
     <div id="outlook"></div>
   </div>
 
