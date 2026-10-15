@@ -240,7 +240,7 @@ const LABEL_BANDS = {
   Bear: { word: "BEARISH", c: "var(--bear)", o: 0.75 },
 };
 const bandOf = (v) => (v >= 0.45 ? BANDS[0] : v >= 0.15 ? BANDS[1] : v <= -0.45 ? BANDS[4] : v <= -0.15 ? BANDS[3] : BANDS[2]);
-let heatTab = "trend_score", heatView = "cal", heatMonths = 6, HEAT_DATA = [];
+let heatTab = "momentum_score", heatView = "cal", heatMonths = 6, HEAT_DATA = [];
 
 function renderHeat(hist) {
   if (hist) HEAT_DATA = hist;
