@@ -280,7 +280,10 @@ def update_history(st: pd.DataFrame) -> None:
     tail = st.dropna(subset=["trend_score"])
     if HISTORY.exists():
         hist = pd.read_csv(HISTORY)
-        out = _with_titles(tail.iloc[-15:])            # refresh only the recent tail
+        # refresh the recent tail, and also fill any day the file is missing (e.g. days the
+        # daily task didn't run) -- otherwise an old gap would never be repaired
+        gap = tail[~tail.index.strftime("%Y-%m-%d").isin(hist["date"])]
+        out = _with_titles(pd.concat([gap, tail.iloc[-15:]]).sort_index().loc[lambda d: ~d.index.duplicated()])
         hist = hist[~hist["date"].isin(out["date"])]
         full = pd.concat([hist, out], ignore_index=True).sort_values("date")
     else:

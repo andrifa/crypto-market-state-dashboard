@@ -4176,6 +4176,11 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-09-07,79112.01,Neutral,strengthening,Greed,16.0,transition,-0.025,0.096,0.208,HOLD at planned level
 2026-09-08,78455.8,Neutral,strengthening,Greed,16.0,transition,-0.024,0.105,0.297,HOLD at planned level
 2026-09-09,79479.99,Neutral,strengthening,Greed,15.0,transition,-0.005,0.098,0.347,HOLD at planned level
+2026-09-10,76568.125,Neutral,strengthening,Greed,24.0,transition,-0.031,0.142,-0.057,HOLD at planned level
+2026-09-11,77173.796875,Neutral,strengthening,Greed,23.0,transition,-0.017,0.222,-0.026,HOLD at planned level
+2026-09-12,77270.46875,Neutral,strengthening,Greed,22.0,transition,-0.008,0.02,-0.011,HOLD at planned level
+2026-09-13,76838.15625,Neutral,stable,Greed,29.0,transition,-0.004,-0.004,-0.024,HOLD at planned level
+2026-09-14,78163.3828125,Neutral,strengthening,Greed,31.0,transition,0.019,0.141,0.17,HOLD at planned level
 2026-09-15,75612.5078125,Neutral,strengthening,Greed,13.0,transition,-0.003,0.125,0.039,HOLD at planned level
 2026-09-16,76150.3203125,Neutral,stable,Neutral,22.0,transition,0.012,0.111,-0.274,HOLD at planned level
 2026-09-17,76403.7734375,Neutral,strengthening,Neutral,31.0,transition,0.022,0.174,0.028,HOLD at planned level
@@ -4205,5 +4210,5 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-11,83773.12,Bull,weakening,Greed,58.0,early-bull,0.305,0.227,-0.129,SCALE UP acquisition budget
 2026-10-12,81850.0,Bull,stable,Greed,57.0,early-bull,0.29,0.347,-0.021,SCALE UP acquisition budget
 2026-10-13,83169.0,Bull,stable,Greed,76.0,early-bull,0.308,0.317,0.172,SCALE UP acquisition budget
-2026-10-14,81682.01,Bull,stable,Greed,57.0,early-bull,0.298,0.319,-0.083,SCALE UP acquisition budget
-2026-10-15,81802.0,Bull,weakening,Neutral,58.0,early-bull,0.304,0.323,-0.112,SCALE UP acquisition budget
+2026-10-14,81682.01,Bull,stable,Greed,57.0,early-bull,0.298,0.334,-0.102,SCALE UP acquisition budget
+2026-10-15,80992.0,Bull,weakening,Neutral,57.0,early-bull,0.295,0.333,-0.129,SCALE UP acquisition budget
