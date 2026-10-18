@@ -1,49 +1,49 @@
 {
-  "updated_utc": "2026-10-17T02:18:45Z",
-  "date": "2026-10-17",
-  "price_btc": 81569,
+  "updated_utc": "2026-10-18T02:22:10Z",
+  "date": "2026-10-18",
+  "price_btc": 81714,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend holds as price rests right on its 50-day line",
-  "direction": "strengthening",
-  "sentiment_band": "Greed",
-  "sentiment_label": "Greed",
-  "conviction": 86,
+  "headline_tag": "Uptrend holds as price sits just above its 50-day line",
+  "direction": "weakening",
+  "sentiment_band": "Neutral",
+  "sentiment_label": "Neutral",
+  "conviction": 87,
   "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's call is to scale up acquisition budget: the longer-term trend and the last three months both lean up, with high confidence (86/100 including today's news, 76 on market data alone), so this is a reasonable time to fund growth, weighted toward channels that bring active traders rather than stablecoin-only users. Because price is sitting right on its 50-day average, about $487M left Bitcoin funds in one day, and the Fed meets on 27 October, grow the budget in steps and keep part of it flexible to pause if price closes below $80,901 (the 30-day low). This is a budget posture based on trailing data, not a price call or trading advice."
+    "detail": "The model's call is to scale up the acquisition budget: the longer-term trend and the last three months both lean up, with high confidence (87/100 including today's news, 77 on market data alone), so this is a reasonable time to fund growth, weighted toward channels that bring active traders rather than stablecoin-only users. Because price is sitting right on its 50-day average, US stocks just had a rough week and the Fed meets on 27 October, grow the budget in steps and keep part of it flexible to pause if price closes below $81,411 (the 50-day average). This is a budget posture based on trailing data, not a price call or trading advice."
   },
   "reasons": [
-    "Price is 13% above its 200-day average and up 26% over 90 days.",
-    "About 67% of the last 90 days closed above the long-term average.",
-    "Price sits just 0.3% above its 50-day average ($81,344), below the $86,603 30-day high.",
-    "The 200-day average still slopes down (-1%) and price is 35% below its record."
+    "Price is about 13% above its 200-day average and up 25% over 90 days.",
+    "About 68% of the last 90 days closed above the long-term average.",
+    "Price sits just above its 50-day average ($81,411), below the $86,603 30-day high.",
+    "The 200-day average still slopes slightly down and price is 35% below its record."
   ],
-  "watch": "The longer picture leans up, but price sits barely above its 50-day average ($81,344) and its 30-day low ($80,901), after about $487M left Bitcoin funds in one day and ahead of the 27 October Fed decision. A close below $80,901 would test the uptrend; money returning to the funds and a move back above $86,603 would ease the worry.",
+  "watch": "The longer picture leans up, but price is resting barely above its 50-day average ($81,411) after US stocks had their worst week since June, with the Fed deciding on 27 October. A close below $81,411 would test the uptrend; a move back above $86,603 would ease the worry.",
   "analysis": [
-    "Bottom line: the bigger picture still points up, but this week the mood has gone quiet and price is sitting right on a line that matters. Short term, the mood leans mildly up but looks tired: the Fear & Greed reading is a middling 55, a lot of people are still betting on a rise with borrowed money, and about $487M left Bitcoin funds in a single day. A close above $86,603 (the 30-day high) would turn this clearly up, a close below $80,901 (the 30-day low) turns it down, and in between expect choppy moves, with price under 1% above that lower line today. Money flowing back into the funds would firm this up; for now steady, explain-the-news content fits better than urgent pushes.",
-    "Over the next month the picture still leans up, but more softly than the three-month record suggests: Bitcoin is about 26% higher than three months ago and about two-thirds of the last 90 days finished above the long-term average, yet the past week is down about 2%. The main date to watch is the Fed decision on 27 October, with US 10-year borrowing costs around 5.1%. There is room to climb if price gets above $86,603 (the 90-day high), while the move fades if it slips below $81,344 (the 50-day average), only a few hundred dollars under today's $81,569. A Fed pause would support growth campaigns for active traders; a rate rise or a close below that 50-day line would weaken this lean.",
-    "On the 3-6 month view the recovery is intact and got a small lift from news: Charles Schwab said all its clients can now buy Bitcoin directly (PANews), which nudges this view up a little. Price is about 13% above its 200-day average, though that average still slopes down slightly and Bitcoin is 35% below its record. The recovery stays intact while price holds above $72,431 (the 200-day average), with $66,860 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The 200-day average turning upward would strengthen this; for the business it supports steady investment in onboarding mainstream newcomers rather than short bursts."
+    "Bottom line: the bigger picture still leans up, but the coming days look undecided. Short term, the mood is mildly positive rather than excited: the Fear & Greed reading is a middling 53/100, and Bitcoin is about 2.5% lower than a week ago after US stocks had their worst week since June. If price closes above $86,603 (the 30-day high) it turns clearly up, a close below $81,411 (the 50-day average) turns it down, and in between it stays choppy. A return of calm in stocks would firm this up; a further slide there would weaken it, so time quick-reaction content to the news rather than to big promotions.",
+    "Over the next month, things still tilt up but more softly than earlier this month. Price is still about 25% above where it was three months ago, yet it has given back part of that gain and now rests barely above its 50-day average; news is nudging this a little lower, with MSCI warning it may drop Strategy, the biggest corporate Bitcoin buyer, from its global index, and France proposing a 31.4% tax on Bitcoin-to-stablecoin switches. There is room to climb if price gets above $86,603 (the 90-day high), and the move fades if it closes below $81,411 (the 50-day average). The Fed decision on 27 October is the next scheduled test; a steady result would help, a surprise would hurt.",
+    "Over the next three to six months, the trend leans up: price is about 13% above its 200-day average and about 68% of the last 90 days closed above it, though that average itself is still sloping slightly down, so this is an early recovery rather than a settled uptrend. News adds a little here, as Charles Schwab opened direct Bitcoin buying to all its clients. The recovery stays intact while price holds above $72,499 (the 200-day average), with $66,979 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. The average turning upward would confirm it; that supports paying for steady growth campaigns aimed at active traders."
   ],
   "team_notes": {
-    "marketing": "Keep growing in steps: the longer picture leans up and no rally or drop window is open, but price is resting right on an important line, so run steady campaigns for active traders rather than urgent pushes. Lead this week's content with Schwab opening Bitcoin to all its clients and the 27 October Fed decision."
+    "marketing": "Keep growing in steps: the longer picture leans up and no rally or drop window is open, so run steady campaigns for active traders rather than urgent pushes. Lead this week's content with mainstream access stories like Schwab and the 27 October Fed decision."
   },
   "changed_today": null,
   "levels": {
     "high_30d": 86603,
-    "low_30d": 80901,
+    "low_30d": 81143,
     "high_90d": 86603,
     "low_90d": 62763,
-    "ma_50": 81344,
-    "ma_200": 72431,
-    "ma_200w": 66860,
+    "ma_50": 81411,
+    "ma_200": 72499,
+    "ma_200w": 66979,
     "ath": 124753
   },
   "scenarios": {
-    "price": 81569,
+    "price": 81714,
     "up": {
       "level": 86603,
       "name": "30-day high",
@@ -55,38 +55,38 @@
       ]
     },
     "down": {
-      "level": 80901,
-      "name": "30-day low",
+      "level": 81411,
+      "name": "50-day average",
       "next": [
         {
-          "level": 72431,
+          "level": 72499,
           "name": "200-day average"
         },
         {
-          "level": 66860,
+          "level": 66979,
           "name": "200-week average"
         }
       ]
     },
     "range": [
-      80901,
+      81411,
       86603
     ]
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": -0.0171,
+    "ret_7d": -0.0246,
     "threshold": 0.08,
     "window_days": 14,
-    "needs_up": 89627,
-    "needs_down": 76349,
+    "needs_up": 90475,
+    "needs_down": 77071,
     "last_rally": {
       "date": "2026-09-21",
-      "days_ago": 26
+      "days_ago": 27
     },
     "last_drop": {
       "date": "2026-06-02",
-      "days_ago": 137
+      "days_ago": 138
     },
     "episode": null,
     "stats": {
@@ -237,31 +237,31 @@
     }
   },
   "scores": {
-    "sentiment": 0.3,
-    "momentum": 0.311,
-    "trend": 0.386
+    "sentiment": 0.144,
+    "momentum": 0.102,
+    "trend": 0.392
   },
   "context": {
-    "mayer_multiple": 1.126,
-    "ma200_slope_90d": -0.0084,
+    "mayer_multiple": 1.127,
+    "ma200_slope_90d": -0.0059,
     "ma_200w_multiple": 1.22,
-    "drawdown_from_ath": -0.346,
+    "drawdown_from_ath": -0.345,
     "rsi_weekly": 56.7,
-    "active_addr_ratio": 1.021,
-    "puell_multiple": 1.186,
-    "fear_greed": 55.0,
-    "funding_z": 1.18,
-    "vol_percentile": 0.42,
-    "bollinger_width": 0.0712,
-    "btc_dominance": 59.3,
-    "ma_cross": 0.1231,
-    "roc_90d": 0.2609,
-    "breadth_90d": 0.667,
-    "ssr": 5.41,
-    "pi_cycle_gap": -0.5262,
-    "open_interest_usd": 7690878701.5082,
-    "long_short_ratio": 1.7255,
-    "dvol": 37.6,
+    "active_addr_ratio": 0.853,
+    "puell_multiple": null,
+    "fear_greed": 53.0,
+    "funding_z": 0.39,
+    "vol_percentile": 0.23,
+    "bollinger_width": 0.0739,
+    "btc_dominance": 59.5,
+    "ma_cross": 0.1229,
+    "roc_90d": 0.2527,
+    "breadth_90d": 0.678,
+    "ssr": 5.38,
+    "pi_cycle_gap": -0.5245,
+    "open_interest_usd": 7678604713.779535,
+    "long_short_ratio": 1.748,
+    "dvol": 37.93,
     "us_10y_yield": 5.098,
     "vix": 19.99,
     "fed_funds_rate": 3.63,
@@ -270,32 +270,38 @@
     "public_company_btc_treasury": 1285230.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 17 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend holds as price rests right on its 50-day line)\n    Momentum strengthening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up acquisition\n    budget: the longer-term trend and the last three\n    months both lean up, with high confidence\n    (86/100 including today's news, 76 on market\n    data alone), so this is a reasonable time to\n    fund growth, weighted toward channels that bring\n    active traders rather than stablecoin-only\n    users. Because price is sitting right on its\n    50-day average, about $487M left Bitcoin funds\n    in one day, and the Fed meets on 27 October,\n    grow the budget in steps and keep part of it\n    flexible to pause if price closes below $80,901\n    (the 30-day low). This is a budget posture based\n    on trailing data, not a price call or trading\n    advice.\n\n  Why:\n  • Price is 13% above its 200-day average and up\n    26% over 90 days.\n  • About 67% of the last 90 days closed above the\n    long-term average.\n  • Price sits just 0.3% above its 50-day average\n    ($81,344), below the $86,603 30-day high.\n  • The 200-day average still slopes down (-1%) and\n    price is 35% below its record.\n\n  Changed today: —\n  Watch:\n    The longer picture leans up, but price sits\n    barely above its 50-day average ($81,344) and\n    its 30-day low ($80,901), after about $487M left\n    Bitcoin funds in one day and ahead of the 27\n    October Fed decision. A close below $80,901\n    would test the uptrend; money returning to the\n    funds and a move back above $86,603 would ease\n    the worry.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 18 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend holds as price sits just above its 50-day line)\n    Momentum weakening · Sentiment: Neutral\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up the acquisition\n    budget: the longer-term trend and the last three\n    months both lean up, with high confidence\n    (87/100 including today's news, 77 on market\n    data alone), so this is a reasonable time to\n    fund growth, weighted toward channels that bring\n    active traders rather than stablecoin-only\n    users. Because price is sitting right on its\n    50-day average, US stocks just had a rough week\n    and the Fed meets on 27 October, grow the budget\n    in steps and keep part of it flexible to pause\n    if price closes below $81,411 (the 50-day\n    average). This is a budget posture based on\n    trailing data, not a price call or trading\n    advice.\n\n  Why:\n  • Price is about 13% above its 200-day average and\n    up 25% over 90 days.\n  • About 68% of the last 90 days closed above the\n    long-term average.\n  • Price sits just above its 50-day average\n    ($81,411), below the $86,603 30-day high.\n  • The 200-day average still slopes slightly down\n    and price is 35% below its record.\n\n  Changed today: —\n  Watch:\n    The longer picture leans up, but price is\n    resting barely above its 50-day average\n    ($81,411) after US stocks had their worst week\n    since June, with the Fed deciding on 27 October.\n    A close below $81,411 would test the uptrend; a\n    move back above $86,603 would ease the worry.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 234000000,
+      "value": 214000000,
       "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a14555-9a3c-7024-a431-78d8aa201e36",
-      "as_of": "2026-10-16",
-      "note": "$118M long, $116M short; from PANews newsflash, not WebSearch."
+      "source_url": "https://www.panews.io/articles/01a14a7b-f5d4-714e-b6da-e875d5802ac0",
+      "as_of": "2026-10-17",
+      "note": "Longs dominated; from PANews newsflash, not WebSearch."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
     "whale_supply_pct": null,
-    "sth_cost_basis_usd": null,
+    "sth_cost_basis_usd": {
+      "value": 73700,
+      "source_name": "CoinOtag (citing analyst Axel Adler)",
+      "source_url": "https://en.coinotag.com/bitcoin-sth-profit-narrows-13-7-adler-cost-basis",
+      "as_of": "2026-10-01",
+      "note": "Up from $72,800 on 24 Sept; 17 days old, analyst figure."
+    },
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Charles Schwab Announces All Clients Can Now Buy Bitcoin Directly",
-        "url": "https://www.panews.io/articles/01a144ac-3e9f-758a-8a38-83f1e2af0c7c",
+        "title": "S&P 500 posts biggest weekly drop since June; Nasdaq 100 falls 2.5% on Friday",
+        "url": "https://www.panews.io/articles/01a14a76-81c9-7581-974a-447a8569ca70",
         "source": "PANews",
-        "date": "2026-10-16"
+        "date": "2026-10-17"
       },
       {
-        "title": "France Proposes 31.4% Capital Gains Tax on Bitcoin-to-Stablecoin Conversions and Requires Declaration of Self-Custody Wallets Over €100,000",
-        "url": "https://www.panews.io/articles/01a14528-a6c8-7735-bee7-d5ac3fdb36f0",
+        "title": "Charles Schwab Announces All Clients Can Now Buy Bitcoin Directly",
+        "url": "https://www.panews.io/articles/01a144ac-3e9f-758a-8a38-83f1e2af0c7c",
         "source": "PANews",
         "date": "2026-10-16"
       },
@@ -306,101 +312,107 @@
         "date": "2026-10-16"
       },
       {
-        "title": "Mastercard and BVNK Launch Global Money Platform, Integrating Fiat and Stablecoin Payments",
-        "url": "https://www.panews.io/articles/01a14466-97c6-73dd-868e-4ac62ccfedea",
+        "title": "France Proposes 31.4% Capital Gains Tax on Bitcoin-to-Stablecoin Conversions and Requires Declaration of Self-Custody Wallets Over €100,000",
+        "url": "https://www.panews.io/articles/01a14528-a6c8-7735-bee7-d5ac3fdb36f0",
         "source": "PANews",
         "date": "2026-10-16"
       },
       {
-        "title": "9 Crypto Firms Form Quantum Alliance, Say Public Keys of 30.2% of Bitcoin's Total Supply Are Exposed",
-        "url": "https://www.panews.io/articles/01a1448e-2a74-703c-bf4b-70d425b6cfe4",
+        "title": "Next Week's Macro Outlook: Fed Enters Blackout Period, US Earnings Season Hits Its Stride",
+        "url": "https://www.panews.io/articles/01a14cc7-11ca-76af-bff4-f310671ce919",
         "source": "PANews",
-        "date": "2026-10-16"
+        "date": "2026-10-18"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-17",
+    "as_of": "2026-10-18",
     "items": [
       {
-        "theme": "AI agents on crypto networks",
-        "why": "Celestia launched Eden, a new network built for experiments where AI agents create and trade tokens with each other, and Sui's developer Mysten Labs set up a separate AI business unit. Celestia's token rose sharply on the day; the reports describe the launch but do not directly tie the price move to it.",
+        "theme": "Tokenized real-world assets",
+        "why": "Chainalysis reports that tokenized US Treasuries are spreading to overseas buyers, with US holders now only about 10.5% of the total, and research firm Citrini published a 79-page report backing tokenization. Figure's tokenized home-equity token sits close to its all-time high; the reports do not tie a specific price move to the news.",
         "tokens": [
           {
-            "symbol": "TIA",
-            "change_24h_pct": 19.1
+            "symbol": "FIGR_HELOC",
+            "change_24h_pct": 2.98,
+            "note": "near all-time high"
           },
           {
-            "symbol": "SUI",
-            "change_24h_pct": -2.74
+            "symbol": "ONDO",
+            "change_24h_pct": -2.61
           }
         ],
-        "marketing_angle": "A good education topic on what 'AI agents using crypto' means, for curious newer users.",
+        "marketing_angle": "A clear education topic on what tokenized assets are, for users curious about more than coins.",
         "sources": [
           {
-            "title": "Celestia launches Eden, a high-performance EVM chain, to explore on-chain trading demand from agents",
-            "url": "https://www.panews.io/articles/01a14493-fb2c-7359-84a6-bd4be904dd0e"
+            "title": "Chainalysis: Tokenization Is Expanding the Overseas Market for U.S. Treasuries, With U.S. Holdings Accounting for Only 10.5%",
+            "url": "https://www.panews.io/articles/01a14cb9-40d9-7022-835e-0287e8996192"
           },
           {
-            "title": "Sui developer Mysten Labs establishes AI business unit; President Kevin Boon to become CEO",
-            "url": "https://www.panews.io/articles/01a1474b-2241-7421-a485-90b793cd7e35"
+            "title": "Citrini Releases 79-Page Report Bullish on RWA Tokenization, Debate Shifts to \"Who Will Profit\"",
+            "url": "https://www.panews.io/articles/01a14a6a-3dc8-759b-8219-2911a59ec2ce"
           }
         ]
       },
       {
-        "theme": "Stablecoins move into everyday payments",
-        "why": "Mastercard and BVNK launched a platform that joins regular money and stablecoin payments, and Visa Direct moved its stablecoin money-movement service toward commercial use. Allium reports stablecoin payment volume grew 45% to $482 billion in the first nine months of the year while supply barely grew, meaning the same coins are being used more often.",
+        "theme": "Solana's business side grows",
+        "why": "Apps on Solana earned $299.1 million in the third quarter, up 48% from the quarter before, Circle created 250 million new USDC on Solana, and a Solana company was registered in Shanghai. SOL's price still dipped slightly on the day, so the news is about usage rather than price.",
+        "tokens": [
+          {
+            "symbol": "SOL",
+            "change_24h_pct": -0.89
+          }
+        ],
+        "marketing_angle": "Supports content on what people actually use Solana for, aimed at app-curious users.",
+        "sources": [
+          {
+            "title": "Solana's Q3 2026 app revenue rose 48% QoQ to $299.1 million",
+            "url": "https://www.panews.io/articles/01a1492a-ecf3-7382-adc3-36c330b83e24"
+          },
+          {
+            "title": "Circle mints 250 million USDC on Solana network",
+            "url": "https://www.panews.io/articles/01a1479f-75eb-7660-aae7-daae8e13e3ab"
+          }
+        ]
+      },
+      {
+        "theme": "Quantum-computing risk to Bitcoin",
+        "why": "Nine crypto organizations formed an alliance to prepare for future quantum-computing risks to wallets, and Arthur Hayes said the risk is known and manageable and not a reason to sell. The story is about long-run safety planning, not a price move today.",
         "tokens": [],
-        "marketing_angle": "Supports content and campaigns aimed at users who mainly hold stablecoins or send money abroad.",
+        "marketing_angle": "A calm, factual explainer can answer worried users before rumours spread.",
         "sources": [
           {
-            "title": "Mastercard and BVNK Launch Global Money Platform, Integrating Fiat and Stablecoin Payments",
-            "url": "https://www.panews.io/articles/01a14466-97c6-73dd-868e-4ac62ccfedea"
+            "title": "Nine crypto organizations form quantum alliance to address quantum risks",
+            "url": "https://www.panews.io/articles/01a14c64-12f5-75d0-a131-242ea85c1555"
           },
           {
-            "title": "Allium: Stablecoin payment volume grew 45% to $482 billion in first three quarters, while supply rose only 0.4%",
-            "url": "https://www.panews.io/articles/01a14495-d1f1-77e5-960b-bfdfa3f09772"
-          },
-          {
-            "title": "Visa Direct Launches Stablecoin-Based Money Movement Service, Pilot Program Moves Toward Commercial Application",
-            "url": "https://www.panews.io/articles/01a142d7-2b35-74d6-ba6c-2a0b9b45093e"
-          }
-        ]
-      },
-      {
-        "theme": "Bitcoin-holding company shares slide",
-        "why": "Strategy, MARA and Riot shares each fell around 10% on 16 October. Strategy's drop followed MSCI's warning that it may be removed from a global index; for the miners the reports do not give a clear reason.",
-        "tokens": [
-          {
-            "symbol": "BTC",
-            "change_24h_pct": -0.69
-          }
-        ],
-        "marketing_angle": "An explainer on the difference between owning Bitcoin and owning shares of Bitcoin companies fits current questions.",
-        "sources": [
-          {
-            "title": "Strategy stock falls 4% after MSCI warns it may be removed from global index",
-            "url": "https://www.panews.io/articles/01a144f0-c75c-72a8-910d-03e10a84c295"
-          },
-          {
-            "title": "US stocks close lower across the board: Riot Platforms (RIOT) falls 11.22%, MARA falls 9.61%",
-            "url": "https://www.panews.io/articles/01a1464d-b79e-70d7-9b6e-cba1d59b9d3e"
+            "title": "Arthur Hayes: Bitcoin's quantum risk is known and manageable, not a reason to sell",
+            "url": "https://www.panews.io/articles/01a149ae-0a39-714c-8288-c17ce6714afe"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-17",
+    "as_of": "2026-10-18",
     "items": [
       {
-        "headline": "Bank of Japan Governor Ueda: monetary policy has entered a new phase, will continue raising rates",
+        "headline": "S&P 500 posts biggest weekly drop since June; Nasdaq 100 falls 2.5% on Friday",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1449f-9043-73af-8b35-816cc34a4ce2",
+        "url": "https://www.panews.io/articles/01a14a76-81c9-7581-974a-447a8569ca70",
         "horizon": "short",
         "direction": "negative",
         "size": "minor",
-        "why": "Another major central bank signalling more rate rises makes borrowed money dearer worldwide, which tends to cool appetite for crypto."
+        "why": "A broad stock-market sell-off led by AI shares tends to weigh on the mood in crypto in the following days."
+      },
+      {
+        "headline": "Strategy stock falls 4% after MSCI warns it may be removed from global index",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a144f0-c75c-72a8-910d-03e10a84c295",
+        "horizon": "medium",
+        "direction": "negative",
+        "size": "minor",
+        "why": "Losing a major index slot could limit how the biggest corporate Bitcoin buyer raises money for further purchases."
       },
       {
         "headline": "France Proposes 31.4% Capital Gains Tax on Bitcoin-to-Stablecoin Conversions and Requires Declaration of Self-Custody Wallets Over €100,000",
@@ -409,7 +421,7 @@
         "horizon": "medium",
         "direction": "negative",
         "size": "minor",
-        "why": "A proposal to tax swaps into stablecoins and to make people declare large personal wallets would add friction for crypto users in a big EU country, though it is not yet law."
+        "why": "A proposal, not law yet, but it would make switching between Bitcoin and stablecoins costlier for French users."
       },
       {
         "headline": "Charles Schwab Announces All Clients Can Now Buy Bitcoin Directly",
@@ -418,125 +430,129 @@
         "horizon": "long",
         "direction": "positive",
         "size": "moderate",
-        "why": "One of the largest US brokerages opening direct Bitcoin buying to every client widens the mainstream doorway into crypto."
+        "why": "One of the largest US brokers opening direct Bitcoin buying to all clients widens mainstream access."
       },
       {
-        "headline": "Mastercard and BVNK Launch Global Money Platform, Integrating Fiat and Stablecoin Payments",
+        "headline": "Bulgaria's Postbank Plans to Launch Crypto Asset and Stock Investment Features in Its Mobile App",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a14466-97c6-73dd-868e-4ac62ccfedea",
+        "url": "https://www.panews.io/articles/01a14861-6ac6-738d-ba1a-bff8f6f792c1",
         "horizon": "long",
         "direction": "positive",
         "size": "minor",
-        "why": "Card networks building stablecoins into everyday payments (Visa Direct also moved its stablecoin service toward commercial use) deepens crypto's role in normal money movement."
+        "why": "Another retail bank bringing crypto into its app adds to the slow spread of bank-based access."
       }
     ],
     "summary": {
-      "short": "The Bank of Japan's signal of more rate rises is a small extra drag on the near-term mood.",
-      "medium": "France's proposed tax on swaps into stablecoins is a small negative for the weeks ahead, pending whether it passes.",
-      "long": "Schwab opening Bitcoin buying to all clients, plus card networks adding stablecoin payments, is a modest structural plus."
+      "short": "A sharp weekly fall in US stocks is a small weight on the near-term mood.",
+      "medium": "Two minor negatives: an index-removal warning for Strategy and a French tax proposal.",
+      "long": "Mainstream access keeps widening, led by Schwab opening Bitcoin buying to all clients."
     },
     "impact": {
       "short": -0.25,
-      "medium": -0.25,
+      "medium": -0.5,
       "long": 0.75
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.311,
-    "momentum": 0.336,
-    "sentiment": 0.325
+    "trend": 0.317,
+    "momentum": 0.152,
+    "sentiment": 0.169
   },
-  "conviction_base": 76,
+  "conviction_base": 77,
   "news_adjustment": {
     "sentiment": -0.025,
-    "momentum": -0.025,
+    "momentum": -0.05,
     "trend": 0.075
   },
   "news_flag": null,
   "marketing_segments": {
-    "as_of": "2026-10-17",
+    "as_of": "2026-10-18",
     "social": {
       "stance": "Hold",
-      "strategy": "Keep the normal posting rhythm with a calm, explain-the-news tone: Bitcoin is about 26% above where it was three months ago but down about 1.7% over the past week, and the day's stories are about mainstream access and payments rather than price.",
+      "strategy": "Keep the normal posting rhythm with a calm, explain-the-news tone: Bitcoin is about 25% above three months ago but about 2.5% lower over the past week, and no rally or drop window is open.",
       "actions": [
         {
           "what": "Post on Schwab opening Bitcoin to all clients",
           "detail": "Charles Schwab said all its clients can now buy Bitcoin directly (PANews); a short 'what this means for everyday investors' post fits the mainstream-access story."
         },
         {
-          "what": "Explain stablecoin payments",
-          "detail": "Mastercard and BVNK launched a platform joining regular money and stablecoins, and Allium reports stablecoin payment volume up 45% to $482 billion this year (PANews); a simple carousel on how stablecoin payments work."
+          "what": "Explain the stocks-to-crypto link",
+          "detail": "The S&P 500 had its biggest weekly drop since June and the Nasdaq 100 fell 2.5% on Friday (PANews); a simple post on why stock moves spill into crypto suits the week."
         },
         {
-          "what": "Post a daily market recap",
-          "detail": "Note Bitcoin near $81,569, just above its 50-day average of $81,344, and that shares of Bitcoin-holding companies like Strategy fell about 10% on 16 October (PANews)."
+          "what": "Run a tokenization explainer",
+          "detail": "Chainalysis says tokenized US Treasuries are reaching more overseas buyers, and Citrini published a 79-page report on tokenization (PANews); a carousel on 'what is a tokenized asset' fits curious users."
         },
         {
           "what": "Share a wallet-safety reminder",
-          "detail": "SlowMist flagged fake Ledger firmware-update phishing pages (PANews); a quick 'never update from a link' tip is timely."
+          "detail": "SecuX's wallet app pushed a phishing notification during its outage, and US prosecutors seized 241 crypto scam domains (PANews); a 'check before you click' tip is timely."
         }
       ]
     },
     "seo": {
       "stance": "Prepare",
-      "strategy": "Publish and refresh pages around questions today's news is likely to drive, mainly mainstream access to Bitcoin, the Fed meeting and stablecoin payments, without chasing a rally that is not happening.",
+      "strategy": "Publish and refresh pages around questions this week's news is likely to drive, mainly mainstream access to Bitcoin, the Fed meeting and tokenization, without chasing a rally that is not happening.",
       "actions": [
         {
-          "what": "Publish 'Can you buy Bitcoin on Schwab?'",
-          "detail": "Likely to draw searches because Schwab says all its clients can now buy Bitcoin directly (PANews); compare it plainly with buying on a crypto exchange."
+          "what": "Refresh the 'Bitcoin price today' page",
+          "detail": "Likely to draw searches because price is sitting right on its 50-day average near $81,700 after a 2.5% weekly dip; add the $81,411 and $86,603 reference levels in plain words."
         },
         {
-          "what": "Refresh 'how Fed decisions affect Bitcoin'",
-          "detail": "Likely to draw searches ahead of the 27 October Fed decision, with the Bank of Japan also signalling more rate rises (PANews)."
+          "what": "Publish a Fed meeting explainer",
+          "detail": "Likely to draw searches because the Fed decides on 27 October and has entered its quiet period before the meeting (PANews); explain how rate decisions tend to touch crypto."
         },
         {
-          "what": "Publish 'why are Strategy and miner shares falling?'",
-          "detail": "Likely to draw searches because Strategy, MARA and Riot shares each fell around 10% on 16 October and MSCI warned Strategy may be removed from a global index (PANews)."
+          "what": "Publish 'Can I buy Bitcoin through my bank or broker?'",
+          "detail": "Likely to draw searches because Schwab opened Bitcoin buying to all clients and Bulgaria's Postbank plans crypto in its app (PANews); compare that with using an exchange."
         },
         {
-          "what": "Update the 'Bitcoin price today' page",
-          "detail": "Add the plain reference levels: $80,901 (30-day low), $81,344 (50-day average) and $86,603 (30-day high)."
+          "what": "Update the quantum-risk FAQ",
+          "detail": "Likely to draw searches because nine crypto organizations formed a quantum alliance and Arthur Hayes called the risk manageable (PANews); keep the page factual and calm."
         }
       ]
     },
     "paid": {
       "stance": "Increase",
-      "strategy": "Follow the model's SCALE UP posture in steps: rising spend on active-trader audiences, steady spend on stablecoin and new-user audiences, and part of the budget kept flexible because price is resting right on its 50-day average.",
+      "strategy": "Follow the scale-up call in steps: raise acquisition spend toward active-trader audiences while keeping part of the budget flexible, since no rally window is open and price sits on its 50-day line.",
       "actions": [
         {
-          "what": "Raise active-trader spend in steps",
-          "detail": "Add budget gradually this week and keep a portion ready to pause if price closes below $80,901 (the 30-day low), under 1% beneath today's $81,569."
+          "what": "Step up active-trader campaigns",
+          "detail": "Raise spend on active-trader audiences gradually this week, in line with the SCALE UP budget action and a long-term trend that leans up."
         },
         {
-          "what": "Keep stablecoin and new-user spend steady",
-          "detail": "The short-term mood is tired (Fear & Greed 55, about $487M out of Bitcoin funds in a day), so hold these audiences at normal levels."
+          "what": "Keep stablecoin and new-user spend at normal",
+          "detail": "Leave stablecoin-focused and first-time-user campaigns at their usual level; the model favours trader channels in this phase."
         },
         {
-          "what": "Have rally creatives ready, not live",
-          "detail": "No rally window is open (Bitcoin -1.7% over 7 days), so keep growth creatives ready to launch within days if one opens."
+          "what": "Hold a flexible slice in reserve",
+          "detail": "Keep part of the new budget ready to pause if price closes below $81,411 (the 50-day average), ahead of the 27 October Fed decision."
+        },
+        {
+          "what": "Have rally creatives ready",
+          "detail": "Prepare ads that could go live within days if the rally signal turns on (price above about $90,475)."
         }
       ]
     },
     "research": {
       "stance": "Monitor",
-      "strategy": "Tell other teams that no rally or drop window is open, price is resting right on its 50-day average, news gave the long-term view a small lift, and the Fed decision on 27 October is the main event.",
+      "strategy": "Tell other teams which signals matter this week: the rally watch is quiet, price is testing its 50-day line, and the Fed meets on 27 October.",
       "actions": [
         {
           "what": "Share rally-watch status",
-          "detail": "Quiet: a rally window opens on a close above about $89,627 and a drop signal on a close below about $76,349."
+          "detail": "Rally watch is quiet (7-day change -2.5%); a rally window opens above about $90,475 and a drop window below about $77,071."
         },
         {
-          "what": "Share the near-term levels",
-          "detail": "A close above $86,603 (30-day high) would turn the short term clearly up; a close below $80,901 (30-day low) would turn it down."
+          "what": "Flag the scenario levels",
+          "detail": "A close above $86,603 (30-day high) turns the short term clearly up; a close below $81,411 (50-day average) turns it down."
         },
         {
-          "what": "Flag the news effect",
-          "detail": "Schwab opening Bitcoin to all clients lifted the long-term score by 0.075; France's proposed tax on swaps into stablecoins and the Bank of Japan's rate signal were small minuses. No label change."
+          "what": "Track the 27 October Fed decision",
+          "detail": "Note the date for all teams and send a same-day read of whether the result changes the posture."
         },
         {
-          "what": "Flag the macro calendar",
-          "detail": "Fed decision on 27 October, with US 10-year borrowing costs near 5.1%; a rate rise would weaken the monthly lean."
+          "what": "Watch the Strategy index decision",
+          "detail": "MSCI warned it may remove Strategy from its global index (PANews); follow up when MSCI confirms, as it touches corporate Bitcoin buying."
         }
       ]
     }
