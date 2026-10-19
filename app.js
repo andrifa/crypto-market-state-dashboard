@@ -125,10 +125,19 @@ const CATALOG = [
 ];
 
 async function main() {
-  let d, hist, bt = null;
+  let d, hist, bt = null, idx = null;
+  const want = new URLSearchParams(location.search).get("date");
+  try { idx = await fetch("data/archive/index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)); } catch (e) { /* archive is optional */ }
+  let file = "data/latest.json", viewing = null;
+  if (want && idx && idx.dates.length) {
+    const before = idx.dates.filter((x) => x <= want);
+    viewing = before.length ? before[before.length - 1] : idx.dates[0];   // closest day on or before, else the earliest saved
+    if (viewing === idx.dates[idx.dates.length - 1]) viewing = null;   // newest saved day = today's page
+    else file = `data/archive/${viewing}.json`;
+  }
   try {
     const [a, b] = await Promise.all([
-      fetch("data/latest.json", { cache: "no-store" }).then((r) => r.json()),
+      fetch(file, { cache: "no-store" }).then((r) => { if (!r.ok) throw new Error(`${file}: ${r.status}`); return r.json(); }),
       fetch("data/history.csv", { cache: "no-store" }).then((r) => r.text()),
     ]);
     d = a; hist = parseCSV(b);
@@ -136,13 +145,15 @@ async function main() {
     document.getElementById("app").innerHTML = `<p class="err">Failed to load data: ${e.message}</p>`;
     return;
   }
+  if (viewing) { AS_OF = Date.parse(d.date + "T12:00:00Z"); hist = hist.filter((r) => r.date <= d.date); }
   try { bt = await fetch("data/backtest.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) { /* optional */ }
+  renderTimebar(d, idx, viewing, want);
 
   const k = REG_CLASS[d.regime] || "mid";
   document.getElementById("brandDot").style.background =
     k === "up" ? "var(--teal-deep)" : k === "down" ? "var(--bear)" : "var(--purple)";
   document.getElementById("stamp").textContent =
-    `${fmtDate(d.date)} · updated ${(d.updated_utc || "").replace("T", " ").replace("Z", " UTC")}`;
+    viewing ? `${fmtDate(d.date)} · saved snapshot` : `${fmtDate(d.date)} · updated ${(d.updated_utc || "").replace("T", " ").replace("Z", " UTC")}`;
 
   renderHero(d, k);
   renderOutlook(d, k, bt);
@@ -174,6 +185,29 @@ function parseCSV(txt) {
 }
 
 /* ------------------------------- hero ---------------------------- */
+/* -------------------------- time travel: open any saved day -------------------------------------- */
+function renderTimebar(d, idx, viewing, want) {
+  const box = document.getElementById("timebar");
+  if (!idx || !idx.dates.length) { box.remove(); return; }
+  const first = idx.dates[0], latest = idx.dates[idx.dates.length - 1];
+  const go = (date) => { location.search = !date || date >= latest ? "" : `?date=${date}`; };
+  const input = el("input", { type: "date", id: "pickDate", value: d.date, min: first, max: latest });
+  input.addEventListener("change", () => { if (input.value) go(input.value); });
+  box.append(el("label", { for: "pickDate", text: "View a past day:" }), input);
+  if (viewing) {
+    const back = el("button", { class: "rng" }, "Back to latest");
+    back.addEventListener("click", () => go(null));
+    box.append(back);
+  }
+  box.append(el("span", { class: "count", text: `${idx.dates.length} saved days (${fmtDate(first)} – ${fmtDate(latest)})` }));
+  if (viewing) {
+    const note = want && want !== viewing
+      ? ` There is no saved snapshot for ${fmtDate(want)}, so this is the closest ${want < first ? "later" : "earlier"} day.` : "";
+    box.append(el("p", { class: "timebar-banner", html:
+      `You are looking at the saved page from <b>${fmtDate(d.date)}</b>, not today's data. The price chart and score history stop at that day.${note} The backtest scorecard further down is always the current one.` }));
+  }
+}
+
 function renderHero(d, k) {
   const hero = document.getElementById("hero");
   hero.textContent = "";
@@ -293,7 +327,7 @@ function renderHeat(hist) {
     let i = seq.length - 1;
     while (i > 0 && seq[i - 1].k === curK) i--;
     const n = seq.length - i;
-    let msg = `<b>${tab.name}${tab.sub ? " (" + tab.sub + ")" : ""}</b> is <b>${say(curK)}</b> today, and has been for ${n} day${n === 1 ? "" : "s"} (since ${fmtDate(seq[i].d)}).`;
+    let msg = `<b>${tab.name}${tab.sub ? " (" + tab.sub + ")" : ""}</b> is <b>${say(curK)}</b> ${AS_OF ? "on this day, and had been" : "today, and has been"} for ${n} day${n === 1 ? "" : "s"} (since ${fmtDate(seq[i].d)}).`;
     if (i > 0) {
       const prevK = seq[i - 1].k;
       let j = i - 1;
@@ -372,7 +406,7 @@ function renderHeat(hist) {
     lg.append(el("span", {}, el("i", { style: `--c:${b.c};--o:${b.o}` }), b.word)));
   lg.append(el("span", {}, el("i", {}), isLabel ? "No data" : "No data yet"));
   document.getElementById("heatNote").textContent = heatView === "cal"
-    ? "Each square is one day; the outlined square is today. Hover a day for its value. These are the model's own scores, so today's news adjustment is not in this history."
+    ? `Each square is one day; the outlined square is ${AS_OF ? "the day you are viewing" : "today"}. Hover a day for its value. These are the model's own scores, so news adjustments are not in this history.`
     : "Each square is one month, coloured by its average. Hover for how many days were bullish, neutral or bearish. These are the model's own scores, so news adjustments are not in this history.";
 }
 
@@ -759,9 +793,10 @@ function whyToggle(label, body) {
 const HALVINGS = ["2016-07-09", "2020-05-11", "2024-04-20"]; // 2012-11-28 predates our price history
 const MS_DAY = 86400000;
 const LAST_HALVING = Date.parse("2024-04-20T00:00:00Z");
+let AS_OF = null;   // set when viewing a saved day, so 'now' means that day
 const BLOCKS_PER_DAY = 144; // ~10-minute block target
 function halvingProgress() {
-  const daysSince = (Date.now() - LAST_HALVING) / MS_DAY;
+  const daysSince = ((AS_OF ?? Date.now()) - LAST_HALVING) / MS_DAY;
   const blocksSince = daysSince * BLOCKS_PER_DAY;
   const pct = clamp((blocksSince / 210000) * 100, 0, 99.9);
   const blocksLeft = Math.max(0, Math.round(210000 - blocksSince));
