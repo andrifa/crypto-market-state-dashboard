@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13",
+  "generated": "2026-10-19",
   "gtv_period": [
     "2024-01-01",
     "2026-08-31"
@@ -140,6 +140,106 @@
         "first_half_pct": -8,
         "second_half_pct": -14,
         "n_second_half": 5
+      }
+    }
+  },
+  "new_users": {
+    "period": [
+      "2024-01-01",
+      "2026-08-31"
+    ],
+    "rally": {
+      "episodes": 21,
+      "signups": {
+        "d3": {
+          "avg_pct": 5,
+          "typical_pct": 1,
+          "luck_p": 0.416
+        },
+        "d7": {
+          "avg_pct": 6,
+          "typical_pct": 1,
+          "luck_p": 0.437
+        },
+        "d14": {
+          "avg_pct": 14,
+          "typical_pct": 2,
+          "luck_p": 0.07
+        },
+        "d28": {
+          "avg_pct": 19,
+          "typical_pct": 2,
+          "luck_p": 0.034
+        }
+      },
+      "first_deposits": {
+        "d3": {
+          "avg_pct": 8,
+          "typical_pct": 1,
+          "luck_p": 0.19
+        },
+        "d7": {
+          "avg_pct": 9,
+          "typical_pct": 2,
+          "luck_p": 0.301
+        },
+        "d14": {
+          "avg_pct": 24,
+          "typical_pct": 2,
+          "luck_p": 0.003
+        },
+        "d28": {
+          "avg_pct": 27,
+          "typical_pct": 0,
+          "luck_p": 0.004
+        }
+      }
+    },
+    "drop": {
+      "episodes": 16,
+      "signups": {
+        "d3": {
+          "avg_pct": -5,
+          "typical_pct": 1,
+          "luck_p": 0.025
+        },
+        "d7": {
+          "avg_pct": -10,
+          "typical_pct": 1,
+          "luck_p": 0.0
+        },
+        "d14": {
+          "avg_pct": -16,
+          "typical_pct": 2,
+          "luck_p": 0.0
+        },
+        "d28": {
+          "avg_pct": -16,
+          "typical_pct": 2,
+          "luck_p": 0.0
+        }
+      },
+      "first_deposits": {
+        "d3": {
+          "avg_pct": -3,
+          "typical_pct": 1,
+          "luck_p": 0.066
+        },
+        "d7": {
+          "avg_pct": -6,
+          "typical_pct": 2,
+          "luck_p": 0.026
+        },
+        "d14": {
+          "avg_pct": -15,
+          "typical_pct": 2,
+          "luck_p": 0.0
+        },
+        "d28": {
+          "avg_pct": -14,
+          "typical_pct": 0,
+          "luck_p": 0.0
+        }
       }
     }
   }

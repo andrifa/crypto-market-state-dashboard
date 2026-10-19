@@ -582,6 +582,10 @@ function rallyWatchBlock(d) {
   const pct = (v, dp = 1) => `${v > 0 ? "+" : "−"}${Math.abs(v * 100).toFixed(dp)}%`;
   const line = Math.round(rw.threshold * 100), win = rw.window_days;
   const share = Math.round((R.d0.avg_pct / R.d14.avg_pct) * 100 / 5) * 5;
+  const NU = st.new_users;
+  const sgn = (v) => `${v > 0 ? "+" : "−"}${Math.abs(v)}%`;
+  const upSentence = (NU && NU.rally) ? `New users arrive later than trading value does. Two weeks after a rally signal, new sign-ups were on average <b>${sgn(NU.rally.signups.d14.avg_pct)}</b> and first-time depositors <b>${sgn(NU.rally.first_deposits.d14.avg_pct)}</b> above normal, and after four weeks <b>${sgn(NU.rally.signups.d28.avg_pct)}</b> and <b>${sgn(NU.rally.first_deposits.d28.avg_pct)}</b> (about ${NU.rally.first_deposits.d28.typical_pct ? sgn(NU.rally.first_deposits.d28.typical_pct) : "0%"} on a random day). In the first week they moved only ${sgn(NU.rally.signups.d7.avg_pct)} and ${sgn(NU.rally.first_deposits.d7.avg_pct)}, so sign-ups are not an early warning. Use the signal to start acquisition messages early instead.` : "";
+  const downSentence = (NU && NU.drop) ? `New users also slow down: two weeks after a drop signal, sign-ups were on average <b>${sgn(NU.drop.signups.d14.avg_pct)}</b> and first-time depositors <b>${sgn(NU.drop.first_deposits.d14.avg_pct)}</b> below normal.` : "";
   const paras = [];
   let pillClass = "mid", pillText = "No signal";
 
@@ -590,6 +594,7 @@ function rallyWatchBlock(d) {
     pillClass = "up"; pillText = `Rally signal · day ${n} of ${win}`;
     paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days, past the +${line}% line. It first crossed that line on ${fmtDate(rw.episode.date)}, so we are on <b>day ${n} of a ${win}-day window</b>.`);
     paras.push(`Since 2024 this has happened ${R.episodes} times (about ${R.separate} separate rallies). Each time, non-stablecoin trading value kept rising afterwards: on average <b>${R.d7.avg_pct}%</b> above its normal level after one week and <b>${R.d14.avg_pct}%</b> after two weeks, against about ${R.d14.typical_pct}% on a random day. Only about ${share}% of that rise had happened on the day the signal fired, so most of it comes after. Two weeks later, trading value was more than 10% above normal in ${R.d14.above_10pct_share}% of cases (${R.d14.above_10pct_share_random}% on a random day).`);
+    if (upSentence) paras.push(upSentence);
     paras.push(n <= 7
       ? `<b>What to do:</b> this is the window to act. Campaigns that go live in the next few days can reach users while activity is still building. Lead with active-trader and non-stablecoin channels. Plan stablecoin offers for about a month from now, because stablecoin trading value tended to follow later (about ${S.d28.avg_pct}% above normal after four weeks).`
       : `<b>What to do:</b> the rise usually levels off around two weeks in, so only launch what can go live within a few days. Spend the rest of the effort on a follow-up for stablecoin users, whose trading value tended to rise later (about ${S.d28.avg_pct}% above normal after four weeks).`);
@@ -598,11 +603,13 @@ function rallyWatchBlock(d) {
     pillClass = "down"; pillText = `Drop signal · day ${n} of ${win}`;
     paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days, past the −${line}% line. It first crossed that line on ${fmtDate(rw.episode.date)}, so we are on <b>day ${n} of a ${win}-day window</b>.`);
     paras.push(`Since 2024 this has happened ${D.episodes} times. Two weeks later, non-stablecoin trading value was on average about <b>${Math.abs(D.d14.avg_pct)}% below</b> its normal level, while a random day is about ${D.d14.typical_pct}% above. In the most recent months this did not repeat (${D.d14.second_half_pct}% from ${D.d14.n_second_half} cases), so treat it as a caution, not a rule.`);
+    if (downSentence) paras.push(downSentence);
     paras.push(`<b>What to do:</b> hold promotions aimed at active traders for now. Lead with safety and trust messages and stablecoin products, and keep some budget in reserve so you can move fast when the next rally signal fires.`);
   } else {
     paras.push(`Bitcoin is <b>${pct(rw.ret_7d)}</b> over the last 7 days. A rally signal needs +${line}% (a close above <b>${fmtUSD(rw.needs_up)}</b>), and a drop signal needs −${line}% (a close below <b>${fmtUSD(rw.needs_down)}</b>).` +
       (rw.last_rally ? ` The last rally signal was on ${fmtDate(rw.last_rally.date)}, ${rw.last_rally.days_ago} days ago, and its ${win}-day window has ended.` : ""));
     paras.push(`When a rally signal fired in the past, non-stablecoin trading value kept rising for about two weeks, to on average <b>${R.d14.avg_pct}%</b> above its normal level (about ${R.d14.typical_pct}% on a random day). Only about ${share}% of that rise had happened when the signal fired.`);
+    if (upSentence) paras.push(upSentence);
     paras.push(`<b>What to do:</b> keep normal spend, and use quiet days to prepare. Because most of the rise comes after the signal and lasts about two weeks, have a campaign ready that can go live within 2–3 days of a signal.`);
   }
   const caveat = rw.state === "drop" ? "" :
@@ -612,7 +619,7 @@ function rallyWatchBlock(d) {
     el("div", { class: "rw-head" }, el("span", { class: "rw-title", text: "Rally watch" }), el("span", { class: "scn-tag " + pillClass, text: pillText })));
   paras.forEach((t) => box.append(el("p", { html: t })));
   if (caveat) box.append(el("p", { class: "rw-caveat", text: caveat }));
-  box.append(el("p", { class: "chart-note", text: `"Normal level" means the average of the 4 weeks before the signal. Based on Reku's daily trading value since ${fmtDate(st.gtv_period[0])}; amounts are not shown. Signal = Bitcoin up or down more than ${line}% in 7 days.` }));
+  box.append(el("p", { class: "chart-note", text: `"Normal level" means the average of the 4 weeks before the signal. Based on Reku's daily trading value${NU ? ", sign-ups and first deposits" : ""} since ${fmtDate(st.gtv_period[0])}; only % changes are shown, never amounts or user counts. Signal = Bitcoin up or down more than ${line}% in 7 days.` }));
   return box;
 }
 

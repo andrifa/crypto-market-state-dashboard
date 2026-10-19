@@ -7,7 +7,11 @@ given on the command line and writes ONLY ratios to data/gtv_signal.json --
 no rupiah amounts, no raw rows -- because the dashboard is public. The CSV
 itself is never copied into the repo.
 
-    python3 backend/gtv_study.py "/path/to/Daily GTV ....csv"
+    python3 backend/gtv_study.py "/path/to/Daily GTV ....csv" ["/path/to/Daily Registered & Deposit.xlsx"]
+
+The optional second file (daily signups / first deposits) adds `new_users`: how many
+new accounts and first-time depositors follow the same rally/drop signals. Counts
+only, shown as % vs normal.
 
 Method (same as the original study, kept simple on purpose):
   * GTV is divided by its own weekday median (removes the weekday pattern) and
@@ -65,7 +69,54 @@ def declustered(mask: pd.Series, gap: int = WINDOW) -> pd.DatetimeIndex:
     return pd.DatetimeIndex(out)
 
 
-def main(path: str) -> int:
+USER_HORIZONS = (3, 7, 14, 28)
+USER_COLS = {"signups": "new_registered_users", "first_deposits": "new_deposit_users"}
+
+
+def user_study(g: pd.DataFrame, path: str, ret7_full: pd.Series) -> dict:
+    """Same event study as the GTV one, on daily signups and first-time depositors.
+    Signups are capped at 3x their 28-day median so a one-off spike (e.g. a campaign
+    or bot wave) doesn't drive the average. Only days that also have GTV are used."""
+    u = pd.read_excel(path, sheet_name="Result").iloc[:, :8]
+    u["date"] = pd.to_datetime(u["date"])
+    u = u.set_index("date").sort_index()
+    idx = u.index.intersection(g.index)
+    d = u.loc[idx, list(USER_COLS.values())].copy()
+    s = d["new_registered_users"]
+    d["new_registered_users"] = np.minimum(s, 3 * s.rolling(28, min_periods=7).median())
+    adj = d / d.groupby(d.index.dayofweek).transform("median")
+    sm = adj.rolling(7).mean()
+    base = sm.shift(1).rolling(28).mean()
+    ret7 = ret7_full.reindex(idx)
+    valid = pd.Series(True, index=idx)
+    valid.iloc[:40] = False
+    valid.iloc[-30:] = False
+    rng = np.random.default_rng(3)
+    out: dict = {"period": [str(idx.min().date()), str(idx.max().date())]}
+    for kind, mask, lower in (("rally", ret7 > THRESHOLD, False), ("drop", ret7 < -THRESHOLD, True)):
+        ev = declustered(mask & valid)
+        res = {"episodes": int(len(ev))}
+        for name, col in USER_COLS.items():
+            row = {}
+            for h in USER_HORIZONS:
+                o = sm[col].shift(-h) / base[col] - 1
+                v = o.reindex(ev).dropna()
+                pool = o[valid].dropna()
+                sims = []
+                for _ in range(1000):
+                    pick = rng.choice(pool.index, size=len(v) * 3, replace=False)
+                    pick = declustered(pd.Series(True, index=sorted(pick)))[: len(v)]
+                    sims.append(pool.reindex(pick).mean())
+                sims = np.array(sims)
+                p = float((sims <= v.mean()).mean() if lower else (sims >= v.mean()).mean())
+                row[f"d{h}"] = {"avg_pct": round(float(v.mean()) * 100), "typical_pct": round(float(pool.mean()) * 100),
+                                "luck_p": round(p, 3)}
+            res[name] = row
+        out[kind] = res
+    return out
+
+
+def main(path: str, users_path: str | None = None) -> int:
     g = load_gtv(path)
     close = build_frame(refresh=False)["close"].reindex(g.index)
     ret7 = close.pct_change(7)
@@ -122,6 +173,8 @@ def main(path: str) -> int:
                   "stable": study(ret7 > THRESHOLD, "stable", False)},
         "drop": {"non_stable": study(ret7 < -THRESHOLD, "non_stable", True)},
     }
+    if users_path:
+        out["new_users"] = user_study(g, users_path, ret7_full=build_frame(refresh=False)["close"].pct_change(7))
     OUT.write_text(json.dumps(out, indent=2))
     r = out["rally"]["non_stable"]
     print(f"rally episodes {r['episodes']} (~{r['separate']} separate): "
@@ -133,6 +186,6 @@ def main(path: str) -> int:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3):
         raise SystemExit(__doc__)
-    sys.exit(main(sys.argv[1]))
+    sys.exit(main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None))
