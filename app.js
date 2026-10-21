@@ -166,6 +166,8 @@ async function main() {
   renderSignals(d);
   renderScorecard(bt);
   renderMethodology();
+  renderGlossary(d);
+  buildNav();
   document.getElementById("footer").textContent = d.disclaimer || "";
 
   renderHalvingProgress();
@@ -453,26 +455,79 @@ function renderOutlook(d, k, bt) {
 function renderAnalysis(d) {
   const box = document.getElementById("analysis");
   box.textContent = "";
-  if (d.analysis && d.analysis.length) {
-    // richer multi-paragraph narrative (routine-written when available, a
-    // real-numbers template otherwise) -- prefer this over the short bullets
-    d.analysis.forEach((p) => box.append(el("p", { html: p })));
-  } else if (d.reasons && d.reasons.length) {
-    const ul = el("ul");
-    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
-    box.append(ul);
-  }
-  if (d.watch) box.append(el("div", { class: "takeaway" }, el("b", { text: "Key takeaway" }), d.watch));
 
+  // 1. the one-line takeaway and the prices to watch come first, so they are not missed
+  if (d.watch) box.append(el("div", { class: "takeaway" }, el("b", { text: "Key takeaway" }), d.watch));
   const c = d.context || {}, price = d.price_btc;
   const levels = [];
   if (price != null && c.drawdown_from_ath != null) levels.push([fmtUSD(price / (1 + c.drawdown_from_ath)), "all-time high"]);
   if (price != null && c.mayer_multiple) levels.push([fmtUSD(price / c.mayer_multiple), "200-day moving average"]);
   if (price != null && c.ma_200w_multiple) levels.push([fmtUSD(price / c.ma_200w_multiple), "200-week moving average"]);
-  levels.push([fmtUSD(price), "spot price — today"]);
+  levels.push([fmtUSD(price), "spot price — " + (AS_OF ? "that day" : "today")]);
+  box.append(el("p", { class: "levels-head", text: "Prices to watch" }));
   const lv = el("div", { class: "levels" });
   levels.forEach(([v, lab]) => lv.append(el("div", { class: "level" }, el("b", { text: v }), el("span", { text: lab }))));
   box.append(lv);
+
+  // 2. one labelled row per timeframe (the daily write-up is always short, medium, long in that order)
+  const TF = [["Short term", "about 1 week"], ["Medium term", "about 1 month"], ["Long term", "3–6 months"]];
+  if (d.analysis && d.analysis.length) {
+    const labelled = d.analysis.length === TF.length;
+    d.analysis.forEach((p, i) => {
+      if (!labelled) { box.append(el("p", { html: p })); return; }
+      box.append(el("div", { class: "drv" },
+        el("div", { class: "drv-label" }, el("b", { text: TF[i][0] }), el("span", { text: TF[i][1] })),
+        el("p", { html: p })));
+    });
+    if (labelled) box.append(el("p", { class: "drv-foot", html: 'Each timeframe always looks at the same indicators — see the <a href="#sec-glossary">glossary</a> for which ones and how to read them.' }));
+  } else if (d.reasons && d.reasons.length) {
+    const ul = el("ul");
+    d.reasons.forEach((r) => ul.append(el("li", { text: r })));
+    box.append(ul);
+  }
+}
+
+
+/* -------------------------- section navigation -------------------------------------------------- */
+function buildNav() {
+  const nav = document.getElementById("sidenav");
+  if (!nav) return;
+  nav.textContent = "";
+  const bar = document.querySelector(".appbar");
+  const setBar = () => document.documentElement.style.setProperty("--bar-h", bar.offsetHeight + "px");
+  setBar();
+  if (window.ResizeObserver) new ResizeObserver(setBar).observe(bar);
+
+  const panels = [...document.querySelectorAll(".panel[data-nav]")];
+  const links = new Map();
+  let appendix = false;
+  panels.forEach((p) => {
+    if (p.dataset.group === "appendix" && !appendix) { appendix = true; nav.append(el("span", { class: "sep", text: "Appendix" })); }
+    const a = el("a", { href: "#" + p.id, text: p.dataset.nav });
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      p.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      history.replaceState(null, "", location.search + "#" + p.id);
+    });
+    links.set(p, a);
+    nav.append(a);
+  });
+
+  if (!window.IntersectionObserver) return;
+  const setOn = (p) => {
+    links.forEach((a, q) => a.classList.toggle("on", q === p));
+    const on = links.get(p);
+    if (on && nav.scrollWidth > nav.clientWidth && getComputedStyle(nav).flexDirection === "row") {
+      nav.scrollTo({ left: on.offsetLeft - 24, behavior: "smooth" });
+    }
+  };
+  const seen = new Set();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => (e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)));
+    const first = panels.find((p) => seen.has(p));
+    if (first) setOn(first);
+  }, { rootMargin: "-25% 0px -60% 0px" });
+  panels.forEach((p) => io.observe(p));
 }
 
 /* -------------------------- triggers (derived from real numbers) -------------------- */

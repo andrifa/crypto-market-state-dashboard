@@ -207,6 +207,65 @@
   .level b{font-family:"IBM Plex Mono"; font-size:13.5px; color:var(--ink); display:block;}
   .level span{color:var(--muted); font-size:11px;}
 
+
+  /* section navigation: right-hand rail on wide screens, sticky chip strip on narrow ones */
+  .panel[id]{scroll-margin-top:calc(var(--bar-h,48px) + 56px);}
+  .sidenav{display:flex; gap:6px; overflow-x:auto; padding:8px 20px; position:sticky;
+    top:calc(env(safe-area-inset-top,0px) + var(--bar-h,48px)); z-index:15;
+    background:color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair); scrollbar-width:none;}
+  .sidenav::-webkit-scrollbar{display:none;}
+  .sidenav a{flex:0 0 auto; font-size:12.5px; color:var(--ink-soft); text-decoration:none; padding:5px 11px;
+    border-radius:999px; background:var(--surface-2); white-space:nowrap;}
+  .sidenav a.on{background:var(--purple); color:#fff;}
+  .sidenav .sep{flex:0 0 auto; font:600 10px "IBM Plex Mono"; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--muted); align-self:center; padding:0 2px 0 8px;}
+  @media (min-width:1380px){
+    .sidenav{position:fixed; top:calc(var(--bar-h,48px) + 28px); right:max(16px, calc((100vw - 1000px) / 2 - 190px));
+      width:168px; flex-direction:column; gap:2px; overflow:visible; padding:0; background:none;
+      backdrop-filter:none; border:0;}
+    .sidenav a{border-radius:8px; background:none; padding:6px 10px; border-left:2px solid var(--hair);
+      border-radius:0 8px 8px 0; white-space:normal;}
+    .sidenav a:hover{color:var(--ink);}
+    .sidenav a.on{background:var(--purple-wash); color:var(--purple); border-left-color:var(--purple); font-weight:600;}
+    .sidenav .sep{padding:12px 10px 4px;}
+  }
+
+  /* "what's driving this": takeaway + price levels first, then one row per timeframe */
+  .analysis .takeaway{margin:0 0 12px; font-size:14.5px;}
+  .analysis .levels-head{font:600 11px "IBM Plex Mono"; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:14px 0 0;}
+  .analysis .levels{margin:8px 0 18px;}
+  .drv{display:grid; grid-template-columns:132px 1fr; gap:6px 18px; padding:14px 0; border-top:1px solid var(--hair);}
+  .drv-label b{display:block; font-family:"Space Grotesk"; font-size:14.5px; color:var(--ink);}
+  .drv-label span{font-size:11.5px; color:var(--muted);}
+  .drv p{margin:0; font-size:14px; line-height:1.6; color:var(--ink-soft);}
+  .drv-foot{font-size:12px; color:var(--muted); margin:2px 0 0;}
+  .drv-foot a{color:var(--purple-2);}
+  @media (max-width:640px){ .drv{grid-template-columns:1fr;} }
+
+  /* glossary */
+  .gl-note{font-size:13.5px; color:var(--ink-soft); margin:0 0 12px; max-width:68ch;}
+  .gl-map{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:0 0 16px;}
+  .gl-map div{background:var(--surface-2); border-radius:12px; padding:12px 14px;}
+  .gl-map b{display:block; font-family:"Space Grotesk"; font-size:14px; margin-bottom:2px;}
+  .gl-map small{display:block; color:var(--muted); font-size:11.5px; margin-bottom:6px;}
+  .gl-map ul{margin:0; padding-left:16px; font-size:13px; color:var(--ink-soft);}
+  .gl-search{width:100%; max-width:340px; font:inherit; font-size:13.5px; padding:8px 12px; border:1px solid var(--hair-strong);
+    border-radius:10px; background:var(--surface); color:var(--ink); margin:0 0 10px;}
+  .gl-search:focus-visible{outline:2px solid var(--purple-2); outline-offset:1px;}
+  .gl-group{margin:0 0 6px; border-top:1px solid var(--hair);}
+  .gl-group>summary{cursor:pointer; padding:12px 0; font-family:"Space Grotesk"; font-weight:600; font-size:15px; list-style:none;}
+  .gl-group>summary::-webkit-details-marker{display:none;}
+  .gl-group>summary::after{content:" ▸"; color:var(--muted);}
+  .gl-group[open]>summary::after{content:" ▾";}
+  .gl-group>summary small{font:400 12px Inter; color:var(--muted); margin-left:8px;}
+  .gl-item{padding:12px 14px; margin:0 0 10px; background:var(--surface-2); border-radius:12px;}
+  .gl-item h5{margin:0 0 4px; font-family:"Space Grotesk"; font-size:14.5px;}
+  .gl-item p{margin:4px 0 0; font-size:13.5px; line-height:1.55; color:var(--ink-soft);}
+  .gl-item .gl-k{font:600 10.5px "IBM Plex Mono"; letter-spacing:.08em; text-transform:uppercase; color:var(--purple-2);}
+  .gl-today{margin-top:8px !important; padding-top:8px; border-top:1px dashed var(--hair-strong); color:var(--ink) !important;}
+  @media (max-width:760px){ .gl-map{grid-template-columns:1fr;} }
+
   /* halving / cross chart */
   .chart-controls{display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;}
   .rng{font-family:"IBM Plex Mono"; font-size:11.5px; font-weight:600; color:var(--ink-soft);
@@ -325,13 +384,15 @@
   <span class="stamp" id="stamp">Loading…</span>
 </div></div>
 
+<nav class="sidenav" id="sidenav" aria-label="Jump to a section"></nav>
+
 <div class="wrap" id="app">
 
   <div class="timebar" id="timebar"></div>
 
-  <div class="panel" id="hero"></div>
+  <div class="panel" id="hero" data-nav="Summary"></div>
 
-  <div class="panel">
+  <div class="panel" id="sec-outlook" data-nav="Outlook & calendar">
     <p class="kicker">Directional outlook — short, medium &amp; long term</p>
     <div class="heat" id="heat">
       <div class="heat-top">
@@ -350,7 +411,7 @@
     <div id="outlook"></div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="sec-price" data-nav="BTC price chart">
     <p class="kicker">BTC price history — halving cycles &amp; the 50/200-day cross</p>
     <div class="halving-progress" id="halvingProgress"></div>
     <div class="chart-controls" id="chartRange"></div>
@@ -369,42 +430,48 @@
     <p class="chart-note">Purely historical — no projected path. This shows trend structure only; the read for what's next is in "Directional outlook" above.</p>
   </div>
 
-  <div class="panel analysis">
+  <div class="panel analysis" id="sec-driving" data-nav="What's driving this">
     <p class="kicker">What's driving this</p>
     <div id="analysis"></div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="sec-scenarios" data-nav="Scenarios & levels">
     <p class="kicker">Scenarios &amp; key levels</p>
     <div id="triggers"></div>
   </div>
 
-  <div class="panel" id="news-panel">
+  <div class="panel" id="news-panel" data-nav="News impact">
     <p class="kicker">News impact on the score</p>
     <div id="news"></div>
   </div>
 
-  <div class="panel" id="narratives-panel">
+  <div class="panel" id="narratives-panel" data-nav="Narratives & altcoins">
     <p class="kicker">Narratives &amp; altcoins</p>
     <div id="narratives"></div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="sec-marketing" data-nav="Implications for marketing">
     <p class="kicker">Implications for marketing</p>
     <div class="teamgrid" id="teams"></div>
   </div>
 
-  <div class="panel">
+  <div class="panel" id="sec-glossary" data-nav="Glossary" data-group="appendix">
+    <p class="kicker">Glossary — how to read the indicators</p>
+    <div id="glossary"></div>
+  </div>
+
+  <div class="panel" id="sec-signals" data-nav="Supporting signals" data-group="appendix">
     <p class="kicker">Supporting signals — full 35-indicator catalog</p>
     <div id="grid"></div>
   </div>
 
-  <div class="panel" id="scorecard"></div>
-  <div class="panel" id="methodology"></div>
+  <div class="panel" id="scorecard" data-nav="Backtest accuracy" data-group="appendix"></div>
+  <div class="panel" id="methodology" data-nav="How it's built" data-group="appendix"></div>
 
   <footer id="footer"></footer>
 </div>
 <noscript><div class="wrap">This page needs JavaScript to display the data.</div></noscript>
 <script src="app.js"></script>
+<script src="glossary.js"></script>
 </body>
 </html>
