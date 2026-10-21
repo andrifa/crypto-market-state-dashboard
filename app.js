@@ -257,10 +257,10 @@ function historicalNote(bt, regime, conviction, horizonDays, horizonLabel) {
 
 /* -------------------------- score history: calendar + by-month views --------------------------------- */
 const HEAT_TABS = [
+  { key: "label", name: "Summary", sub: "headline label" },
   { key: "sentiment_score", name: "Short-term", sub: "mood" },
   { key: "momentum_score", name: "Medium-term", sub: "momentum" },
   { key: "trend_score", name: "Long-term", sub: "trend" },
-  { key: "label", name: "Headline label", sub: "" },
 ];
 // five bands, same words the analysis uses
 const BANDS = [
@@ -276,7 +276,7 @@ const LABEL_BANDS = {
   Bear: { word: "BEARISH", c: "var(--bear)", o: 0.75 },
 };
 const bandOf = (v) => (v >= 0.45 ? BANDS[0] : v >= 0.15 ? BANDS[1] : v <= -0.45 ? BANDS[4] : v <= -0.15 ? BANDS[3] : BANDS[2]);
-let heatTab = "momentum_score", heatView = "cal", heatMonths = 6, HEAT_DATA = [];
+let heatTab = "label", heatView = "cal", heatMonths = 6, HEAT_DATA = [];
 
 function renderHeat(hist) {
   if (hist) HEAT_DATA = hist;
@@ -309,7 +309,7 @@ function renderHeat(hist) {
   };
   const tipFor = (r) => {
     const v = valOf(r);
-    return isLabel ? `${fmtDate(r.date)}\nHeadline label: ${LABEL_BANDS[v].word}`
+    return isLabel ? `${fmtDate(r.date)}\nSummary (headline label): ${LABEL_BANDS[v].word}`
       : `${fmtDate(r.date)}\n${tab.name} (${tab.sub}): ${v >= 0 ? "+" : ""}${v.toFixed(2)} — ${bandOf(v).word.toLowerCase()}`;
   };
 
