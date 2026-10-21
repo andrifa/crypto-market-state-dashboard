@@ -189,19 +189,29 @@ function parseCSV(txt) {
 /* ------------------------------- hero ---------------------------- */
 /* -------------------------- time travel: open any saved day -------------------------------------- */
 function renderTimebar(d, idx, viewing, want) {
-  const box = document.getElementById("timebar");
+  const box = document.getElementById("timebar"), rail = document.getElementById("sidenav");
   if (!idx || !idx.dates.length) { box.remove(); return; }
   const first = idx.dates[0], latest = idx.dates[idx.dates.length - 1];
   const go = (date) => { location.search = !date || date >= latest ? "" : `?date=${date}`; };
-  const input = el("input", { type: "date", id: "pickDate", value: d.date, min: first, max: latest });
-  input.addEventListener("change", () => { if (input.value) go(input.value); });
-  box.append(el("label", { for: "pickDate", text: "View a past day:" }), input);
-  if (viewing) {
-    const back = el("button", { class: "rng" }, "Back to latest");
-    back.addEventListener("click", () => go(null));
-    box.append(back);
-  }
-  box.append(el("span", { class: "count", text: `${idx.dates.length} saved days (${fmtDate(first)} – ${fmtDate(latest)})` }));
+  // the same picker lives in two places: above the page (narrow screens) and at the top of the
+  // right-hand navigation rail (wide screens), so it stays in view while you scroll
+  const picker = (suffix) => {
+    const id = "pickDate" + suffix;
+    const input = el("input", { type: "date", id, value: d.date, min: first, max: latest });
+    input.addEventListener("change", () => { if (input.value) go(input.value); });
+    const parts = [el("label", { for: id, text: "View a past day:" }), input];
+    if (viewing) {
+      const back = el("button", { class: "rng", type: "button" }, "Back to latest");
+      back.addEventListener("click", () => go(null));
+      parts.push(back);
+    }
+    parts.push(el("span", { class: "count", text: viewing
+      ? `Saved page from ${fmtDate(d.date)}`
+      : `${idx.dates.length} saved days (${fmtDate(first)} – ${fmtDate(latest)})` }));
+    return parts;
+  };
+  box.append(el("div", { class: "tb-pick" }, ...picker("")));
+  if (rail) rail.prepend(el("div", { class: "nav-date" }, ...picker("Rail")));
   if (viewing) {
     const note = want && want !== viewing
       ? ` There is no saved snapshot for ${fmtDate(want)}, so this is the closest ${want < first ? "later" : "earlier"} day.` : "";
@@ -492,7 +502,7 @@ function renderAnalysis(d) {
 function buildNav() {
   const nav = document.getElementById("sidenav");
   if (!nav) return;
-  nav.textContent = "";
+  nav.querySelectorAll("a, .sep").forEach((x) => x.remove());   // keep the date picker at the top of the rail
   const bar = document.querySelector(".appbar");
   const setBar = () => document.documentElement.style.setProperty("--bar-h", bar.offsetHeight + "px");
   setBar();
