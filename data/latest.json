@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-21T00:43:10Z",
-  "date": "2026-10-21",
-  "price_btc": 83116,
+  "updated_utc": "2026-10-22T00:02:37Z",
+  "date": "2026-10-22",
+  "price_btc": 84135,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "Uptrend intact, price resting in a calm, narrow range",
+  "headline_tag": "Uptrend intact, short-term mood flat ahead of the Fed",
   "direction": "weakening",
   "sentiment_band": "Greed",
   "sentiment_label": "Greed",
-  "conviction": 88,
+  "conviction": 71,
   "conviction_level": "HIGH",
   "cycle": "early-bull",
   "cycle_label": "early uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's call is to scale up the acquisition budget: the longer-term trend and the last three months both lean up, with high confidence (88/100 including today's news, 81 on market data alone), so this is a reasonable time to fund growth, weighted toward channels that bring active traders rather than stablecoin-only users. Because price is only about 2% above its 50-day average and the Fed meets on 27–28 October, grow the budget in steps and keep part of it flexible to pause if price closes below $81,704 (the 50-day average). This is a budget posture based on trailing data, not a price call or trading advice."
+    "detail": "The model's call is to scale up the acquisition budget: the longer-term trend and the last three months both lean up, with high confidence (71/100 after today's news, 84 on market data alone), so this is a reasonable time to fund growth, weighted toward channels that bring active traders rather than stablecoin-only users. Because the short-term mood is flat, price is only about 3% above its 50-day average and the Fed meets on 27–28 October, grow the budget in steps and keep part of it flexible to pause if price closes below $81,858 (the 50-day average). This is a budget posture based on trailing data, not a price call or trading advice."
   },
   "reasons": [
-    "Price is about 14% above its 200-day average and up 28% over 90 days.",
-    "About 71% of the last 90 days closed above the long-term average.",
-    "Price ($83,116) sits between the $81,704 50-day average and the $86,480 30-day high.",
-    "Switzerland approved its first retail Bitcoin fund, a small long-term positive."
+    "Price is about 16% above its 200-day average and up 31% over 90 days.",
+    "About 72% of the last 90 days closed above the long-term average.",
+    "Price ($84,135) sits between the $81,858 50-day average and the $86,480 30-day high.",
+    "The US OCC finalized the first stablecoin rulebook under the GENIUS Act, a long-term positive."
   ],
-  "watch": "The longer picture leans up, but price has gone very quiet just above its 50-day average while more people are betting on a rise than on a fall, and US Bitcoin funds saw about $487M leave in the latest day. A close below $81,704 would test the uptrend; a close above $86,480 would ease the worry.",
+  "watch": "The bigger picture leans up, but the short-term mood has gone flat and price swings are near their calmest of the year ahead of the 27–28 October Fed meeting; quiet stretches like this have often ended with a bigger move in either direction. A close below $81,858 would test the uptrend; a close above $86,480 would ease the worry.",
   "analysis": [
-    "Bottom line: the bigger picture still leans up and nothing in today's news changes that, but the past week has been a quiet pause rather than a push. Short term, the mood is warm but not reckless: the Fear & Greed reading is 63 out of 100, and price swings are about as calm as they have been all year, which often comes before a bigger move in either direction. If price closes above $86,480 (the 30-day high) the short-term picture turns clearly up; below $81,704 (the 50-day average) it turns down, and in between expect choppy days. Calm, steady campaigns fit this week; a sharp move out of that range is what would call for a change of pace.",
-    "Over the next month, the picture leans moderately up. Price is about 28% higher than three months ago and about 71% of the last 90 days finished above the long-term average, though the past week added under 2%. There is room to climb if price gets above $86,603 (the 90-day high); the move fades if price slips below $81,704 (the 50-day average), only about 2% under today's $83,116. The Fed's 27–28 October meeting is the next scheduled event, and holding above the 50-day line through it would keep growth campaigns well timed.",
-    "Over three to six months, the trend leans up with the most confidence of the three. Price is about 14% above its 200-day average, but that average is barely rising and price is still about a third below its record, so this is an early recovery rather than a mature uptrend. The recovery stays intact while price holds above $72,734 (the 200-day average), with $67,029 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. News is adding a little here: Switzerland's regulator approved its first fund that holds Bitcoin directly for everyday investors (PANews); a clearly rising 200-day average would strengthen this read and supports steady investment in new-user acquisition."
+    "Bottom line: the bigger trend still leans up and today's news adds a little to it, but the short term has gone flat. Short term, the mood is neutral: the Fear & Greed reading is a warm 68 out of 100, yet fewer people than usual are paying extra to bet on a rise, and price swings are near their calmest of the year (PANews, citing K33). If price closes above $86,480 (the 30-day high) the short-term picture turns clearly up; below $81,858 (the 50-day average) it turns down, and in between expect choppy days. Steady messaging fits this week; a clean break out of that range is what would call for a change of pace.",
+    "Over the next month, the picture leans moderately up. Price is about 31% higher than three months ago and about 72% of the last 90 days finished above the long-term average, though the past week added only about 2%. There is room to climb if price gets above $86,603 (the 90-day high); the move fades if price slips below $81,858 (the 50-day average), about 3% under today's $84,135. The Fed's 27–28 October meeting is the next scheduled event, and holding above the 50-day line through it would keep growth campaigns well timed.",
+    "Over three to six months, the trend leans up with the most confidence of the three. Price is about 16% above its 200-day average, but that average is rising only slowly and price is still about a third below its record, so this is an early recovery rather than a mature uptrend. News is adding a little here: the US bank regulator (OCC) finalized the first rulebook for stablecoin issuers under the GENIUS Act, and Standard Chartered agreed to buy crypto custodian Zodia Custody (both PANews). The recovery stays intact while price holds above $72,814 (the 200-day average), with $66,774 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker; a faster-rising 200-day average would strengthen this read and supports steady investment in new-user acquisition."
   ],
   "team_notes": {
-    "marketing": "Lean into growth with a steady, confident tone: the bigger trend is up, but no rally is under way and the market is unusually calm, so favour trust, access and education stories now and keep rally creatives ready in case the range breaks."
+    "marketing": "Lean into growth with a steady, confident tone: the bigger trend is up and this week's news is about rules and banks embracing crypto, but no rally is under way, so favour trust, access and education stories and keep rally creatives ready in case the range breaks."
   },
   "changed_today": null,
   "levels": {
@@ -37,13 +37,13 @@
     "low_30d": 81491,
     "high_90d": 86603,
     "low_90d": 62763,
-    "ma_50": 81704,
-    "ma_200": 72734,
-    "ma_200w": 67029,
+    "ma_50": 81858,
+    "ma_200": 72814,
+    "ma_200w": 66774,
     "ath": 124753
   },
   "scenarios": {
-    "price": 83116,
+    "price": 84135,
     "up": {
       "level": 86480,
       "name": "30-day high",
@@ -55,38 +55,38 @@
       ]
     },
     "down": {
-      "level": 81704,
+      "level": 81858,
       "name": "50-day average",
       "next": [
         {
-          "level": 72734,
+          "level": 72814,
           "name": "200-day average"
         },
         {
-          "level": 67029,
+          "level": 66774,
           "name": "200-week average"
         }
       ]
     },
     "range": [
-      81704,
+      81858,
       86480
     ]
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": 0.0176,
+    "ret_7d": 0.023,
     "threshold": 0.08,
     "window_days": 14,
-    "needs_up": 88217,
-    "needs_down": 75147,
+    "needs_up": 88826,
+    "needs_down": 75666,
     "last_rally": {
       "date": "2026-09-21",
-      "days_ago": 30
+      "days_ago": 31
     },
     "last_drop": {
       "date": "2026-06-02",
-      "days_ago": 141
+      "days_ago": 142
     },
     "episode": null,
     "stats": {
@@ -337,49 +337,49 @@
     }
   },
   "scores": {
-    "sentiment": 0.244,
-    "momentum": 0.311,
-    "trend": 0.397
+    "sentiment": -0.021,
+    "momentum": 0.382,
+    "trend": 0.439
   },
   "context": {
-    "mayer_multiple": 1.143,
-    "ma200_slope_90d": 0.0025,
-    "ma_200w_multiple": 1.24,
-    "drawdown_from_ath": -0.334,
+    "mayer_multiple": 1.155,
+    "ma200_slope_90d": 0.0056,
+    "ma_200w_multiple": 1.26,
+    "drawdown_from_ath": -0.326,
     "rsi_weekly": 56.8,
-    "active_addr_ratio": 0.982,
-    "puell_multiple": null,
-    "fear_greed": 63.0,
-    "funding_z": 0.33,
+    "active_addr_ratio": 1.007,
+    "puell_multiple": 1.144,
+    "fear_greed": 68.0,
+    "funding_z": -1.49,
     "vol_percentile": 0.01,
-    "bollinger_width": 0.0728,
-    "btc_dominance": 59.5,
-    "ma_cross": 0.1233,
-    "roc_90d": 0.2778,
-    "breadth_90d": 0.711,
-    "ssr": 5.42,
-    "pi_cycle_gap": -0.5193,
+    "bollinger_width": 0.0727,
+    "btc_dominance": 59.7,
+    "ma_cross": 0.1242,
+    "roc_90d": 0.3126,
+    "breadth_90d": 0.722,
+    "ssr": 5.49,
+    "pi_cycle_gap": -0.5177,
     "open_interest_usd": 7868521477.8144,
     "long_short_ratio": 1.4969,
-    "dvol": 37.03,
-    "us_10y_yield": 5.117,
-    "vix": 17.31,
+    "dvol": 37.13,
+    "us_10y_yield": 5.146,
+    "vix": 16.68,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1286722.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 21 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, price resting in a calm, narrow range)\n    Momentum weakening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up the\n    acquisition budget: the longer-term trend and\n    the last three months both lean up, with high\n    confidence (88/100 including today's news, 81\n    on market data alone), so this is a reasonable\n    time to fund growth, weighted toward channels\n    that bring active traders rather than\n    stablecoin-only users. Because price is only\n    about 2% above its 50-day average and the Fed\n    meets on 27–28 October, grow the budget in\n    steps and keep part of it flexible to pause if\n    price closes below $81,704 (the 50-day\n    average). This is a budget posture based on\n    trailing data, not a price call or trading\n    advice.\n\n  Why:\n  • Price is about 14% above its 200-day average\n    and up 28% over 90 days.\n  • About 71% of the last 90 days closed above the\n    long-term average.\n  • Price ($83,116) sits between the $81,704\n    50-day average and the $86,480 30-day high.\n  • Switzerland approved its first retail Bitcoin\n    fund, a small long-term positive.\n\n  Changed today: —\n  Watch:\n    The longer picture leans up, but price has\n    gone very quiet just above its 50-day average\n    while more people are betting on a rise than\n    on a fall, and US Bitcoin funds saw about\n    $487M leave in the latest day. A close below\n    $81,704 would test the uptrend; a close above\n    $86,480 would ease the worry.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 22 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (Uptrend intact, short-term mood flat ahead of the Fed)\n    Momentum weakening · Sentiment: Greed\n    Phase: early uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's call is to scale up the\n    acquisition budget: the longer-term trend\n    and the last three months both lean up,\n    with high confidence (71/100 after today's\n    news, 84 on market data alone), so this is\n    a reasonable time to fund growth, weighted\n    toward channels that bring active traders\n    rather than stablecoin-only users. Because\n    the short-term mood is flat, price is only\n    about 3% above its 50-day average and the\n    Fed meets on 27–28 October, grow the\n    budget in steps and keep part of it\n    flexible to pause if price closes below\n    $81,858 (the 50-day average). This is a\n    budget posture based on trailing data, not\n    a price call or trading advice.\n\n  Why:\n  • Price is about 16% above its 200-day\n    average and up 31% over 90 days.\n  • About 72% of the last 90 days closed above\n    the long-term average.\n  • Price ($84,135) sits between the $81,858\n    50-day average and the $86,480 30-day\n    high.\n  • The US OCC finalized the first stablecoin\n    rulebook under the GENIUS Act, a long-term\n    positive.\n\n  Changed today: —\n  Watch:\n    The bigger picture leans up, but the\n    short-term mood has gone flat and price\n    swings are near their calmest of the year\n    ahead of the 27–28 October Fed meeting;\n    quiet stretches like this have often ended\n    with a bigger move in either direction. A\n    close below $81,858 would test the\n    uptrend; a close above $86,480 would ease\n    the worry.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 297000000,
+      "value": 244000000,
       "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a159ef-0a58-7675-a647-70b2d716a798",
-      "as_of": "2026-10-20",
-      "note": "Longs $128M, shorts $168M; from PANews newsflash, not WebSearch."
+      "source_url": "https://www.panews.io/articles/01a15f15-6684-726e-a6de-b45b1436ae93",
+      "as_of": "2026-10-21",
+      "note": "Longs $54M, shorts $190M; from PANews newsflash, not WebSearch."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
@@ -388,232 +388,219 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Swiss Financial Market Supervisory Authority Approves First Bitcoin ETF",
-        "url": "https://www.panews.io/articles/01a158e0-f176-7143-9875-fab19a2e0aaa",
+        "title": "U.S. OCC first to finalize GENIUS Act stablecoin regulation rules, effective January 18, 2027",
+        "url": "https://www.panews.io/articles/01a15e22-996f-7032-b281-5beeff7364ab",
         "source": "PANews",
-        "date": "2026-10-20"
+        "date": "2026-10-21"
       },
       {
-        "title": "France passes bill imposing 31.4% capital gains tax on crypto-to-stablecoin conversions",
-        "url": "https://www.panews.io/articles/01a15963-249c-7515-bea7-c81ab1ce2a63",
+        "title": "Standard Chartered signs definitive agreement to fully acquire Zodia Custody; custody business to be integrated into the bank, software business to operate separately",
+        "url": "https://www.panews.io/articles/01a15e5c-358c-7610-9938-c0b178c8dd13",
         "source": "PANews",
-        "date": "2026-10-20"
+        "date": "2026-10-21"
       },
       {
-        "title": "SEC's Crypto Asset Rules Proposal Ends Public Comment Period with About 140 Comments Received",
-        "url": "https://www.panews.io/articles/01a157ee-2412-7153-92cf-3b07e8e44d36",
+        "title": "UK FCA publishes two consultation papers clarifying DeFi and crypto regulatory boundaries",
+        "url": "https://www.panews.io/articles/01a15fb5-1f42-731d-b5e4-cb94dd64f520",
         "source": "PANews",
-        "date": "2026-10-20"
+        "date": "2026-10-22"
       },
       {
-        "title": "Microsoft, Google Among 16 Companies Opposing Tokenized Trading of Their Stocks on OKX-ICE Joint Platform",
-        "url": "https://www.panews.io/articles/01a15a13-4223-7548-a3d5-7af708f3af76",
+        "title": "Solana Mainnet Officially Launches Alpenglow Upgrade, Finality Reduced from 12.8 Seconds to 150 Milliseconds",
+        "url": "https://www.panews.io/articles/01a15ec8-7838-7725-857d-e1fe74c41917",
         "source": "PANews",
-        "date": "2026-10-20"
+        "date": "2026-10-21"
       },
       {
-        "title": "Kazakhstan Court Bans Coinbase and Five Other Crypto Platforms from Offering Unlicensed Crypto Services in the Astana International Financial Centre",
-        "url": "https://www.panews.io/articles/01a15992-83d5-7085-a802-20dadc8bc8dd",
+        "title": "Tesla Q3 revenue $28.05 billion, did not sell its Bitcoin holdings",
+        "url": "https://www.panews.io/articles/01a16022-aa61-7566-acd8-584140f95ac3",
         "source": "PANews",
-        "date": "2026-10-20"
+        "date": "2026-10-22"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-22",
     "items": [
       {
-        "theme": "Older DeFi tokens bounce",
-        "why": "Several long-established DeFi tokens rose sharply in the past day, including Compound, Convex, Aerodrome and Pyth. The reports reviewed don't give a clear reason for the move, and these tokens remain far below their past highs.",
-        "tokens": [
-          {
-            "symbol": "COMP",
-            "change_24h_pct": 18.77
-          },
-          {
-            "symbol": "CVX",
-            "change_24h_pct": 14.68
-          },
-          {
-            "symbol": "AERO",
-            "change_24h_pct": 11.73
-          },
-          {
-            "symbol": "PYTH",
-            "change_24h_pct": 11.19
-          }
-        ],
-        "marketing_angle": "A light 'what is DeFi lending' explainer could catch curious users without promoting any token.",
-        "sources": [
-          {
-            "title": "Citi Research: Aave Poised to Become Collateral Mobility Infrastructure for Tokenized Capital Markets",
-            "url": "https://www.panews.io/articles/01a1582a-7607-7783-8e22-a96b848a833f"
-          }
-        ]
-      },
-      {
-        "theme": "New altcoin funds in Europe",
-        "why": "21Shares launched exchange-traded products in Europe backed by the Lighter (LIT) and Venice (VVV) tokens. Both tokens rose about 8–10% on the day, though the sources don't directly link the move to the launch.",
+        "theme": "On-chain futures exchanges seek US licences",
+        "why": "Lighter, an on-chain exchange for futures-style contracts, said it plans to apply to the US CFTC for a derivatives licence in November and already has over 1 million accounts. Its LIT token rose sharply on the news, and separately Kalshi said users will be able to borrow against BTC and ETH to trade similar contracts.",
         "tokens": [
           {
             "symbol": "LIT",
-            "change_24h_pct": 9.78
-          },
-          {
-            "symbol": "VVV",
-            "change_24h_pct": 8.1
+            "change_24h_pct": 11.77
           }
         ],
-        "marketing_angle": "Shows altcoins entering regulated wrappers, a useful education topic on how crypto funds work.",
+        "marketing_angle": "A plain explainer on how regulated and on-chain trading venues differ suits active-trader audiences.",
         "sources": [
           {
-            "title": "21Shares launches physically backed Lighter (LIT) and Venice Token (VVV) ETPs in Europe",
-            "url": "https://www.panews.io/articles/01a15882-6b4f-7713-960a-951536661bff"
-          }
-        ]
-      },
-      {
-        "theme": "Tokenized stocks face pushback",
-        "why": "16 US-listed companies, now including Microsoft and Google, have objected to their shares being traded in token form on the OKX–ICE platform. OKX–ICE's co-chair called the objections a natural reaction, so the debate over tokenized stocks is heating up.",
-        "tokens": [],
-        "marketing_angle": "A plain explainer on tokenized stocks and their rules suits users curious about the trend.",
-        "sources": [
-          {
-            "title": "Microsoft, Google Among 16 Companies Opposing Tokenized Trading of Their Stocks on OKX-ICE Joint Platform",
-            "url": "https://www.panews.io/articles/01a15a13-4223-7548-a3d5-7af708f3af76"
+            "title": "Lighter plans to apply for derivatives license with CFTC in November, LIT surges over 22%",
+            "url": "https://www.panews.io/articles/01a15fcf-6e73-759e-ad28-fb8c8e4f3eb6"
           },
           {
-            "title": "OKX-ICE Co-Chair Cuomo: 16 Companies Opposing Tokenized Stock Trading Is a \"Natural Reaction\"",
-            "url": "https://www.panews.io/articles/01a15bc3-fb2d-71c6-98ec-1b8ea1c58fc8"
+            "title": "Kalshi to allow users to borrow against crypto assets like BTC and ETH to trade perpetual contracts",
+            "url": "https://www.panews.io/articles/01a15ef0-186c-774e-9248-95f95ac6c9a1"
           }
         ]
       },
       {
-        "theme": "Zcash jumps",
-        "why": "Zcash rose about 11% in the past day. The reports reviewed don't give a clear reason for the move.",
+        "theme": "Tokenized stocks keep growing",
+        "why": "ARK Invest's Q3 report says trading of tokenized stocks on decentralized exchanges rose about 9x from the previous quarter to $50 billion, helping total DEX trading rebound to $571 billion. Securitize also connected a bank-issued stablecoin from Anchorage for the dollar side of tokenized trades.",
+        "tokens": [],
+        "marketing_angle": "'What is a tokenized stock?' content fits users curious about stocks and crypto in one place.",
+        "sources": [
+          {
+            "title": "ARK Q3 DeFi Report: Tokenized stock trading volume surges 9x, DEX spot trading volume rebounds to $571 billion",
+            "url": "https://www.panews.io/articles/01a15eb7-ddaf-767c-a9a7-67dc927de3d8"
+          },
+          {
+            "title": "Securitize Integrates Stablecoin Issued by Anchorage's Federally Chartered Bank, Connecting the USD Leg of Tokenized Trading",
+            "url": "https://www.panews.io/articles/01a15e88-a018-7496-9092-5406ea44b76a"
+          }
+        ]
+      },
+      {
+        "theme": "Stablecoin rules and growth",
+        "why": "The US OCC became the first regulator to finalize rules for stablecoin issuers under the GENIUS Act, effective 18 January 2027. On-chain data also showed 750 million USDC created on Solana within two minutes, and Tether backed a Latin American payments startup.",
+        "tokens": [],
+        "marketing_angle": "Stablecoin safety and rules are a strong trust topic for new and stablecoin-focused users.",
+        "sources": [
+          {
+            "title": "U.S. OCC first to finalize GENIUS Act stablecoin regulation rules, effective January 18, 2027",
+            "url": "https://www.panews.io/articles/01a15e22-996f-7032-b281-5beeff7364ab"
+          },
+          {
+            "title": "Data: 750 Million USDC Minted on Solana Network in 2 Minutes",
+            "url": "https://www.panews.io/articles/01a16095-20a1-7270-ad8d-d26ce6c976c6"
+          }
+        ]
+      },
+      {
+        "theme": "Zcash upgrade on the calendar",
+        "why": "A Zcash developer proposed an activation date for the NU7 network upgrade, expected around 5 November. ZEC is up about 15% over the past week, though the reports don't directly link the move to the upgrade.",
         "tokens": [
           {
             "symbol": "ZEC",
-            "change_24h_pct": 11.27
+            "change_24h_pct": 5.04
           }
         ],
-        "marketing_angle": "Privacy coins draw interest on moves like this; any content should stay educational.",
+        "marketing_angle": "Privacy coins draw interest around upgrades; keep any content educational.",
         "sources": [
           {
-            "title": "Data: A ZEC whale bought about $151,000 worth of Nullmask token MASK in the past three days",
-            "url": "https://www.panews.io/articles/01a157a1-7cf5-77d7-86be-815d4955fd29"
+            "title": "Zcash developer submits proposal for NU7 mainnet activation height, expected to take effect on November 5",
+            "url": "https://www.panews.io/articles/01a15d98-ca38-735d-a542-71a85b3dfae1"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-22",
     "items": [
       {
-        "headline": "Swiss Financial Market Supervisory Authority Approves First Bitcoin ETF",
+        "headline": "U.S. OCC first to finalize GENIUS Act stablecoin regulation rules, effective January 18, 2027",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a158e0-f176-7143-9875-fab19a2e0aaa",
+        "url": "https://www.panews.io/articles/01a15e22-996f-7032-b281-5beeff7364ab",
         "horizon": "long",
         "direction": "positive",
         "size": "moderate",
-        "why": "Switzerland's regulator approved its first fund that holds Bitcoin directly for everyday investors, widening regulated access in a major financial centre."
+        "why": "The first final US rulebook for stablecoin issuers gives banks and other firms a clear legal path to issue dollar tokens, a structural step for crypto's plumbing."
       },
       {
-        "headline": "France passes bill imposing 31.4% capital gains tax on crypto-to-stablecoin conversions",
+        "headline": "Standard Chartered signs definitive agreement to fully acquire Zodia Custody; custody business to be integrated into the bank, software business to operate separately",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a15963-249c-7515-bea7-c81ab1ce2a63",
-        "horizon": "medium",
-        "direction": "negative",
+        "url": "https://www.panews.io/articles/01a15e5c-358c-7610-9938-c0b178c8dd13",
+        "horizon": "long",
+        "direction": "positive",
         "size": "minor",
-        "why": "France's lower house narrowly backed a tax on swapping crypto into stablecoins from 2027, though the Senate still has to approve it."
+        "why": "A global bank bringing a crypto custodian fully in-house is another sign of large institutions committing to the asset class, though it still needs regulatory approval."
       },
       {
-        "headline": "SEC's Crypto Asset Rules Proposal Ends Public Comment Period with About 140 Comments Received",
+        "headline": "UK FCA publishes two consultation papers clarifying DeFi and crypto regulatory boundaries",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a157ee-2412-7153-92cf-3b07e8e44d36",
+        "url": "https://www.panews.io/articles/01a15fb5-1f42-731d-b5e4-cb94dd64f520",
         "horizon": "medium",
         "direction": "positive",
         "size": "minor",
-        "why": "The US SEC's proposed rulebook for crypto assets moved a step closer to a final version, with industry voices such as Ripple backing it."
+        "why": "The UK regulator is clarifying how its new crypto rules apply, which reduces uncertainty for firms but is guidance rather than new policy."
       },
       {
-        "headline": "SlowMist's Cos: Qubic Wallet may have leaked most private keys",
+        "headline": "Polkadot Foundation warns of private key leak risk in Fearless extension, 17,286 DOT involved in security incident",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a158b5-8aa3-76d2-bed1-b5269b3ce121",
+        "url": "https://www.panews.io/articles/01a15ed3-f9cf-74c0-9986-9f8d0c3f3d59",
         "horizon": "short",
         "direction": "negative",
         "size": "minor",
-        "why": "A wallet security failure on the Qubic network is a reminder of self-custody risk, though it is narrow and the network has since resumed and opened claims."
+        "why": "A second wallet key-leak warning in two days is a small knock to trust in self-custody tools, though the amount involved is narrow."
       }
     ],
     "summary": {
-      "short": "A narrow wallet security incident at Qubic is a small negative for mood.",
-      "medium": "Progress on the US SEC crypto rulebook roughly offsets a proposed French tax on crypto-to-stablecoin swaps.",
-      "long": "Switzerland approving its first retail Bitcoin fund adds a modest positive for long-run access."
+      "short": "A narrow wallet key-leak warning on Polkadot is a small negative for mood.",
+      "medium": "UK guidance clarifying crypto and DeFi rules is a small positive for the coming weeks.",
+      "long": "A finalized US stablecoin rulebook and Standard Chartered's custody deal add a modest long-run positive."
     },
     "impact": {
       "short": -0.25,
-      "medium": 0.0,
-      "long": 0.5
+      "medium": 0.25,
+      "long": 0.75
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.347,
-    "momentum": 0.311,
-    "sentiment": 0.269
+    "trend": 0.364,
+    "momentum": 0.357,
+    "sentiment": 0.004
   },
-  "conviction_base": 81,
+  "conviction_base": 84,
   "news_adjustment": {
     "sentiment": -0.025,
-    "momentum": 0.0,
-    "trend": 0.05
+    "momentum": 0.025,
+    "trend": 0.075
   },
   "news_flag": null,
   "marketing_segments": {
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-22",
     "social": {
       "stance": "Hold",
-      "strategy": "Keep the normal posting rhythm with a calm, explain-the-news tone: Bitcoin is about 28% above three months ago but up under 2% over the past week, and no rally or drop window is open.",
+      "strategy": "Keep the normal posting rhythm with a calm, explain-the-news tone: Bitcoin is about 31% above three months ago but up only about 2% over the past week, and no rally or drop window is open.",
       "actions": [
         {
-          "what": "Post a 'Bitcoin in regulated funds' story",
-          "detail": "Switzerland's regulator approved its first fund that holds Bitcoin directly for everyday investors (PANews); a short carousel on how mainstream access keeps widening fits the mood."
+          "what": "Post a 'stablecoin rules are here' explainer",
+          "detail": "The US OCC finalized the first GENIUS Act rulebook for stablecoin issuers, effective 18 January 2027 (PANews citing The Block); a short carousel on what it means for everyday users fits the mood."
         },
         {
-          "what": "Explain the tokenized-stocks debate",
-          "detail": "16 US companies including Microsoft and Google objected to their shares trading in token form on the OKX–ICE platform (PANews); a simple 'what is a tokenized stock' explainer suits curious users."
+          "what": "Share a 'banks are moving in' story",
+          "detail": "Standard Chartered agreed to fully acquire crypto custodian Zodia Custody, pending approval (PANews citing The Block); frame it as a trust and adoption story."
         },
         {
-          "what": "Share a self-custody safety tip",
-          "detail": "The Qubic wallet key leak, now in a claims process (PANews), is a timely hook for a plain 'how to keep your wallet safe' post."
+          "what": "Run a wallet-safety reminder",
+          "detail": "Polkadot warned of a key-leak risk in the Fearless wallet extension (PANews); a plain 'how to keep your wallet safe' post is timely."
         },
         {
-          "what": "Prep a Fed-week explainer",
-          "detail": "The Fed meets on 27–28 October; draft a short 'why the Fed matters for crypto' post to publish that week, without predicting the outcome."
+          "what": "Use the perp-DEX and tokenized-stock themes",
+          "detail": "Lighter plans a US CFTC licence application in November and ARK reports tokenized-stock trading on DEXs rose about 9x last quarter (PANews); good topics for 'what is this?' explainers."
         }
       ]
     },
     "seo": {
       "stance": "Prepare",
-      "strategy": "Refresh pages around the questions this week's news is likely to drive: the Fed meeting, Bitcoin funds and crypto taxes, without chasing a rally that is not happening.",
+      "strategy": "Refresh pages around the questions this week's news and the Fed meeting are likely to drive, without chasing a rally that is not happening.",
       "actions": [
         {
           "what": "Refresh the 'Bitcoin price today' page",
-          "detail": "Likely to draw searches because price ($83,116) is sitting in a narrow range; add the $81,704 and $86,480 reference levels in plain words."
+          "detail": "Likely to draw searches because price ($84,135) sits in a narrow range; add the $81,858 and $86,480 reference levels in plain words."
         },
         {
           "what": "Update the 'Fed and Bitcoin' evergreen page",
-          "detail": "Likely to draw searches ahead of the 27–28 October Fed meeting; explain plainly how rate decisions have tended to affect crypto interest."
+          "detail": "Likely to draw searches ahead of the 27–28 October Fed meeting; explain plainly how rate decisions have tended to affect crypto interest, without predicting the outcome."
         },
         {
-          "what": "Publish a 'what is a Bitcoin ETF' refresh",
-          "detail": "Likely to draw searches because Switzerland approved its first retail Bitcoin fund (PANews), adding to existing US fund news."
+          "what": "Publish a 'what is the GENIUS Act' page",
+          "detail": "Likely to draw searches because the OCC just finalized the first stablecoin rules under it (PANews)."
         },
         {
-          "what": "Draft a crypto-tax explainer",
-          "detail": "France's lower house backed a 31.4% tax on crypto-to-stablecoin swaps from 2027, pending Senate approval (PANews); tax questions tend to draw searches."
+          "what": "Refresh the Solana explainer",
+          "detail": "Likely to draw searches because Solana's Alpenglow upgrade went live, cutting confirmation time from about 12.8 seconds to 150 milliseconds (PANews)."
         }
       ]
     },
@@ -623,37 +610,37 @@
       "actions": [
         {
           "what": "Step up active-trader campaigns",
-          "detail": "Raise spend gradually on trader-focused audiences while price holds above $81,704 (the 50-day average), reviewing results weekly."
+          "detail": "Raise spend gradually on trader-focused audiences while price holds above $81,858 (the 50-day average), reviewing results weekly."
         },
         {
           "what": "Keep a flexible slice of budget",
-          "detail": "Hold part of the increase back until after the 27–28 October Fed meeting, ready to pause if price closes below $81,704."
+          "detail": "Hold part of the increase back until after the 27–28 October Fed meeting, ready to pause if price closes below $81,858."
         },
         {
           "what": "Pre-build rally creatives",
-          "detail": "Have ads ready to go live within days if Rally watch turns on (price above about $88,217 within the window)."
+          "detail": "Have ads ready to go live within days if Rally watch turns on (price above about $88,826 within the window)."
         }
       ]
     },
     "research": {
       "stance": "Monitor",
-      "strategy": "Tell other teams that the market is in a calm range inside an uptrend, with the Fed meeting as the next scheduled event; no news flag today.",
+      "strategy": "Tell other teams the market is in a calm range inside an uptrend, with the short-term mood now flat and the Fed meeting as the next scheduled event; no news flag today.",
       "actions": [
         {
           "what": "Share Rally watch status",
-          "detail": "Rally watch is quiet: a rally window would open above about $88,217 and a drop signal below about $75,147."
+          "detail": "Rally watch is quiet: a rally window would open above about $88,826 and a drop signal below about $75,666."
         },
         {
           "what": "Flag the short-term range",
-          "detail": "A close above $86,480 (30-day high) turns the short term clearly up; below $81,704 (50-day average) turns it down."
+          "detail": "A close above $86,480 (30-day high) turns the short term clearly up; below $81,858 (50-day average) turns it down."
         },
         {
           "what": "Track the Fed meeting",
           "detail": "The Fed meets on 27–28 October; brief teams the day after on whether the read changed."
         },
         {
-          "what": "Watch fund flows",
-          "detail": "US Bitcoin funds saw about $487M leave in the latest day; a run of outflows would weaken today's read."
+          "what": "Watch the short-term mood",
+          "detail": "The short-term score fell from clearly warm yesterday to flat today; a further slide would weaken the case for scaling up."
         }
       ]
     }
