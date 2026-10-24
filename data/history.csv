@@ -4209,7 +4209,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-10,82912.2265625,Bull,strengthening,Greed,57.0,early-bull,0.292,0.289,-0.018,SCALE UP acquisition budget
 2026-10-11,83679.46875,Bull,weakening,Greed,58.0,early-bull,0.304,0.227,-0.129,SCALE UP acquisition budget
 2026-10-12,81762.5625,Bull,stable,Greed,56.0,early-bull,0.289,0.345,-0.021,SCALE UP acquisition budget
-2026-10-13,83169.0,Bull,stable,Greed,76.0,early-bull,0.308,0.315,0.172,SCALE UP acquisition budget
+2026-10-13,83095.125,Bull,stable,Greed,76.0,early-bull,0.307,0.315,0.172,SCALE UP acquisition budget
 2026-10-14,81682.01,Bull,stable,Greed,57.0,early-bull,0.298,0.333,-0.102,SCALE UP acquisition budget
 2026-10-15,82245.93,Bull,weakening,Neutral,58.0,early-bull,0.308,0.332,-0.06,SCALE UP acquisition budget
 2026-10-16,81615.64,Bull,stable,Greed,76.0,early-bull,0.306,0.329,0.249,SCALE UP acquisition budget
@@ -4218,5 +4218,6 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-19,81938.4,Bull,weakening,Greed,78.0,early-bull,0.324,0.284,0.329,SCALE UP acquisition budget
 2026-10-20,83028.15,Bull,weakening,Greed,80.0,early-bull,0.341,0.327,0.287,SCALE UP acquisition budget
 2026-10-21,84093.42,Bull,weakening,Greed,83.0,early-bull,0.357,0.319,0.362,SCALE UP acquisition budget
-2026-10-22,81416.09,Bull,weakening,Greed,80.0,early-bull,0.336,0.316,0.036,SCALE UP acquisition budget
-2026-10-23,81925.04,Bull,stable,Neutral,81.0,early-bull,0.347,0.321,0.158,SCALE UP acquisition budget
+2026-10-22,81416.09,Bull,weakening,Greed,80.0,early-bull,0.336,0.316,0.003,SCALE UP acquisition budget
+2026-10-23,81189.43,Bull,stable,Neutral,80.0,early-bull,0.339,0.336,0.233,SCALE UP acquisition budget
+2026-10-24,80900.0,Bull,strengthening,Neutral,62.0,early-bull,0.34,0.329,-0.099,SCALE UP acquisition budget
