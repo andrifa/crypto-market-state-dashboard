@@ -125,6 +125,25 @@ def rally_watch(close: pd.Series) -> dict:
     return out
 
 
+def recent_picture(close: pd.Series) -> dict:
+    """How the last few weeks look, independent of the 90-day momentum score.
+    The momentum score is built from 90-day measures, so it can stay positive for a while
+    after price has started to fade; these numbers let the page and the write-up say so."""
+    ma50 = close.rolling(50).mean()
+    n = 0
+    for below in reversed((close < ma50)[ma50.notna()].tolist()):
+        if not below:
+            break
+        n += 1
+    last = float(close.iloc[-1])
+    return {
+        "vs_ma50_pct": round(last / float(ma50.iloc[-1]) - 1, 4),
+        "days_below_ma50": n,
+        "ret_30d": round(last / float(close.iloc[-31]) - 1, 4),
+        "from_high_30d": round(last / float(close.iloc[-30:].max()) - 1, 4),
+    }
+
+
 def build_payload() -> dict:
     df = build_frame(refresh=True)
     st = build_state(df).dropna(subset=["trend_score"])
@@ -196,6 +215,7 @@ def build_payload() -> dict:
         "levels": levels,
         "scenarios": scen,
         "rally_watch": rally_watch(close),
+        "recent": recent_picture(close),
         "scores": {
             "trend": _f(row["trend_score"]),
             "momentum": _f(row["momentum_score"]),

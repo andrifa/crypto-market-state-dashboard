@@ -448,6 +448,16 @@ function renderOutlook(d, k, bt) {
     const note = historicalNote(bt, d.regime, d.conviction, o.horizon, o.horizonLabel);
     const adj = d.news_adjustment && d.news_adjustment[o.dim];
     const nsum = d.news_impact && d.news_impact.summary && d.news_impact.summary[o.key];
+    // the momentum score looks back 90 days; say so when the last few weeks point the other way
+    const rc = d.recent;
+    let recentNote = "";
+    if (rc && o.dim === "momentum" && Math.abs(rc.vs_ma50_pct) >= 0.005) {
+      const gap = Math.abs(rc.vs_ma50_pct * 100).toFixed(1);
+      if (rc.vs_ma50_pct < 0 && score > 0.15)
+        recentNote = `Heads up: this score looks back 90 days. The last few weeks are softer: price is ${gap}% below its 50-day average${rc.days_below_ma50 > 1 ? ` (${rc.days_below_ma50} days in a row)` : ""} and ${Math.abs(rc.from_high_30d * 100).toFixed(1)}% below its 30-day high, so the coming weeks are less clear-cut than the number suggests.`;
+      else if (rc.vs_ma50_pct > 0 && score < -0.15)
+        recentNote = `Heads up: this score looks back 90 days. The last few weeks are better: price is ${gap}% above its 50-day average and ${Math.abs(rc.from_high_30d * 100).toFixed(1)}% below its 30-day high, so the coming weeks may be less weak than the number suggests.`;
+    }
     const newsNote = adj ? `News effect on this score: ${adj > 0 ? "+" : ""}${adj.toFixed(2)}${nsum ? " — " + nsum : ""}` : "";
     box.append(el("div", { class: "outlook-row" },
       el("div", { class: "outlook-head" },
@@ -456,6 +466,7 @@ function renderOutlook(d, k, bt) {
       el("div", { class: "spectrum" }, el("div", { class: "mark", style: `left:${pct}%; color:${color}` })),
       el("div", { class: "spectrum-labels" }, el("span", { text: "Bearish" }), el("span", { text: "Neutral" }), el("span", { text: "Bullish" })),
       el("p", { class: "scenario", html: o.text }),
+      recentNote ? el("p", { class: "scenario outlook-recent", text: recentNote }) : "",
       newsNote ? el("p", { class: "scenario outlook-news " + (adj > 0 ? "pos" : "neg"), text: newsNote }) : "",
       note ? el("p", { class: "scenario outlook-hist", text: note }) : ""));
   });

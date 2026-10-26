@@ -24,8 +24,8 @@
   ],
   "watch": "Price swings are about as calm as they have been in years and the mood reading is a flat 50, yet price sits just under its 50-day average with the Fed deciding tomorrow. A close back above $81,821 would ease that tension; a slide toward $75,383 would start a drop signal.",
   "analysis": [
-    "Bottom line: the bigger trend still points up, but Bitcoin is idling just under a line that matters, with the Fed decision due tomorrow. Short term, the mood is dead neutral: the Fear & Greed reading sits at exactly 50 and day-to-day price swings are among the calmest of recent years, even as US Bitcoin funds saw about $487M leave on the latest day. If price closes above $81,821 (the 50-day average) the short term turns clearly up, below $72,992 (the 200-day average) it turns down, and in between expect choppy days. A clean move after the Fed would give this week a direction; until then a calm, explain-the-news tone fits better than hype.",
-    "Over the next month, the picture leans moderately up. Price is about 26% higher than three months ago and about three in four of the last 90 days finished above the long-term average, but at about $80,200 it has slipped under the 50-day average. Price first needs to win back $81,821 (the 50-day average); above $86,603 (the 90-day high) there is room to climb. News is adding a little: South Korea is leaning toward delaying its 22% crypto tax a fourth time, and US lawmakers agreed another detail of the CLARITY Act (both PANews). The Fed meeting on 27-28 October and US GDP and inflation data later this week are the next scheduled tests; reclaiming the 50-day line after them would keep growth campaigns well timed.",
+    "Bottom line: the bigger trend still points up, but the last week has been soft. Short term, the picture is soft to neutral: Bitcoin lost its 50-day average on 22 October and has closed below it for five days in a row (about 2% under $81,821), and it sits about 7% below its 30-day high of $86,480. The mood itself is dead neutral (Fear & Greed 50) and daily price swings are among the calmest in years, so this looks like a pause, not a panic. If price closes back above $81,821 the short term turns clearly up; a close below $72,992 (the 200-day average) turns it down; in between expect choppy days. The Fed decision on 27-28 October could give the week a direction.",
+    "Over the next month, the read is mixed rather than clearly up. The three-month numbers still look good: price is about 26% above three months ago and about three in four of the last 90 days closed above the long-term average. But the last few weeks have faded: price is down about 5% over 30 days and under its 50-day average, so until it wins back $81,821 treat the month as neutral with an upward tilt. Above $86,603 (the 90-day high) there would be room to climb; a close below $75,383 would start a drop signal. News adds a little: South Korea is leaning toward delaying its 22% crypto tax a fourth time, and US lawmakers agreed another detail of the CLARITY Act (both PANews). The Fed meeting on 27-28 October and US GDP and inflation data later this week are the next scheduled tests.",
     "Over three to six months, the trend leans up with the most confidence of the three. Price is about 10% above its 200-day average, which is still rising slowly, and about 36% below its record, so this reads as an early recovery rather than a late-stage run. The recovery stays intact while price holds above $72,992 (the 200-day average), with $67,366 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. A faster-rising 200-day average would strengthen this read and support steady spending on new users; a close back under it would weaken it."
   ],
   "team_notes": {
@@ -651,5 +651,11 @@
         }
       ]
     }
+  },
+  "recent": {
+    "vs_ma50_pct": -0.0205,
+    "days_below_ma50": 5,
+    "ret_30d": -0.0502,
+    "from_high_30d": -0.073
   }
 }
