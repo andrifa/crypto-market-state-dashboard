@@ -186,7 +186,7 @@ def _level_lines(scen, levels):
     return short, medium, long_
 
 
-def analysis_paragraphs(row: pd.Series, scen=None, levels=None) -> list[str]:
+def analysis_paragraphs(row: pd.Series, scen=None, levels=None, recent=None) -> list[str]:
     """
     Fallback for the "What's driving this" panel: rule-based, real numbers only.
     Written for a non-technical reader -- one verdict, the one or two drivers that
@@ -196,6 +196,10 @@ def analysis_paragraphs(row: pd.Series, scen=None, levels=None) -> list[str]:
     """
     out = []
     lvl_short, lvl_medium, lvl_long = _level_lines(scen, levels)
+    soft = bool(recent) and recent.get("vs_ma50_pct", 0) <= -0.005      # price under its 50-day average
+    firm = bool(recent) and recent.get("vs_ma50_pct", 0) >= 0.005
+    gap = abs(recent["vs_ma50_pct"]) * 100 if recent else 0
+    run = recent.get("days_below_ma50", 0) if recent else 0
 
     fng, fz = row.get("fng"), row.get("funding_z")
     sent_lean = _lean_word(row.get("sentiment_score"))
@@ -209,6 +213,8 @@ def analysis_paragraphs(row: pd.Series, scen=None, levels=None) -> list[str]:
                 s += " Traders are paying to bet on falls, a sign pessimism is crowded, which has often come near turning points."
             else:
                 s += " Leverage looks normal rather than crowded, so the mood isn't being pushed by risky bets."
+        if soft:
+            s += f" Price is {gap:.0f}% below its 50-day average{f' ({run} days in a row)' if run > 1 else ''}, so the week looks soft rather than strong."
         if lvl_short:
             s += " " + lvl_short
         out.append(s)
@@ -216,7 +222,15 @@ def analysis_paragraphs(row: pd.Series, scen=None, levels=None) -> list[str]:
     rsi_w, roc90, breadth = row.get("rsi_w"), row.get("roc90"), row.get("breadth")
     mom_lean = _lean_word(row.get("momentum_score"))
     if pd.notna(roc90):
-        s = f"Over the coming weeks, momentum is {mom_lean}: price is {roc90*100:+.0f}% over the last 90 days."
+        mom = row.get("momentum_score")
+        if soft and pd.notna(mom) and mom > 0.0:
+            s = (f"Over the coming weeks, the read is mixed: the 90-day numbers still lean up (price is {roc90*100:+.0f}% over 90 days), "
+                 f"but the last few weeks have faded and price is {gap:.0f}% under its 50-day average.")
+        elif firm and pd.notna(mom) and mom < 0.0:
+            s = (f"Over the coming weeks, the read is mixed: the 90-day numbers still lean down (price is {roc90*100:+.0f}% over 90 days), "
+                 f"but the last few weeks have improved and price is {gap:.0f}% above its 50-day average.")
+        else:
+            s = f"Over the coming weeks, momentum is {mom_lean}: price is {roc90*100:+.0f}% over the last 90 days."
         if pd.notna(breadth) and roc90 > 0 and breadth < 0.55:
             s += f" But only {breadth*100:.0f}% of those days closed above the long-term average, so the gain is concentrated in a recent push rather than broad strength."
         elif pd.notna(rsi_w) and rsi_w >= 70:
@@ -317,7 +331,7 @@ def watch(row: pd.Series) -> str | None:
     return None
 
 
-def friendly_row(row: pd.Series, prev: pd.Series | None = None, scen=None, levels=None) -> dict:
+def friendly_row(row: pd.Series, prev: pd.Series | None = None, scen=None, levels=None, recent=None) -> dict:
     regime = row.get("regime", "Unknown")
     conv = row.get("conviction")
     cycle = row.get("cycle", "—")
@@ -343,7 +357,7 @@ def friendly_row(row: pd.Series, prev: pd.Series | None = None, scen=None, level
         "reasons": reasons(row),
         "change": change,
         "watch": watch(row),
-        "analysis": analysis_paragraphs(row, scen, levels),
+        "analysis": analysis_paragraphs(row, scen, levels, recent),
         "marketing_note": marketing_note(row),
         "price": None if pd.isna(row.get("close")) else round(float(row["close"])),
     }

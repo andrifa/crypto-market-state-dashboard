@@ -204,7 +204,8 @@ def build_payload() -> dict:
     }
     scen = scenarios_from_levels(float(close.iloc[-1]), levels)
     scen["short"] = short_scenarios(close, levels)
-    fr = friendly_row(row, prev, scen, levels)
+    recent = recent_picture(close)
+    fr = friendly_row(row, prev, scen, levels, recent)
 
 
     # live-only fields (dominance, OI, DVOL, ETF flow, etc.) have no history to fall
@@ -254,7 +255,7 @@ def build_payload() -> dict:
         "levels": levels,
         "scenarios": scen,
         "rally_watch": rally_watch(close),
-        "recent": recent_picture(close),
+        "recent": recent,
         "scores": {
             "trend": _f(row["trend_score"]),
             "momentum": _f(row["momentum_score"]),
