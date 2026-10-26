@@ -17,6 +17,23 @@
     }
   ],
   "notify": true,
-  "messages": [],
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 26 October 2026**\n\n**Alert**\n• Bitcoin dipped below $80,000 in the last 24 hours (low $79,369) and recovered. The dip was brief, but $80,000 is a round level many people watch.\n\n**Snapshot**\n• Bitcoin about $80,200, down 2.2% over 7 days and about 26% above three months ago.\n• Headline BULLISH, confidence high. Fear & Greed is 50 (neutral), and daily price swings are among the calmest in years.\n\n**What happened (last 24h)**\n• Price slipped under $80,000 and came back. No single cause is reported; the market is waiting for the Fed decision on 27–28 October.\n• Small holders keep buying: deposits from small Bitcoin holders to Binance hit a six-month high while large holders' deposits keep falling (Darkfost via PANews).\n• About $109M of leveraged bets were forced to close on 25 October, split fairly evenly between buyers and sellers (CoinGlass via PANews).\n\n**Short-term outlook (next 1–7 days)**\n• Mood is neutral and moves are calm, so expect choppy days until the Fed speaks.\n• Turns up: a daily close above $81,821 (50-day average); next stop $86,480 (30-day high).\n• Sideways: between $72,992 and $81,821, back-and-forth with no clear direction.\n• Turns down: a daily close below $72,992 (200-day average); next $67,366 (200-week average).\n• Rally watch: no signal. A rally signal needs a close above $88,493, a drop signal a close below $75,383.\n• This week: Fed decision 27–28 October, then US GDP and inflation data (Jin10 via PANews).\n\n**News that matters**\n• South Korea leans toward delaying its 22% crypto tax a fourth time (PANews): medium term, small positive.\n• US lawmakers agreed another detail of the CLARITY Act, the crypto market-rules bill (PANews): medium term, small positive.\n• Latvia plans rules for tokenized real-world assets in H1 2027 (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Tokenized stocks on-chain passed $1B, up about 800% in a year (Token Terminal via PANews).\n• CoinDCX will cover a 15.99M USDT loss from an old wallet; user funds are safe (PANews).\n\n**Bigger picture**\n• Next month leans moderately up and 3–6 months leans up with the most confidence. The recovery stays intact while price holds above $72,992.\n\nDashboard: https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "*Paid:* raise active-trader spend in small steps with a weekly review, and keep part of the increase flexible until after the Fed decision (28 October). Be ready to pause if price slides toward $75,383, where a drop signal would start. Keep rally creatives ready to go live within days if price rises above $88,493."
+    },
+    {
+      "audience": "social",
+      "text": "*Social:* keep the normal rhythm with an explain-the-news tone. Post a plain \"why is Bitcoin near $80,000?\" note (no single cause is reported; the market is waiting for the Fed) and the Fed-week explainer for 27–28 October. Explain, don't predict."
+    },
+    {
+      "audience": "crm",
+      "text": "*CRM:* send existing users a calm note about the dip and how Reku keeps funds safe, with no promotions today. Queue the welcome and first-deposit journey now: after past rallies, new sign-ups and first deposits rose about 2–4 weeks later."
+    }
+  ],
   "posted": []
 }
