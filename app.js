@@ -845,6 +845,27 @@ function renderScorecard(bt) {
     `${sc.span ? sc.span[0] + "–" + sc.span[1] : ""} · ~${sc.cycles} market cycles · ${sc.days} days · `
     + `${sc.transitions} regime changes (${sc.per_year}/yr) · median lag at a cycle turn ${sc.turn_median_lag_days ?? "—"} days. Recomputed daily.` }));
 
+  // how well each timeframe's own score reads what comes next (average forward return by fifth of days)
+  const dq = bt.dimension_quintiles;
+  if (dq && dq.sentiment && dq.momentum && dq.trend) {
+    const sg = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(Math.round(v * 100))}%`;
+    const step = (a) => a.slice(1).filter((v, i) => v > a[i]).length;
+    const verdict = (a) => (step(a) === 4 ? "Steps up every time" : step(a) === 3 ? "Mostly steps up" : "Mixed");
+    const cell = (a) => el("td", { title: `Lowest to highest fifth: ${a.map(sg).join(" → ")}` }, `${sg(a[0])} → ${sg(a[4])}`);
+    p.append(el("p", { class: "sc-sub", text: "How well does each timeframe's own score read what comes next?" }));
+    const t2 = el("table", { class: "sc" });
+    t2.append(el("tr", {}, el("th", { text: "Score" }), el("th", { text: "Bitcoin 30 days later" }), el("th", { text: "Bitcoin 90 days later" }), el("th", { text: "Over 90 days" })));
+    [["Short term · mood", "sentiment"], ["Medium term · momentum", "momentum"], ["Long term · trend", "trend"]].forEach(([lbl, k]) => {
+      const q = dq[k];
+      if (!q || !q["30"] || !q["90"]) return;
+      t2.append(el("tr", {}, el("td", { text: lbl }), cell(q["30"]), cell(q["90"]), el("td", { text: verdict(q["90"]) })));
+    });
+    p.append(el("div", { class: "sc-wrap" }, t2));
+    p.append(el("p", { class: "sc-note", html:
+      "Every day since 2014 is sorted by that score into five equal groups. Each cell shows the average Bitcoin return after the <b>lowest</b> fifth of days → after the <b>highest</b> fifth (hover for all five). "
+      + "Bitcoin rose a lot over this period, so every group is positive; what matters is whether the higher groups did better. The medium-term score includes price vs its 50-day average (added 26 October 2026) and these figures were recomputed with it." }));
+  }
+
   const body = el("div", { class: "why-body", hidden: "", html:
     "This tool's job is the <b>daily glance</b>: is the market bull, bear or neutral right now? So the headline number is <b>phase agreement</b> — "
     + "on what share of days did the label match the cycle the market was actually in (dated after the fact). It missed on "
