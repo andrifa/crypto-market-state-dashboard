@@ -37,7 +37,7 @@ HISTORY = DATA / "history.csv"
 DISCLAIMER = (
     "All indicators are trailing (they describe what already happened), not forecasts. "
     "This is a decision aid for budget posture, not a trading signal. "
-    "Built on ~2.7 market cycles — treat it as direction, not a precise number."
+    "Built on ~2.9 market cycles — treat it as direction, not a precise number."
 )
 
 HISTORY_COLS = [
