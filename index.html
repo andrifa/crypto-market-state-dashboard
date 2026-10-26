@@ -380,6 +380,17 @@
     text-transform:uppercase; padding:0 0 6px; border-bottom:1px solid var(--hair);}
   table.sc th:first-child, table.sc td:first-child{text-align:left;}
   table.sc td{text-align:right; padding:6px 0; border-bottom:1px solid var(--hair); color:var(--ink-soft);}
+  .qrow{display:grid; grid-template-columns:150px 1fr 190px; gap:14px 20px; align-items:end; padding:12px 0; border-top:1px solid var(--hair);}
+  .ql b{display:block; font-family:"Space Grotesk"; font-size:14px; color:var(--ink);}
+  .ql span, .qs span{font-size:11.5px; color:var(--muted);}
+  .qbars{display:flex; align-items:flex-end; gap:8px; height:92px; max-width:360px;}
+  .qb{flex:1; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:3px; height:100%;}
+  .qb i{display:block; width:100%; border-radius:5px 5px 2px 2px; background:var(--purple-2); opacity:.85;}
+  .qb:last-child i{background:var(--teal-deep); opacity:1;}
+  .qv{font-family:"IBM Plex Mono"; font-size:10.5px; color:var(--ink-soft);}
+  .qend{display:flex; justify-content:space-between; max-width:360px; font-size:10.5px; color:var(--muted); margin-top:4px;}
+  .qs b{display:block; font-family:"IBM Plex Mono"; font-size:13px; color:var(--ink);}
+  @media (max-width:760px){ .qrow{grid-template-columns:1fr;} }
   .sc-sub{font-family:"Space Grotesk"; font-weight:600; font-size:14.5px; margin:22px 0 8px; color:var(--ink);}
   .sc-wrap{overflow-x:auto;}
   .sc-note{color:var(--muted); font-size:11.5px; margin-top:12px; line-height:1.5;}
@@ -486,7 +497,7 @@
   <footer id="footer"></footer>
 </div>
 <noscript><div class="wrap">This page needs JavaScript to display the data.</div></noscript>
-<script src="app.js?v=20261026d"></script>
-<script src="glossary.js?v=20261026d"></script>
+<script src="app.js?v=20261026e"></script>
+<script src="glossary.js?v=20261026e"></script>
 </body>
 </html>

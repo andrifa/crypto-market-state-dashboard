@@ -845,25 +845,33 @@ function renderScorecard(bt) {
     `${sc.span ? sc.span[0] + "–" + sc.span[1] : ""} · ~${sc.cycles} market cycles · ${sc.days} days · `
     + `${sc.transitions} regime changes (${sc.per_year}/yr) · median lag at a cycle turn ${sc.turn_median_lag_days ?? "—"} days. Recomputed daily.` }));
 
-  // how well each timeframe's own score reads what comes next (average forward return by fifth of days)
+  // does a higher score really mean better results afterwards? (average 90-day return by fifth of days)
   const dq = bt.dimension_quintiles;
   if (dq && dq.sentiment && dq.momentum && dq.trend) {
     const sg = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(Math.round(v * 100))}%`;
     const step = (a) => a.slice(1).filter((v, i) => v > a[i]).length;
-    const verdict = (a) => (step(a) === 4 ? "Steps up every time" : step(a) === 3 ? "Mostly steps up" : "Mixed");
-    const cell = (a) => el("td", { title: `Lowest to highest fifth: ${a.map(sg).join(" → ")}` }, `${sg(a[0])} → ${sg(a[4])}`);
-    p.append(el("p", { class: "sc-sub", text: "How well does each timeframe's own score read what comes next?" }));
-    const t2 = el("table", { class: "sc" });
-    t2.append(el("tr", {}, el("th", { text: "Score" }), el("th", { text: "Bitcoin 30 days later" }), el("th", { text: "Bitcoin 90 days later" }), el("th", { text: "Over 90 days" })));
-    [["Short term · mood", "sentiment"], ["Medium term · momentum", "momentum"], ["Long term · trend", "trend"]].forEach(([lbl, k]) => {
-      const q = dq[k];
-      if (!q || !q["30"] || !q["90"]) return;
-      t2.append(el("tr", {}, el("td", { text: lbl }), cell(q["30"]), cell(q["90"]), el("td", { text: verdict(q["90"]) })));
+    const verdict = (a) => (step(a) === 4 ? "Yes, every step" : step(a) === 3 ? "Yes, almost every step" : "Only partly");
+    const top = Math.max(...["sentiment", "momentum", "trend"].map((k) => Math.max(...(dq[k]["90"] || [0]))));
+    p.append(el("p", { class: "sc-sub", text: "Does a higher score really mean better results afterwards?" }));
+    p.append(el("p", { class: "sc-note", style: "margin-top:0", html:
+      "Every day since 2014 is sorted by its score into five equal groups, from the <b>lowest</b> scores to the <b>highest</b>. "
+      + "Each bar is how much Bitcoin gained on average over the <b>next 90 days</b> after the days in that group. "
+      + "If the score is useful, the bars should rise from left to right." }));
+    [["Short term", "mood score", "sentiment"], ["Medium term", "momentum score", "momentum"], ["Long term", "trend score", "trend"]].forEach(([lbl, sub, k]) => {
+      const q = dq[k] && dq[k]["90"];
+      if (!q) return;
+      const bars = el("div", { class: "qbars" });
+      q.forEach((v, i) => bars.append(el("div", { class: "qb", title: `${["Lowest", "Low", "Middle", "High", "Highest"][i]} fifth of scores: Bitcoin ${sg(v)} on average over the next 90 days` },
+        el("span", { class: "qv", text: sg(v) }),
+        el("i", { style: `height:${Math.max(4, (Math.max(v, 0) / top) * 64)}px` }))));
+      p.append(el("div", { class: "qrow" },
+        el("div", { class: "ql" }, el("b", { text: lbl }), el("span", { text: sub })),
+        el("div", {}, bars, el("div", { class: "qend" }, el("span", { text: "lowest scores" }), el("span", { text: "highest scores" }))),
+        el("div", { class: "qs" }, el("b", { text: `${sg(q[0])} → ${sg(q[4])}` }), el("span", { text: `Rises with the score? ${verdict(q)}` }))));
     });
-    p.append(el("div", { class: "sc-wrap" }, t2));
     p.append(el("p", { class: "sc-note", html:
-      "Every day since 2014 is sorted by that score into five equal groups. Each cell shows the average Bitcoin return after the <b>lowest</b> fifth of days → after the <b>highest</b> fifth (hover for all five). "
-      + "Bitcoin rose a lot over this period, so every group is positive; what matters is whether the higher groups did better. The medium-term score includes price vs its 50-day average (added 26 October 2026) and these figures were recomputed with it." }));
+      "Bitcoin rose a lot over this period, so every bar is positive; look at the <b>gap</b> between the first and last bar. "
+      + "This is a look back at how the scores behaved, not a forecast for today. The medium-term score includes price vs its 50-day average (added 26 October 2026) and was recomputed with it." }));
   }
 
   const body = el("div", { class: "why-body", hidden: "", html:
