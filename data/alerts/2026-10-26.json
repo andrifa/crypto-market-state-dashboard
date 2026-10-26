@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-26",
+  "generated": "2026-10-26T05:06:04Z",
+  "price": 80165,
+  "events": [
+    {
+      "id": "dip:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC dipped below $80,000 in the last 24 hours (low $79,369) and recovered",
+      "facts": {
+        "level": 80000,
+        "low_24h": 79369,
+        "price": 80165
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [],
+  "posted": []
+}

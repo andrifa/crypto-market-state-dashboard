@@ -692,6 +692,7 @@ const SEGMENTS = [
   ["social", "Social media & content"],
   ["seo", "SEO"],
   ["paid", "Paid digital marketing (ads)"],
+  ["crm", "CRM (existing users)"],
   ["research", "Research (signals)"],
 ];
 const STANCE_CLASS = { Increase: "up", Hold: "mid", Reduce: "down", Prepare: "mid", Monitor: "mid" };

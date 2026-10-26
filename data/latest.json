@@ -632,6 +632,24 @@
           "detail": "Reports say a fourth delay of the 22% tax is likely but not final (PANews); a confirmed delay is relevant for Korean-style retail audiences."
         }
       ]
+    },
+    "crm": {
+      "stance": "Hold",
+      "strategy": "Keep the regular lifecycle messages and prepare the next campaign: no rally or drop window is open, and Bitcoin is sitting near $80,000, just under its 50-day average.",
+      "actions": [
+        {
+          "what": "Send a calm 'what the Fed decision means' note to existing users",
+          "detail": "The Fed meets on 27-28 October; a short, plain explainer keeps users informed without pushing them to trade."
+        },
+        {
+          "what": "Queue the onboarding journey for new sign-ups",
+          "detail": "After past rallies, new sign-ups and first deposits rose about 2-4 weeks later (+14% and +24% above normal after two weeks), so have the welcome and first-deposit messages ready before the next rally signal."
+        },
+        {
+          "what": "Reassure holders after the dip below $80,000",
+          "detail": "Bitcoin dipped under $80,000 in the last 24 hours and recovered; a short note on how Reku keeps funds safe fits better than any promotion today."
+        }
+      ]
     }
   }
 }

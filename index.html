@@ -147,6 +147,7 @@
   .seg-overall b{color:var(--ink);}
   .seg-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
   @media (max-width:760px){ .seg-grid{grid-template-columns:1fr;} }
+  .seg-grid .seg:last-child:nth-child(odd){grid-column:1 / -1;}
   .seg{background:var(--surface-2); border-radius:12px; padding:14px 16px;}
   .seg-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:6px; flex-wrap:wrap;}
   .seg-head h4{font-family:"Space Grotesk"; font-size:13.5px; margin:0; color:var(--ink);}
@@ -482,7 +483,7 @@
   <footer id="footer"></footer>
 </div>
 <noscript><div class="wrap">This page needs JavaScript to display the data.</div></noscript>
-<script src="app.js?v=20261021b"></script>
-<script src="glossary.js?v=20261021b"></script>
+<script src="app.js?v=20261026a"></script>
+<script src="glossary.js?v=20261026a"></script>
 </body>
 </html>
