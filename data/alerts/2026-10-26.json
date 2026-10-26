@@ -35,5 +35,30 @@
       "text": "*CRM:* send existing users a calm note about the dip and how Reku keeps funds safe, with no promotions today. Queue the welcome and first-deposit journey now: after past rallies, new sign-ups and first deposits rose about 2–4 weeks later."
     }
   ],
-  "posted": []
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "marketing-woohoo",
+      "ts": "1792993047.194639",
+      "at": "2026-10-26T05:40:00Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "marketing-woohoo",
+      "ts": "1792993051.473729",
+      "at": "2026-10-26T05:40:00Z"
+    },
+    {
+      "audience": "social",
+      "channel": "marketing-woohoo",
+      "ts": "1792993053.252389",
+      "at": "2026-10-26T05:40:00Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "marketing-woohoo",
+      "ts": "1792993054.333829",
+      "at": "2026-10-26T05:40:00Z"
+    }
+  ]
 }
