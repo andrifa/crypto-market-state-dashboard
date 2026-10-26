@@ -19,6 +19,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from fetch import (
@@ -73,6 +74,43 @@ def scenarios_from_levels(price: float, levels: dict) -> dict:
         "up": None if not above else {**fmt(above[0]), "next": [fmt(p) for p in above[1:3]]},
         "down": None if not below else {**fmt(below[0]), "next": [fmt(p) for p in below[1:3]]},
         "range": [below[0][1] if below else levels["low_30d"], above[0][1] if above else levels["high_30d"]],
+    }
+
+
+def short_scenarios(close: pd.Series, levels: dict) -> dict:
+    """The coming week, on the scale Bitcoin has actually been moving lately.
+    The 'sideways' zone is today's price +/- half of a typical weekly swing (median high-to-low
+    range of daily closes over the last 13 weeks). If a real level (e.g. the 50-day average) sits
+    within 0.75 of a swing of that edge, the edge snaps to it. Levels further away (200-day
+    average, 90-day low ...) stay in `scenarios` as the bigger floors/ceilings."""
+    price = float(close.iloc[-1])
+    blocks = [close.iloc[i:i + 7] for i in range(len(close) - 91, len(close), 7)]
+    swing = float(np.median([b.max() - b.min() for b in blocks if len(b) == 7]))
+    pts = [(k, v) for k, v in levels.items() if v is not None]
+    rnd = lambda x: int(round(x / 250.0) * 250)
+    fmt = lambda p: {"level": p[1], "name": LEVEL_NAMES[p[0]]}
+
+    above = sorted([p for p in pts if p[1] > price * 1.003], key=lambda p: p[1])
+    below = sorted([p for p in pts if p[1] < price * 0.997], key=lambda p: -p[1])
+    up_edge = above[0] if above and above[0][1] - price <= 0.75 * swing else None
+    dn_edge = below[0] if below and price - below[0][1] <= 0.75 * swing else None
+    hi = up_edge[1] if up_edge else rnd(price + swing / 2)
+    lo = dn_edge[1] if dn_edge else rnd(price - swing / 2)
+    def spread(ps):   # drop levels within 0.7% of the one before (e.g. 30-day and 90-day high a hair apart)
+        out = []
+        for p in ps:
+            if not out or abs(p[1] - out[-1][1]) / p[1] > 0.007:
+                out.append(p)
+        return out
+    beyond_up = spread([p for p in above if p[1] > hi])
+    beyond_dn = spread([p for p in below if p[1] < lo])
+    return {
+        "typical_week_swing": round(swing),
+        "low": lo, "high": hi,
+        "up": {"level": hi, "name": LEVEL_NAMES[up_edge[0]] if up_edge else "top of a typical week's swing",
+               "next": [fmt(p) for p in beyond_up[:2]]},
+        "down": {"level": lo, "name": LEVEL_NAMES[dn_edge[0]] if dn_edge else "bottom of a typical week's swing",
+                 "next": [fmt(p) for p in beyond_dn[:2]]},
     }
 
 
@@ -165,6 +203,7 @@ def build_payload() -> dict:
         "ath": round(float(close.max())),
     }
     scen = scenarios_from_levels(float(close.iloc[-1]), levels)
+    scen["short"] = short_scenarios(close, levels)
     fr = friendly_row(row, prev, scen, levels)
 
 

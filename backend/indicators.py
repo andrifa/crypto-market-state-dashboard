@@ -152,6 +152,7 @@ def compute_all(df: pd.DataFrame) -> pd.DataFrame:
     out["mayer"] = mayer_multiple(c, 200)
     out["ma_slope"] = ma_slope(c, 200, 90)
     out["ma_cross"] = ma_cross(c, 50, 200)
+    out["gap50"] = c / sma(c, 50) - 1.0          # price vs its 50-day average (recent-weeks check inside momentum)
     out["ma_2y"] = ma_multiple(c, 730)
     out["ma_200w"] = ma_multiple(c, 1400)
     out["drawdown"] = drawdown_from_ath(c)

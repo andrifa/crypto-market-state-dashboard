@@ -148,7 +148,12 @@ def _level_lines(scen, levels):
     price = scen["price"]
     up, down = scen.get("up"), scen.get("down")
     short = None
-    if up and down:
+    sh = scen.get("short")
+    if sh:
+        short = (f"In a typical week Bitcoin has swung about {_usd(sh['typical_week_swing'])} lately, so expect choppy moves between "
+                 f"{_usd(sh['low'])} and {_usd(sh['high'])}. A daily close above {_usd(sh['high'])} ({sh['up']['name']}) would turn this clearly up; "
+                 f"below {_usd(sh['low'])} it turns down.")
+    elif up and down:
         short = (f"A daily close above {_usd(up['level'])} ({up['name']}) would turn this clearly up; "
                  f"below {_usd(down['level'])} ({down['name']}) it turns down; in between, expect choppy moves.")
     elif up:

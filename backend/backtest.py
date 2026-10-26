@@ -98,7 +98,7 @@ def run():
     print(f"{'indicator':14s} " + "".join(f"{'rho@'+str(h):>12s}{'p':>7s}" for h in HORIZONS))
     per_ind = {}
     for col in ["mayer", "slope", "cross", "ma_200w",
-                "rsi_w", "roc90", "breadth", "activity", "fng", "funding", "ssr"]:
+                "rsi_w", "roc90", "breadth", "activity", "gap50", "fng", "funding", "ssr"]:
         row, cells = {}, ""
         for h in HORIZONS:
             rho, p, n = spearman(s[col], fwd[h])

@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-10-26T00:42:21Z",
+  "updated_utc": "2026-10-26T05:29:38Z",
   "date": "2026-10-26",
-  "price_btc": 80165,
+  "price_btc": 80187,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "uptrend intact, but price is idling below its 50-day line",
@@ -24,7 +24,7 @@
   ],
   "watch": "Price swings are about as calm as they have been in years and the mood reading is a flat 50, yet price sits just under its 50-day average with the Fed deciding tomorrow. A close back above $81,821 would ease that tension; a slide toward $75,383 would start a drop signal.",
   "analysis": [
-    "Bottom line: the bigger trend still points up, but the last week has been soft. Short term, the picture is soft to neutral: Bitcoin lost its 50-day average on 22 October and has closed below it for five days in a row (about 2% under $81,821), and it sits about 7% below its 30-day high of $86,480. The mood itself is dead neutral (Fear & Greed 50) and daily price swings are among the calmest in years, so this looks like a pause, not a panic. If price closes back above $81,821 the short term turns clearly up; a close below $72,992 (the 200-day average) turns it down; in between expect choppy days. The Fed decision on 27-28 October could give the week a direction.",
+    "Bottom line: the bigger trend still points up, but the last week has been soft. Short term, the picture is soft to neutral: Bitcoin lost its 50-day average on 22 October and has closed below it for five days in a row (about 2% under $81,822), and it sits about 7% below its 30-day high of $86,480. The mood itself is dead neutral (Fear & Greed 50) and daily price swings are among the calmest in years, so this looks like a pause, not a panic. In a typical week lately Bitcoin has swung about $2,670 from high to low, so expect choppy days between roughly $78,750 and $81,822. A close above $81,822 turns the short term clearly up; a close below $78,750 turns it down. The Fed decision on 27-28 October could give the week a direction.",
     "Over the next month, the read is mixed rather than clearly up. The three-month numbers still look good: price is about 26% above three months ago and about three in four of the last 90 days closed above the long-term average. But the last few weeks have faded: price is down about 5% over 30 days and under its 50-day average, so until it wins back $81,821 treat the month as neutral with an upward tilt. Above $86,603 (the 90-day high) there would be room to climb; a close below $75,383 would start a drop signal. News adds a little: South Korea is leaning toward delaying its 22% crypto tax a fourth time, and US lawmakers agreed another detail of the CLARITY Act (both PANews). The Fed meeting on 27-28 October and US GDP and inflation data later this week are the next scheduled tests.",
     "Over three to six months, the trend leans up with the most confidence of the three. Price is about 10% above its 200-day average, which is still rising slowly, and about 36% below its record, so this reads as an early recovery rather than a late-stage run. The recovery stays intact while price holds above $72,992 (the 200-day average), with $67,366 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. A faster-rising 200-day average would strengthen this read and support steady spending on new users; a close back under it would weaken it."
   ],
@@ -37,15 +37,15 @@
     "low_30d": 80154,
     "high_90d": 86603,
     "low_90d": 62763,
-    "ma_50": 81821,
-    "ma_200": 72992,
-    "ma_200w": 67366,
+    "ma_50": 81822,
+    "ma_200": 72993,
+    "ma_200w": 67384,
     "ath": 124753
   },
   "scenarios": {
-    "price": 80165,
+    "price": 80187,
     "up": {
-      "level": 81821,
+      "level": 81822,
       "name": "50-day average",
       "next": [
         {
@@ -59,11 +59,11 @@
       ]
     },
     "down": {
-      "level": 72992,
+      "level": 72993,
       "name": "200-day average",
       "next": [
         {
-          "level": 67366,
+          "level": 67384,
           "name": "200-week average"
         },
         {
@@ -73,13 +73,46 @@
       ]
     },
     "range": [
-      72992,
-      81821
-    ]
+      72993,
+      81822
+    ],
+    "short": {
+      "typical_week_swing": 2670,
+      "low": 78750,
+      "high": 81822,
+      "up": {
+        "level": 81822,
+        "name": "50-day average",
+        "next": [
+          {
+            "level": 86480,
+            "name": "30-day high"
+          },
+          {
+            "level": 124753,
+            "name": "all-time high"
+          }
+        ]
+      },
+      "down": {
+        "level": 78750,
+        "name": "bottom of a typical week's swing",
+        "next": [
+          {
+            "level": 72993,
+            "name": "200-day average"
+          },
+          {
+            "level": 67384,
+            "name": "200-week average"
+          }
+        ]
+      }
+    }
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": -0.0216,
+    "ret_7d": -0.0214,
     "threshold": 0.08,
     "window_days": 14,
     "needs_up": 88493,
@@ -340,32 +373,38 @@
       }
     }
   },
+  "recent": {
+    "vs_ma50_pct": -0.02,
+    "days_below_ma50": 5,
+    "ret_30d": -0.05,
+    "from_high_30d": -0.0728
+  },
   "scores": {
-    "sentiment": 0.029,
-    "momentum": 0.243,
+    "sentiment": 0.021,
+    "momentum": 0.131,
     "trend": 0.367
   },
   "context": {
-    "mayer_multiple": 1.098,
+    "mayer_multiple": 1.099,
     "ma200_slope_90d": 0.0158,
     "ma_200w_multiple": 1.19,
     "drawdown_from_ath": -0.357,
     "rsi_weekly": 54.4,
-    "active_addr_ratio": 0.901,
-    "puell_multiple": 1.077,
+    "active_addr_ratio": 0.839,
+    "puell_multiple": 1.171,
     "fear_greed": 50.0,
     "funding_z": -0.12,
     "vol_percentile": 0.03,
-    "bollinger_width": 0.0525,
+    "bollinger_width": 0.0524,
     "btc_dominance": 60.0,
     "ma_cross": 0.121,
-    "roc_90d": 0.2551,
+    "roc_90d": 0.2555,
     "breadth_90d": 0.767,
-    "ssr": 5.36,
+    "ssr": 5.32,
     "pi_cycle_gap": -0.5121,
     "open_interest_usd": 7505474462.4528,
     "long_short_ratio": 2.1726,
-    "dvol": 38.69,
+    "dvol": 38.25,
     "us_10y_yield": 4.988,
     "vix": 19.45,
     "fed_funds_rate": 3.63,
@@ -374,7 +413,7 @@
     "public_company_btc_treasury": 1289903.0,
     "next_fomc_meeting": "2026-10-27"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 26 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (uptrend intact, but price is idling below its 50-day line)\n    Momentum weakening · Sentiment: Neutral\n    Phase: mid uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC is about 10% above its 200-day average,\n    which is still rising.\n  • Price is up about 26% over 90 days; 77% of\n    those days closed above the long-term\n    average.\n  • Price ($80,165) sits just below the 50-day\n    average ($81,821), so the shorter picture is\n    pausing.\n  • Still about 36% below the all-time high: an\n    early recovery, not a late-stage run.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 26 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum weakening · Sentiment: Neutral\n    Phase: mid uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC price is 10% above its 200-day average.\n  • The 200-day trend is rising (+2% over the last\n    90 days).\n  • Price is still 36% below its all-time high.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.7 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -500,61 +539,6 @@
       }
     ]
   },
-  "news_impact": {
-    "as_of": "2026-10-26",
-    "items": [
-      {
-        "headline": "South Korea's Blue House Leans Toward Fourth Delay of 22% Crypto Income Tax",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1749f-639d-75c3-906e-d02a9e25625e",
-        "horizon": "medium",
-        "direction": "positive",
-        "size": "minor",
-        "why": "South Korea is a large retail crypto market, and putting off a 22% tax on crypto gains again would remove a near-term worry for its traders, though no decision is final."
-      },
-      {
-        "headline": "US Senator Lummis: New Crypto Fundraising Limits Included in CLARITY Act",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a17385-466d-756c-a017-25916937a249",
-        "horizon": "medium",
-        "direction": "positive",
-        "size": "minor",
-        "why": "Both parties agreeing on another detail of the US crypto market-structure bill is a small step toward clearer rules, even though the bill is not passed."
-      },
-      {
-        "headline": "Latvia Plans to Roll Out RWA Tokenization Regulatory Framework in H1 2027, with Commercial Real Estate and Government Bonds as Priorities",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a173a6-7af7-724f-863d-901b058a2af5",
-        "horizon": "long",
-        "direction": "positive",
-        "size": "minor",
-        "why": "Another EU government planning rules for putting real-world assets like property and bonds on blockchains adds a little to long-run adoption."
-      }
-    ],
-    "summary": {
-      "short": "",
-      "medium": "A possible fourth delay of South Korea's crypto tax and small progress on the US CLARITY Act are mild positives for the coming weeks.",
-      "long": "Latvia's plan for rules on tokenizing property and bonds is a small further sign of long-run adoption."
-    },
-    "impact": {
-      "short": 0.0,
-      "medium": 0.5,
-      "long": 0.25
-    },
-    "cap": 0.1
-  },
-  "scores_base": {
-    "trend": 0.342,
-    "momentum": 0.193,
-    "sentiment": 0.029
-  },
-  "conviction_base": 81,
-  "news_adjustment": {
-    "sentiment": 0.0,
-    "momentum": 0.05,
-    "trend": 0.025
-  },
-  "news_flag": null,
   "marketing_segments": {
     "as_of": "2026-10-26",
     "social": {
@@ -652,10 +636,59 @@
       ]
     }
   },
-  "recent": {
-    "vs_ma50_pct": -0.0205,
-    "days_below_ma50": 5,
-    "ret_30d": -0.0502,
-    "from_high_30d": -0.073
-  }
+  "news_impact": {
+    "as_of": "2026-10-26",
+    "items": [
+      {
+        "headline": "South Korea's Blue House Leans Toward Fourth Delay of 22% Crypto Income Tax",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a1749f-639d-75c3-906e-d02a9e25625e",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "minor",
+        "why": "South Korea is a large retail crypto market, and putting off a 22% tax on crypto gains again would remove a near-term worry for its traders, though no decision is final."
+      },
+      {
+        "headline": "US Senator Lummis: New Crypto Fundraising Limits Included in CLARITY Act",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a17385-466d-756c-a017-25916937a249",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "minor",
+        "why": "Both parties agreeing on another detail of the US crypto market-structure bill is a small step toward clearer rules, even though the bill is not passed."
+      },
+      {
+        "headline": "Latvia Plans to Roll Out RWA Tokenization Regulatory Framework in H1 2027, with Commercial Real Estate and Government Bonds as Priorities",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a173a6-7af7-724f-863d-901b058a2af5",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "Another EU government planning rules for putting real-world assets like property and bonds on blockchains adds a little to long-run adoption."
+      }
+    ],
+    "summary": {
+      "short": "",
+      "medium": "A possible fourth delay of South Korea's crypto tax and small progress on the US CLARITY Act are mild positives for the coming weeks.",
+      "long": "Latvia's plan for rules on tokenizing property and bonds is a small further sign of long-run adoption."
+    },
+    "impact": {
+      "short": 0.0,
+      "medium": 0.5,
+      "long": 0.25
+    },
+    "cap": 0.1
+  },
+  "scores_base": {
+    "trend": 0.342,
+    "momentum": 0.081,
+    "sentiment": 0.021
+  },
+  "conviction_base": 81,
+  "news_adjustment": {
+    "sentiment": 0.0,
+    "momentum": 0.05,
+    "trend": 0.025
+  },
+  "news_flag": null
 }

@@ -45,7 +45,7 @@ const GLOSSARY_GROUPS = [
     note: "Moves the confidence level and the medium-term read. Does not change the headline label.",
     items: [
       {
-        name: "Weekly RSI", aka: "Relative Strength Index", weight: "30% of the medium-term score",
+        name: "Weekly RSI", aka: "Relative Strength Index", weight: "25% of the medium-term score",
         what: "A 0–100 gauge of how strongly price has risen versus fallen over recent weeks (we use 14 weekly closes).",
         read: "Above about 70: buying has run hot, so the move is stretched and more fragile. Below about 35: selling has run hot, which has often come near a bottom. Around 50: balanced.",
         today: (c) => {
@@ -56,7 +56,7 @@ const GLOSSARY_GROUPS = [
         },
       },
       {
-        name: "Active addresses", weight: "30% of the medium-term score",
+        name: "Active addresses", weight: "25% of the medium-term score",
         what: "The number of Bitcoin addresses that sent or received coins on a day, compared with their own average over the past year.",
         read: "Above 1.00: more people are using the network than usual (activity is expanding). Below 1.00: usage is quieter than usual.",
         today: (c) => {
@@ -67,16 +67,27 @@ const GLOSSARY_GROUPS = [
         },
       },
       {
-        name: "90-day price change", aka: "rate of change, ROC", weight: "24% of the medium-term score",
+        name: "90-day price change", aka: "rate of change, ROC", weight: "20% of the medium-term score",
         what: "How much the Bitcoin price has changed over the last 90 days.",
         read: "Clearly positive: the market has been climbing for months. Clearly negative: it has been falling. We look at the direction and the size.",
         today: (c) => (c.roc_90d == null ? null : `${fmtPct(c.roc_90d, 1, true)} over the last 90 days.`),
       },
       {
-        name: "Breadth", aka: "days above the 200-day average", weight: "16% of the medium-term score",
+        name: "Breadth", aka: "days above the 200-day average", weight: "13% of the medium-term score",
         what: "Of the last 90 days, the share that closed above the 200-day average price.",
         read: "Above 50%: most recent days were strong, and 70% or more is broad strength. If price is rising but this share is low, the gain came from one recent push rather than steady strength.",
         today: (c) => (c.breadth_90d == null ? null : `${fmtPct(c.breadth_90d, 0)} of the last 90 days closed above the 200-day average.`),
+      },
+      {
+        name: "Price vs 50-day average", aka: "recent-weeks check", weight: "17% of the medium-term score",
+        what: "How far today's price is above or below its 50-day average (the average closing price of the last 50 days). The other medium-term inputs look back about 90 days, so this one is what lets the score notice the last few weeks.",
+        read: "Above the line: the last weeks have been firm. Below it: they have been soft, even if the 3-month picture is still positive. Added on 26 October 2026 because the 90-day inputs were slow to notice a fade; earlier days in the history are shown as originally published, adjusted with the same rule.",
+        today: (c, d) => {
+          const r = d.recent;
+          if (!r || r.vs_ma50_pct == null) return null;
+          const gap = Math.abs(r.vs_ma50_pct * 100).toFixed(1);
+          return `Price is ${gap}% ${r.vs_ma50_pct >= 0 ? "above" : "below"} its 50-day average${r.vs_ma50_pct < 0 && r.days_below_ma50 > 1 ? `, for ${r.days_below_ma50} days in a row` : ""}.`;
+        },
       },
     ],
   },
@@ -165,7 +176,7 @@ function renderGlossary(d) {
   const c = d.context || {};
 
   box.append(el("p", { class: "gl-note", html:
-    "Each timeframe always looks at the <b>same fixed set of indicators</b>: 3 for the short term, 4 for the medium term and 4 for the long term. " +
+    "Each timeframe always looks at the <b>same fixed set of indicators</b>: 3 for the short term, 5 for the medium term and 4 for the long term. " +
     "The list does not change from day to day — only the numbers do. Open a group to see what each indicator means and how to read it." }));
 
   const map = el("div", { class: "gl-map" });

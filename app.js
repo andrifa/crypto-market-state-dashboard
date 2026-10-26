@@ -560,11 +560,20 @@ function renderTriggers(d) {
   const fmt = (p) => `<b>${fmtUSD(p.level)}</b> (${p.name})`;
   const next = (p) => (p.next && p.next.length ? ` Next levels to watch: ${p.next.map(fmt).join(", ")}.` : "");
   const rows = [];
-  rows.push(["up", "Turns up", S.up
-    ? `A daily close above ${fmt(S.up)} would show buyers are in control.${next(S.up)}`
-    : `Price is at its all-time high area (${fmtUSD(L.ath)}); there is no resistance above, so watch how long it holds.`]);
-  rows.push(["mid", "Sideways", `While price stays between <b>${fmtUSD(S.range[0])}</b> and <b>${fmtUSD(S.range[1])}</b>, expect choppy back-and-forth moves with no clear direction. Neither buyers nor sellers have taken control inside this zone.`]);
-  if (S.down) rows.push(["down", "Turns down", `A daily close below ${fmt(S.down)} would show sellers are taking over.${next(S.down)}`]);
+  const sh = S.short;
+  if (sh) {
+    // this week, sized to how far Bitcoin has actually been moving lately
+    rows.push(["up", "Turns up", `A daily close above ${fmt(sh.up)} would show buyers are taking control.${next(sh.up)}`]);
+    rows.push(["mid", "Sideways", `In a typical week lately Bitcoin has swung about <b>${fmtUSD(sh.typical_week_swing)}</b> from its high to its low. While price stays between <b>${fmtUSD(sh.low)}</b> and <b>${fmtUSD(sh.high)}</b>, expect choppy back-and-forth moves with no clear direction.`]);
+    rows.push(["down", "Turns down", `A daily close below ${fmt(sh.down)} would show sellers are taking over.${next(sh.down)}`]);
+    if (S.down && S.down.level < sh.low) rows.push(["mid", "Bigger floor", `The longer-term picture only weakens below ${fmt(S.down)}, so a dip inside this week's zone is not a change of trend.`]);
+  } else {
+    rows.push(["up", "Turns up", S.up
+      ? `A daily close above ${fmt(S.up)} would show buyers are in control.${next(S.up)}`
+      : `Price is at its all-time high area (${fmtUSD(L.ath)}); there is no resistance above, so watch how long it holds.`]);
+    rows.push(["mid", "Sideways", `While price stays between <b>${fmtUSD(S.range[0])}</b> and <b>${fmtUSD(S.range[1])}</b>, expect choppy back-and-forth moves with no clear direction. Neither buyers nor sellers have taken control inside this zone.`]);
+    if (S.down) rows.push(["down", "Turns down", `A daily close below ${fmt(S.down)} would show sellers are taking over.${next(S.down)}`]);
+  }
   rows.forEach(([cls, tag, html]) => box.append(el("div", { class: "scn" },
     el("span", { class: "scn-tag " + cls, text: tag }), el("p", { class: "scn-text", html }))));
   box.append(el("p", { class: "chart-note", text: `Price now ${fmtUSD(S.price)}. Levels use daily closing prices and mark where a move would be confirmed or broken — they are reference points, not a forecast.` }));
@@ -604,7 +613,7 @@ function renderNews(d) {
           el("p", { class: "news-why", text: i.why }))));
     });
   });
-  box.append(el("p", { class: "chart-note", text: `Each headline is classified by direction, size and time horizon, and the shift is calculated with a fixed formula (minor 0.25 / moderate 0.5 / major 1.0 per item), capped at ±${cap.toFixed(2)} per score. This adjustment is not part of the backtest, and the BULLISH / NEUTRAL / BEARISH label and budget action stay with the 11-indicator model.` }));
+  box.append(el("p", { class: "chart-note", text: `Each headline is classified by direction, size and time horizon, and the shift is calculated with a fixed formula (minor 0.25 / moderate 0.5 / major 1.0 per item), capped at ±${cap.toFixed(2)} per score. This adjustment is not part of the backtest, and the BULLISH / NEUTRAL / BEARISH label and budget action stay with the 12-indicator model.` }));
 }
 
 /* -------------------------- narratives & altcoins (written daily from PANews + CoinGecko) ---- */
@@ -853,12 +862,12 @@ function renderMethodology() {
   const body = el("div", { class: "why-body", hidden: "", html:
     "The headline regime comes from the <b>Trend</b> dimension only: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between, with a five-day "
     + "confirmation so the label doesn't flip on noise. Trend blends the Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation "
-    + "counterweight. <b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth and active-address trend; <b>Sentiment</b> blends Fear &amp; Greed, "
+    + "counterweight. <b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth, active-address trend and (since 26 October 2026) how far price is from its 50-day average, so the score notices the last few weeks as well as the last 90 days; <b>Sentiment</b> blends Fear &amp; Greed, "
     + "perp funding and the stablecoin ratio. Momentum and Sentiment never move the label — they set confidence and the watch notes.<br><br>"
     + "The \"Supporting signals\" catalog lists 35 indicators considered for this model. Only the ones above feed the score; most of the rest are live "
     + "context. 8 of them have no free API (paid on-chain/derivatives providers only) — the daily reasoning routine web-searches for a reported figure "
     + "for those instead, shown with its source and date; on a day it finds nothing credible, that row reads \"not tracked\".<br><br>"
-    + "The three scores shown include a small news adjustment (at most ±0.10 each, from headlines classified by size and time horizon). That part is not backtested, so the BULLISH / NEUTRAL / BEARISH label and the budget action stay with the 11-indicator model; if news pushes a score across a label threshold, the page flags it instead of changing the label.<br><br>"
+    + "The three scores shown include a small news adjustment (at most ±0.10 each, from headlines classified by size and time horizon). That part is not backtested, so the BULLISH / NEUTRAL / BEARISH label and the budget action stay with the 12-indicator model; if news pushes a score across a label threshold, the page flags it instead of changing the label.<br><br>"
     + "Every input is trailing — it describes what already happened, it does not forecast. Validated on ~3 market cycles: it flagged every major cycle "
     + "top and bottom, a median of about three months after the price extreme. Thresholds and weights all live in one place (state.py → CONFIG)." });
   p.append(whyToggle("Regime logic, confidence, and limits", body));

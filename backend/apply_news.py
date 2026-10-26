@@ -12,7 +12,7 @@ arbitrary arithmetic:
     impact        sum of weights per horizon, clipped to [-1, 1]
     shift         impact * CAP, with CAP = 0.10 on the model's -1..1 scale
 
-The 11-indicator base scores are kept in `scores_base` and are what the
+The 12-indicator base scores are kept in `scores_base` and are what the
 backtest and history.csv describe; news is not in either (it has no
 history to validate a weight against). The headline regime label and budget
 action stay with the base model. If news moves the trend score across a
@@ -96,7 +96,7 @@ def main() -> int:
     if z_adj != z_base and z_adj != d.get("regime"):
         flag = (f"News moves the long-term score from {d['scores_base']['trend']:+.2f} to {adj['trend']:+.2f}, "
                 f"into {REGIME_LABEL.get(z_adj, z_adj)} territory. The headline label stays "
-                f"{d.get('headline')} until the 11-indicator model itself confirms the change.")
+                f"{d.get('headline')} until the 12-indicator model itself confirms the change.")
     d["news_flag"] = flag
 
     LATEST.write_text(json.dumps(d, indent=2, ensure_ascii=False))

@@ -24,13 +24,13 @@ CONFIG = {
     # per-indicator squash steepness (k) — bigger k = saturates sooner
     "k_mayer": 3.0, "k_slope": 8.0, "k_cross": 12.0,
     "k_200w": 0.6, "k_activity": 4.0,
-    "k_roc": 3.0, "k_funding": 0.8, "k_ssr": 0.8,
+    "k_roc": 3.0, "k_funding": 0.8, "k_ssr": 0.8, "k_gap50": 10.0,
     "c_200w": 1.6,             # 200-week multiple considered "fair value" (score 0 here)
     "dd_scale": 0.35,          # drawdown at which structural score hits ~0 before going negative
     "pi_center": 0.25,         # pi-cycle gap considered "mid cycle"
     # dimension weights within each score (renormalised over whatever inputs exist that day)
     "w_trend":   {"mayer": 0.34, "slope": 0.28, "cross": 0.18, "ma_200w": 0.20},
-    "w_moment":  {"rsi_w": 0.30, "roc90": 0.24, "breadth": 0.16, "activity": 0.30},
+    "w_moment":  {"rsi_w": 0.30, "roc90": 0.24, "breadth": 0.16, "activity": 0.30, "gap50": 0.20},
     "w_sent":    {"fng": 0.50, "funding": 0.30, "ssr": 0.20},
     # regime bands on trend_score, plus hysteresis
     "regime_T": 0.15,
@@ -67,6 +67,8 @@ def score_indicators(ind: pd.DataFrame) -> pd.DataFrame:
     s["roc90"] = _sq(ind["roc90"], c["k_roc"])
     s["breadth"] = ((ind["pct_above_200"] - 0.5) * 2.0).clip(-1, 1)
     s["activity"] = _sq(ind["activity"] - 1.0, c["k_activity"])
+    # price vs its 50-day average: the 90-day measures above are slow, this one sees the last few weeks
+    s["gap50"] = _sq(ind["gap50"], c["k_gap50"])
 
     # C — sentiment / positioning  (+ = greedy / euphoric, - = fearful / capitulation)
     s["fng"] = ((ind["fng"] - 50.0) / 50.0).clip(-1, 1)
