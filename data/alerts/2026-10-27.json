@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-27",
+  "generated": "2026-10-27T01:21:05Z",
+  "price": 80252,
+  "events": [
+    {
+      "id": "dip:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC dipped below $80,000 in the last 24 hours (low $79,369) and recovered",
+      "facts": {
+        "level": 80000,
+        "low_24h": 79369,
+        "price": 80252
+      },
+      "repeat": true
+    }
+  ],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 27 October 2026**\n\n**Snapshot**\n• Bitcoin about $80,250, down 3.3% over 7 days and about 26% above three months ago.\n• Headline BULLISH, confidence high. Fear & Greed is 48 (neutral), and daily price swings are among the calmest in years.\n\n**What happened (last 24h)**\n• Bitcoin dipped under $80,000 again (low $79,369) and came back. Reports point to Middle East tensions, high oil and money leaving US Bitcoin funds (QCP via PANews).\n• About $196M of bets made with borrowed money were forced to close in 24 hours, mostly bets on a rise (CoinGlass via PANews). Miner MARA sold 1,000 BTC, about $80M (Lookonchain via PANews).\n\n**Short-term outlook (next 1–7 days)**\n• Short term is soft to neutral: price has closed below its 50-day average for six days and is about 7% under its 30-day high.\n• Turns up: a daily close above $81,842 (50-day average); next stop $86,480 (30-day high).\n• Sideways: between $79,000 and $81,842 (a typical week swings about $2,650).\n• Turns down: a daily close below $79,000; the bigger floor is $73,028 (200-day average).\n• Rally watch: no signal. A rally signal needs a close above $89,670, a drop signal a close below $76,386.\n• This week: Fed decision on 28 October; markets put roughly 80% odds on a December rate rise because of oil (KuCoin News).\n\n**News that matters**\n• Oil near six-month highs is fuelling talk of a December Fed rate rise (KuCoin News): medium term, moderate negative.\n• US CFTC chair is advancing a voluntary federal registration path for crypto exchanges (PANews): medium term, small positive.\n• Ripple won final US approval for a national trust bank (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Big finance keeps building on crypto: BlackRock is exploring tokenized funds with SBI's yen stablecoin, and Circle has minted about $112B USDC on Solana this year (PANews).\n\n**Bigger picture**\n• Next month is mixed until price wins back $81,842; 3–6 months leans up with the most confidence while price holds above $73,028.\n\nDashboard: https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid:** raise active-trader spend in small steps with a weekly review, and keep part of the increase flexible until after the Fed decision on 28 October. Be ready to pause if price closes below $79,000 or slides toward $76,386, where a drop signal would start. Keep rally creatives ready to go live within days if price rises above $89,670."
+    },
+    {
+      "audience": "social",
+      "text": "**Social:** keep the normal rhythm with an explain-the-news tone. Post a plain \"why is Bitcoin stuck near $80,000?\" note (reports point to oil, Middle East tensions and fund outflows) and a Fed-week explainer for 28 October. The Ripple bank approval and BlackRock's yen-stablecoin deal (PANews) are good trust stories. Explain, don't predict."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** keep regular lifecycle messages and send active users a calm Fed-week note with no promotional pressure. Queue the welcome and first-deposit journey now: after past rallies, new sign-ups and first deposits rose about 2–4 weeks later. Draft a re-engagement message for dormant users to send if price wins back $81,842."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "marketing-woohoo",
+      "ts": "1793064111.716499",
+      "at": "2026-10-27T01:22:06Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "marketing-woohoo",
+      "ts": "1793064116.984499",
+      "at": "2026-10-27T01:22:06Z"
+    },
+    {
+      "audience": "social",
+      "channel": "marketing-woohoo",
+      "ts": "1793064119.056099",
+      "at": "2026-10-27T01:22:06Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "marketing-woohoo",
+      "ts": "1793064120.789489",
+      "at": "2026-10-27T01:22:06Z"
+    }
+  ]
+}
