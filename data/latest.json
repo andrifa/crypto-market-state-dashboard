@@ -1,35 +1,35 @@
 {
-  "updated_utc": "2026-10-27T01:18:47Z",
-  "date": "2026-10-27",
-  "price_btc": 80252,
+  "updated_utc": "2026-10-28T00:50:42Z",
+  "date": "2026-10-28",
+  "price_btc": 80738,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "uptrend intact, but price is stuck below its 50-day line",
+  "headline_tag": "uptrend intact, but price is pausing below its 50-day line",
   "direction": "weakening",
   "sentiment_band": "Neutral",
   "sentiment_label": "Neutral",
-  "conviction": 88,
+  "conviction": 89,
   "conviction_level": "HIGH",
   "cycle": "mid-bull",
   "cycle_label": "mid uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's budget posture is to scale up acquisition: the long-run uptrend is solid, and this is the kind of phase in which spending to win new and returning users has historically paid back best, especially among active traders rather than stablecoin-only users. Because price has spent six days just under its 50-day average and the Fed decides on 28 October, the sensible way to apply it is in steps: add spend gradually, review weekly, and speed up once price wins back about $81,842. This is a budget-timing guide for the business, not trading advice."
+    "detail": "The model's budget posture is to scale up acquisition: the long-run uptrend is solid, and this is the kind of phase in which spending to win new and returning users has historically paid back best, especially among active traders rather than stablecoin-only users. Because price has spent seven days just under its 50-day average and the Fed decides today, the sensible way to apply it is in steps: add spend gradually, review weekly, and speed up once price wins back about $81,899. This is a budget-timing guide for the business, not trading advice."
   },
   "reasons": [
-    "BTC is about 10% above its 200-day average ($73,028), which is still rising.",
-    "Up about 26% over 90 days; about 78% of those days closed above the long-term average.",
-    "But price ($80,252) has been under its 50-day average ($81,842) for six days.",
-    "Many traders are betting on a rise with borrowed money, so a sharp dip is possible."
+    "BTC is about 10% above its 200-day average ($73,069), which is still rising.",
+    "Up about 25% over 90 days; about 79% of those days closed above the long-term average.",
+    "But price ($80,738) has closed under its 50-day average ($81,899) for seven days.",
+    "Price swings are among the calmest in years, with the Fed deciding today."
   ],
-  "watch": "Price swings are about as calm as they have been in years and many people are betting on a rise with borrowed money, right as the Fed decides on 28 October with oil-driven worries about a December rate rise. A close back above $81,842 would ease that tension; a slide below $79,000 would turn the week down, and below $76,386 would start a drop signal.",
+  "watch": "Price swings are about as calm as they have been in years while about two bets on a rise are open for every bet on a fall, and the Fed announces its decision today, 28 October. A close back above $81,899 would ease that tension; a close below $80,151 would turn the week down, and below $77,366 a drop signal would start.",
   "analysis": [
-    "Bottom line: the bigger trend still points up, but the last week has been soft. Short term, the picture is soft to neutral: Bitcoin has closed below its 50-day average for six days (about 2% under $81,842) and sits about 7% below its 30-day high, while the mood reading is a flat 48 and day-to-day swings are among the calmest in years. A lot of people are still betting on a rise with borrowed money, and US Bitcoin funds saw about $487M leave in one day, so a quick shake-out is possible. A close above $81,842 (the 50-day average) turns the week clearly up, a close below $79,000 (the bottom of a typical week's swing of about $2,650) turns it down, and in between it stays choppy; the Fed's decision on 28 October is the likely trigger.",
-    "Over the next month, the read is mixed. The three-month numbers still look good: price is about 26% above three months ago and roughly three in four of the last 90 days closed above the long-term average, but the last few weeks have faded, with price down about 5% over 30 days. Oil near six-month highs has markets expecting a Fed rate rise in December (KuCoin News, Investing.com), which works against this timeframe. Price must win back $81,842 (the 50-day average) before the month leans up again, with room to climb above $86,603 (the 90-day high); winning back that line would also be the cue to time bigger campaigns.",
-    "Over three to six months, the trend leans up with the most confidence of the three. Price is about 10% above its 200-day average, which is still rising slowly, and about 36% below its record, so this reads as an early recovery rather than a late-stage run; news adds a little here, as Ripple won a US national bank charter and BlackRock is exploring tokenized funds with a Japanese yen stablecoin (both PANews). The recovery stays intact while price holds above $73,028 (the 200-day average), with $67,439 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. A close back under the 200-day average would weaken this read and argue for slowing spend on new users."
+    "Bottom line: the bigger trend still points up, but the last week has been soft. Short term, the picture is soft to neutral: Bitcoin has closed below its 50-day average for seven days (about 1% under it) and sits about 7% below its 30-day high, while the mood reading is a flat 51 and day-to-day swings are among the calmest in years. A close above $81,899 (the 50-day average) turns the week clearly up, a close below $80,151 (the 30-day low) turns it down, and in between it stays choppy, inside a typical week's swing of about $2,700. The Fed's decision today (28 October) and a large batch of Bitcoin options expiring on Friday (cryptoticker) are the dates to watch; hold big pushes until one side breaks.",
+    "Over the next month, the read is mixed. The three-month numbers still look good: price is about 25% above three months ago and about four in five of the last 90 days closed above the long-term average, but the last few weeks have faded, with price down about 3% over 30 days and CryptoQuant reporting that buying interest has been weak for 12 days in a row (via PANews). Price must win back $81,899 (the 50-day average) before the month leans up again, with room to climb above $86,603 (the 90-day high); winning back that line would be the cue to time bigger campaigns.",
+    "Over three to six months, the trend leans up with the most confidence of the three. Price is about 10% above its 200-day average, which is still rising slowly, and about 35% below its record, so this reads as an early recovery rather than a late-stage run; news is adding a little, as the US bank regulator is inviting community banks to issue stablecoins and holders of tokenized stocks have grown more than tenfold since June (both PANews). The recovery stays intact while price holds above $73,069 (the 200-day average), with $67,282 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. A close back under the 200-day average would weaken this read and argue for slowing spend on new users."
   ],
   "team_notes": {
-    "marketing": "Keep growing in steady steps with a calm, explain-the-news tone: the long-run trend is up, but no rally is under way and price is pausing just under $82,000 before the Fed, so lead with plain explainers and keep rally creatives ready rather than live."
+    "marketing": "Keep growing in steady steps with a calm, explain-the-news tone: the long-run trend is up, but no rally is under way and price is pausing just under $82,000 on Fed day, so lead with plain explainers and keep rally creatives ready rather than live."
   },
   "changed_today": null,
   "levels": {
@@ -37,15 +37,15 @@
     "low_30d": 80151,
     "high_90d": 86603,
     "low_90d": 62763,
-    "ma_50": 81842,
-    "ma_200": 73028,
-    "ma_200w": 67439,
+    "ma_50": 81899,
+    "ma_200": 73069,
+    "ma_200w": 67282,
     "ath": 124753
   },
   "scenarios": {
-    "price": 80252,
+    "price": 80738,
     "up": {
-      "level": 81842,
+      "level": 81899,
       "name": "50-day average",
       "next": [
         {
@@ -59,29 +59,29 @@
       ]
     },
     "down": {
-      "level": 73028,
-      "name": "200-day average",
+      "level": 80151,
+      "name": "30-day low",
       "next": [
         {
-          "level": 67439,
-          "name": "200-week average"
+          "level": 73069,
+          "name": "200-day average"
         },
         {
-          "level": 62763,
-          "name": "90-day low"
+          "level": 67282,
+          "name": "200-week average"
         }
       ]
     },
     "range": [
-      73028,
-      81842
+      80151,
+      81899
     ],
     "short": {
-      "typical_week_swing": 2647,
-      "low": 79000,
-      "high": 81842,
+      "typical_week_swing": 2711,
+      "low": 80151,
+      "high": 81899,
       "up": {
-        "level": 81842,
+        "level": 81899,
         "name": "50-day average",
         "next": [
           {
@@ -95,15 +95,15 @@
         ]
       },
       "down": {
-        "level": 79000,
-        "name": "bottom of a typical week's swing",
+        "level": 80151,
+        "name": "30-day low",
         "next": [
           {
-            "level": 73028,
+            "level": 73069,
             "name": "200-day average"
           },
           {
-            "level": 67439,
+            "level": 67282,
             "name": "200-week average"
           }
         ]
@@ -112,18 +112,18 @@
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": -0.0334,
+    "ret_7d": -0.0399,
     "threshold": 0.08,
     "window_days": 14,
-    "needs_up": 89670,
-    "needs_down": 76386,
+    "needs_up": 90821,
+    "needs_down": 77366,
     "last_rally": {
       "date": "2026-09-21",
-      "days_ago": 36
+      "days_ago": 37
     },
     "last_drop": {
       "date": "2026-06-02",
-      "days_ago": 147
+      "days_ago": 148
     },
     "episode": null,
     "stats": {
@@ -374,55 +374,55 @@
     }
   },
   "recent": {
-    "vs_ma50_pct": -0.0194,
-    "days_below_ma50": 6,
-    "ret_30d": -0.0498,
-    "from_high_30d": -0.072
+    "vs_ma50_pct": -0.0142,
+    "days_below_ma50": 7,
+    "ret_30d": -0.0331,
+    "from_high_30d": -0.0664
   },
   "scores": {
-    "sentiment": 0.278,
-    "momentum": 0.085,
-    "trend": 0.397
+    "sentiment": 0.212,
+    "momentum": 0.213,
+    "trend": 0.407
   },
   "context": {
-    "mayer_multiple": 1.099,
-    "ma200_slope_90d": 0.0181,
-    "ma_200w_multiple": 1.19,
-    "drawdown_from_ath": -0.357,
+    "mayer_multiple": 1.105,
+    "ma200_slope_90d": 0.0206,
+    "ma_200w_multiple": 1.2,
+    "drawdown_from_ath": -0.353,
     "rsi_weekly": 54.4,
-    "active_addr_ratio": 0.84,
-    "puell_multiple": 1.207,
-    "fear_greed": 48.0,
-    "funding_z": 1.81,
+    "active_addr_ratio": 0.953,
+    "puell_multiple": 1.208,
+    "fear_greed": 51.0,
+    "funding_z": 0.82,
     "vol_percentile": 0.03,
-    "bollinger_width": 0.0541,
-    "btc_dominance": 59.4,
-    "ma_cross": 0.1207,
-    "roc_90d": 0.2557,
-    "breadth_90d": 0.778,
-    "ssr": 5.34,
-    "pi_cycle_gap": -0.5106,
-    "open_interest_usd": 7652201416.500469,
-    "long_short_ratio": 2.2798,
-    "dvol": 38.48,
-    "us_10y_yield": 4.986,
-    "vix": 18.39,
+    "bollinger_width": 0.0537,
+    "btc_dominance": 59.5,
+    "ma_cross": 0.1208,
+    "roc_90d": 0.2474,
+    "breadth_90d": 0.789,
+    "ssr": 5.33,
+    "pi_cycle_gap": -0.5092,
+    "open_interest_usd": 7665717402.658,
+    "long_short_ratio": 2.0637,
+    "dvol": 37.68,
+    "us_10y_yield": 4.993,
+    "vix": 17.52,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1295928.0,
-    "next_fomc_meeting": "2026-10-27"
+    "next_fomc_meeting": "2026-12-08"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 27 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH\n    (uptrend intact, but price is stuck below its 50-day line)\n    Momentum weakening · Sentiment: Neutral\n    Phase: mid uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's budget posture is to scale up\n    acquisition: the long-run uptrend is solid, and\n    this is the kind of phase in which spending to win\n    new and returning users has historically paid back\n    best, especially among active traders rather than\n    stablecoin-only users. Because price has spent six\n    days just under its 50-day average and the Fed\n    decides on 28 October, the sensible way to apply\n    it is in steps: add spend gradually, review\n    weekly, and speed up once price wins back about\n    $81,842. This is a budget-timing guide for the\n    business, not trading advice.\n\n  Why:\n  • BTC is about 10% above its 200-day average\n    ($73,028), which is still rising.\n  • Up about 26% over 90 days; about 78% of those days\n    closed above the long-term average.\n  • But price ($80,252) has been under its 50-day\n    average ($81,842) for six days.\n  • Many traders are betting on a rise with borrowed\n    money, so a sharp dip is possible.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 28 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH\n    (uptrend intact, but price is pausing below its 50-day line)\n    Momentum weakening · Sentiment: Neutral\n    Phase: mid uptrend\n    Signal confidence: HIGH\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's budget posture is to scale up\n    acquisition: the long-run uptrend is solid, and\n    this is the kind of phase in which spending to\n    win new and returning users has historically\n    paid back best, especially among active traders\n    rather than stablecoin-only users. Because price\n    has spent seven days just under its 50-day\n    average and the Fed decides today, the sensible\n    way to apply it is in steps: add spend\n    gradually, review weekly, and speed up once\n    price wins back about $81,899. This is a budget-\n    timing guide for the business, not trading\n    advice.\n\n  Why:\n  • BTC is about 10% above its 200-day average\n    ($73,069), which is still rising.\n  • Up about 25% over 90 days; about 79% of those\n    days closed above the long-term average.\n  • But price ($80,738) has closed under its 50-day\n    average ($81,899) for seven days.\n  • Price swings are among the calmest in years,\n    with the Fed deciding today.\n\n  Changed today: —\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.9 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 196000000,
+      "value": 134000000,
       "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a178d5-3197-7457-aad4-6e1550e30923",
-      "as_of": "2026-10-26",
-      "note": "Longs $128M, shorts $67.6M; from PANews newsflash, not WebSearch."
+      "source_url": "https://www.panews.io/articles/01a17dfb-8e5a-7327-a310-ad5202c2dee9",
+      "as_of": "2026-10-27",
+      "note": "Longs $61.6M, shorts $72.8M; from PANews newsflash, not WebSearch."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
@@ -431,226 +431,237 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Crypto Market Analysis Today: Bitcoin Falls Below $80K",
-        "url": "https://pintu.co.id/en/academy/post/crypto-market-analysis-today-october-26-2026",
-        "source": "Pintu Academy",
-        "date": "2026-10-26"
+        "title": "Bitcoin’s $80,000 Line Is a Macro Bet, Not a Crypto Bet",
+        "url": "https://blockhead.co/2026/10/27/bitcoins-80-000-line-is-a-macro-bet-not-a-crypto-bet",
+        "source": "Blockhead",
+        "date": "2026-10-27"
       },
       {
-        "title": "Ripple National Trust Bank Receives Final Approval from US OCC, Will Support RLUSD and Enterprise Digital Asset Custody",
-        "url": "https://www.panews.io/articles/01a17a95-25b1-729b-b27e-a5cf482f2018",
+        "title": "Fed FOMC to Announce Rate Decision at 2:00 AM Thursday",
+        "url": "https://www.panews.io/articles/01a17d9a-3e95-775a-8666-3908fd612479",
         "source": "PANews",
         "date": "2026-10-27"
       },
       {
-        "title": "US CFTC Chair: Advancing a Voluntary Federal Registration Path for Crypto Exchanges",
-        "url": "https://www.panews.io/articles/01a178be-e161-7533-aa87-d50d2908da23",
+        "title": "Bessent: Treasury Will Use SEC and CFTC Actions to Make Up for CLARITY Act's Failure to Pass",
+        "url": "https://www.panews.io/articles/01a17f26-86c1-72ca-97c2-553db979fa22",
         "source": "PANews",
-        "date": "2026-10-26"
+        "date": "2026-10-28"
       },
       {
-        "title": "MARA Holdings Sold 1,000 BTC 6 Hours Ago, Worth About $80.19 Million",
-        "url": "https://www.panews.io/articles/01a17ad5-1dcf-72a2-b578-61d92d2d27a9",
+        "title": "Ripple and Robinhood Forge Stablecoin Strategic Partnership",
+        "url": "https://www.panews.io/articles/01a17da1-9ff7-77bb-a921-3fa8a900e566",
         "source": "PANews",
         "date": "2026-10-27"
       },
       {
-        "title": "Canada publishes draft stablecoin regulations, bars issuers from paying yield",
-        "url": "https://www.panews.io/articles/01a17923-6236-71d8-8a24-36a917128095",
+        "title": "Robinhood Q3 Revenue Reaches $1.42B, Crypto Revenue Falls 55% YoY",
+        "url": "https://www.panews.io/articles/01a17f07-056d-76cf-a758-3f8a138a4d2b",
         "source": "PANews",
-        "date": "2026-10-27"
+        "date": "2026-10-28"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-27",
+    "as_of": "2026-10-28",
     "items": [
       {
-        "theme": "Big finance moves deeper into crypto rails",
-        "why": "Ripple said the US banking regulator gave final approval to its national trust bank, which will back its RLUSD stablecoin and offer custody to companies. BlackRock signed a deal with SBI and Startale to explore linking tokenized money-market funds with SBI's yen stablecoin, and Circle has minted about $112B of USDC on Solana this year, nearly double last year.",
+        "theme": "Tokenized stocks go mainstream",
+        "why": "CryptoRank data shows holders of tokenized stocks rose from about 502,000 in June to 5.3 million, now 83% of all holders of tokenized real-world assets. Ondo listed 15 tokenized stocks and ETFs on Robinhood Chain, and Janus Henderson launched a tokenized Nasdaq 100 fund on Stellar; Coinbase's CEO said all asset classes are moving on-chain.",
+        "tokens": [
+          {
+            "symbol": "ONDO",
+            "change_24h_pct": 1.79
+          },
+          {
+            "symbol": "XLM",
+            "change_24h_pct": 0.66
+          }
+        ],
+        "marketing_angle": "A strong education topic: what tokenized stocks are and how they differ from owning a share.",
+        "sources": [
+          {
+            "title": "Data: Tokenized Stock Holders Top 5.3 Million, 83% of All RWA Holders",
+            "url": "https://www.panews.io/articles/01a17ceb-490e-71a8-b0a0-77b4806fbd3c"
+          },
+          {
+            "title": "Ondo Tokenized Stocks and ETFs Launch on Robinhood Chain",
+            "url": "https://www.panews.io/articles/01a17e30-2e90-7420-a324-bd19512111bc"
+          },
+          {
+            "title": "Janus Henderson Launches Tokenized Nasdaq 100 Index Fund JQQQ, Issued on Stellar via Centrifuge Technology",
+            "url": "https://www.panews.io/articles/01a17d66-66b3-757d-8d0d-488c2fa692c4"
+          }
+        ]
+      },
+      {
+        "theme": "Ripple's stablecoin wins big partners",
+        "why": "Robinhood will make Ripple's RLUSD one of the core stablecoins across its platforms, and BNY added custody for XRP and RLUSD for institutional clients. Separately, the US Treasury Secretary said at Ripple's conference that the Treasury will work with the SEC and CFTC to set crypto rules now that the CLARITY Act has not passed.",
         "tokens": [
           {
             "symbol": "XRP",
-            "change_24h_pct": 1.24
-          },
-          {
-            "symbol": "SOL",
-            "change_24h_pct": -0.28
+            "change_24h_pct": 1.32
           }
         ],
-        "marketing_angle": "A trust story for cautious newcomers: well-known banks and fund managers are building on crypto.",
+        "marketing_angle": "A trust story for cautious newcomers: large brokers and banks are building on stablecoins.",
         "sources": [
           {
-            "title": "Ripple National Trust Bank Receives Final Approval from US OCC, Will Support RLUSD and Enterprise Digital Asset Custody",
-            "url": "https://www.panews.io/articles/01a17a95-25b1-729b-b27e-a5cf482f2018"
+            "title": "Ripple and Robinhood Forge Stablecoin Strategic Partnership",
+            "url": "https://www.panews.io/articles/01a17da1-9ff7-77bb-a921-3fa8a900e566"
           },
           {
-            "title": "BlackRock Signs MoU with SBI and Startale to Explore Linking Tokenized Funds with Yen Stablecoin",
-            "url": "https://www.panews.io/articles/01a17ae7-e57c-715c-8990-ed6e73691f79"
+            "title": "BNY Mellon Adds Custody Support for XRP and RLUSD, Explores Tokenized Trade Finance With Ripple",
+            "url": "https://www.panews.io/articles/01a17d51-04a9-74ac-8357-47ae2c88e817"
           },
           {
-            "title": "Circle Has Minted $112 Billion USDC on Solana This Year, Nearly Double Last Year",
-            "url": "https://www.panews.io/articles/01a17aa8-32d6-71bd-8a62-4a55fd2a82ee"
+            "title": "Bessent: Treasury Will Use SEC and CFTC Actions to Make Up for CLARITY Act's Failure to Pass",
+            "url": "https://www.panews.io/articles/01a17f26-86c1-72ca-97c2-553db979fa22"
           }
         ]
       },
       {
-        "theme": "Regulated on-chain trading platforms",
-        "why": "Hyperliquid announced HIP-3*, letting market creators run permissioned markets, and said Kraken's parent Payward plans to be the first US-regulated firm to use it. Separately, the NBA named Kalshi and Polymarket its preferred prediction-market exchanges and signed an agreement with the US CFTC.",
-        "tokens": [
-          {
-            "symbol": "HYPE",
-            "change_24h_pct": 2.72
-          }
-        ],
-        "marketing_angle": "An education topic on how on-chain trading venues are becoming regulated, useful for active-trader content.",
+        "theme": "Prediction markets under US scrutiny",
+        "why": "The CFTC has sued Utah, the tenth state it has taken to court over who regulates prediction markets, and is also investigating whether Polymarket broke its 2022 agreement to keep out US users (Reuters via PANews). Robinhood said its prediction-market revenue grew more than six times from a year ago while its crypto revenue fell 55%.",
+        "tokens": [],
+        "marketing_angle": "Shows where retail attention has shifted this year; useful context for product and content teams, not a promotion topic.",
         "sources": [
           {
-            "title": "Hyperliquid launches HIP-3*, enabling deployment of permissioned perpetual contract markets",
-            "url": "https://www.panews.io/articles/01a17958-d5fb-711f-8636-5d2ca6e40253"
+            "title": "CFTC Investigates Whether Polymarket Violated 2022 Agreement Barring U.S. Users",
+            "url": "https://www.panews.io/articles/01a17e64-d3c1-76a5-b2ff-b1537ea43957"
           },
           {
-            "title": "NBA Partners With Kalshi and Polymarket, Formally Entering Prediction Markets",
-            "url": "https://www.panews.io/articles/01a1790c-a82a-7761-bf49-a4ae6d53abd5"
-          }
-        ]
-      },
-      {
-        "theme": "Akash votes to move to Solana",
-        "why": "Akash Network opened a vote to move its network from its own Cosmos chain to Solana, with about 98% of votes in favour so far; voting ends on 2 November and AKT would swap one-for-one. The token is up about 4% in the last day, though the reports do not tie the move to the vote directly.",
-        "tokens": [
+            "title": "CFTC sues Utah, has now sued 10 states over prediction market jurisdiction",
+            "url": "https://www.panews.io/articles/01a17e6a-242f-70a1-bf7d-2776d46a3d48"
+          },
           {
-            "symbol": "AKT",
-            "change_24h_pct": 4.42
-          }
-        ],
-        "marketing_angle": "A simple explainer on what a token migration means for holders would suit existing users.",
-        "sources": [
-          {
-            "title": "Akash launches governance vote to migrate network from Cosmos to Solana",
-            "url": "https://www.panews.io/articles/01a179e1-79d6-7276-9a65-2476dd6b4594"
+            "title": "Robinhood Q3 Revenue Reaches $1.42B, Crypto Revenue Falls 55% YoY",
+            "url": "https://www.panews.io/articles/01a17f07-056d-76cf-a758-3f8a138a4d2b"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-27",
+    "as_of": "2026-10-28",
     "items": [
       {
-        "headline": "MARA Holdings Sold 1,000 BTC 6 Hours Ago, Worth About $80.19 Million",
+        "headline": "Security Firm: Scripts Tied to Udesk Customer Service System Injected with Malicious Code That Can Steal Data and Replace Deposit Addresses",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a17ad5-1dcf-72a2-b578-61d92d2d27a9",
+        "url": "https://www.panews.io/articles/01a17d07-4210-72d5-991d-29d5efceac98",
         "horizon": "short",
         "direction": "negative",
         "size": "minor",
-        "why": "A large Bitcoin miner selling about $80M of coins adds a little selling pressure in a week when price is already testing $80,000."
+        "why": "SlowMist found malicious code in a customer-service widget that can swap the deposit addresses users see, a fresh safety worry for crypto sites."
       },
       {
-        "headline": "Bitcoin Holds Near $80,000 Amid Oil Retreat and Upcoming Fed Decision",
-        "source": "KuCoin News",
-        "url": "https://www.kucoin.com/news/flash/bitcoin-holds-near-80-000-amid-oil-retreat-and-upcoming-fed-decision",
+        "headline": "Bessent: Treasury Will Use SEC and CFTC Actions to Make Up for CLARITY Act's Failure to Pass",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a17f26-86c1-72ca-97c2-553db979fa22",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "minor",
+        "why": "With the US crypto bill stalled, the Treasury says it will push clearer rules through the two market regulators instead."
+      },
+      {
+        "headline": "Ripple and Robinhood Forge Stablecoin Strategic Partnership",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a17da1-9ff7-77bb-a921-3fa8a900e566",
+        "horizon": "medium",
+        "direction": "positive",
+        "size": "minor",
+        "why": "A large US retail broker adding Ripple's dollar stablecoin, alongside BNY adding XRP and RLUSD custody, widens mainstream access."
+      },
+      {
+        "headline": "Robinhood Q3 Revenue Reaches $1.42B, Crypto Revenue Falls 55% YoY",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a17f07-056d-76cf-a758-3f8a138a4d2b",
         "horizon": "medium",
         "direction": "negative",
-        "size": "moderate",
-        "why": "Oil near six-month highs after attacks on Saudi facilities has markets pricing a likely Fed rate rise in December, and higher rates usually weigh on crypto."
-      },
-      {
-        "headline": "US CFTC Chair: Advancing a Voluntary Federal Registration Path for Crypto Exchanges",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a178be-e161-7533-aa87-d50d2908da23",
-        "horizon": "medium",
-        "direction": "positive",
         "size": "minor",
-        "why": "A US federal registration route for crypto exchanges would make the rules clearer while Congress has not yet passed its bill."
+        "why": "A 55% yearly drop in crypto revenue and 38% lower crypto trading at a major retail broker shows ordinary traders are less active."
       },
       {
-        "headline": "Strive Adds 6,182 Bitcoin Last Week, Holdings Rise to 43,000",
+        "headline": "OCC Encourages U.S. Community Banks to Apply to Become Stablecoin Issuers Under GENIUS Act",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a17817-e836-7186-8f44-1f35c2407d60",
-        "horizon": "medium",
-        "direction": "positive",
-        "size": "minor",
-        "why": "Listed companies kept buying Bitcoin, about $510M net last week led by Strive, though Strategy and Metaplanet did not add."
-      },
-      {
-        "headline": "Ripple National Trust Bank Receives Final Approval from US OCC, Will Support RLUSD and Enterprise Digital Asset Custody",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a17a95-25b1-729b-b27e-a5cf482f2018",
+        "url": "https://www.panews.io/articles/01a17d10-7470-7604-94a0-47357a84b465",
         "horizon": "long",
         "direction": "positive",
         "size": "minor",
-        "why": "A US national bank charter for a crypto company is another step in crypto joining the regulated banking system."
+        "why": "The US bank regulator inviting small banks to issue stablecoins brings crypto further into everyday banking."
       },
       {
-        "headline": "BlackRock Signs MoU with SBI and Startale to Explore Linking Tokenized Funds with Yen Stablecoin",
+        "headline": "Data: Tokenized Stock Holders Top 5.3 Million, 83% of All RWA Holders",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a17ae7-e57c-715c-8990-ed6e73691f79",
+        "url": "https://www.panews.io/articles/01a17ceb-490e-71a8-b0a0-77b4806fbd3c",
         "horizon": "long",
         "direction": "positive",
         "size": "minor",
-        "why": "The world's largest asset manager exploring tokenized funds with a Japanese bank-backed stablecoin adds to long-run institutional adoption."
+        "why": "Holders of tokenized stocks rose more than tenfold since June (CryptoRank), a sign that traditional assets keep moving on-chain."
       }
     ],
     "summary": {
-      "short": "A miner selling about $80M of Bitcoin is a small extra weight this week.",
-      "medium": "Expectations of a December Fed rate rise driven by high oil prices outweigh small positives from a possible US exchange registration path and continued company buying.",
-      "long": "A US bank charter for Ripple and BlackRock's tokenized-fund plans in Japan are small further signs of long-run adoption."
+      "short": "A newly found malicious script that can swap deposit addresses on crypto sites is a small safety worry this week.",
+      "medium": "Small positives from the Treasury's plan to set rules through regulators and Robinhood's stablecoin deal are offset by Robinhood's sharp fall in crypto revenue.",
+      "long": "More banks invited to issue stablecoins and fast growth in tokenized stocks are small further signs of long-run adoption."
     },
     "impact": {
       "short": -0.25,
-      "medium": 0.0,
+      "medium": 0.25,
       "long": 0.5
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.347,
-    "momentum": 0.085,
-    "sentiment": 0.303
+    "trend": 0.357,
+    "momentum": 0.188,
+    "sentiment": 0.237
   },
-  "conviction_base": 81,
+  "conviction_base": 83,
   "news_adjustment": {
     "sentiment": -0.025,
-    "momentum": 0.0,
+    "momentum": 0.025,
     "trend": 0.05
   },
   "news_flag": null,
   "marketing_segments": {
-    "as_of": "2026-10-27",
+    "as_of": "2026-10-28",
     "social": {
       "stance": "Hold",
-      "strategy": "Keep the normal posting rhythm with an explain-the-news tone: Bitcoin is down about 3% this week but still about 26% above three months ago, and no rally or drop window is open.",
+      "strategy": "Keep the normal posting rhythm with an explain-the-news tone: Bitcoin is down about 4% this week but still about 25% above three months ago, and no rally or drop window is open.",
       "actions": [
         {
-          "what": "Post a plain 'Fed decision this week' explainer",
-          "detail": "The Fed decides on 28 October and markets are watching oil near six-month highs and talk of a December rate rise (KuCoin News); explain why this gets crypto attention without predicting the outcome."
+          "what": "Post a plain 'Fed decision today' explainer",
+          "detail": "The Fed announces its decision on 28 October and markets widely expect no change (PANews); explain why crypto watches it without predicting the outcome."
         },
         {
-          "what": "Share the 'banks and big funds move into crypto' story",
-          "detail": "Ripple won final US approval for a national trust bank and BlackRock signed a deal with SBI to explore tokenized funds with a yen stablecoin (both PANews)."
+          "what": "Share the 'big brokers and banks add stablecoins' story",
+          "detail": "Robinhood is adding Ripple's RLUSD stablecoin and BNY added XRP and RLUSD custody (both PANews)."
         },
         {
-          "what": "Run a short 'why is Bitcoin stuck near $80,000?' post",
-          "detail": "Bitcoin has tested $80,000 three times in three weeks (Wintermute via PANews); explain the pause in plain words with no price call."
+          "what": "Run a short 'what are tokenized stocks?' post",
+          "detail": "Tokenized stock holders grew from about 502,000 to 5.3 million since June (CryptoRank via PANews); explain it simply, no buy calls."
+        },
+        {
+          "what": "Post a deposit-safety reminder",
+          "detail": "SlowMist found malicious code that can swap displayed deposit addresses (PANews); remind users to check addresses and use only official channels."
         }
       ]
     },
     "seo": {
       "stance": "Prepare",
-      "strategy": "Refresh pages around questions the Fed decision, the pause near $80,000 and the bank and stablecoin news are likely to raise, without chasing a rally that is not happening.",
+      "strategy": "Refresh pages around questions the Fed decision, the pause near $80,000 and the stablecoin and tokenized-stock news are likely to raise, without chasing a rally that is not happening.",
       "actions": [
         {
           "what": "Refresh the 'Bitcoin price today' page",
-          "detail": "Likely to draw searches because price (about $80,250) keeps testing $80,000; add the $81,842 and $73,028 reference levels in plain words."
+          "detail": "Likely to draw searches because price (about $80,700) keeps hovering near $80,000; add the $81,899 and $73,069 reference levels in plain words."
         },
         {
-          "what": "Update the 'Fed and Bitcoin' evergreen page",
-          "detail": "Likely to draw searches around the 28 October decision and December rate-rise talk; explain past patterns plainly and avoid any outcome forecast."
+          "what": "Update the 'Fed and Bitcoin' evergreen page right after the decision",
+          "detail": "Likely to draw searches on 28-29 October; add the actual decision once published and avoid any forecast."
         },
         {
-          "what": "Publish a 'what is a stablecoin and who regulates it' explainer",
-          "detail": "Likely to draw searches because Canada published draft stablecoin rules and BlackRock is exploring a yen-stablecoin link (PANews)."
+          "what": "Publish a 'what are tokenized stocks' explainer",
+          "detail": "Likely to draw searches because tokenized stock holders passed 5.3 million (CryptoRank via PANews) and Ondo stocks launched on Robinhood Chain (PANews)."
         }
       ]
     },
@@ -660,15 +671,15 @@
       "actions": [
         {
           "what": "Step up active-trader campaigns gradually",
-          "detail": "Add trader-focused spend in small steps with a weekly review, speeding up only once price wins back $81,842 (the 50-day average)."
+          "detail": "Add trader-focused spend in small steps with a weekly review, speeding up only once price wins back $81,899 (the 50-day average)."
         },
         {
-          "what": "Keep a flexible slice until after the Fed",
-          "detail": "Hold part of the increase until after the 28 October decision, ready to pause if price closes below $79,000 or slides toward $76,386, where a drop signal would start."
+          "what": "Keep a flexible slice until after Fed day and Friday's options expiry",
+          "detail": "Hold part of the increase, ready to pause if price closes below $80,151 or slides toward $77,366, where a drop signal would start."
         },
         {
           "what": "Have rally creatives ready",
-          "detail": "Prepare creatives that can go live within days if a rally window opens above $89,670."
+          "detail": "Prepare creatives that can go live within days if a rally window opens above $90,821."
         }
       ]
     },
@@ -677,16 +688,16 @@
       "strategy": "Keep the regular lifecycle messages and prepare the next campaign: no rally or drop window is open, so neither push hard nor go quiet.",
       "actions": [
         {
-          "what": "Send a calm Fed-week note to active users",
+          "what": "Send a calm Fed-day note to active users",
           "detail": "Explain in plain words that the Fed decides on 28 October and price has been pausing near $80,000, with no promotional pressure."
         },
         {
-          "what": "Queue the onboarding journey now",
-          "detail": "After past rallies, new sign-ups and first deposits rose about 2-4 weeks later, so have the welcome and first-deposit journey ready before any rally window opens above $89,670."
+          "what": "Send a deposit-safety tip",
+          "detail": "Following SlowMist's report of a script that swaps deposit addresses (PANews), remind users how to check a deposit address in the app."
         },
         {
-          "what": "Prepare a re-engagement message for dormant users",
-          "detail": "Draft it now to send if price wins back $81,842, when interest usually picks up."
+          "what": "Queue the onboarding journey now",
+          "detail": "After past rallies, new sign-ups and first deposits rose about 2-4 weeks later, so have the welcome and first-deposit journey ready before any rally window opens."
         }
       ]
     },
@@ -696,19 +707,19 @@
       "actions": [
         {
           "what": "Share Rally watch status",
-          "detail": "Rally watch is quiet (BTC about -3.3% over 7 days); a rally window opens above $89,670 and a drop signal starts below $76,386."
+          "detail": "Rally watch is quiet (BTC about -4.0% over 7 days); a rally window opens above $90,821 and a drop signal starts below $77,366."
         },
         {
           "what": "Flag the weekly zone and bigger levels",
-          "detail": "This week's choppy zone is $79,000-$81,842; the bigger floor is $73,028 (200-day average) and the 30-day high is $86,480."
+          "detail": "This week's choppy zone is $80,151-$81,899; the bigger floor is $73,069 (200-day average) and the 30-day high is $86,480."
         },
         {
-          "what": "Track the Fed and oil",
-          "detail": "Fed decision on 28 October; markets put roughly 80% odds on a December rate rise because of oil (KuCoin News, Investing.com). Re-check the read the morning after."
+          "what": "Track Fed day and Friday's options expiry",
+          "detail": "Fed decision on 28 October (next meeting 8 December) and about $11.1B of Bitcoin options expire on Friday (cryptoticker); re-check the read the morning after."
         },
         {
-          "what": "Watch company selling and buying",
-          "detail": "MARA sold 1,000 BTC (Lookonchain via PANews) while listed companies net bought about $510M last week (SoSoValue via PANews); flag if more miners sell."
+          "what": "Watch US buying interest",
+          "detail": "CryptoQuant says buying has been weak for 12 days and Robinhood's crypto revenue fell 55% from a year ago (both via PANews); flag if this turns."
         }
       ]
     }

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-28",
+  "generated": "2026-10-28T00:53:18Z",
+  "price": 80738,
+  "events": [
+    {
+      "id": "dip:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC dipped below $80,000 in the last 24 hours (low $79,506) and recovered",
+      "facts": {
+        "level": 80000,
+        "low_24h": 79506,
+        "price": 80738
+      },
+      "repeat": true
+    }
+  ],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 28 October 2026**\n\n**Snapshot**\n• Bitcoin is about $80,738, down about 4.0% over the last 7 days.\n• Headline: **BULLISH**, high confidence (89/100). The long-run uptrend holds, but price has closed below its 50-day average ($81,899) for seven days.\n• Fear & Greed is a flat 51 (neutral). Day-to-day price swings are among the calmest in years.\n\n**What happened (last 24h)**\n• Bitcoin briefly dipped below $80,000 (low about $79,506) and recovered; no single cause is reported, and reports tie the pause near $80,000 to waiting for the Fed (Blockhead, PANews).\n• About $134M of bets were forced to close across crypto in 24 hours, split fairly evenly between bets on a rise and a fall (CoinGlass via PANews).\n• CryptoQuant says buying interest has been weak for 12 days in a row (via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: the bigger trend points up, but the last week has faded.\n• Turns up: a close above $81,899 (50-day average), next $86,480 (30-day high).\n• Sideways: between $80,151 and $81,899; a typical week swings about $2,700.\n• Turns down: a close below $80,151 (30-day low), next $73,069 (200-day average).\n• Rally watch: quiet. A rally window opens above $90,821; a drop signal starts below $77,366.\n• This week: Fed decision today, 28 October (next meeting 8 December); about $11.1B of Bitcoin options expire on Friday (cryptoticker).\n\n**News that matters**\n• US Treasury will push crypto rules through the SEC and CFTC after the CLARITY Act stalled (PANews) — medium term, small positive.\n• Robinhood's crypto revenue fell 55% from a year ago (PANews) — medium term, small negative.\n• US bank regulator invites community banks to issue stablecoins (PANews) — long term, small positive.\n\n**Altcoins & themes**\n• Tokenized stocks: holders passed 5.3 million (CryptoRank via PANews) and Ondo stocks launched on Robinhood Chain. Ripple's RLUSD stablecoin is joining Robinhood, and BNY added XRP custody.\n\n**Bigger picture**\nNext month is mixed until price wins back $81,899; the 3-6 month trend leans up while price holds above $73,069 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Budget posture stays SCALE UP, applied in steps: add active-trader spend gradually with a weekly review and speed up only once Bitcoin wins back $81,899. Keep part of the increase flexible through today's Fed decision and Friday's options expiry, ready to pause on a close below $80,151. Have rally creatives ready to go live within days if a rally window opens above $90,821."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm with an explain-the-news tone, since no rally or drop window is open. Today: a plain 'Fed decision today' explainer (no outcome predictions), and a short 'what are tokenized stocks?' post, as holders passed 5.3 million (CryptoRank via PANews). Add a deposit-safety reminder after SlowMist found code that can swap displayed deposit addresses (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** Keep regular lifecycle messages, with no promotional pressure. Send a calm Fed-day note to active users and a short tip on checking deposit addresses, following SlowMist's report (PANews). Queue the welcome and first-deposit journey now, since new sign-ups and first deposits have tended to rise 2-4 weeks after a rally."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793148837.211779",
+      "at": "2026-10-28T00:54:15Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793148843.239449",
+      "at": "2026-10-28T00:54:15Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793148845.235349",
+      "at": "2026-10-28T00:54:15Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793148846.758459",
+      "at": "2026-10-28T00:54:15Z"
+    }
+  ]
+}
