@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-29",
+  "generated": "2026-10-29T01:03:55Z",
+  "price": 81092,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 29 October 2026**\n\n**Snapshot**\n• Bitcoin is about $81,092, roughly flat over the last 7 days (about -0.4%).\n• Headline: **BULLISH**, high confidence (87/100). The long-run uptrend holds, but price has closed below its 50-day average ($81,965) for eight days.\n• Fear & Greed is a flat 51 (neutral). Day-to-day price swings are among the calmest in years.\n\n**What happened (last 24h)**\n• Bitcoin held around $81,000; no single cause is reported. The Fed kept rates at 3.75%-4.00% as expected, but two officials voted for a rise (PANews).\n• About $172M of bets were forced to close across crypto in 24 hours, mostly bets on a fall (CoinGlass via PANews).\n• More Bitcoin left exchanges than arrived over the past week, about 4,633 BTC net (CryptoQuant via PANews), while CryptoQuant also says October is on track for a loss of about 4%.\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: the bigger trend points up, but price is still pausing under its 50-day average.\n• Turns up: a close above $81,965 (50-day average), next $86,480 (30-day high).\n• Sideways: between $80,151 and $81,965; a typical week swings about $2,700.\n• Turns down: a close below $80,151 (30-day low), next $73,124 (200-day average).\n• Rally watch: quiet. A rally window opens above $87,929; a drop signal starts below $74,903.\n• Coming up: US midterm elections on 3 November; next Fed meeting 8 December.\n\n**News that matters**\n• Fed held rates, two officials voted for a rise (PANews): medium term, small-to-moderate negative.\n• US midterms next week; reports say the main crypto bill is unlikely to advance (The Block via PANews): medium term, small negative.\n• Thailand's Supreme Court ruled Bitcoin is legal property (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Perpetual-contract DEXs keep growing: open positions up about 76% in Q3 to about $24B, and Pump.fun's app added Hyperliquid trading (PANews). PEPE rose about 10% in a day with no clear reason reported.\n\n**Bigger picture**\n• Next month is mixed (up 29% over 90 days, down about 3% over 30); 3-6 months still lean up while price holds above $73,124 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital / Paid:** Keep stepping up active-trader campaigns in small steps with a weekly review, and speed up only once Bitcoin closes back above $81,965 (the 50-day average). Hold a flexible slice through the 3 November US elections, ready to pause if price closes below $80,151. Keep rally creatives ready to go live within days if a rally window opens above $87,929."
+    },
+    {
+      "audience": "social",
+      "text": "**Social & content:** Keep the normal rhythm with an explain-the-news tone. Post a plain recap of the Fed holding rates with two votes for a rise (PANews), and prepare a neutral 'US elections and crypto' explainer for 3 November. A short 'what are perpetual DEXs?' post fits the theme of the day: their open positions grew about 76% in Q3 (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No rally or drop window is open, so keep the regular lifecycle messages. Send a calm post-Fed note with no promotional pressure, plus a safety tip after the Bitcoin Core flaw reports (PANews). Keep the onboarding journey queued: after past rallies, new sign-ups and first deposits rose about 2-4 weeks later."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793235885.361169",
+      "at": "2026-10-29T01:04:59Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793235889.850519",
+      "at": "2026-10-29T01:04:59Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793235891.780899",
+      "at": "2026-10-29T01:04:59Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793235893.236599",
+      "at": "2026-10-29T01:04:59Z"
+    }
+  ]
+}
