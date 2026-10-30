@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-30",
+  "generated": "2026-10-30T04:06:28Z",
+  "price": 78028,
+  "events": [
+    {
+      "id": "spike:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC pushed above $80,000 in the last 24 hours (high $81,971) and pulled back",
+      "facts": {
+        "level": 80000,
+        "high_24h": 81971,
+        "price": 78028
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 30 October 2026**\n\n**Alert**\n• BTC pushed above $80,000 in the last 24 hours (high $81,971) and pulled back. It slipped to about $78,000 within hours as news of a hack at Binance broke, so the $80,000 level has not held.\n\n**Snapshot**\n• Bitcoin about $78,028, down about 3.9% over 7 days.\n• Headline: BULLISH, medium confidence (the long-run uptrend still holds).\n• Fear & Greed 30 (fear), and bets on further falls are unusually popular.\n\n**What happened (last 24h)**\n• Binance estimates about $6.3 billion was taken from its hot wallets and has paused deposits and withdrawals. It says about $3 billion is frozen and it will cover all losses (PANews).\n• About $629 million of bets were forced to close in one hour as the news broke, almost all of them bets on a rise; the 24-hour total was about $953 million (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft and leaning down: price has been under its 50-day average for nine days, about 5% below it.\n• Turns up: a close above $79,750, then $81,931 (the 50-day average).\n• Sideways: $76,250-$79,750; a normal week swings about $3,350.\n• Turns down: a close below $76,250, then $73,125 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $87,685 and a drop signal starts below $74,694.\n• This week: Binance reopening withdrawals and its promised post-mortem, then the US midterm elections on 3 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• Binance hack, about $6.3 billion (PANews): short term, large negative.\n• ECB officials reportedly expect a rate rise on 17 December (PANews): medium term, small negative.\n• Nasdaq pushing listed companies against trading their shares on OKX-ICE (PANews): medium term, small negative.\n\n**Altcoins & themes**\n• Tokens the attacker sold fell (ENA -5.5%, AAVE -4.6%, STRK -6.8%), while HYPE rose about 18% with no single cause reported.\n\n**Bigger picture**\n• The next month is mixed (up 24% over 90 days, but down about 7% over 30); the 3-6 month trend still leans up while price holds above $73,125.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep acquisition growing in small weekly steps toward active traders, in line with SCALE UP, but swap price-move hooks for trust-led creatives (security, licensing, how it works) while the Binance hack news is fresh. Speed up only once price wins back $81,931, and keep part of the increase ready to pause if price closes below $74,694, where a drop signal would start."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm and shift topics to trust and plain explanations. Post a calm, facts-only explainer on the Binance hack (about $6.3 billion taken, about $3 billion frozen, losses to be covered, per PANews) with no dig at a competitor, a 'how exchanges protect funds' post, and one daily recap covering the slide to about $78,000 and the $79,750 / $76,250 levels."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No promotional pressure this week. Send active users a calm account-safety reminder (2FA, withdrawal whitelists, phishing) and say Reku is unaffected by the Binance incident only if the security team confirms it. Keep onboarding education running without time-limited offers, and keep the rally-window journey ready to trigger on a close above $87,685."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793333214.948879",
+      "at": "2026-10-30T04:07:08Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793333219.428139",
+      "at": "2026-10-30T04:07:08Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793333221.651039",
+      "at": "2026-10-30T04:07:08Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793333223.088789",
+      "at": "2026-10-30T04:07:08Z"
+    }
+  ]
+}
