@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-01",
+  "generated": "2026-11-01T00:14:00Z",
+  "price": 77538,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 1 November 2026**\n\n**Snapshot**\n• Bitcoin about $77,538, down about 3.3% over 7 days.\n• Headline: BULLISH, medium confidence (the long-run uptrend still holds).\n• Fear & Greed 34 (fear). Price swings are unusually calm for now, among the quietest 13% of readings.\n\n**What happened (last 24h)**\n• Bitcoin barely moved, and no single cause is reported. It tested about $76,000 on 30 October, when short-term holders sent over 36,600 BTC to exchanges at a loss (CryptoQuant via PANews).\n• The FBI said North Korea stole more than $6 billion from Binance. Binance says about 90% of affected assets are replaced and plans to reopen withdrawals today; this was not yet confirmed at the time of writing (PANews, CNBC).\n• About $188 million of bets were forced to close in 24 hours, far below the $1.67 billion of 30 October (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 11 days, about 5% below it.\n• Turns up: a close above $79,000, then $81,928 (the 50-day average).\n• Sideways: $76,000-$79,000; a normal week swings about $2,978.\n• Turns down: a close below $76,000, then $73,152 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $86,566 and a drop signal starts below $73,742.\n• This week: Binance's reopening and fuller reserve proof, and the US midterms on 3 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• FBI names North Korea in the Binance theft (PANews): short term, medium negative.\n• Fed's Logan says at least two more rate rises are needed (Reuters via PANews): medium term, medium negative.\n• Uber joins an HSBC and Franklin Templeton tokenized funds test (Bloomberg via PANews): long term, small positive.\n\n**Altcoins & themes**\n• ICE softened its wording on the trade.xyz deal while large holders sold over $100 million of HYPE (-1.9% today, +15% on the week). US Ether funds have seen a record 23 days of withdrawals (Glassnode via PANews).\n\n**Bigger picture**\n• The next month is mixed (up 22% over 90 days, down about 8% over 30); the 3-6 month trend still leans up while price holds above $73,152.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep acquisition growing in small steps toward active traders, in line with SCALE UP, with trust-led creatives for new and stablecoin audiences and no price promises. Speed up only once price closes back above $81,928. Keep rally creatives ready for a close above $86,566, and keep part of the increase ready to pause if price closes below $73,742, where a drop signal would start."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm and update the Binance explainer with the latest facts: the FBI named North Korea, Binance reports about 90% of affected assets replaced, and it plans to reopen withdrawals today (PANews, CNBC). Add a simple post on what proof of reserves means, since a fuller proof is due early this week. Keep the daily recap on the $76,000-$79,000 zone with no predictions."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No promotional pressure this week. Send an account-safety reminder covering two-step login, withdrawal address lists and phishing, and say Reku is unaffected only if the security team confirms it. Keep onboarding education running without time-limited offers, and keep the post-rally journey ready to trigger on a close above $86,566, since sign-ups and first deposits tend to arrive 2-4 weeks after a rally."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793492068.627429",
+      "at": "2026-11-01T00:14:42Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793492073.327009",
+      "at": "2026-11-01T00:14:42Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793492075.362689",
+      "at": "2026-11-01T00:14:42Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793492077.044629",
+      "at": "2026-11-01T00:14:42Z"
+    }
+  ]
+}

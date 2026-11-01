@@ -1,51 +1,51 @@
 {
-  "updated_utc": "2026-10-30T04:03:58Z",
-  "date": "2026-10-30",
-  "price_btc": 78028,
+  "updated_utc": "2026-11-01T00:11:00Z",
+  "date": "2026-11-01",
+  "price_btc": 77538,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "uptrend intact, but a Binance hack has shaken the week",
-  "direction": "weakening",
+  "headline_tag": "uptrend intact, but the week hangs on Binance's reopening",
+  "direction": "stable",
   "sentiment_band": "Fear",
   "sentiment_label": "Fear",
-  "conviction": 61,
+  "conviction": 64,
   "conviction_level": "MEDIUM",
   "cycle": "mid-bull",
   "cycle_label": "mid uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's budget posture is still to scale up acquisition: the long-run uptrend is intact, and this kind of phase has historically been when spending to win new and returning users paid back best, especially among active traders. This week calls for applying it carefully: a hack at Binance has shaken trust across the market, price is about 5% under its 50-day average and the mood is fearful, so add spend in small steps, lead with safety and trust messages rather than hard offers, and speed up only once price wins back about $81,931. This is a budget-timing guide for the business, not trading advice."
+    "detail": "The model's budget posture is still to scale up acquisition: the long-run uptrend is intact, and this kind of phase has historically been when spending to win new and returning users paid back best, especially among active traders. This week calls for applying it carefully: the Binance hack is still being cleaned up, price is about 5% under its 50-day average and the mood is fearful, so add spend in small steps, lead with safety and trust rather than hard offers, and speed up only once price wins back about $81,928. This is a budget-timing guide for the business, not trading advice."
   },
   "reasons": [
-    "BTC ($78,028) is about 7% above its 200-day average ($73,125), which is still rising.",
-    "Up about 24% over 90 days; about 81% of those days closed above the long-term average.",
-    "But price has closed under its 50-day average ($81,931) for nine days, about 5% below it.",
-    "Binance reported an estimated $6.3 billion hack; Fear & Greed sits at 30 (fear)."
+    "BTC ($77,538) is about 6% above its 200-day average ($73,152), which is still rising.",
+    "Up about 22% over 90 days; about 83% of those days closed above the long-term average.",
+    "But price has closed under its 50-day average ($81,928) for 11 days, about 5% below it.",
+    "FBI ties the $6 billion-plus Binance theft to North Korea; Fear & Greed sits at 34 (fear)."
   ],
-  "watch": "The long-run trend still points up, but the Binance hack has dented confidence and bets on further falls are unusually popular right now. If Binance reopens withdrawals smoothly and price closes back above $79,750 the week steadies, while a close below $74,694 would start a drop signal.",
+  "watch": "The long-run trend still points up, but this week rests on Binance reopening withdrawals and finishing its reserve proof. A smooth reopening and a close above $79,000 would steady things, while a close below $76,000 puts the $73,152 average in focus.",
   "analysis": [
-    "Bottom line: the long-run uptrend still holds, but this week has turned clearly weaker. Short term, the picture is soft and leaning down: Bitcoin has closed below its 50-day average for nine days, now about 5% under it and about 10% below its 30-day high, and the Fear & Greed reading has slipped to 30 (fear). News is pulling this down further, as Binance, the largest exchange, estimates about $6.3 billion was taken from its hot wallets and paused deposits and withdrawals, while saying about $3 billion is frozen and it will cover all losses (PANews). A close above $79,750 (the top of a typical week's swing) would steady the week, a close below $76,250 (the bottom of that swing) turns it further down, and in between it stays choppy within a normal weekly swing of about $3,350, with $73,125 (the 200-day average) as the bigger floor; hold big pushes until the Binance story settles.",
-    "Over the next month, the read is mixed. The three-month numbers still look healthy, with price about 24% above three months ago and about four in five of the last 90 days closing above the long-term average, but the last few weeks point the other way, with price down about 7% over 30 days. News is nudging this down a little, as European officials reportedly expect a rate rise on 17 December and Nasdaq is pushing listed companies against trading their shares on blockchain venues (PANews). Price must win back $81,931 (the 50-day average) before the month leans up again, with room to climb above $86,603 (the 90-day high); until then, plan campaigns but keep launch dates flexible.",
-    "Over three to six months, the trend still leans up, and it is the most confident of the three. Price is about 7% above its 200-day average, which is still rising slowly, and about 38% below its record, which reads as a recovery still in progress rather than a late-stage run; Strategy, the largest company holder, reported owning 848,517 Bitcoin after buying about $14.3 billion worth this year (PANews). The recovery stays intact while price holds above $73,125 (the 200-day average), with $67,266 (the 200-week average) as the next floor and $124,753 (the all-time high) as the far marker. A close under the 200-day average would weaken this read and argue for slowing spend on new users."
+    "Bottom line: the long-run uptrend still holds, but this week is shaky after the Binance hack. Short term is soft to neutral: Bitcoin has closed under its 50-day average for 11 days, sits about 5% below it and about 10% under its 30-day high, and the mood reads fear (34 out of 100). News is nudging this down a little: the FBI says North Korea stole more than $6 billion from Binance, though Binance says about 90% of affected assets are replaced and it plans to reopen withdrawals on Sunday 1 November (PANews, CNBC). A normal week now swings about $2,978, so a close above $79,000 (top of a typical week's swing) would turn it clearly up, a close below $76,000 (bottom of that swing) would turn it down, and in between it stays choppy. A smooth reopening would steady the mood; until then, lead with trust rather than offers.",
+    "The next month is mixed. The 90-day numbers still point up, with price about 22% higher and about 83% of those days closing above the long-term average, but the last 30 days are down about 8%. News is nudging this down too: the Fed held rates at 3.75%-4.00% on 28 October with two officials wanting a rise, and Dallas Fed President Lorie Logan says at least two more rises are needed (Reuters via PANews); the next meeting is 8 December. If price wins back $81,928 (the 50-day average) the month firms up, and it only has room to climb above $86,603 (the 90-day high); while it stays under the average, the month keeps fading. Save bigger campaign pushes for that reclaim.",
+    "The 3-6 month picture still leans up at a moderate strength. Price is about 6% above its 200-day average and that average is still rising, about 3% over 90 days, though Bitcoin remains 38% below its all-time high. The recovery stays intact while price holds above $73,152 (the 200-day average); if that goes, $67,424 (the 200-week average) is the next floor, and $124,753 (the all-time high) stays the far marker. So far the hack has not broken this picture, and a close below the 200-day average is what would weaken it, which would be the moment to move budget toward keeping existing users."
   ],
   "team_notes": {
-    "marketing": "Stay in growth mode but switch the tone to trust and safety this week: a hack at Binance has shaken confidence and price has slipped to about $78,000 with no rally or drop window open, so lead with calm explainers and hold hard offers until things settle."
+    "marketing": "Stay on the scale-up plan, but in small steps and with trust-led messages while the Binance story plays out. Keep the normal campaign calendar and hold bigger pushes until price is back above about $81,928."
   },
   "changed_today": null,
   "levels": {
     "high_30d": 86480,
-    "low_30d": 77992,
+    "low_30d": 77369,
     "high_90d": 86603,
     "low_90d": 62819,
-    "ma_50": 81931,
-    "ma_200": 73125,
-    "ma_200w": 67266,
+    "ma_50": 81928,
+    "ma_200": 73152,
+    "ma_200w": 67424,
     "ath": 124753
   },
   "scenarios": {
-    "price": 78028,
+    "price": 77538,
     "up": {
-      "level": 81931,
+      "level": 81928,
       "name": "50-day average",
       "next": [
         {
@@ -59,11 +59,11 @@
       ]
     },
     "down": {
-      "level": 73125,
+      "level": 73152,
       "name": "200-day average",
       "next": [
         {
-          "level": 67266,
+          "level": 67424,
           "name": "200-week average"
         },
         {
@@ -73,19 +73,19 @@
       ]
     },
     "range": [
-      73125,
-      81931
+      73152,
+      81928
     ],
     "short": {
-      "typical_week_swing": 3352,
-      "low": 76250,
-      "high": 79750,
+      "typical_week_swing": 2978,
+      "low": 76000,
+      "high": 79000,
       "up": {
-        "level": 79750,
+        "level": 79000,
         "name": "top of a typical week's swing",
         "next": [
           {
-            "level": 81931,
+            "level": 81928,
             "name": "50-day average"
           },
           {
@@ -95,15 +95,15 @@
         ]
       },
       "down": {
-        "level": 76250,
+        "level": 76000,
         "name": "bottom of a typical week's swing",
         "next": [
           {
-            "level": 73125,
+            "level": 73152,
             "name": "200-day average"
           },
           {
-            "level": 67266,
+            "level": 67424,
             "name": "200-week average"
           }
         ]
@@ -112,18 +112,18 @@
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": -0.0389,
+    "ret_7d": -0.0326,
     "threshold": 0.08,
     "window_days": 14,
-    "needs_up": 87685,
-    "needs_down": 74694,
+    "needs_up": 86566,
+    "needs_down": 73742,
     "last_rally": {
       "date": "2026-09-21",
-      "days_ago": 39
+      "days_ago": 41
     },
     "last_drop": {
       "date": "2026-06-02",
-      "days_ago": 150
+      "days_ago": 152
     },
     "episode": null,
     "stats": {
@@ -374,55 +374,55 @@
     }
   },
   "recent": {
-    "vs_ma50_pct": -0.0476,
-    "days_below_ma50": 9,
-    "ret_30d": -0.0661,
-    "from_high_30d": -0.0977
+    "vs_ma50_pct": -0.0536,
+    "days_below_ma50": 11,
+    "ret_30d": -0.0824,
+    "from_high_30d": -0.1034
   },
   "scores": {
-    "sentiment": -0.534,
-    "momentum": 0.142,
-    "trend": 0.337
+    "sentiment": -0.292,
+    "momentum": 0.312,
+    "trend": 0.367
   },
   "context": {
-    "mayer_multiple": 1.067,
-    "ma200_slope_90d": 0.0257,
-    "ma_200w_multiple": 1.16,
-    "drawdown_from_ath": -0.375,
+    "mayer_multiple": 1.06,
+    "ma200_slope_90d": 0.0308,
+    "ma_200w_multiple": 1.15,
+    "drawdown_from_ath": -0.378,
     "rsi_weekly": 54.4,
-    "active_addr_ratio": 1.003,
-    "puell_multiple": 1.116,
-    "fear_greed": 30.0,
-    "funding_z": -1.97,
-    "vol_percentile": 0.15,
-    "bollinger_width": 0.0764,
-    "btc_dominance": 59.3,
-    "ma_cross": 0.1204,
-    "roc_90d": 0.2432,
-    "breadth_90d": 0.811,
-    "ssr": 5.25,
-    "pi_cycle_gap": -0.5068,
-    "open_interest_usd": 7390665327.6016,
-    "long_short_ratio": 2.3659,
-    "dvol": 38.56,
-    "us_10y_yield": 4.989,
-    "vix": 17.2,
+    "active_addr_ratio": 1.233,
+    "puell_multiple": null,
+    "fear_greed": 34.0,
+    "funding_z": -0.49,
+    "vol_percentile": 0.13,
+    "bollinger_width": 0.0938,
+    "btc_dominance": 59.2,
+    "ma_cross": 0.12,
+    "roc_90d": 0.2218,
+    "breadth_90d": 0.833,
+    "ssr": 5.19,
+    "pi_cycle_gap": -0.5045,
+    "open_interest_usd": 7515866680.61986,
+    "long_short_ratio": 2.5727,
+    "dvol": 40.02,
+    "us_10y_yield": 4.929,
+    "vix": 19.42,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1265439.0,
     "next_fomc_meeting": "2026-12-08"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 30 October 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH\n    (uptrend intact, but a Binance hack has shaken the week)\n    Momentum weakening · Sentiment: Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's budget posture is still to scale up\n    acquisition: the long-run uptrend is intact, and\n    this kind of phase has historically been when\n    spending to win new and returning users paid\n    back best, especially among active traders. This\n    week calls for applying it carefully: a hack at\n    Binance has shaken trust across the market,\n    price is about 5% under its 50-day average and\n    the mood is fearful, so add spend in small\n    steps, lead with safety and trust messages\n    rather than hard offers, and speed up only once\n    price wins back about $81,931. This is a budget-timing\n    guide for the business, not trading\n    advice.\n\n  Why:\n  • BTC ($78,028) is about 7% above its 200-day\n    average ($73,125), which is still rising.\n  • Up about 24% over 90 days; about 81% of those\n    days closed above the long-term average.\n  • But price has closed under its 50-day average\n    ($81,931) for nine days, about 5% below it.\n  • Binance reported an estimated $6.3 billion hack;\n    Fear & Greed sits at 30 (fear).\n\n  Changed today: —\n  Watch:\n    The long-run trend still points up, but the\n    Binance hack has dented confidence and bets on\n    further falls are unusually popular right now.\n    If Binance reopens withdrawals smoothly and\n    price closes back above $79,750 the week\n    steadies, while a close below $74,694 would\n    start a drop signal.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 1 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH\n    (uptrend intact, but the week hangs on\n    Binance's reopening)\n    Momentum stable · Sentiment: Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    The model's budget posture is still to\n    scale up acquisition: the long-run uptrend\n    is intact, and this kind of phase has\n    historically been when spending to win new\n    and returning users paid back best,\n    especially among active traders. This week\n    calls for applying it carefully: the\n    Binance hack is still being cleaned up,\n    price is about 5% under its 50-day average\n    and the mood is fearful, so add spend in\n    small steps, lead with safety and trust\n    rather than hard offers, and speed up only\n    once price wins back about $81,928. This\n    is a budget-timing guide for the business,\n    not trading advice.\n\n  Why:\n  • BTC ($77,538) is about 6% above its\n    200-day average ($73,152), which is still\n    rising.\n  • Up about 22% over 90 days; about 83% of\n    those days closed above the long-term\n    average.\n  • But price has closed under its 50-day\n    average ($81,928) for 11 days, about 5%\n    below it.\n  • FBI ties the $6 billion-plus Binance theft\n    to North Korea; Fear & Greed sits at 34\n    (fear).\n\n  Changed today: —\n  Watch:\n    The long-run trend still points up, but\n    this week rests on Binance reopening\n    withdrawals and finishing its reserve\n    proof. A smooth reopening and a close\n    above $79,000 would steady things, while a\n    close below $76,000 puts the $73,152\n    average in focus.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.9 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 953000000,
+      "value": 188000000,
       "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a18974-b901-703b-9d7e-a863192210e2",
-      "as_of": "2026-10-29",
-      "note": "24h total as the Binance news broke; $629M in one hour, mostly bets on a rise."
+      "source_url": "https://www.panews.io/articles/01a19294-fe67-735a-bbbc-682c99a7f8c5",
+      "as_of": "2026-10-31",
+      "note": "24h total, $144M of it bets on a rise."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
@@ -431,272 +431,307 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "Binance: Security Incident May Involve Compromised Laptop of a DevOps Engineer, No Private Key Leak Found, Total Losses Estimated at About $6.3 Billion",
-        "url": "https://www.panews.io/articles/01a18aa0-7624-71d3-95c4-901bde2cba87",
+        "title": "FBI Blames North Korea for $6 Billion Binance Crypto Hack",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-31/fbi-blames-north-korea-for-6-billion-binance-crypto-hack",
+        "source": "Bloomberg",
+        "date": "2026-10-31"
+      },
+      {
+        "title": "Binance says 90% of $6.3 billion hack losses are now covered, plans to resume withdrawals Sunday",
+        "url": "https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html",
+        "source": "CNBC",
+        "date": "2026-10-31"
+      },
+      {
+        "title": "Fed's Logan: At Least Two More 25-Basis-Point Rate Hikes Needed",
+        "url": "https://www.panews.io/articles/01a18df2-149c-71af-95a9-c7a30344d4f6",
         "source": "PANews",
         "date": "2026-10-30"
       },
       {
-        "title": "$629M Liquidated Across Crypto Market in Past Hour, $607M in Longs",
-        "url": "https://www.panews.io/articles/01a18974-b901-703b-9d7e-a863192210e2",
+        "title": "Bitcoin Spot ETFs Log $643M Net Outflow Yesterday, Led by BlackRock's IBIT With $234M",
+        "url": "https://www.panews.io/articles/01a19037-ef52-71f6-9b4c-2c713784a427",
         "source": "PANews",
-        "date": "2026-10-30"
+        "date": "2026-10-31"
       },
       {
-        "title": "Polymarket: Third-Party Service Provider Breached, Affected Users to Receive Full Compensation",
-        "url": "https://www.panews.io/articles/01a18902-3a1c-7744-8767-44ce764cd461",
+        "title": "Glassnode: US Spot Ethereum ETFs Log 23 Consecutive Trading Days of Net Outflows, the Longest Streak on Record",
+        "url": "https://www.panews.io/articles/01a1946d-44d5-75b1-8adf-716890ab5f66",
         "source": "PANews",
-        "date": "2026-10-30"
-      },
-      {
-        "title": "Strategy Reports Q3 Net Income of $19.53B as CFO to Step Down",
-        "url": "https://www.panews.io/articles/01a18956-6f1e-7138-8b1d-fafa1f22b807",
-        "source": "PANews",
-        "date": "2026-10-30"
-      },
-      {
-        "title": "ECB Officials Said to Expect 25bps Hike in December, Possibly Pausing Afterward",
-        "url": "https://www.panews.io/articles/01a18883-208f-7620-b202-f4031b6525ef",
-        "source": "PANews",
-        "date": "2026-10-30"
+        "date": "2026-11-01"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-01",
     "items": [
       {
-        "theme": "Binance hack spills into DeFi tokens",
-        "why": "Reports say the Binance attacker sold large amounts of tokens including UNI, ENA, PEPE, LINK, AAVE, ONDO and WLD for ETH, and later began selling STRK. Aave froze new deposits and borrowing on its main markets as a precaution after a linked address borrowed from it, though it says its contracts are unaffected.",
+        "theme": "Binance hack clean-up",
+        "why": "Binance reports about 90% of affected assets replaced, and the FBI has named North Korea, saying the stolen funds were mostly turned into ETH. DeFi deposits fell 5.3% to about $83.95 billion the day after the hack, the lowest since late August. TRX fell about 7% in a day; reports show the attackers moved 120 million TRX but do not give a clear reason for the fall.",
         "tokens": [
           {
-            "symbol": "ENA",
-            "change_24h_pct": -5.54
+            "symbol": "BNB",
+            "change_24h_pct": -0.47
+          },
+          {
+            "symbol": "TRX",
+            "change_24h_pct": -7.2
           },
           {
             "symbol": "AAVE",
-            "change_24h_pct": -4.64
+            "change_24h_pct": 3.24
           },
           {
-            "symbol": "UNI",
-            "change_24h_pct": -3.73
-          },
-          {
-            "symbol": "STRK",
-            "change_24h_pct": -6.76
+            "symbol": "LDO",
+            "change_24h_pct": -1.61
           }
         ],
-        "marketing_angle": "A teaching moment on how one exchange incident can ripple across many tokens; keep it factual and calm.",
+        "marketing_angle": "A plain teaching moment on how one incident can spread across many tokens; keep it factual and calm.",
         "sources": [
           {
-            "title": "Binance Hacker Has Sold UNI, ENA, PEPE, LINK, AAVE, ONDO and WLD, Netting 70,480 ETH",
-            "url": "https://www.panews.io/articles/01a18a54-05f3-7298-8147-1c133457eeb7"
+            "title": "Binance: About 90% of affected assets backfilled, Proof of Reserves snapshot published",
+            "url": "https://www.panews.io/articles/01a1925b-6729-76d7-8615-4a1aff721da2"
           },
           {
-            "title": "Aave: All DAO Markets on V3 and V4 Temporarily Frozen Following Binance Incident",
-            "url": "https://www.panews.io/articles/01a189de-8af6-7578-9555-aaf5abc3d70f"
+            "title": "Data: DeFi TVL Drops 5.30% the Day After Binance Hack, Lowest Since Late August",
+            "url": "https://www.panews.io/articles/01a18e0f-00c5-76fa-bf2b-897a5327a341"
           },
           {
-            "title": "Binance Hacker Begins Selling STRK; Two Traders' STRK Shorts Show Combined $4.46M in Unrealized Gains",
-            "url": "https://www.panews.io/articles/01a18a90-6753-72e3-b61b-79cb9551386c"
+            "title": "Hacker Group Behind Binance Attack Moves 120 Million TRX, Followed by Further Dispersal Transfers",
+            "url": "https://www.panews.io/articles/01a18f91-463a-75c2-a9b9-7abe5ad30779"
           }
         ]
       },
       {
-        "theme": "HYPE rises against a falling market",
-        "why": "Hyperliquid's HYPE is up about 18% in a day while most large tokens fell, leaving it about 6% below its record. The reports do not give a clear reason: US HYPE funds took in a small $3.7 million yesterday, while one large holder sold about $53 million of HYPE over five days.",
+        "theme": "Hyperliquid and the NYSE owner",
+        "why": "ICE, the owner of the New York Stock Exchange, deleted its post on a deal with trade.xyz to bring Hyperliquid-style products to the US, then reposted it with softer wording: 'plans to introduce' and 'pending regulatory approval'. Large holders sold more than $100 million of HYPE around the same time, booking profits, and the token is still up about 15% on the week.",
         "tokens": [
           {
             "symbol": "HYPE",
-            "change_24h_pct": 17.83
+            "change_24h_pct": -1.88
           }
         ],
-        "marketing_angle": "Strong interest topic for active traders; explain what Hyperliquid is rather than promoting the token.",
+        "marketing_angle": "Interest in this topic is high, so an explainer on how on-chain trading venues work could draw readers; no token promotion.",
         "sources": [
           {
-            "title": "US HYPE and ZEC Spot ETFs See Combined Single-Day Net Inflow of $18.5131 Million",
-            "url": "https://www.panews.io/articles/01a18a8a-16cc-734a-8804-589587ae4e22"
+            "title": "ICE, parent of NYSE, deletes tweet announcing partnership with trade.xyz",
+            "url": "https://www.panews.io/articles/01a190d1-3e4c-7038-9bc7-e8a8bd9fac3a"
           },
           {
-            "title": "Key Overnight and Morning News (October 29–30)",
-            "url": "https://www.panews.io/articles/01a18a89-0e9c-74f8-84ab-bff148283e38"
+            "title": "ICE Reposts trade.xyz Partnership Announcement, Revises Wording to Include \"Plans to Introduce\" and \"Pending Regulatory Approval\"",
+            "url": "https://www.panews.io/articles/01a191c5-f6c8-7561-9d37-4dc27796118a"
+          },
+          {
+            "title": "Two Whales Sell Over $100 Million Worth of HYPE, Booking More Than $26 Million in Profit",
+            "url": "https://www.panews.io/articles/01a18ffd-dd30-7628-ba70-c8175be1b608"
           }
         ]
       },
       {
-        "theme": "Prediction markets under pressure",
-        "why": "Polymarket paused trading after a third-party service provider was breached and says affected users will be fully compensated. Separately, US senators pressed Kalshi and Polymarket on insider trading in election bets, and the SEC's enforcement director said it is watching for insider trading and manipulation in these markets.",
-        "tokens": [],
-        "marketing_angle": "Ahead of the 3 November US elections, a plain explainer on how these markets work and their risks fits curious users.",
+        "theme": "Ether: funds leave, staking grows",
+        "why": "US spot Ether funds have seen 23 straight trading days of withdrawals, the longest run on record, which Glassnode reads as weaker demand from traditional investors. At the same time, the amount of ETH staked hit a record 43.8 million. The two trends point in different directions, and the reports do not tie them together.",
+        "tokens": [
+          {
+            "symbol": "ETH",
+            "change_24h_pct": 0.5
+          },
+          {
+            "symbol": "LDO",
+            "change_24h_pct": -1.61
+          }
+        ],
+        "marketing_angle": "A simple 'what is staking' piece fits, as long as yields are explained without promising returns.",
         "sources": [
           {
-            "title": "Polymarket: Third-Party Service Provider Breached, Affected Users to Receive Full Compensation",
-            "url": "https://www.panews.io/articles/01a18902-3a1c-7744-8767-44ce764cd461"
+            "title": "Glassnode: US Spot Ethereum ETFs Log 23 Consecutive Trading Days of Net Outflows, the Longest Streak on Record",
+            "url": "https://www.panews.io/articles/01a1946d-44d5-75b1-8adf-716890ab5f66"
           },
           {
-            "title": "Bipartisan senators press Kalshi and Polymarket on preventing insider trading in election bets",
-            "url": "https://www.panews.io/articles/01a189a9-e964-75c7-a632-64f3cccc3b6b"
-          },
-          {
-            "title": "SEC Enforcement Director: Closely Monitoring Insider Trading and Manipulation in Prediction Markets",
-            "url": "https://www.panews.io/articles/01a18881-6da6-7453-8e52-078498d92ba3"
+            "title": "Ethereum Staking Hits Record 43.8M ETH as Q3 Annualized Yield Falls to 2.63%",
+            "url": "https://www.panews.io/articles/01a19292-a22a-7783-8200-726a5d3f6d2a"
           }
         ]
       }
     ]
   },
   "news_impact": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-01",
     "items": [
       {
-        "headline": "Binance: Security Incident May Involve Compromised Laptop of a DevOps Engineer, No Private Key Leak Found, Total Losses Estimated at About $6.3 Billion",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a18aa0-7624-71d3-95c4-901bde2cba87",
+        "headline": "FBI: North Korea Behind Theft of Over $6 Billion From Binance",
+        "source": "PANews (citing the FBI)",
+        "url": "https://www.panews.io/articles/01a193f3-cb5b-76e5-af84-7fb08941972d",
         "horizon": "short",
         "direction": "negative",
-        "size": "major",
-        "why": "The world's largest exchange lost an estimated $6.3 billion from its hot wallets and paused deposits and withdrawals; it says about $3 billion is frozen and it will cover all losses, but trust across the market takes a hit."
+        "size": "moderate",
+        "why": "The largest crypto theft on record is now officially tied to North Korea and withdrawals were still shut at last report, which keeps trust shaky, though Binance says about 90% of affected assets are replaced."
       },
       {
-        "headline": "ECB Officials Said to Expect 25bps Hike in December, Possibly Pausing Afterward",
-        "source": "PANews (citing Reuters and Bloomberg)",
-        "url": "https://www.panews.io/articles/01a18883-208f-7620-b202-f4031b6525ef",
+        "headline": "Fed's Logan: At Least Two More 25-Basis-Point Rate Hikes Needed",
+        "source": "PANews (citing Reuters)",
+        "url": "https://www.panews.io/articles/01a18df2-149c-71af-95a9-c7a30344d4f6",
+        "horizon": "medium",
+        "direction": "negative",
+        "size": "moderate",
+        "why": "The Fed held rates on 28 October with two officials wanting a rise, and a voting member now says at least two more are needed, so borrowing costs may stay high or climb, which usually weighs on riskier assets."
+      },
+      {
+        "headline": "Nasdaq-Listed NXTT Weighs Selling $450 Million of Bitcoin, Citing Binance Hack and Quantum Risk",
+        "source": "PANews (citing CoinDesk)",
+        "url": "https://www.panews.io/articles/01a19205-3766-744a-a6f0-92d66abc8495",
         "horizon": "medium",
         "direction": "negative",
         "size": "minor",
-        "why": "European officials reportedly expect to raise rates on 17 December, one more sign that borrowing costs are staying high, which usually weighs on riskier assets."
+        "why": "A listed company's board cleared the sale or pledging of about 5,833 BTC, citing exchange weakness and quantum risk, a small sign that some corporate holders are rethinking."
       },
       {
-        "headline": "Nasdaq Reportedly Urging Listed Companies to Oppose Tokenizing Their Shares on OKXICE",
-        "source": "PANews (citing Eleanor Terrett)",
-        "url": "https://www.panews.io/articles/01a1893c-fc46-710c-8b80-f30ce72d7d34",
+        "headline": "CFTC Chair on Binance Hack: We Want to Offer Crypto Exchanges a Federal Registration Option",
+        "source": "PANews (citing Reuters)",
+        "url": "https://www.panews.io/articles/01a18d7c-23b0-76d4-9cd0-07bf65961670",
         "horizon": "medium",
-        "direction": "negative",
+        "direction": "positive",
         "size": "minor",
-        "why": "Pushback from Nasdaq, with 38 companies objecting so far, slows one of the newer crypto growth stories: trading company shares on blockchain venues."
+        "why": "The US derivatives regulator is pressing a voluntary federal sign-up route for crypto exchanges, which could add protections over time, but it is a stated plan, not a rule."
+      },
+      {
+        "headline": "Uber Joins Blockchain Investment Pilot With HSBC, Franklin Templeton and Others",
+        "source": "PANews (citing Bloomberg)",
+        "url": "https://www.panews.io/articles/01a18d66-e746-70e0-b03f-67a2c6b02d02",
+        "horizon": "long",
+        "direction": "positive",
+        "size": "minor",
+        "why": "Uber joining HSBC and Franklin Templeton in a live test of tokenized deposits and funds is another small step of large firms using public blockchains."
       }
     ],
     "summary": {
-      "short": "A hack estimated at $6.3 billion at Binance, with deposits and withdrawals paused, is a major hit to confidence this week even though Binance says it will cover every loss.",
-      "medium": "A likely European rate rise in December and Nasdaq pushback on tokenized shares are small extra weights over the coming weeks.",
-      "long": ""
+      "short": "The Binance hack, now pinned on North Korea by the FBI, still weighs on trust this week, though it is smaller than on Friday because most losses are reported replaced.",
+      "medium": "A firmer tone from the Fed is the main weight over the coming weeks, with a small company sale plan against a small regulatory plus.",
+      "long": "Large firms testing tokenized cash and funds is a small positive for the long run."
     },
     "impact": {
-      "short": -1.0,
+      "short": -0.5,
       "medium": -0.5,
-      "long": 0.0
+      "long": 0.25
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.337,
-    "momentum": 0.192,
-    "sentiment": -0.434
+    "trend": 0.342,
+    "momentum": 0.362,
+    "sentiment": -0.242
   },
-  "conviction_base": 61,
+  "conviction_base": 62,
   "news_adjustment": {
-    "sentiment": -0.1,
+    "sentiment": -0.05,
     "momentum": -0.05,
-    "trend": 0.0
+    "trend": 0.025
   },
   "news_flag": null,
   "marketing_segments": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-01",
     "social": {
       "stance": "Hold",
-      "strategy": "Keep the normal posting rhythm but shift topics to trust, safety and plain explanations: Bitcoin is down about 4% this week after the Binance hack, no rally or drop window is open, and readers want to know what happened.",
+      "strategy": "Keep the normal posting rhythm with topics on trust, safety and plain explanations: Bitcoin is down about 3% over seven days, no rally or drop window is open, and readers still want to know what the Binance story means for them.",
       "actions": [
         {
-          "what": "Post a calm 'what happened at Binance' explainer",
-          "detail": "Binance estimates about $6.3 billion was taken, about $3 billion is frozen and it says it will cover all losses (PANews); stick to the facts and avoid any dig at a competitor."
+          "what": "Update the Binance explainer",
+          "detail": "Add the latest facts: the FBI named North Korea, Binance reports about 90% of affected assets replaced, and it plans to reopen withdrawals on 1 November (PANews, CNBC); stick to facts and avoid any dig at a competitor."
         },
         {
-          "what": "Share a 'how exchanges protect funds' post",
-          "detail": "Explain in plain words the difference between hot and cold wallets and why it matters, linked to Reku's own security practices without overclaiming."
+          "what": "Explain what proof of reserves means",
+          "detail": "Binance published a reserve snapshot and says a fuller proof follows early this week (CNBC, PANews), which makes a simple 'how to check an exchange holds your coins' post timely."
         },
         {
-          "what": "Add one daily market-recap post",
-          "detail": "Cover the slide to about $78,000 (about -4% over 7 days) and the levels in play, $79,750 above and $76,250 below, without predicting the next move."
+          "what": "Run a daily market recap",
+          "detail": "Cover Bitcoin near $77,500 and the weekly zone of $76,000-$79,000 without predicting the next move, and name the US midterms on 3 November as the week's scheduled event."
         },
         {
-          "what": "Run a short 'stay safe online' tip",
-          "detail": "Polymarket said a third-party provider was breached and Singapore police warned of tampered hardware wallets in local shops (PANews); simple safety tips build trust."
+          "what": "Use the Fed story as an education post",
+          "detail": "Explain in plain words why talk of more rate rises (Logan via PANews) can matter for riskier assets."
         }
       ]
     },
     "seo": {
       "stance": "Prepare",
-      "strategy": "Publish and refresh pages on the questions the Binance hack and the price drop are likely to raise, focused on safety and plain facts rather than price excitement.",
+      "strategy": "Keep pages on the Binance hack fresh, because the FBI statement and the withdrawal reopening are likely to draw new searches, and add evergreen safety pages that keep working after the story fades.",
       "actions": [
         {
-          "what": "Publish 'What happened in the Binance hack?'",
-          "detail": "Likely to draw searches because the largest exchange paused deposits and withdrawals; update it when Binance releases its promised post-mortem and proof of reserves (PANews)."
+          "what": "Refresh 'What happened in the Binance hack?'",
+          "detail": "Likely to draw searches because the FBI named North Korea and Binance plans its reopening; add both, with dates and sources."
         },
         {
-          "what": "Refresh 'Why did Bitcoin fall today?'",
-          "detail": "Likely to draw searches after price slipped below $78,000 as the hack news broke (PANews); add the $76,250 and $73,125 reference levels in plain words."
+          "what": "Publish 'What is proof of reserves?'",
+          "detail": "Likely to draw searches because Binance's fuller proof is due early this week; keep it evergreen and not about one exchange."
         },
         {
-          "what": "Update the 'Is my crypto safe on an exchange?' page",
-          "detail": "Likely to draw searches after two security incidents in one day (Binance and Polymarket, PANews); explain custody and account safety simply."
+          "what": "Refresh 'Why is Bitcoin down?'",
+          "detail": "Likely to draw searches with price about 10% under its 30-day high; cite the reported causes only, and say where no single cause is reported."
+        },
+        {
+          "what": "Update 'hot wallet vs cold wallet'",
+          "detail": "Likely to draw searches because the theft came from hot wallets and the Financial Times reports other exchanges reviewing their storage (PANews)."
         }
       ]
     },
     "paid": {
-      "stance": "Increase",
-      "strategy": "In line with SCALE UP and a quiet Rally watch, keep acquisition growing in small steps toward active traders, but swap hard offers for trust-led creatives while the Binance story settles, and keep rally creatives ready rather than live.",
+      "stance": "Hold",
+      "strategy": "Normal spend with small steps up, in line with SCALE UP while no rally or drop window is open; aim the steps at active traders and keep creatives on trust, not on price.",
       "actions": [
         {
-          "what": "Keep active-trader spend growing slowly",
-          "detail": "Add spend in small weekly steps and speed up only once price wins back $81,931 (the 50-day average)."
+          "what": "Add spend in small steps toward active traders",
+          "detail": "Keep each step small while price is under $81,928, then speed up if it closes back above that level."
         },
         {
-          "what": "Lead with trust-led creatives this week",
-          "detail": "Use security, licensing and how-it-works messages instead of price-move hooks while news of the hack is fresh."
+          "what": "Run trust-led creatives for new users",
+          "detail": "Use security and how-it-works angles for stablecoin and new audiences, and avoid any mention of the Binance incident or price promises in ads."
         },
         {
-          "what": "Hold a flexible reserve",
-          "detail": "Keep part of the increase ready to pause if price closes below $74,694, where a drop signal would start."
+          "what": "Have rally creatives ready",
+          "detail": "A rally window opens above $86,566, so keep ads ready to go live within days rather than running them now."
+        },
+        {
+          "what": "Set a pause point",
+          "detail": "Keep part of the increase ready to pause if price closes below $73,742, where a drop signal would start."
         }
       ]
     },
     "crm": {
       "stance": "Hold",
-      "strategy": "Keep the regular lifecycle messages and add calm reassurance for existing users; no promotional pressure while the hack story unfolds.",
+      "strategy": "Keep regular lifecycle messages with no promotional pressure this week, plus calm safety guidance for existing users; prepare the next campaign rather than launching it.",
       "actions": [
         {
-          "what": "Send a calm security update to active users",
-          "detail": "Remind users how to protect their accounts (2FA, withdrawal whitelists, phishing) and, only if the security team confirms it, that Reku is not affected by the Binance incident."
+          "what": "Send an account-safety reminder",
+          "detail": "Cover two-step login, withdrawal address lists and phishing, since the FT reports exchanges are upgrading scam protection (PANews); say Reku is unaffected only if the security team confirms it."
         },
         {
-          "what": "Keep onboarding journeys running, without hard offers",
-          "detail": "Registered users who have not deposited yet get the normal education flow this week rather than time-limited incentives."
+          "what": "Keep onboarding education running",
+          "detail": "Nudge registered users who have not deposited with how-it-works content, without time-limited offers while the mood reads fear."
         },
         {
-          "what": "Have the rally-window journey ready",
-          "detail": "New sign-ups and first deposits tend to arrive about 2-4 weeks after a rally, so keep that journey queued for a close above $87,685."
+          "what": "Queue the post-rally journey",
+          "detail": "New sign-ups and first deposits arrive about 2-4 weeks after a rally, so keep that journey built and ready to trigger on a close above $86,566."
         }
       ]
     },
     "research": {
       "stance": "Monitor",
-      "strategy": "Track the Binance incident and a handful of price levels this week, and tell teams the moment any of them changes.",
+      "strategy": "Tell other teams which few signals decide this week: the Binance reopening, the weekly zone and the two Rally watch prices.",
       "actions": [
         {
-          "what": "Rally watch: quiet",
-          "detail": "A rally window opens on a close above $87,685 and a drop signal on a close below $74,694; the last rally signal was 39 days ago."
+          "what": "Track Binance's reopening",
+          "detail": "Report whether withdrawals restart as planned on 1 November and when the fuller reserve proof lands; reports give 2 or 3 November (Bloomingbit, CNBC)."
         },
         {
-          "what": "Weekly zone and bigger levels",
-          "detail": "This week's choppy zone is $76,250-$79,750 (a normal week swings about $3,350); the bigger levels are $81,931 above and $73,125 below."
+          "what": "Flag the Rally watch triggers",
+          "detail": "State is quiet: a rally window opens above $86,566 and a drop signal starts below $73,742."
         },
         {
-          "what": "Follow the Binance story",
-          "detail": "Watch for deposits and withdrawals reopening, the promised post-mortem and proof of reserves, and any knock-on problems (Kraken reported a trading disruption, PANews)."
+          "what": "Flag the weekly and bigger levels",
+          "detail": "Weekly zone $76,000-$79,000; bigger levels are $81,928 above and $73,152 below. No news flag is active today."
         },
         {
-          "what": "Flag scheduled events",
-          "detail": "US midterm elections on 3 November, the Fed on 8 December and the ECB on 17 December, where officials reportedly expect a rate rise."
+          "what": "Watch the calendar",
+          "detail": "US midterms on 3 November and the next Fed meeting on 8 December are the scheduled events; refresh the GTV study when new GTV data arrives."
         }
       ]
     }
