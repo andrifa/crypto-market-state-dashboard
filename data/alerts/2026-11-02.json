@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-02",
+  "generated": "2026-11-02T00:52:22Z",
+  "price": 78172,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 2 November 2026**\n\n**Snapshot**\n• Bitcoin about $78,172, down about 2.5% over 7 days.\n• Headline: BULLISH, high confidence on the page, but that rests on a very small news nudge; the model alone reads medium.\n• Fear & Greed 37 (fear). Price swings are unusually calm for now, among the quietest 14% of readings.\n\n**What happened (last 24h)**\n• Bitcoin rose slightly from about $77,538, and no single cause is reported.\n• Binance reopened withdrawals on all 15 first-phase networks. About $4.65 billion went out and $1.01 billion came in, a net $3.64 billion or about 2% of its assets, and it says the flow has slowed (PANews).\n• About $87 million of bets were forced to close in 24 hours, down from $188 million a day earlier (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 12 days, about 5% below it.\n• Turns up: a close above $79,750, then $81,969 (the 50-day average).\n• Sideways: $77,369-$79,750; a normal week swings about $2,926.\n• Turns down: a close below $77,369 (the 30-day low), then $73,171 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $86,563 and a drop signal starts below $73,739.\n• This week: Binance's fuller reserve report (expected today, not yet confirmed), US midterms on 3 November, US jobs report on 6 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• Binance reopens withdrawals (PANews): short term, medium positive.\n• BTCPay Server warns of drained wallets; losses not yet known (PANews): short term, small negative.\n• 50 companies now object to tokenized trading of their shares on OKX and ICE's platform (PANews): medium term, small negative.\n\n**Altcoins & themes**\n• RUNE fell 11.9% with no clear reason reported, after THORChain paused trading. XPL fell 14% as forced closes hit Hyperliquid (PANews).\n\n**Bigger picture**\n• The next month is mixed (up 22% over 90 days, down about 8% over 30); the 3-6 month trend still leans up while price holds above $73,171.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep acquisition growing in small steps toward active traders, in line with SCALE UP, with trust-led creatives for new and stablecoin audiences and no price promises. Speed up only once price closes back above $81,969. Keep rally creatives ready for a close above $86,563, and keep part of the increase ready to pause if price closes below $73,739, where a drop signal would start."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm and update the Binance explainer with the latest facts: withdrawals reopened on 15 networks and about 2% of its assets left on net (PANews). Add a simple wallet-safety checklist tied to the BTCPay Server and Solana dApp Store warnings. Keep the daily recap on the $77,369-$79,750 zone with no predictions, and hold the proof of reserves post until Binance's report is actually out."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No promotional pressure this week. Send an account-safety reminder covering two-step login, withdrawal address lists, fake announcements and seed-phrase scams, and say Reku is unaffected only if the security team confirms it. Keep onboarding education running without time-limited offers, and keep the post-rally journey ready to trigger on a close above $86,563, since sign-ups and first deposits tend to arrive 2-4 weeks after a rally."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793580767.980169",
+      "at": "2026-11-02T00:53:02Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793580772.518249",
+      "at": "2026-11-02T00:53:02Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793580774.962309",
+      "at": "2026-11-02T00:53:02Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793580777.047149",
+      "at": "2026-11-02T00:53:02Z"
+    }
+  ]
+}
