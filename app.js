@@ -661,7 +661,7 @@ function renderNarratives(d) {
 /* New on Reku: assets carrying the "Baru" tag on reku.id/markets, with what their projects said lately */
 function renderNewListings(box, nl) {
   const wrap = el("div", { class: "nl-wrap" });
-  wrap.append(el("h4", { class: "nl-title", text: `New on Reku${nl.count ? ` · ${nl.count} assets tagged Baru` : ""}` }));
+  wrap.append(el("h4", { class: "nl-title", text: `New on Reku${nl.count ? ` · latest ${nl.count} listings` : ""}` }));
   wrap.append(el("p", { class: "nl-sub", text: nl.scope || "Assets with the Baru tag on reku.id/markets. Only developments from the last 7 days that come with a source are listed." }));
   const chg = (label, v) => v == null ? "" : el("span", {}, `${label} `, el("span", { class: v >= 0 ? "up" : "down", text: `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}%` }));
   nl.items.forEach((it) => {
@@ -686,12 +686,18 @@ function renderNewListings(box, nl) {
     const more = el("p", { class: "nl-more" }, el("b", { text: "Also posting: " }));
     nl.also.forEach((a, i) => {
       if (i) more.append(" ");
-      more.append(el("a", { href: a.url, target: "_blank", rel: "noopener", text: a.symbol }), ` ${a.text}`);
+      more.append(el("a", { href: a.url, target: "_blank", rel: "noopener", text: a.symbol }), `: ${a.text}`);
     });
     wrap.append(more);
   }
   if (nl.quiet && nl.quiet.length) {
-    wrap.append(el("p", { class: "nl-more" }, el("b", { text: "No fresh news in the last 7 days: " }), nl.quiet.join(", ") + "."));
+    const quiet = el("p", { class: "nl-more" }, el("b", { text: "No fresh news: " }));
+    nl.quiet.forEach((q, i) => {
+      if (i) quiet.append(" ");
+      if (typeof q === "string") { quiet.append(q + (i < nl.quiet.length - 1 ? "," : ".")); return; }
+      quiet.append(q.url ? el("a", { href: q.url, target: "_blank", rel: "noopener", text: q.symbol }) : el("b", { text: q.symbol }), `: ${q.text}`);
+    });
+    wrap.append(quiet);
   }
   wrap.append(el("p", { class: "chart-note", text: "Built from each project's official X account, PANews headlines and CoinGecko prices (USD). Project posts are the project's own statements, not independent confirmation. Describes what is happening; not a recommendation to buy any token." }));
   box.append(wrap);

@@ -7,6 +7,7 @@ was said about them recently (project posts on X, PANews headlines).
     python3 backend/new_listings.py --no-x     # skip X (e.g. the login expired)
     python3 backend/new_listings.py --reuse-x  # keep the X posts already in private/x_posts.json
     python3 backend/new_listings.py --days 7   # how far back to look for posts / headlines
+    python3 backend/new_listings.py --top 10   # only the first N rows of the New Listings tab (default 10)
 
 Steps (each one degrades on its own; the summary at the end says what was and was not available):
   1. backend/reku_new_listings.js reads the New Listings tab (symbol, name, rupiah price, 24h change).
@@ -156,15 +157,17 @@ def mentions(text: str, sym: str, name: str) -> bool:
 def main() -> int:
     args = sys.argv[1:]
     days = float(args[args.index("--days") + 1]) if "--days" in args else 7
+    top = int(args[args.index("--top") + 1]) if "--top" in args else 10
     use_x = "--no-x" not in args
     reuse_x = "--reuse-x" in args
     PRIVATE.mkdir(exist_ok=True)
 
     log("1. Reku New Listings")
     items = reku_listings()
+    log(f"  {len(items)} asset(s) on the New Listings tab; using the first {top} (the order shown on the page)")
+    items = items[:top]
     # a listing that does not trade at all (price 0) cannot be matched or discussed
     items = [i for i in items if i["price_idr"]]
-    log(f"  {len(items)} asset(s) with the Baru tag")
 
     log("2. CoinGecko ids and X handles")
     m, unmatched = update_map(items)
@@ -203,6 +206,7 @@ def main() -> int:
                           "change_7d_pct": c.get("price_change_percentage_7d_in_currency"),
                           "change_30d_pct": c.get("price_change_percentage_30d_in_currency"),
                           "from_ath_pct": c.get("ath_change_percentage"), "ath_date": c.get("ath_date")},
+                "x_status": ((xs.get("meta") or {}).get(info.get("x") or "") or {"status": "no_handle" if not info.get("x") else "unknown"}),
                 "x_posts": ((xs.get("accounts") or {}).get(info.get("x") or "") or []),
                 "panews": [{k: n[k] for k in ("title", "desc", "published", "url")}
                            for n in news if mentions(n["title"] + " " + n["desc"], sym, it["name"])][:6],
@@ -214,6 +218,10 @@ def main() -> int:
     out = {"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "days": days,
            "x_ok": bool(xs.get("ok")), "x_reason": xs.get("reason"), "unmatched": unmatched, "assets": assets}
     (PRIVATE / "new_listings_raw.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    for a in assets:
+        st = a.get("x_status") or {}
+        log(f"  {a['symbol']:9} @{a.get('x_handle') or '-':16} X: {st.get('status', '-'):10} last post {str(st.get('last_post') or '-')[:10]}  "
+            f"{len(a.get('x_posts') or [])} recent, {len(a.get('panews') or [])} PANews")
     with_news = [a["symbol"] for a in assets if a.get("x_posts") or a.get("panews")]
     log(f"\nDone: {len(assets)} assets, {len(with_news)} with posts or headlines: {', '.join(with_news) or '-'}")
     if unmatched:

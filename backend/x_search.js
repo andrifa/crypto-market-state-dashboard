@@ -8,7 +8,10 @@
  * X's search page returns HTTP 404 for automated browsers, but account pages load, so we read each
  * project's own timeline. Pinned posts are skipped (they are old by design); replies are not shown on
  * the main timeline. Output JSON:
- *   { ok, reason?, accounts: { "<handle>": [ {id, time, text, url, repost, likes, replies, reposts} ] } }
+ *   { ok, reason?, accounts: { "<handle>": [ {id, time, text, url, repost, likes, replies, reposts} ] },
+ *     meta: { "<handle>": { status: "ok" | "not_found" | "suspended" | "restricted" | "error", last_post: ISO time of the newest
+ *             non-pinned post even if older than --days (null if none), n_recent } } }
+ * status tells an account that does not exist (wrong handle) apart from one that is simply quiet.
  * Exit code 0 = ran, 2 = not logged in / profile locked / blocked (the daily task then skips X and relies
  * on PANews and web search only).
  *
@@ -64,7 +67,7 @@ function finish(result, code) {
     finish({ ok: false, reason: "could not open the X profile (is a panews-scraper window using it?): " + e.message.split("\n")[0], accounts: {} }, 2);
   }
 
-  const result = { ok: true, fetched: new Date().toISOString(), days: opt.days, accounts: {}, errors: {} };
+  const result = { ok: true, fetched: new Date().toISOString(), days: opt.days, accounts: {}, meta: {}, errors: {} };
   const cutoff = Date.now() - opt.days * 86400 * 1000;
   try {
     const page = await ctx.newPage();
@@ -78,7 +81,20 @@ function finish(result, code) {
           result.reason = "X is not logged in on this profile (log in again from the panews-scraper app)";
           break;
         }
+        const body = await page.evaluate(() => document.body.innerText.slice(0, 4000));
+        let status = "ok";
+        if (/this account doesn.t exist|account doesn.t exist|hmm\.\.\.this page doesn.t exist/i.test(body)) status = "not_found";
+        else if (/account suspended/i.test(body)) status = "suspended";
+        else if (/these posts are protected|this account.s posts are protected/i.test(body)) status = "restricted";
+        else if (!(await page.$('article[data-testid="tweet"]')) && /something went wrong/i.test(body)) status = "error";
+        if (status !== "ok") {
+          result.accounts[h] = [];
+          result.meta[h] = { status, last_post: null, n_recent: 0 };
+          if (hi < handles.length - 1) await sleep(3000 + Math.random() * 3000);
+          continue;
+        }
         const seen = new Map();
+        let latest = null;
         let idle = 0;
         for (let s = 0; s < 5 && idle < 2; s++) {
           const batch = await page.evaluate(() => {
@@ -106,6 +122,7 @@ function finish(result, code) {
           });
           let added = 0;
           for (const tw of batch) {
+            if (tw.time && (!latest || tw.time > latest)) latest = tw.time;
             if (!seen.has(tw.id) && new Date(tw.time).getTime() >= cutoff) { seen.set(tw.id, tw); added++; }
           }
           idle = added ? 0 : idle + 1;
@@ -114,8 +131,10 @@ function finish(result, code) {
           await sleep(2000 + Math.random() * 1000);
         }
         result.accounts[h] = [...seen.values()].sort((a, b) => b.time.localeCompare(a.time)).slice(0, opt.max);
+        result.meta[h] = { status: "ok", last_post: latest, n_recent: seen.size };
       } catch (e) {
         result.errors[h] = e.message.split("\n")[0];
+        result.meta[h] = { status: "error", last_post: null, n_recent: 0 };
       }
       if (hi < handles.length - 1) await sleep(3000 + Math.random() * 3000);
     }
