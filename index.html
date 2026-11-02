@@ -140,6 +140,27 @@
   .nl-src a{color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--muted);}
   .nl-more{margin:8px 0 0; font-size:12.5px; color:var(--ink-soft); line-height:1.55; max-width:78ch;}
   .nl-more b{color:var(--ink);}
+  .sc-wrap{margin-top:18px; padding-top:16px; border-top:2px solid var(--hair);}
+  .sc-title{font-family:"Space Grotesk"; font-size:15px; margin:0 0 3px; color:var(--ink);}
+  .sc-sub{margin:0 0 6px; font-size:12px; color:var(--muted);}
+  .sc-summary{margin:0 0 12px; font-size:13.5px; line-height:1.55; color:var(--ink-soft); max-width:78ch;}
+  .sc-comps{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:14px;}
+  @media (max-width:900px){ .sc-comps{grid-template-columns:1fr;} }
+  .sc-comp{background:var(--surface-2); border-radius:12px; padding:12px 14px;}
+  .sc-comp-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:6px; font-size:13.5px; color:var(--ink);}
+  .sc-count{font-family:"IBM Plex Mono"; font-size:11px; color:var(--muted);}
+  .sc-focus{margin:0 0 8px; font-size:12.5px; line-height:1.5; color:var(--ink-soft);}
+  .sc-ex{margin:0; padding-left:16px; font-size:12px; line-height:1.45; color:var(--muted);}
+  .sc-ex li{margin:0 0 4px;} .sc-ex a{color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--muted);}
+  .sc-sub-title{font-family:"Space Grotesk"; font-size:13px; margin:0 0 4px; color:var(--ink);}
+  .sc-topic{padding:10px 0; border-top:1px solid var(--hair);}
+  .sc-topic-head{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px;}
+  .sc-topic-name{font-size:13.5px; font-weight:600; color:var(--ink);}
+  .sc-by{font-size:11.5px; color:var(--muted);}
+  .sc-line{margin:0 0 3px; font-size:13px; line-height:1.5; color:var(--ink-soft); max-width:78ch;}
+  .sc-line b{color:var(--ink); font-weight:600;}
+  .sc-pattern{margin:10px 0 0; font-size:12.5px; line-height:1.55; color:var(--ink-soft); max-width:78ch;}
+  .sc-pattern b{color:var(--ink);}
   .outlook-news{margin-top:6px; font-size:12.5px; font-weight:500;}
   .outlook-news.pos{color:var(--teal-deep);} .outlook-news.neg{color:var(--bear);}
   .news-sums{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:12px;}
@@ -518,7 +539,7 @@
   <footer id="footer"></footer>
 </div>
 <noscript><div class="wrap">This page needs JavaScript to display the data.</div></noscript>
-<script src="app.js?v=20261102c"></script>
+<script src="app.js?v=20261102d"></script>
 <script src="glossary.js?v=20261026e"></script>
 </body>
 </html>

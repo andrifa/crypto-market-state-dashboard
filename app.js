@@ -797,6 +797,43 @@ function renderTeams(d) {
     cards.append(card);
   });
   grid.append(cards);
+  if (d.seo_competitors && d.seo_competitors.topics && d.seo_competitors.topics.length) grid.append(seoCompetitorsBlock(d.seo_competitors));
+}
+
+/* SEO: what competing exchanges published lately (Pintu, Indodax, Pluang) and what the SEO team could cover */
+function seoCompetitorsBlock(sc) {
+  const wrap = el("div", { class: "sc-wrap" });
+  wrap.append(el("h4", { class: "sc-title", text: "SEO · what competitors are publishing" }));
+  if (sc.window) wrap.append(el("p", { class: "sc-sub", text: sc.window }));
+  if (sc.summary) wrap.append(el("p", { class: "sc-summary", text: sc.summary }));
+
+  const comps = el("div", { class: "sc-comps" });
+  (sc.competitors || []).forEach((c) => {
+    const card = el("div", { class: "sc-comp" },
+      el("div", { class: "sc-comp-head" }, el("b", { text: c.name }), el("span", { class: "sc-count", text: `${c.posts} posts` })),
+      el("p", { class: "sc-focus", text: c.focus || "" }));
+    if (c.examples && c.examples.length) {
+      const ul = el("ul", { class: "sc-ex" });
+      c.examples.slice(0, 3).forEach((x) => ul.append(el("li", {}, el("a", { href: x.url, target: "_blank", rel: "noopener", text: x.title }), x.date ? ` (${fmtDate(x.date)})` : "")));
+      card.append(ul);
+    }
+    comps.append(card);
+  });
+  wrap.append(comps);
+
+  wrap.append(el("h4", { class: "sc-sub-title", text: "Topics the SEO team could cover" }));
+  (sc.topics || []).forEach((t) => {
+    wrap.append(el("div", { class: "sc-topic" },
+      el("div", { class: "sc-topic-head" },
+        el("span", { class: "sc-topic-name", text: t.topic }),
+        t.priority ? el("span", { class: "scn-tag " + (t.priority === "High" ? "up" : "mid"), text: t.priority }) : "",
+        el("span", { class: "sc-by", text: (t.covered_by || []).join(" · ") })),
+      t.angle ? el("p", { class: "sc-line" }, el("b", { text: "What they write: " }), t.angle) : "",
+      t.action ? el("p", { class: "sc-line" }, el("b", { text: "Action: " }), t.action) : ""));
+  });
+  (sc.patterns || []).forEach((p) => wrap.append(el("p", { class: "sc-pattern" }, el("b", { text: "Pattern: " }), p)));
+  wrap.append(el("p", { class: "chart-note", text: sc.caveat || "Built from the public pages of Pintu (RSS), Indodax (Academy articles) and Pluang (crypto news list). Topic counts are a simple keyword match on titles, not search volumes or rankings, and the page does not know what Reku has already published — check the list against Reku's own content before commissioning." }));
+  return wrap;
 }
 
 /* -------------------------- supporting signals: full 35-indicator catalog ----------- */

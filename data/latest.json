@@ -889,5 +889,145 @@
     "momentum": -0.025,
     "trend": 0.025
   },
-  "news_flag": null
+  "news_flag": null,
+  "seo_competitors": {
+    "as_of": "2026-11-02",
+    "window": "Public pages read on 2 Nov 2026: Pintu (RSS, 65 latest posts, 31 Oct–2 Nov), Indodax Academy (37 articles, 30 Oct–2 Nov), Pluang crypto news list (60 latest items, about 8 hours).",
+    "summary": "This week all three are writing about the same few things: the US midterm elections on 3 November and the week's economic calendar, the Binance hack and exchange security, and Bitcoin's outlook for November. Indodax adds the most altcoin and token-unlock content, Pintu publishes a large set of daily-updated price pages, and Pluang turns each news item into its own short page.",
+    "competitors": [
+      {
+        "name": "Indodax",
+        "posts": 37,
+        "focus": "Editorial Academy articles aimed at searches around price outlook, altcoin picks, token unlocks, project reviews and Bitcoin's 18th anniversary, plus how-to pages for its own app (cancel an order, raise a withdrawal limit).",
+        "examples": [
+          {
+            "title": "Bitcoin Diprediksi Bergerak di $76.000–$82.000 pada November 2026",
+            "url": "https://indodax.com/academy/prediksi-harga-bitcoin-november-2026-brt/",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "Ada Apa dengan 3 November 2026? Ini 3 Risiko Besar bagi Pasar",
+            "url": "https://indodax.com/academy/3-november-2026-risiko-pasar-brt/",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "Daftar 3 Token Unlock di Awal November 2026, KITE Paling Besar!",
+            "url": "https://indodax.com/academy/3-token-unlock-november-2026-brt/",
+            "date": "2026-11-01"
+          }
+        ]
+      },
+      {
+        "name": "Pintu",
+        "posts": 65,
+        "focus": "Mostly daily-updated pages in a fixed format: 51 of 65 titles say \"Hari Ini\" (US stock prices, currency rates, silver and gold prices by city). The rest is market news and calendars: Fed decision, US midterms, ETF flows, weekly spot signal, tokenized-ETF explainers.",
+        "examples": [
+          {
+            "title": "Kalender Ekonomi Pekan Ini 2–6 November 2026: Pemilu AS, Apple, dan NFP",
+            "url": "https://pintu.co.id/news/297253-kalender-ekonomi-pekan-ini-2-6-november-2026",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "ETF Bitcoin Catat Arus Keluar US$643 Juta, Ethereum US$156 Juta: Harga BTC, ETH, XRP 2 November 2026",
+            "url": "https://pintu.co.id/news/297299-etf-bitcoin-ethereum-arus-keluar-harga-btc-eth-xrp-2-november-2026",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "Apa itu iShares Russell 2000 (IWM) dan Tokenized ETF IWMon?",
+            "url": "https://pintu.co.id/academy/post/apa-itu-ishares-russell-2000-etf-iwm-dan-tokenized-etf-iwmon",
+            "date": "2026-10-31"
+          }
+        ]
+      },
+      {
+        "name": "Pluang",
+        "posts": 60,
+        "focus": "One short page per news item, about 60 in roughly eight hours, with an Indonesian address for each. Heavy on company Bitcoin buying and ETF flows, the Binance hack fallout, exchange incidents, stablecoins and tokenized stocks.",
+        "examples": [
+          {
+            "title": "Mercado Bitcoin hentikan penarikan setelah insiden keamanan",
+            "url": "https://pluang.com/news-feed/mercado-bitcoin-insiden-keamanan-hentikan-penarikan",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "Strategy tambah 811 BTC senilai $65,5 juta, total jadi 849.327 BTC",
+            "url": "https://pluang.com/news-feed/strategy-tambah-655-juta-bitcoin-holdings-capai-849327-btc",
+            "date": "2026-11-02"
+          },
+          {
+            "title": "Bitmine: kepemilikan kripto $14,5 miliar di tengah dampak peretasan Binance",
+            "url": "https://pluang.com/news-feed/bitmine-bmnr-kepemilikan-eth-6-juta-token-krypto-uang-14-miliar",
+            "date": "2026-11-02"
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "topic": "US midterms (3 Nov) and the week's economic calendar",
+        "covered_by": [
+          "Indodax",
+          "Pintu"
+        ],
+        "priority": "High",
+        "angle": "Indodax: \"Ada Apa dengan 3 November 2026\" and \"11 Agenda AS\". Pintu: two midterm pages (one on the Polymarket odds) and \"Kalender Ekonomi Pekan Ini 2–6 November\" (Fed, Apple results, jobs report).",
+        "action": "Likely to draw searches today and tomorrow: publish or refresh a one-page \"what happens this week and why crypto watches it\" with the dates from the calendar (midterms 3 Nov, jobs report 6 Nov). Describe the events only, no price call."
+      },
+      {
+        "topic": "Binance hack and exchange security",
+        "covered_by": [
+          "Pluang",
+          "Indodax",
+          "Pintu"
+        ],
+        "priority": "High",
+        "angle": "Pluang has several pages on it (hack fallout, Mercado Bitcoin pause, EU-linked accounts, Binance outflows). Indodax answers the how-to side: \"5 Cara Lindungi Aset Crypto dari Serangan Hacker\".",
+        "action": "The SEO actions above already point to a Binance explainer and a safety page. Add one plain checklist page (\"cara lindungi aset crypto\") so Reku also answers the how-to search, not only the news search."
+      },
+      {
+        "topic": "Bitcoin in November: outlook and seasonality",
+        "covered_by": [
+          "Indodax",
+          "Pintu"
+        ],
+        "priority": "Medium",
+        "angle": "Indodax: a November range article, \"Bitcoin Terancam Anjlok 30%\" and \"Trend Bitcoin di Bulan November\". Pintu: a daily \"Harga BTC, ETH, XRP\" page with ETF flows.",
+        "action": "Refresh \"Bitcoin November 2026\" with past November results and the reference levels from this dashboard, worded as reference points rather than a forecast."
+      },
+      {
+        "topic": "Altcoin watchlists and token unlocks",
+        "covered_by": [
+          "Indodax",
+          "Pluang"
+        ],
+        "priority": "Medium",
+        "angle": "Indodax publishes \"altcoin sinyal\" lists, a daily market-signal page and a token-unlock list (KITE the largest); Pluang covers the same unlock week ($536M scheduled 2–8 Nov).",
+        "action": "A weekly \"jadwal token unlock\" page is a repeatable search topic. Keep the wording neutral (what unlocks and when), not \"buy signals\"."
+      },
+      {
+        "topic": "Company Bitcoin buying and ETF flows",
+        "covered_by": [
+          "Pluang",
+          "Pintu"
+        ],
+        "priority": "Medium",
+        "angle": "Pluang writes a page for each Strategy, Strive and Bitmine purchase; Pintu covers the $643M Bitcoin ETF outflow day.",
+        "action": "Two evergreen pages would catch the repeat searches: \"apa itu Strategy / perusahaan yang menyimpan Bitcoin\" and \"apa itu ETF Bitcoin spot\", updated with the latest holdings."
+      },
+      {
+        "topic": "Tokenized stocks and ETFs",
+        "covered_by": [
+          "Pintu",
+          "Pluang"
+        ],
+        "priority": "Medium",
+        "angle": "Pintu runs \"Apa itu … Tokenized ETF\" explainers (EEMon, IWMon); Pluang reports on-chain tokenized-stock trading ($3.9B in October).",
+        "action": "If Reku offers or plans tokenized assets, an explainer series in the same \"Apa itu\" format is open ground; otherwise skip."
+      }
+    ],
+    "patterns": [
+      "Pintu publishes dozens of pages that repeat daily with a new date and number (\"Harga Saham Microsoft Hari Ini 2 November 2026\", \"Kurs Yen Hari Ini\", \"Harga Perak Hari Ini di Medan\"). The sample shows stocks, currencies and metals rather than crypto. The SEO team could check whether Reku has the same kind of daily page for its own coins (\"Harga Bitcoin hari ini\" and the next largest ones).",
+      "Pluang's volume comes from automated short summaries; Indodax's from longer Academy articles. Reku does not need to match the count: the open space is the explainer and checklist pages that the news pages link back to."
+    ]
+  }
 }
