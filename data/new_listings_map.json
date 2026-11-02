@@ -1,0 +1,229 @@
+{
+  "ACE": {
+    "categories": [
+      "Gaming (GameFi)",
+      "NFT",
+      "BNB Chain Ecosystem"
+    ],
+    "id": "endurance",
+    "name": "Fusionist",
+    "x": "fusionistio"
+  },
+  "BABY": {
+    "categories": [
+      "Decentralized Finance (DeFi)",
+      "LSDFi",
+      "Paradigm Portfolio"
+    ],
+    "id": "babylon",
+    "name": "Babylon",
+    "x": "babylonlabs_io"
+  },
+  "BEAT": {
+    "categories": [
+      "Gaming (GameFi)",
+      "NFT",
+      "BNB Chain Ecosystem"
+    ],
+    "id": "audiera",
+    "name": "Audiera",
+    "x": "Audiera_web3"
+  },
+  "CHIP": {
+    "categories": [
+      "Decentralized Finance (DeFi)",
+      "Solana Ecosystem",
+      "Arbitrum Ecosystem"
+    ],
+    "id": "chip-2",
+    "name": "USD.AI",
+    "x": "USDai_Official"
+  },
+  "COTI": {
+    "categories": [
+      "Smart Contract Platform",
+      "Ethereum Ecosystem",
+      "Layer 2 (L2)"
+    ],
+    "id": "coti",
+    "name": "COTI",
+    "x": "COTInetwork"
+  },
+  "DEXE": {
+    "categories": [
+      "Decentralized Finance (DeFi)",
+      "BNB Chain Ecosystem",
+      "Ethereum Ecosystem"
+    ],
+    "id": "dexe",
+    "name": "DeXe Protocol",
+    "x": "dexe_network"
+  },
+  "DODO": {
+    "categories": [
+      "Decentralized Exchange (DEX)",
+      "Exchange-based Tokens",
+      "Decentralized Finance (DeFi)"
+    ],
+    "id": "dodo",
+    "name": "DODO",
+    "x": "BreederDodo"
+  },
+  "ESP": {
+    "categories": [
+      "Infrastructure",
+      "Arbitrum Ecosystem",
+      "Ethereum Ecosystem"
+    ],
+    "id": "espresso",
+    "name": "Espresso",
+    "x": "EspressoSys"
+  },
+  "GENIUS": {
+    "categories": [
+      "Analytics",
+      "BNB Chain Ecosystem",
+      "Perpetuals"
+    ],
+    "id": "genius-3",
+    "name": "Genius Terminal",
+    "x": "GeniusTerminal"
+  },
+  "HEI": {
+    "categories": [
+      "BNB Chain Ecosystem",
+      "Binance Launchpool",
+      "Ethereum Ecosystem"
+    ],
+    "id": "heima",
+    "name": "Heima",
+    "x": "heimaNetwork"
+  },
+  "IDNG": {
+    "categories": [
+      "Gold-backed token"
+    ],
+    "id": "idngold",
+    "name": "IDNGold",
+    "price_check": "skip",
+    "x": null
+  },
+  "LUMIA": {
+    "categories": [],
+    "id": "lumia",
+    "name": "Lumia",
+    "x": "buildonlumia"
+  },
+  "MARSCOIN": {
+    "categories": [
+      "BNB Chain Ecosystem",
+      "Meme",
+      "Binance Alpha Spotlight"
+    ],
+    "id": "marscoin-4",
+    "name": "MarsCoin",
+    "x": "MarsCoin7777"
+  },
+  "MEGA": {
+    "categories": [
+      "Smart Contract Platform",
+      "Layer 2 (L2)",
+      "MegaETH Ecosystem"
+    ],
+    "id": "megaeth",
+    "name": "MegaETH",
+    "x": "megaeth"
+  },
+  "MOVR": {
+    "categories": [
+      "Smart Contract Platform",
+      "Layer 1 (L1)",
+      "Moonriver Ecosystem"
+    ],
+    "id": "moonriver",
+    "name": "Moonriver",
+    "x": "MoonriverNW"
+  },
+  "NIGHT": {
+    "categories": [
+      "Smart Contract Platform",
+      "BNB Chain Ecosystem",
+      "Layer 1 (L1)"
+    ],
+    "id": "midnight-3",
+    "name": "Midnight",
+    "x": "MidnightNtwrk"
+  },
+  "OPG": {
+    "categories": [],
+    "id": "opengradient",
+    "name": "OpenGradient",
+    "x": "OpenGradient"
+  },
+  "PEOPLE": {
+    "categories": [],
+    "id": "constitutiondao",
+    "name": "ConstitutionDAO",
+    "x": "ConstitutionDAO"
+  },
+  "PHA": {
+    "categories": [
+      "Artificial Intelligence (AI)",
+      "Infrastructure",
+      "Smart Contract Platform"
+    ],
+    "id": "pha",
+    "name": "Phala Network",
+    "x": "PhalaNetwork"
+  },
+  "PONS": {
+    "categories": [
+      "Launchpad",
+      "Robinhood Ecosystem",
+      "Pons Launchpad"
+    ],
+    "id": "pons",
+    "name": "Pons",
+    "x": "ponsdotfamily"
+  },
+  "RE": {
+    "categories": [
+      "Insurance",
+      "Ethereum Ecosystem",
+      "Real World Assets (RWA)"
+    ],
+    "id": "re",
+    "name": "Re",
+    "x": "re"
+  },
+  "SYN": {
+    "categories": [
+      "BNB Chain Ecosystem",
+      "Avalanche Ecosystem",
+      "Polygon Ecosystem"
+    ],
+    "id": "synapse-2",
+    "name": "Synapse",
+    "x": "SynapseProtocol"
+  },
+  "TAG": {
+    "categories": [
+      "Artificial Intelligence (AI)",
+      "BNB Chain Ecosystem",
+      "AI Applications"
+    ],
+    "id": "tagger",
+    "name": "Tagger",
+    "x": "taggerai"
+  },
+  "UB": {
+    "categories": [
+      "Artificial Intelligence (AI)",
+      "Infrastructure",
+      "BNB Chain Ecosystem"
+    ],
+    "id": "unibase",
+    "name": "Unibase",
+    "x": "Unibase_AI"
+  }
+}

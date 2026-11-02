@@ -543,7 +543,292 @@
           }
         ]
       }
-    ]
+    ],
+    "new_listings": {
+      "count": 24,
+      "scope": "Assets carrying the Baru tag on reku.id/markets. Only developments from the last 7 days that come with a source are listed; the order puts positive catalysts first, then caution items.",
+      "items": [
+        {
+          "symbol": "COTI",
+          "name": "COTI",
+          "tag": "Exchange listing",
+          "tone": "up",
+          "date": "2026-11-02",
+          "update": "COTI went live on Uphold, a fiat on-ramp the project says serves more than 10 million users. On 29 Oct the project also took part in Mozilla Festival 2026, a gathering on privacy and digital rights. Both are the project's own statements.",
+          "change_24h_pct": -3.3,
+          "change_7d_pct": -2.4,
+          "sources": [
+            {
+              "title": "@COTInetwork: COTI live on Uphold (2 Nov)",
+              "url": "https://x.com/COTInetwork/status/2117136808291258410"
+            },
+            {
+              "title": "@COTInetwork: Mozilla Festival (29 Oct)",
+              "url": "https://x.com/COTInetwork/status/2115786401342238787"
+            }
+          ]
+        },
+        {
+          "symbol": "GENIUS",
+          "name": "Genius Terminal",
+          "tag": "Token buyback & burn",
+          "tone": "up",
+          "date": "2026-10-31",
+          "update": "Genius Terminal announced that part of the revenue from its Genius App will be used to buy GENIUS on the market and burn it permanently, plus new benefits for holders inside the app. PANews reported it on 1 Nov.",
+          "change_24h_pct": 0.0,
+          "change_7d_pct": -1.0,
+          "sources": [
+            {
+              "title": "@GeniusTerminal: new chapter for GENIUS utility (31 Oct)",
+              "url": "https://x.com/GeniusTerminal/status/2116566429067887027"
+            },
+            {
+              "title": "Genius launches revenue-driven buyback and burn",
+              "url": "https://www.panews.io/articles/01a1947b-fe2b-70c9-a224-9ff5b1a82fa2"
+            }
+          ]
+        },
+        {
+          "symbol": "BEAT",
+          "name": "Audiera",
+          "tag": "Token burn · big weekly gain",
+          "tone": "up",
+          "date": "2026-11-02",
+          "update": "Audiera's weekly update says 1.25 million BEAT were burned (32.6 million in total) against weekly revenue of about 128,000 USDT. The price is up about 51% over 7 days; the project's posts do not say why, and its other recent posts are about AI music characters.",
+          "change_24h_pct": -1.7,
+          "change_7d_pct": 51.0,
+          "sources": [
+            {
+              "title": "@Audiera_web3: BEAT revenue & burn update (2 Nov)",
+              "url": "https://x.com/Audiera_web3/status/2117077832929284582"
+            }
+          ]
+        },
+        {
+          "symbol": "TAG",
+          "name": "Tagger",
+          "tag": "Large move, no stated reason",
+          "tone": "mid",
+          "date": "2026-10-28",
+          "update": "Tagger is up about 64% over 7 days. Its only post this week (28 Oct) describes a plan to bring local and expert knowledge into AI training; no post or news item found explains the rise.",
+          "change_24h_pct": 5.1,
+          "change_7d_pct": 63.7,
+          "sources": [
+            {
+              "title": "@TaggerAI (28 Oct)",
+              "url": "https://x.com/TaggerAI/status/2115437772261773512"
+            }
+          ]
+        },
+        {
+          "symbol": "RE",
+          "name": "Re",
+          "tag": "Binance fallout",
+          "tone": "down",
+          "date": "2026-10-29",
+          "update": "Re said it holds no assets on Binance, paused reUSD redemptions on 29 Oct as a precaution after the Binance hack, and resumed them on 30 Oct. PANews also reported Binance Margin removing the RE/USD1 pair on 30 Oct.",
+          "change_24h_pct": -8.2,
+          "change_7d_pct": -9.4,
+          "sources": [
+            {
+              "title": "@re: redemptions paused (29 Oct)",
+              "url": "https://x.com/re/status/2115923157572079657"
+            },
+            {
+              "title": "@re: redemptions resumed (30 Oct)",
+              "url": "https://x.com/re/status/2116218781609717831"
+            },
+            {
+              "title": "Binance Margin to remove RE/USD1 and other pairs on 30 Oct",
+              "url": "https://www.panews.io/articles/01a17c62-0861-771f-8c1c-175572c1bea3"
+            }
+          ]
+        },
+        {
+          "symbol": "DODO",
+          "name": "DODO",
+          "tag": "Binance fallout",
+          "tone": "down",
+          "date": "2026-10-30",
+          "update": "DODO said it is working with Binance to block addresses linked to the hack from using its services, and told market makers and liquidity providers exposed to the affected assets to review their positions.",
+          "change_24h_pct": -0.4,
+          "change_7d_pct": -10.6,
+          "sources": [
+            {
+              "title": "@BreederDodo (30 Oct)",
+              "url": "https://x.com/BreederDodo/status/2116032572602069297"
+            }
+          ]
+        },
+        {
+          "symbol": "SYN",
+          "name": "Synapse",
+          "tag": "Security incident",
+          "tone": "down",
+          "date": "2026-10-30",
+          "update": "Synapse recommended that community members remove their on-chain SYN liquidity while it responds to an incident. The post gives no details, and nothing found links it to the Binance hack.",
+          "change_24h_pct": -2.1,
+          "change_7d_pct": -1.1,
+          "sources": [
+            {
+              "title": "@SynapseProtocol (30 Oct)",
+              "url": "https://x.com/SynapseProtocol/status/2116018581062451264"
+            }
+          ]
+        },
+        {
+          "symbol": "LUMIA",
+          "name": "Lumia",
+          "tag": "Payout delayed",
+          "tone": "mid",
+          "date": "2026-11-01",
+          "update": "Lumia's HyperNode rewards buyback (0.09 USDT per LUMIA) was due to open this week, but the project is allowing extra time because a partner exchange is restoring withdrawals only gradually. USDT payments were announced to begin next week.",
+          "change_24h_pct": -1.0,
+          "change_7d_pct": -2.4,
+          "sources": [
+            {
+              "title": "@BuildOnLumia: buyback update (1 Nov)",
+              "url": "https://x.com/BuildOnLumia/status/2116960407474594224"
+            },
+            {
+              "title": "@BuildOnLumia: buyback details (31 Oct)",
+              "url": "https://x.com/BuildOnLumia/status/2116332410254078290"
+            }
+          ]
+        },
+        {
+          "symbol": "NIGHT",
+          "name": "Midnight",
+          "tag": "Partnership",
+          "tone": "up",
+          "date": "2026-10-28",
+          "update": "Midnight partnered with Sig Network to bring private transactions to Ethereum apps without bridging or wrapping assets, and demoed its Midnight Passport at TOKEN2049 (29 Oct).",
+          "change_24h_pct": -2.0,
+          "change_7d_pct": 10.8,
+          "sources": [
+            {
+              "title": "@MidnightNtwrk: Sig Network partnership (28 Oct)",
+              "url": "https://x.com/MidnightNtwrk/status/2115476383841276074"
+            },
+            {
+              "title": "@MidnightNtwrk: Midnight Passport demo (29 Oct)",
+              "url": "https://x.com/MidnightNtwrk/status/2115837425113014721"
+            }
+          ]
+        },
+        {
+          "symbol": "MEGA",
+          "name": "MegaETH",
+          "tag": "Product update",
+          "tone": "mid",
+          "date": "2026-10-30",
+          "update": "MegaETH says its engineers cut zkLogin proof time to about 0.13 seconds (roughly 13 times faster than Sui's current prover, in internal tests), enabling Google sign-in with self-custody in its MOSS wallet. Its October recap also lists a public key ceremony and MNX going live.",
+          "change_24h_pct": -8.6,
+          "change_7d_pct": -11.7,
+          "sources": [
+            {
+              "title": "@megaeth: zkLogin breakthrough (30 Oct)",
+              "url": "https://x.com/megaeth/status/2116174218316689719"
+            },
+            {
+              "title": "@megaeth: October on Mega (30 Oct)",
+              "url": "https://x.com/megaeth/status/2116174205670859026"
+            }
+          ]
+        },
+        {
+          "symbol": "CHIP",
+          "name": "USD.AI",
+          "tag": "Yield & growth",
+          "tone": "mid",
+          "date": "2026-11-02",
+          "update": "The CHIP Foundation donated about 128,000 USDai to sUSDai holders under its CHIP Hurdle Rate; the project says holders since 15 Oct earned about 7% APY. It also says it has financed $531 million of GPUs across 20 deals.",
+          "change_24h_pct": -3.8,
+          "change_7d_pct": -8.8,
+          "sources": [
+            {
+              "title": "@USDai_Official: CHIP Foundation donation (2 Nov)",
+              "url": "https://x.com/USDai_Official/status/2117091177023594728"
+            },
+            {
+              "title": "@USDai_Official: GPU financing (29 Oct)",
+              "url": "https://x.com/USDai_Official/status/2115795165428457770"
+            }
+          ]
+        },
+        {
+          "symbol": "BABY",
+          "name": "Babylon",
+          "tag": "Product update",
+          "tone": "mid",
+          "date": "2026-10-29",
+          "update": "Babylon announced the Bedrock × Babylon vault, which lets native Bitcoin serve as DeFi collateral without wrapping or bridging (details \"coming soon\"), and refreshed its testnet app for Bitcoin-backed borrowing.",
+          "change_24h_pct": -3.3,
+          "change_7d_pct": -16.7,
+          "sources": [
+            {
+              "title": "@babylonlabs_io: Bedrock × Babylon vault (29 Oct)",
+              "url": "https://x.com/babylonlabs_io/status/2115820965728780776"
+            },
+            {
+              "title": "@babylonlabs_io: new TBV app (28 Oct)",
+              "url": "https://x.com/babylonlabs_io/status/2115499515671400541"
+            }
+          ]
+        },
+        {
+          "symbol": "ESP",
+          "name": "Espresso",
+          "tag": "Upcoming",
+          "tone": "mid",
+          "date": "2026-10-28",
+          "update": "Espresso's co-founder is due to speak at Hong Kong Fintech Week on 3 Nov about settlement speed for AI agents. The project also published a deep dive on sub-second finality in its HotShot consensus.",
+          "change_24h_pct": -4.8,
+          "change_7d_pct": -10.2,
+          "sources": [
+            {
+              "title": "@EspressoSys: Hong Kong Fintech Week (28 Oct)",
+              "url": "https://x.com/EspressoSys/status/2115483831356784650"
+            },
+            {
+              "title": "@EspressoSys: HotShot finality (27 Oct)",
+              "url": "https://x.com/EspressoSys/status/2115091253318894055"
+            }
+          ]
+        }
+      ],
+      "also": [
+        {
+          "symbol": "PHA",
+          "text": "offers confidential GPU compute through an OpenAI-compatible API with Foundry (29 Oct).",
+          "url": "https://x.com/PhalaNetwork/status/2115655268608647458"
+        },
+        {
+          "symbol": "OPG",
+          "text": "reports a record 5.4 billion tokens processed in a week (26 Oct).",
+          "url": "https://x.com/OpenGradient/status/2114808048472699336"
+        },
+        {
+          "symbol": "HEI",
+          "text": "merged a personal-agent manager update (30 Oct).",
+          "url": "https://x.com/heimaNetwork/status/2116191122141900899"
+        },
+        {
+          "symbol": "PONS",
+          "text": "promotes pairing coins with stock tokens and RWAs (29 Oct); it is down about 45% in 30 days.",
+          "url": "https://x.com/ponsdotfamily/status/2115901484965765535"
+        }
+      ],
+      "quiet": [
+        "MARSCOIN",
+        "MOVR",
+        "PEOPLE",
+        "DEXE",
+        "ACE",
+        "UB",
+        "IDNG"
+      ]
+    }
   },
   "news_impact": {
     "as_of": "2026-11-02",

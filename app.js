@@ -619,11 +619,14 @@ function renderNews(d) {
 /* -------------------------- narratives & altcoins (written daily from PANews + CoinGecko) ---- */
 function renderNarratives(d) {
   const panel = document.getElementById("narratives-panel");
-  const list = d.narratives && d.narratives.items;
-  if (!list || !list.length) { panel.remove(); return; }
+  const list = (d.narratives && d.narratives.items) || [];
+  const nl = d.narratives && d.narratives.new_listings;
+  if (!list.length && !(nl && nl.items && nl.items.length)) { panel.remove(); return; }
   const box = document.getElementById("narratives");
   box.textContent = "";
   if (d.narratives.as_of) panel.querySelector(".kicker").textContent = `Narratives & altcoins · ${fmtDate(d.narratives.as_of)}`;
+  const themes = el("div", { class: "nl-wrap" });
+  box.append(themes);
   list.forEach((n) => {
     const card = el("div", { class: "narr" },
       el("h4", { text: n.theme }),
@@ -648,9 +651,50 @@ function renderNarratives(d) {
       });
       card.append(src);
     }
-    box.append(card);
+    themes.append(card);
   });
-  box.append(el("p", { class: "chart-note", text: "Compiled from PANews newsflashes and CoinGecko 24h price data. Describes what is already moving; not a recommendation to buy any token." }));
+  if (list.length) themes.append(el("p", { class: "chart-note", text: "Compiled from PANews newsflashes and CoinGecko 24h price data. Describes what is already moving; not a recommendation to buy any token." }));
+  else themes.remove();
+  if (nl && nl.items && nl.items.length) renderNewListings(box, nl);
+}
+
+/* New on Reku: assets carrying the "Baru" tag on reku.id/markets, with what their projects said lately */
+function renderNewListings(box, nl) {
+  const wrap = el("div", { class: "nl-wrap" });
+  wrap.append(el("h4", { class: "nl-title", text: `New on Reku${nl.count ? ` · ${nl.count} assets tagged Baru` : ""}` }));
+  wrap.append(el("p", { class: "nl-sub", text: nl.scope || "Assets with the Baru tag on reku.id/markets. Only developments from the last 7 days that come with a source are listed." }));
+  const chg = (label, v) => v == null ? "" : el("span", {}, `${label} `, el("span", { class: v >= 0 ? "up" : "down", text: `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}%` }));
+  nl.items.forEach((it) => {
+    const id = el("div", { class: "nl-id" },
+      el("span", { class: "nl-sym", text: it.symbol }),
+      el("span", { class: "nl-name", text: it.name || "" }),
+      el("span", { class: "nl-chg" }, chg("24h", it.change_24h_pct), it.change_24h_pct != null && it.change_7d_pct != null ? " · " : "", chg("7d", it.change_7d_pct)));
+    const body = el("div", {},
+      el("span", { class: "nl-tag" + (it.tone ? " " + it.tone : ""), text: it.tag + (it.date ? ` · ${fmtDate(it.date)}` : "") }),
+      el("p", { class: "nl-text", text: it.update }));
+    if (it.sources && it.sources.length) {
+      const src = el("p", { class: "nl-src", text: "Source: " });
+      it.sources.slice(0, 3).forEach((x, i) => {
+        if (i) src.append(", ");
+        src.append(el("a", { href: x.url, target: "_blank", rel: "noopener", text: x.title }));
+      });
+      body.append(src);
+    }
+    wrap.append(el("div", { class: "nl" }, id, body));
+  });
+  if (nl.also && nl.also.length) {
+    const more = el("p", { class: "nl-more" }, el("b", { text: "Also posting: " }));
+    nl.also.forEach((a, i) => {
+      if (i) more.append(" ");
+      more.append(el("a", { href: a.url, target: "_blank", rel: "noopener", text: a.symbol }), ` ${a.text}`);
+    });
+    wrap.append(more);
+  }
+  if (nl.quiet && nl.quiet.length) {
+    wrap.append(el("p", { class: "nl-more" }, el("b", { text: "No fresh news in the last 7 days: " }), nl.quiet.join(", ") + "."));
+  }
+  wrap.append(el("p", { class: "chart-note", text: "Built from each project's official X account, PANews headlines and CoinGecko prices (USD). Project posts are the project's own statements, not independent confirmation. Describes what is happening; not a recommendation to buy any token." }));
+  box.append(wrap);
 }
 
 /* -------------------------- implications for marketing (rule-based fallback) -------- */
