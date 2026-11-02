@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-02T13:53:40Z",
+  "updated_utc": "2026-11-02T15:15:32Z",
   "date": "2026-11-02",
-  "price_btc": 77932,
+  "price_btc": 77970,
   "regime": "Bull",
   "headline": "BULLISH",
   "headline_tag": "uptrend holds; Binance reserve news helps, price stays soft",
@@ -14,22 +14,22 @@
   "cycle_label": "mid uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's budget posture is still to scale up acquisition: the long-run uptrend is intact, and this kind of phase has historically been when spending to win new and returning users paid back best, especially among active traders. This week calls for applying it carefully: Binance says about 95% of the affected assets are replaced but its wider reserve check is still to come, a second exchange has just reported a security incident, price is about 5% under its 50-day average, and the mood is fearful. So add spend in small steps, lead with safety and trust rather than hard offers, and speed up only once price wins back about $81,964. This is a budget-timing guide for the business, not trading advice."
+    "detail": "The model's budget posture is still to scale up acquisition: the long-run uptrend is intact, and this kind of phase has historically been when spending to win new and returning users paid back best, especially among active traders. This week calls for applying it carefully: Binance says about 95% of the affected assets are replaced and money leaving it has slowed, but its wider reserve check is still to come, a second exchange is still paused after a security incident, price is about 5% under its 50-day average, and the mood is fearful. So add spend in small steps, lead with safety and trust rather than hard offers, and speed up only once price wins back about $81,965. This is a budget-timing guide for the business, not trading advice."
   },
   "reasons": [
-    "BTC ($77,932) is about 6% above its 200-day average ($73,169), which is still rising.",
+    "BTC ($77,970) is about 7% above its 200-day average ($73,170), which is still rising.",
     "Up about 22% over 90 days; about 84% of those days closed above the long-term average.",
-    "But price has closed under its 50-day average ($81,964) for 12 days, about 5% below it.",
-    "Binance says about 95% of affected assets are replaced; Fear & Greed is 37 (fear)."
+    "But price has closed under its 50-day average ($81,965) for 12 days, about 5% below it.",
+    "Money leaving Binance has slowed to about $3.5 billion a day; Fear & Greed is 37 (fear)."
   ],
-  "watch": "The long-run trend still points up, but price has spent 12 days under its 50-day average even after Binance's reassuring reserve news, and the mood is still fearful. A close above $79,500 would steady things, while a close below $77,369 puts the $73,169 average in focus.",
+  "watch": "The long-run trend still points up, but price has spent 12 days under its 50-day average even as the Binance news improves, and the mood is still fearful. A close above $79,500 would steady things, while a close below $77,369 puts the $73,170 average in focus.",
   "analysis": [
-    "Bottom line: the long-run uptrend still holds and the biggest open question from the Binance hack has eased, but prices have not recovered yet. Short term is soft to neutral: Bitcoin has closed under its 50-day average for 12 days, sits about 5% below it and about 10% under its 30-day high, and the mood still reads fear (37 out of 100). Binance says about 95% of the affected assets are now replaced and users can check that ten major coins are backed one-to-one, while Brazil's Mercado Bitcoin paused deposits and withdrawals after its own security incident, saying customers were not affected (PANews). A normal week now swings about $2,926, so a close above $79,500 (top of a typical week's swing) would turn it clearly up, a close below $77,369 (the 30-day low) would turn it down, and in between it stays choppy. A clean result from Binance's wider 4 November check would help the mood and another exchange incident would hurt it, so keep leading with trust rather than offers.",
-    "The next month is mixed. The 90-day numbers still point up, with price about 22% higher, but the last 30 days are down about 8%, and October was one of Bitcoin's weakest Octobers on record (CoinGlass via PANews). Price must win back $81,964 (the 50-day average) for the month to firm up, and it only has room to climb above $86,603 (the 90-day high); while it stays under that average, the month keeps fading. This week brings the US midterm elections on 3 November, the US jobs report on 6 November and the start of Brazilian banks blocking unlicensed crypto firms the same day, and the next Fed meeting is 8 December. Save bigger campaign pushes for that reclaim.",
-    "The 3-6 month picture still leans up at a moderate strength. Price is about 6% above its 200-day average and that average is still rising, about 3% over 90 days, though Bitcoin remains about 38% below its all-time high. The recovery stays intact while price holds above $73,169 (the 200-day average); if that goes, $67,183 (the 200-week average) is the next floor, and $124,753 (the all-time high) stays the far marker. So far the largest crypto theft on record has not broken this picture, and a close below the 200-day average is what would weaken it, which would be the moment to move budget toward keeping existing users."
+    "Bottom line: the long-run uptrend still holds and the Binance worry keeps easing, but prices have not recovered yet. Short term is soft to neutral: Bitcoin has closed under its 50-day average for 12 days, sits about 5% below it and about 10% under its 30-day high, and the mood still reads fear (37 out of 100). Money leaving Binance has slowed, from about $7 billion a day at its peak to about $3.5 billion (DefiLlama via PANews), while Brazil's Mercado Bitcoin is still paused after its own security incident, saying customers were not affected. A normal week now swings about $2,926, so a close above $79,500 (top of a typical week's swing) would turn it clearly up, a close below $77,369 (the 30-day low) would turn it down, and in between it stays choppy. A clean result from Binance's wider 4 November check would help the mood and another exchange incident would hurt it, so keep leading with trust rather than offers.",
+    "The next month is mixed. The 90-day numbers still point up, with price about 22% higher, but the last 30 days are down about 8%, and October was one of Bitcoin's weakest Octobers on record (CoinGlass via PANews). Price must win back $81,965 (the 50-day average) for the month to firm up, and it only has room to climb above $86,603 (the 90-day high); while it stays under that average, the month keeps fading. This week brings the US midterm elections on 3 November, the US jobs report on 6 November and the start of Brazilian banks blocking unlicensed crypto firms the same day, and the next Fed meeting is 8 December. Save bigger campaign pushes for that reclaim.",
+    "The 3-6 month picture still leans up at a moderate strength. Price is about 7% above its 200-day average and that average is still rising, about 3% over 90 days, though Bitcoin remains about 38% below its all-time high. The recovery stays intact while price holds above $73,170 (the 200-day average); if that goes, $67,216 (the 200-week average) is the next floor, and $124,753 (the all-time high) stays the far marker. So far the largest crypto theft on record has not broken this picture, and a close below the 200-day average is what would weaken it, which would be the moment to move budget toward keeping existing users."
   ],
   "team_notes": {
-    "marketing": "Keep growing acquisition in small steps, with trust and safety as the main message: the long-run uptrend holds, but price is soft and no rally or drop window is open. Speed up only once price wins back about $81,964."
+    "marketing": "Keep growing acquisition in small steps, with trust and safety as the main message: the long-run uptrend holds, but price is soft and no rally or drop window is open. Speed up only once price wins back about $81,965."
   },
   "changed_today": null,
   "levels": {
@@ -37,15 +37,15 @@
     "low_30d": 77369,
     "high_90d": 86603,
     "low_90d": 62819,
-    "ma_50": 81964,
-    "ma_200": 73169,
-    "ma_200w": 67183,
+    "ma_50": 81965,
+    "ma_200": 73170,
+    "ma_200w": 67216,
     "ath": 124753
   },
   "scenarios": {
-    "price": 77932,
+    "price": 77970,
     "up": {
-      "level": 81964,
+      "level": 81965,
       "name": "50-day average",
       "next": [
         {
@@ -63,18 +63,18 @@
       "name": "30-day low",
       "next": [
         {
-          "level": 73169,
+          "level": 73170,
           "name": "200-day average"
         },
         {
-          "level": 67183,
+          "level": 67216,
           "name": "200-week average"
         }
       ]
     },
     "range": [
       77369,
-      81964
+      81965
     ],
     "short": {
       "typical_week_swing": 2926,
@@ -85,7 +85,7 @@
         "name": "top of a typical week's swing",
         "next": [
           {
-            "level": 81964,
+            "level": 81965,
             "name": "50-day average"
           },
           {
@@ -99,11 +99,11 @@
         "name": "30-day low",
         "next": [
           {
-            "level": 73169,
+            "level": 73170,
             "name": "200-day average"
           },
           {
-            "level": 67183,
+            "level": 67216,
             "name": "200-week average"
           }
         ]
@@ -112,7 +112,7 @@
   },
   "rally_watch": {
     "state": "quiet",
-    "ret_7d": -0.0277,
+    "ret_7d": -0.0272,
     "threshold": 0.08,
     "window_days": 14,
     "needs_up": 86563,
@@ -374,46 +374,46 @@
     }
   },
   "recent": {
-    "vs_ma50_pct": -0.0492,
+    "vs_ma50_pct": -0.0487,
     "days_below_ma50": 12,
-    "ret_30d": -0.0806,
-    "from_high_30d": -0.0988
+    "ret_30d": -0.0801,
+    "from_high_30d": -0.0984
   },
   "scores": {
     "sentiment": -0.04,
-    "momentum": 0.067,
+    "momentum": 0.069,
     "trend": 0.377
   },
   "context": {
-    "mayer_multiple": 1.065,
+    "mayer_multiple": 1.066,
     "ma200_slope_90d": 0.0334,
     "ma_200w_multiple": 1.16,
     "drawdown_from_ath": -0.375,
-    "rsi_weekly": 51.5,
+    "rsi_weekly": 51.6,
     "active_addr_ratio": 0.942,
     "puell_multiple": null,
     "fear_greed": 37.0,
     "funding_z": 0.05,
     "vol_percentile": 0.14,
-    "bollinger_width": 0.0924,
-    "btc_dominance": 59.9,
+    "bollinger_width": 0.0923,
+    "btc_dominance": 59.3,
     "ma_cross": 0.1202,
-    "roc_90d": 0.2166,
+    "roc_90d": 0.2172,
     "breadth_90d": 0.844,
     "ssr": 5.28,
     "pi_cycle_gap": -0.5034,
     "open_interest_usd": 7459972293.553056,
     "long_short_ratio": 2.3003,
-    "dvol": 39.09,
-    "us_10y_yield": 4.898,
-    "vix": 18.89,
+    "dvol": 39.65,
+    "us_10y_yield": 4.88,
+    "vix": 18.72,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
     "public_company_btc_treasury": 1266419.0,
     "next_fomc_meeting": "2026-12-08"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 2 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum weakening · Sentiment: Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC ($77,932) is about 6% above its 200-day\n    average ($73,169), which is still rising.\n  • Up about 22% over 90 days; about 84% of those\n    days closed above the long-term average.\n  • But price has closed under its 50-day average\n    ($81,964) for 12 days, about 5% below it.\n  • Binance says about 95% of affected assets are\n    replaced; Fear & Greed is 37 (fear).\n\n  Changed today: —\n  Watch:\n    The long-run trend still points up, but price\n    has spent 12 days under its 50-day average even\n    after Binance's reassuring reserve news, and the\n    mood is still fearful. A close above $79,500\n    would steady things, while a close below $77,369\n    puts the $73,169 average in focus.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 2 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (market in an uptrend)\n    Momentum weakening · Sentiment: Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend is solid. Increase acquisition,\n    prioritise non-stablecoin / active-trader\n    channels (they benefit most in this phase).\n\n  Why:\n  • BTC ($77,970) is about 7% above its 200-day\n    average ($73,170), which is still rising.\n  • Up about 22% over 90 days; about 84% of those\n    days closed above the long-term average.\n  • But price has closed under its 50-day average\n    ($81,965) for 12 days, about 5% below it.\n  • Money leaving Binance has slowed to about $3.5\n    billion a day; Fear & Greed is 37 (fear).\n\n  Changed today: —\n  Watch:\n    The long-run trend still points up, but price\n    has spent 12 days under its 50-day average\n    even as the Binance news improves, and the\n    mood is still fearful. A close above $79,500\n    would steady things, while a close below\n    $77,369 puts the $73,170 average in focus.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.9 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -455,8 +455,8 @@
         "date": "2026-11-02"
       },
       {
-        "title": "21shares: Bitcoin gains 42.7% in Q3 2026 as spot ETFs replace public companies as main buyers",
-        "url": "https://www.panews.io/articles/01a19c1b-6314-771b-ad56-dc5a3a8fb58e",
+        "title": "Binance 24-Hour Net Outflows Fall to $3.5B, Down Over 50% From Intraday High; Deposit-Withdrawal Ratio Rebounds to 78%",
+        "url": "https://www.panews.io/articles/01a19c91-8bae-7003-b16c-453e398a609a",
         "source": "PANews",
         "date": "2026-11-02"
       }
@@ -467,11 +467,11 @@
     "items": [
       {
         "theme": "Exchanges race to show their reserves",
-        "why": "Binance says about 95% of the assets hit in the hack are replaced and has opened a tool for users to check ten major coins, with a wider snapshot planned for 4 November. OKX published its 49th reserve report the same day. Binance still saw about $4.9 billion leave in 24 hours per DefiLlama, though that figure may include moves between its own new wallets.",
+        "why": "Binance says about 95% of the assets hit in the hack are replaced and has opened a tool for users to check ten major coins, with a wider snapshot planned for 4 November. OKX published its 49th reserve report the same day. Money leaving Binance has slowed to about $3.5 billion a day from a peak near $7 billion per DefiLlama, and deposits are back to about 78% of withdrawals.",
         "tokens": [
           {
             "symbol": "BNB",
-            "change_24h_pct": -1.4
+            "change_24h_pct": -1.7
           }
         ],
         "marketing_angle": "A timely education topic: what a reserve report proves and what it does not.",
@@ -485,14 +485,14 @@
             "url": "https://www.panews.io/articles/01a19c5c-788f-7283-a31e-5b6da68d78d1"
           },
           {
-            "title": "Data: Binance sees about $4.911 billion in net outflows in 24 hours after resuming withdrawals",
-            "url": "https://www.panews.io/articles/01a19b96-2dba-721e-b3ed-918ad865912b"
+            "title": "Binance 24-Hour Net Outflows Fall to $3.5B, Down Over 50% From Intraday High; Deposit-Withdrawal Ratio Rebounds to 78%",
+            "url": "https://www.panews.io/articles/01a19c91-8bae-7003-b16c-453e398a609a"
           }
         ]
       },
       {
         "theme": "Security incidents keep spreading",
-        "why": "Brazil's Mercado Bitcoin paused deposits and withdrawals after a security incident and says customers were not affected; Hypernative is reported to have spotted more than $40 million of suspicious transfers. ZachXBT flagged a suspected $106 million loss by an EU entity across exchange accounts. BTCPay Server says versions up to 2.4.1 were targeted and has no credible reports of theft on the latest version.",
+        "why": "Brazil's Mercado Bitcoin paused deposits and withdrawals after a security incident and says customers were not affected; Tether says it froze more than 4.5 million USDT tied to it, and Hypernative is reported to have spotted more than $40 million of suspicious transfers. ZachXBT flagged a suspected $106 million loss by an EU entity across exchange accounts. BTCPay Server says versions up to 2.4.1 were targeted and has no credible reports of theft on the latest version.",
         "tokens": [],
         "marketing_angle": "Good hook for account-safety content aimed at existing users, without naming other exchanges in promotions.",
         "sources": [
@@ -501,12 +501,12 @@
             "url": "https://www.panews.io/articles/01a19c86-52d6-7600-8410-2d2864cb7ed5"
           },
           {
-            "title": "ZachXBT: EU Entity Suspected of Losing Over $106 Million From Multiple Exchange Accounts",
-            "url": "https://www.panews.io/articles/01a19c3f-9224-7736-8aa6-652eb6e07ec2"
+            "title": "Tether freezes more than 4.5 million USDT tied to the Mercado Bitcoin security incident",
+            "url": "https://www.panews.io/articles/01a19cd4-13f5-71af-a6e1-e57e0d260cd4"
           },
           {
-            "title": "BTCPay Server: Attack path identified targeting versions 2.4.1 and earlier",
-            "url": "https://www.panews.io/articles/01a19b9e-7515-75ce-9a94-c37ee5d4875e"
+            "title": "ZachXBT: EU Entity Suspected of Losing Over $106 Million From Multiple Exchange Accounts",
+            "url": "https://www.panews.io/articles/01a19c3f-9224-7736-8aa6-652eb6e07ec2"
           }
         ]
       },
@@ -532,23 +532,23 @@
       },
       {
         "theme": "Sharp moves in smaller tokens, no clear reason",
-        "why": "Akedo, THORChain's RUNE and Kinetiq fell hard over the past day while Rain and Provenance's HASH rose, but the reports reviewed do not give a clear reason for these moves. THORChain did say its vault is whole again after a user returned 10 ETH paid out in error.",
+        "why": "Akedo, Kinetiq and THORChain's RUNE fell hard over the past day while Provenance's HASH rose, but the reports reviewed do not give a clear reason for these moves. THORChain did say its vault is whole again after a user returned 10 ETH paid out in error.",
         "tokens": [
           {
             "symbol": "AKE",
-            "change_24h_pct": -35.4
-          },
-          {
-            "symbol": "RUNE",
-            "change_24h_pct": -13.9
+            "change_24h_pct": -38.9
           },
           {
             "symbol": "KNTQ",
-            "change_24h_pct": -14.1
+            "change_24h_pct": -10.0
           },
           {
-            "symbol": "RAIN",
-            "change_24h_pct": 12.2
+            "symbol": "RUNE",
+            "change_24h_pct": -9.0
+          },
+          {
+            "symbol": "HASH",
+            "change_24h_pct": 17.0
           }
         ],
         "marketing_angle": "An education topic for newer users on why small tokens swing more.",
@@ -571,8 +571,8 @@
           "tone": "up",
           "date": "2026-11-02",
           "update": "COTI went live on Uphold, a fiat on-ramp the project says serves more than 10 million users. On 29 Oct the project also took part in Mozilla Festival 2026, a gathering on privacy and digital rights. Both are the project's own statements.",
-          "change_24h_pct": -5.0,
-          "change_7d_pct": 0.5,
+          "change_24h_pct": -2.8,
+          "change_7d_pct": -1.7,
           "sources": [
             {
               "title": "@COTInetwork: COTI live on Uphold (2 Nov)",
@@ -591,7 +591,7 @@
           "tone": "up",
           "date": "2026-11-02",
           "update": "Midnight is again highlighting its partnership with Sig Network (2 Nov), which the project says brings private transactions to Ethereum apps without bridging or wrapping assets. It also demoed its Midnight Passport at TOKEN2049 (29 Oct).",
-          "change_24h_pct": -1.4,
+          "change_24h_pct": -2.8,
           "change_7d_pct": 7.6,
           "sources": [
             {
@@ -615,8 +615,8 @@
           "tone": "mid",
           "date": "2026-10-29",
           "update": "Babylon announced the Bedrock × Babylon vault, which lets native Bitcoin serve as DeFi collateral without wrapping or bridging (details \"coming soon\"), and refreshed its testnet app for Bitcoin-backed borrowing.",
-          "change_24h_pct": -3.4,
-          "change_7d_pct": -16.9,
+          "change_24h_pct": -4.2,
+          "change_7d_pct": -19.9,
           "sources": [
             {
               "title": "@babylonlabs_io: Bedrock × Babylon vault (29 Oct)",
@@ -635,8 +635,8 @@
           "tone": "down",
           "date": "2026-10-29",
           "update": "Re said it holds no assets on Binance, paused reUSD redemptions on 29 Oct as a precaution after the Binance hack, and resumed them on 30 Oct. PANews reported on 27 Oct that Binance Margin would remove the RE/USD1 pair on 30 Oct.",
-          "change_24h_pct": -4.6,
-          "change_7d_pct": -10.4,
+          "change_24h_pct": -5.0,
+          "change_7d_pct": -8.9,
           "sources": [
             {
               "title": "@re: redemptions paused (29 Oct)",
@@ -659,8 +659,8 @@
           "tone": "down",
           "date": "2026-10-30",
           "update": "DODO said it is working with Binance to block addresses linked to the hack from using its services, and told market makers and liquidity providers exposed to the affected assets to review their positions.",
-          "change_24h_pct": -1.0,
-          "change_7d_pct": -3.4,
+          "change_24h_pct": -1.5,
+          "change_7d_pct": -4.0,
           "sources": [
             {
               "title": "@BreederDodo (30 Oct)",
@@ -703,11 +703,11 @@
     "as_of": "2026-11-02",
     "social": {
       "stance": "Hold",
-      "strategy": "Keep the normal posting rhythm with topics on safety and plain explanations: Bitcoin is down about 2.8% over seven days, no rally or drop window is open, and exchange security is still the story readers want explained.",
+      "strategy": "Keep the normal posting rhythm with topics on safety and plain explanations: Bitcoin is down about 2.7% over seven days, no rally or drop window is open, and exchange security is still the story readers want explained.",
       "actions": [
         {
           "what": "Update the Binance explainer",
-          "detail": "Add today's facts: Binance says about 95% of affected assets are replaced, users can check ten major coins, and a wider check starts on 4 November (PANews); stick to facts and avoid any dig at a competitor."
+          "detail": "Add today's facts: Binance says about 95% of affected assets are replaced, users can check ten major coins, money leaving has slowed to about $3.5 billion a day from about $7 billion (DefiLlama via PANews), and a wider check starts on 4 November; stick to facts and avoid any dig at a competitor."
         },
         {
           "what": "Explain how to read a proof of reserves",
@@ -741,7 +741,7 @@
         },
         {
           "what": "Refresh 'Why is Bitcoin down' and 'Bitcoin price today'",
-          "detail": "Include the $81,964 and $73,169 reference levels, phrased as reference points, not forecasts."
+          "detail": "Include the $81,965 and $73,170 reference levels, phrased as reference points, not forecasts."
         }
       ]
     },
@@ -751,7 +751,7 @@
       "actions": [
         {
           "what": "Add spend in small steps",
-          "detail": "Lift active-trader campaigns gradually and speed up only after a close above $81,964 (the 50-day average)."
+          "detail": "Lift active-trader campaigns gradually and speed up only after a close above $81,965 (the 50-day average)."
         },
         {
           "what": "Lead with trust for new users",
@@ -791,11 +791,11 @@
       "actions": [
         {
           "what": "Share the Rally watch status",
-          "detail": "State is quiet: a rally window opens above $86,563 and a drop signal starts below $73,739; Bitcoin is down about 2.8% over seven days."
+          "detail": "State is quiet: a rally window opens above $86,563 and a drop signal starts below $73,739; Bitcoin is down about 2.7% over seven days."
         },
         {
           "what": "Share today's levels",
-          "detail": "Weekly zone $77,369-$79,500; firms up above $81,964, and the longer picture holds while price stays above $73,169."
+          "detail": "Weekly zone $77,369-$79,500; firms up above $81,965, and the longer picture holds while price stays above $73,170."
         },
         {
           "what": "Track this week's events",
@@ -827,7 +827,7 @@
         "horizon": "short",
         "direction": "negative",
         "size": "minor",
-        "why": "A second exchange paused deposits and withdrawals within days of Binance, keeping the security worry alive, though it says customers were not affected and this is far smaller."
+        "why": "A second exchange paused deposits and withdrawals within days of Binance, keeping the security worry alive, though it says customers were not affected, Tether says it froze more than 4.5 million USDT tied to the incident, and this is far smaller."
       },
       {
         "headline": "Brazil's VASP License Application Deadline Ends With Only About 40 Firms Submitting",
@@ -880,7 +880,7 @@
   },
   "scores_base": {
     "trend": 0.352,
-    "momentum": 0.092,
+    "momentum": 0.094,
     "sentiment": -0.065
   },
   "conviction_base": 63,
