@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-03",
+  "generated": "2026-11-03T00:38:29Z",
+  "price": 77147,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 3 November 2026**\n\n**Snapshot**\n• Bitcoin about $77,147, down about 4.7% over 7 days.\n• Headline: BULLISH, high confidence, up from medium. That jump only means all three scores now agree, not that the market got stronger.\n• Fear & Greed 26 (fear), down from 37 a day earlier. Price swings are still unusually calm, among the quietest 12% of readings.\n\n**What happened (last 24h)**\n• Monday closed at $76,816, the lowest close in 30 days, and Bitcoin has since edged up slightly. No single cause is reported.\n• About $176 million of bets were forced to close in 24 hours, split fairly evenly between bets on a rise and a fall (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 13 days, about 6% below it.\n• Turns up: a close above $78,500, then $81,919 (the 50-day average).\n• Sideways: $76,816-$78,500; a normal week swings about $2,854.\n• Turns down: a close below $76,816 (the 30-day low), then $73,163 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $87,383 and a drop signal starts below $74,437.\n• This week: US midterm vote today, Binance's reserve snapshot on 4 November, US jobs report on 6 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• Binance's founder says the loss came from its own funds, with no borrowing (PANews): short term, small positive.\n• Mercado Bitcoin says it will bear a loss of about $40 million (Bloomberg via PANews): short term, small negative.\n• SEC staff added clearer answers on how crypto projects are classified (PANews): medium term, small positive.\n\n**Altcoins & themes**\n• Tokenized shares moved closer to Wall Street with the NYSE and Broadridge share-voting plan (PANews). NEAR fell about 9% even after voting to cut new supply, and reports give no clear reason.\n• On Reku's New Listings, COTI went live on Uphold, according to the project.\n\n**Bigger picture**\n• The next month is mixed (up 19% over 90 days, down about 11% over 30); the 3-6 month trend still leans up while price holds above $73,163.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep acquisition growing in small steps toward active traders, in line with SCALE UP, with trust-led creatives for new and stablecoin audiences and no price promises. Speed up only once price closes back above $81,919. Keep rally creatives ready for a close above $87,383, and keep part of the increase ready to pause if price closes below $74,437, which is only about 3.5% away, so check the d30 ROI stop-loss now."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm and run the daily recap on the $76,816-$78,500 zone with no predictions. Prepare a plain midterms explainer for when results are known, and add to the exchange safety explainer that Binance says the loss came from its own funds and its next reserve snapshot is on 4 November. One simple post on tokenized shares fits the NYSE and Broadridge news (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No promotional pressure this week. Send an account-safety reminder covering two-step login, withdrawal address lists, fake announcements and seed-phrase scams, and say Reku is unaffected only if the security team confirms it. Keep onboarding education running, keep the post-rally journey set for a close above $87,383, and draft a calm note in case a drop signal fires below $74,437."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Three High topics today. First, the US midterms: Pintu, Indodax and Pluang all covered the vote, so a results page on what it means for crypto rules is likely to draw searches once outcomes land. Second, exchange safety: Pluang is following the Binance money trail and Indodax has a tips piece, so refresh a guide on keeping assets safe and checking reserves, adding the 4 November snapshot. Third, Bitcoin in November: Indodax and Pluang are writing about it, so refresh a history page with reference levels and no forecast. Check all three against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Tokenized shares are the main theme, with the NYSE and Broadridge share-voting plan, Securitize at 25 stocks and Ondo's new index token (ONDO down 3.4% in 24h, PANews). NEAR fell 9.0% after token holders voted to cut new supply, and reports give no clear reason. Stablecoins shifted networks, with 2 billion USDT removed on Ethereum and 1 billion USDC created on Solana (SOL down 1.7%, TRX up 2.2%), with no reason reported. On Reku's New Listings, COTI went live on Uphold according to the project, and Pons fell 11.1% in 24h with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666469.518289",
+      "at": "2026-11-03T00:41:09Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666475.035209",
+      "at": "2026-11-03T00:41:15Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666477.591589",
+      "at": "2026-11-03T00:41:17Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666480.010009",
+      "at": "2026-11-03T00:41:20Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666482.525959",
+      "at": "2026-11-03T00:41:22Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1793666484.832589",
+      "at": "2026-11-03T00:41:24Z"
+    }
+  ]
+}
