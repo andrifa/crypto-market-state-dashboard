@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-04",
+  "generated": "2026-11-04T00:39:16Z",
+  "price": 76988,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 4 November 2026**\n\n**Snapshot**\n• Bitcoin about $76,988, down about 5.3% over 7 days.\n• Headline: BULLISH, high confidence. The long-run uptrend holds, but the last few weeks have been weak.\n• Fear & Greed 34 (fear), up from 26 a day earlier. Price swings are still unusually calm, among the quietest 13% of readings.\n\n**What happened (last 24h)**\n• Bitcoin moved sideways around $77,000 after Monday's 30-day low of $76,816. No single cause is reported.\n• About $397 million of bets were forced to close in 24 hours, mostly bets on a rise ($323 million) (CoinGlass via PANews).\n• Bitcoin funds in the US saw about $399 million leave on 2 November, mostly from BlackRock's fund (SoSoValue via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 14 days, about 6% below it.\n• Turns up: a close above $78,250, then $81,951 (the 50-day average).\n• Sideways: $75,750-$78,250; a normal week swings about $2,630.\n• Turns down: a close below $75,750, then $73,171 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $87,851 and a drop signal starts below $74,836.\n• This week: US midterm results coming in, US jobs report on 6 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• South Korea plans to make exchanges keep 99% of customer coins offline after the Binance theft (News1 via PANews): medium term, small positive.\n• Shopify and Coinbase are building digital-dollar payments for online shops (CryptoBriefing via PANews): long term, positive.\n• Brazil's Mercado Bitcoin is still closed after its theft, with $12.9 million frozen (PANews): short term, small negative.\n\n**Altcoins & themes**\n• Tokenized shares keep spreading: Bullish picked Solana, Aptos and Ethereum for its share tokens, and Robinhood Chain passed $100 billion of trading on Uniswap (PANews).\n• On Reku's New Listings, Re says its reUSD token is now live on the Monad network, according to the project.\n\n**Bigger picture**\n• The next month is mixed (up about 20% over 90 days, down about 10% over 30); the 3-6 month trend still leans up while price holds above $73,171.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep acquisition growing in small steps toward active traders, in line with SCALE UP, with trust-led creatives for new and stablecoin audiences and no price promises. Speed up only once price closes back above $81,951 (the 50-day average). Keep rally creatives ready for a close above $87,851, and keep part of the increase ready to pause if price closes below $74,836, which is only about 3% away, so check the d30 ROI stop-loss now."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm with a daily recap: Bitcoin near $76,988, this week's normal zone $75,750-$78,250, and the mood up to 34 from 26, with no price call. Post a plain explainer on Shopify and Coinbase building digital-dollar payments for online shops (PANews), as an everyday-use story. Refresh the exchange safety post with Binance reopening more withdrawals, Mercado Bitcoin still closed, and South Korea's planned 99% offline-storage rule, and have a jobs-report explainer ready for 6 November."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No rally window is open, so keep the regular lifecycle messages and lead with reassurance: a short note to existing users on how their coins are stored and protected, with no promotional pressure while exchange thefts are in the news. Keep the onboarding nudges for registered users who have not deposited yet, using education rather than price hooks. Queue the next rally journey now, since new sign-ups and first deposits tend to arrive 2-4 weeks after a rally starts."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Three topics stand out in what competitors published. Exchange safety after the Binance theft is covered by Pintu, Indodax and Pluang (e.g. Pintu's \"5 Crypto Hack Terbesar pada 2026\"): refresh a plain safety guide, likely to draw searches while the story is live. The US midterm vote and crypto is on Indodax and Pluang (e.g. Indodax's \"JPMorgan Punya 4 Skenario Pemilu AS\"): publish a short explainer on what the results mean for crypto rules, with no price call. Bitcoin's price this week is on Indodax and Pluang: refresh 'Bitcoin price today' with the reference levels ($75,750-$78,250, $81,951), never a forecast. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Tokenized shares are the main theme, with Bullish choosing Solana, Aptos and Ethereum for share tokens and Robinhood Chain passing $100 billion of trading on Uniswap (PANews); SOL is down 0.4% and ETH up 0.4% over 24 hours. Coinbase put Collector Crypt (CARDS) on its listing roadmap, and the token is up about 15% in 24 hours (PANews). On Reku's New Listings, Re says reUSD is now live on Monad, and DODO says it is blocking addresses tied to the Binance theft, both according to the projects; MarsCoin is down about 27% over seven days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752799.294399",
+      "at": "2026-11-04T00:39:59Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752804.452509",
+      "at": "2026-11-04T00:40:04Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752806.911909",
+      "at": "2026-11-04T00:40:06Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752809.035999",
+      "at": "2026-11-04T00:40:09Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752812.011499",
+      "at": "2026-11-04T00:40:12Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1793752814.153919",
+      "at": "2026-11-04T00:40:14Z"
+    }
+  ]
+}
