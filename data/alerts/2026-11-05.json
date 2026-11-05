@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-05",
+  "generated": "2026-11-05T00:56:44Z",
+  "price": 80768,
+  "events": [
+    {
+      "id": "dip:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC dipped below $80,000 in the last 24 hours (low $75,736) and recovered",
+      "facts": {
+        "level": 80000,
+        "low_24h": 75736,
+        "price": 80768
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 5 November 2026**\n\n**Alert**\n• BTC dipped below $80,000 in the last 24 hours (low $75,736) and recovered. It matters because the dip came close to the $76,816 30-day low but did not hold.\n\n**Snapshot**\n• Bitcoin about $80,768, up about 3.6% over 7 days.\n• Headline: BULLISH, high confidence. The long-run uptrend holds, but price is still just under its 50-day average.\n• Fear & Greed 50 (neutral), up from 34 a day earlier. Price swings are still unusually calm.\n\n**What happened (last 24h)**\n• Bitcoin dipped to about $75,736, then rose back above $81,000 on the same day US stocks rose broadly after the US midterm result (PANews). No single cause is reported.\n• About $913 million of bets were forced to close in 24 hours, mostly bets on a fall ($554 million) (CoinGlass via PANews).\n• US Bitcoin funds saw about $487 million leave in the latest day.\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 15 days, about 2% below it.\n• Turns up: a close above $82,111 (the 50-day average), then $84,012 (the 30-day high).\n• Sideways: $79,000-$82,111; a normal week swings about $3,352.\n• Turns down: a close below $79,000, then $76,816 (the 30-day low).\n• Rally watch: quiet. A rally window opens above $84,231 and a drop signal starts below $71,753.\n• This week: US jobs report on 6 November. Next Fed meeting: 8 December.\n\n**News that matters**\n• Democrats won both houses of the US Congress; the pending US crypto rules bill expires on 3 January 2027 unless it gets 60 Senate votes (The Block and Bitcoin.com via PANews): medium term, moderate negative.\n• Stripe now lets US businesses pay people in digital dollars to crypto wallets in over 160 markets (The Defiant via PANews): long term, moderate positive.\n• Binance says it has replaced about 98% of the stolen coins; Mercado Bitcoin plans to reopen from 9 November (PANews): short term, small positive.\n\n**Altcoins & themes**\n• Trump-linked tokens fell after the election, TRUMP down about 18% in a day (Bloomberg via PANews); INJ rose about 11% after Nasdaq approved a staked INJ fund listing (PANews).\n• New on Reku: Re says deposits in its reUSD digital dollar passed $400 million (according to the project).\n\n**Bigger picture**\n• Next month: mixed, and it firms up only if price wins back $82,111. 3-6 months: leans up while price holds above $73,222 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "Keep normal spend with a small, pausable increase toward active traders, in line with the scale-up posture: no rally or drop window is open and Bitcoin is still just under its 50-day average. Lead creatives with trust and everyday use (Stripe's digital-dollar payouts) rather than price-move hooks. Speed up once price closes back above $82,111, and have rally creatives ready to go live if Bitcoin closes above about $84,231."
+    },
+    {
+      "audience": "social",
+      "text": "Keep the normal posting rhythm with a daily recap: Bitcoin around $80,768, up about 4% over the week, this week's normal zone $79,000-$82,111, no prediction. Add a plain explainer on the US election result: Democrats won both houses and the pending US crypto rules bill expires on 3 January 2027 unless it gets 60 Senate votes (PANews). Update the safety post with Binance replacing about 98% of stolen coins and Mercado Bitcoin reopening from 9 November."
+    },
+    {
+      "audience": "crm",
+      "text": "Keep the regular lifecycle messages; no rally or drop window is open, so no promotional push. Send existing users a short, calm note on what the US election means for crypto rules, plus a safety reminder while exchange thefts are still in the news. Keep the onboarding journey queued: new sign-ups tend to arrive 2-4 weeks after a rally, and a rally window opens above about $84,231."
+    },
+    {
+      "audience": "seo",
+      "text": "Pintu, Indodax and Pluang are all publishing on three live themes today:\n• **US midterm result and crypto rules** (all three, e.g. Indodax's 'Demokrat Unggul di Hasil Pemilu Sela AS 2026'): publish a plain 'what the new US Congress means for crypto' page with the 3 January 2027 deadline; likely to draw searches because the result is fresh.\n• **Exchange safety after the Binance theft** (all three, e.g. Pintu on Binance reopening withdrawals): refresh the 'how to keep crypto safe' guide with Binance's 98% replacement update.\n• **Tokenized US shares** (all three, e.g. Pluang on the first tokenized US stock trade under the SEC exemption): publish 'what is a tokenized stock'.\nCheck each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "Hot themes today: Trump-linked tokens fell after the Democratic win, with TRUMP down about 18% in a day and Trump Media shares at a record low (Bloomberg via PANews). Stripe's digital-dollar payouts to wallets in 160+ markets keep stablecoins in focus (The Defiant via PANews), and INJ rose about 11% after Nasdaq approved a staked INJ fund listing (PANews). Shares in token form also moved ahead after a US court let single-stock contracts proceed (PANews).\nNew on Reku: Re says deposits in its reUSD digital dollar passed $400 million, and Babylon says Cradle is building an options app on its Bitcoin vaults (both according to the projects). PONS rose about 13% in a day with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840277.616319",
+      "at": "2026-11-05T00:58:16Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840281.879379",
+      "at": "2026-11-05T00:58:16Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840283.995649",
+      "at": "2026-11-05T00:58:16Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840286.091769",
+      "at": "2026-11-05T00:58:16Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840288.931239",
+      "at": "2026-11-05T00:58:16Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1793840291.237209",
+      "at": "2026-11-05T00:58:16Z"
+    }
+  ]
+}
