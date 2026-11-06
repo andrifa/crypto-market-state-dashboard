@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-06",
+  "generated": "2026-11-06T02:59:29Z",
+  "price": 76234,
+  "events": [
+    {
+      "id": "spike:80000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC pushed above $80,000 in the last 24 hours (high $80,836) and pulled back",
+      "facts": {
+        "level": 80000,
+        "high_24h": 80836,
+        "price": 76234
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 6 November 2026**\n\n**Alert**\n• BTC pushed above $80,000 in the last 24 hours (high $80,836) and pulled back. It matters because the bounce faded the same day, leaving price near the bottom of a normal week's range.\n\n**Snapshot**\n• Bitcoin about $76,234: down about 5% in a day and 1.5% over 7 days.\n• Headline: BULLISH, high confidence. The long-run uptrend holds, but price is about 7% under its 50-day average.\n• Fear & Greed 28 (fear).\n\n**What happened (last 24h)**\n• Bitcoin fell from about $80,836 to about $76,000 as the Nasdaq dropped 5.5% on an AI and chip-stock slump (PANews).\n• About $829 million of bets were forced to close in 24 hours, mostly bets on a rise ($733 million) (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has closed under its 50-day average for 16 days, about 7% below it.\n• Turns up: a close above $78,250 (top of a typical week's swing), then $82,011 (the 50-day average).\n• Sideways: $74,250-$78,250; a normal week swings about $3,971.\n• Turns down: a close below $74,250, then $73,200 (the 200-day average).\n• Rally watch: quiet. A rally window opens above $83,558 and a drop signal starts below $71,179.\n• Scheduled: next Fed meeting on 8 December.\n\n**News that matters**\n• Global tech-stock sell-off led by the Nasdaq's 5.5% fall (PANews): short term, moderate negative.\n• Reports say the US crypto rules bill may stay stalled until 2028 after the Democratic win (CNBC via PANews): medium term, moderate negative.\n\n**Altcoins & themes**\n• Most large tokens fell harder than Bitcoin (ETH -7.6%, SOL -6.1%); Injective was an exception at +4.8% on the day a staked INJ fund listed on Nasdaq (no source links the two).\n• On Reku's new listings, Babylon says Aave has opened a vote on accepting native Bitcoin as collateral through its vaults (according to the project).\n\n**Bigger picture**\n• Next month is mixed (up about 17% over 90 days, down about 8.5% over 30); the 3-6 month picture leans up while price holds above $73,200 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid**\nKeep normal spend with only a small, easy-to-pause increase toward active traders: the posture is still scale up, but Bitcoin fell about 5% today and sits about 7% under its 50-day average ($82,011). If price closes below $73,200 (the 200-day average), pause the increase and check 30-day return on spend before adding more. Keep rally creatives ready but off; a rally window opens only above about $83,558."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content**\nKeep the normal posting rhythm but switch the tone to calm explainers: post a plain \"why crypto fell today\" piece linking Bitcoin's 5% drop to the Nasdaq's 5.5% fall (PANews), without predicting what comes next. Add a phone-safety reminder, since researchers report the DarkSword iPhone flaw has drained about $5.57M from crypto wallets (PANews). Rally posts stay in drafts."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM**\nNo promotional pressure today. Send existing users a short safety note (update your phone, never share recovery phrases) and a calm market note that Bitcoin fell with US tech stocks while the long-run uptrend still holds above $73,200. Keep the onboarding journey ready for the next rally window, as new sign-ups tend to arrive two to four weeks after one."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · what competitors are publishing**\nPintu and Pluang are both covering Bitcoin's fall with US tech stocks (e.g. Pintu's \"Nasdaq Ambles 3,9%, Bitcoin ke US$77.000\"); refresh a \"why is Bitcoin down today\" explainer with plain reference levels, likely to draw searches after a widely reported drop. Pintu also published \"Jenis Peretasan Crypto\"; an updated safety guide covering phone updates and the DarkSword thefts is likely to draw searches too. Indodax could not be read today. Check both against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins**\nThe tech-stock sell-off dragged most tokens down harder than Bitcoin: ETH -7.6%, SOL -6.1%, and AI-themed tokens FET -10.0% and GRASS -15.3% (PANews reports the wider sell-off; no separate reason for these tokens). INJ rose 4.8% after Canary's staked Injective fund listed on Nasdaq, though reports do not directly link the two. On Reku's new listings, Babylon says Aave has opened a vote on accepting native Bitcoin as collateral through its vaults, while PONS fell about 17% in a day with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934015.322989",
+      "at": "2026-11-06T03:00:15Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934019.322279",
+      "at": "2026-11-06T03:00:19Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934021.595719",
+      "at": "2026-11-06T03:00:21Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934023.492979",
+      "at": "2026-11-06T03:00:23Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934026.079169",
+      "at": "2026-11-06T03:00:26Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1793934028.098089",
+      "at": "2026-11-06T03:00:28Z"
+    }
+  ]
+}
