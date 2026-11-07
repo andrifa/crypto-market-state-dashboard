@@ -4223,14 +4223,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-24,80790.8359375,Bull,weakening,Neutral,61.0,early-bull,0.339,0.156,-0.14,SCALE UP acquisition budget
 2026-10-25,80024.0078125,Bull,weakening,Neutral,80.0,mid-bull,0.335,0.103,0.255,SCALE UP acquisition budget
 2026-10-26,80006.65625,Bull,weakening,Neutral,80.0,mid-bull,0.34,0.169,0.185,SCALE UP acquisition budget
-2026-10-27,80909.77,Bull,weakening,Neutral,82.0,mid-bull,0.354,0.201,0.288,SCALE UP acquisition budget
+2026-10-27,80805.078125,Bull,weakening,Neutral,82.0,mid-bull,0.353,0.198,0.288,SCALE UP acquisition budget
 2026-10-28,81343.5,Bull,weakening,Neutral,84.0,mid-bull,0.364,0.211,0.29,SCALE UP acquisition budget
 2026-10-29,77991.89,Bull,weakening,Neutral,79.0,mid-bull,0.331,0.186,0.233,SCALE UP acquisition budget
 2026-10-30,77368.77,Bull,stable,Fear,60.0,mid-bull,0.329,0.356,-0.423,SCALE UP acquisition budget
 2026-10-31,77582.02,Bull,weakening,Fear,61.0,mid-bull,0.337,0.094,-0.428,SCALE UP acquisition budget
-2026-11-01,78354.0,Bull,weakening,Fear,63.0,mid-bull,0.351,0.137,-0.132,SCALE UP acquisition budget
-2026-11-02,76816.0,Bull,weakening,Fear,61.0,mid-bull,0.338,0.183,-0.061,SCALE UP acquisition budget
+2026-11-01,78354.0,Bull,weakening,Fear,63.0,mid-bull,0.351,0.138,-0.132,SCALE UP acquisition budget
+2026-11-02,76816.0,Bull,weakening,Fear,61.0,mid-bull,0.338,0.183,-0.06,SCALE UP acquisition budget
 2026-11-03,77453.86,Bull,weakening,Fear,82.0,mid-bull,0.35,0.185,0.086,SCALE UP acquisition budget
 2026-11-04,80504.01,Bull,weakening,Fear,87.0,mid-bull,0.391,0.212,0.203,SCALE UP acquisition budget
 2026-11-05,76088.01,Bull,stable,Neutral,81.0,mid-bull,0.344,0.221,0.115,SCALE UP acquisition budget
-2026-11-06,76233.52,Bull,strengthening,Fear,82.0,mid-bull,0.349,0.227,0.086,SCALE UP acquisition budget
+2026-11-06,75844.0,Bull,strengthening,Fear,62.0,mid-bull,0.344,0.219,-0.008,SCALE UP acquisition budget
+2026-11-07,75901.24,Bull,stable,Extreme Fear,81.0,mid-bull,0.348,0.225,0.055,SCALE UP acquisition budget

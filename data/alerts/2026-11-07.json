@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-07",
+  "generated": "2026-11-07T00:09:42Z",
+  "price": 75901,
+  "events": [
+    {
+      "id": "fng:extreme_fear",
+      "type": "mood",
+      "severity": "medium",
+      "title": "Fear & Greed fell into extreme fear (25)",
+      "facts": {
+        "value": 25.0,
+        "previous": 28.0
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 7 November 2026**\n\n**Alert**\n• Fear & Greed fell into extreme fear (25, from 28). It matters because the mood is at its gloomiest while the uptrend still holds: keep messaging calm.\n\n**Snapshot**\n• Bitcoin about $75,901: down about 2% over 7 days and about 10% under its 30-day high.\n• Headline: BULLISH, high confidence; but price has been under its 50-day average for 17 days.\n• Fear & Greed 25 (extreme fear).\n\n**What happened (last 24h)**\n• Bitcoin dipped below $75,000 and climbed back above $76,000 (PANews) after US October jobs came in at 165,000 against about 65,000 expected, raising the odds of a December Fed rate rise (PANews).\n• About $709 million of bets were forced to close in 24 hours, mostly bets on a rise ($572 million) (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral.\n• Turns up: a close above $78,000 (top of a typical week's swing), then $81,901 (the 50-day average).\n• Sideways: $73,195-$78,000; a normal week swings about $3,971.\n• Turns down: a close below $73,195 (the 200-day average), then $67,769 (the 200-week average).\n• Rally watch: quiet. A rally window opens above $83,789 and a drop signal starts below $71,375.\n• Scheduled: next Fed meeting on 8 December; HTX lists US stock tokens on 9 November.\n\n**News that matters**\n• Strong US jobs report raises Fed rate-rise odds (PANews): short term, moderate negative.\n• Crypto-in-401(k) rule sent to the White House for final review (Bloomberg via PANews): medium term, moderate positive.\n• US Treasury orders US banks to cut off exchange MEXC (PANews): medium term, moderate negative.\n\n**Altcoins & themes**\n• Regulators are tightening on exchanges (MEXC in the US, Bitget in Thailand); Hyperliquid's listed treasury company applied to become a US futures broker, HYPE +2.0% (PANews).\n• On Reku's new listings, Babylon says an Aave vote on accepting native Bitcoin as collateral through its vaults is live (according to the project).\n\n**Bigger picture**\n• Next month is mixed (up about 17% over 90 days, down about 7% over 30); the 3-6 month picture leans up while price holds above $73,195 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Keep normal spend and grow active-trader acquisition only in small, easy-to-pause steps; the budget posture is scale up, but Bitcoin is about 7% under its 50-day average of $81,901 and the mood is extreme fear (25). Speed up only after a close back above $81,901, and pause any increase if price closes below $73,195 (the 200-day average). Keep rally creatives ready but not live: Rally watch is quiet and a window opens only above $83,789."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm with a calm tone. Post a plain explainer on why a strong US jobs report (165,000 jobs against about 65,000 expected, PANews) raised the odds of a Fed rate rise and why that matters for crypto, without predicting prices. Add a safety post, since Nubank and Mercado Pago paused crypto transfers in Brazil this week (PANews), and keep rally posts in drafts while Bitcoin is down about 2% over seven days."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** Keep regular lifecycle messages with a reassuring tone: send holders a short note that prices are soft after the US jobs report but the long-run uptrend still holds above $73,195. Add account-safety reminders (two-step login, phishing), as several apps paused transfers or reported breaches this week (PANews). Queue, but do not send, the rally onboarding journey: new sign-ups and first deposits tend to arrive 2-4 weeks after a rally, which would start above $83,789."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pintu and Pluang are publishing on three time-sensitive topics (Indodax was not readable today). 1) US jobs report, Fed and Bitcoin: Pintu previewed the report next to Bitcoin and Pluang asks if Bitcoin can hold $75,000; publish a plain 'what the US jobs report means for crypto' explainer before the 8 December Fed meeting. 2) Bitcoin ETF outflows: Pluang ran several items; refresh the 'what is a Bitcoin ETF' page with this week's figures. 3) Crypto safety: Pluang covered the Gnosis Pay breach and the TranchePool theft; update a 'keep your crypto safe' guide. Each is likely to draw searches this week; check against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Regulators are tightening on exchanges: the US Treasury ordered banks to cut off MEXC (MX -1.2%) and Thailand moved to block Bitget from 5 December (BGB flat), while Binance says it will reopen HYPE, INJ, APT, NEAR and LTC withdrawals before next weekend (PANews). Hyperliquid's listed treasury company has applied to become a US futures broker and holds about 16% of HYPE's circulating supply; HYPE is +2.0% on the day (PANews). Tokenized stocks keep spreading, with HTX listing US stock tokens on 9 November, though 67 companies including Meta object to share tokens on the OKX and ICE platform (PANews). On Reku's new listings, Babylon says an Aave vote on Bitcoin collateral through its vaults is live, and Midnight says its Ledger 9 upgrade is live on mainnet (according to the projects)."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010236.184119",
+      "at": "2026-11-07T00:10:36Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010241.066019",
+      "at": "2026-11-07T00:10:41Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010243.191319",
+      "at": "2026-11-07T00:10:43Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010245.228269",
+      "at": "2026-11-07T00:10:45Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010248.080639",
+      "at": "2026-11-07T00:10:48Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794010250.776719",
+      "at": "2026-11-07T00:10:50Z"
+    }
+  ]
+}
