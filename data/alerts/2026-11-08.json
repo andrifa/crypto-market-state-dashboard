@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-08",
+  "generated": "2026-11-08T00:08:58Z",
+  "price": 75823,
+  "events": [
+    {
+      "id": "low_30d:down",
+      "type": "range_break",
+      "severity": "medium",
+      "title": "BTC broke below its 30-day low ($75,844)",
+      "facts": {
+        "level": 75844,
+        "direction": "down",
+        "price": 75823
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 8 November 2026**\n\n**Alert**\n• BTC broke below its 30-day low ($75,844). It matters because price is now only about 4% above the 200-day average ($73,183), the line that holds the long-run uptrend: keep messaging calm and safety-first.\n\n**Snapshot**\n• Bitcoin about $75,823: down about 3% over 7 days and about 10% under its 30-day high.\n• Headline: BULLISH, medium confidence; but price has been under its 50-day average for 18 days, about 7% below it.\n• Fear & Greed 28 (fear). Price swings are on the calm side for the year.\n\n**What happened (last 24h)**\n• Bitcoin slipped to a new 30-day low; no single cause is reported, though Fed official Mary Daly said rates may need to rise further (PANews).\n• US spot Bitcoin ETFs saw about $412 million of net outflows on 6 November, led by BlackRock's fund (SoSoValue via PANews).\n• Only about $81 million of bets were forced to close in 24 hours, a quiet day (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft.\n• Turns up: a close above $77,750 (top of a typical week's swing), then $81,791 (the 50-day average).\n• Sideways: $73,183-$77,750; a normal week swings about $3,899.\n• Turns down: a close below $73,183 (the 200-day average), then $67,699 (the 200-week average).\n• Rally watch: quiet. A rally window opens above $84,622 and a drop signal starts below $72,086.\n• Scheduled: next Fed meeting on 8 December.\n\n**News that matters**\n• Fed's Daly says policy may need to tighten further (PANews): short term, moderate negative.\n• Bloomberg: with Democrats controlling Congress, crypto faces closer scrutiny (PANews): medium term, small negative.\n• Binance to close French accounts on 31 December after failing to get an EU licence (PANews): medium term, small negative.\n\n**Altcoins & themes**\n• Altcoins have given back about $200 billion of value and about 70% of Binance-listed coins sit below their 200-day average (CryptoQuant analyst via PANews); HYPE -1.2%, NEAR +0.7% on the day but both down sharply over the week.\n• On Reku's new listings, PONS is down about 10% on the day and 24% over the week with no stated reason, a caution item.\n\n**Bigger picture**\n• Next month is mixed (up about 19% over 90 days, down about 8% over 30); the 3-6 month picture leans up while price holds above $73,183 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid · 8 Nov:** Keep spend at normal levels with only a small, easy-to-pause tilt toward acquisition: Bitcoin just broke below its 30-day low and is about 7% under its 50-day average of $81,791. Raise trader-targeted spend only after a close above that level, and lean new-user ads on trust and 'learn before you trade' while the mood reads fear (28). Keep rally creatives ready in case the rally trigger near $84,622 is hit."
+    },
+    {
+      "audience": "social",
+      "text": "**Social · 8 Nov:** Keep the normal rhythm with a calm, explainer tone; Bitcoin is at its 30-day low and no rally or drop window is open. Post a plain 'why interest rates matter for crypto' piece (Fed official Daly said rates may need to rise further, PANews), plus a wallet safety post after the Keplr social-login incident (PANews). Keep rally posts in drafts: Bitcoin is down about 3% over seven days."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 8 Nov:** Keep regular lifecycle messages with a reassuring tone and no promotional pressure. Send holders a calm update: Bitcoin is at its 30-day low but still about 4% above its 200-day average of $73,183. Push an in-app security reminder (two-step login, never share codes) after this week's wallet and exchange incidents, and keep the post-rally onboarding journey queued for the next rally window."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 8 Nov:** Pluang (60 posts today) and Pintu (65 posts, latest dated 6 Nov) were readable; Indodax returned no posts. High: 'why is Bitcoin down' is covered by Pluang (ETF outflows, rate-rise fears) and Pintu (jobs report) — refresh that page with the 30-day low and 200-day average as reference points. High: wallet and exchange security (Pluang on Keplr, Gnosis Pay; both tag security) — publish a 'keep your account safe' guide that covers social-login wallets. Medium: tokenized stocks (Pintu's 'Apa itu ... Tokenized Stock' series, Pluang on HTX) — refresh the explainer. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 8 Nov:** Altcoins have given back about $200 billion of value since late September and about 70% of Binance-listed coins are below their 200-day average (CryptoQuant analyst via PANews); HYPE -1.2% and SOL -0.4% on the day, both lower over the week. Binance theft follow-ups continue: Elliptic says about 2,300 BTC of linked funds moved to new addresses, and Binance will close French accounts on 31 December (PANews). On Reku's new listings, Babylon says an Aave vote on native Bitcoin collateral via its vaults is live (according to the project), while PONS is down about 10% on the day with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096613.201699",
+      "at": "2026-11-08T00:10:13Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096618.392999",
+      "at": "2026-11-08T00:10:18Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096620.205029",
+      "at": "2026-11-08T00:10:20Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096622.268569",
+      "at": "2026-11-08T00:10:22Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096625.593399",
+      "at": "2026-11-08T00:10:25Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794096627.228829",
+      "at": "2026-11-08T00:10:27Z"
+    }
+  ]
+}
