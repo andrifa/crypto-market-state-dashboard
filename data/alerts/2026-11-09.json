@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-09",
+  "generated": "2026-11-09T00:44:29Z",
+  "price": 74845,
+  "events": [
+    {
+      "id": "low_30d:down",
+      "type": "range_break",
+      "severity": "medium",
+      "title": "BTC broke below its 30-day low ($74,851)",
+      "facts": {
+        "level": 74851,
+        "direction": "down",
+        "price": 74845
+      },
+      "repeat": true
+    }
+  ],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 9 November 2026**\n\n**Snapshot**\n• Bitcoin about $74,845: down about 3% over 7 days and about 11% under its 30-day high, now at its lowest since August.\n• Headline: BULLISH, low confidence; price has been under its 50-day average for 19 days, about 8% below it, and is only about 2% above its 200-day average ($73,160).\n• Fear & Greed 29 (fear). Bitcoin is moving unusually closely with US stocks, the closest link since May 2022 (Pluang).\n\n**What happened (last 24h)**\n• Bitcoin fell below $74,000 late on 8 November; Pluang reports a sharp sell-off in US tech and AI stocks set it off.\n• About $745 million of bets were forced to close in one hour, over 90% of them bets on a rise (CoinGlass via PANews); Pluang puts the total near $1 billion.\n• Upbit, South Korea's largest exchange, was offline for about five hours and had trouble restarting (PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft.\n• Turns up: a close above $76,750 (top of a typical week's swing), then $81,641 (the 50-day average).\n• Sideways: $73,160-$76,750; a normal week swings about $3,881.\n• Turns down: a close below $73,160 (the 200-day average), then $67,428 (the 200-week average).\n• Rally watch: quiet. A rally window opens above $82,961 and a drop signal starts below $70,671.\n• Scheduled: US inflation (CPI) data on Tuesday (PANews); next Fed meeting on 8 December.\n\n**News that matters**\n• Upbit outage and LNbits security warning (PANews): short term, small negative.\n• US senator gives Binance, Tether and others until 4 January to hand over investigation records (PANews): medium term, small negative.\n• Russia's central bank finalizes rules letting ordinary people trade crypto from 17 November (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Hyperliquid's new Elysium network launches on 9 November (Pluang), but HYPE is -3.6% on the day and Kinetiq, its builder, -16.2%, with no clear reason given; gold-backed tokens XAUT (+0.5%) and PAXG (+0.4%) held up as Binance's tokenized gold trading hit a record week (PANews).\n• On Reku's new listings, PONS is down about 9% on the day and 34% over the week with no stated reason, a caution item.\n\n**Bigger picture**\n• Next month is mixed (up about 18% over 90 days, down about 10% over 30); the 3-6 month picture leans up while price holds above $73,160 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid · 9 Nov:** Keep spend at normal levels with only a small, easy-to-pause tilt toward acquisition: Bitcoin is about 8% under its 50-day average of $81,641 and only about 2% above its 200-day average of $73,160. Raise trader-targeted spend only after a close above $81,641, and lean new-user ads on trust and 'learn before you trade' while the mood reads fear (29). If Bitcoin closes below $73,160, pause the increase and judge campaigns on their 30-day return; keep rally creatives ready in case the rally trigger near $82,961 is hit."
+    },
+    {
+      "audience": "social",
+      "text": "**Social · 9 Nov:** Keep the normal rhythm with a calm, explainer tone; Bitcoin is at its lowest since August and no rally or drop window is open. Post a plain 'why crypto fell with tech stocks' piece (Pluang reports a US tech and AI stock sell-off set off the drop) and a short preview of Tuesday's US inflation data. Add a safety post after the Upbit outage and LNbits attacks (PANews), and keep rally posts in drafts."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 9 Nov:** Keep regular lifecycle messages with a reassuring tone and no promotional pressure. Send holders a calm update: Bitcoin fell with US tech stocks but is still about 2% above its 200-day average of $73,160. Push an in-app security reminder (two-step login, never share codes) after this week's exchange and wallet incidents, and keep the post-rally onboarding journey queued for the next rally window."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 9 Nov:** Pluang (60 posts today) and Pintu (65 posts, latest dated 6 Nov) were readable; Indodax returned no posts. High: why Bitcoin and Ether fell (Pluang ran many short items on the drop) — refresh a 'why is Bitcoin falling today' page with the US tech-stock link. High: Bitcoin moving with US stocks (Pintu on the Nasdaq sell-off, Pluang on the record Bitcoin-S&P 500 link) — publish a plain explainer plus a CPI preview before Tuesday. High: exchange security (Pluang on LNbits and Circle's USDC freeze; both tag security) — update the safety guide. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 9 Nov:** Hyperliquid's first layer-2 network, Elysium, launches on 9 November with HYPE as its fee token (Pluang), and PANews reports trades on decentralized trading apps hit a yearly high in October; even so HYPE is -3.6% and Kinetiq -16.2% on the day, with no clear reason given. Gold-backed tokens XAUT (+0.5%) and PAXG (+0.4%) held up as Binance's tokenized gold trading hit a record week (PANews). On Reku's new listings, Midnight says its Ledger 9 upgrade is live on mainnet (according to the project), while PONS is down about 34% over the week with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185106.493329",
+      "at": "2026-11-09T00:45:06Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185112.392829",
+      "at": "2026-11-09T00:45:12Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185114.786009",
+      "at": "2026-11-09T00:45:14Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185116.695989",
+      "at": "2026-11-09T00:45:16Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185120.551989",
+      "at": "2026-11-09T00:45:20Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794185121.752169",
+      "at": "2026-11-09T00:45:21Z"
+    }
+  ]
+}

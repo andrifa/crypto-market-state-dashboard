@@ -4225,14 +4225,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-10-26,80006.65625,Bull,weakening,Neutral,80.0,mid-bull,0.34,0.169,0.185,SCALE UP acquisition budget
 2026-10-27,80805.078125,Bull,weakening,Neutral,82.0,mid-bull,0.353,0.198,0.288,SCALE UP acquisition budget
 2026-10-28,81267.5859375,Bull,weakening,Neutral,83.0,mid-bull,0.363,0.209,0.29,SCALE UP acquisition budget
-2026-10-29,77991.89,Bull,weakening,Neutral,79.0,mid-bull,0.331,0.186,0.233,SCALE UP acquisition budget
+2026-10-29,77775.109375,Bull,weakening,Neutral,79.0,mid-bull,0.328,0.182,0.233,SCALE UP acquisition budget
 2026-10-30,77368.77,Bull,stable,Fear,60.0,mid-bull,0.329,0.356,-0.423,SCALE UP acquisition budget
 2026-10-31,77582.02,Bull,weakening,Fear,61.0,mid-bull,0.337,0.094,-0.428,SCALE UP acquisition budget
 2026-11-01,78354.0,Bull,weakening,Fear,63.0,mid-bull,0.351,0.138,-0.132,SCALE UP acquisition budget
-2026-11-02,76816.0,Bull,weakening,Fear,61.0,mid-bull,0.338,0.183,-0.06,SCALE UP acquisition budget
-2026-11-03,77453.86,Bull,weakening,Fear,82.0,mid-bull,0.35,0.185,0.086,SCALE UP acquisition budget
-2026-11-04,80504.01,Bull,weakening,Fear,87.0,mid-bull,0.391,0.212,0.203,SCALE UP acquisition budget
-2026-11-05,76088.01,Bull,stable,Neutral,81.0,mid-bull,0.344,0.221,0.115,SCALE UP acquisition budget
-2026-11-06,75844.0,Bull,stable,Fear,62.0,mid-bull,0.344,0.19,-0.008,SCALE UP acquisition budget
-2026-11-07,75867.59,Bull,stable,Extreme Fear,62.0,mid-bull,0.347,0.195,-0.14,SCALE UP acquisition budget
-2026-11-08,75822.95,Bull,stable,Fear,63.0,mid-bull,0.35,0.206,-0.181,SCALE UP acquisition budget
+2026-11-02,76816.0,Bull,weakening,Fear,61.0,mid-bull,0.338,0.183,-0.061,SCALE UP acquisition budget
+2026-11-03,77453.86,Bull,weakening,Fear,82.0,mid-bull,0.35,0.185,0.084,SCALE UP acquisition budget
+2026-11-04,80504.01,Bull,weakening,Fear,87.0,mid-bull,0.391,0.212,0.2,SCALE UP acquisition budget
+2026-11-05,76088.01,Bull,stable,Neutral,81.0,mid-bull,0.343,0.221,0.113,SCALE UP acquisition budget
+2026-11-06,75844.0,Bull,stable,Fear,62.0,mid-bull,0.344,0.19,-0.01,SCALE UP acquisition budget
+2026-11-07,75867.59,Bull,weakening,Extreme Fear,62.0,mid-bull,0.347,0.054,-0.145,SCALE UP acquisition budget
+2026-11-08,74851.44,Bull,weakening,Fear,61.0,mid-bull,0.338,0.048,-0.087,SCALE UP acquisition budget
+2026-11-09,74844.8,Bull,weakening,Fear,62.0,mid-bull,0.341,0.025,-0.45,SCALE UP acquisition budget
