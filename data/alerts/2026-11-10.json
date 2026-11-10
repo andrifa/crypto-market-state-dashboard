@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-10",
+  "generated": "2026-11-10T00:50:09Z",
+  "price": 75038,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 10 November 2026**\n\n**Snapshot**\n• Bitcoin about $75,038: down about 3% over 7 days and about 11% under its 30-day high.\n• Headline: BULLISH, high confidence (long-run news lifted it); but price has been under its 50-day average for 20 days, about 8% below it, and is only about 3% above its 200-day average ($73,149).\n• Fear & Greed 32 (fear), while many people are still betting on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin held around $75,000 while US stocks rebounded (S&P 500 up about 2%, PANews); no single cause is reported for crypto's flat day.\n• About $1.19 billion of bets were forced to close over 24 hours, mostly bets on a rise (PANews), and Pluang reports about $1.28 billion left spot Bitcoin ETFs in early November.\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral.\n• Turns up: a close above $76,500 (top of a typical week's swing), then $81,417 (the 50-day average).\n• Sideways: $73,149-$76,500; a normal week swings about $2,926.\n• Turns down: a close below $73,149 (the 200-day average), then $67,601 (the 200-week average).\n• Rally watch: quiet. A rally window opens above $83,650 and a drop signal starts below $71,258.\n• Scheduled: US inflation (CPI) data today (PANews); next Fed meeting on 8 December.\n\n**News that matters**\n• UK regulator lets banks apply to run crypto businesses, and Coinbase received a US national trust charter (PANews): long term, positive.\n• Elizabeth Warren to chair the Senate Banking Committee, promising tough scrutiny of crypto (PANews): medium term, negative.\n• Injective network stopped producing blocks; Bithumb paused INJ transfers (PANews): short term, small negative.\n\n**Altcoins & themes**\n• NYSE plans to settle tokenized stocks on Avalanche and Schwab added SOL, AVAX and LINK trading (PANews); AVAX is up about 8.8% on the day.\n• On Reku's new listings, Babylon (BABY) is in the news after Aave's community approved using native Bitcoin as collateral through Babylon (PANews), though BABY is down about 14% over the week.\n\n**Bigger picture**\n• Next month is mixed (up about 18% over 90 days, down about 10% over 30); the 3-6 month picture leans up while price holds above $73,149 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid · 10 Nov:** Keep normal spend and do not step up active-trader campaigns until Bitcoin closes back above $81,417 (the 50-day average); Rally watch is quiet and would only open near $83,650. Lean new-user and stablecoin ads on trust and learning while Fear & Greed sits at 32 (fear). Have rally creatives ready to go live within days, and keep a reserve for that."
+    },
+    {
+      "audience": "social",
+      "text": "**Social · 10 Nov:** Keep the normal rhythm with calm explainers. Post a plain explainer on why today's US inflation data can move Bitcoin (PANews), without saying which way. Good topic: Wall Street moving onto blockchains, with NYSE planning tokenized-stock settlement on Avalanche and Schwab adding SOL, AVAX and LINK (PANews); AVAX is up about 8.8% today. Add one factual daily recap: Bitcoin near $75,038, about 3% down on the week."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 10 Nov:** Keep regular lifecycle messages with no promotional pressure. Send a short in-app heads-up that today's US inflation data can make prices swing, linking an explainer. Reassure existing holders about security, with Bitcoin about 11% under its 30-day high, and keep the onboarding journey ready for the next rally window, since new sign-ups and first deposits tend to arrive 2-4 weeks after one."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 10 Nov:** Indodax was not readable today. Pluang and Pintu are both covering US stocks and tokenized stocks: refresh a guide on how they relate to crypto, likely to draw searches with NYSE's blockchain news. Both also cover ETF and fund flows (Pluang: about $1.28B out of spot Bitcoin ETFs in early November): publish a plain 'what ETF outflows mean' piece. Pluang has 15 Ethereum items as Ether fell below $2,100: update the Ethereum price and 'why is it down' pages. Check each against Reku's pages first. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 10 Nov:** Wall Street on blockchains is the main theme: NYSE plans tokenized-stock settlement on Avalanche, Schwab added SOL, AVAX and LINK, and Formation plans a tokenized securities venue on Solana (PANews); AVAX +8.8%, SOL -0.5%, LINK +1.6% in 24h. Hyperliquid's Elysium network launched (PANews); HYPE flat today and about 11% lower on the week, with no clear reason given. Injective halted block production and Bithumb paused INJ transfers (PANews). On Reku's new listings: Aave's community approved native Bitcoin collateral via Babylon (PANews), BABY -14% on the week; PONS is down about 25% over 7 days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271853.105539",
+      "at": "2026-11-10T00:51:13Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271858.383049",
+      "at": "2026-11-10T00:51:13Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271860.598399",
+      "at": "2026-11-10T00:51:13Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271863.013609",
+      "at": "2026-11-10T00:51:13Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271865.245979",
+      "at": "2026-11-10T00:51:13Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794271867.604739",
+      "at": "2026-11-10T00:51:13Z"
+    }
+  ]
+}
