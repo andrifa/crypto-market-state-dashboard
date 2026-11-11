@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-11",
+  "generated": "2026-11-11T00:09:06Z",
+  "price": 73800,
+  "events": [
+    {
+      "id": "rally_watch:drop",
+      "type": "signal",
+      "severity": "high",
+      "title": "Drop signal fired: Bitcoin is -8.3% over 7 days",
+      "facts": {
+        "state": "drop",
+        "ret_7d": -0.0833,
+        "window_days": 14
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 11 November 2026**\n\n**Alert**\n• **Drop signal fired: Bitcoin is -8.3% over 7 days.** A Rally watch drop window is now open. In our past data, trading and new sign-ups usually slowed in the two weeks after such a signal: hold promotions, lead with trust.\n\n**Snapshot**\n• Bitcoin is about $73,800, down about 8% over 7 days.\n• Headline label: BULLISH, medium confidence (66). The long-run uptrend still holds, but price is only about 1% above its 200-day average.\n• Fear & Greed is 29 (fear).\n\n**What happened (last 24h)**\n• Bitcoin fell below $73,000 during the day after US October inflation came in above expectations (0.4% for the month), and Fed officials Logan and Bowman said they may back more rate rises (PANews).\n• About $382M of bets placed across the market were forced to close in 24 hours, mostly bets on a rise (PANews). US Bitcoin ETFs saw about $487M flow out.\n\n**Short-term outlook (next 1-7 days)**\nThe near term looks soft: the mood is fearful and price has been under its 50-day average for 21 days.\n• Turns up: a close above $75,250 (top of a typical week's swing), then $81,141 (50-day average).\n• Sideways: between $73,123 and $75,250; a normal week swings about $2,957.\n• Turns down: a close below $73,123 (200-day average), then $67,706 (200-week average).\n• Rally watch: drop window open. A rally signal would need about $86,944; the drop signal stays on while price is below about $74,064.\n• Scheduled: next Fed meeting, 8 December.\n\n**News that matters**\n• US inflation above expectations (PANews): short term, moderate negative.\n• Fed officials back more rate rises (PANews): medium term, moderate negative.\n• Goldman Sachs, Citi and others commit about $270M to a joint stablecoin project (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Most large coins are down 3-4% in 24 hours; ZEC fell about 11% even as Grayscale pledged $1M to its ecosystem, and the reports give no clear reason (PANews).\n• New on Reku: according to the project, Babylon's proposal to bring native Bitcoin as collateral to Aave passed with a 100% vote (10 Nov).\n\n**Bigger picture**\n• The next month is mixed and leaning softer until price wins back $81,141 (50-day average); the 3-6 month picture still leans up while Bitcoin holds above $73,123 (200-day average).\n\nDashboard: https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital / Paid:** A Rally watch drop window opened today and Bitcoin is down about 8% in a week, so hold any step-up in active-trader campaigns until a close back above $81,141 (the 50-day average) and keep a budget reserve. Apply the d30 ROI stop-loss on running campaigns while the window is open. For new and stablecoin audiences, lean creatives on trust and learning (Fear & Greed is 29); keep rally creatives ready in case a rally signal comes near $86,944."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm but switch tone to calm, safety-first content. Post a plain explainer on why Bitcoin fell (US inflation came in above expectations and Fed officials talked about more rate rises, per PANews), without saying where price goes next. Add a short 'how we protect your assets' post: Across, Initia and Arcus all reported security incidents yesterday (PANews). For a calmer long-run topic, use Goldman Sachs and Citi committing about $270M to a joint stablecoin project."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** No promotional pressure while the drop window is open. Send existing holders a calm note that prices fell about 8% this week after hotter US inflation, with a link to an explainer and no push to trade, and remind users how to turn on two-step login and spot fake support accounts. Keep welcome and education journeys running and have the post-rally onboarding journey ready, since new sign-ups and first deposits tend to arrive 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pluang ran 60 short items on 11 Nov and Pintu 65 posts on 6-10 Nov (51 of them daily stock price pages); Indodax was not readable today. High-priority topics: (1) Bitcoin's fall after hot US inflation, covered by Pluang: refresh 'why is Bitcoin down today' with the inflation and Fed context; (2) Fed rate rises, Pluang covers Deutsche Bank's call for three hikes: publish a plain 'what a Fed rate rise means for crypto' explainer ahead of the 8 December meeting; (3) tokenized stocks, covered by Pintu and Pluang (NYSE choosing Avalanche): update the tokenized-stocks guide. Also refresh the account-security guide after this week's hacks. Check each against Reku's pages first. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Most large coins fell 3-4% in 24 hours after the US inflation data (ETH -3.8%, SOL -3.8%, XRP -3.9%). ZEC fell about 11% even as Grayscale pledged $1M to the Zcash ecosystem; the reports give no clear reason (PANews). Banks and payment firms keep building on stablecoins: Goldman Sachs and Citi committed about $270M to a joint project and Visa added Monad (MON -0.9%) to its settlement network (PANews). New on Reku: according to the project, Babylon's proposal for native Bitcoin collateral on Aave passed with a 100% vote; Pons (PONS) is down about 29% in 7 days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355792.604589",
+      "at": "2026-11-11T00:10:11Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355797.269409",
+      "at": "2026-11-11T00:10:11Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355800.205539",
+      "at": "2026-11-11T00:10:11Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355801.662479",
+      "at": "2026-11-11T00:10:11Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355804.486579",
+      "at": "2026-11-11T00:10:11Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794355806.789469",
+      "at": "2026-11-11T00:10:11Z"
+    }
+  ]
+}
