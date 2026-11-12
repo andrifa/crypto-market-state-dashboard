@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-12",
+  "generated": "2026-11-12T00:07:21Z",
+  "price": 74045,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 12 November 2026**\n\n**Snapshot**\n• Bitcoin is about $74,045, down about 2.7% over 7 days and about 11% over 30 days.\n• Headline label: BULLISH, medium confidence (69/100) — the long-run uptrend holds, but price sits only about 1% above its 200-day average ($73,101).\n• Fear & Greed is 28 (fear). Price swings are on the calm side for now (around the 34th percentile of the past).\n\n**What happened (last 24h)**\n• Bitcoin moved sideways around $74,000; no single cause is reported for the day's move.\n• Short-term holders sent about 47,300 BTC to exchanges at a loss within 24 hours, one of the strongest such waves in recent months (PANews, citing CryptoQuant).\n• About $494M of bets were forced to close across crypto in 24 hours, mostly bets on a rise (PANews, citing CoinGlass).\n\n**Short-term outlook (next 1-7 days)**\nThe near term leans soft to neutral: price has been under its 50-day average for 22 days and the mood is fearful.\n• Turns up: a close above $75,750 (top of a typical week's swing), then $80,937 (50-day average).\n• Sideways: between $73,796 and $75,750; a normal week swings about $3,492.\n• Turns down: a close below $73,796 (30-day low), then $73,101 (200-day average) and $67,931 (200-week average).\n• Rally watch: drop window open since 11 November; a rally signal needs about $82,175, a fresh drop signal comes below about $70,001.\n• Dates: Russia's exchanges may start crypto trading from 22 November, OKXICE launches 23 November, MSCI removal after 30 November, Fed meeting 8 December.\n\n**News that matters**\n• MSCI will drop Strategy and Metaplanet from its global indexes after 30 November (PANews, citing Reuters) — medium term, negative.\n• A December Fed rate rise is now described as all but certain (PANews, citing WSJ's Nick Timiraos) — medium term, negative.\n• Bank of Russia says exchanges may launch crypto trading from 22 November (PANews, citing TASS) — long term, positive.\n\n**Altcoins & themes**\n• Tokenized stocks are the busy theme: Kraken is adding 200+ European stocks and OKXICE launches on 23 November (PANews).\n• New on Reku: Babylon (BABY) says the Aave DAO voted 100% to accept native Bitcoin as collateral via Babylon; the token is still about 20% lower over the week.\n\n**Bigger picture**\n• The next month is mixed and leaning softer until price wins back $80,937 (50-day average); the 3-6 month uptrend holds while price stays above $73,101 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid · 12 Nov**\n• Hold trader-targeted spend and keep a reserve: a Rally watch drop window is open and Bitcoin (about $74,045) is about 9% under its 50-day average. Do not raise trader spend until a close back above $80,937.\n• Apply a d30 ROI stop-loss on running campaigns and keep the saved budget in reserve.\n• For new users, lead with trust and learning angles (Fear & Greed is 28, fear), and keep rally creatives ready in case price gets near $82,175, where Rally watch would switch to a rally."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content · 12 Nov**\n• Keep the normal posting rhythm with calm, factual explainers; skip upbeat price posts while prices are about 11% lower over the month.\n• Topics today: what MSCI dropping Strategy and Metaplanet from its indexes after 30 November means (PANews, citing Reuters), and why a December Fed rate rise, now described as all but certain, matters for crypto (meeting on 8 December).\n• Longer-run, calmer topic: Russia's exchanges may start crypto trading from 22 November and Deutsche Bank launched crypto custody (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 12 Nov**\n• Send existing holders a calm note: Bitcoin is about 11% lower over the month and resting near its 200-day average ($73,101), with a link to an explainer and no push to trade.\n• Use the Suiet wallet shutdown after 14 November (PANews) as a prompt for a 'keep your keys and account safe' message.\n• Keep welcome and education journeys running, hold deposit promotions, and have the onboarding journey ready: from our GTV study, sign-ups and first deposits arrive about 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 12 Nov** (Pintu and Pluang read today; Indodax could not be read)\n• **Bitcoin and Ether fund outflows** (Pluang): Pluang runs four-day ETF outflow items. Refresh a 'why is Bitcoin down this week' page; likely to draw searches while the slide is in the news. Check against Reku's pages.\n• **Tokenized stocks** (Pintu, Pluang): Pintu published '5 Alasan Tokenized Stocks Akan Menjadi Aset Penting di Industri Crypto'. Publish a 'what is a tokenized stock' guide; likely to draw searches because OKXICE launches on 23 November.\n• **Strategy and MSCI**: Pintu runs a daily Strategy (MSTR) price page; a short explainer is likely to draw searches because MSCI removes Strategy from its indexes after 30 November.\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 12 Nov**\n• **Tokenized stocks**: Kraken's parent is adding 200+ UK and European stocks, OKXICE launches 23 November and Binance opened bStocks to 49 local currencies (PANews); SOL is flat over 24h (+0.1%).\n• **Telegram's Gram**: Pavel Durov said over 1 million Gram wallets were activated in 48 hours (PANews); GRAM is up about 3.2% in 24h.\n• **New on Reku**: Babylon (BABY) says the Aave DAO voted 100% to accept native Bitcoin as collateral through Babylon (also reported by PANews). Midnight (NIGHT) is up about 13% in 24h after its Ledger 9 network upgrade earlier this week, but the reports give no clear reason for today's rise. Pons (PONS) is about 33% lower over the week with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442154.632629",
+      "at": "2026-11-12T00:09:18Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442162.464979",
+      "at": "2026-11-12T00:09:38Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442164.803469",
+      "at": "2026-11-12T00:09:38Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442167.146859",
+      "at": "2026-11-12T00:09:38Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442170.444779",
+      "at": "2026-11-12T00:09:38Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794442173.011679",
+      "at": "2026-11-12T00:09:38Z"
+    }
+  ]
+}
