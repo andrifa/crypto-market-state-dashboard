@@ -236,7 +236,8 @@ def build_payload() -> dict:
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "date": row.name.strftime("%Y-%m-%d"),
         "price_btc": fr["price"],
-        "regime": row["regime"],
+        "regime": row["regime"],                     # headline: medium-term (momentum) view
+        "trend_regime": row["trend_regime"],         # long-term (trend) structure, shown as background
         "headline": fr["headline"],
         "headline_tag": fr["headline_tag"],
         "direction": row["direction"],

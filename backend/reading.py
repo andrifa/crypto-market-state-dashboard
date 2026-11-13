@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import pandas as pd
 
+from state import price_weak
+
 _MONTHS = ["January", "February", "March", "April", "May", "June", "July",
            "August", "September", "October", "November", "December"]
 
@@ -25,10 +27,11 @@ REGIME_LABEL = {
     "Bear": "BEARISH",
     "Unknown": "NOT ENOUGH DATA",
 }
+# The headline reads the medium term (about the last month or two), not the long-term trend.
 REGIME_TAG = {
-    "Bull": "market in an uptrend",
-    "Neutral": "market in transition — direction unclear",
-    "Bear": "market in a downtrend",
+    "Bull": "medium term: momentum over recent weeks is strong",
+    "Neutral": "medium term: recent weeks are mixed — direction unclear",
+    "Bear": "medium term: momentum over recent weeks is weak",
     "Unknown": "",
 }
 DIRECTION_LABEL = {
@@ -67,28 +70,33 @@ def confidence_level(conv) -> str:
     return "LOW"
 
 
-def budget_action(regime: str, cycle: str, conv) -> tuple[str, str]:
-    """(action title, rationale)."""
+def budget_action(regime: str, cycle: str, conv, weak_price: bool = False) -> tuple[str, str]:
+    """(action title, rationale). weak_price: price under its 50-day average and down >10% in 30 days."""
     conv = int(conv) if conv is not None and not pd.isna(conv) else 0
     if regime == "Bull":
+        if weak_price:
+            return ("HOLD at planned level",
+                    "Recent momentum reads strong, but price is below its 50-day average and has fallen "
+                    "more than 10% over the last 30 days. Don't add budget until price recovers; "
+                    "keep active-trader spend at plan.")
         if "late uptrend" in CYCLE_LABEL.get(cycle, "") or conv < 55:
             return ("HOLD at planned level",
-                    "Trend is still up but maturing / the signal isn't strong. "
+                    "Momentum is positive but maturing / the signal isn't strong. "
                     "Don't add active-trader budget; watch for euphoria.")
         return ("SCALE UP acquisition budget",
-                "Uptrend is solid. Increase acquisition, prioritise non-stablecoin / "
+                "Medium-term momentum is solid. Increase acquisition, prioritise non-stablecoin / "
                 "active-trader channels (they benefit most in this phase).")
     if regime == "Neutral":
         return ("HOLD at planned level",
-                "Market is in transition — it could break either way. "
+                "The last weeks are mixed — it could break either way. "
                 "Not the time for big moves up or down; wait for the direction to confirm.")
     if regime == "Bear":
         if cycle == "capitulation":
             return ("HOLD budget + prepare a scale-up plan",
-                    "Downtrend, but it's in the capitulation phase — a turn could be near. "
+                    "Weak momentum, and the cycle is in the capitulation phase — a turn could be near. "
                     "Keep the d30 ROI stop-loss and ready a scale-up plan.")
         return ("CUT / defend tightly with a stop-loss",
-                "Downtrend. Maintain acquisition with a d30 ROI stop-loss, shift messaging "
+                "Momentum is weak. Maintain acquisition with a d30 ROI stop-loss, shift messaging "
                 "toward stablecoins, trim active-trader channels (they tend to churn "
                 "before conditions improve).")
     return ("—", "Not enough data to give a recommendation.")
@@ -274,7 +282,8 @@ def marketing_note(row: pd.Series) -> str:
     roc90, breadth = row.get("roc90"), row.get("breadth")
 
     if regime == "Bull":
-        if "late uptrend" in CYCLE_LABEL.get(cycle, "") or (conv is not None and conv < 55):
+        if (price_weak(row.get("gap50"), row.get("ret30")) or "late uptrend" in CYCLE_LABEL.get(cycle, "")
+                or (conv is not None and conv < 55)):
             s = "Lean toward non-stablecoin and active-trader channels, but keep the increase modest"
         else:
             s = "Scale acquisition spend toward non-stablecoin and active-trader channels"
@@ -315,11 +324,15 @@ def watch(row: pd.Series) -> str | None:
     ts, ms = row.get("trend_score"), row.get("momentum_score")
     band = row.get("sentiment_band")
 
+    if pd.notna(ts) and ts > 0.15 and regime in ("Neutral", "Bear"):
+        return ("The long-term trend is still up, but the last few weeks have cooled, so the headline reads "
+                f"{REGIME_LABEL.get(regime, regime)}. If the weakness lasts, the long-term trend will follow; "
+                "if price recovers, the headline can return to BULLISH.")
     if pd.notna(ts) and pd.notna(ms) and ts < 0 < ms and regime in ("Bear", "Neutral"):
         return ("Price and momentum are improving while the long-term trend is still down — "
                 "a classic 'bottom turning' pattern. If the 200-day trend flattens, "
                 "it may move up to BULLISH.")
-    if pd.notna(ts) and pd.notna(ms) and ms < 0 < ts and regime in ("Bull", "Neutral"):
+    if pd.notna(ts) and pd.notna(ms) and ms < 0 < ts and regime in ("Bull", "Neutral", "Bear"):
         return ("Momentum is weakening even though the trend is still up — "
                 "watch for a possible reversal.")
     if band in ("Greed", "Extreme Greed") and regime != "Bull":
@@ -338,7 +351,8 @@ def friendly_row(row: pd.Series, prev: pd.Series | None = None, scen=None, level
     band = row.get("sentiment_band", "—")
     direction = row.get("direction", "—")
 
-    action_title, action_detail = budget_action(regime, cycle, conv)
+    weak = price_weak(row.get("gap50"), row.get("ret30"))
+    action_title, action_detail = budget_action(regime, cycle, conv, weak)
     change = None
     if prev is not None and prev.get("regime") not in (None, regime):
         change = f"Status changed from {REGIME_LABEL.get(prev.get('regime'), '—')} → {REGIME_LABEL.get(regime)}."

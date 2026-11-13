@@ -42,7 +42,7 @@ const GLOSSARY_GROUPS = [
   },
   {
     key: "medium", title: "Medium term", sub: "the coming weeks to about 1 month · momentum · scored as “Momentum”",
-    note: "Moves the confidence level and the medium-term read. Does not change the headline label.",
+    note: "This is the group that sets the headline label (BULLISH / NEUTRAL / BEARISH). It also moves the confidence level.",
     items: [
       {
         name: "Weekly RSI", aka: "Relative Strength Index", weight: "25% of the medium-term score",
@@ -93,7 +93,7 @@ const GLOSSARY_GROUPS = [
   },
   {
     key: "long", title: "Long term", sub: "about 3–6 months · trend · scored as “Trend”",
-    note: "This is the only group that sets the headline label (BULLISH / NEUTRAL / BEARISH).",
+    note: "Does not set the headline label. It gives the long-term background: the cycle phase and part of the confidence level.",
     items: [
       {
         name: "Mayer Multiple", weight: "34% of the long-term score",
@@ -155,13 +155,13 @@ const GLOSSARY_GROUPS = [
       },
       {
         name: "Headline label", aka: "regime: BULLISH / NEUTRAL / BEARISH",
-        what: "The big word at the top. It comes only from the long-term (Trend) score: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between. A new label needs 5 days in a row before it replaces the old one.",
+        what: "The big word at the top. It comes only from the medium-term (Momentum) score, which looks at roughly the last month or two: BULLISH above +0.20, BEARISH below −0.20, NEUTRAL in between. A new label needs 5 days in a row before it replaces the old one. Until 13 November 2026 the label came from the long-term Trend score; the history is recalculated with the new rule.",
         read: "It describes what has already happened, not a forecast.",
         today: (c, d) => (d.headline ? `${d.headline}.` : null),
       },
       {
         name: "Conviction", aka: "confidence, 0–100",
-        what: "How much to trust the headline label today. It is higher when trend, momentum and sentiment agree, the trend is clearly away from neutral, sentiment is not at an extreme, and the market is calm. It is lower when signals conflict.",
+        what: "How much to trust the headline label today. It is higher when trend and sentiment agree with momentum, momentum is clearly away from neutral, sentiment is not at an extreme, and the market is calm. It is lower when signals conflict.",
         read: "Use it as a confidence level, not a probability.",
         today: (c, d) => (d.conviction == null ? null : `${d.conviction} out of 100${d.conviction_level ? " — " + String(d.conviction_level).toLowerCase() : ""}.`),
       },

@@ -15,7 +15,7 @@ arbitrary arithmetic:
 The 12-indicator base scores are kept in `scores_base` and are what the
 backtest and history.csv describe; news is not in either (it has no
 history to validate a weight against). The headline regime label and budget
-action stay with the base model. If news moves the trend score across a
+action stay with the base model. If news moves the medium-term (momentum) score across a
 regime threshold the label hasn't followed, `news_flag` says so instead.
 
 Run after the task has written news_impact, before it writes the narrative:
@@ -45,9 +45,10 @@ def _clip(x: float, lo: float = -1.0, hi: float = 1.0) -> float:
     return max(lo, min(hi, x))
 
 
-def _zone(trend: float) -> str:
+def _zone(momentum: float) -> str:
+    """Headline zone of a medium-term (momentum) score."""
     t = CONFIG["regime_T"]
-    return "Bull" if trend > t else "Bear" if trend < -t else "Neutral"
+    return "Bull" if momentum > t else "Bear" if momentum < -t else "Neutral"
 
 
 def main() -> int:
@@ -90,11 +91,11 @@ def main() -> int:
             d["conviction"] = int(c)
             d["conviction_level"] = confidence_level(int(c))
 
-    # flag only when news itself pushed the trend score into a different regime zone
-    z_base, z_adj = _zone(d["scores_base"]["trend"]), _zone(adj["trend"])
+    # flag only when news itself pushed the medium-term score into a different headline zone
+    z_base, z_adj = _zone(d["scores_base"]["momentum"]), _zone(adj["momentum"])
     flag = None
     if z_adj != z_base and z_adj != d.get("regime"):
-        flag = (f"News moves the long-term score from {d['scores_base']['trend']:+.2f} to {adj['trend']:+.2f}, "
+        flag = (f"News moves the medium-term score from {d['scores_base']['momentum']:+.2f} to {adj['momentum']:+.2f}, "
                 f"into {REGIME_LABEL.get(z_adj, z_adj)} territory. The headline label stays "
                 f"{d.get('headline')} until the 12-indicator model itself confirms the change.")
     d["news_flag"] = flag

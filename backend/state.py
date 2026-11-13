@@ -3,7 +3,8 @@ Scoring + state machine.
 
 Raw indicators (indicators.compute_all) --> per-indicator scores in [-1, +1]
         --> three dimension scores (trend / momentum / sentiment)
-        --> headline regime  (Bull / Neutral / Bear, with hysteresis)
+        --> headline regime  (Bull / Neutral / Bear, with hysteresis) -- set by the MEDIUM-term
+            (momentum, ~1 month) score; the long-term trend regime is kept as `trend_regime`
           + direction        (strengthening / stable / weakening)
           + sentiment band   (Ryan's L1 vendor bands, kept for continuity)
           + conviction 0-100
@@ -32,9 +33,15 @@ CONFIG = {
     "w_trend":   {"mayer": 0.34, "slope": 0.28, "cross": 0.18, "ma_200w": 0.20},
     "w_moment":  {"rsi_w": 0.30, "roc90": 0.24, "breadth": 0.16, "activity": 0.30, "gap50": 0.20},
     "w_sent":    {"fng": 0.50, "funding": 0.30, "ssr": 0.20},
-    # regime bands on trend_score, plus hysteresis
-    "regime_T": 0.15,
+    # headline regime = medium-term view: bands on momentum_score, plus hysteresis.
+    # (Until 13 Nov 2026 the headline came from the long-term trend score; that regime is still
+    # computed as `trend_regime` with trend_T and drives the cycle phase.)
+    "regime_T": 0.20,
+    "trend_T": 0.15,
     "confirm_days": 5,
+    # posture guard: a Bull headline is not "scale up" while price is clearly weak
+    "guard_gap50": 0.0,        # price below its 50-day average ...
+    "guard_ret30": -0.10,      # ... and down more than this over 30 days
     # direction deadband on the 20d change in momentum_score
     "dir_lookback": 20,
     "dir_deadband": 0.08,
@@ -110,9 +117,11 @@ def _raw_regime(t: float, T: float) -> str:
     return "Neutral"
 
 
-def regime_series(trend: pd.Series) -> pd.Series:
+def regime_series(score: pd.Series, T: float | None = None, confirm: int | None = None) -> pd.Series:
     c = CONFIG
-    T, confirm = c["regime_T"], c["confirm_days"]
+    T = c["regime_T"] if T is None else T
+    confirm = c["confirm_days"] if confirm is None else confirm
+    trend = score
     raw = trend.apply(lambda x: _raw_regime(x, T))
     out, cur, run = [], "Unknown", 0
     prev = None
@@ -154,21 +163,21 @@ def fng_band(v: float) -> str:
 
 def conviction_series(d: pd.DataFrame, s: pd.DataFrame) -> pd.Series:
     """
-    0-100.  High = the three dimensions agree, the trend is well clear of the
-    neutral band, sentiment is not at a froth/capitulation extreme, and vol is calm.
-    Low = conflicting signals or a trend score hugging zero.
+    0-100.  High = the other two dimensions agree with the medium-term (momentum) lead, the lead
+    is well clear of the neutral band, sentiment is not at a froth/capitulation extreme, and vol
+    is calm.  Low = conflicting signals or a momentum score hugging zero.
     """
-    tr = d["trend"]
-    strength = (tr.abs() / 0.45).clip(0, 1)                      # distance from neutral band
+    lead = d["momentum"]
+    strength = (lead.abs() / 0.45).clip(0, 1)                    # distance from neutral band
 
-    mom_agree = np.sign(d["momentum"]).eq(np.sign(tr)).astype(float)
-    sent_dir = np.sign(d["sentiment"]).eq(np.sign(tr))
+    trend_agree = np.sign(d["trend"]).eq(np.sign(lead)).astype(float)
+    sent_dir = np.sign(d["sentiment"]).eq(np.sign(lead))
     sent_extreme = d["sentiment"].abs() > 0.60
     sent_agree = np.select(
         [sent_dir & ~sent_extreme, sent_dir & sent_extreme],
         [1.0, 0.4], default=0.0,
     )
-    align = (mom_agree + sent_agree) / 2.0                       # 0..1
+    align = (trend_agree + sent_agree) / 2.0                     # 0..1
 
     calm = 1.0 - ((s["_vol_pctl"] - 0.50) / 0.40).clip(0, 1)     # 1 calm .. 0 turbulent
 
@@ -205,12 +214,20 @@ def cycle_series(regime: pd.Series, s: pd.DataFrame, d: pd.DataFrame) -> pd.Seri
     return pd.Series(out, index=regime.index, name="cycle")
 
 
-def posture_series(regime: pd.Series, cycle: pd.Series, conviction: pd.Series) -> pd.Series:
+def price_weak(gap50, ret30) -> bool:
+    """Price below its 50-day average and down more than 10% over 30 days."""
+    return (pd.notna(gap50) and pd.notna(ret30)
+            and gap50 < CONFIG["guard_gap50"] and ret30 < CONFIG["guard_ret30"])
+
+
+def posture_series(regime: pd.Series, cycle: pd.Series, conviction: pd.Series,
+                   gap50: pd.Series | None = None, ret30: pd.Series | None = None) -> pd.Series:
     out = []
-    for r, cy, cv in zip(regime, cycle, conviction):
+    for i, (r, cy, cv) in enumerate(zip(regime, cycle, conviction)):
         cv = int(cv) if pd.notna(cv) else 0
+        weak = gap50 is not None and ret30 is not None and price_weak(gap50.iat[i], ret30.iat[i])
         if r == "Bull":
-            if "late-bull" in cy or cv < 55:
+            if "late-bull" in cy or cv < 55 or weak:
                 out.append("Stay in, capped — hold acquisition at plan, watch for froth, do not add NS budget.")
             else:
                 out.append("Lean in — scale acquisition, prioritise NS / market-beta channels.")
@@ -235,18 +252,22 @@ def build_state(df: pd.DataFrame) -> pd.DataFrame:
     s = score_indicators(ind)
     d = dimension_scores(s)
 
-    reg = regime_series(d["trend"])
+    reg = regime_series(d["momentum"])                       # headline: medium-term view
+    trend_reg = regime_series(d["trend"], T=CONFIG["trend_T"])  # long-term structure
     st = pd.DataFrame(index=df.index)
     st["close"] = df["close"]
     st["trend_score"] = d["trend"].round(3)
     st["momentum_score"] = d["momentum"].round(3)
     st["sentiment_score"] = d["sentiment"].round(3)
     st["regime"] = reg
+    st["trend_regime"] = trend_reg
     st["direction"] = direction_series(d["momentum"])
     st["sentiment_band"] = ind["fng"].apply(fng_band)
     st["conviction"] = conviction_series(d, s)
-    st["cycle"] = cycle_series(reg, s, d)
-    st["posture"] = posture_series(reg, st["cycle"], st["conviction"])
+    st["cycle"] = cycle_series(trend_reg, s, d)              # cycle phase is a long-term notion
+    st["gap50"] = ind["gap50"].round(4)
+    st["ret30"] = (df["close"] / df["close"].shift(30) - 1).round(4)
+    st["posture"] = posture_series(reg, st["cycle"], st["conviction"], st["gap50"], st["ret30"])
     # keep a few raw context values for the dashboard
     st["mayer"] = ind["mayer"].round(3)
     st["ma_slope"] = ind["ma_slope"].round(4)

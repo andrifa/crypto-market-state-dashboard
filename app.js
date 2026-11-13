@@ -227,6 +227,7 @@ function renderHero(d, k) {
     el("div", {},
       el("p", { class: "regime " + k, text: d.headline || "—" }),
       el("div", { class: "regime-tag", text: d.headline_tag || "" }),
+      d.trend_regime ? el("div", { class: "regime-sub", text: "Long-term trend: " + ({ Bull: "still up", Bear: "still down", Neutral: "flat" }[d.trend_regime] || "—") }) : "",
       el("span", { class: "conf-tag " + (d.conviction_level || ""), text: "Overall confidence: " + (d.conviction_level || "—") })),
     el("div", { class: "asof" }, fmtUSD(d.price_btc), el("br"), "BTC · as of " + fmtDate(d.date))));
 
@@ -976,10 +977,11 @@ function renderMethodology() {
   const p = document.getElementById("methodology");
   p.append(el("p", { class: "kicker", text: "How the reading is built" }));
   const body = el("div", { class: "why-body", hidden: "", html:
-    "The headline regime comes from the <b>Trend</b> dimension only: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between, with a five-day "
-    + "confirmation so the label doesn't flip on noise. Trend blends the Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation "
-    + "counterweight. <b>Momentum</b> adds weekly RSI, 90-day rate of change, breadth, active-address trend and (since 26 October 2026) how far price is from its 50-day average, so the score notices the last few weeks as well as the last 90 days; <b>Sentiment</b> blends Fear &amp; Greed, "
-    + "perp funding and the stablecoin ratio. Momentum and Sentiment never move the label — they set confidence and the watch notes.<br><br>"
+    "The headline regime comes from the <b>Momentum</b> dimension only, which reads roughly the last month or two: BULLISH above +0.20, BEARISH below −0.20, NEUTRAL in between, with a five-day "
+    + "confirmation so the label doesn't flip on noise. Momentum blends weekly RSI, 90-day rate of change, breadth, active-address trend and (since 26 October 2026) how far price is from its 50-day average, so the score notices the last few weeks as well as the last 90 days. "
+    + "(Until 13 November 2026 the label came from the long-term Trend score; history is recalculated with the new rule.) <b>Trend</b> blends the Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation "
+    + "counterweight; it gives the long-term background, the cycle phase and part of the confidence. <b>Sentiment</b> blends Fear &amp; Greed, "
+    + "perp funding and the stablecoin ratio. Trend and Sentiment never move the label — they set confidence and the watch notes. Budget advice also holds back when price is below its 50-day average and down more than 10% over 30 days, even if the label is BULLISH.<br><br>"
     + "The \"Supporting signals\" catalog lists 35 indicators considered for this model. Only the ones above feed the score; most of the rest are live "
     + "context. 8 of them have no free API (paid on-chain/derivatives providers only) — the daily reasoning routine web-searches for a reported figure "
     + "for those instead, shown with its source and date; on a day it finds nothing credible, that row reads \"not tracked\".<br><br>"

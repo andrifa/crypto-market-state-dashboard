@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T00:04:22.691755+00:00",
+  "generated": "2026-11-13T04:39:07.159469+00:00",
   "rows": 4441,
   "span": [
     "2014-09-17",
@@ -377,170 +377,170 @@
   "regime": {
     "30": {
       "Bull": {
-        "n": 2454,
-        "mean": 0.084,
-        "se": 0.0273,
-        "median": 0.0357,
-        "win": 0.577,
+        "n": 2221,
+        "mean": 0.0944,
+        "se": 0.0302,
+        "median": 0.0401,
+        "win": 0.582,
         "worst": -0.6032
       },
       "Neutral": {
-        "n": 514,
-        "mean": 0.0535,
-        "se": 0.0503,
-        "median": 0.0414,
-        "win": 0.586,
+        "n": 841,
+        "mean": 0.0444,
+        "se": 0.0361,
+        "median": 0.0405,
+        "win": 0.587,
         "worst": -0.5131
       },
       "Bear": {
-        "n": 1244,
-        "mean": 0.0304,
-        "se": 0.0291,
-        "median": 0.0209,
-        "win": 0.576,
-        "worst": -0.4789
+        "n": 1300,
+        "mean": 0.0103,
+        "se": 0.0264,
+        "median": 0.0089,
+        "win": 0.53,
+        "worst": -0.4843
       }
     },
     "90": {
       "Bull": {
-        "n": 2434,
-        "mean": 0.2929,
-        "se": 0.1154,
-        "median": 0.1518,
-        "win": 0.657,
+        "n": 2180,
+        "mean": 0.3245,
+        "se": 0.1271,
+        "median": 0.1794,
+        "win": 0.674,
         "worst": -0.6214
       },
       "Neutral": {
-        "n": 486,
-        "mean": 0.1982,
-        "se": 0.1368,
-        "median": 0.1856,
-        "win": 0.673,
-        "worst": -0.3371
+        "n": 841,
+        "mean": 0.2058,
+        "se": 0.1393,
+        "median": 0.1154,
+        "win": 0.609,
+        "worst": -0.5861
       },
       "Bear": {
-        "n": 1232,
-        "mean": 0.1012,
-        "se": 0.1174,
-        "median": -0.0118,
-        "win": 0.485,
-        "worst": -0.5861
+        "n": 1281,
+        "mean": 0.0259,
+        "se": 0.0855,
+        "median": -0.0397,
+        "win": 0.453,
+        "worst": -0.5691
       }
     },
     "180": {
       "Bull": {
-        "n": 2434,
-        "mean": 0.7205,
-        "se": 0.3318,
-        "median": 0.3771,
-        "win": 0.705,
+        "n": 2180,
+        "mean": 0.7789,
+        "se": 0.3607,
+        "median": 0.3966,
+        "win": 0.732,
         "worst": -0.6627
       },
       "Neutral": {
-        "n": 486,
-        "mean": 0.2064,
-        "se": 0.2433,
-        "median": 0.2648,
-        "win": 0.642,
+        "n": 829,
+        "mean": 0.3278,
+        "se": 0.2711,
+        "median": 0.3182,
+        "win": 0.678,
         "worst": -0.6067
       },
       "Bear": {
-        "n": 1142,
-        "mean": 0.263,
-        "se": 0.2627,
-        "median": 0.1561,
-        "win": 0.592,
+        "n": 1203,
+        "mean": 0.1403,
+        "se": 0.2291,
+        "median": -0.0271,
+        "win": 0.486,
         "worst": -0.6039
       }
     }
   },
   "conviction": {
     "low <40": {
-      "n": 283,
-      "mean": -0.0336,
-      "se": 0.2542,
-      "win": 0.562
+      "n": 139,
+      "mean": 0.0123,
+      "se": 0.2578,
+      "win": 0.568
     },
     "mid 40-60": {
-      "n": 324,
-      "mean": -0.0377,
-      "se": 0.2215,
-      "win": 0.537
+      "n": 357,
+      "mean": 0.1397,
+      "se": 0.3017,
+      "win": 0.574
     },
     "high >=60": {
-      "n": 2986,
-      "mean": 0.2071,
-      "se": 0.1047,
-      "win": 0.632
+      "n": 2779,
+      "mean": 0.2255,
+      "se": 0.1032,
+      "win": 0.651
     }
   },
   "whipsaw": {
-    "transitions": 37,
-    "per_year": 3.04,
-    "median_run_days": 46
+    "transitions": 72,
+    "per_year": 5.92,
+    "median_run_days": 28
   },
   "turns": {
     "n": 6,
     "detected": 6,
     "rate": 1.0,
-    "median_lag_days": 88,
+    "median_lag_days": 53,
     "detail": [
       {
         "kind": "top",
         "date": "2017-12-16",
         "price": 19497,
         "detected": true,
-        "lag_days": 107
+        "lag_days": 53
       },
       {
         "kind": "bottom",
         "date": "2018-12-15",
         "price": 3236,
         "detected": true,
-        "lag_days": 130
+        "lag_days": 69
       },
       {
         "kind": "top",
         "date": "2019-06-26",
         "price": 13016,
         "detected": true,
-        "lag_days": 138
+        "lag_days": 91
       },
       {
         "kind": "bottom",
         "date": "2020-03-12",
         "price": 4970,
         "detected": true,
-        "lag_days": 66
+        "lag_days": 37
       },
       {
         "kind": "top",
         "date": "2021-11-08",
         "price": 67566,
         "detected": true,
-        "lag_days": 42
+        "lag_days": 29
       },
       {
         "kind": "bottom",
         "date": "2022-11-21",
         "price": 15787,
         "detected": true,
-        "lag_days": 69
+        "lag_days": 54
       }
     ]
   },
   "phase_agreement": {
     "days": 4441,
-    "agree_rate": 0.73,
-    "wrong_way_rate": 0.225
+    "agree_rate": 0.789,
+    "wrong_way_rate": 0.2
   },
   "decision": {
-    "flat_mean_fwd180": 0.5303,
-    "regime_weighted_mean_fwd180": 0.6119,
-    "uplift_pct_points": 8.16,
-    "equity_strategy_x": 176.7,
+    "flat_mean_fwd180": 0.5077,
+    "regime_weighted_mean_fwd180": 0.6176,
+    "uplift_pct_points": 10.99,
+    "equity_strategy_x": 222.4,
     "equity_buyhold_x": 156.37,
-    "strategy_maxdd": -0.649,
+    "strategy_maxdd": -0.643,
     "buyhold_maxdd": -0.834
   },
   "scorecard": {
@@ -550,90 +550,90 @@
     ],
     "days": 4441,
     "cycles": 2.9,
-    "transitions": 37,
-    "per_year": 3.04,
+    "transitions": 72,
+    "per_year": 5.92,
     "directional": {
       "30": {
-        "directional_accuracy": 0.525,
-        "bull_up_rate": 0.577,
-        "bear_down_rate": 0.424,
+        "directional_accuracy": 0.541,
+        "bull_up_rate": 0.582,
+        "bear_down_rate": 0.47,
         "base_up_rate": 0.566,
-        "edge": -0.041,
-        "n": 3698,
-        "n_effective": 123.3
+        "edge": -0.025,
+        "n": 3521,
+        "n_effective": 117.4
       },
       "90": {
-        "directional_accuracy": 0.609,
-        "bull_up_rate": 0.657,
-        "bear_down_rate": 0.515,
+        "directional_accuracy": 0.627,
+        "bull_up_rate": 0.674,
+        "bear_down_rate": 0.547,
         "base_up_rate": 0.589,
-        "edge": 0.021,
-        "n": 3666,
-        "n_effective": 40.7
+        "edge": 0.038,
+        "n": 3461,
+        "n_effective": 38.5
       },
       "180": {
-        "directional_accuracy": 0.61,
-        "bull_up_rate": 0.705,
-        "bear_down_rate": 0.408,
+        "directional_accuracy": 0.654,
+        "bull_up_rate": 0.732,
+        "bear_down_rate": 0.514,
         "base_up_rate": 0.644,
-        "edge": -0.034,
-        "n": 3576,
-        "n_effective": 19.9
+        "edge": 0.011,
+        "n": 3383,
+        "n_effective": 18.8
       },
       "365": {
-        "directional_accuracy": 0.542,
-        "bull_up_rate": 0.691,
-        "bear_down_rate": 0.174,
+        "directional_accuracy": 0.582,
+        "bull_up_rate": 0.738,
+        "bear_down_rate": 0.255,
         "base_up_rate": 0.713,
-        "edge": -0.171,
-        "n": 3416,
-        "n_effective": 9.4
+        "edge": -0.13,
+        "n": 3213,
+        "n_effective": 8.8
       },
       "730": {
-        "directional_accuracy": 0.533,
-        "bull_up_rate": 0.768,
-        "bear_down_rate": 0.033,
+        "directional_accuracy": 0.571,
+        "bull_up_rate": 0.811,
+        "bear_down_rate": 0.12,
         "base_up_rate": 0.828,
-        "edge": -0.295,
-        "n": 3071,
-        "n_effective": 4.2
+        "edge": -0.257,
+        "n": 2976,
+        "n_effective": 4.1
       },
       "1095": {
-        "directional_accuracy": 0.643,
+        "directional_accuracy": 0.632,
         "bull_up_rate": 0.996,
         "bear_down_rate": 0.0,
         "base_up_rate": 0.998,
-        "edge": -0.355,
-        "n": 2768,
+        "edge": -0.366,
+        "n": 2734,
         "n_effective": 2.5
       }
     },
     "per_run": {
-      "n_runs": 19,
-      "correct": 10,
-      "accuracy": 0.526,
+      "n_runs": 38,
+      "correct": 13,
+      "accuracy": 0.342,
       "bull": {
-        "n": 10,
-        "accuracy": 0.7,
-        "avg_move": 2.447
+        "n": 19,
+        "accuracy": 0.368,
+        "avg_move": 1.699
       },
       "bear": {
-        "n": 9,
-        "accuracy": 0.333,
-        "avg_move": 0.108
+        "n": 19,
+        "accuracy": 0.316,
+        "avg_move": 0.022
       }
     },
-    "ordering_horizons_ok": "2/3",
-    "phase_agree_rate": 0.73,
-    "phase_wrong_rate": 0.225,
+    "ordering_horizons_ok": "3/3",
+    "phase_agree_rate": 0.789,
+    "phase_wrong_rate": 0.2,
     "turn_detection_rate": 1.0,
     "turns_detected": "6/6",
-    "turn_median_lag_days": 88,
-    "decision_uplift_pp": 8.16,
-    "strategy_x": 176.7,
+    "turn_median_lag_days": 53,
+    "decision_uplift_pp": 10.99,
+    "strategy_x": 222.4,
     "buyhold_x": 156.37,
-    "strategy_maxdd": -0.649,
+    "strategy_maxdd": -0.643,
     "buyhold_maxdd": -0.834,
-    "headline": "Over 4441 days (2014-09-17\u20132026-11-13, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 88 days after the price extreme. For shorter calls, 90-day directional accuracy is 61% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 52%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +8.2 points and cut the worst drawdown from 83% to 65%. Small sample (~2.9 cycles) \u2014 direction, not precision."
+    "headline": "Over 4441 days (2014-09-17\u20132026-11-13, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 53 days after the price extreme. For shorter calls, 90-day directional accuracy is 63% (BULLISH\u2192up 67%, BEARISH\u2192down/flat 55%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +11.0 points and cut the worst drawdown from 83% to 64%. Small sample (~2.9 cycles) \u2014 direction, not precision."
   }
 }
