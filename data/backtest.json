@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T04:39:07.159469+00:00",
+  "generated": "2026-11-13T04:40:46.993716+00:00",
   "rows": 4441,
   "span": [
     "2014-09-17",
@@ -184,17 +184,17 @@
     "funding": {
       "30": {
         "rho": 0.005,
-        "p": 0.786,
+        "p": 0.783,
         "n": 2563
       },
       "90": {
         "rho": 0.011,
-        "p": 0.5961,
+        "p": 0.5981,
         "n": 2503
       },
       "180": {
         "rho": -0.032,
-        "p": 0.1166,
+        "p": 0.1161,
         "n": 2413
       }
     },
@@ -220,7 +220,7 @@
     "drawdown": {
       "30": {
         "rho": 0.011,
-        "p": 0.4466,
+        "p": 0.4467,
         "n": 4411
       },
       "90": {
@@ -230,14 +230,14 @@
       },
       "180": {
         "rho": -0.006,
-        "p": 0.7033,
+        "p": 0.7032,
         "n": 4261
       }
     },
     "pi_gap": {
       "30": {
         "rho": 0.032,
-        "p": 0.0429,
+        "p": 0.0427,
         "n": 4062
       },
       "90": {
@@ -259,7 +259,7 @@
       },
       "90": {
         "rho": 0.016,
-        "p": 0.2962,
+        "p": 0.2948,
         "n": 4079
       },
       "180": {
@@ -271,7 +271,7 @@
     "bb_width": {
       "30": {
         "rho": 0.022,
-        "p": 0.1443,
+        "p": 0.1434,
         "n": 4392
       },
       "90": {
@@ -288,12 +288,12 @@
     "puell": {
       "30": {
         "rho": 0.041,
-        "p": 0.0071,
+        "p": 0.0072,
         "n": 4212
       },
       "90": {
         "rho": 0.024,
-        "p": 0.1228,
+        "p": 0.1225,
         "n": 4152
       },
       "180": {
@@ -313,14 +313,14 @@
         0.1328
       ],
       "90": [
-        0.0925,
+        0.0924,
         0.1493,
         0.1331,
         0.2669,
         0.483
       ],
       "180": [
-        0.33,
+        0.3299,
         0.1469,
         0.4475,
         0.5285,
@@ -344,7 +344,7 @@
       ],
       "180": [
         0.1805,
-        0.2309,
+        0.2308,
         0.4219,
         0.7022,
         1.0029
@@ -354,21 +354,21 @@
       "30": [
         0.0421,
         -0.0,
-        0.0204,
+        0.0203,
         0.0672,
         0.0616
       ],
       "90": [
         0.0507,
         0.1005,
-        0.1653,
+        0.1652,
         0.1748,
         0.2067
       ],
       "180": [
         0.1365,
         0.4035,
-        0.4532,
+        0.4531,
         0.3448,
         0.2745
       ]
@@ -469,7 +469,7 @@
     },
     "high >=60": {
       "n": 2779,
-      "mean": 0.2255,
+      "mean": 0.2256,
       "se": 0.1032,
       "win": 0.651
     }
@@ -538,8 +538,8 @@
     "flat_mean_fwd180": 0.5077,
     "regime_weighted_mean_fwd180": 0.6176,
     "uplift_pct_points": 10.99,
-    "equity_strategy_x": 222.4,
-    "equity_buyhold_x": 156.37,
+    "equity_strategy_x": 219.02,
+    "equity_buyhold_x": 150.43,
     "strategy_maxdd": -0.643,
     "buyhold_maxdd": -0.834
   },
@@ -630,8 +630,8 @@
     "turns_detected": "6/6",
     "turn_median_lag_days": 53,
     "decision_uplift_pp": 10.99,
-    "strategy_x": 222.4,
-    "buyhold_x": 156.37,
+    "strategy_x": 219.02,
+    "buyhold_x": 150.43,
     "strategy_maxdd": -0.643,
     "buyhold_maxdd": -0.834,
     "headline": "Over 4441 days (2014-09-17\u20132026-11-13, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 53 days after the price extreme. For shorter calls, 90-day directional accuracy is 63% (BULLISH\u2192up 67%, BEARISH\u2192down/flat 55%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +11.0 points and cut the worst drawdown from 83% to 64%. Small sample (~2.9 cycles) \u2014 direction, not precision."

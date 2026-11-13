@@ -1,8 +1,44 @@
 {
   "date": "2026-11-13",
-  "generated": "2026-11-13T00:06:59Z",
-  "price": 71514,
+  "generated": "2026-11-13T04:43:46Z",
+  "price": 68799,
   "events": [
+    {
+      "id": "round:70000:down",
+      "type": "level_cross",
+      "severity": "high",
+      "title": "BTC fell below $70,000",
+      "facts": {
+        "level": 70000,
+        "direction": "down",
+        "price": 68799,
+        "previous_close": 71460
+      },
+      "repeat": false
+    },
+    {
+      "id": "low_30d:down",
+      "type": "range_break",
+      "severity": "medium",
+      "title": "BTC broke below its 30-day low ($71,460)",
+      "facts": {
+        "level": 71460,
+        "direction": "down",
+        "price": 68799
+      },
+      "repeat": false
+    },
+    {
+      "id": "regime:Neutral",
+      "type": "label_change",
+      "severity": "high",
+      "title": "Headline label changed from BULLISH to NEUTRAL",
+      "facts": {
+        "before": "BULLISH",
+        "after": "NEUTRAL"
+      },
+      "repeat": false
+    },
     {
       "id": "fng:extreme_fear",
       "type": "mood",
@@ -19,27 +55,27 @@
   "messages": [
     {
       "audience": "general",
-      "text": "**Daily Market Summary · 13 November 2026**\n\n**Alert**\n• Fear & Greed fell into extreme fear (20, from 28 yesterday). The mood is at its most worried level, so expect users to be cautious this week.\n\n**Snapshot**\n• Bitcoin about $71,514, down about 5.7% over 7 days and about 12% over 30 days.\n• Headline: BULLISH, medium confidence (long-run uptrend still counts), but price has slipped about 2% under its 200-day average ($73,058).\n• Fear & Greed 20 (extreme fear), while many people are still betting on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin fell below $72,000 on the day Nvidia's CEO Jensen Huang stepped down and US crypto-related and tech stocks fell broadly (PANews); no other single cause is reported.\n• About $751M of futures bets were forced to close in 24 hours, mostly bets on a rise (PANews). US Bitcoin funds saw about $487M leave on the latest day.\n\n**Short-term outlook (next 1-7 days)**\nSoft to neutral: price has been under its 50-day average for 23 days.\n• Turns up: a close above $73,058 (200-day average), then $80,625 (50-day average).\n• Sideways: between $69,500 and $73,058; a normal week swings about $4,069.\n• Turns down: a close below $69,500, then $68,108 (200-week average) and $62,819 (90-day low).\n• Rally watch: drop window open (since 11 November). A rally signal needs about $81,912; a fresh drop signal comes below about $69,776.\n• Dates: Russia crypto trading from 22 November, OKXICE launch 23 November, Fed meeting 8 December.\n\n**News that matters**\n• US DOJ froze about $2.7B stolen from Binance; Binance says affected assets are covered (Bloomberg via PANews): short term, positive.\n• Nvidia CEO exit knocked tech stocks (PANews): short term, negative.\n• US Treasury plans bank-style checks on stablecoin issuers (PANews): medium term, small negative.\n\n**Altcoins & themes**\n• Big institutions keep building: DTCC plans to connect tokenization to Solana, BNY adds staking (PANews); SOL -2.1% in 24h.\n• New on Reku: Babylon (BABY): the project says Aave's community voted to accept native Bitcoin as collateral through Babylon.\n\n**Bigger picture**\n• Next month: mixed; needs $80,625 to firm up. 3-6 months: still leans up, but needs a close back above $73,058; $68,108 is the next floor.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+      "text": "**Daily Market Summary · 13 November 2026**\n**Alert**\n• BTC fell below $70,000: price is now about $68,799, right on its 200-week average ($68,118), the last big floor.\n• BTC broke below its 30-day low ($71,460): the month-long slide has made a new low.\n• Headline label changed from BULLISH to NEUTRAL: the headline now reads the last month or two, which is mixed; the long-term trend is still up.\n• Fear & Greed fell into extreme fear (20).\n**Snapshot**\n• Bitcoin about $68,799, down about 9.3% in 7 days. Headline NEUTRAL, low confidence. Fear & Greed 20 (extreme fear).\n• Price has closed under its 50-day average for 23 days and is about 6% under its 200-day average.\n**What happened (last 24h)**\n• Bitcoin fell below $69,000 (PANews); no single cause is reported beyond the broad tech-stock drop after Nvidia's CEO stepped down.\n• About $1.23 billion of bets on a rise were forced to close in 24 hours (PANews).\n**Short-term outlook (next 1-7 days)**\n• Lean: soft to neutral, the mood is very fearful.\n• Turns up: a close above $70,750 (top of a typical week's swing), then $73,044 (200-day average).\n• Sideways: $68,118 to $70,750; a normal week swings about $4,069.\n• Turns down: a close below $68,118 (200-week average), then $62,819 (90-day low).\n• Rally watch: drop window open; a rally signal needs about $81,912, a fresh drop signal comes below about $69,776.\n• Next scheduled event: Fed meeting on 8 December.\n**News that matters**\n• US DOJ froze about $2.7 billion stolen from Binance; Binance says affected assets are covered (Bloomberg via PANews): short term, small positive.\n• Nvidia CEO stepped down, tech and crypto-related stocks fell (PANews): short term, small negative.\n• US Treasury plans bank-style checks on stablecoin issuers (PANews): medium term, small negative.\n**Altcoins & themes**\n• The tech-stock shock is weighing on the big coins: ETH about -6% and SOL about -6% in 24h (CoinGecko).\n• Babylon (BABY, Baru on Reku): the project says Aave's community voted to accept native Bitcoin as collateral through Babylon.\n**Bigger picture**\n• Next month is mixed and 3-6 months still leans up but weaker; a close back above $73,044 (200-day average) would put the recovery back on track, closes below $68,118 would weaken it.\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
     },
     {
       "audience": "digital",
-      "text": "**Paid / Digital · 13 Nov**\n• Hold trader-targeted spend and keep a reserve: a Rally watch drop window is open and Bitcoin is about 2% under its 200-day average ($73,058). No step-up until a close back above it, and a bigger push only above $80,625.\n• Apply a d30 ROI stop-loss on running campaigns while the drop window is open.\n• Lean new-user ads on trust and learning (Fear & Greed 20), and keep rally creatives ready in case price reaches about $81,912."
+      "text": "**Paid:** hold trader-targeted spend and keep a reserve while the drop window is open and Bitcoin tests its 200-week average ($68,118). Apply the d30 ROI stop-loss to running campaigns. Do not step up trader spend until a close back above $73,044 (200-day average); keep rally creatives ready in case a rally signal comes near $81,912."
     },
     {
       "audience": "social",
-      "text": "**Social & content · 13 Nov**\n• Keep the normal rhythm with calm, factual posts: Bitcoin is about $71,514, down about 12% in a month.\n• Explain why crypto fell with tech stocks: PANews reported Bitcoin under $72,000 the day Nvidia's CEO stepped down.\n• Trust piece: the US DOJ froze about $2.7B stolen from Binance and Binance says affected assets are covered (Bloomberg via PANews)."
+      "text": "**Social:** keep the normal rhythm with calm, factual posts. Explain why crypto fell with tech stocks after Nvidia's CEO stepped down (PANews), and add a plain explainer on why about $1.23 billion of borrowed-money bets were forced to close in a day. The DOJ freeze of $2.7 billion stolen from Binance (Bloomberg via PANews) is a good trust story."
     },
     {
       "audience": "crm",
-      "text": "**CRM · 13 Nov**\n• Send existing holders a calm market note (Bitcoin about 12% lower over the month, just under its 200-day average) with a link to an explainer and no push to trade.\n• Send a security reminder on fake wallet messages: SafePal order data was used in a phishing scam (Pluang) and Trezor reported tampered devices (PANews).\n• Keep welcome and education journeys running; hold deposit promotions while the drop window is open."
+      "text": "**CRM:** send existing holders a calm note that Bitcoin is about 16% lower over the month and testing its 200-week average, with an explainer link and no push to trade. Add a security reminder on fake wallet letters (PANews on the SafePal phishing scam). Keep lifecycle journeys, pause deposit promotions."
     },
     {
       "audience": "seo",
-      "text": "**SEO · 13 Nov**\n• Why Bitcoin is falling (High): Pintu ('Kenapa Bitcoin Turun? Faktor Makro di Balik Koreksi November 2026') and Pluang both covered it; refresh the 'why is Bitcoin down today' page, likely to draw searches after the fall under $72,000.\n• December Fed meeting (High): Pintu has an FOMC December explainer; publish a plain 'what the 8 December Fed meeting means for crypto' page.\n• Tokenized stocks (High): Pintu and Pluang both wrote on OKX-ICE, Binance and Hyperliquid stock trading; refresh the guide before OKXICE launches on 23 November.\nIndodax could not be read today. Check against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+      "text": "**SEO:** refresh 'why is Bitcoin down' and 'Bitcoin price today': likely to draw searches because Bitcoin fell under $69,000; Pintu and Pluang are both covering the drop. Publish or refresh a 'December Fed meeting and crypto' explainer ahead of 8 December (Pintu has one), and the tokenized stocks guide (Pintu and Pluang covered it). Check against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
     },
     {
       "audience": "altcoin",
-      "text": "**Altcoins · 13 Nov**\n• Tech-stock shock: Nvidia's CEO exit hit US tech and crypto-related stocks (PANews); BTC -3.5%, ETH -1.9%, SOL -2.1% in 24h.\n• Binance hack recovery: the US DOJ froze about $2.7B of stolen funds (Bloomberg via PANews); BNB -3.4%.\n• New on Reku: Babylon (BABY): according to the project, Aave's community voted to accept native Bitcoin as collateral through Babylon. DODO is up about 22% in 24h with no stated reason (project X quiet since 30 October)."
+      "text": "**Altcoins:** the tech-stock shock is the main theme; ETH and SOL are both about 6% lower in 24h (CoinGecko), and PANews gives no single cause beyond the broad drop. Binance-linked news: the US DOJ froze about $2.7 billion stolen from Binance (Bloomberg via PANews). On Reku's new listings, Babylon (BABY) says Aave's community voted to accept native Bitcoin as collateral through its vaults, according to the project and PANews."
     }
   ],
   "posted": [
