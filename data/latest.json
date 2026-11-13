@@ -1,91 +1,87 @@
 {
-  "updated_utc": "2026-11-12T00:04:40Z",
-  "date": "2026-11-12",
-  "price_btc": 74045,
+  "updated_utc": "2026-11-13T00:04:21Z",
+  "date": "2026-11-13",
+  "price_btc": 71514,
   "regime": "Bull",
   "headline": "BULLISH",
-  "headline_tag": "long-run uptrend holds, but price sits right on its key floor",
+  "headline_tag": "long-run uptrend still counts, but price slipped under its key line",
   "direction": "weakening",
-  "sentiment_band": "Fear",
-  "sentiment_label": "Fear",
-  "conviction": 69,
+  "sentiment_band": "Extreme Fear",
+  "sentiment_label": "Extreme Fear",
+  "conviction": 61,
   "conviction_level": "MEDIUM",
   "cycle": "mid-bull",
   "cycle_label": "mid uptrend",
   "action": {
     "title": "SCALE UP acquisition budget",
-    "detail": "The model's long-run posture is still to grow acquisition, because the 3-6 month uptrend holds, but today it should be applied carefully. A Rally watch drop window opened yesterday, Bitcoin is down about 11% in a month, and price sits only about 1% above its 200-day average ($73,101). In practice: keep acquisition running in small, easy-to-pause steps, hold trader-targeted promotions and keep a budget reserve, and lead with trust and education. Step up only after a close back above $80,937 (the 50-day average); a close under $73,101 is the cue to shift budget toward keeping existing users. This is a budget posture, not trading advice."
+    "detail": "The model's long-run posture is still to grow acquisition, but this is a week to apply it carefully rather than push. A Rally watch drop window is open, Bitcoin is down about 12% in a month and now sits just under its 200-day average, and the mood is in extreme fear. Keep acquisition running at a steady pace with trust and education angles, hold trader-focused promotions and keep a reserve; speed up only if price wins back $73,058 and, for a bigger push, $80,625."
   },
   "reasons": [
-    "BTC ($74,045) is only about 1% above its 200-day average ($73,101), which is still rising.",
-    "Up about 18% over 90 days; about 96% of those days closed above the long-term average.",
-    "But down about 11% in 30 days; 22 days under the 50-day average ($80,937).",
-    "Fear & Greed at 28 (fear); MSCI dropping Strategy and a likely December Fed hike weigh on the month."
+    "The 200-day average ($73,058) is still rising, about 5% over 90 days.",
+    "Up about 13% over 90 days; about 94% of those days closed above the long-term average.",
+    "But BTC ($71,514) is now about 2% under that average and down about 12% in 30 days.",
+    "Fear & Greed at 20 (extreme fear); 23 days under the 50-day average ($80,625)."
   ],
-  "watch": "Bitcoin is sitting about 1% above its 200-day average, the main line holding up the long-run uptrend, while a Rally watch drop window is open and a December Fed rate rise looks likely. A close below $73,101 would put that uptrend in question, while a close back above $75,750 would ease the pressure.",
+  "watch": "Bitcoin has slipped about 2% under its 200-day average, the line holding up the long-run uptrend, while a Rally watch drop window is open and many people are still betting on a rise with borrowed money. A close back above $73,058 would ease the pressure, while a close below $69,500 would turn the week clearly down and put $68,108 (the 200-week average) in view.",
   "analysis": [
-    "Bottom line: the long-run uptrend still holds, but the coming week looks soft and Bitcoin is sitting just above the line that matters most. At about $74,045 it has closed under its 50-day average for 22 days, sits about 9% below it and about 12% below its 30-day high, and Fear & Greed reads 28 (fear); a Rally watch drop window opened yesterday. A normal week swings about $3,492, so a close above $75,750 (top of a typical week's swing) would ease the pressure, a close below $73,796 (the 30-day low) would turn the week clearly down, and in between it stays choppy. This is a week for calm, safety-first messaging rather than promotions.",
-    "The next month is mixed and leaning softer. The 90-day numbers still point up, with price about 18% higher and about 96% of those days closing above the long-term average, but the last 30 days are down about 11%, and news is taking some more off: MSCI said it will drop Strategy and Metaplanet from its global indexes after 30 November, and a December Fed rate rise is now described as all but certain (PANews). Price must win back $80,937 (the 50-day average) for the month to firm up, and only above $86,603 (the 90-day high) is there real room to climb; while it stays under that average, the month keeps fading, so hold bigger campaign pushes.",
-    "The 3-6 month picture still leans up at a moderate strength. Price is only about 1% above its 200-day average, which is still rising about 5% over 90 days, and news is adding a little: Russia's central bank said its exchanges may start crypto trading from 22 November and Deutsche Bank launched crypto custody for institutions (PANews). The recovery stays intact while price holds above $73,101 (the 200-day average); if that goes, $67,931 (the 200-week average) is the next floor, and $124,753 (the all-time high) stays the far marker. A close below the 200-day average would weaken this picture and be the moment to shift budget toward keeping existing users."
+    "Bottom line: the long-run picture still leans up, but the coming week looks soft and Bitcoin has just slipped under the line that matters most. At about $71,514 it has closed under its 50-day average for 23 days, sits about 11% below it and about 15% below its 30-day high, and Fear & Greed reads 20 (extreme fear); PANews reported the fall below $72,000 on the day Nvidia's CEO stepped down and US tech stocks dropped. A normal week swings about $4,069, so a close above $73,058 (the 200-day average) would ease the pressure, a close below $69,500 (bottom of a typical week's swing) would turn the week clearly down, and in between it stays choppy. Calm, safety-first messaging fits this week better than promotions.",
+    "The next month is mixed. The 90-day numbers still point up, with price about 13% higher and about 94% of those days closing above the long-term average, but the last 30 days are down about 12%, and a lot of people are still betting on a rise with borrowed money, which can make dips sharper. Price must win back $80,625 (the 50-day average) for the month to firm up, and only above $86,603 (the 90-day high) is there real room to climb; while it stays under that average, hold bigger campaign pushes until after the 8 December Fed meeting.",
+    "The 3-6 month picture still leans up at a moderate strength, because the 200-day average itself is still rising (about 5% over 90 days), but price is now about 2% under it. For the recovery to stay intact, Bitcoin needs to close back above $73,058 (the 200-day average); if it keeps sliding, $68,108 (the 200-week average) is the next floor, and $124,753 (the all-time high) stays the far marker. A run of closes below the 200-day average would weaken this picture and be the moment to shift budget toward keeping existing users."
   ],
   "team_notes": {
-    "marketing": "Hold promotional pressure and lead with safety, trust and explainer content: a Rally watch drop window is open, Bitcoin sits just above its 200-day average after a month-long slide, though the long-run uptrend still holds."
+    "marketing": "Hold promotional pressure and lead with safety, trust and explainer content: a Rally watch drop window is open and Bitcoin has slipped just under its 200-day average after a month-long slide, though the long-run uptrend still counts."
   },
   "changed_today": null,
   "levels": {
     "high_30d": 84012,
-    "low_30d": 73796,
+    "low_30d": 71460,
     "high_90d": 86603,
     "low_90d": 62819,
-    "ma_50": 80937,
-    "ma_200": 73101,
-    "ma_200w": 67931,
+    "ma_50": 80625,
+    "ma_200": 73058,
+    "ma_200w": 68108,
     "ath": 124753
   },
   "scenarios": {
-    "price": 74045,
+    "price": 71514,
     "up": {
-      "level": 80937,
-      "name": "50-day average",
+      "level": 73058,
+      "name": "200-day average",
       "next": [
+        {
+          "level": 80625,
+          "name": "50-day average"
+        },
         {
           "level": 84012,
           "name": "30-day high"
-        },
-        {
-          "level": 86603,
-          "name": "90-day high"
         }
       ]
     },
     "down": {
-      "level": 73796,
-      "name": "30-day low",
+      "level": 68108,
+      "name": "200-week average",
       "next": [
         {
-          "level": 73101,
-          "name": "200-day average"
-        },
-        {
-          "level": 67931,
-          "name": "200-week average"
+          "level": 62819,
+          "name": "90-day low"
         }
       ]
     },
     "range": [
-      73796,
-      80937
+      68108,
+      73058
     ],
     "short": {
-      "typical_week_swing": 3492,
-      "low": 73796,
-      "high": 75750,
+      "typical_week_swing": 4069,
+      "low": 69500,
+      "high": 73058,
       "up": {
-        "level": 75750,
-        "name": "top of a typical week's swing",
+        "level": 73058,
+        "name": "200-day average",
         "next": [
           {
-            "level": 80937,
+            "level": 80625,
             "name": "50-day average"
           },
           {
@@ -95,16 +91,16 @@
         ]
       },
       "down": {
-        "level": 73796,
-        "name": "30-day low",
+        "level": 69500,
+        "name": "bottom of a typical week's swing",
         "next": [
           {
-            "level": 73101,
-            "name": "200-day average"
+            "level": 68108,
+            "name": "200-week average"
           },
           {
-            "level": 67931,
-            "name": "200-week average"
+            "level": 62819,
+            "name": "90-day low"
           }
         ]
       }
@@ -112,22 +108,22 @@
   },
   "rally_watch": {
     "state": "drop",
-    "ret_7d": -0.0268,
+    "ret_7d": -0.0571,
     "threshold": 0.08,
     "window_days": 14,
-    "needs_up": 82175,
-    "needs_down": 70001,
+    "needs_up": 81912,
+    "needs_down": 69776,
     "last_rally": {
       "date": "2026-09-21",
-      "days_ago": 52
+      "days_ago": 53
     },
     "last_drop": {
       "date": "2026-11-11",
-      "days_ago": 1
+      "days_ago": 2
     },
     "episode": {
       "date": "2026-11-11",
-      "days_ago": 1
+      "days_ago": 2
     },
     "stats": {
       "generated": "2026-10-19",
@@ -377,55 +373,55 @@
     }
   },
   "recent": {
-    "vs_ma50_pct": -0.0851,
-    "days_below_ma50": 22,
-    "ret_30d": -0.1089,
-    "from_high_30d": -0.1186
+    "vs_ma50_pct": -0.113,
+    "days_below_ma50": 23,
+    "ret_30d": -0.1232,
+    "from_high_30d": -0.1488
   },
   "scores": {
-    "sentiment": -0.225,
-    "momentum": 0.1,
-    "trend": 0.412
+    "sentiment": -0.01,
+    "momentum": 0.023,
+    "trend": 0.331
   },
   "context": {
-    "mayer_multiple": 1.013,
-    "ma200_slope_90d": 0.0518,
-    "ma_200w_multiple": 1.09,
-    "drawdown_from_ath": -0.406,
+    "mayer_multiple": 0.979,
+    "ma200_slope_90d": 0.0531,
+    "ma_200w_multiple": 1.05,
+    "drawdown_from_ath": -0.427,
     "rsi_weekly": 48.5,
-    "active_addr_ratio": 1.095,
-    "puell_multiple": 0.878,
-    "fear_greed": 28.0,
-    "funding_z": -0.11,
-    "vol_percentile": 0.34,
-    "bollinger_width": 0.1274,
-    "btc_dominance": 59.9,
-    "ma_cross": 0.1072,
-    "roc_90d": 0.1758,
-    "breadth_90d": 0.956,
-    "ssr": 5.12,
-    "pi_cycle_gap": -0.4946,
-    "open_interest_usd": 7148403197.5911,
-    "long_short_ratio": 2.6483,
-    "dvol": 38.89,
-    "us_10y_yield": 4.998,
-    "vix": 17.49,
+    "active_addr_ratio": 1.007,
+    "puell_multiple": 0.907,
+    "fear_greed": 20.0,
+    "funding_z": 1.72,
+    "vol_percentile": 0.39,
+    "bollinger_width": 0.1491,
+    "btc_dominance": 59.4,
+    "ma_cross": 0.1036,
+    "roc_90d": 0.1347,
+    "breadth_90d": 0.944,
+    "ssr": 5.14,
+    "pi_cycle_gap": -0.4939,
+    "open_interest_usd": 7225625852.832566,
+    "long_short_ratio": 3.1771,
+    "dvol": 40.08,
+    "us_10y_yield": 5.103,
+    "vix": 18.7,
     "fed_funds_rate": 3.63,
     "etf_daily_net_flow_usd": -487067411.5,
     "etf_cum_net_flow_usd": 57351128200.823,
-    "public_company_btc_treasury": 1238736.0,
+    "public_company_btc_treasury": 1238565.0,
     "next_fomc_meeting": "2026-12-08"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 12 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (long-run uptrend holds, but price\n    sits right on its key floor)\n    Momentum weakening · Sentiment: Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend intact, but apply it carefully: a\n    Rally watch drop window is open, Bitcoin is\n    down about 11% in a month, and price is only\n    about 1% above its 200-day average. Hold\n    trader promotions, lead with trust, and speed\n    up only above $80,937.\n\n  Why:\n  • BTC ($74,045) is only about 1% above its\n    200-day average ($73,101), which is still\n    rising.\n  • Up about 18% over 90 days; about 96% of those\n    days closed above the long-term average.\n  • But down about 11% in 30 days; 22 days under\n    the 50-day average ($80,937).\n  • Fear & Greed at 28 (fear); MSCI dropping\n    Strategy and a likely December Fed hike weigh\n    on the month.\n\n  Changed today: —\n  Watch:\n    Bitcoin is sitting about 1% above its 200-day\n    average, the main line holding up the long-run\n    uptrend, while a Rally watch drop window is\n    open and a December Fed rate rise looks\n    likely. A close below $73,101 would put that\n    uptrend in question, while a close back above\n    $75,750 would ease the pressure.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 13 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BULLISH (long-run uptrend still counts, but\n    price slipped under its key line)\n    Momentum weakening · Sentiment: Extreme Fear\n    Phase: mid uptrend\n    Signal confidence: MEDIUM\n\n  ➔ BUDGET ACTION: SCALE UP acquisition budget\n    Uptrend still counts, but apply it carefully:\n    a Rally watch drop window is open, Bitcoin is\n    down about 12% in a month and now sits about\n    2% under its 200-day average. Hold trader\n    promotions, lead with trust, and speed up only\n    above $73,058.\n\n  Why:\n  • The 200-day average ($73,058) is still rising,\n    about 5% over 90 days.\n  • Up about 13% over 90 days; about 94% of those\n    days closed above the long-term average.\n  • But BTC ($71,514) is now about 2% under that\n    average and down about 12% in 30 days.\n  • Fear & Greed at 20 (extreme fear); 23 days\n    under the 50-day average ($80,625).\n\n  Changed today: —\n  Watch:\n    Bitcoin has slipped about 2% under its 200-day\n    average, the line holding up the long-run\n    uptrend, while a Rally watch drop window is\n    open and many people are still betting on a\n    rise with borrowed money. A close back above\n    $73,058 would ease the pressure, while a close\n    below $69,500 would turn the week clearly down\n    and put $68,108 (the 200-week average) in\n    view.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.9 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
     "liquidation_24h_usd": {
-      "value": 494000000,
-      "source_name": "PANews (citing CoinGlass)",
-      "source_url": "https://www.panews.io/articles/01a1cb3a-f34f-71ac-8f6c-1a010362e5d5",
-      "as_of": "2026-11-11",
-      "note": "Market-wide; about $364M were bets on a rise."
+      "value": 751000000,
+      "source_name": "PANews",
+      "source_url": "https://www.panews.io/articles/01a1d061-4f1e-7275-8b7e-a3c128ac4251",
+      "as_of": "2026-11-12",
+      "note": "Market-wide futures; mostly bets on a rise."
     },
     "exchange_netflow_7d_btc": null,
     "onchain_volume_usd": null,
@@ -434,125 +430,128 @@
     "lth_sth_supply_ratio": null,
     "headlines": [
       {
-        "title": "MSCI Global Indexes to Drop Strategy, Metaplanet and Others, Place SharpLink on Watchlist",
-        "url": "https://www.panews.io/articles/01a1cd08-8488-70c4-9406-4e02fec1bce2",
+        "title": "Nvidia: Jensen Huang Steps Down Effective Immediately, Colette Kress Appointed Interim CEO",
+        "url": "https://www.panews.io/articles/01a1d006-d64c-761e-a056-79975975e5c6",
         "source": "PANews",
         "date": "2026-11-12"
       },
       {
-        "title": "\"Fed Whisperer\": December Rate Hike All but Certain, the Question Is the Pace",
-        "url": "https://www.panews.io/articles/01a1caad-aa90-7317-8d7a-f9eefeb9bf1b",
+        "title": "BTC Falls Below $72,000, Down 2.69% Intraday",
+        "url": "https://www.panews.io/articles/01a1d022-d7cd-76c5-b377-e7d5db641f68",
         "source": "PANews",
-        "date": "2026-11-11"
+        "date": "2026-11-12"
       },
       {
-        "title": "Bank of Russia: Exchanges May Launch Crypto Trading as Early as November 22",
-        "url": "https://www.panews.io/articles/01a1caeb-8ef6-773e-9b07-9f98b397e28e",
+        "title": "Bloomberg: US DOJ Says It Has Frozen About $2.7 Billion of Funds Stolen From Binance",
+        "url": "https://www.panews.io/articles/01a1d1bd-e69d-7195-8b74-44366d3f693f",
         "source": "PANews",
-        "date": "2026-11-11"
+        "date": "2026-11-12"
       },
       {
-        "title": "Analyst: Bitcoin Short-Term Holders Sent 47,300 BTC to Exchanges at a Loss Within 24 Hours",
-        "url": "https://www.panews.io/articles/01a1ca15-dd79-7655-9074-3d79dc86ded7",
+        "title": "Trump nominates 4 candidates for SEC and CFTC commissioner posts",
+        "url": "https://www.panews.io/articles/01a1d217-3dd2-74ec-ab87-5fc525111b0c",
         "source": "PANews",
-        "date": "2026-11-11"
+        "date": "2026-11-12"
       },
       {
-        "title": "OKXICE Tokenized Stocks Platform to Launch November 23, With Some Assets Not Tradable on Day One",
-        "url": "https://www.panews.io/articles/01a1ca9e-14a1-745d-accd-1da4978b1802",
+        "title": "US Treasury Plans to Impose Bank-Level Counterparty Due Diligence on Stablecoin Issuers",
+        "url": "https://www.panews.io/articles/01a1d234-7364-759e-a9bc-32e22c0e7f06",
         "source": "PANews",
-        "date": "2026-11-11"
+        "date": "2026-11-13"
       }
     ]
   },
   "narratives": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "items": [
       {
-        "theme": "Tokenized stocks go mainstream",
-        "why": "Several big platforms are opening stock tokens at once: Kraken's parent Payward is adding 200+ UK and European stocks that trade around the clock, OKXICE (OKX with the NYSE's parent) launches on 23 November with Strategy and Coinbase among its first issuers, and Binance now lets users buy its bStocks with 49 local currencies (PANews). An Anthropic stock token is also set to debut on Solana.",
-        "tokens": [
-          {
-            "symbol": "SOL",
-            "change_24h_pct": 0.1
-          }
-        ],
-        "marketing_angle": "A strong education topic: what a tokenized stock is and how it differs from owning the share.",
-        "sources": [
-          {
-            "title": "Kraken Parent Payward to Launch Tokenized Versions of Over 200 UK and European Stocks",
-            "url": "https://www.panews.io/articles/01a1c9d9-a2ed-7750-9ac8-b002ecc281ed"
-          },
-          {
-            "title": "OKXICE's First Batch of Tokenized Issuers Includes Strategy, Coinbase",
-            "url": "https://www.panews.io/articles/01a1cbd9-b6f4-73bf-a796-10ac719ed00a"
-          },
-          {
-            "title": "Binance Supports Direct Buying and Selling of bStocks Tokenized Stocks with 49 Fiat Currencies",
-            "url": "https://www.panews.io/articles/01a1ca51-7ea4-7323-8ed0-6101ea4e2fb5"
-          }
-        ]
-      },
-      {
-        "theme": "Bitcoin-holding companies under pressure",
-        "why": "MSCI decided to remove Strategy, Metaplanet and others from its global indexes after 30 November, judging them closer to investment funds, which can reduce money flowing into their shares from index funds (PANews, citing Reuters). Separately, RUM Group disclosed it sold about 198 BTC in the third quarter.",
+        "theme": "Tech-stock shock spills into crypto",
+        "why": "Nvidia's CEO Jensen Huang stepped down with immediate effect, Nvidia fell about 13% intraday and US crypto-related and AI-cloud stocks fell broadly. PANews reported Bitcoin falling below $72,000 the same day; the reports do not give a single cause beyond the broad market drop.",
         "tokens": [
           {
             "symbol": "BTC",
-            "change_24h_pct": 0.4
-          }
-        ],
-        "marketing_angle": "Explainer topic on why companies hold Bitcoin and what an index removal does and does not mean.",
-        "sources": [
-          {
-            "title": "MSCI Global Indexes to Drop Strategy, Metaplanet and Others, Place SharpLink on Watchlist",
-            "url": "https://www.panews.io/articles/01a1cd08-8488-70c4-9406-4e02fec1bce2"
+            "change_24h_pct": -3.5
           },
           {
-            "title": "RUM Group Discloses Q3 Sale of 198.46 BTC, Total Holdings Down to 94.68 BTC",
-            "url": "https://www.panews.io/articles/01a1ccfd-24b9-7682-a209-d6104783952c"
+            "symbol": "ETH",
+            "change_24h_pct": -1.9
+          },
+          {
+            "symbol": "SOL",
+            "change_24h_pct": -2.1
+          }
+        ],
+        "marketing_angle": "Good moment for an explainer on why crypto often moves with tech stocks.",
+        "sources": [
+          {
+            "title": "Nvidia: Jensen Huang Steps Down Effective Immediately, Colette Kress Appointed Interim CEO",
+            "url": "https://www.panews.io/articles/01a1d006-d64c-761e-a056-79975975e5c6"
+          },
+          {
+            "title": "US Stocks Close: Crypto-Related and Neocloud Stocks Fall Broadly, Bitdeer Group Down Over 12%",
+            "url": "https://www.panews.io/articles/01a1d190-5a60-74c4-a460-181f13a72d1d"
           }
         ]
       },
       {
-        "theme": "Telegram's Gram wallet push",
-        "why": "Pavel Durov said over 1 million self-custodial Gram wallets were activated on Telegram in 48 hours, and GRAM was the biggest gainer in the top 100 yesterday (PANews). Coinbase and Deribit also plan new futures for GRAM from 13 November, according to Pluang.",
+        "theme": "Binance hack: money being recovered",
+        "why": "Bloomberg reports the US DOJ has frozen about $2.7 billion of the funds stolen from Binance, and Binance says all assets affected by the incident have been fully covered. BNB is still down with the wider market.",
         "tokens": [
           {
-            "symbol": "GRAM",
-            "change_24h_pct": 3.2
+            "symbol": "BNB",
+            "change_24h_pct": -3.4
           }
         ],
-        "marketing_angle": "Interest from Telegram users is a natural hook for a simple 'what is a self-custody wallet' piece.",
+        "marketing_angle": "A trust topic: how exchanges and authorities recover stolen funds and protect users.",
         "sources": [
           {
-            "title": "Durov: Over 1 Million Self-Custodial Gram Wallets Activated on Telegram in Past 48 Hours",
-            "url": "https://www.panews.io/articles/01a1ca94-eb7c-70a8-8b78-35051b28d763"
+            "title": "Bloomberg: US DOJ Says It Has Frozen About $2.7 Billion of Funds Stolen From Binance",
+            "url": "https://www.panews.io/articles/01a1d1bd-e69d-7195-8b74-44366d3f693f"
+          },
+          {
+            "title": "Binance: All Assets Affected by Security Incident Have Been Fully Covered",
+            "url": "https://www.panews.io/articles/01a1d0b0-a423-77ac-90e3-0b94cbaaa359"
           }
         ]
       },
       {
-        "theme": "Security and shutdowns",
-        "why": "Scroll pushed an emergency upgrade to patch a proof-checking flaw, AnomaPay paused a validator over a proof-system bug, the Sui wallet Suiet stops service after 14 November, and wallets linked to the Bitget hacker moved over 1,000 BTC, mostly into mixing (PANews).",
+        "theme": "Big institutions keep building on crypto rails",
+        "why": "DTCC plans to connect its tokenization service to Solana in the second half of 2027, BNY will offer staking on its custody platform via Figment, and Visa added Western Union's USDPT stablecoin for settlement. These are plans and product launches, not price moves; SOL is down with the market.",
         "tokens": [
           {
-            "symbol": "SUI",
-            "change_24h_pct": -0.5
+            "symbol": "SOL",
+            "change_24h_pct": -2.1
           }
         ],
-        "marketing_angle": "Supports trust content: how Reku protects assets and why users should back up wallet keys.",
+        "marketing_angle": "Education content on tokenization and stablecoins used by banks and payment firms.",
         "sources": [
           {
-            "title": "Scroll Completes Emergency Mainnet Upgrade, Patches Proof Verification Contract Vulnerability",
-            "url": "https://www.panews.io/articles/01a1cae9-ea4a-7517-90da-bde79303de9e"
+            "title": "DTCC Plans to Connect Its Tokenization Service to Solana Network in H2 2027",
+            "url": "https://www.panews.io/articles/01a1cff5-dc77-759d-9276-a877809e2b97"
           },
           {
-            "title": "Sui ecosystem wallet Suiet to cease services after November 14; users need to back up and migrate",
-            "url": "https://www.panews.io/articles/01a1cb54-e902-7392-9c2b-8dbeb9508462"
+            "title": "BNY to Offer Staking Support on Its Digital Asset Custody Platform via Figment",
+            "url": "https://www.panews.io/articles/01a1cfef-3570-72e2-925b-abb1789629af"
           },
           {
-            "title": "Bitget hacker addresses move over 1,000 BTC in 6 days, most into CoinJoin mixing",
-            "url": "https://www.panews.io/articles/01a1cc39-9fa0-71dd-8583-bafaaff571eb"
+            "title": "Visa Adds Western Union Stablecoin USDPT as VisaNet Settlement Asset",
+            "url": "https://www.panews.io/articles/01a1d0a0-9f8b-769f-bbce-9a7cdcaebaac"
+          }
+        ]
+      },
+      {
+        "theme": "Prediction markets in the spotlight",
+        "why": "Bloomberg reports Kalshi is in talks to raise money at a $65 billion valuation, while Louisiana sued Kalshi, Polymarket, Coinbase and other prediction-market platforms. Binance Wallet's Predict (PREDICT) token event resumes on 18 November.",
+        "tokens": [],
+        "marketing_angle": "An explainer on what prediction markets are and why regulators are watching them.",
+        "sources": [
+          {
+            "title": "Bloomberg: Kalshi in Talks for New Funding Round at $65B Valuation",
+            "url": "https://www.panews.io/articles/01a1d1a9-cf45-7606-b198-55b8247c0e0f"
+          },
+          {
+            "title": "Louisiana Sues Kalshi, Polymarket, Coinbase and Other Prediction Market Platforms",
+            "url": "https://www.panews.io/articles/01a1d1ad-5fe2-75e9-9f7c-b80d4ab3fcc1"
           }
         ]
       }
@@ -564,244 +563,243 @@
         {
           "symbol": "BABY",
           "name": "Babylon",
-          "tag": "Governance approval",
+          "tag": "Partnership",
+          "tone": "up",
           "date": "2026-11-10",
-          "update": "Babylon says the Aave DAO voted 100% in favour of accepting native Bitcoin as collateral on Aave V4 through Babylon's Bitcoin vaults; PANews also reported the vote passing. The token is still about 20% lower over the week, with no reason stated for that.",
-          "change_24h_pct": -3.5,
-          "change_7d_pct": -20.4,
+          "update": "The project says Aave's community voted 100% in favour of accepting native Bitcoin as collateral on Aave V4 through Babylon's Bitcoin vaults, also reported by PANews. Babylon holds a founders call on 16 November about progress toward mainnet.",
+          "change_24h_pct": -1.6,
+          "change_7d_pct": -16.7,
           "sources": [
             {
-              "title": "@babylonlabs_io: Aave DAO vote on native BTC collateral (2026-11-10)",
+              "title": "@babylonlabs_io: Aave V4 native BTC collateral vote passed (2026-11-10)",
               "url": "https://x.com/babylonlabs_io/status/2120260875378716727"
             },
             {
               "title": "PANews: Aave DAO passes proposal to bring native BTC collateral via Babylon",
               "url": "https://www.panews.io/articles/01a1c0f9-2265-705c-949b-d5581f9f40f9"
             }
-          ],
-          "tone": "up"
+          ]
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "tag": "Token burn",
+          "tone": "up",
+          "date": "2026-11-12",
+          "update": "The project says 33% of the total PONS supply has now been burned and its treasury is buying PONS on the open market. It also says more than 1 million tokens have been launched on its platform.",
+          "change_24h_pct": 0.2,
+          "change_7d_pct": -18.2,
+          "sources": [
+            {
+              "title": "@ponsdotfamily: 33% of supply burned (2026-11-12)",
+              "url": "https://x.com/ponsdotfamily/status/2120968275483906389"
+            }
+          ]
+        },
+        {
+          "symbol": "NIGHT",
+          "name": "Midnight",
+          "tag": "Product update",
+          "tone": "mid",
+          "date": "2026-11-12",
+          "update": "Midnight's main network completed its Ledger 9 upgrade, which supports private asset transfers (PANews), and the project ran its first 'After Midnight' episode on the network updates. NIGHT is up about 17% over 7 days; the sources do not link the move to the upgrade.",
+          "change_24h_pct": -3.1,
+          "change_7d_pct": 17.1,
+          "sources": [
+            {
+              "title": "PANews: Midnight mainnet completes Ledger 9 upgrade",
+              "url": "https://www.panews.io/articles/01a1bff0-9f9d-7186-a720-cf09679fc82d"
+            },
+            {
+              "title": "@MidnightNtwrk: After Midnight Ep. 01, Ledger 9 updates (2026-11-12)",
+              "url": "https://x.com/MidnightNtwrk/status/2120879542302573015"
+            }
+          ]
         },
         {
           "symbol": "PHA",
           "name": "Phala Network",
           "tag": "Product update",
+          "tone": "mid",
           "date": "2026-11-10",
-          "update": "Phala says Moonshot AI's Kimi K3.1 Pro model is now live on its network with private, hardware-protected processing, and that its CTO speaks at the SGLang summit in San Francisco on 13 November.",
-          "change_24h_pct": -3.7,
-          "change_7d_pct": -14.9,
+          "update": "The project says Moonshot AI's Kimi K3.1 Pro model is now live on Phala with private, hardware-protected processing, and that Phala powers Lighthouse's private AI memory on Robinhood Chain.",
+          "change_24h_pct": -0.6,
+          "change_7d_pct": -7.7,
           "sources": [
             {
               "title": "@PhalaNetwork: Kimi K3.1 Pro live on Phala (2026-11-10)",
               "url": "https://x.com/PhalaNetwork/status/2120230077011308755"
             },
             {
-              "title": "@PhalaNetwork: CTO talk at SGLang Summit (2026-11-11)",
-              "url": "https://x.com/PhalaNetwork/status/2120426736047591623"
+              "title": "@PhalaNetwork: Lighthouse Private Memory on Robinhood Chain (2026-11-10)",
+              "url": "https://x.com/PhalaNetwork/status/2120200659740086730"
             }
-          ],
-          "tone": "up"
+          ]
         },
         {
           "symbol": "RE",
           "name": "Re",
-          "tag": "Product update",
-          "date": "2026-11-09",
-          "update": "According to the project, total deposits passed $400 million and about $2.3 million of yield went to reUSD holders in October, its largest month so far. These are the project's own figures.",
-          "change_24h_pct": -3.3,
-          "change_7d_pct": -13.8,
+          "tag": "Project update",
+          "tone": "mid",
+          "date": "2026-11-11",
+          "update": "The project says $2.3M in yield went to reUSD and reUSDe holders in October, its largest month so far, from its tokenized reinsurance business. This is the project's own figure.",
+          "change_24h_pct": -5.3,
+          "change_7d_pct": -11.2,
           "sources": [
             {
-              "title": "@re: October recap (2026-11-09)",
-              "url": "https://x.com/re/status/2119838608530297179"
+              "title": "@re: October yield to reUSD holders (2026-11-11)",
+              "url": "https://x.com/re/status/2120567731640750530"
             }
-          ],
-          "tone": "up"
+          ]
         },
         {
-          "symbol": "NIGHT",
-          "name": "Midnight",
-          "tag": "Network upgrade",
-          "date": "2026-11-09",
-          "update": "Midnight's main network moved to its Ledger 9 upgrade, adding private asset transfers (PANews, citing CoinDesk), and the project starts a podcast series on 12 November. The token is up about 13% in 24 hours; the reports do not give a clear reason for today's rise.",
-          "change_24h_pct": 13.0,
-          "change_7d_pct": 8.8,
-          "sources": [
-            {
-              "title": "PANews: Midnight mainnet completes Ledger 9 upgrade, supports private asset transfers",
-              "url": "https://www.panews.io/articles/01a1bff0-9f9d-7186-a720-cf09679fc82d"
-            },
-            {
-              "title": "@MidnightNtwrk: #AfterMidnight podcast launch (2026-11-11)",
-              "url": "https://x.com/MidnightNtwrk/status/2120625919471849781"
-            }
-          ],
-          "tone": "mid"
-        },
-        {
-          "symbol": "PONS",
-          "name": "Pons",
+          "symbol": "DODO",
+          "name": "DODO",
           "tag": "Large move, no stated reason",
-          "date": "2026-11-08",
-          "update": "The token is about 33% lower over the week and no source gives a reason. The project says total trading volume on Pons has reached about $17.5 billion and hints at deeper liquidity for its stock tokens soon.",
-          "change_24h_pct": 3.0,
-          "change_7d_pct": -33.4,
+          "tone": "mid",
+          "date": "2026-11-13",
+          "update": "DODO is up about 22% in 24 hours and about 28% in 7 days. Pluang's news feed reported the jump without giving a cause, and the project's X account has not posted since 30 October.",
+          "change_24h_pct": 22.5,
+          "change_7d_pct": 27.8,
           "sources": [
             {
-              "title": "@ponsdotfamily: total volume update (2026-11-08)",
-              "url": "https://x.com/ponsdotfamily/status/2119572811119264093"
-            },
-            {
-              "title": "@ponsdotfamily: stock token liquidity teaser (2026-11-11)",
-              "url": "https://x.com/ponsdotfamily/status/2120608256347586598"
+              "title": "Pluang: DODO token jumps 11% in an hour (2026-11-13)",
+              "url": "https://pluang.com/news-feed/token-dodo-naik-11-persen-dalam-satu-jam-snapshot-harga-12-nov"
             }
-          ],
-          "tone": "mid"
+          ]
         }
       ],
       "also": [
         {
           "symbol": "COTI",
-          "text": "COTI posted on 2026-11-09 about private transfers that hide amount, sender and recipient for assets users already hold; a promotional post, no new launch date given.",
+          "text": "COTI posted a general explainer on 9 November about private, encrypted transfers; no new product date or partner was given.",
           "url": "https://x.com/COTInetwork/status/2119825269632762219"
         }
       ],
       "quiet": [
         {
-          "symbol": "ACE",
-          "text": "Fusionist only posted short game teasers on 7-8 November, with no project news in the last 7 days.",
-          "url": "https://x.com/fusionistio/status/2119346452627701990"
-        },
-        {
           "symbol": "MARSCOIN",
-          "text": "Account quiet since 30 October and no November news found; a meme token, so moves are rarely explained."
-        },
-        {
-          "symbol": "DODO",
-          "text": "Account quiet since 30 October and no November news found in a web search."
+          "text": "Account quiet since 30 October; a web search found no news from the last 7 days."
         },
         {
           "symbol": "PEOPLE",
-          "text": "ConstitutionDAO's account has been quiet since 19 February; the DAO disbanded long ago and no development is planned, so moves are not tied to project news."
+          "text": "Account quiet since 19 February; a web search found no news from the last 7 days."
+        },
+        {
+          "symbol": "ACE",
+          "text": "Only short game teasers on 7-8 November, no announcement.",
+          "url": "https://x.com/fusionistio/status/2119346452627701990"
         }
       ]
     }
   },
   "news_impact": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "items": [
       {
-        "headline": "MSCI to remove Strategy, Metaplanet and others from its global indexes, effective after the 30 November close",
+        "headline": "Bloomberg: US DOJ says it has frozen about $2.7 billion of funds stolen from Binance; Binance says all affected assets have been fully covered",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1cd08-8488-70c4-9406-4e02fec1bce2",
-        "horizon": "medium",
-        "direction": "negative",
-        "size": "moderate",
-        "why": "Index funds tracking MSCI will have to sell the largest Bitcoin-holding companies' shares, which can weigh on the corporate-buying story over the coming weeks."
-      },
-      {
-        "headline": "WSJ's Nick Timiraos: a December Fed rate hike is all but certain; the question is the pace",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1caad-aa90-7317-8d7a-f9eefeb9bf1b",
-        "horizon": "medium",
-        "direction": "negative",
-        "size": "moderate",
-        "why": "After a third strong inflation report, a likely rate rise at the 8 December meeting points to tighter money in the weeks ahead."
-      },
-      {
-        "headline": "OKXICE tokenized stocks platform to launch November 23, with some assets not tradable on day one",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1ca9e-14a1-745d-accd-1da4978b1802",
-        "horizon": "medium",
+        "url": "https://www.panews.io/articles/01a1d1bd-e69d-7195-8b74-44366d3f693f",
+        "horizon": "short",
         "direction": "positive",
+        "size": "moderate",
+        "why": "Recovering a large part of the money from the biggest exchange hack, with users made whole, eases a trust worry hanging over the market."
+      },
+      {
+        "headline": "Nvidia: Jensen Huang steps down effective immediately; Nvidia falls about 13% and US tech and crypto-related stocks drop",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a1d006-d64c-761e-a056-79975975e5c6",
+        "horizon": "short",
+        "direction": "negative",
+        "size": "moderate",
+        "why": "A sudden leadership shock at the world's most watched tech company hit stock markets broadly, and crypto tends to move with tech stocks on days like this."
+      },
+      {
+        "headline": "US Treasury plans to impose bank-level counterparty due diligence on stablecoin issuers",
+        "source": "PANews",
+        "url": "https://www.panews.io/articles/01a1d234-7364-759e-a9bc-32e22c0e7f06",
+        "horizon": "medium",
+        "direction": "negative",
         "size": "minor",
-        "why": "A platform co-owned by OKX and the NYSE's parent going live adds to the tokenized-stocks trend that brings new users onto crypto rails."
+        "why": "Tighter bank-style checks add compliance cost for stablecoin issuers, the main on-ramp money of crypto, while the rule takes shape over the coming weeks."
       },
       {
-        "headline": "Bank of Russia: exchanges may launch crypto trading as early as November 22",
+        "headline": "DTCC plans to connect its tokenization service to the Solana network in H2 2027",
         "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1caeb-8ef6-773e-9b07-9f98b397e28e",
-        "horizon": "long",
-        "direction": "positive",
-        "size": "moderate",
-        "why": "A large economy opening regulated crypto trading on its official exchanges is a structural step toward wider access."
-      },
-      {
-        "headline": "Deutsche Bank launches digital asset custody for institutional clients, supporting BTC, ETH and USDC",
-        "source": "PANews",
-        "url": "https://www.panews.io/articles/01a1c9a7-0889-771c-a546-f9c24c10972b",
+        "url": "https://www.panews.io/articles/01a1cff5-dc77-759d-9276-a877809e2b97",
         "horizon": "long",
         "direction": "positive",
         "size": "minor",
-        "why": "Another major bank holding crypto for its corporate clients is a slow but concrete adoption step."
+        "why": "The core US securities settlement firm building on a public blockchain is a slow but concrete step toward mainstream use."
       }
     ],
     "summary": {
-      "short": "",
-      "medium": "Negative on balance: MSCI is dropping Strategy from its indexes and a December Fed rate rise now looks all but certain, only slightly offset by the OKXICE tokenized-stock launch.",
-      "long": "Positive: Russia is set to open regulated crypto trading on its exchanges and Deutsche Bank launched crypto custody for institutions."
+      "short": "Roughly balanced: the freeze of stolen Binance funds eases trust worries, but the sudden Nvidia CEO exit knocked tech and crypto-related stocks.",
+      "medium": "Slightly negative: the US Treasury plans bank-style checks on stablecoin issuers.",
+      "long": "Slightly positive: DTCC plans to connect its tokenization service to Solana."
     },
     "impact": {
       "short": 0.0,
-      "medium": -0.75,
-      "long": 0.75
+      "medium": -0.25,
+      "long": 0.25
     },
     "cap": 0.1
   },
   "scores_base": {
-    "trend": 0.337,
-    "momentum": 0.175,
-    "sentiment": -0.225
+    "trend": 0.306,
+    "momentum": 0.048,
+    "sentiment": -0.01
   },
-  "conviction_base": 61,
+  "conviction_base": 58,
   "news_adjustment": {
     "sentiment": 0.0,
-    "momentum": -0.075,
-    "trend": 0.075
+    "momentum": -0.025,
+    "trend": 0.025
   },
   "news_flag": null,
   "marketing_segments": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "social": {
       "stance": "Reduce",
-      "strategy": "Keep the normal posting rhythm but stay with calm, safety-first explainers: prices are down about 11% in a month and the mood is fearful, so upbeat price posts would ring false.",
+      "strategy": "Keep the normal posting rhythm but stay with calm, factual explainers: prices are down about 12% in a month and the mood is in extreme fear, so upbeat price posts would ring false.",
       "actions": [
         {
-          "what": "Explain the MSCI decision in plain words",
-          "detail": "MSCI will drop Strategy and Metaplanet from its global indexes after 30 November (PANews, citing Reuters); explain what an index removal means without saying which way price goes next."
+          "what": "Explain why crypto fell with tech stocks",
+          "detail": "PANews reported Bitcoin falling below $72,000 on the day Nvidia's CEO stepped down and crypto-related stocks fell broadly; explain the link between tech stocks and crypto without saying where price goes next."
         },
         {
           "what": "Keep a daily market-recap post, factual tone",
-          "detail": "Bitcoin is near $74,045, about 1% above its 200-day average ($73,101) and about 9% under its 50-day average ($80,937)."
+          "detail": "Bitcoin is near $71,514, about 2% under its 200-day average ($73,058) and about 11% under its 50-day average ($80,625); 7-day change about -5.7%."
         },
         {
-          "what": "Post a 'Fed rate rise and crypto' explainer",
-          "detail": "A December Fed hike is now described as all but certain (PANews); the meeting is on 8 December, a good calendar hook."
+          "what": "Post a 'stolen funds recovered' trust piece",
+          "detail": "Bloomberg (via PANews) reports the US DOJ has frozen about $2.7 billion stolen from Binance, and Binance says affected assets are fully covered: a hook for 'how exchanges protect users' content."
         },
         {
-          "what": "Use the 'banks and countries opening up' story",
-          "detail": "Russia's exchanges may start crypto trading from 22 November and Deutsche Bank launched crypto custody (PANews): calm, long-run education topics."
+          "what": "Use the 'big institutions building on crypto' story",
+          "detail": "DTCC plans to connect its tokenization service to Solana and BNY is adding staking support (PANews): calm, long-run education topics."
         }
       ]
     },
     "seo": {
       "stance": "Prepare",
-      "strategy": "Refresh the pages people search on a falling, news-heavy week, and follow the topics Pluang and Pintu are covering (Indodax could not be read today).",
+      "strategy": "Refresh the pages people search in a falling, news-heavy week, and follow what Pintu and Pluang are covering (Indodax could not be read today).",
       "actions": [
         {
-          "what": "Refresh 'Bitcoin price today' and 'why is Bitcoin down'",
-          "detail": "Likely to draw searches because Bitcoin is down about 11% in a month; Pluang is running several Bitcoin and ETF-outflow items today. Check against Reku's pages."
+          "what": "Refresh 'why is Bitcoin down' and 'Bitcoin price today'",
+          "detail": "Likely to draw searches because Bitcoin fell under $72,000 alongside a tech-stock drop; Pintu published 'Kenapa Bitcoin Turun? Faktor Makro di Balik Koreksi November 2026'. Check against Reku's pages."
         },
         {
-          "what": "Publish a 'what is a tokenized stock' guide",
-          "detail": "Likely to draw searches because OKXICE launches on 23 November and Kraken added 200+ European stocks; Pintu published '5 Alasan Tokenized Stocks Akan Menjadi Aset Penting di Industri Crypto'."
+          "what": "Publish a 'December Fed meeting and crypto' explainer",
+          "detail": "Likely to draw searches ahead of the 8 December Fed meeting; Pintu already has 'FOMC Desember 2026: Peluang Kenaikan Bunga dan Dampaknya ke Kripto'."
         },
         {
-          "what": "Publish a 'Strategy and MSCI' explainer",
-          "detail": "Likely to draw searches because MSCI is removing Strategy from its indexes after 30 November and Pintu runs a daily Strategy (MSTR) share-price page."
+          "what": "Refresh the tokenized stocks guide",
+          "detail": "Likely to draw searches because Pintu and Pluang both covered tokenized stocks this week (OKX-ICE, Binance and Hyperliquid stock trading). Check against Reku's pages."
         },
         {
-          "what": "Refresh the Fed and inflation explainer",
-          "detail": "Likely to draw searches ahead of the 8 December Fed meeting, now that a rate rise is described as all but certain."
+          "what": "Add an 'XRP this month' explainer",
+          "detail": "Likely to draw searches because XRP is down about 15% in 7 days and Pluang ran 12 XRP items today."
         }
       ]
     },
@@ -811,7 +809,7 @@
       "actions": [
         {
           "what": "Pause any step-up in active-trader campaigns",
-          "detail": "Bitcoin is about 9% under its 50-day average; do not raise trader spend until a close back above $80,937."
+          "detail": "Bitcoin is about 2% under its 200-day average; do not raise trader spend until a close back above $73,058, and a bigger push only above $80,625."
         },
         {
           "what": "Apply a d30 ROI stop-loss on running campaigns",
@@ -819,11 +817,11 @@
         },
         {
           "what": "Lean new-user ads on trust and learning",
-          "detail": "Fear & Greed is 28 (fear); first-time and stablecoin audiences tend to respond better to safety and education angles now."
+          "detail": "Fear & Greed is 20 (extreme fear); first-time and stablecoin audiences tend to respond better to safety and education angles now."
         },
         {
           "what": "Keep rally creatives ready",
-          "detail": "Rally watch would only switch to a rally near $82,175; keep creatives prepared so they can go live within days if that happens."
+          "detail": "Rally watch would only switch to a rally near $81,912; keep creatives prepared so they can go live within days if that happens."
         }
       ]
     },
@@ -833,11 +831,11 @@
       "actions": [
         {
           "what": "Send a calm market note to existing holders",
-          "detail": "A short in-app or email note that Bitcoin is about 11% lower over the month and resting near its 200-day average, linking to an explainer, with no push to trade."
+          "detail": "A short in-app or email note that Bitcoin is about 12% lower over the month and just under its 200-day average, linking to an explainer, with no push to trade."
         },
         {
-          "what": "Remind users about wallet and account safety",
-          "detail": "Suiet (a Sui wallet) stops service after 14 November and users must back up and move (PANews); a good prompt for a 'keep your keys and account safe' message."
+          "what": "Send a security reminder",
+          "detail": "SafePal order data was used in a phishing scam with fake firmware letters (Pluang) and Trezor reported tampered devices (PANews): a good prompt for 'how to spot fake wallet messages'."
         },
         {
           "what": "Keep regular lifecycle messages, pause promo pushes",
@@ -851,19 +849,19 @@
     },
     "research": {
       "stance": "Monitor",
-      "strategy": "Tell the teams that a drop window is open and which levels and dates would change today's read.",
+      "strategy": "Tell the teams that a drop window is open, that price slipped under the 200-day average, and which levels and dates would change today's read.",
       "actions": [
         {
           "what": "Share the Rally watch status",
-          "detail": "State is 'drop' (opened 11 November, 7-day change about -2.7%); a rally signal would need about $82,175, and a fresh drop signal would come below about $70,001."
+          "detail": "State is 'drop' (opened 11 November, 7-day change about -5.7%); a rally signal would need about $81,912, a fresh drop signal comes below about $69,776."
         },
         {
           "what": "Flag the weekly zone",
-          "detail": "Choppy between $73,796 and $75,750 (a normal week swings about $3,492); above $75,750 eases pressure, below $73,796 (30-day low) turns it down, then $73,101 (200-day average) and $67,931 (200-week average)."
+          "detail": "Choppy between $69,500 and $73,058 (a normal week swings about $4,069); above $73,058 eases pressure, below $69,500 turns it down, then $68,108 (200-week average) and $62,819 (90-day low)."
         },
         {
           "what": "Track the dated events",
-          "detail": "Russia crypto trading from 22 November, OKXICE launch on 23 November, MSCI removal after 30 November, Fed meeting on 8 December."
+          "detail": "Russia crypto trading from 22 November, OKXICE launch on 23 November, MSCI removal of Strategy after 30 November, Fed meeting on 8 December."
         },
         {
           "what": "Research to-do: refresh the GTV study",
@@ -873,70 +871,81 @@
     }
   },
   "seo_competitors": {
-    "as_of": "2026-11-12",
-    "window": "Pintu news RSS (65 posts, 6-11 November) and Pluang crypto news (60 posts, 12 November) were read; Indodax Academy returned nothing today, so it is left out.",
-    "summary": "Pintu is mostly publishing templated daily price pages for US stocks and gold, plus a tokenized-stocks guide. Pluang is covering the falling market itself: Bitcoin and Ether ETF outflows, Ether price drops, whale moves and Bitcoin Core fixes.",
+    "as_of": "2026-11-13",
+    "window": "Pintu news RSS and Academy (65 posts, 6-12 November) and Pluang crypto news (60 posts, 13 November) were read; Indodax Academy could not be read today (0 items).",
+    "summary": "Pintu is publishing large numbers of daily stock- and gold-price pages plus a few timely crypto explainers (why Bitcoin fell, the December FOMC, MSCI and Strategy, tokenized stocks). Pluang is running a fast crypto news feed dominated by XRP, meme coins, Ethereum and tokenized stock trading.",
     "competitors": [
       {
         "name": "Indodax",
         "posts": 0,
-        "focus": "Not readable today.",
+        "focus": "Not readable today (sitemap returned no items).",
         "examples": []
       },
       {
         "name": "Pintu",
         "posts": 65,
-        "focus": "Daily US-stock and gold price pages (53 of 65 follow a daily template), plus tokenized-stock education and daily signal posts.",
+        "focus": "Daily US-stock and gold price pages, plus timely macro and crypto explainers.",
         "examples": [
           {
-            "title": "5 Alasan Tokenized Stocks Akan Menjadi Aset Penting di Industri Crypto",
-            "url": "https://pintu.co.id/academy/post/alasan-tokenized-stocks-penting-industri-crypto",
-            "date": "2026-11-10"
+            "title": "Kenapa Bitcoin Turun? Faktor Makro di Balik Koreksi November 2026",
+            "url": "https://pintu.co.id/news/300113-kenapa-bitcoin-turun-faktor-makro-koreksi-november-2026",
+            "date": "2026-11-12"
           },
           {
-            "title": "Harga Saham Strategy (MSTR) Hari Ini 11 November 2026: Turun ke $121,07",
-            "url": "https://pintu.co.id/news/299680-harga-saham-strategy-mstr-hari-ini-11-november-2026",
-            "date": "2026-11-11"
+            "title": "FOMC Desember 2026: Peluang Kenaikan Bunga dan Dampaknya ke Kripto, Emas, dan Saham AS",
+            "url": "https://pintu.co.id/news/300112-fomc-desember-2026-kenaikan-bunga-dampak-kripto-emas-saham-as",
+            "date": "2026-11-12"
           },
           {
-            "title": "Circle dan Global Citizen Bermitra Perluas Pembayaran USDC di Afrika Lewat Move Afrika",
-            "url": "https://pintu.co.id/news/299889-circle-dan-global-citizen-bermitra-perluas-pembayaran-usdc-afrika-lewat-move-afrika",
-            "date": "2026-11-11"
+            "title": "MSCI Coret Saham Strategy (MSTR), Dana Indeks Wajib Jual 30 November",
+            "url": "https://pintu.co.id/news/300145-msci-coret-saham-strategy-mstr-dana-indeks-wajib-jual-november-2026",
+            "date": "2026-11-12"
           }
         ]
       },
       {
         "name": "Pluang",
         "posts": 60,
-        "focus": "Short crypto news items on the current fall: ETF outflows, Ether, whales, security and Bitcoin network updates.",
+        "focus": "High-volume crypto news feed: XRP, meme coins, Ethereum, tokenized stock trading and Bitcoin price moves.",
         "examples": [
           {
-            "title": "bitcoin spot etf catatan arus keluar 95 juta empat hari berturut turut",
-            "url": "https://pluang.com/news-feed/bitcoin-spot-etf-catatan-arus-keluar-95-juta-empat-hari-berturut-turut",
-            "date": "2026-11-12"
+            "title": "bitcoin turun saat saham as berakhir lemah kamis",
+            "url": "https://pluang.com/news-feed/bitcoin-turun-saat-saham-as-berakhir-lemah-kamis",
+            "date": "2026-11-13"
           },
           {
-            "title": "kerugian tahunan bitcoin berpotensi untuk pertama kali berturut turut dalam 18",
-            "url": "https://pluang.com/news-feed/kerugian-tahunan-bitcoin-berpotensi-untuk-pertama-kali-berturut-tur",
-            "date": "2026-11-12"
+            "title": "mengapa xrp tertekan lebih dari bitcoin ether solana penurunan november",
+            "url": "https://pluang.com/news-feed/mengapa-xrp-tertekan-lebih-dari-bitcoin-ether-solana-penurunan-november",
+            "date": "2026-11-13"
           },
           {
-            "title": "uniswap perkuat postingan x tentang perdagangan tokenized stock tanpa izin",
-            "url": "https://pluang.com/news-feed/uniswap-perkuat-postingan-x-tentang-perdagangan-tokenized-stock-tanpa-izin",
-            "date": "2026-11-12"
+            "title": "binance hyperliquid alihkan fokus perdagangan saham di tengah penurunan aset",
+            "url": "https://pluang.com/news-feed/binance-hyperliquid-alihkan-fokus-perdagangan-saham-di-tengah-penurunan-aset",
+            "date": "2026-11-13"
           }
         ]
       }
     ],
     "topics": [
       {
-        "topic": "Bitcoin and Ether fund outflows",
+        "topic": "Why Bitcoin is falling",
         "covered_by": [
+          "Pintu",
           "Pluang"
         ],
         "priority": "High",
-        "angle": "Pluang runs 'bitcoin spot etf catatan arus keluar 95 juta empat hari berturut turut' and the matching Ether ETF item.",
-        "action": "Refresh a 'why is Bitcoin down this week' page with plain fund-flow context; likely to draw searches because the slide is in the news. Check against Reku's pages."
+        "angle": "Macro reasons behind the November drop and the link with weak US stocks ('Kenapa Bitcoin Turun? Faktor Makro di Balik Koreksi November 2026'; 'bitcoin turun saat saham as berakhir lemah kamis').",
+        "action": "Refresh a 'why is Bitcoin down today' page with today's reported causes and levels; likely to draw searches because Bitcoin fell under $72,000 this week. Check against Reku's pages."
+      },
+      {
+        "topic": "December Fed meeting and crypto",
+        "covered_by": [
+          "Pintu",
+          "Pluang"
+        ],
+        "priority": "High",
+        "angle": "What a December rate rise would mean for crypto, gold and US stocks ('FOMC Desember 2026: Peluang Kenaikan Bunga dan Dampaknya ke Kripto, Emas, dan Saham AS').",
+        "action": "Publish a plain 'what the 8 December Fed meeting means for crypto' explainer; likely to draw searches as the date nears. Check against Reku's pages."
       },
       {
         "topic": "Tokenized stocks",
@@ -945,40 +954,41 @@
           "Pluang"
         ],
         "priority": "High",
-        "angle": "Pintu's '5 Alasan Tokenized Stocks Akan Menjadi Aset Penting di Industri Crypto' and Pluang's Uniswap tokenized-stock item.",
-        "action": "Publish a 'what is a tokenized stock' guide; likely to draw searches because OKXICE launches on 23 November and Kraken added 200+ European stocks."
+        "angle": "Big exchanges adding tokenized shares ('Tokenisasi Saham Masuk Bursa Besar: NYSE, Avalanche, dan OKX-ICE'; 'binance hyperliquid alihkan fokus perdagangan saham').",
+        "action": "Refresh a 'what is a tokenized stock' guide ahead of the OKXICE launch on 23 November; likely to draw searches because several big platforms are launching. Check against Reku's pages."
       },
       {
-        "topic": "US stock price pages (incl. Strategy, Coinbase)",
-        "covered_by": [
-          "Pintu"
-        ],
-        "priority": "Medium",
-        "angle": "Pintu publishes a daily price page per stock, such as 'Harga Saham Strategy (MSTR) Hari Ini 11 November 2026'.",
-        "action": "Write a Strategy and MSCI explainer; likely to draw searches because MSCI removes Strategy from its indexes after 30 November."
-      },
-      {
-        "topic": "Ether price and whales",
+        "topic": "XRP",
         "covered_by": [
           "Pluang"
         ],
         "priority": "Medium",
-        "angle": "Pluang has 12 Ether items, e.g. 'ether eth turun di bawah 2125 sebagai 118 juta dolar panjang dilikuidasi' and whale buying after a 15% fall.",
-        "action": "Refresh the 'Ethereum price today' page; likely to draw searches because Ether fell about 15% in a week. Check against Reku's pages."
+        "angle": "Why XRP fell more than other large coins in November and Ripple's RLUSD passing PayPal's PYUSD ('mengapa xrp tertekan lebih dari bitcoin ether solana penurunan november').",
+        "action": "Publish or refresh an XRP explainer page; likely to draw searches because XRP is down about 15% in 7 days. Check against Reku's pages."
       },
       {
-        "topic": "Gold prices",
+        "topic": "MSCI and Strategy",
         "covered_by": [
-          "Pintu"
+          "Pintu",
+          "Pluang"
         ],
         "priority": "Medium",
-        "angle": "Pintu runs 14 daily gold price pages, e.g. 'Harga Emas UBS Retro Hari Ini, Rabu 11 November 2026'.",
-        "action": "Refresh a 'gold vs Bitcoin' explainer; likely to draw searches because spot gold fell below $4,000 this week (PANews)."
+        "angle": "MSCI dropping Strategy from its indexes and what index funds must sell ('MSCI Coret Saham Strategy (MSTR), Dana Indeks Wajib Jual 30 November').",
+        "action": "Publish a short explainer on Bitcoin-holding companies and index removal; likely to draw searches ahead of the 30 November date. Check against Reku's pages."
+      },
+      {
+        "topic": "Meme coins",
+        "covered_by": [
+          "Pluang"
+        ],
+        "priority": "Medium",
+        "angle": "Dogecoin, Shiba Inu and Pepe price drops and whale buying claims ('apa itu dogecoin doge inflasi dan teknologi dijelaskan').",
+        "action": "Refresh evergreen 'what is Dogecoin / meme coins' pages; likely to draw steady searches. Check against Reku's pages."
       }
     ],
     "patterns": [
-      "Pintu's output is mostly daily templated price pages (53 of 65 posts): one page per stock or gold product per day.",
-      "Pluang publishes many short news items in a single day (60 on 12 November), mostly price moves and flows."
+      "Pintu publishes dozens of templated daily price pages ('Harga Saham X Hari Ini', 'Harga Emas Antam Hari Ini') each day, aimed at daily price searches.",
+      "Pluang publishes many short crypto news items per day, often several on the same coin (12 on XRP today)."
     ]
   }
 }
