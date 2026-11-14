@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-14",
+  "generated": "2026-11-14T00:09:17Z",
+  "price": 68388,
+  "events": [
+    {
+      "id": "spike:70000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC pushed above $70,000 in the last 24 hours (high $71,422) and pulled back",
+      "facts": {
+        "level": 70000,
+        "high_24h": 71422,
+        "price": 68388
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 14 November 2026**\n\n**Alert**\n• BTC pushed above $70,000 in the last 24 hours (high $71,422) and pulled back. The bounce faded; price is back just above its 200-week average ($67,711), the last big floor.\n\n**Snapshot**\n• Bitcoin about $68,388, down about 9.9% over 7 days and about 4% in the last day.\n• Headline: NEUTRAL, low confidence.\n• Fear & Greed 13 (extreme fear).\n\n**What happened (last 24h)**\n• Bitcoin fell below $68,000 (PANews). US wholesale prices rose 6.5% over the year in October, the fastest in nearly four years, and QCP says markets now fully expect a US rate rise in December (PANews).\n• US spot Bitcoin ETFs saw $284 million of net outflows on 12 November, the sixth day in a row (SoSoValue via PANews).\n\n**Short-term outlook (next 1-7 days)**\nSoft: 24 days under the 50-day average, about 15% below it.\n• Turns up: a close above $70,500 (top of a typical week's swing), then $73,001 (the 200-day average).\n• Sideways: $67,711-$70,500; a normal week swings about $4,069.\n• Turns down: a close below $67,711 (the 200-week average), then $64,506 (the 90-day low).\n• Rally watch: drop window open since 11 November. A rally signal would need about $81,937; a fresh drop signal comes below about $69,798.\n• Scheduled: Fed meeting on 8 December.\n\n**News that matters**\n• US October wholesale inflation at a near four-year high (PANews): short term, small negative.\n• Crypto exchanges are lining up for the CFTC's new opt-in rules (CNBC via PANews): medium term, small positive.\n\n**Altcoins & themes**\n• Big coins fell together on rate worries (ETH -4.2%, SOL -4.1% in 24h); INJ rose about 9% while dYdX votes to move its USDC reserves to Injective.\n• New on Reku: Babylon holds its founders call on 16 November after Aave's community voted to accept native Bitcoin through Babylon (the project and PANews).\n\n**Bigger picture**\n• Next month is mixed and 3-6 months still lean up weakly; a close back above $73,001 (the 200-day average) would firm it, a run of closes below $67,711 would weaken it.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid:** hold trader-targeted spend and keep a reserve while the Rally watch drop window is open; do not raise it until Bitcoin closes back above $73,001 (the 200-day average). Apply the d30 ROI stop-loss to running campaigns and lean new-user ads on trust and learning, since Fear & Greed is 13. Keep rally creatives ready in case price reaches about $81,937."
+    },
+    {
+      "audience": "social",
+      "text": "**Social:** keep the normal rhythm with calm, factual posts. Explain why US interest rates move crypto (US wholesale inflation hit a near four-year high, and markets now fully expect a December rate rise, per PANews and QCP), keep one daily recap (Bitcoin near $68,388, about 1% above its 200-week average), and post a wallet-safety explainer using the Keplr/MANTRA key leak."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** no promotional pressure while the drop window is open. Send existing holders a calm note that Bitcoin is about 17% lower over the month and testing its 200-week average, with a link to an explainer, plus a wallet-security reminder prompted by this week's Keplr key leak. Keep regular lifecycle messages and have the post-rally onboarding journey ready."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pluang is publishing fast on why Bitcoin fell (rate fears and US inflation rather than the Binance hack, e.g. 'coinbase institutional kaitkan penurunan bitcoin dengan kekhawatiran suku bunga'): refresh 'why is Bitcoin down today' and 'Bitcoin price today'. Pluang is also covering Bitcoin ETF outflows, so a plain 'what are ETF outflows' explainer is likely to draw searches after six straight days of outflows. Refresh the wallet-safety guide, since Pluang covered MANTRA's unstaking freeze. Pintu's latest posts were mostly daily stock and gold pages, and Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** the big coins fell together on US rate worries (ETH -4.2%, SOL -4.1%, XRP -2.9% in 24h, CoinGecko). INJ rose about 9%: dYdX opened a vote to move its USDC reserves to Injective and Injective set its Veyra upgrade for 24 November, though reports do not tie the price move to either. MANTRA paused unstaking after a wallet key leak and Upbit will delist it on 14 December (PANews). On Reku's New Listings: Babylon holds a founders call on 16 November after Aave's community voted to accept native Bitcoin through it (according to the project and PANews), and DODO is up about 34% in 7 days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794614997.829269",
+      "at": "2026-11-14T00:10:17Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794615002.040949",
+      "at": "2026-11-14T00:10:17Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794615004.299939",
+      "at": "2026-11-14T00:10:17Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794615006.408299",
+      "at": "2026-11-14T00:10:17Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794615009.336819",
+      "at": "2026-11-14T00:10:17Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794615011.574189",
+      "at": "2026-11-14T00:10:17Z"
+    }
+  ]
+}
