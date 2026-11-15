@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "generated": "2026-11-15T09:58:15Z",
+  "price": 65376,
+  "events": [
+    {
+      "id": "round:65000:up",
+      "type": "level_cross",
+      "severity": "medium",
+      "title": "BTC rose above $65,000",
+      "facts": {
+        "level": 65000,
+        "direction": "up",
+        "price": 65376,
+        "previous_close": 64150
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 15 November 2026**\n\n**Alert**\n• BTC rose back above $65,000 (about $65,376, from a $64,150 close yesterday). It follows an overnight fall to about $62,000; price is still under its 200-week average ($68,100).\n\n**Snapshot**\n• Bitcoin about $65,376, down about 12.7% over 7 days and about 20% over 30 days.\n• Headline: NEUTRAL, confidence LOW. The long-term trend still reads up, but the last few weeks are clearly weak.\n• Fear & Greed is 10 (extreme fear).\n\n**What happened (last 24h)**\n• Bitcoin dropped to about $62,000 early today and bounced. An analyst quoted by PANews links it to concentrated selling in thin weekend trading.\n• PANews reports miner MARA sold 13,597 bitcoin in six weeks and plans further sales; CoinGlass data (via PANews) shows about 12,600 BTC more flowed into exchanges than out over 7 days.\n\n**Short-term outlook (next 1-7 days)**\n• The mood is in deep fear and the coming days lean weak.\n• Turns up: a close above $68,100 (200-week average), next $72,928 (200-day average).\n• Sideways: $64,150 to $68,100; a normal week swings about $3,988.\n• Turns down: a close below $64,150 (30-day low).\n• Rally watch: drop window open since 13 November; a rally signal needs about $80,840, a fresh drop signal comes below about $68,863.\n• Scheduled: next Fed meeting on 8 December.\n\n**News that matters**\n• MARA turns from holder to seller of its bitcoin (PANews): medium term, negative.\n• Kava app exploit; Upbit paused KAVA transfers (PANews): short term, small negative.\n• Kazakhstan plans tokenized government bonds in Q1 2027 (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Broad weekend sell-off: ETH -4.6%, SOL -5.5%, DOGE -7.0% in 24h.\n• New on Reku: Babylon (BABY) holds its founders call on 16 November, after Aave voted to accept native Bitcoin as collateral through Babylon (according to the project, also PANews).\n\n**Bigger picture**\n• Next month is mixed, leaning slightly down; it firms up only above $79,779 (50-day average). The 3-6 month picture still leans up, but needs a return above $72,928 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid** — Hold trader-targeted spend and keep a reserve: a Rally watch drop window is open and Bitcoin is about 10% under its 200-day average. Apply the d30 ROI stop-loss on running campaigns and do not raise trader spend until a close back above $72,928. Lean new-user ads on trust and learning (Fear & Greed is 10), and keep rally creatives ready in case price reaches about $80,840."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content** — Keep the normal rhythm with a calm, factual tone; Bitcoin is down about 12.7% in a week. Post a plain explainer on the overnight drop to about $62,000 (an analyst quoted by PANews links it to concentrated weekend selling) and a 'why big holders sell' piece using MARA's 13,597 bitcoin of sales (PANews). Add a security reminder using Kava's app exploit."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM** — Reassure and educate existing holders; no promotional pressure while the drop window is open. Send a short note that Bitcoin is about 20% lower over the month and under its 200-week average, with an explainer link and no push to trade. Add an account-safety reminder (Kava exploit, Coinone support-desk data leak, both PANews) and keep the next onboarding journey ready for after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO** — Pluang is covering the weekend drop heavily, so the High topics are: (1) why Bitcoin fell this weekend ('bitcoin turun ke level terendah tiga bulan di bawah 65000'): refresh 'why is Bitcoin down today' with plain reference levels; (2) US spot Bitcoin fund outflows (about $1.91 billion over seven sessions, per Pluang): publish or refresh a 'what are Bitcoin ETF flows' explainer; (3) XRP and Solana at multi-month lows: update those coin pages. Pintu's latest feed is mostly daily gold and stock price pages; Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins** — The main theme is a broad weekend sell-off: ETH -4.6%, SOL -5.5%, DOGE -7.0% in 24h, and BIT's analyst says the market has lost about $800 billion since early October (PANews). Large holders are on both sides: MARA, a B2C2-linked address (LINK) and Forward (SOL) moved or sold coins, while wallets linked to Erik Voorhees bought about $97 million of ETH (PANews). New on Reku: Babylon (BABY) holds its founders call on 16 November, and Midnight (NIGHT) is up about 22% in 7 days after its Ledger 9 upgrade (PANews), though no single reason is given for this week's move; PONS is down about 31% in 7 days despite a 33% supply burn, according to the project."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736777.511509",
+      "at": "2026-11-15T09:59:41Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736786.392759",
+      "at": "2026-11-15T10:00:01Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736788.488129",
+      "at": "2026-11-15T10:00:01Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736790.463439",
+      "at": "2026-11-15T10:00:01Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736792.983619",
+      "at": "2026-11-15T10:00:01Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794736795.367379",
+      "at": "2026-11-15T10:00:01Z"
+    }
+  ]
+}
