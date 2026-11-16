@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-16",
+  "generated": "2026-11-16T01:42:08Z",
+  "price": 64950,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 16 November 2026**\n\n**Snapshot**\n• Bitcoin is near $64,950, down about 13.7% over 7 days and about 20% over 30 days.\n• Headline: **NEUTRAL** (medium confidence). Fear & Greed is 10, extreme fear.\n• Price is about 4% under its 200-week average ($67,656) and about 11% under its 200-day average ($72,859).\n\n**What happened (last 24h)**\n• Bitcoin bounced a little after the weekend fall to about $62,000; no single cause is reported for the bounce.\n• About $1.71B of bets on price moves were forced to close in 24 hours, mostly bets on a rise (PANews, CoinGlass data).\n• About 12,600 BTC more moved onto exchanges than left them over 7 days (PANews, CoinGlass data).\n\n**Short-term outlook (next 1-7 days)**\nThe mood is in deep fear and the next weeks now lean down. The medium-term reading entered its weak zone today; five days in a row there would turn the headline BEARISH.\n• Turns up: a close above $67,656 (200-week average), next $72,859 (200-day average).\n• Sideways: between $64,128 and $67,656; a normal week swings about $3,971.\n• Turns down: a close below $64,128 (30-day low).\n• Rally watch: drop window open since 11 November; a rally signal needs about $81,241.\n• This week: Fed speeches, Nvidia results on 17 November; next Fed meeting 8 December.\n\n**News that matters**\n• About 13 EH/s of mining power was hijacked; Luxor confirmed a tool breach and promises compensation (PANews). Short term, negative.\n• Miner MARA sold 13,597 bitcoin in six weeks and plans more sales (PANews). Medium term, negative.\n• Goldman Sachs, Citi and 19 others commit about $270M to a joint dollar stablecoin for 2027 (PANews). Long term, positive.\n\n**Altcoins & themes**\n• Trading platforms under scrutiny: Aster says a sudden swing came from forced closes of heavily borrowed positions and is investigating (ASTER +2.0% in 24h, HYPE +4.1%).\n• New on Reku: Midnight (NIGHT) is up about 27% in 7 days after its network upgrade added private transfers (PANews); the reports give no single reason for the move.\n\n**Bigger picture**\nThe next month leans down; the 3-6 month picture still leans up only barely, and is back on track only above $72,859 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid:** hold trader-targeted spend and keep a reserve, because a Rally watch drop window is open and Bitcoin is under its 200-week average ($67,656). Do not raise trader spend until a close back above $72,859, and apply a d30 ROI stop-loss on running campaigns. Lean new-user ads on trust and learning (Fear & Greed is 10), and keep rally creatives ready in case Rally watch turns near $81,241."
+    },
+    {
+      "audience": "social",
+      "text": "**Social & content:** keep the normal rhythm with calm, factual posts. Bitcoin is down about 13.7% in a week. Explain the mining-machine hack plainly (about 13 EH/s hijacked, Luxor promises compensation, per PANews). Post a 'who is buying, who is selling' explainer on MARA's 13,597 BTC sale and Saylor's hint at new buying. Use the bank stablecoin venture (Goldman, Citi and 19 others) for a 'what is a stablecoin' post. No upbeat price posts."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** no promotional pressure this week. Send active holders a calm market update with links to safety and how-it-works content, plus a security reminder (mining-machine hack, Coinone contractor breach, per PANews). Keep registered-but-not-depositing and dormant users on regular lifecycle messages only. Have the onboarding journey ready: new sign-ups tend to arrive 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pluang is covering the drop live and Pintu is mostly posting daily stock and gold price pages; Indodax could not be read today. 1) Why Bitcoin fell and fund outflows (Pluang, Pintu): refresh 'why is Bitcoin down today' with plain reference levels. 2) Mining-machine hack (Pluang, 5+ posts): publish a plain explainer on what happened. 3) Strategy buying the dip (Pluang, Pintu): prepare a 'what is a Bitcoin treasury company' page in case Strategy discloses a purchase this week. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** trading platforms are under scrutiny. Aster's CEO says the token's sudden swing came from forced closes of heavily borrowed positions, possibly with malicious activity (ASTER +2.0% in 24h), and DFINITY's founder argues Hyperliquid works like a centralized exchange (HYPE +4.1%), per PANews. Banks are moving into stablecoins with a $270M joint venture. New on Reku: Midnight (NIGHT) is up about 27% in 7 days after a network upgrade added private transfers, with no single reason reported for the move. Babylon (BABY) holds its founders call today; the project says Aave voted to accept native Bitcoin as collateral through it."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793371.819179",
+      "at": "2026-11-16T01:43:14Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793378.024789",
+      "at": "2026-11-16T01:43:14Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793379.910579",
+      "at": "2026-11-16T01:43:14Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793381.978529",
+      "at": "2026-11-16T01:43:14Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793384.577839",
+      "at": "2026-11-16T01:43:14Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C04BQG55CUD",
+      "ts": "1794793386.778499",
+      "at": "2026-11-16T01:43:14Z"
+    }
+  ]
+}
