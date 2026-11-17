@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-17",
+  "generated": "2026-11-17T00:08:48Z",
+  "price": 64741,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 17 November 2026**\n\n**Snapshot**\n• Bitcoin is near $64,741, down about 12.3% over 7 days and about 21% over 30 days.\n• Headline: **NEUTRAL** (medium confidence). Fear & Greed is 12, extreme fear.\n• Price is about 5% under its 200-week average ($68,149) and about 11% under its 200-day average ($72,802).\n\n**What happened (last 24h)**\n• Bitcoin moved sideways around $64,000-65,000; no single cause is reported.\n• The Lighter trading venue lost about $15.5M through leaked access keys, returned about 5M USDC and reopened withdrawals (PANews).\n• About $487M left US spot Bitcoin funds in the latest day, and about $283M of bets on price moves were forced to close in 24 hours, on both sides (PANews, CoinGlass data).\n\n**Short-term outlook (next 1-7 days)**\nThe mood is in deep fear and the next weeks lean down. The medium-term reading is in its weak zone for a second day; five days in a row would turn the headline BEARISH, around 20 November at the earliest.\n• Turns up: a close above $66,750 (top of a typical week's swing), next $68,149 (200-week average).\n• Sideways: between $64,150 and $66,750; a normal week swings about $3,971.\n• Turns down: a close below $64,150 (30-day low).\n• Rally watch: drop window open since 13 November; a rally signal needs about $79,700.\n• This week: BI rate decision on Wednesday, Nvidia results and the FOMC minutes; next Fed meeting 8 December.\n\n**News that matters**\n• Lighter hack via leaked access keys, about $15.5M taken (PANews). Short term, negative.\n• Strategy bought only 485 BTC last week and listed companies' net buying fell 45.2% (PANews). Medium term, small negative.\n• Zelle will issue a ZelleUSD stablecoin on Solana; Western Union also uses Solana for remittances (PANews). Long term, positive.\n\n**Altcoins & themes**\n• Payment giants on Solana: Zelle, Western Union and the NYSE's owner ICE all named Solana this week (PANews); SOL is still down about 18% in 7 days.\n• New on Reku: Midnight (NIGHT) is up about 19% in 7 days; the project says it moved its privacy calculations to Google Cloud, but no single reason for the move is reported.\n\n**Bigger picture**\nThe next month leans down; the 3-6 month picture still leans up only barely, and is back on track only above $72,802 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid:** Hold trader-targeted spend and keep a reserve: a Rally watch drop window is open and Bitcoin is about 5% under its 200-week average. Do not raise trader spend until a daily close back above $68,149, and a bigger push only above $72,802. Apply a d30 ROI stop-loss on running campaigns and swap price-led creatives for safety and 'learn before you trade' messages; keep rally creatives approved but not live (a rally signal needs about $79,700)."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content:** Keep the normal posting rhythm with calm, factual posts; Bitcoin is down about 12% in a week and Fear & Greed is 12. Post a plain account-safety explainer using this week's hacks (Lighter lost about $15.5M via leaked access keys, a Safe wallet lost about $6.45M, per PANews). Use Zelle's new ZelleUSD stablecoin on Solana (PANews) for a simple 'what is a stablecoin' post."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** Reassurance and education only while the drop window is open, no deposit-bonus pushes. Send an account-safety reminder (two-factor, never share keys or codes) given the Lighter and Safe wallet incidents in the news, and a calm explainer to active holders on why Bitcoin is down about 12% in a week, with reported causes only. Keep regular lifecycle journeys running and have the next onboarding journey ready, since new sign-ups tend to arrive 2-4 weeks after a rally starts."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Three topics the competition is covering now (Indodax could not be read today):\n• Why Bitcoin keeps falling: Pintu ran 'Kenapa Bitcoin Turun Terus?' and Pluang covered the drop under the 200-day and 200-week averages. Refresh a 'why is Bitcoin down' page; likely to draw searches with Bitcoin down about 12% in a week.\n• Hacks and account safety: Pluang published four pieces on Lighter returning $5M and one on the Safe wallet loss. Publish a plain account-safety explainer.\n• This week's macro calendar: Pintu previews the BI rate decision, Nvidia results and the FOMC minutes. Publish a short weekly calendar page including the 8 December Fed meeting.\nCheck each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Among the ten largest coins: ETH (-0.7% in 24h) — BitMine bought another 7,653 ETH and now holds close to 5% of supply (Cointelegraph on X); SOL (-1.3%) — Zelle chose Solana for its ZelleUSD stablecoin (PANews); HYPE (+2.1%) — after the Lighter hack, market maker Abraxas closed most of its Hyperliquid positions (Markets.xyz on X); XRP (-1.7%) — US spot XRP funds saw about $19M leave last week (PANews).\nThemes: payment giants moving onto Solana, and a run of hacks at trading apps and wallets (Lighter, Safe wallet; LIT +4.6% in 24h).\nNew on Reku: Midnight (NIGHT, +18.7% in 7 days) says it moved its privacy calculations to Google Cloud; COTI says it opened early access to its Interphase private mode (according to the projects). PONS is down about 23% in 7 days."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874508.847729",
+      "at": "2026-11-17T00:15:30Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874514.255619",
+      "at": "2026-11-17T00:15:30Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874516.434919",
+      "at": "2026-11-17T00:15:30Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874518.625069",
+      "at": "2026-11-17T00:15:30Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874521.561129",
+      "at": "2026-11-17T00:15:30Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794874524.445799",
+      "at": "2026-11-17T00:15:30Z"
+    }
+  ]
+}
