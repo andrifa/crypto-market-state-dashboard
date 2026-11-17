@@ -15,8 +15,8 @@ Steps (each one degrades on its own; the summary at the end says what was and wa
      CoinGecko by symbol AND by rupiah price (must be within 3% of Reku's own quote), then its official X
      handle is read from CoinGecko. Anything that does not match is listed as `unmatched`, never guessed.
   3. CoinGecko market data (USD): 24h / 7d / 30d change, distance from all-time high, market-cap rank.
-  4. backend/x_search.js reads the latest posts of each project's official X account (read-only, the
-     logged-in profile from the panews-scraper app; X search itself is blocked for automation).
+  4. backend/x_search.js --search runs X's own search for each asset (cashtag, project name and the project's own
+     account), so independent reports show up next to the project's posts (read-only, the logged-in dashboard profile).
   5. PANews headlines of the last N days that mention the project's symbol or name.
 
 Raw output stays in private/ (gitignored). The daily task reads it, keeps only what is dated and
@@ -112,12 +112,23 @@ def market_data(ids: list[str]) -> dict:
     return {r["id"]: r for r in rows}
 
 
-def x_posts(handles: list[str], days: float) -> dict:
+def x_query(sym: str, name: str, handle: str | None) -> str:
+    """X search text for one asset: its cashtag, its name (when long enough not to match ordinary words) and the project's own account."""
+    parts = [f"${sym}"]
+    if len(name) >= 5:
+        parts.append(f'"{name}"')
+    if handle:
+        parts.append(f"from:{handle}")
+    return " OR ".join(parts)
+
+
+def x_posts(queries: list[str], days: float) -> dict:
     out = PRIVATE / "x_posts.json"
     if out.exists():
         out.unlink()
-    subprocess.run(["node", str(ROOT / "backend" / "x_search.js"), "--profiles", "--days", str(days), "--max", "8",
-                    "--out", str(out), *handles], capture_output=True, text=True, timeout=1500)
+    subprocess.run(["node", str(ROOT / "backend" / "x_search.js"), "--search", "--days", str(days), "--max", "6",
+                    "--min-likes", "3", "--sort", "top", "--out", str(out), *queries],
+                   capture_output=True, text=True, timeout=1500)
     if not out.exists():
         return {"ok": False, "reason": "x_search produced no output", "accounts": {}}
     return json.loads(out.read_text())
@@ -182,9 +193,9 @@ def main() -> int:
         xs = json.loads((PRIVATE / "x_posts.json").read_text())
         log("4. X posts: reusing private/x_posts.json")
     elif use_x:
-        handles = sorted({m[i["symbol"]]["x"] for i in items if i["symbol"] in m and m[i["symbol"]].get("x")})
-        log(f"4. X posts from {len(handles)} official account(s) (a few minutes)")
-        xs = x_posts(handles, days)
+        qs = [x_query(i["symbol"], i["name"], (m.get(i["symbol"]) or {}).get("x")) for i in items]
+        log(f"4. X search for {len(qs)} asset(s) (a few minutes)")
+        xs = x_posts(qs, days)
         log(f"  {'ok' if xs.get('ok') else 'not available: ' + str(xs.get('reason'))}")
 
     log("5. PANews headlines")
@@ -206,8 +217,10 @@ def main() -> int:
                           "change_7d_pct": c.get("price_change_percentage_7d_in_currency"),
                           "change_30d_pct": c.get("price_change_percentage_30d_in_currency"),
                           "from_ath_pct": c.get("ath_change_percentage"), "ath_date": c.get("ath_date")},
-                "x_status": ((xs.get("meta") or {}).get(info.get("x") or "") or {"status": "no_handle" if not info.get("x") else "unknown"}),
-                "x_posts": ((xs.get("accounts") or {}).get(info.get("x") or "") or []),
+                "x_query": x_query(sym, it["name"], info.get("x")),
+                "x_status": ((xs.get("meta") or {}).get(x_query(sym, it["name"], info.get("x"))) or {"status": "unknown"}),
+                "x_posts": [{k: p.get(k) for k in ("time", "author", "text", "url", "likes", "reposts")}
+                            for p in ((xs.get("accounts") or {}).get(x_query(sym, it["name"], info.get("x"))) or [])],
                 "panews": [{k: n[k] for k in ("title", "desc", "published", "url")}
                            for n in news if mentions(n["title"] + " " + n["desc"], sym, it["name"])][:6],
             })
@@ -220,8 +233,8 @@ def main() -> int:
     (PRIVATE / "new_listings_raw.json").write_text(json.dumps(out, indent=2, ensure_ascii=False))
     for a in assets:
         st = a.get("x_status") or {}
-        log(f"  {a['symbol']:9} @{a.get('x_handle') or '-':16} X: {st.get('status', '-'):10} last post {str(st.get('last_post') or '-')[:10]}  "
-            f"{len(a.get('x_posts') or [])} recent, {len(a.get('panews') or [])} PANews")
+        log(f"  {a['symbol']:9} X search: {st.get('status', '-'):8} newest {str(st.get('last_post') or '-')[:10]}  "
+            f"{len(a.get('x_posts') or [])} posts, {len(a.get('panews') or [])} PANews")
     with_news = [a["symbol"] for a in assets if a.get("x_posts") or a.get("panews")]
     log(f"\nDone: {len(assets)} assets, {len(with_news)} with posts or headlines: {', '.join(with_news) or '-'}")
     if unmatched:

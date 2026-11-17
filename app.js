@@ -622,12 +622,15 @@ function renderNarratives(d) {
   const panel = document.getElementById("narratives-panel");
   const list = (d.narratives && d.narratives.items) || [];
   const nl = d.narratives && d.narratives.new_listings;
-  if (!list.length && !(nl && nl.items && nl.items.length)) { panel.remove(); return; }
+  const tc = d.narratives && d.narratives.top_coins;
+  if (!list.length && !(nl && nl.items && nl.items.length) && !(tc && tc.items && tc.items.length)) { panel.remove(); return; }
   const box = document.getElementById("narratives");
   box.textContent = "";
   if (d.narratives.as_of) panel.querySelector(".kicker").textContent = `Narratives & altcoins · ${fmtDate(d.narratives.as_of)}`;
+  if (tc && tc.items && tc.items.length) renderTopCoins(box, tc);
   const themes = el("div", { class: "nl-wrap" });
   box.append(themes);
+  if (list.length) themes.append(el("h4", { class: "nl-title", text: "Themes in the news" }));
   list.forEach((n) => {
     const card = el("div", { class: "narr" },
       el("h4", { text: n.theme }),
@@ -660,6 +663,40 @@ function renderNarratives(d) {
 }
 
 /* New on Reku: assets carrying the "Baru" tag on reku.id/markets, with what their projects said lately */
+/* Top coins by market cap (stablecoins, wrapped and staked copies left out): a fixed daily list with a line of news when there is one */
+function renderTopCoins(box, tc) {
+  const wrap = el("div", { class: "nl-wrap" });
+  wrap.append(el("h4", { class: "nl-title", text: `Top ${tc.items.length} by market cap` }));
+  wrap.append(el("p", { class: "nl-sub", text: tc.scope || "The largest cryptocurrencies by market cap, without stablecoins and wrapped or staked copies. Each line shows what was reported about the coin in the last few days." }));
+  const price = (v) => v == null ? "—" : v >= 100 ? "$" + Math.round(v).toLocaleString("en-US") : v >= 1 ? "$" + v.toFixed(2) : "$" + v.toFixed(4);
+  const chg = (label, v) => v == null ? "" : el("span", {}, `${label} `, el("span", { class: v >= 0 ? "up" : "down", text: `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}%` }));
+  tc.items.forEach((it) => {
+    const id = el("div", { class: "nl-id" },
+      el("span", { class: "nl-sym", text: it.symbol }),
+      el("span", { class: "nl-name", text: `${it.name || ""}${it.rank ? ` · #${it.rank}` : ""}` }),
+      el("span", { class: "nl-chg" }, price(it.price_usd)),
+      el("span", { class: "nl-chg" }, chg("24h", it.change_24h_pct), it.change_24h_pct != null && it.change_7d_pct != null ? " · " : "", chg("7d", it.change_7d_pct)));
+    const body = el("div", {});
+    if (it.note) {
+      if (it.tag) body.append(el("span", { class: "nl-tag" + (it.tone ? " " + it.tone : ""), text: it.tag + (it.date ? ` · ${fmtDate(it.date)}` : "") }));
+      body.append(el("p", { class: "nl-text", text: it.note }));
+      if (it.sources && it.sources.length) {
+        const src = el("p", { class: "nl-src", text: "Source: " });
+        it.sources.slice(0, 3).forEach((x, i) => {
+          if (i) src.append(", ");
+          src.append(el("a", { href: x.url, target: "_blank", rel: "noopener", text: x.title }));
+        });
+        body.append(src);
+      }
+    } else {
+      body.append(el("p", { class: "nl-text nl-quiet", text: "Nothing notable reported in the last few days." }));
+    }
+    wrap.append(el("div", { class: "nl" }, id, body));
+  });
+  wrap.append(el("p", { class: "chart-note", text: "Prices and changes from CoinGecko (USD). News from X search results and PANews headlines; posts on X are reports by their authors, not confirmed facts. Describes what is happening; not a recommendation to buy any token." }));
+  box.append(wrap);
+}
+
 function renderNewListings(box, nl) {
   const wrap = el("div", { class: "nl-wrap" });
   wrap.append(el("h4", { class: "nl-title", text: `New on Reku${nl.count ? ` · latest ${nl.count} listings` : ""}` }));
