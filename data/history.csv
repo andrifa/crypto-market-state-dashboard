@@ -4234,14 +4234,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-11-04,80405.2890625,Bull,weakening,Fear,63.0,mid-bull,0.389,0.208,0.2,SCALE UP acquisition budget
 2026-11-05,75942.125,Bull,stable,Neutral,64.0,mid-bull,0.342,0.216,0.112,HOLD at planned level
 2026-11-06,75746.9296875,Bull,stable,Fear,46.0,mid-bull,0.343,0.186,-0.01,HOLD at planned level
-2026-11-07,75867.59,Bull,weakening,Extreme Fear,33.0,mid-bull,0.347,0.053,-0.147,HOLD at planned level
+2026-11-07,75747.578125,Bull,weakening,Extreme Fear,33.0,mid-bull,0.346,0.05,-0.147,HOLD at planned level
 2026-11-08,74851.44,Bull,weakening,Fear,33.0,mid-bull,0.338,0.056,-0.101,HOLD at planned level
 2026-11-09,75368.41,Bull,weakening,Fear,42.0,mid-bull,0.347,0.141,-0.358,HOLD at planned level
 2026-11-10,73796.06,Neutral,weakening,Fear,43.0,mid-bull,0.33,0.157,-0.112,HOLD at planned level
 2026-11-11,74015.19,Neutral,weakening,Fear,36.0,mid-bull,0.334,0.081,-0.195,HOLD at planned level
 2026-11-12,71460.0,Neutral,weakening,Fear,37.0,mid-bull,0.304,0.092,-0.176,HOLD at planned level
 2026-11-13,68314.0,Neutral,weakening,Extreme Fear,35.0,mid-bull,0.267,0.07,-0.354,HOLD at planned level
-2026-11-14,64150.0,Neutral,weakening,Extreme Fear,25.0,mid-bull,0.219,-0.067,-0.646,HOLD at planned level
+2026-11-14,64150.0,Neutral,weakening,Extreme Fear,26.0,mid-bull,0.219,-0.067,-0.646,HOLD at planned level
 2026-11-15,65351.05,Neutral,weakening,Extreme Fear,32.0,mid-bull,0.232,-0.162,-0.771,HOLD at planned level
-2026-11-16,64882.87,Neutral,weakening,Extreme Fear,43.0,mid-bull,0.225,-0.298,-0.746,HOLD at planned level
-2026-11-17,64741.46,Neutral,weakening,Extreme Fear,46.0,mid-bull,0.22,-0.34,-0.768,HOLD at planned level
+2026-11-16,64882.87,Neutral,weakening,Extreme Fear,29.0,mid-bull,0.225,-0.126,-0.75,HOLD at planned level
+2026-11-17,64947.35,Neutral,weakening,Extreme Fear,32.0,mid-bull,0.222,-0.167,-0.743,HOLD at planned level
+2026-11-18,64703.79,Neutral,weakening,Extreme Fear,43.0,mid-bull,0.215,-0.198,-0.312,HOLD at planned level

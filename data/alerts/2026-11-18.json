@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-18",
+  "generated": "2026-11-18T01:14:15Z",
+  "price": 64704,
+  "events": [
+    {
+      "id": "news_flag:2026-11-18",
+      "type": "news",
+      "severity": "medium",
+      "title": "News moves a score across a headline-label threshold",
+      "facts": {
+        "detail": "News moves the medium-term score from -0.20 to -0.22, into BEARISH territory. The headline label stays NEUTRAL until the 12-indicator model itself confirms the change."
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 18 November 2026**\n\n**Alert**\n• **News moves a score across a headline-label threshold**: a Fed official's call for several more rate rises pushed the medium-term reading just into its weak zone. The headline stays NEUTRAL until the 12-indicator model itself confirms the change, so treat it as an early warning, not a switch.\n\n**Snapshot**\n• Bitcoin about $64,704, down about 12.6% over 7 days and about 21% over 30 days.\n• Headline NEUTRAL, confidence MEDIUM; the long-term trend still reads up.\n• Fear & Greed 11 out of 100 (extreme fear); price has closed under its 50-day average for 28 days in a row.\n\n**What happened (last 24h)**\n• Price held roughly flat around $64,000-65,000; no single cause is reported. Glassnode (via PANews) says recent buyers have sold at losses seen near past local lows, and $62,000-66,000 is where many of them bought.\n• About $194M of bets were forced to close in 24 hours, split between bets on a rise and on a fall (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short and medium term both lean down.\n• Turns up: a close above $66,250 (top of a typical week's swing), then $68,109 (200-week average).\n• Sideways: $64,150-66,250; a normal week swings about $2,957.\n• Turns down: a close below $64,150 (the 30-day low).\n• Rally watch: drop window open since 13 November; a rally signal needs about $79,936, a fresh drop signal comes below about $68,094.\n• Scheduled: October FOMC minutes this week (Pintu); the next Fed meeting is 8 December.\n\n**News that matters**\n• 1inch warns an iPhone flaw ('DarkSword', iOS 18.4-18.7) can steal wallet keys (PANews): short term, negative.\n• Fed's Musalem says 'several' rate rises may be needed before spring (PANews): medium term, negative.\n• World Bank is testing USDC payouts with Citi and Circle (PANews): long term, small positive.\n\n**Altcoins & themes**\n• Anthropic's IPO is pulling crypto traders toward tokenized stocks: Binance Wallet runs an Anthropic tokenized-share subscription today (PANews).\n• New on Reku: Midnight (NIGHT) says Monument Bank is bringing about £250M of deposits onto its network (according to the project; BSC News also reported it).\n\n**Bigger picture**\n• Next month leans down and 3-6 months still lean up, but only just; a close back above $72,733 (the 200-day average) would put the recovery back on track.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid / digital marketing**\n• Hold trader-targeted spend and keep a reserve: the Rally watch drop window is still open and Bitcoin is about 11% under its 200-day average ($72,733).\n• Apply the d30 ROI stop-loss on running campaigns and park the saved budget.\n• Lean new-user ads on safety and learning (Fear & Greed is 11); keep rally creatives ready in case price reaches about $79,936."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content**\n• Post an iPhone security alert today: 1inch warns the 'DarkSword' flaw can steal wallet keys on iOS 18.4-18.7 (PANews).\n• Keep the daily market recap factual: Bitcoin near $64,704, down about 12.6% in a week and about 5% under its 200-week average.\n• Use the Anthropic IPO interest for a 'what are tokenized stocks' explainer (Binance Wallet's subscription runs today, per PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM**\n• Send iPhone users a security reminder: update iOS and never type a recovery phrase into a site or message (DarkSword warning, PANews).\n• Send existing holders a calm market note with an explainer link, no push to trade; Bitcoin is about 21% lower over the month.\n• Keep welcome and education journeys running, pause deposit promotions, and have the post-rally onboarding journey ready (new sign-ups arrive about 2-4 weeks after a rally)."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · what competitors are publishing**\n• Why Bitcoin is falling (Pintu, Pluang): both run daily drop pieces, e.g. Pintu's 'Analisis Pasar Crypto Hari Ini (17 November 2026)'. Refresh a 'why is Bitcoin down this week' page; check against Reku's pages.\n• Wallet security (Pluang): five hack posts incl. the DarkSword iOS exploit. Publish an iPhone wallet-safety guide.\n• Fed and FOMC (Pintu, Pluang): Pintu covers the October minutes and a possible December hike. Refresh the FOMC schedule in WIB ahead of 8 December.\nIndodax could not be read today. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins**\n• Top coins: Bitcoin (-0.1% in 24h): PANews reports Susquehanna tripled its Bitcoin ETF holdings to about $622M in Q3. XRP (+2.2%): seven large US banks disclosed about $29.4M of XRP ETF holdings (PANews). Zcash (+6.2%): Cypherpunk says it plans to hold 5% of the supply (PANews), and Pluang reports an upgrade vote.\n• Theme: Anthropic's IPO is drawing crypto traders to tokenized stocks (Binance Wallet subscription today; Bloomberg via PANews reports over $334M of Anthropic-linked positions on Hyperliquid). HYPE +0.3% in 24h.\n• New on Reku: Midnight (NIGHT) says Monument Bank is bringing about £250M of deposits onto its network (according to the project); DODO is up about 50% in 7 days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969524.279969",
+      "at": "2026-11-18T02:39:08Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969530.870159",
+      "at": "2026-11-18T02:39:08Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969533.197719",
+      "at": "2026-11-18T02:39:08Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969535.108529",
+      "at": "2026-11-18T02:39:08Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969538.157319",
+      "at": "2026-11-18T02:39:08Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1794969540.852119",
+      "at": "2026-11-18T02:39:08Z"
+    }
+  ]
+}
