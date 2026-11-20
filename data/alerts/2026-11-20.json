@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-20",
+  "generated": "2026-11-20T00:07:14Z",
+  "price": 62104,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 20 November 2026**\n\n**Snapshot**\n• Bitcoin about $62,104, down about 9% over 7 days and about 26% over 30 days.\n• Headline: **NEUTRAL**, confidence LOW. The last few weeks still lean down; the headline would turn BEARISH if that lasts two more days. The long-term trend is still up, but thin.\n• Fear & Greed: 12 out of 100 (extreme fear).\n\n**What happened (last 24h)**\n• Bitcoin slipped below $62,000 again (PANews); no single cause is reported. US spot Bitcoin funds lost about $487 million on the latest day.\n• About $324 million of borrowed bets were forced to close across crypto in 24 hours, two-thirds of them bets on a rise (PANews, CoinGlass data).\n• The wallet behind October's Binance theft moved about $248 million of ETH to new wallets and swapped some into BTC (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short term is soft and the month leans down.\n• Turns up: a close above $64,000 (top of a typical week's swing), then $68,246 (200-week average).\n• Sideways: between $60,000 and $64,000; a normal week lately swings about $3,971.\n• Turns down: a close below $60,000.\n• Rally watch: drop window open since 13 November; a rally signal would need about $73,779.\n• Scheduled: Fed meeting 8 December; JPMorgan now expects a rate rise there (PANews).\n\n**News that matters**\n• JPMorgan expects the Fed to raise rates in December, January and March (PANews), medium term, negative.\n• Stolen Binance coins on the move and a security incident at wallet app Fluidkey (PANews), short term, small negative.\n• Russia's central bank plans to let funds for qualified investors buy crypto (PANews), long term, small positive.\n\n**Altcoins & themes**\n• Anthropic debuted on Nasdaq at $111.50, 34% above its IPO price, and Coinbase, Binance, Kraken and OKX listed tokenized versions on day one (PANews). Regulators in the US and Hong Kong are also turning to on-chain platforms like Hyperliquid (HYPE +0.5% today).\n• New on Reku: Babylon (BABY) co-founder proposes ending its Bitcoin staking by year-end; still a proposal (PANews, citing The Defiant).\n\n**Bigger picture**\nNext month leans down until Bitcoin wins back $77,703 (50-day average); the 3-6 month picture still leans up only while the 200-day average keeps rising, and is back on track above $72,551.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid / Digital:** Hold trader-targeted spend at the planned level and keep a reserve: the Rally watch drop window has been open since 13 November and Bitcoin (about $62,104) is under its 200-week average. Shift creatives to trust, safety and tokenized-stock explainers for stablecoin and newer users, and pause any campaign that falls below its 30-day return stop. Keep rally creatives ready to launch if Bitcoin closes back above $68,246."
+    },
+    {
+      "audience": "social",
+      "text": "**Social:** Keep the normal rhythm with a calm, factual daily recap (Bitcoin about $62,104, down about 9% in a week). The day's best topic is Anthropic's Nasdaq debut and its tokenized versions on Coinbase, Binance, Kraken and OKX (PANews): explain what a tokenized stock is and is not. Add a wallet-safety reminder after the Fluidkey incident (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** Send existing holders a calm update: Bitcoin is down about 9% in a week and about 50% from its all-time high, with no forecast and no push to trade. Add an account and wallet-safety reminder, as stolen Binance coins are moving again and Fluidkey went offline after an incident (PANews). Keep the onboarding journey queued, not live: sign-ups tend to arrive 2-4 weeks after a rally, not during a drop."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pintu and Pluang are both covering Anthropic's IPO and tokenized stocks (Pintu ran five 'Apa itu ... Tokenized Stock' guides); publish a plain tokenized-stock explainer using Anthropic. Pluang is also writing on November's Bitcoin ETF outflows ('keluar dana etf bitcoin 2 58 miliar...'), so refresh 'why is Bitcoin down'. Third, stablecoin safety (Sky, Ethena, Cardano's DJED) is covered by both; refresh the stablecoin explainer. Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Among the ten largest, Hyperliquid (HYPE, +0.8% in 24h) faces US and Hong Kong regulators: the CFTC chair says it needs a license or licensed partner for US retail, and Hong Kong's SFC flagged it as unlicensed (PANews). BNB (flat) and Solana (-0.1%) both hosted tokenized Anthropic shares on day one (PANews). Sky (SKY, -7.0%) is under pressure after an Inca Digital report (via CoinDesk/PANews) linked about $518 million of illicit funds to its stablecoin system. On Reku's new listings, Babylon (BABY) proposes ending its Bitcoin staking by year-end, still only a proposal (PANews)."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133427.510979",
+      "at": "2026-11-20T00:10:46Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133431.848619",
+      "at": "2026-11-20T00:10:46Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133433.872149",
+      "at": "2026-11-20T00:10:46Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133435.935159",
+      "at": "2026-11-20T00:10:46Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133438.655609",
+      "at": "2026-11-20T00:10:46Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795133440.957599",
+      "at": "2026-11-20T00:10:46Z"
+    }
+  ]
+}

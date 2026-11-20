@@ -4236,14 +4236,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-11-06,75746.9296875,Bull,stable,Fear,46.0,mid-bull,0.343,0.186,-0.01,HOLD at planned level
 2026-11-07,75747.578125,Bull,weakening,Extreme Fear,33.0,mid-bull,0.346,0.05,-0.147,HOLD at planned level
 2026-11-08,74584.6484375,Bull,weakening,Fear,33.0,mid-bull,0.334,0.052,-0.101,HOLD at planned level
-2026-11-09,75368.41,Bull,weakening,Fear,42.0,mid-bull,0.347,0.141,-0.358,HOLD at planned level
-2026-11-10,73796.06,Neutral,weakening,Fear,43.0,mid-bull,0.33,0.157,-0.112,HOLD at planned level
-2026-11-11,74015.19,Neutral,weakening,Fear,36.0,mid-bull,0.334,0.081,-0.195,HOLD at planned level
-2026-11-12,71460.0,Neutral,weakening,Fear,37.0,mid-bull,0.304,0.092,-0.176,HOLD at planned level
-2026-11-13,68314.0,Neutral,weakening,Extreme Fear,35.0,mid-bull,0.267,0.07,-0.354,HOLD at planned level
-2026-11-14,64150.0,Neutral,weakening,Extreme Fear,25.0,mid-bull,0.219,-0.067,-0.646,HOLD at planned level
-2026-11-15,65351.05,Neutral,weakening,Extreme Fear,32.0,mid-bull,0.231,-0.162,-0.771,HOLD at planned level
+2026-11-09,75223.1484375,Bull,weakening,Fear,41.0,mid-bull,0.345,0.136,-0.358,HOLD at planned level
+2026-11-10,73796.06,Neutral,weakening,Fear,43.0,mid-bull,0.33,0.155,-0.112,HOLD at planned level
+2026-11-11,74015.19,Neutral,weakening,Fear,35.0,mid-bull,0.334,0.079,-0.195,HOLD at planned level
+2026-11-12,71460.0,Neutral,weakening,Fear,37.0,mid-bull,0.304,0.09,-0.176,HOLD at planned level
+2026-11-13,68314.0,Neutral,weakening,Extreme Fear,34.0,mid-bull,0.267,0.068,-0.354,HOLD at planned level
+2026-11-14,64150.0,Neutral,weakening,Extreme Fear,26.0,mid-bull,0.219,-0.069,-0.646,HOLD at planned level
+2026-11-15,65351.05,Neutral,weakening,Extreme Fear,32.0,mid-bull,0.231,-0.164,-0.771,HOLD at planned level
 2026-11-16,64882.87,Neutral,weakening,Extreme Fear,29.0,mid-bull,0.225,-0.126,-0.75,HOLD at planned level
 2026-11-17,64947.35,Neutral,weakening,Extreme Fear,34.0,mid-bull,0.222,-0.182,-0.743,HOLD at planned level
-2026-11-18,63068.22,Neutral,weakening,Extreme Fear,46.0,mid-bull,0.197,-0.228,-0.516,HOLD at planned level
-2026-11-19,62918.37,Neutral,weakening,Extreme Fear,50.0,mid-bull,0.19,-0.259,-0.237,HOLD at planned level
+2026-11-18,63068.22,Neutral,weakening,Extreme Fear,43.0,mid-bull,0.197,-0.202,-0.54,HOLD at planned level
+2026-11-19,61986.73,Neutral,weakening,Extreme Fear,48.0,mid-bull,0.18,-0.239,-0.364,HOLD at planned level
+2026-11-20,62104.0,Neutral,weakening,Extreme Fear,39.0,mid-bull,0.174,-0.235,-0.61,HOLD at planned level
