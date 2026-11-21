@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-21",
+  "generated": "2026-11-21T00:09:52Z",
+  "price": 58927,
+  "events": [
+    {
+      "id": "low_30d:down",
+      "type": "range_break",
+      "severity": "medium",
+      "title": "BTC broke below its 30-day low ($58,952)",
+      "facts": {
+        "level": 58952,
+        "direction": "down",
+        "price": 58927
+      },
+      "repeat": true
+    },
+    {
+      "id": "low_90d:down",
+      "type": "range_break",
+      "severity": "medium",
+      "title": "BTC broke below its 90-day low ($58,952)",
+      "facts": {
+        "level": 58952,
+        "direction": "down",
+        "price": 58927
+      },
+      "repeat": true
+    },
+    {
+      "id": "spike:60000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC pushed above $60,000 in the last 24 hours (high $62,640) and pulled back",
+      "facts": {
+        "level": 60000,
+        "high_24h": 62640,
+        "price": 58927
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 21 November 2026**\n\n**Alert**\n• BTC pushed above $60,000 in the last 24 hours (high $62,640) and pulled back. The bounce did not hold; Bitcoin is back at its lowest close of the last 90 days.\n\n**Snapshot**\n• Bitcoin about $58,927, down about 8% over 7 days and about 28% over 30 days.\n• Headline: **NEUTRAL**, confidence LOW. The last few weeks lean clearly down; the headline turns BEARISH if that lasts one more day.\n• Fear & Greed: 12 out of 100 (extreme fear).\n\n**What happened (last 24h)**\n• Bitcoin fell about 5% from about $62,100, through $60,000 and briefly below $58,000 (PANews). QCP (via PANews) says the weakness reflects a wider sell-off in tech stocks more than crypto news.\n• About $1.54 billion of bets were forced to close across crypto in 24 hours (PANews).\n• An address tied to October's Binance hack moved about 197,000 ETH (about $346 million) to 17 wallets (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short term is weak and the month leans down.\n• Turns up: a close above $61,000 (top of a typical week's swing), then $67,733 (200-week average).\n• Sideways: between $57,000 and $61,000; a normal week lately swings about $4,069.\n• Turns down: a close below $57,000 (bottom of a typical week's swing).\n• Rally watch: drop window open since 13 November; a rally signal would need about $69,282.\n• Scheduled: next Fed meeting on 8 December.\n\n**News that matters**\n• Tech-stock sell-off after Jensen Huang's Nvidia exit spreads to crypto (PANews): short term, negative.\n• French central bank committee asks the EU to tighten crypto advertising rules for retail investors (PANews): medium term, small negative.\n• Hong Kong publishes a bill to bring crypto trading, advice, management and custody under licensing (PANews): long term, positive.\n\n**Altcoins & themes**\n• 79 of 89 large coins fell (Pluang); Zcash (ZEC -15.6%) and Hyperliquid (HYPE -9.5%) fell hardest among the ten largest. Ledger says tampered wallets turned up in Berlin and Dubai (PANews).\n• New on Reku: Midnight (NIGHT) signed a deal to enter Japan's financial sector, according to Pluang.\n\n**Bigger picture**\nNext month leans down until Bitcoin wins back $77,127 (50-day average); the 3-6 month picture still leans up only while the 200-day average keeps rising, and is back on track above $72,425.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid / Digital:** Hold trader-targeted spend at the planned level and keep a reserve: the Rally watch drop window has been open since 13 November and Bitcoin (about $58,927) is about 13% under its 200-week average. Lean new-user ads on trust, safety and tokenized-stock explainers, and pause any campaign that falls below its 30-day return stop. Keep rally creatives ready to launch if Bitcoin closes back above $67,733."
+    },
+    {
+      "audience": "social",
+      "text": "**Social:** Keep the normal rhythm with a calm, factual daily recap (Bitcoin about $58,927, down about 8% in a week). The most useful topic is why crypto fell with tech stocks: QCP (via PANews) links the drop to the wider stock sell-off. Add a hardware-wallet safety reminder, as Ledger says tampered devices turned up in Berlin and Dubai (PANews)."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM:** Send existing holders a calm update: Bitcoin is down about 28% in a month and fell together with tech stocks, with no forecast and no push to trade. Add a safety reminder: buy hardware wallets only from official sellers and never share a recovery phrase (Ledger's warning, PANews). Keep the onboarding journey queued, not live: sign-ups tend to arrive 2-4 weeks after a rally, not during a drop."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO:** Pluang is covering Bitcoin's fall below $60,000 almost hour by hour ('bitcoin mencapai harga terendah sejak 2024'); refresh 'why is Bitcoin down' and 'Bitcoin price today' with the stock sell-off context. Pintu and Pluang both keep writing on tokenized stocks (Pintu's 'Apa itu Saham Anthropic (ANT) dan Tokenized Stock ANTon?', Pluang on the first on-chain Apple dividend); publish or refresh a tokenized-stock guide. Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins:** Among the ten largest, Ethereum (ETH -7.9%) saw its Glamsterdam upgrade delayed to late January at the earliest (PANews), and Zcash (ZEC -15.6%) fell hard even after Bitwise applied for a spot Zcash fund on 18 November; no report gives a reason for the fall. Binance is removing its 'Seed' risk tag from Hyperliquid (HYPE -9.5%), PANews reports. The main theme is security: stolen Binance-hack coins keep moving and wrapped token XMR1 crashed 99% after a theft (PANews). On Reku's new listings, Midnight (NIGHT) signed a Japan financial-sector deal according to Pluang, while PONS (-34% in 7 days) fell with no stated reason."
+    }
+  ],
+  "posted": []
+}

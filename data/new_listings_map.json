@@ -196,6 +196,16 @@
     "name": "Re",
     "x": "re"
   },
+  "SPCXB": {
+    "categories": [
+      "Tokenized Assets",
+      "BNB Chain Ecosystem",
+      "Tokenized Stocks"
+    ],
+    "id": "spacex-bstocks-tokenized-stock",
+    "name": "SpaceX",
+    "x": "binance"
+  },
   "SYN": {
     "categories": [
       "BNB Chain Ecosystem",
