@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-22",
+  "generated": "2026-11-22T06:02:57Z",
+  "price": 59490,
+  "events": [
+    {
+      "id": "round:60000:down",
+      "type": "level_cross",
+      "severity": "high",
+      "title": "BTC fell below $60,000",
+      "facts": {
+        "level": 60000,
+        "direction": "down",
+        "price": 59490,
+        "previous_close": 60216
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 22 November 2026**\n\n**Alert**\n• **BTC fell below $60,000** (close $59,490, from $60,216 the day before). It matters because $60,000 is a round level many people watch, and the Rally watch drop signal stays live below $60,123.\n\n**Snapshot**\n• Bitcoin about $59,490, down about 9% in 7 days and about 27% in 30 days.\n• Headline: NEUTRAL, low confidence. Fear & Greed 11 out of 100 (extreme fear).\n• The US stock fear index (VIX) is near 36, unusually high.\n\n**What happened (last 24h)**\n• Bitcoin dipped toward $55,000 and bounced back near $59,000-60,000; Forbes (via PANews) links the drop to a wider pull-back of money from markets, made worse by crypto selling and weak mood.\n• Nvidia fell 14% in a single day and the Nasdaq about 5% (PANews), and Goldman Sachs warns the stock selling may intensify next week.\n• About $2.3 billion of bets were forced to close in 24 hours, mostly bets on a rise (CoinGlass via PANews). On the other side, Abraxas Capital bought about $897 million of Bitcoin (Onchain Lens via PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short term is weak and the month leans down.\n• Turns up: a close above $61,500 (top of a typical week's swing), then $68,379 (200-week average).\n• Sideways: between $58,952 and $61,500; a normal week swings about $3,988.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: drop window open since 11 November; a rally signal needs a close above $70,579, the drop signal stays live below $60,123.\n• Scheduled: New York court hearing on Kalshi on 24 November; next Fed meeting 8 December.\n\n**News that matters**\n• Nvidia's 14% one-day fall drags risky assets (PANews): short term, moderate negative.\n• Abraxas Capital buys about $897 million of Bitcoin (PANews): medium term, moderate positive.\n• Chainflip loses about $4.86 million in a hack (PANews): short term, small negative.\n\n**Altcoins & themes**\n• Prediction markets face a legal fight (44 US state attorneys general oppose CFTC rules; Kalshi court hearing), and a run of hacks and glitches hit Chainflip, Cyber and Kraken (PANews).\n• New on Reku: Midnight (NIGHT), up about 7% today; Pluang reports a deal to bring its blockchain into Japan's financial sector.\n\n**Bigger picture**\n• Next month leans down; the 3-6 month picture still leans up only barely. A close back above $72,322 (the 200-day average) would put the recovery back on track.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid · 22 Nov:** Hold trader-targeted spend and keep a reserve: Bitcoin fell below $60,000 and the Rally watch drop window is still open. Apply the d30 ROI stop-loss instead of topping up weak campaigns. Have rebound creatives ready but not live, to launch only if Bitcoin closes above $70,579 (the Rally watch trigger) and then $72,322 (the 200-day average)."
+    },
+    {
+      "audience": "social",
+      "text": "**Social · 22 Nov:** Keep the normal rhythm with a calm, factual tone; fear is at 11 out of 100. Explain why crypto fell with tech stocks (Nvidia fell 14% in a day, PANews) without price calls, and post a safety explainer using the Chainflip hack and Kraken's pricing glitch. Report big buyers such as Abraxas Capital (about $897 million of Bitcoin) as news, not as a signal."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 22 Nov:** Send existing holders a calm market update (Bitcoin near $59,490, down about 27% in a month, alongside a sharp fall in tech stocks) with no promotional pressure. Add an account-safety reminder tied to this week's hacks and glitches. Keep onboarding journeys running normally and save re-engagement pushes for a rally window."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 22 Nov:** Pluang is covering Bitcoin's fall below $60,000 and the bounce hour by hour: refresh 'why is Bitcoin down' and 'Bitcoin price today' with today's levels. Pintu and Pluang both wrote up the Nvidia-led stock sell-off (e.g. Pintu's 'Nasdaq Ambles 5,3%, S&P 500 Masuk Koreksi'): publish a plain 'why crypto falls when tech stocks fall' explainer. Pluang also covered record Bitcoin ETF outflows: refresh an ETF explainer. Indodax could not be read today; check all of this against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 22 Nov:** Among the ten largest: Bitcoin (+1.5% today) saw Abraxas Capital buy about $897 million of Bitcoin (Onchain Lens via PANews); Ethereum (+3.1%) has BTCS warning the SEC its $54 million Ether-backed loan could be force-closed (CoinDesk via PANews). Themes: prediction markets face a legal fight (44 US state attorneys general oppose CFTC rules; a New York hearing on Kalshi is set for 24 November), and a run of hacks hit Chainflip (FLIP fell 34%, PANews) and Cyber. New on Reku: Midnight (NIGHT, +6.7% today), with Pluang reporting a deal to bring its blockchain into Japan's financial sector; DODO is up about 22% in a week with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328343.023899",
+      "at": "2026-11-22T06:19:23Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328348.145869",
+      "at": "2026-11-22T06:19:23Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328350.131969",
+      "at": "2026-11-22T06:19:23Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328352.024939",
+      "at": "2026-11-22T06:19:23Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328354.564899",
+      "at": "2026-11-22T06:19:23Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795328357.321929",
+      "at": "2026-11-22T06:19:23Z"
+    }
+  ]
+}
