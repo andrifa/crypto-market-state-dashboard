@@ -50,7 +50,7 @@ const PROFILE = process.env.X_PROFILE || path.join(os.homedir(), "twitter_sessio
   while (Date.now() - started < TIMEOUT) {
     await page.waitForTimeout(2000);
     try {
-      const link = await page.$('[data-testid="AppTabBar_Profile_Link"]');
+      const link = await page.$('[data-testid="AppTabBar_Profile_Link"], nav a[aria-label="Profile"]');
       if (link) {
         const href = await link.getAttribute("href");
         if (href) { handle = href.replace(/^\//, ""); break; }

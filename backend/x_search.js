@@ -54,6 +54,8 @@ const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 // to the panews-scraper app's profile, so the daily run keeps working.
 const DASH_PROFILE = path.join(os.homedir(), "twitter_session", "dashboard");
 const OLD_PROFILE = path.join(os.homedir(), "twitter_session", "persistent");
+// The left-menu profile link: old layout has a data-testid, the late-2026 layout only an aria-label.
+const PROFILE_LINK = '[data-testid="AppTabBar_Profile_Link"], nav a[aria-label="Profile"]';
 const PROFILE = process.env.X_PROFILE
   || (fs.existsSync(DASH_PROFILE) ? DASH_PROFILE : OLD_PROFILE);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -61,26 +63,36 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // Reads the posts currently rendered on the page (pinned posts are flagged out, promoted ones are marked `ad`).
 async function readTweets(page) {
+  // Works with both X layouts: the old one (data-testid="tweet", <time datetime>) and the late-2026 one, which dropped
+  // most data-testid labels and the <time> tag. There the post time comes from the post id (X ids encode the time).
   return page.evaluate(() => {
     const out = [];
-    document.querySelectorAll('article[data-testid="tweet"]').forEach((a) => {
-      const ctxt = ((a.querySelector('[data-testid="socialContext"]') || {}).textContent || "");
+    const idTime = (id) => new Date(Number(BigInt(id) >> 22n) + 1288834974657).toISOString();
+    document.querySelectorAll("article").forEach((a) => {
+      const sc = a.querySelector('[data-testid="socialContext"]');
+      const firstLine = ((a.innerText || "").split("\n")[0] || "").trim();
+      const ctxt = sc ? sc.textContent || "" : (/^(pinned|.{1,60} (reposted|retweeted))$/i.test(firstLine) ? firstLine : "");
       if (/pinned/i.test(ctxt)) return;
       const t = a.querySelector("time");
-      const link = t && t.closest("a");
+      let link = t && t.closest("a");
+      if (!link) link = [...a.querySelectorAll("a[href]")].find((x) => /^\/[^/]+\/status\/\d+$/.test(x.getAttribute("href")));
       const m = link && link.href.match(/status\/(\d+)/);
       if (!m) return;
-      const num = (sel) => ((a.querySelector(sel) || {}).textContent || "0").trim() || "0";
+      const pick = (oldSel, newSel) => a.querySelector(oldSel) || a.querySelector(newSel);
+      const num = (oldSel, newSel) => ((pick(oldSel, newSel) || {}).textContent || "0").trim() || "0";
+      const textEl = pick('[data-testid="tweetText"]', 'div[dir="auto"][lang]');
+      const isAd = !!a.querySelector('[data-testid="placementTracking"]')
+        || [...a.querySelectorAll("span")].some((x) => /^(Ad|Promoted)$/.test((x.textContent || "").trim()));
       out.push({
         id: m[1],
-        time: t.getAttribute("datetime"),
-        text: ((a.querySelector('[data-testid="tweetText"]') || {}).textContent || "").trim(),
+        time: (t && t.getAttribute("datetime")) || idTime(m[1]),
+        text: ((textEl || {}).textContent || "").trim(),
         url: link.href.split("?")[0],
         repost: /reposted|retweeted/i.test(ctxt),
-        ad: !!a.querySelector('[data-testid="placementTracking"]'),
-        replies: num('[data-testid="reply"]'),
-        reposts: num('[data-testid="retweet"]'),
-        likes: num('[data-testid="like"]'),
+        ad: isAd,
+        replies: num('[data-testid="reply"]', '[data-engagement-action="reply"]'),
+        reposts: num('[data-testid="retweet"]', '[data-engagement-action="retweet"]'),
+        likes: num('[data-testid="like"]', '[data-engagement-action="like"]'),
       });
     });
     return out;
@@ -128,7 +140,7 @@ function finish(result, code) {
           await page.goto(`https://x.com/search?q=${encodeURIComponent(q)}&src=typed_query${opt.sort === "live" ? "&f=live" : ""}`,
                           { timeout: 60000, waitUntil: "domcontentloaded" });
           await page.waitForTimeout(6000);
-          if (!(await page.$('[data-testid="AppTabBar_Profile_Link"]')) || (await page.$('a[href="/login"]'))) {
+          if (!(await page.$(PROFILE_LINK)) || (await page.$('a[href="/login"]'))) {
             result.ok = false;
             result.reason = "X is not logged in on this profile (run backend/x_login.js or copy the X cookies again)";
             break;
@@ -156,7 +168,7 @@ function finish(result, code) {
         await page.goto("https://x.com/" + h, { timeout: 60000, waitUntil: "domcontentloaded" });
         await page.waitForTimeout(6000);
         // logged in = the left menu with the profile link exists; a logged-out profile page still renders, just empty
-        const loggedIn = !!(await page.$('[data-testid="AppTabBar_Profile_Link"]'));
+        const loggedIn = !!(await page.$(PROFILE_LINK));
         if (!loggedIn || /\/i\/flow\/login|\/login/.test(page.url()) || (await page.$('a[href="/login"]'))) {
           result.ok = false;
           result.reason = "X is not logged in on this profile (log in again from the panews-scraper app)";
@@ -167,7 +179,7 @@ function finish(result, code) {
         if (/this account doesn.t exist|account doesn.t exist|hmm\.\.\.this page doesn.t exist/i.test(body)) status = "not_found";
         else if (/account suspended/i.test(body)) status = "suspended";
         else if (/these posts are protected|this account.s posts are protected/i.test(body)) status = "restricted";
-        else if (!(await page.$('article[data-testid="tweet"]')) && /something went wrong/i.test(body)) status = "error";
+        else if (!(await page.$("article")) && /something went wrong/i.test(body)) status = "error";
         if (status !== "ok") {
           result.accounts[h] = [];
           result.meta[h] = { status, last_post: null, n_recent: 0 };
