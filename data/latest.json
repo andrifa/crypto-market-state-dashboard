@@ -511,41 +511,85 @@
     ],
     "new_listings": {
       "count": 10,
-      "scope": "The first 10 assets on Reku's New Listings tab (reku.id/markets), in the order shown there. X search was unavailable today (login expired), so this uses PANews, Pluang and items still within 7 days from earlier reads; ANTB (Anthropic) is left out because no CoinGecko price matched Reku's quote.",
+      "scope": "The first 10 assets on Reku's New Listings tab (reku.id/markets), in the order shown there, checked against X search and PANews for the last 7 days; ANTB (Anthropic) is left out because no CoinGecko price matched Reku's quote.",
       "items": [
+        {
+          "symbol": "COTI",
+          "name": "COTI",
+          "tag": "Exchange listing",
+          "tone": "up",
+          "date": "2026-11-20",
+          "update": "The project says COTI is now live on Bitkub, Thailand's leading crypto exchange, after an earlier Uphold listing; Bitkub's own post set trading for the COTI/THB pair from 20 November. The project also says its Interphase private mode is approaching launch, with no date given.",
+          "change_24h_pct": 1.3,
+          "change_7d_pct": -6.8,
+          "sources": [
+            {
+              "title": "@COTInetwork: COTI live on Bitkub (2026-11-20)",
+              "url": "https://x.com/COTInetwork/status/2123778366474277242"
+            },
+            {
+              "title": "@BitkubOfficial: New listing COTI/THB (2026-11-19)",
+              "url": "https://x.com/BitkubOfficial/status/2123357886831337606"
+            }
+          ]
+        },
         {
           "symbol": "NIGHT",
           "name": "Midnight",
           "tag": "Partnership",
           "tone": "up",
           "date": "2026-11-21",
-          "update": "Pluang reports the Midnight Foundation signed a deal to bring its privacy blockchain into Japan's financial sector; the counterparty is not named in the report. NIGHT is up about 10% in 24 hours; no report links the rise to the deal.",
-          "change_24h_pct": 10.1,
-          "change_7d_pct": -1.1,
+          "update": "Pluang reports the Midnight Foundation signed a deal to bring its privacy blockchain into Japan's financial sector; the counterparty is not named. Earlier, the project said Monument Bank launched on Midnight with about £250 million of tokenized deposits planned for the opening phase (17 November). NIGHT is up about 10% in 24 hours; no report links the rise to either item.",
+          "change_24h_pct": 10.0,
+          "change_7d_pct": -1.3,
           "sources": [
             {
               "title": "Pluang: Midnight Foundation signs Japan payments deal (2026-11-21)",
               "url": "https://pluang.com/news-feed/midnight-foundation-tanda-tangan-perjanjian-pembayaran-jepang"
+            },
+            {
+              "title": "@MidnightNtwrk: Monument Bank launch on Midnight (2026-11-17)",
+              "url": "https://x.com/MidnightNtwrk/status/2122738646247772671"
             }
           ]
         },
         {
           "symbol": "SPCXB",
           "name": "SpaceX",
-          "tag": "Analyst upgrade",
+          "tag": "Company news",
           "tone": "mid",
           "date": "2026-11-22",
-          "update": "This token tracks SpaceX shares. PANews reports Jefferies upgraded SpaceX stock to buy on 22 November, after the shares fell to a two-week low during the tech-stock sell-off on 20 November.",
-          "change_24h_pct": 0.3,
-          "change_7d_pct": -5.9,
+          "update": "This token tracks SpaceX shares. PANews reports Jefferies upgraded SpaceX stock to buy on 22 November, and Wall St Engine on X reports SpaceX sold about $32 billion of bonds backed by AI chips (20 November). The shares fell to a two-week low on 20 November during the tech-stock sell-off.",
+          "change_24h_pct": 0.1,
+          "change_7d_pct": -6.2,
           "sources": [
             {
               "title": "PANews: Jefferies upgrades SpaceX to Buy (2026-11-22)",
               "url": "https://www.panews.io/articles/01a203e9-777c-763c-992f-a6e54c9efc2e"
             },
             {
-              "title": "PANews: SpaceX shares fall 5.1%, hitting two-week low (2026-11-20)",
-              "url": "https://www.panews.io/articles/01a1f973-bc1f-7360-8e38-a96cd70a4207"
+              "title": "@wallstengine: SpaceX sells $32B in AI chip-backed bonds (2026-11-20)",
+              "url": "https://x.com/wallstengine/status/2123708883063758854"
+            }
+          ]
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "tag": "Upcoming",
+          "tone": "mid",
+          "date": "2026-11-22",
+          "update": "The project says the next round of Stock Tokens drops on Monday 23 November, after adding Anthropic (ANT) as a launch pairing following its IPO (19 November). PONS is still down about 23% in 7 days, and no report gives a reason for the fall.",
+          "change_24h_pct": 4.3,
+          "change_7d_pct": -23.4,
+          "sources": [
+            {
+              "title": "@ponsdotfamily: next round of Stock Tokens on Monday (2026-11-22)",
+              "url": "https://x.com/ponsdotfamily/status/2124309620277805056"
+            },
+            {
+              "title": "@ponsdotfamily: Anthropic $ANT live for launch pairing (2026-11-19)",
+              "url": "https://x.com/ponsdotfamily/status/2123461396855718175"
             }
           ]
         },
@@ -555,26 +599,10 @@
           "tag": "Large move, no stated reason",
           "tone": "mid",
           "date": "2026-11-23",
-          "update": "DODO is up about 29% in 7 days while most coins fell. No PANews headline or news article found gives a reason, and X could not be read today.",
-          "change_24h_pct": 2.3,
-          "change_7d_pct": 29.1,
+          "update": "DODO is up about 29% in 7 days while most coins fell. Posts on X about it are trading-signal promotions, and no news report or project post gives a reason.",
+          "change_24h_pct": 2.4,
+          "change_7d_pct": 28.6,
           "sources": []
-        },
-        {
-          "symbol": "PONS",
-          "name": "Pons",
-          "tag": "Large move, no stated reason",
-          "tone": "down",
-          "date": "2026-11-23",
-          "update": "PONS is down about 23% in 7 days with no stated reason; nothing new on PANews since The Block's 15 November story about a trader buying early before the Robinhood listing.",
-          "change_24h_pct": 5.9,
-          "change_7d_pct": -22.9,
-          "sources": [
-            {
-              "title": "PANews: Trader says BitGo code changes let them front-run Robinhood listings",
-              "url": "https://www.panews.io/articles/01a1e103-7834-72ac-9890-cfb5e0e2e030"
-            }
-          ]
         },
         {
           "symbol": "ACE",
@@ -582,51 +610,53 @@
           "tag": "Security incident",
           "tone": "down",
           "date": "2026-11-22",
-          "update": "PANews reports attackers used a privileged minting permission on Fusionist's BNB Chain bridge to create trillions of unbacked ACE tokens and swap them for USDT; estimates of the amount taken range from about $1 million to about $1.9 million. ACE is down about 17% in 7 days.",
-          "change_24h_pct": -1.5,
-          "change_7d_pct": -17.2,
+          "update": "The project asked users to pause ACE transfers, trading and bridging on BNB Chain while it investigates an exploit. Security firm Blockaid said a privileged bridge minter created unbacked ACE and sold it for about $1.04 million in USDT, not a final figure, and On-chain Lens reports about $1.87 million was moved through Tornado Cash. ACE is down about 11% in 7 days.",
+          "change_24h_pct": -4.2,
+          "change_7d_pct": -10.9,
           "sources": [
+            {
+              "title": "@fusionistio: Security alert, pause ACE on BSC (2026-11-22)",
+              "url": "https://x.com/fusionistio/status/2124586293812461578"
+            },
+            {
+              "title": "@blockaid_: Fusionist exploit detected (2026-11-22)",
+              "url": "https://x.com/blockaid_/status/2124580794144322035"
+            },
             {
               "title": "PANews: Fusionist attacked, attacker mints over 6 trillion ACE (2026-11-22)",
               "url": "https://www.panews.io/articles/01a204d5-66bf-75a7-9719-0d8e39ab8fa4"
-            },
-            {
-              "title": "PANews: Fusionist Bridge exploited (2026-11-22)",
-              "url": "https://www.panews.io/articles/01a204cc-05fd-707f-a090-859c30e81ca9"
             }
           ]
         }
       ],
-      "also": [],
+      "also": [
+        {
+          "symbol": "PHA",
+          "text": "The project says an uncensored DeepSeek model variant is now live on Phala for authorized security testing, run inside private secure hardware (18 November).",
+          "url": "https://x.com/PhalaNetwork/status/2123125266126188978"
+        }
+      ],
       "quiet": [
         {
           "symbol": "MARSCOIN",
-          "text": "Down about 12% in 7 days; nothing on PANews explains it, and X could not be read today."
-        },
-        {
-          "symbol": "COTI",
-          "text": "The last item was the project's 16 November Interphase early-access post, now 7 days old; nothing new on PANews."
+          "text": "Down about 12% in 7 days; posts on X are meme-coin promotions only, with no project or news update."
         },
         {
           "symbol": "PEOPLE",
-          "text": "No news about ConstitutionDAO itself on PANews this week, and X could not be read today; it moved with the wider market."
-        },
-        {
-          "symbol": "PHA",
-          "text": "Nothing new since the project's 13 November post; X could not be read today and nothing is on PANews."
+          "text": "No news about ConstitutionDAO itself: X posts mentioning it are trending lists or about an unrelated project."
         }
       ]
     },
     "top_coins": {
       "as_of": "2026-11-23",
-      "scope": "The ten largest cryptocurrencies by market cap (CoinGecko), without stablecoins and wrapped or staked copies; notes only where a PANews report from the last 3 days says something specific (X search was unavailable today).",
+      "scope": "The ten largest cryptocurrencies by market cap (CoinGecko), without stablecoins and wrapped or staked copies; notes only where an X post or PANews report from the last 3 days says something specific.",
       "items": [
         {
           "symbol": "BTC",
           "name": "Bitcoin",
           "rank": 1,
-          "price_usd": 61125,
-          "change_24h_pct": 1.7,
+          "price_usd": 60966,
+          "change_24h_pct": 1.5,
           "change_7d_pct": -6.3,
           "tag": "Network bug fixed",
           "tone": "up",
@@ -647,14 +677,18 @@
           "symbol": "ETH",
           "name": "Ethereum",
           "rank": 2,
-          "price_usd": 1715.48,
-          "change_24h_pct": 2.0,
-          "change_7d_pct": -5.9,
-          "tag": "Wallet hack",
+          "price_usd": 1713.88,
+          "change_24h_pct": 1.9,
+          "change_7d_pct": -6.4,
+          "tag": "Hack funds moving",
           "tone": "down",
           "date": "2026-11-22",
-          "note": "PANews reports the crypto wallet Fluidkey was hacked for about $1.6 million, affecting 52 accounts; the reports do not describe a problem with Ethereum's own network.",
+          "note": "Bitcoin News on X, citing On-chain Lens, reports the Binance hackers moved about $594 million in ETH in two days through Chainflip and THORChain; PANews separately reports the wallet app Fluidkey was hacked for about $1.6 million. Neither describes a problem with Ethereum's own network.",
           "sources": [
+            {
+              "title": "@BitcoinNews: Binance hacker laundered ~$594M in ETH (2026-11-22)",
+              "url": "https://x.com/BitcoinNews/status/2124601312017047639"
+            },
             {
               "title": "PANews: Crypto wallet Fluidkey hacked for about $1.6 million",
               "url": "https://www.panews.io/articles/01a2014a-bfc2-7053-ac81-1c7e2a7ad957"
@@ -665,14 +699,18 @@
           "symbol": "BNB",
           "name": "BNB",
           "rank": 4,
-          "price_usd": 558.87,
-          "change_24h_pct": 1.8,
-          "change_7d_pct": -6.3,
-          "tag": "Bridge exploit",
-          "tone": "down",
+          "price_usd": 558.18,
+          "change_24h_pct": 1.6,
+          "change_7d_pct": -6.2,
+          "tag": "Tokenized fund grows",
+          "tone": "mid",
           "date": "2026-11-22",
-          "note": "PANews reports attackers abused a privileged minting permission on Fusionist's bridge on BNB Chain to create trillions of ACE tokens; the problem was in Fusionist's bridge, not BNB Chain itself.",
+          "note": "MSB Intel on X reports BlackRock's BUIDL fund now has about $277.8 million on BNB Chain, up about 63% in 30 days. Separately, PANews reports attackers abused a minting permission on Fusionist's bridge on BNB Chain; the problem was in Fusionist's bridge, not BNB Chain itself.",
           "sources": [
+            {
+              "title": "@MSBIntel: BlackRock BUIDL on BNB Chain reaches $277.82M (2026-11-22)",
+              "url": "https://x.com/MSBIntel/status/2124488064097759566"
+            },
             {
               "title": "PANews: Fusionist attacked, attacker mints over 6 trillion ACE",
               "url": "https://www.panews.io/articles/01a204d5-66bf-75a7-9719-0d8e39ab8fa4"
@@ -683,21 +721,21 @@
           "symbol": "XRP",
           "name": "XRP",
           "rank": 6,
-          "price_usd": 0.921078,
-          "change_24h_pct": -0.8,
-          "change_7d_pct": -4.5,
-          "tag": "Fund outflow",
+          "price_usd": 0.920137,
+          "change_24h_pct": -1.1,
+          "change_7d_pct": -5.3,
+          "tag": "Futures milestone",
           "tone": "mid",
-          "date": "2026-11-21",
-          "note": "PANews reports US spot XRP funds saw a combined net outflow of about $5 million in one day; CME's XRP futures have reached about $81.2 billion of trading in 18 months.",
+          "date": "2026-11-20",
+          "note": "According to CoinDesk on X, CME's XRP futures averaged about $216 million of daily trading through mid-November and have passed $81 billion in total since launch; PANews reports US spot XRP funds saw a net outflow of about $5 million in one day.",
           "sources": [
+            {
+              "title": "@CoinDesk: CME XRP futures data (2026-11-20)",
+              "url": "https://x.com/CoinDesk/status/2123723428473831693"
+            },
             {
               "title": "PANews: US XRP spot ETFs see $4.97M single-day net outflow",
               "url": "https://www.panews.io/articles/01a1fbf3-2d31-72d8-b4cf-985f6c6e6727"
-            },
-            {
-              "title": "PANews: CME's XRP futures reach $81.2B in notional volume within 18 months",
-              "url": "https://www.panews.io/articles/01a1f77f-c559-732d-aa28-820411104494"
             }
           ]
         },
@@ -705,25 +743,45 @@
           "symbol": "SOL",
           "name": "Solana",
           "rank": 7,
-          "price_usd": 70.58,
-          "change_24h_pct": 0.6,
-          "change_7d_pct": -2.6
+          "price_usd": 70.54,
+          "change_24h_pct": 0.4,
+          "change_7d_pct": -2.8,
+          "tag": "Fund custody change",
+          "tone": "mid",
+          "date": "2026-11-20",
+          "note": "According to CoinDesk on X, VanEck ended its custody arrangement with Gemini for its Bitcoin, Ethereum and Solana funds, with Coinbase Custody remaining as custodian.",
+          "sources": [
+            {
+              "title": "@CoinDesk: VanEck ends Gemini custody for BTC, ETH, SOL ETFs (2026-11-20)",
+              "url": "https://x.com/CoinDesk/status/2123741097600208959"
+            }
+          ]
         },
         {
           "symbol": "TRX",
           "name": "TRON",
           "rank": 8,
-          "price_usd": 0.305308,
-          "change_24h_pct": 0.1,
-          "change_7d_pct": 0.1
+          "price_usd": 0.304546,
+          "change_24h_pct": -0.2,
+          "change_7d_pct": 0.0,
+          "tag": "Company purchase",
+          "tone": "up",
+          "date": "2026-11-22",
+          "note": "Tron Inc. (Nasdaq: TRON) says it keeps buying TRX daily, adding about 164,000 TRX on 22 November and lifting its holdings to more than 724.8 million TRX.",
+          "sources": [
+            {
+              "title": "@TRON_INC: Tron Inc. acquires 163,986 TRX (2026-11-22)",
+              "url": "https://x.com/TRON_INC/status/2124328258804269339"
+            }
+          ]
         },
         {
           "symbol": "HYPE",
           "name": "Hyperliquid",
           "rank": 10,
-          "price_usd": 62.74,
-          "change_24h_pct": 2.4,
-          "change_7d_pct": -7.7,
+          "price_usd": 62.32,
+          "change_24h_pct": 1.6,
+          "change_7d_pct": -7.9,
           "tag": "Revenue up",
           "tone": "up",
           "date": "2026-11-22",
@@ -739,17 +797,17 @@
           "symbol": "ZEC",
           "name": "Zcash",
           "rank": 11,
-          "price_usd": 789.78,
-          "change_24h_pct": 1.5,
-          "change_7d_pct": -12.6,
-          "tag": "Fund outflow",
+          "price_usd": 788.11,
+          "change_24h_pct": 0.9,
+          "change_7d_pct": -13.7,
+          "tag": "Software update",
           "tone": "mid",
-          "date": "2026-11-21",
-          "note": "PANews reports US spot Zcash and NEAR funds saw a combined net outflow of about $6.6 million in one day, and DCG-backed Zcash miner Fortitude passed a vote tied to a Nasdaq listing.",
+          "date": "2026-11-20",
+          "note": "Crypto.news on X reports Zcash released a Zebra 7.2.0 beta with faster block sharing and mining, and PANews reports DCG-backed Zcash miner Fortitude passed a vote tied to a Nasdaq listing. Neither explains the coin's roughly 14% fall over 7 days.",
           "sources": [
             {
-              "title": "PANews: US ZEC and NEAR spot ETFs see $6.58M combined net outflow",
-              "url": "https://www.panews.io/articles/01a1fbef-ea02-743b-a288-544369a98c80"
+              "title": "@cryptodotnews: Zcash releases Zebra 7.2.0 beta (2026-11-20)",
+              "url": "https://x.com/cryptodotnews/status/2123679794697240859"
             },
             {
               "title": "PANews: DCG-backed Zcash miner Fortitude passes Nasdaq listing vote",
@@ -761,17 +819,31 @@
           "symbol": "XMR",
           "name": "Monero",
           "rank": 12,
-          "price_usd": 492.39,
+          "price_usd": 492.64,
           "change_24h_pct": 0.0,
-          "change_7d_pct": -0.3
+          "change_7d_pct": -1.2,
+          "tag": "Wrapped-token hack",
+          "tone": "down",
+          "date": "2026-11-20",
+          "note": "According to Cointelegraph on X, the wrapped Monero token XMR1 on Hyperliquid crashed about 99.8% after a suspected $13.5 million exploit. XMR1 is a separate token; the reports say Hyperliquid's own XMR market held near $482, and do not describe a problem with Monero's network.",
+          "sources": [
+            {
+              "title": "@Cointelegraph: Wrapped Monero token XMR1 crashed 99.8% (2026-11-20)",
+              "url": "https://x.com/Cointelegraph/status/2123876681572110813"
+            },
+            {
+              "title": "@crypto_varo: XMR1 crash, Hyperliquid XMR held near $482 (2026-11-20)",
+              "url": "https://x.com/crypto_varo/status/2123718004244611552"
+            }
+          ]
         },
         {
           "symbol": "DOGE",
           "name": "Dogecoin",
           "rank": 13,
-          "price_usd": 0.055004,
-          "change_24h_pct": -0.3,
-          "change_7d_pct": -7.0
+          "price_usd": 0.054864,
+          "change_24h_pct": -0.6,
+          "change_7d_pct": -8.1
         }
       ]
     }
