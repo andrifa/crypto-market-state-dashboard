@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T01:30:47.826534+00:00",
+  "generated": "2026-11-23T01:31:38.045930+00:00",
   "rows": 4451,
   "span": [
     "2014-09-17",
@@ -259,7 +259,7 @@
       },
       "90": {
         "rho": 0.016,
-        "p": 0.3034,
+        "p": 0.3033,
         "n": 4089
       },
       "180": {
@@ -539,7 +539,7 @@
     "regime_weighted_mean_fwd180": 0.6131,
     "uplift_pct_points": 10.7,
     "equity_strategy_x": 261.64,
-    "equity_buyhold_x": 133.77,
+    "equity_buyhold_x": 133.9,
     "strategy_maxdd": -0.655,
     "buyhold_maxdd": -0.834
   },
@@ -631,7 +631,7 @@
     "turn_median_lag_days": 56,
     "decision_uplift_pp": 10.7,
     "strategy_x": 261.64,
-    "buyhold_x": 133.77,
+    "buyhold_x": 133.9,
     "strategy_maxdd": -0.655,
     "buyhold_maxdd": -0.834,
     "headline": "Over 4451 days (2014-09-17\u20132026-11-23, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 56 days after the price extreme. For shorter calls, 90-day directional accuracy is 61% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +10.7 points and cut the worst drawdown from 83% to 66%. Small sample (~2.9 cycles) \u2014 direction, not precision."

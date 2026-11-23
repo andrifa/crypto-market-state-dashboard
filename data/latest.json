@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-11-23T00:54:40Z",
+  "updated_utc": "2026-11-23T01:31:37Z",
   "date": "2026-11-23",
-  "price_btc": 61177,
-  "regime": "Neutral",
+  "price_btc": 61237,
+  "regime": "Bear",
   "trend_regime": "Bull",
-  "headline": "NEUTRAL",
+  "headline": "BEARISH",
   "headline_tag": "A month of steep losses; the last weeks still lean down",
   "direction": "weakening",
   "sentiment_band": "Extreme Fear",
@@ -14,23 +14,23 @@
   "cycle": "mid-bull",
   "cycle_label": "mid uptrend",
   "action": {
-    "title": "HOLD at planned level",
-    "detail": "Keep marketing and acquisition budgets at the planned level, but do not step them up: Bitcoin is down about 6% in a week and about 24% in a month, a Rally watch drop window has been open since 11 November, and the headline could turn BEARISH later this week if the weakness lasts. Keep a reserve ready instead of cutting, because the long-run base is still rising; spend now on retention, trust and education, and step up acquisition only once price closes back above the 200-week average ($67,975) and then the 200-day average ($72,236). This is a budget posture, not trading advice."
+    "title": "CUT / defend tightly with a stop-loss",
+    "detail": "Keep acquisition running but defend it tightly: the headline has turned BEARISH, Bitcoin is down about 6% in a week and about 24% in a month, and a Rally watch drop window has been open since 11 November. Put every acquisition campaign on a 30-day return stop-loss and pause the ones that miss it, trim spend aimed at active traders (they tend to leave before conditions improve), and move messaging toward stablecoins, safety and education. Do not cut deeper than that, because the long-run base is still rising; step acquisition back up only once price closes back above the 200-week average ($68,041) and then the 200-day average ($72,236). This is a budget posture, not trading advice."
   },
   "reasons": [
-    "Price is about 20% under its 50-day average, 33 days in a row.",
     "Down about 24% over 30 days and about 22% over 90 days.",
+    "Price is about 20% under its 50-day average, 33 days in a row.",
     "Fear & Greed is 11 (extreme fear); price is about 10% under its 200-week average.",
-    "The 200-day average ($72,236) is still rising, about 4.5% over 90 days."
+    "Long-term base still rising: 200-day average ($72,236) up about 4.5% over 90 days."
   ],
-  "watch": "The headline still says NEUTRAL, but the medium-term reading has been weak for three days and would turn the headline BEARISH if it stays weak two more days. A close above $63,250 and then $67,975 (the 200-week average) would be the first sign the drop is easing; a close below $58,952 (the 30-day low) would deepen it.",
+  "watch": "The headline is now BEARISH while the long-term trend still points slightly up, so the two timeframes disagree. A close above $63,250 and then $68,041 (the 200-week average) would be the first sign the drop is easing; a close below $58,952 (the 30-day low) would deepen it and start to pull the long-term picture down too.",
   "analysis": [
-    "Bottom line: Bitcoin is holding just above $61,000 after last week's fall, but fear is extreme and the month still leans down, so today is about calm, safety and steady spending, not promotions. Short term, the picture is weak: Bitcoin has closed under its 50-day average for 33 days in a row, sits about 20% below it and about 25% under its 30-day high, and Fear & Greed reads 11 out of 100. News is nudging the mood a little lower, as two more cross-chain hacks hit Chainflip (losses now about $12 million) and Fusionist, and Asian stocks opened lower again on Monday (PANews). A normal week lately swings about $3,971, so a close above $63,250 (the top of a typical week's swing) would turn the week up, a close below $58,952 (the 30-day low) would turn it down, and in between it stays choppy; safety and explainer messages fit better than offers right now.",
-    "The next month leans down: price is about 24% lower than 30 days ago and about 22% lower than 90 days ago, and the medium-term reading has now been in its weak zone for three days in a row; the model needs five before the headline switches from NEUTRAL to BEARISH. On the other side, Abraxas Capital bought about $897 million of Bitcoin into the drop (PANews), while institutions quoted by PANews expect US inflation (October PCE, due this week) to rise to 3.8%, which may raise talk of a Fed rate rise in December. Bitcoin would have to win back $76,173 (the 50-day average) before the month can firm up, and only above $86,603 (the 90-day high) is there real room to climb. The Fed meeting on 8 December is the next big scheduled event; keep bigger campaign pushes until after a clear turn.",
-    "The 3-6 month picture still leans up, but only barely: the 200-day average is still rising (about 4.5% over 90 days), yet price is about 15% under it, about 10% under its 200-week average and about 51% below its all-time high. The recovery is only back on track if Bitcoin closes above $72,236 (the 200-day average) again; $67,975 (the 200-week average) is the floor price has slipped under, and $124,753 (the all-time high) stays the far marker. Slow structural steps continue, such as Malaysia's Maybank testing government-bond settlement on blockchain (PANews). More weeks under the 200-week average would turn this picture down and be the time to shift budget toward keeping existing users."
+    "Bottom line: the headline has now turned BEARISH, because the last month or two clearly lean down, while the long-term trend is still slightly up; today is about calm, safety and careful spending, not promotions. Short term, the picture is weak: Bitcoin, near $61,237, has closed under its 50-day average for 33 days in a row, sits about 20% below it and about 25% under its 30-day high, and Fear & Greed reads 11 out of 100. News is nudging the mood a little lower, with two more cross-chain hacks at Chainflip (losses now about $12 million) and Fusionist, and Asian stocks opening lower again on Monday (PANews). A normal week lately swings about $3,971, so a close above $63,250 (the top of a typical week's swing) would turn the week up, a close below $58,952 (the 30-day low) would turn it down, and in between it stays choppy; safety and explainer messages fit better than offers right now.",
+    "The next month leans clearly down, which is what the BEARISH headline now reflects: price is about 24% lower than 30 days ago and about 22% lower than 90 days ago. On the other side, Abraxas Capital bought about $897 million of Bitcoin into the drop (PANews), while institutions quoted by PANews expect US October PCE inflation, due this week, to rise to 3.8%, which may raise talk of a Fed rate rise in December. Bitcoin would have to win back $76,174 (the 50-day average) before the month can firm up, and only above $86,603 (the 90-day high) is there real room to climb. The Fed meeting on 8 December is the next big scheduled event; keep bigger campaign pushes until after a clear turn.",
+    "Long term, the trend is still up, but only barely, so the page shows 'Long-term trend: still up' next to a BEARISH headline: the 200-day average is still rising (about 4.5% over 90 days), yet price is about 15% under it, about 10% under its 200-week average and about 51% below its all-time high. The recovery is only back on track if Bitcoin closes above $72,236 (the 200-day average) again; $68,041 (the 200-week average) is the floor price has slipped under, and $124,753 (the all-time high) stays the far marker. Slow structural steps continue, such as Malaysia's Maybank testing government-bond settlement on blockchain (PANews). More weeks under the 200-week average would turn this picture down too and make keeping existing users the main use of budget."
   ],
   "team_notes": {
-    "marketing": "Hold promotions and lead with calm, safety-first and explainer content: a Rally watch drop window is open, Bitcoin is down about 6% in a week to near $61,200, and fear is extreme at 11 out of 100."
+    "marketing": "Defend, don't push: the headline is BEARISH and a Rally watch drop window is open, so hold promotions, keep acquisition on a tight return stop-loss and lead with calm, safety-first and explainer content while fear sits at 11 out of 100."
   },
   "changed_today": null,
   "levels": {
@@ -38,15 +38,15 @@
     "low_30d": 58952,
     "high_90d": 86603,
     "low_90d": 58952,
-    "ma_50": 76173,
+    "ma_50": 76174,
     "ma_200": 72236,
-    "ma_200w": 67975,
+    "ma_200w": 68041,
     "ath": 124753
   },
   "scenarios": {
-    "price": 61177,
+    "price": 61237,
     "up": {
-      "level": 67975,
+      "level": 68041,
       "name": "200-week average",
       "next": [
         {
@@ -54,7 +54,7 @@
           "name": "200-day average"
         },
         {
-          "level": 76173,
+          "level": 76174,
           "name": "50-day average"
         }
       ]
@@ -66,7 +66,7 @@
     },
     "range": [
       58952,
-      67975
+      68041
     ],
     "short": {
       "typical_week_swing": 3971,
@@ -77,7 +77,7 @@
         "name": "top of a typical week's swing",
         "next": [
           {
-            "level": 67975,
+            "level": 68041,
             "name": "200-week average"
           },
           {
@@ -95,7 +95,7 @@
   },
   "rally_watch": {
     "state": "drop",
-    "ret_7d": -0.0571,
+    "ret_7d": -0.0562,
     "threshold": 0.08,
     "window_days": 14,
     "needs_up": 70073,
@@ -360,37 +360,37 @@
     }
   },
   "recent": {
-    "vs_ma50_pct": -0.1969,
+    "vs_ma50_pct": -0.1961,
     "days_below_ma50": 33,
-    "ret_30d": -0.2428,
-    "from_high_30d": -0.2472
+    "ret_30d": -0.242,
+    "from_high_30d": -0.2465
   },
   "scores": {
-    "sentiment": -0.766,
-    "momentum": -0.27,
+    "sentiment": -0.767,
+    "momentum": -0.269,
     "trend": 0.134
   },
   "context": {
-    "mayer_multiple": 0.847,
+    "mayer_multiple": 0.848,
     "ma200_slope_90d": 0.045,
     "ma_200w_multiple": 0.9,
-    "drawdown_from_ath": -0.51,
+    "drawdown_from_ath": -0.509,
     "rsi_weekly": 35.3,
     "active_addr_ratio": 1.098,
-    "puell_multiple": 0.961,
+    "puell_multiple": 0.884,
     "fear_greed": 11.0,
     "funding_z": -0.89,
     "vol_percentile": 0.76,
-    "bollinger_width": 0.3884,
-    "btc_dominance": 57.8,
+    "bollinger_width": 0.3882,
+    "btc_dominance": 58.9,
     "ma_cross": 0.0545,
-    "roc_90d": -0.2213,
+    "roc_90d": -0.2206,
     "breadth_90d": 0.867,
     "ssr": 4.28,
     "pi_cycle_gap": -0.4894,
     "open_interest_usd": 5704440869.496109,
     "long_short_ratio": 2.1008,
-    "dvol": 54.33,
+    "dvol": 54.35,
     "us_10y_yield": 4.912,
     "vix": 35.89,
     "fed_funds_rate": 3.63,
@@ -399,7 +399,7 @@
     "public_company_btc_treasury": 1239060.0,
     "next_fomc_meeting": "2026-12-08"
   },
-  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 23 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ NEUTRAL (A month of steep losses; the last\n    weeks still lean down)\n    Momentum weakening · Sentiment: Extreme Fear\n    Phase: mid uptrend\n    Signal confidence: LOW\n\n  ➔ BUDGET ACTION: HOLD at planned level\n    Keep marketing and acquisition budgets at the\n    planned level, but do not step them up:\n    Bitcoin is down about 6% in a week and about\n    24% in a month, a Rally watch drop window has\n    been open since 11 November, and the headline\n    could turn BEARISH later this week if the\n    weakness lasts. Keep a reserve ready instead\n    of cutting, because the long-run base is still\n    rising; spend now on retention, trust and\n    education, and step up acquisition only once\n    price closes back above the 200-week average\n    ($67,975) and then the 200-day average\n    ($72,236). This is a budget posture, not\n    trading advice.\n\n  Why:\n  • Price is about 20% under its 50-day average,\n    33 days in a row.\n  • Down about 24% over 30 days and about 22% over\n    90 days.\n  • Fear & Greed is 11 (extreme fear); price is\n    about 10% under its 200-week average.\n  • The 200-day average ($72,236) is still rising,\n    about 4.5% over 90 days.\n\n  Changed today: —\n  Watch:\n    The headline still says NEUTRAL, but the\n    medium-term reading has been weak for three\n    days and would turn the headline BEARISH if it\n    stays weak two more days. A close above\n    $63,250 and then $67,975 (the 200-week\n    average) would be the first sign the drop is\n    easing; a close below $58,952 (the 30-day low)\n    would deepen it.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+  "text": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nCRYPTO MARKET STATE — 23 November 2026\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  ▍ BEARISH (A month of steep losses; the last\n    weeks still lean down)\n    Momentum weakening · Sentiment: Extreme Fear\n    Phase: mid uptrend\n    Long-term trend: still up\n    Signal confidence: LOW\n\n  ➔ BUDGET ACTION: CUT / defend tightly with a stop-loss\n    Keep acquisition running but defend it\n    tightly: the headline has turned BEARISH,\n    Bitcoin is down about 6% in a week and about\n    24% in a month, and a Rally watch drop window\n    has been open since 11 November. Put every\n    acquisition campaign on a 30-day return stop-\n    loss and pause the ones that miss it, trim\n    spend aimed at active traders (they tend to\n    leave before conditions improve), and move\n    messaging toward stablecoins, safety and\n    education. Do not cut deeper than that,\n    because the long-run base is still rising;\n    step acquisition back up only once price\n    closes back above the 200-week average\n    ($68,041) and then the 200-day average\n    ($72,236). This is a budget posture, not\n    trading advice.\n\n  Why:\n  • Down about 24% over 30 days and about 22% over\n    90 days.\n  • Price is about 20% under its 50-day average,\n    33 days in a row.\n  • Fear & Greed is 11 (extreme fear); price is\n    about 10% under its 200-week average.\n  • Long-term base still rising: 200-day average\n    ($72,236) up about 4.5% over 90 days.\n\n  Changed today: Headline NEUTRAL → BEARISH (medium-term read)\n  Watch:\n    The headline is now BEARISH while the long-\n    term trend still points slightly up, so the\n    two timeframes disagree. A close above $63,250\n    and then $68,041 (the 200-week average) would\n    be the first sign the drop is easing; a close\n    below $58,952 (the 30-day low) would deepen it\n    and start to pull the long-term picture down\n    too.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
   "disclaimer": "All indicators are trailing (they describe what already happened), not forecasts. This is a decision aid for budget posture, not a trading signal. Built on ~2.9 market cycles — treat it as direction, not a precise number.",
   "search_findings": {
     "social_volume": null,
@@ -520,7 +520,7 @@
           "tone": "up",
           "date": "2026-11-20",
           "update": "The project says COTI is now live on Bitkub, Thailand's leading crypto exchange, after an earlier Uphold listing; Bitkub's own post set trading for the COTI/THB pair from 20 November. The project also says its Interphase private mode is approaching launch, with no date given.",
-          "change_24h_pct": 1.3,
+          "change_24h_pct": 1.5,
           "change_7d_pct": -6.8,
           "sources": [
             {
@@ -540,7 +540,7 @@
           "tone": "up",
           "date": "2026-11-21",
           "update": "Pluang reports the Midnight Foundation signed a deal to bring its privacy blockchain into Japan's financial sector; the counterparty is not named. Earlier, the project said Monument Bank launched on Midnight with about £250 million of tokenized deposits planned for the opening phase (17 November). NIGHT is up about 10% in 24 hours; no report links the rise to either item.",
-          "change_24h_pct": 10.0,
+          "change_24h_pct": 10.1,
           "change_7d_pct": -1.3,
           "sources": [
             {
@@ -560,7 +560,7 @@
           "tone": "mid",
           "date": "2026-11-22",
           "update": "This token tracks SpaceX shares. PANews reports Jefferies upgraded SpaceX stock to buy on 22 November, and Wall St Engine on X reports SpaceX sold about $32 billion of bonds backed by AI chips (20 November). The shares fell to a two-week low on 20 November during the tech-stock sell-off.",
-          "change_24h_pct": 0.1,
+          "change_24h_pct": -0.3,
           "change_7d_pct": -6.2,
           "sources": [
             {
@@ -580,7 +580,7 @@
           "tone": "mid",
           "date": "2026-11-22",
           "update": "The project says the next round of Stock Tokens drops on Monday 23 November, after adding Anthropic (ANT) as a launch pairing following its IPO (19 November). PONS is still down about 23% in 7 days, and no report gives a reason for the fall.",
-          "change_24h_pct": 4.3,
+          "change_24h_pct": 4.9,
           "change_7d_pct": -23.4,
           "sources": [
             {
@@ -600,7 +600,7 @@
           "tone": "mid",
           "date": "2026-11-23",
           "update": "DODO is up about 29% in 7 days while most coins fell. Posts on X about it are trading-signal promotions, and no news report or project post gives a reason.",
-          "change_24h_pct": 2.4,
+          "change_24h_pct": 2.3,
           "change_7d_pct": 28.6,
           "sources": []
         },
@@ -611,7 +611,7 @@
           "tone": "down",
           "date": "2026-11-22",
           "update": "The project asked users to pause ACE transfers, trading and bridging on BNB Chain while it investigates an exploit. Security firm Blockaid said a privileged bridge minter created unbacked ACE and sold it for about $1.04 million in USDT, not a final figure, and On-chain Lens reports about $1.87 million was moved through Tornado Cash. ACE is down about 11% in 7 days.",
-          "change_24h_pct": -4.2,
+          "change_24h_pct": -1.2,
           "change_7d_pct": -10.9,
           "sources": [
             {
@@ -655,8 +655,8 @@
           "symbol": "BTC",
           "name": "Bitcoin",
           "rank": 1,
-          "price_usd": 60966,
-          "change_24h_pct": 1.5,
+          "price_usd": 61111,
+          "change_24h_pct": 1.8,
           "change_7d_pct": -6.3,
           "tag": "Network bug fixed",
           "tone": "up",
@@ -677,8 +677,8 @@
           "symbol": "ETH",
           "name": "Ethereum",
           "rank": 2,
-          "price_usd": 1713.88,
-          "change_24h_pct": 1.9,
+          "price_usd": 1716.91,
+          "change_24h_pct": 2.1,
           "change_7d_pct": -6.4,
           "tag": "Hack funds moving",
           "tone": "down",
@@ -699,8 +699,8 @@
           "symbol": "BNB",
           "name": "BNB",
           "rank": 4,
-          "price_usd": 558.18,
-          "change_24h_pct": 1.6,
+          "price_usd": 558.54,
+          "change_24h_pct": 1.9,
           "change_7d_pct": -6.2,
           "tag": "Tokenized fund grows",
           "tone": "mid",
@@ -721,8 +721,8 @@
           "symbol": "XRP",
           "name": "XRP",
           "rank": 6,
-          "price_usd": 0.920137,
-          "change_24h_pct": -1.1,
+          "price_usd": 0.920295,
+          "change_24h_pct": -1.0,
           "change_7d_pct": -5.3,
           "tag": "Futures milestone",
           "tone": "mid",
@@ -743,8 +743,8 @@
           "symbol": "SOL",
           "name": "Solana",
           "rank": 7,
-          "price_usd": 70.54,
-          "change_24h_pct": 0.4,
+          "price_usd": 70.6,
+          "change_24h_pct": 0.6,
           "change_7d_pct": -2.8,
           "tag": "Fund custody change",
           "tone": "mid",
@@ -761,8 +761,8 @@
           "symbol": "TRX",
           "name": "TRON",
           "rank": 8,
-          "price_usd": 0.304546,
-          "change_24h_pct": -0.2,
+          "price_usd": 0.303724,
+          "change_24h_pct": -0.5,
           "change_7d_pct": 0.0,
           "tag": "Company purchase",
           "tone": "up",
@@ -779,7 +779,7 @@
           "symbol": "HYPE",
           "name": "Hyperliquid",
           "rank": 10,
-          "price_usd": 62.32,
+          "price_usd": 62.33,
           "change_24h_pct": 1.6,
           "change_7d_pct": -7.9,
           "tag": "Revenue up",
@@ -797,8 +797,8 @@
           "symbol": "ZEC",
           "name": "Zcash",
           "rank": 11,
-          "price_usd": 788.11,
-          "change_24h_pct": 0.9,
+          "price_usd": 789.71,
+          "change_24h_pct": 1.7,
           "change_7d_pct": -13.7,
           "tag": "Software update",
           "tone": "mid",
@@ -819,8 +819,8 @@
           "symbol": "XMR",
           "name": "Monero",
           "rank": 12,
-          "price_usd": 492.64,
-          "change_24h_pct": 0.0,
+          "price_usd": 491.99,
+          "change_24h_pct": 0.1,
           "change_7d_pct": -1.2,
           "tag": "Wrapped-token hack",
           "tone": "down",
@@ -841,9 +841,114 @@
           "symbol": "DOGE",
           "name": "Dogecoin",
           "rank": 13,
-          "price_usd": 0.054864,
-          "change_24h_pct": -0.6,
+          "price_usd": 0.054938,
+          "change_24h_pct": -0.2,
           "change_7d_pct": -8.1
+        }
+      ]
+    }
+  },
+  "marketing_segments": {
+    "as_of": "2026-11-23",
+    "social": {
+      "stance": "Reduce",
+      "strategy": "Keep the normal posting rhythm but stay calm and factual: Bitcoin is down about 6% in a week and Fear & Greed is at 11, so upbeat price posts would ring false. The useful topics today are wallet and app safety after a weekend of hacks, and what this week's US inflation data means.",
+      "actions": [
+        {
+          "what": "Post a safety explainer on this weekend's hacks",
+          "detail": "PANews reports Chainflip's losses rose to about $12 million, Fusionist's bridge was exploited and a malicious ad group used an iPhone exploit chain to steal wallet recovery phrases; explain simple steps users can take, without naming anyone as at fault beyond the reports."
+        },
+        {
+          "what": "Keep a daily market-recap post, factual tone",
+          "detail": "Bitcoin is near $61,237, about 25% under its 30-day high and about 10% under its 200-week average ($68,041); 7-day change about -6%."
+        },
+        {
+          "what": "Preview the US inflation data this week",
+          "detail": "PANews' weekly outlook says October core PCE is the week's main release and Thanksgiving brings US market closures; a short 'what is PCE and why crypto watches it' post fits."
+        },
+        {
+          "what": "Use stablecoin news for an explainer",
+          "detail": "Pluang reports PayPal's PYUSD0 launching on Aptos and Samsung Wallet making USDC transfers on Sui easier; a 'what is a stablecoin and how is it used' post suits newer users."
+        }
+      ]
+    },
+    "seo": {
+      "stance": "Prepare",
+      "strategy": "Publish or refresh the pages people look up after a sharp fall and a weekend of hacks, following what Pluang and Pintu are publishing (Indodax could not be read today).",
+      "actions": [
+        {
+          "what": "Refresh 'why is Bitcoin down' and 'Bitcoin price today'",
+          "detail": "Likely to draw searches because Bitcoin fell to its lowest since 2024 and is now back near $61,000; Pintu ran 'Bitcoin Jebol US$56.000, Terendah Sejak 2024: Ini 4 Penyebabnya' and Pluang covered the move back above $60,000. Check against Reku's pages."
+        },
+        {
+          "what": "Publish a 'Bitcoin bottom?' explainer with reference levels",
+          "detail": "Likely to draw searches because Pintu published 'Bitcoin Bottom? Koreksi Kali Ini Sudah 411 Hari' and Pluang covered the four-year-cycle debate; give the 200-week and 200-day averages as reference points, never a forecast. Check against Reku's pages."
+        },
+        {
+          "what": "Refresh a crypto security and hacks guide",
+          "detail": "Likely to draw searches because Pluang covered the Chainflip and Fusionist hacks today. Check against Reku's pages."
+        }
+      ]
+    },
+    "paid": {
+      "stance": "Reduce",
+      "strategy": "Defend spend tightly: the headline is BEARISH and a Rally watch drop window is open, so trim trader-targeted spend, keep a reserve and run everything on a 30-day return stop-loss, while the long-run base is still rising.",
+      "actions": [
+        {
+          "what": "Trim active-trader acquisition spend",
+          "detail": "Scale trader-targeted campaigns down from plan while the drop window that opened on 11 November stays open and Bitcoin is about 24% lower than a month ago."
+        },
+        {
+          "what": "Apply the d30 ROI stop-loss",
+          "detail": "Pause any campaign whose 30-day return falls below its stop level; keep the freed budget as a reserve."
+        },
+        {
+          "what": "Shift new-user ads to stablecoins and trust",
+          "detail": "With fear at 11 out of 100 and hacks in the news, stablecoin, safety and 'how it works' angles fit newer users better than price-led offers."
+        },
+        {
+          "what": "Keep rally creatives ready, not live",
+          "detail": "Have them ready to launch within days if Bitcoin closes back above $68,041 (the 200-week average) or a rally signal appears near $70,073."
+        }
+      ]
+    },
+    "crm": {
+      "stance": "Reduce",
+      "strategy": "Send reassurance and education to existing holders, with no promotional pressure, while the drop window is open.",
+      "actions": [
+        {
+          "what": "Send a calm market update to active holders",
+          "detail": "Explain in plain words that Bitcoin is down about 24% in a month and is holding near $61,000, and that the US October PCE release this week and the 8 December Fed meeting are the next scheduled events, with no forecast and no push to trade."
+        },
+        {
+          "what": "Push an account and wallet safety message",
+          "detail": "This weekend's hacks (Chainflip, Fusionist, Fluidkey) and an iPhone exploit chain stealing recovery phrases (PANews) make a 'turn on 2FA, update your phone, never share your recovery phrase' reminder timely."
+        },
+        {
+          "what": "Keep the onboarding journey ready, not live",
+          "detail": "Our study shows sign-ups and first deposits rise about 2-4 weeks after a rally, not during a drop; keep the welcome series queued for the next rally signal."
+        }
+      ]
+    },
+    "research": {
+      "stance": "Monitor",
+      "strategy": "Tell the teams the headline has turned BEARISH while the long-term trend is still slightly up, and track the levels and dates that would change today's read.",
+      "actions": [
+        {
+          "what": "Headline is now BEARISH; budget action is CUT / defend",
+          "detail": "The medium-term reading is weak; the long-term trend still reads up, so brief teams that this is a defend-and-trim posture, not a full stop."
+        },
+        {
+          "what": "Rally watch: drop window open",
+          "detail": "Open since 11 November; a fresh drop signal would come near $59,692 and a rally signal would need about $70,073."
+        },
+        {
+          "what": "Weekly zone and bigger levels",
+          "detail": "Choppy between $58,952 and $63,250 (a normal week swings about $3,971); bigger markers are $68,041 (200-week average) and $72,236 (200-day average)."
+        },
+        {
+          "what": "Scheduled: US October PCE this week, Fed meeting 8 December",
+          "detail": "PANews says institutions expect PCE inflation at 3.8%, which may raise December rate-rise talk. Refresh the GTV study when new GTV data arrives."
         }
       ]
     }
@@ -929,8 +1034,8 @@
   },
   "scores_base": {
     "trend": 0.134,
-    "momentum": -0.27,
-    "sentiment": -0.716
+    "momentum": -0.269,
+    "sentiment": -0.717
   },
   "conviction_base": 38,
   "news_adjustment": {
@@ -939,111 +1044,6 @@
     "trend": 0.0
   },
   "news_flag": null,
-  "marketing_segments": {
-    "as_of": "2026-11-23",
-    "social": {
-      "stance": "Reduce",
-      "strategy": "Keep the normal posting rhythm but stay calm and factual: Bitcoin is down about 6% in a week and Fear & Greed is at 11, so upbeat price posts would ring false. The useful topics today are wallet and app safety after a weekend of hacks, and what this week's US inflation data means.",
-      "actions": [
-        {
-          "what": "Post a safety explainer on this weekend's hacks",
-          "detail": "PANews reports Chainflip's losses rose to about $12 million, Fusionist's bridge was exploited and a malicious ad group used an iPhone exploit chain to steal wallet recovery phrases; explain simple steps users can take, without naming anyone as at fault beyond the reports."
-        },
-        {
-          "what": "Keep a daily market-recap post, factual tone",
-          "detail": "Bitcoin is near $61,177, about 25% under its 30-day high and about 10% under its 200-week average ($67,975); 7-day change about -6%."
-        },
-        {
-          "what": "Preview the US inflation data this week",
-          "detail": "PANews' weekly outlook says October core PCE is the week's main release and Thanksgiving brings US market closures; a short 'what is PCE and why crypto watches it' post fits."
-        },
-        {
-          "what": "Use stablecoin news for an explainer",
-          "detail": "Pluang reports PayPal's PYUSD0 launching on Aptos and Samsung Wallet making USDC transfers on Sui easier; a 'what is a stablecoin and how is it used' post suits newer users."
-        }
-      ]
-    },
-    "seo": {
-      "stance": "Prepare",
-      "strategy": "Publish or refresh the pages people look up after a sharp fall and a weekend of hacks, following what Pluang and Pintu are publishing (Indodax could not be read today).",
-      "actions": [
-        {
-          "what": "Refresh 'why is Bitcoin down' and 'Bitcoin price today'",
-          "detail": "Likely to draw searches because Bitcoin fell to its lowest since 2024 and is now back near $61,000; Pintu ran 'Bitcoin Jebol US$56.000, Terendah Sejak 2024: Ini 4 Penyebabnya' and Pluang covered the move back above $60,000. Check against Reku's pages."
-        },
-        {
-          "what": "Publish a 'Bitcoin bottom?' explainer with reference levels",
-          "detail": "Likely to draw searches because Pintu published 'Bitcoin Bottom? Koreksi Kali Ini Sudah 411 Hari' and Pluang covered the four-year-cycle debate; give the 200-week and 200-day averages as reference points, never a forecast. Check against Reku's pages."
-        },
-        {
-          "what": "Refresh a crypto security and hacks guide",
-          "detail": "Likely to draw searches because Pluang covered the Chainflip and Fusionist hacks today. Check against Reku's pages."
-        }
-      ]
-    },
-    "paid": {
-      "stance": "Hold",
-      "strategy": "Hold trader-targeted spend and keep a reserve: a Rally watch drop window is open and price is under its 200-week average, even though the long-run base is still rising.",
-      "actions": [
-        {
-          "what": "Hold trader-targeted acquisition spend",
-          "detail": "Keep active-trader campaigns at the planned level, not higher, while the drop window that opened on 11 November stays open."
-        },
-        {
-          "what": "Apply the d30 ROI stop-loss",
-          "detail": "Pause any campaign whose 30-day return falls below its stop level; keep the freed budget as a reserve."
-        },
-        {
-          "what": "Lean new-user ads on trust and learning",
-          "detail": "With fear at 11 out of 100 and hacks in the news, safety, 'how it works' and stablecoin explainer angles fit stablecoin and newer users better than price-led offers."
-        },
-        {
-          "what": "Keep rally creatives ready, not live",
-          "detail": "Have them ready to launch within days if Bitcoin closes back above $67,975 (the 200-week average) or a rally signal appears near $70,073."
-        }
-      ]
-    },
-    "crm": {
-      "stance": "Reduce",
-      "strategy": "Send reassurance and education to existing holders, with no promotional pressure, while the drop window is open.",
-      "actions": [
-        {
-          "what": "Send a calm market update to active holders",
-          "detail": "Explain in plain words that Bitcoin is down about 24% in a month, is now holding near $61,000, and that a US inflation release and the 8 December Fed meeting are the next scheduled events, with no forecast and no push to trade."
-        },
-        {
-          "what": "Push an account and wallet safety message",
-          "detail": "This weekend's hacks (Chainflip, Fusionist, Fluidkey) and an iPhone exploit chain stealing recovery phrases (PANews) make a 'turn on 2FA, update your phone, never share your recovery phrase' reminder timely."
-        },
-        {
-          "what": "Keep the onboarding journey ready, not live",
-          "detail": "Our study shows sign-ups and first deposits rise about 2-4 weeks after a rally, not during a drop; keep the welcome series queued for the next rally signal."
-        }
-      ]
-    },
-    "research": {
-      "stance": "Monitor",
-      "strategy": "Tell the teams the headline could switch to BEARISH later this week, and track the levels and dates that would change today's read.",
-      "actions": [
-        {
-          "what": "Headline may switch to BEARISH around 25 November",
-          "detail": "The medium-term reading has been weak for three days; the model switches the headline after five, so brief the teams before it happens."
-        },
-        {
-          "what": "Rally watch: drop window open",
-          "detail": "Open since 11 November; a fresh drop signal would come near $59,692 and a rally signal would need about $70,073."
-        },
-        {
-          "what": "Weekly zone and bigger levels",
-          "detail": "Choppy between $58,952 and $63,250 (a normal week swings about $3,971); bigger markers are $67,975 (200-week average) and $72,236 (200-day average)."
-        },
-        {
-          "what": "Scheduled: US October PCE this week, Fed meeting 8 December",
-          "detail": "PANews says institutions expect PCE inflation at 3.8%, which may raise December rate-rise talk. Refresh the GTV study when new GTV data arrives."
-        }
-      ]
-    }
-  },
   "seo_competitors": {
     "as_of": "2026-11-23",
     "window": "Pintu news RSS (65 posts, 19-22 November) and Pluang's crypto news list (60 posts, 23 November) were read; Indodax Academy could not be read today, so its content is not covered.",

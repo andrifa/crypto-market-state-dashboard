@@ -1,8 +1,19 @@
 {
   "date": "2026-11-23",
-  "generated": "2026-11-23T01:00:37Z",
-  "price": 61177,
+  "generated": "2026-11-23T01:33:18Z",
+  "price": 61237,
   "events": [
+    {
+      "id": "regime:Bear",
+      "type": "label_change",
+      "severity": "high",
+      "title": "Headline label changed from NEUTRAL to BEARISH",
+      "facts": {
+        "before": "NEUTRAL",
+        "after": "BEARISH"
+      },
+      "repeat": false
+    },
     {
       "id": "dip:60000",
       "type": "intraday",
@@ -11,7 +22,7 @@
       "facts": {
         "level": 60000,
         "low_24h": 58769,
-        "price": 61177
+        "price": 61237
       },
       "repeat": false
     }
@@ -20,27 +31,27 @@
   "messages": [
     {
       "audience": "general",
-      "text": "**Daily Market Summary · 23 November 2026**\n\n**Alert**\n• BTC dipped below $60,000 in the last 24 hours (low $58,769) and recovered. It matters because $60,000 is the line the market keeps testing: price is back near $61,177, but it has not yet held clearly above it.\n\n**Snapshot**\n• Bitcoin about $61,177, down about 6% over 7 days and about 24% over 30 days.\n• Headline: **NEUTRAL**, confidence LOW. The last few weeks lean down; the medium-term reading has been weak for three days, and the headline turns BEARISH after five. The long-term trend still reads up, but only barely.\n• Fear & Greed: 11 out of 100 (extreme fear). The US stock fear index VIX is near 36, very high.\n\n**What happened (last 24h)**\n• Bitcoin moved between about $58,800 and $61,400 and ended back above $61,000 (CoinGecko); no single cause is reported.\n• About $233 million of bets were forced to close across crypto in 24 hours, mostly bets on a fall (PANews). Exchanges saw a net outflow of about 10,496 BTC in a day (PANews).\n• Abraxas Capital bought about $897 million of Bitcoin into the drop, and Michael Saylor hinted Strategy may keep buying (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short term is weak and the month leans down.\n• Turns up: a close above $63,250 (top of a typical week's swing), then $67,975 (200-week average).\n• Sideways: between $58,952 and $63,250; a normal week lately swings about $3,971.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: drop window open since 11 November; a fresh drop signal would come near $59,692 and a rally signal would need about $70,073.\n• Scheduled: US October PCE inflation this week (institutions expect 3.8%, PANews), Thanksgiving market closures, and the Fed meeting on 8 December.\n\n**News that matters**\n• Chainflip's hack losses rise to about $12 million and Fusionist's bridge is exploited (PANews): short term, small negative.\n• Institutions expect US inflation to rise to 3.8%, which may lift December rate-rise talk (PANews): medium term, small negative.\n• Abraxas Capital buys about $897 million of Bitcoin (PANews): medium term, positive.\n\n**Altcoins & themes**\n• A weekend of hacks: Chainflip, Fusionist and wallet app Fluidkey, and Upbit and Bithumb paused CYBER transfers after an abnormal minting (PANews). Stablecoins keep spreading: PayPal's PYUSD0 on Aptos and Samsung Wallet USDC on Sui (Pluang).\n• New on Reku: Fusionist (ACE) was hit by a bridge exploit that minted trillions of unbacked tokens (PANews); ACE is down about 17% in 7 days.\n\n**Bigger picture**\nNext month leans down until Bitcoin wins back $76,173 (50-day average); the 3-6 month picture still leans up only while the 200-day average keeps rising, and is back on track above $72,236.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+      "text": "**Daily Market Summary · 23 November 2026 (updated)**\nThis replaces this morning's summary: the headline label has now switched from NEUTRAL to BEARISH.\n\n**Alert**\n• Headline label changed from NEUTRAL to BEARISH. It matters because the budget posture moves from \"hold at planned level\" to \"defend tightly\": keep acquisition running, but on a 30-day return stop-loss, and trim spend aimed at active traders.\n• BTC dipped below $60,000 in the last 24 hours (low $58,769) and recovered. $60,000 is the line the market keeps testing; price is back near $61,237 but has not held clearly above it.\n\n**Snapshot**\n• Bitcoin about $61,237, down about 6% over 7 days and about 24% over 30 days.\n• Headline: **BEARISH**, confidence LOW. The last month or two clearly lean down; the long-term trend still reads up, but only barely.\n• Fear & Greed: 11 out of 100 (extreme fear). The US stock fear index VIX is near 36, very high.\n\n**What happened (last 24h)**\n• Bitcoin moved between about $58,800 and $61,400 and ended back above $61,000; no single cause is reported.\n• About $233 million of bets were forced to close across crypto in 24 hours, mostly bets on a fall (PANews). Exchanges saw a net outflow of about 10,496 BTC in a day (PANews).\n• Abraxas Capital bought about $897 million of Bitcoin into the drop (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe short term is weak and the month leans down.\n• Turns up: a close above $63,250 (top of a typical week's swing), then $68,041 (200-week average).\n• Sideways: between $58,952 and $63,250; a normal week lately swings about $3,971.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: drop window open since 11 November; a fresh drop signal would come near $59,692 and a rally signal would need about $70,073.\n• Scheduled: US October PCE inflation this week (institutions expect 3.8%, PANews), Thanksgiving market closures, and the Fed meeting on 8 December.\n\n**News that matters**\n• Chainflip's hack losses rise to about $12 million and Fusionist's bridge is exploited (PANews): short term, small negative.\n• Institutions expect US inflation to rise to 3.8%, which may lift December rate-rise talk (PANews): medium term, small negative.\n• Abraxas Capital buys about $897 million of Bitcoin (PANews): medium term, positive.\n\n**Altcoins & themes**\n• A weekend of hacks: Chainflip, Fusionist and wallet app Fluidkey, and Upbit and Bithumb paused CYBER transfers after an abnormal minting (PANews).\n• New on Reku: Fusionist (ACE) was hit by a bridge exploit that minted trillions of unbacked tokens (PANews); ACE is down about 11% in 7 days.\n\n**Bigger picture**\nNext month leans down until Bitcoin wins back $76,174 (50-day average); the 3-6 month picture still leans up only while the 200-day average keeps rising, and is back on track above $72,236.\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
     },
     {
       "audience": "digital",
-      "text": "**Paid / Digital:** Hold trader-targeted spend at the planned level and keep a reserve: the Rally watch drop window has been open since 11 November and Bitcoin (about $61,177) is about 10% under its 200-week average. Lean new-user ads on trust, safety and stablecoin explainers, and pause any campaign that falls below its 30-day return stop. Keep rally creatives ready to launch if Bitcoin closes back above $67,975."
+      "text": "**Paid / Digital (updated):** With the headline now BEARISH, move from holding spend to defending it: trim trader-targeted campaigns below plan while the Rally watch drop window (open since 11 November) stays open, and pause any campaign that falls below its 30-day return stop, keeping the freed budget as a reserve. Shift new-user ads to stablecoin, safety and 'how it works' angles. Keep rally creatives ready to launch if Bitcoin closes back above $68,041 (the 200-week average)."
     },
     {
       "audience": "social",
-      "text": "**Social:** Keep the normal rhythm with a calm, factual daily recap (Bitcoin about $61,177, down about 6% in a week). The most useful topic is safety after a weekend of hacks: Chainflip's losses rose to about $12 million, Fusionist's bridge was exploited and an iPhone exploit chain was used to steal wallet recovery phrases (PANews). Add a short 'what is PCE and why crypto watches it' post ahead of this week's US inflation release."
+      "text": "**Social (updated):** Keep the normal rhythm with a calm, factual daily recap (Bitcoin about $61,237, down about 6% in a week). The most useful topic is safety after a weekend of hacks: Chainflip's losses rose to about $12 million, Fusionist's bridge was exploited and an iPhone exploit chain was used to steal wallet recovery phrases (PANews). Add a short 'what is PCE and why crypto watches it' post ahead of this week's US inflation release. With the headline now BEARISH, keep the tone calm and avoid upbeat price posts."
     },
     {
       "audience": "crm",
-      "text": "**CRM:** Send existing holders a calm update: Bitcoin is down about 24% in a month and is holding near $61,000, with US inflation data this week and the Fed on 8 December as the next scheduled events, with no forecast and no push to trade. Add a safety reminder (2FA, phone updates, never share a recovery phrase) after this weekend's hacks (PANews). Keep the onboarding journey queued, not live: sign-ups tend to arrive 2-4 weeks after a rally, not during a drop."
+      "text": "**CRM (updated):** Send existing holders a calm update: Bitcoin is down about 24% in a month and is holding near $61,000, with the US October PCE release this week and the Fed on 8 December as the next scheduled events, with no forecast and no push to trade. Add a safety reminder (2FA, phone updates, never share a recovery phrase) after this weekend's hacks (PANews). Keep the onboarding journey queued, not live: sign-ups tend to arrive 2-4 weeks after a rally, not during a drop. The BEARISH switch does not change this: reassurance and education only, no promotional pressure."
     },
     {
       "audience": "seo",
-      "text": "**SEO:** Pintu and Pluang are both covering Bitcoin's fall and whether it has bottomed (Pintu's 'Bitcoin Jebol US$56.000, Terendah Sejak 2024' and 'Bitcoin Bottom? Koreksi Kali Ini Sudah 411 Hari'); refresh 'why is Bitcoin down' and 'Bitcoin price today' with reference levels, never a forecast. Pluang is also covering the Chainflip and Fusionist hacks, so refresh a crypto safety guide. Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+      "text": "**SEO (updated):** Pintu and Pluang are both covering Bitcoin's fall and whether it has bottomed (Pintu's 'Bitcoin Jebol US$56.000, Terendah Sejak 2024' and 'Bitcoin Bottom? Koreksi Kali Ini Sudah 411 Hari'); refresh 'why is Bitcoin down' and 'Bitcoin price today' with reference levels, never a forecast. Pluang is also covering the Chainflip and Fusionist hacks, so refresh a crypto safety guide. Indodax could not be read today. Check each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
     },
     {
       "audience": "altcoin",
-      "text": "**Altcoins:** Among the ten largest, Hyperliquid (HYPE +2.4%) earned about $21.2 million in revenue over 7 days, up about 15.5% (PANews), and Bitcoin Core fixed a bug that could temporarily stop nodes processing blocks (PANews). The main theme is security: Chainflip, Fusionist and Fluidkey were hacked and Upbit and Bithumb paused CYBER transfers (PANews). On Reku's new listings, Fusionist (ACE, -17% in 7 days) was hit by the bridge exploit, Midnight (NIGHT, +10% in 24 hours) signed a Japan financial-sector deal according to Pluang, and DODO is up about 29% in 7 days with no stated reason."
+      "text": "**Altcoins (updated):** Among the ten largest, Hyperliquid (HYPE) earned about $21.2 million in revenue over 7 days, up about 15.5% (PANews), and Bitcoin Core fixed a bug that could temporarily stop nodes processing blocks (PANews). The main theme is security: Chainflip, Fusionist and Fluidkey were hacked and Upbit and Bithumb paused CYBER transfers (PANews). On Reku's new listings, Fusionist (ACE, about -11% in 7 days) was hit by the bridge exploit, Midnight (NIGHT, about +10% in 24 hours) signed a Japan financial-sector deal according to Pluang, and DODO is up about 29% in 7 days with no stated reason."
     }
   ],
   "posted": [
@@ -79,6 +90,48 @@
       "channel": "C0CJ3BYC683",
       "ts": "1795395706.181809",
       "at": "2026-11-23T01:01:53Z"
+    },
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397779.634149",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397785.083919",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397787.583139",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397790.168029",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397792.857379",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795397795.209389",
+      "at": "2026-11-23T01:36:40Z",
+      "note": "resend (updated for BEARISH switch), requested by user"
     }
   ]
 }
