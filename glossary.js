@@ -155,7 +155,7 @@ const GLOSSARY_GROUPS = [
       },
       {
         name: "Headline label", aka: "regime: BULLISH / NEUTRAL / BEARISH",
-        what: "The big word at the top. It comes only from the medium-term (Momentum) score, which looks at roughly the last month or two: BULLISH above +0.20, BEARISH below −0.20, NEUTRAL in between. A new label needs 5 days in a row before it replaces the old one. Until 13 November 2026 the label came from the long-term Trend score; the history is recalculated with the new rule.",
+        what: "The big word at the top. It comes only from the medium-term (Momentum) score, which looks at roughly the last month or two: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between (the same bands that colour the outlook rows green and red). A new label replaces the old one only after the score has stayed outside the old label's band for 5 days in a row. Until 13 November 2026 the label came from the long-term Trend score; the history is recalculated with the new rule.",
         read: "It describes what has already happened, not a forecast.",
         today: (c, d) => (d.headline ? `${d.headline}.` : null),
       },

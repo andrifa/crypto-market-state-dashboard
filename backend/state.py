@@ -36,7 +36,7 @@ CONFIG = {
     # headline regime = medium-term view: bands on momentum_score, plus hysteresis.
     # (Until 13 Nov 2026 the headline came from the long-term trend score; that regime is still
     # computed as `trend_regime` with trend_T and drives the cycle phase.)
-    "regime_T": 0.20,
+    "regime_T": 0.15,          # same band the dashboard colours red / green, so a red row and the headline agree
     "trend_T": 0.15,
     "confirm_days": 5,
     # posture guard: a Bull headline is not "scale up" while price is clearly weak
@@ -118,25 +118,28 @@ def _raw_regime(t: float, T: float) -> str:
 
 
 def regime_series(score: pd.Series, T: float | None = None, confirm: int | None = None) -> pd.Series:
+    """
+    Label per day with hysteresis: the label changes only after the score has stayed OUTSIDE the current label's
+    zone for `confirm` days in a row, and then takes the zone of the latest day. (Requiring five identical days in
+    the NEW zone let a score that crossed the neutral band on its way from Bull to Bear reset the count each day, so
+    the label could lag for weeks while the dashboard rows were already red.)
+    """
     c = CONFIG
     T = c["regime_T"] if T is None else T
     confirm = c["confirm_days"] if confirm is None else confirm
-    trend = score
-    raw = trend.apply(lambda x: _raw_regime(x, T))
-    out, cur, run = [], "Unknown", 0
-    prev = None
+    raw = score.apply(lambda x: _raw_regime(x, T))
+    out, cur, away = [], "Unknown", 0
     for r in raw:
-        if r == prev:
-            run += 1
-        else:
-            run = 1
-            prev = r
         if cur == "Unknown" and r != "Unknown":
-            cur = r
-        elif r != cur and r != "Unknown" and run >= confirm:
-            cur = r
+            cur, away = r, 0
+        elif r != "Unknown" and r != cur:
+            away += 1
+            if away >= confirm:
+                cur, away = r, 0
+        else:
+            away = 0
         out.append(cur)
-    return pd.Series(out, index=trend.index, name="regime")
+    return pd.Series(out, index=score.index, name="regime")
 
 
 # --------------------------------------------------------------------------- #

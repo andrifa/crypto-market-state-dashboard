@@ -1014,8 +1014,8 @@ function renderMethodology() {
   const p = document.getElementById("methodology");
   p.append(el("p", { class: "kicker", text: "How the reading is built" }));
   const body = el("div", { class: "why-body", hidden: "", html:
-    "The headline regime comes from the <b>Momentum</b> dimension only, which reads roughly the last month or two: BULLISH above +0.20, BEARISH below −0.20, NEUTRAL in between, with a five-day "
-    + "confirmation so the label doesn't flip on noise. Momentum blends weekly RSI, 90-day rate of change, breadth, active-address trend and (since 26 October 2026) how far price is from its 50-day average, so the score notices the last few weeks as well as the last 90 days. "
+    "The headline regime comes from the <b>Momentum</b> dimension only, which reads roughly the last month or two: BULLISH above +0.15, BEARISH below −0.15, NEUTRAL in between (the same bands that colour the outlook rows), with a five-day "
+    + "confirmation (the score must stay outside the old label's band for five days in a row) so the label doesn't flip on noise. Momentum blends weekly RSI, 90-day rate of change, breadth, active-address trend and (since 26 October 2026) how far price is from its 50-day average, so the score notices the last few weeks as well as the last 90 days. "
     + "(Until 13 November 2026 the label came from the long-term Trend score; history is recalculated with the new rule.) <b>Trend</b> blends the Mayer Multiple, the 200-day slope, the 50/200 cross and a 200-week valuation "
     + "counterweight; it gives the long-term background, the cycle phase and part of the confidence. <b>Sentiment</b> blends Fear &amp; Greed, "
     + "perp funding and the stablecoin ratio. Trend and Sentiment never move the label — they set confidence and the watch notes. Budget advice also holds back when price is below its 50-day average and down more than 10% over 30 days, even if the label is BULLISH.<br><br>"
