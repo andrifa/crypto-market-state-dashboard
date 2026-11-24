@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-24",
+  "generated": "2026-11-24T01:51:19Z",
+  "price": 61389,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 24 November 2026**\n\n**Snapshot**\n• Bitcoin near $61,389: about -5.5% over 7 days, -23% over 30 days.\n• Headline BEARISH, confidence LOW; the long-term trend slipped from \"still up\" to \"flat\" today.\n• Fear & Greed is 11 out of 100 (extreme fear).\n\n**What happened (last 24h)**\n• Nvidia reinstated Jensen Huang as CEO, the Nasdaq 100 jumped about 7% and Bitcoin briefly passed $64,000, then fell back below $61,000 the same evening (PANews).\n• About $638 million of crypto bets were forced to close in 24 hours, about $512 million of them bets on a fall, as price jumped (PANews, citing CoinGlass).\n• About $487 million left US Bitcoin funds in the latest day, while Abraxas Capital moved about $1.18 billion of Bitcoin off exchanges in three days (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe next days lean clearly down.\n• Turns up: a close above $63,250 (top of a typical week's swing), then $68,210 (200-week average).\n• Sideways: between $58,952 and $63,250; a typical week lately swings about $3,971.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: drop window open since 11 November; a rally signal needs about $70,143, a fresh drop signal a close below about $59,752.\n• This week: US PCE inflation on 25 November, US Thanksgiving closures; next Fed meeting 8 December.\n\n**News that matters**\n• US files to forfeit over $1 billion stolen from Binance (PANews) — medium term, small positive.\n• Upbit and Bithumb flag Sky's USDS stablecoin as a warning asset (PANews) — short term, small negative.\n• US CFTC lets platforms count Bitcoin, Ether and stablecoins toward reserves (PANews) — long term, small positive.\n\n**Altcoins & themes**\n• Tokenized stocks are the hot theme: tokenized Nvidia stock rose about 25% in a day with the real shares (PANews).\n• New on Reku: Fusionist (ACE) was exploited; the project says exchanges paused ACE deposits and withdrawals.\n\n**Bigger picture**\nThe next month leans down and the 3-6 month picture is now flat; it firms up only with closes back above $68,210 (200-week average) and then $72,142 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid** — Keep spend defensive: the headline is BEARISH and the Rally watch drop window from 11 November is still open. Trim trader-targeted campaigns, run everything on a 30-day return stop-loss and hold the freed budget as a reserve. Shift new-user creatives to stablecoins and safety, and keep rebound creatives ready to launch only if Bitcoin closes above $63,250 and then $68,210."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content** — Keep the usual rhythm with a calm, factual tone; upbeat price posts would ring false with fear at 11. Today's best topics: why Bitcoin jumped above $64,000 with tech stocks on the Nvidia news and then fell back (PANews), a 'not all stablecoins are the same' explainer after Upbit and Bithumb flagged USDS, and a short 'what is PCE' post ahead of the 25 November release."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM** — No promotional pressure while the drop window is open. Send active holders a calm update with reference points (the 30-day low near $58,952, the 200-week average near $68,210), add a short account-safety and stablecoin tip using the USDS and Binance-hack news, and have the onboarding journey ready but not switched on: new sign-ups and first deposits tend to arrive 2-4 weeks after a rally starts."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO** — Three \"High\" topics from what Pintu, Indodax and Pluang published today:\n• Bitcoin's Nvidia bounce and fall back (Pintu, Pluang): refresh a \"why is Bitcoin up/down today\" page that explains how tech stocks and crypto moved together.\n• US PCE inflation on 25 November (Pintu, Pluang): publish a short \"what is PCE and why crypto watches it\" explainer before the release.\n• Binance hack money and recovery (Pluang): refresh a safety guide on how stolen funds are traced and frozen.\nEach is likely to draw searches because it is in this week's news; check against Reku's pages. Details: https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins** — Among the ten largest coins, PANews reports Grayscale's first fund that doubles Zcash's daily move began trading (ZEC -1.3% in 24h), BitMine added 7,819 ETH last week (ETH 0.0%), and Ondo accused Backpack of wash trading in tokenized Anthropic stock on Solana (SOL +2.5%). The hot theme is tokenized stocks: tokenized Nvidia stock rose about 25% in a day as Nvidia reinstated its CEO (PANews). Caution: Upbit and Bithumb flagged Sky's SKY (-2.3%) and its USDS stablecoin as warning assets. New on Reku: COTI is now live on Thailand's Bitkub, according to the project, while Fusionist (ACE, -18.3% over 7 days) was exploited and, according to the project, exchanges have paused ACE deposits and withdrawals."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485157.694929",
+      "at": "2026-11-24T01:52:59Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485162.990159",
+      "at": "2026-11-24T01:52:59Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485165.331539",
+      "at": "2026-11-24T01:52:59Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485167.597569",
+      "at": "2026-11-24T01:52:59Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485170.484809",
+      "at": "2026-11-24T01:52:59Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795485173.201139",
+      "at": "2026-11-24T01:52:59Z"
+    }
+  ]
+}
