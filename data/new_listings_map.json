@@ -89,6 +89,16 @@
     "name": "Genius Terminal",
     "x": "GeniusTerminal"
   },
+  "GTC": {
+    "categories": [
+      "Near Protocol Ecosystem",
+      "Ethereum Ecosystem",
+      "Paradigm Portfolio"
+    ],
+    "id": "gitcoin",
+    "name": "Gitcoin",
+    "x": "gitcoin"
+  },
   "HEI": {
     "categories": [
       "BNB Chain Ecosystem",
@@ -107,6 +117,16 @@
     "name": "IDNGold",
     "price_check": "skip",
     "x": null
+  },
+  "IRYS": {
+    "categories": [
+      "Smart Contract Platform",
+      "BNB Chain Ecosystem",
+      "Layer 1 (L1)"
+    ],
+    "id": "irys",
+    "name": "Irys",
+    "x": "irys_xyz"
   },
   "LUMIA": {
     "categories": [],
@@ -143,6 +163,16 @@
     "id": "moonriver",
     "name": "Moonriver",
     "x": "MoonriverNW"
+  },
+  "NAORIS": {
+    "categories": [
+      "Infrastructure",
+      "Smart Contract Platform",
+      "BNB Chain Ecosystem"
+    ],
+    "id": "naoris",
+    "name": "NaoX Protocol",
+    "x": "NaorisProtocol"
   },
   "NIGHT": {
     "categories": [

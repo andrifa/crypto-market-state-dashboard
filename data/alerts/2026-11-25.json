@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-25",
+  "generated": "2026-11-25T00:09:24Z",
+  "price": 59806,
+  "events": [
+    {
+      "id": "spike:60000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC pushed above $60,000 in the last 24 hours (high $61,682) and pulled back",
+      "facts": {
+        "level": 60000,
+        "high_24h": 61682,
+        "price": 59806
+      },
+      "repeat": false
+    }
+  ],
+  "notify": true,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 25 November 2026**\n\n**Alert**\n• BTC pushed above $60,000 in the last 24 hours (high $61,682) and pulled back. It matters because $60,000 keeps failing to hold; price sits just above the 30-day low of $58,952.\n\n**Snapshot**\n• Bitcoin near $59,806: about -5% over 7 days, about -25% over 30 days.\n• Headline BEARISH, confidence LOW; the long-term trend reads flat.\n• Fear & Greed is 13 out of 100 (extreme fear), yet many still bet on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin fell back below $60,000 as US chip stocks dropped (Nasdaq about -2.2%, PANews); no single cause for the crypto move is reported.\n• About $472 million of crypto bets were forced to close in 24 hours, about $395 million of them bets on a rise (PANews, citing CoinGlass).\n• US Bitcoin and Ether funds saw about $728 million leave on 24 November (Pluang).\n\n**Short-term outlook (next 1-7 days)**\nThe next days lean down and the month leans clearly down.\n• Turns up: a close above $61,250 (top of a typical week's swing), then $67,961 (200-week average).\n• Sideways: between $58,952 and $61,250; a typical week lately swings about $2,957.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: drop window open since 11 November; a rally signal needs about $68,114, a fresh drop signal a close below about $58,023.\n• This week: US PCE inflation (25 Nov), US Thanksgiving (26 Nov), a possible US tariff announcement; Fed meets 8 December.\n\n**News that matters**\n• South Korea publishes its draft crypto law: licensed bank-led stablecoins and coin offerings allowed (PANews) — medium term, positive.\n• US prepares higher tariffs on the EU and others, per the WSJ (PANews) — short term, small negative.\n• A run of wallet thefts, incl. a COLDCARD flaw and a $600K Trezor user loss (PANews) — short term, small negative.\n\n**Altcoins & themes**\n• Altcoins are hit hardest: CryptoQuant's Darkfost says coins other than Bitcoin lost 34% (about $408 billion) since September (PANews).\n• New on Reku: COTI is now live on Thailand's Bitkub, according to the project.\n\n**Bigger picture**\nThe next month leans down and the 3-6 month picture is flat; it firms up only with closes back above $67,961 (200-week average) and then $72,030 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid** — Keep spend defensive: the headline is BEARISH and the Rally watch drop window open since 11 November is still running, so trim trader-targeted campaigns and keep a reserve. Put every acquisition campaign on the d30 ROI stop-loss and pause any that miss it. Shift new-user ads to stablecoin and safety angles; keep rebound creatives ready but launch only after a close above $61,250 and then $67,961 (the 200-week average)."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content** — Keep the normal rhythm with a calm, factual tone; upbeat price posts would ring false with Fear & Greed at 13. Lead with a wallet-safety checklist, since PANews reports a COLDCARD flaw post-mortem, a $600K Trezor user theft and a hacked wallet of the commentator Ansem. Add a short 'what is PCE and why crypto watches it' post for the 25 November release (Pintu), and keep one daily market recap: Bitcoin near $59,806, about 26% under its 30-day high."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM** — No promotional pressure while the drop window is open. Send all users a security reminder (never type a recovery phrase into a phone, app or website) tied to this week's wallet-theft reports, and send active holders a calm update that Bitcoin is back under $60,000 with the levels that would show a turn. Keep onboarding flows running without offers, and have the post-rally onboarding journey ready: new sign-ups and first deposits arrive about 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO** — Three High topics competitors are on today: (1) Bitcoin under $60,000 — Indodax ('Harga Bitcoin Hari Ini Terjun ke $59.000') and Pluang cover why and how deep; refresh a 'why is Bitcoin down today' page with plain reference levels, no targets. (2) Wallet safety — Pluang on the COLDCARD theft, Indodax on iPhone ads that steal wallet balances; publish or refresh a recovery-phrase safety guide. (3) US PCE inflation — Pintu's 'Dampak Data PCE ke Crypto: 3 Skenario' and Indodax's December drivers piece; publish a 'what is PCE' explainer and update it after the release. Each is likely to draw searches this week; check against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins** — Top coins with a report today: Hyperliquid (HYPE, -6.0% in 24h) — Abraxas Capital closed all positions and withdrew from Hyperliquid (PANews); XRP (-1.5%) — XRP Ledger trading rose 26% in Q3, per an Evernorth report cited by The Block (PANews); Zcash (ZEC, -4.7%) — Grayscale's fund that doubles daily Zcash moves began trading (PANews); Solana (-3.0%) — 250 million new USDC minted on Solana (Whale Alert via PANews). Themes: Fidelity added UNI (-2.2%), AAVE (-3.0%) and LINK (-1.7%) for US customers (Pluang); Sky's DAI and USDS stablecoins are 43% below their peak and a SKY buyback is proposed (PANews). New on Reku: COTI is now live on Thailand's Bitkub, according to the project; DODO is up about 27% in 7 days with no stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565413.106779",
+      "at": "2026-11-25T00:10:17Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565422.505599",
+      "at": "2026-11-25T00:10:39Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565424.885629",
+      "at": "2026-11-25T00:10:39Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565427.017349",
+      "at": "2026-11-25T00:10:39Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565430.257579",
+      "at": "2026-11-25T00:10:39Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795565432.908269",
+      "at": "2026-11-25T00:10:39Z"
+    }
+  ]
+}

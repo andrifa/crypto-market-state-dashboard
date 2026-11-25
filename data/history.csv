@@ -4241,7 +4241,7 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-11-11,73964.46875,Bull,weakening,Fear,35.0,mid-bull,0.333,0.078,-0.195,HOLD at planned level
 2026-11-12,71342.96875,Bull,weakening,Fear,36.0,mid-bull,0.303,0.088,-0.176,HOLD at planned level
 2026-11-13,68249.2734375,Bull,weakening,Extreme Fear,34.0,mid-bull,0.266,0.067,-0.354,HOLD at planned level
-2026-11-14,64150.0,Bull,weakening,Extreme Fear,26.0,mid-bull,0.219,-0.069,-0.646,HOLD at planned level
+2026-11-14,64128.05078125,Bull,weakening,Extreme Fear,26.0,mid-bull,0.219,-0.069,-0.646,HOLD at planned level
 2026-11-15,65351.05,Bear,weakening,Extreme Fear,32.0,mid-bull,0.231,-0.164,-0.771,CUT / defend tightly with a stop-loss
 2026-11-16,64882.87,Bear,weakening,Extreme Fear,29.0,mid-bull,0.225,-0.126,-0.75,CUT / defend tightly with a stop-loss
 2026-11-17,64947.35,Bear,weakening,Extreme Fear,34.0,mid-bull,0.222,-0.182,-0.743,CUT / defend tightly with a stop-loss
@@ -4250,5 +4250,6 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-11-20,58951.51,Bear,weakening,Extreme Fear,33.0,mid-bull,0.143,-0.189,-0.705,CUT / defend tightly with a stop-loss
 2026-11-21,60215.77,Bear,weakening,Extreme Fear,36.0,mid-bull,0.146,-0.232,-0.818,CUT / defend tightly with a stop-loss
 2026-11-22,61271.08,Bear,weakening,Extreme Fear,51.0,mid-bull,0.145,-0.434,-0.759,CUT / defend tightly with a stop-loss
-2026-11-23,61270.93,Bear,weakening,Extreme Fear,39.0,mid-bull,0.135,-0.284,-0.74,CUT / defend tightly with a stop-loss
-2026-11-24,61388.57,Bear,weakening,Extreme Fear,39.0,transition,0.125,-0.288,-0.794,CUT / defend tightly with a stop-loss
+2026-11-23,61270.93,Bear,weakening,Extreme Fear,39.0,mid-bull,0.135,-0.284,-0.739,CUT / defend tightly with a stop-loss
+2026-11-24,59832.0,Bear,weakening,Extreme Fear,40.0,transition,0.109,-0.298,-0.715,CUT / defend tightly with a stop-loss
+2026-11-25,59806.01,Bear,weakening,Extreme Fear,51.0,transition,0.096,-0.305,-0.253,CUT / defend tightly with a stop-loss
