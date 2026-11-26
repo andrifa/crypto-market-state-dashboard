@@ -9,6 +9,16 @@
     "name": "Fusionist",
     "x": "fusionistio"
   },
+  "ANTB": {
+    "categories": [
+      "Tokenized Assets",
+      "BNB Chain Ecosystem",
+      "Tokenized Stocks"
+    ],
+    "id": "anthropic-bstocks-tokenized-stock",
+    "name": "Anthropic",
+    "x": "binance"
+  },
   "BABY": {
     "categories": [
       "Decentralized Finance (DeFi)",

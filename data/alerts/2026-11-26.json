@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-26",
+  "generated": "2026-11-26T00:08:55Z",
+  "price": 60414,
+  "events": [
+    {
+      "id": "dip:60000",
+      "type": "intraday",
+      "severity": "medium",
+      "title": "BTC dipped below $60,000 in the last 24 hours (low $57,300) and recovered",
+      "facts": {
+        "level": 60000,
+        "low_24h": 57300,
+        "price": 60414
+      },
+      "repeat": true
+    }
+  ],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 26 November 2026**\n\n**Snapshot**\n• Bitcoin near $60,414: about -3% over 7 days, about -25% over 30 days.\n• Headline BEARISH, confidence MEDIUM; the long-term trend reads flat.\n• Fear & Greed is 11 out of 100 (extreme fear), yet many people still bet on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin dipped as low as about $57,300 and recovered to around $60,000 after US core inflation (PCE) came in at a three-year high of 3.3%, above forecasts, and US stocks fell more than 3% (PANews). No single cause for the rebound is reported.\n• About $513 million of crypto bets were forced to close in 24 hours, about $425 million of them bets on a rise (PANews, citing CoinGlass).\n• US spot Bitcoin funds have lost a record $4.94 billion in November, six trading days of outflows in a row (PANews, citing SoSoValue).\n\n**Short-term outlook (next 1-7 days)**\nThe next days lean down and the month leans clearly down.\n• Turns up: a close above $62,250 (top of a typical week's swing), then $67,881 (200-week average).\n• Sideways: between $58,952 and $62,250; a typical week lately swings about $3,782.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: quiet (the 11 November drop window has closed); a rally signal needs about $66,946, a drop signal a close below about $57,028.\n• This week: US markets closed for Thanksgiving (26 Nov); the Fed meets 8 December, with markets pricing about a 98% chance of a rate rise (CME FedWatch via PANews).\n\n**News that matters**\n• Hotter-than-expected US core inflation (PANews) — short term, negative.\n• Near-certain Fed rate rise priced for 8 December (PANews) — medium term, negative.\n• US Strategic Bitcoin Reserve bill clears a House committee, now heads to a full vote (PANews) — medium term, positive.\n\n**Altcoins & themes**\n• Big fund managers keep adding altcoins: Franklin Templeton's crypto index fund adds HYPE (+3.5% in 24h) from 1 December, and Fidelity filed for a Chainlink fund (PANews, citing The Block).\n• New on Reku: COTI is now live on Thailand's Bitkub, according to the project.\n\n**Bigger picture**\nThe next month leans down and the 3-6 month picture is flat; it firms up only with closes back above $67,881 (200-week average) and then $71,924 (200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Digital marketing / Paid** — Keep spend defensive: the headline is BEARISH and the action is to cut and defend with a stop-loss, while no Rally watch window is open. Keep trader-targeted campaigns below plan, put every acquisition campaign on the d30 ROI stop-loss and hold the freed budget as a reserve. Shift new-user ads to stablecoin and education angles; keep rebound creatives ready but launch only after a close above $62,250 and then $67,881 (the 200-week average)."
+    },
+    {
+      "audience": "social",
+      "text": "**Social media & content** — Keep the normal rhythm with a calm, factual tone; upbeat price posts would ring false with Fear & Greed at 11. Lead with a short 'what is PCE and why crypto watched it' post (core PCE hit a three-year high of 3.3%, PANews) and a plain explainer on why a Fed rate rise on 8 December matters. Add a factual note that the US Bitcoin reserve bill cleared a House committee but is not law yet, and keep one daily market recap: Bitcoin near $60,414, about 26% under its 30-day high."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM** — No promotional pressure. Send active holders a calm update that Bitcoin is near $60,000 after a 25% monthly fall and that a Fed rate rise is expected on 8 December, with the levels that would show a turn. Keep onboarding flows running without offers, send a routine security reminder, and have the post-rally onboarding journey ready: new sign-ups and first deposits arrive about 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO** — Three High topics competitors are on today: (1) US PCE inflation and the Fed — Pintu and Indodax previewed the release ('Data PCE Rilis Malam Ini...', 'Data PCE dan GDP AS Rilis Malam Ini...') and Pluang covered the result; update a 'what is PCE' page with the actual 3.3% core reading and the 8 December Fed date. (2) Bitcoin near $60,000 — Indodax ('Analis Ungkap Bitcoin Belum Capai Bottom...') and Pluang cover how deep the fall could go; refresh a 'why is Bitcoin down' page with plain reference levels, no targets. (3) Why crypto moves with tech stocks — Indodax ('Kenapa Bitcoin dan Nasdaq Sering Bergerak Sejalan?') and Pintu on the chip-stock fall; publish a short explainer. Each is likely to draw searches this week; check against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins** — Top coins with a report today: Hyperliquid (HYPE, +3.5% in 24h) — Franklin Templeton's crypto index fund adds HYPE around 1 December (PANews, citing The Block); Solana (+1.2%) — SBI, SMFG and the Solana Foundation launched their joint venture SBI Solana Global, according to Solana (PANews); Zcash (ZEC, +4.9%) — Gemini now supports shielded Zcash deposits (PANews); Bitcoin (+1.1%) — the US reserve bill cleared a House committee (PANews). Themes: Fidelity filed for a Chainlink fund, and Pluang reports LINK (+2.5%) rose nearly 3% after it; Aave Labs launched a savings app already holding over $63 million (PANews). New on Reku: COTI is now live on Thailand's Bitkub, according to the project; the Anthropic token (ANTB) tracks shares that fell with chip and AI stocks this week (PANews)."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651777.168889",
+      "at": "2026-11-26T00:09:58Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651782.724129",
+      "at": "2026-11-26T00:09:58Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651784.800609",
+      "at": "2026-11-26T00:09:58Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651786.769839",
+      "at": "2026-11-26T00:09:58Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651790.029579",
+      "at": "2026-11-26T00:09:58Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795651792.834969",
+      "at": "2026-11-26T00:09:58Z"
+    }
+  ]
+}

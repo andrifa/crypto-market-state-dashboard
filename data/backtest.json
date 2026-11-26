@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-25T00:03:58.817425+00:00",
-  "rows": 4453,
+  "generated": "2026-11-26T00:04:48.123130+00:00",
+  "rows": 4454,
   "span": [
     "2014-09-17",
-    "2026-11-25"
+    "2026-11-26"
   ],
   "horizons": [
     30,
@@ -15,204 +15,204 @@
       "30": {
         "rho": 0.075,
         "p": 0.0,
-        "n": 4224
+        "n": 4225
       },
       "90": {
         "rho": 0.134,
         "p": 0.0,
-        "n": 4164
+        "n": 4165
       },
       "180": {
         "rho": 0.137,
         "p": 0.0,
-        "n": 4074
+        "n": 4075
       }
     },
     "slope": {
       "30": {
         "rho": 0.051,
-        "p": 0.0011,
-        "n": 4134
+        "p": 0.001,
+        "n": 4135
       },
       "90": {
-        "rho": 0.086,
+        "rho": 0.087,
         "p": 0.0,
-        "n": 4074
+        "n": 4075
       },
       "180": {
         "rho": 0.065,
         "p": 0.0,
-        "n": 3984
+        "n": 3985
       }
     },
     "cross": {
       "30": {
         "rho": 0.049,
-        "p": 0.0014,
-        "n": 4224
+        "p": 0.0015,
+        "n": 4225
       },
       "90": {
         "rho": 0.108,
         "p": 0.0,
-        "n": 4164
+        "n": 4165
       },
       "180": {
         "rho": 0.112,
         "p": 0.0,
-        "n": 4074
+        "n": 4075
       }
     },
     "ma_200w": {
       "30": {
         "rho": 0.157,
         "p": 0.0,
-        "n": 3024
+        "n": 3025
       },
       "90": {
-        "rho": 0.311,
+        "rho": 0.31,
         "p": 0.0,
-        "n": 2964
+        "n": 2965
       },
       "180": {
         "rho": 0.496,
         "p": 0.0,
-        "n": 2874
+        "n": 2875
       }
     },
     "rsi_w": {
       "30": {
         "rho": 0.091,
         "p": 0.0,
-        "n": 4320
+        "n": 4321
       },
       "90": {
         "rho": 0.158,
         "p": 0.0,
-        "n": 4260
+        "n": 4261
       },
       "180": {
         "rho": 0.147,
         "p": 0.0,
-        "n": 4170
+        "n": 4171
       }
     },
     "roc90": {
       "30": {
         "rho": 0.097,
         "p": 0.0,
-        "n": 4333
+        "n": 4334
       },
       "90": {
         "rho": 0.137,
         "p": 0.0,
-        "n": 4273
+        "n": 4274
       },
       "180": {
         "rho": 0.134,
         "p": 0.0,
-        "n": 4183
+        "n": 4184
       }
     },
     "breadth": {
       "30": {
         "rho": 0.102,
         "p": 0.0,
-        "n": 4334
+        "n": 4335
       },
       "90": {
-        "rho": 0.189,
+        "rho": 0.19,
         "p": 0.0,
-        "n": 4274
+        "n": 4275
       },
       "180": {
         "rho": 0.221,
         "p": 0.0,
-        "n": 4184
+        "n": 4185
       }
     },
     "activity": {
       "30": {
         "rho": 0.183,
         "p": 0.0,
-        "n": 4224
+        "n": 4225
       },
       "90": {
         "rho": 0.275,
         "p": 0.0,
-        "n": 4164
+        "n": 4165
       },
       "180": {
         "rho": 0.344,
         "p": 0.0,
-        "n": 4074
+        "n": 4075
       }
     },
     "gap50": {
       "30": {
         "rho": 0.09,
         "p": 0.0,
-        "n": 4374
+        "n": 4375
       },
       "90": {
-        "rho": 0.142,
+        "rho": 0.141,
         "p": 0.0,
-        "n": 4314
+        "n": 4315
       },
       "180": {
         "rho": 0.117,
         "p": 0.0,
-        "n": 4224
+        "n": 4225
       }
     },
     "fng": {
       "30": {
         "rho": 0.06,
         "p": 0.0006,
-        "n": 3186
+        "n": 3187
       },
       "90": {
         "rho": 0.124,
         "p": 0.0,
-        "n": 3126
+        "n": 3127
       },
       "180": {
-        "rho": 0.104,
+        "rho": 0.105,
         "p": 0.0,
-        "n": 3036
+        "n": 3037
       }
     },
     "funding": {
       "30": {
-        "rho": 0.003,
-        "p": 0.8721,
-        "n": 2575
+        "rho": 0.002,
+        "p": 0.9056,
+        "n": 2576
       },
       "90": {
         "rho": 0.005,
-        "p": 0.8089,
-        "n": 2515
+        "p": 0.8195,
+        "n": 2516
       },
       "180": {
         "rho": -0.039,
-        "p": 0.0572,
-        "n": 2425
+        "p": 0.054,
+        "n": 2426
       }
     },
     "ssr": {
       "30": {
         "rho": 0.041,
-        "p": 0.0211,
-        "n": 3134
+        "p": 0.0224,
+        "n": 3135
       },
       "90": {
         "rho": 0.04,
-        "p": 0.0275,
-        "n": 3074
+        "p": 0.028,
+        "n": 3075
       },
       "180": {
-        "rho": 0.065,
+        "rho": 0.066,
         "p": 0.0003,
-        "n": 2984
+        "n": 2985
       }
     }
   },
@@ -220,86 +220,86 @@
     "drawdown": {
       "30": {
         "rho": 0.011,
-        "p": 0.4581,
-        "n": 4423
+        "p": 0.4589,
+        "n": 4424
       },
       "90": {
         "rho": 0.038,
         "p": 0.0119,
-        "n": 4363
+        "n": 4364
       },
       "180": {
         "rho": -0.006,
-        "p": 0.7066,
-        "n": 4273
+        "p": 0.7075,
+        "n": 4274
       }
     },
     "pi_gap": {
       "30": {
         "rho": 0.035,
-        "p": 0.0245,
-        "n": 4074
+        "p": 0.0234,
+        "n": 4075
       },
       "90": {
         "rho": 0.086,
         "p": 0.0,
-        "n": 4014
+        "n": 4015
       },
       "180": {
         "rho": 0.067,
         "p": 0.0,
-        "n": 3924
+        "n": 3925
       }
     },
     "vol_pctl": {
       "30": {
-        "rho": 0.064,
+        "rho": 0.065,
         "p": 0.0,
-        "n": 4151
+        "n": 4152
       },
       "90": {
         "rho": 0.016,
-        "p": 0.3085,
-        "n": 4091
+        "p": 0.3136,
+        "n": 4092
       },
       "180": {
-        "rho": -0.047,
-        "p": 0.0032,
-        "n": 4001
+        "rho": -0.046,
+        "p": 0.0034,
+        "n": 4002
       }
     },
     "bb_width": {
       "30": {
-        "rho": 0.028,
-        "p": 0.0632,
-        "n": 4404
+        "rho": 0.029,
+        "p": 0.0581,
+        "n": 4405
       },
       "90": {
         "rho": -0.052,
         "p": 0.0006,
-        "n": 4344
+        "n": 4345
       },
       "180": {
         "rho": -0.14,
         "p": 0.0,
-        "n": 4254
+        "n": 4255
       }
     },
     "puell": {
       "30": {
         "rho": 0.04,
-        "p": 0.0093,
-        "n": 4224
+        "p": 0.0096,
+        "n": 4225
       },
       "90": {
         "rho": 0.025,
-        "p": 0.1137,
-        "n": 4164
+        "p": 0.1134,
+        "n": 4165
       },
       "180": {
         "rho": -0.097,
         "p": 0.0,
-        "n": 4074
+        "n": 4075
       }
     }
   },
@@ -308,21 +308,21 @@
       "30": [
         0.01,
         0.0508,
-        0.0457,
+        0.0454,
         0.0791,
         0.1323
       ],
       "90": [
         0.0924,
-        0.1414,
-        0.1332,
+        0.1404,
+        0.1338,
         0.2699,
         0.4823
       ],
       "180": [
-        0.3246,
-        0.1435,
-        0.4455,
+        0.3237,
+        0.1445,
+        0.4446,
         0.5318,
         1.1957
       ]
@@ -331,44 +331,44 @@
       "30": [
         0.0207,
         0.0123,
-        0.0321,
+        0.0318,
         0.0871,
         0.1422
       ],
       "90": [
         0.0401,
         0.1098,
-        0.1763,
+        0.1758,
         0.3151,
         0.4156
       ],
       "180": [
         0.1808,
-        0.2233,
-        0.4116,
+        0.2213,
+        0.4129,
         0.7067,
         1.0062
       ]
     },
     "sentiment": {
       "30": [
-        0.0424,
-        -0.0013,
-        0.0205,
-        0.0643,
-        0.0602
+        0.0422,
+        -0.0016,
+        0.0212,
+        0.0642,
+        0.0596
       ],
       "90": [
-        0.0507,
-        0.0992,
-        0.1672,
-        0.1753,
-        0.2
+        0.0504,
+        0.0988,
+        0.1675,
+        0.175,
+        0.2003
       ],
       "180": [
-        0.1338,
-        0.4068,
-        0.4421,
+        0.1346,
+        0.4079,
+        0.4397,
         0.346,
         0.2736
       ]
@@ -377,10 +377,10 @@
   "regime": {
     "30": {
       "Bull": {
-        "n": 2359,
-        "mean": 0.0876,
+        "n": 2360,
+        "mean": 0.0874,
         "se": 0.029,
-        "median": 0.038,
+        "median": 0.0378,
         "win": 0.576,
         "worst": -0.6032
       },
@@ -403,10 +403,10 @@
     },
     "90": {
       "Bull": {
-        "n": 2299,
-        "mean": 0.3109,
-        "se": 0.1221,
-        "median": 0.1648,
+        "n": 2300,
+        "mean": 0.3106,
+        "se": 0.122,
+        "median": 0.1647,
         "win": 0.663,
         "worst": -0.6214
       },
@@ -445,10 +445,10 @@
         "worst": -0.6067
       },
       "Bear": {
-        "n": 1319,
-        "mean": 0.1596,
-        "se": 0.2218,
-        "median": 0.003,
+        "n": 1320,
+        "mean": 0.1594,
+        "se": 0.2216,
+        "median": 0.0016,
         "win": 0.501,
         "worst": -0.6039
       }
@@ -462,10 +462,10 @@
       "win": 0.487
     },
     "mid 40-60": {
-      "n": 466,
-      "mean": 0.0819,
-      "se": 0.2524,
-      "win": 0.53
+      "n": 467,
+      "mean": 0.0813,
+      "se": 0.2519,
+      "win": 0.529
     },
     "high >=60": {
       "n": 2838,
@@ -530,25 +530,25 @@
     ]
   },
   "phase_agreement": {
-    "days": 4453,
-    "agree_rate": 0.763,
-    "wrong_way_rate": 0.226
+    "days": 4454,
+    "agree_rate": 0.762,
+    "wrong_way_rate": 0.227
   },
   "decision": {
-    "flat_mean_fwd180": 0.5057,
-    "regime_weighted_mean_fwd180": 0.6129,
-    "uplift_pct_points": 10.71,
-    "equity_strategy_x": 261.64,
-    "equity_buyhold_x": 130.77,
+    "flat_mean_fwd180": 0.5056,
+    "regime_weighted_mean_fwd180": 0.6128,
+    "uplift_pct_points": 10.72,
+    "equity_strategy_x": 261.45,
+    "equity_buyhold_x": 132.1,
     "strategy_maxdd": -0.655,
     "buyhold_maxdd": -0.834
   },
   "scorecard": {
     "span": [
       "2014-09-17",
-      "2026-11-25"
+      "2026-11-26"
     ],
-    "days": 4453,
+    "days": 4454,
     "cycles": 2.9,
     "transitions": 60,
     "per_year": 4.92,
@@ -557,18 +557,18 @@
         "directional_accuracy": 0.533,
         "bull_up_rate": 0.576,
         "bear_down_rate": 0.462,
-        "base_up_rate": 0.565,
+        "base_up_rate": 0.564,
         "edge": -0.031,
-        "n": 3768,
+        "n": 3769,
         "n_effective": 125.6
       },
       "90": {
-        "directional_accuracy": 0.614,
+        "directional_accuracy": 0.613,
         "bull_up_rate": 0.663,
         "bear_down_rate": 0.533,
         "base_up_rate": 0.588,
         "edge": 0.026,
-        "n": 3708,
+        "n": 3709,
         "n_effective": 41.2
       },
       "180": {
@@ -577,16 +577,16 @@
         "bear_down_rate": 0.499,
         "base_up_rate": 0.642,
         "edge": 0.003,
-        "n": 3618,
+        "n": 3619,
         "n_effective": 20.1
       },
       "365": {
         "directional_accuracy": 0.576,
         "bull_up_rate": 0.739,
-        "bear_down_rate": 0.25,
-        "base_up_rate": 0.711,
+        "bear_down_rate": 0.251,
+        "base_up_rate": 0.71,
         "edge": -0.135,
-        "n": 3450,
+        "n": 3451,
         "n_effective": 9.5
       },
       "730": {
@@ -595,7 +595,7 @@
         "bear_down_rate": 0.117,
         "base_up_rate": 0.825,
         "edge": -0.264,
-        "n": 3201,
+        "n": 3202,
         "n_effective": 4.4
       },
       "1095": {
@@ -604,7 +604,7 @@
         "bear_down_rate": 0.0,
         "base_up_rate": 0.998,
         "edge": -0.373,
-        "n": 2908,
+        "n": 2909,
         "n_effective": 2.7
       }
     },
@@ -620,20 +620,20 @@
       "bear": {
         "n": 16,
         "accuracy": 0.312,
-        "avg_move": -0.005
+        "avg_move": -0.004
       }
     },
     "ordering_horizons_ok": "3/3",
-    "phase_agree_rate": 0.763,
-    "phase_wrong_rate": 0.226,
+    "phase_agree_rate": 0.762,
+    "phase_wrong_rate": 0.227,
     "turn_detection_rate": 1.0,
     "turns_detected": "6/6",
     "turn_median_lag_days": 56,
-    "decision_uplift_pp": 10.71,
-    "strategy_x": 261.64,
-    "buyhold_x": 130.77,
+    "decision_uplift_pp": 10.72,
+    "strategy_x": 261.45,
+    "buyhold_x": 132.1,
     "strategy_maxdd": -0.655,
     "buyhold_maxdd": -0.834,
-    "headline": "Over 4453 days (2014-09-17\u20132026-11-25, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 56 days after the price extreme. For shorter calls, 90-day directional accuracy is 61% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +10.7 points and cut the worst drawdown from 83% to 66%. Small sample (~2.9 cycles) \u2014 direction, not precision."
+    "headline": "Over 4454 days (2014-09-17\u20132026-11-26, ~2.9 cycles): the label flagged 6/6 major cycle tops and bottoms, a median 56 days after the price extreme. For shorter calls, 90-day directional accuracy is 61% (BULLISH\u2192up 66%, BEARISH\u2192down/flat 53%) vs a 59% base rate \u2014 crypto is noisy at that range, so most of the value is in the turn calls and in risk: following the posture lifted the acquisition-value proxy +10.7 points and cut the worst drawdown from 83% to 66%. Small sample (~2.9 cycles) \u2014 direction, not precision."
   }
 }
