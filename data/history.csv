@@ -4243,14 +4243,15 @@ date,close,regime,direction,sentiment_band,conviction,cycle,trend_score,momentum
 2026-11-13,68249.2734375,Bull,weakening,Extreme Fear,34.0,mid-bull,0.266,0.067,-0.354,HOLD at planned level
 2026-11-14,64128.05078125,Bull,weakening,Extreme Fear,26.0,mid-bull,0.219,-0.069,-0.646,HOLD at planned level
 2026-11-15,65305.0625,Bear,weakening,Extreme Fear,32.0,mid-bull,0.231,-0.164,-0.771,CUT / defend tightly with a stop-loss
-2026-11-16,64882.87,Bear,weakening,Extreme Fear,29.0,mid-bull,0.225,-0.126,-0.75,CUT / defend tightly with a stop-loss
+2026-11-16,64855.84375,Bear,weakening,Extreme Fear,29.0,mid-bull,0.224,-0.126,-0.75,CUT / defend tightly with a stop-loss
 2026-11-17,64947.35,Bear,weakening,Extreme Fear,34.0,mid-bull,0.222,-0.182,-0.743,CUT / defend tightly with a stop-loss
 2026-11-18,63068.22,Bear,weakening,Extreme Fear,43.0,mid-bull,0.197,-0.202,-0.54,CUT / defend tightly with a stop-loss
 2026-11-19,61986.73,Bear,weakening,Extreme Fear,44.0,mid-bull,0.18,-0.202,-0.374,CUT / defend tightly with a stop-loss
-2026-11-20,58951.51,Bear,weakening,Extreme Fear,33.0,mid-bull,0.143,-0.189,-0.705,CUT / defend tightly with a stop-loss
+2026-11-20,58951.51,Bear,weakening,Extreme Fear,33.0,mid-bull,0.143,-0.19,-0.705,CUT / defend tightly with a stop-loss
 2026-11-21,60215.77,Bear,weakening,Extreme Fear,36.0,mid-bull,0.146,-0.232,-0.818,CUT / defend tightly with a stop-loss
 2026-11-22,61271.08,Bear,weakening,Extreme Fear,51.0,mid-bull,0.145,-0.434,-0.759,CUT / defend tightly with a stop-loss
 2026-11-23,61270.93,Bear,weakening,Extreme Fear,39.0,mid-bull,0.135,-0.284,-0.739,CUT / defend tightly with a stop-loss
 2026-11-24,59832.0,Bear,weakening,Extreme Fear,41.0,transition,0.108,-0.313,-0.728,CUT / defend tightly with a stop-loss
-2026-11-25,60458.01,Bear,weakening,Extreme Fear,52.0,transition,0.102,-0.316,-0.349,CUT / defend tightly with a stop-loss
-2026-11-26,60414.01,Bear,weakening,Extreme Fear,52.0,transition,0.09,-0.31,-0.422,CUT / defend tightly with a stop-loss
+2026-11-25,60458.01,Bear,weakening,Extreme Fear,48.0,transition,0.102,-0.276,-0.345,CUT / defend tightly with a stop-loss
+2026-11-26,60577.18,Bear,weakening,Extreme Fear,47.0,transition,0.092,-0.269,-0.463,CUT / defend tightly with a stop-loss
+2026-11-27,60715.42,Bear,weakening,Extreme Fear,48.0,transition,0.082,-0.272,-0.251,CUT / defend tightly with a stop-loss

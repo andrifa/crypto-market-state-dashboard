@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-27",
+  "generated": "2026-11-27T01:09:57Z",
+  "price": 60715,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 27 November 2026**\n\n**Snapshot**\n• Bitcoin is near $60,715, about 3% higher over 7 days but about 25% lower than a month ago.\n• Headline: BEARISH, medium confidence. Long-term trend: flat.\n• Fear & Greed is 12 out of 100 (extreme fear), yet many people are still betting on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin moved little and is holding just above $60,000; no single cause is reported.\n• US spot Bitcoin funds saw about $487 million leave on the latest day, after a seven-day run of outflows (SoSoValue via PANews).\n• About $368 million of crypto bets were forced to close over 24 hours, most of them bets on a fall (CoinGlass via PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe week still leans down, with a soft mood and price about 18% under its 50-day average for 37 days.\n• Turns up: a close above $62,750 (top of a typical week's swing), then $68,220 (200-week average).\n• Sideways: between $58,952 and $62,750; a normal week lately swings about $4,069.\n• Turns down: a close below $58,952 (the 30-day low).\n• Rally watch: quiet. A rally signal needs a close above $63,668, a drop signal below $54,235.\n• Scheduled: about $7.6 billion of Bitcoin and Ether options expire today, 27 November (CoinDesk via PANews); the Fed decides on 8 December.\n\n**News that matters**\n• Switzerland's first spot Bitcoin fund, BBIT, started trading (PANews) – medium term, small positive.\n• UK plans stricter rules for decentralised finance and Japan weighs a waiting period on withdrawals from new exchange accounts (PANews) – medium term, small negative.\n• Standard Chartered's crypto custodian Zodia reported a client-data leak (PANews) – short term, small negative.\n\n**Altcoins & themes**\n• Privacy coins fell: ZEC -8.5% after Zcash developers urged users to move about $300 million out of an older privacy pool (PANews); XMR -9.6% with no stated reason.\n• New on Reku: DODO is up about 30% over 7 days, but no report explains the rise.\n\n**Bigger picture**\n• Next month leans down until Bitcoin wins back $74,278 (the 50-day average); the 3-6 month picture stays flat while price is under $71,820 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid · 27 Nov:** Keep spend defensive: the headline is BEARISH and the action is to cut and defend with a stop-loss. Keep active-trader spend below plan and pause any campaign whose 30-day return misses its stop level, holding the freed budget as a reserve. Move new-user ads to stablecoin and education messages, and keep rally creatives ready but not live until Bitcoin closes above $63,668."
+    },
+    {
+      "audience": "social",
+      "text": "**Social · 27 Nov:** Keep the normal rhythm and a calm, factual tone; fear is at 12 and Bitcoin is about 25% lower than a month ago. Good topics today: an account and wallet safety checklist (PANews reports a data leak at custodian Zodia and a TRON scam), a short explainer on the Fed meeting on 8 December, and a factual note on Switzerland's first spot Bitcoin fund and Israel Discount Bank adding Bitcoin to its app."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 27 Nov:** No promotional pushes today. Send existing holders a calm market-context note with account-safety tips, given this week's reported security incidents, and keep the normal onboarding journey for users who have not deposited yet. Have the dormant-user and first-deposit flows ready for when a rally window opens, since sign-ups and first deposits have tended to arrive 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 27 Nov:** What Pintu, Indodax and Pluang are publishing:\n• When Bitcoin could recover (Indodax, Pluang): refresh a 'why is Bitcoin down and what would show a turn' explainer with reference levels like $58,952 and $68,220, no targets.\n• Bitcoin funds and institutions (all three): publish a plain 'what is a spot Bitcoin ETF and what do outflows mean' page, adding Switzerland's new BBIT fund.\n• Fed and US macro (Pintu, Indodax): publish a preview of the 8 December Fed meeting.\n• Wallet security (Pluang, Indodax): update the safety guide.\nCheck each against Reku's pages. https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 27 Nov:** Ten largest coins: ZEC -8.5% after a Zcash developer urged users to leave the older Sapling privacy pool (PANews); HYPE +2.1%, with Franklin Templeton's crypto index fund set to add it around 1 December (PANews, citing The Block); TRON users are being targeted by a frozen-USDT scam (PANews). Themes: privacy coins under pressure (XMR -9.6%, VVV -12.4%, no single cause reported for XMR), and security incidents and recoveries, as Binance fully restored withdrawals. New on Reku: DODO up about 30% over 7 days and IRYS down about 30%, neither with a stated reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746307.879849",
+      "at": "2026-11-27T02:25:31Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746313.939559",
+      "at": "2026-11-27T02:25:31Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746316.185669",
+      "at": "2026-11-27T02:25:31Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746318.501449",
+      "at": "2026-11-27T02:25:31Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746321.517959",
+      "at": "2026-11-27T02:25:31Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795746323.831349",
+      "at": "2026-11-27T02:25:31Z"
+    }
+  ]
+}

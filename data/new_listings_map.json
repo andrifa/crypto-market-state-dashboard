@@ -49,6 +49,14 @@
     "name": "USD.AI",
     "x": "USDai_Official"
   },
+  "CLEAR": {
+    "categories": [
+      "Ethereum Ecosystem"
+    ],
+    "id": "clearpool-2",
+    "name": "Clearpool",
+    "x": "ClearpoolFin"
+  },
   "COTI": {
     "categories": [
       "Smart Contract Platform",
