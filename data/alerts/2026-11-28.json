@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-28",
+  "generated": "2026-11-28T02:08:29Z",
+  "price": 60149,
+  "events": [],
+  "notify": false,
+  "messages": [
+    {
+      "audience": "general",
+      "text": "**Daily Market Summary · 28 November 2026**\n\n**Snapshot**\n• Bitcoin near $60,149: about +0.1% over 7 days, about -23% over 30 days.\n• Headline BEARISH, confidence LOW; the long-term trend reads flat.\n• Fear & Greed is 10 out of 100 (extreme fear), yet many people still bet on a rise with borrowed money.\n\n**What happened (last 24h)**\n• Bitcoin rose above $62,000 early on 27 November, then slipped briefly under $59,000 and back to about $60,000 (PANews). No single cause is reported.\n• About $458 million of crypto bets were forced to close in 24 hours, about $273 million of them bets on a rise (PANews, citing CoinGlass).\n• Chainflip and Atoshi reported attacks; Atoshi says a team member clicked a phishing link (PANews).\n\n**Short-term outlook (next 1-7 days)**\nThe next days lean down and the month leans clearly down.\n• Turns up: a close above $62,250 (top of a typical week's swing), then $68,351 (200-week average).\n• Sideways: between $58,799 and $62,250; a typical week lately swings about $4,069.\n• Turns down: a close below $58,799 (the 30-day low).\n• Rally watch: quiet; a rally signal needs about $64,902, a drop signal a close below about $55,287.\n• Coming up: Malaysia's first spot Bitcoin fund lists on 2 December; the Fed meets on 8 December, with a rate rise widely expected.\n\n**News that matters**\n• Malaysia approved the world's first Shariah-compliant spot Bitcoin fund (PANews) – medium term, small positive.\n• Argentina's central bank reportedly asked platforms to curb stablecoin trading (PANews) – medium term, small negative.\n• Russia's bank VTB opened Bitcoin trading to qualified clients (PANews) – long term, small positive.\n\n**Altcoins & themes**\n• SKY +12.8%, and PANews reports Sky bought back over $5 million of its token in 7 days, though no report links the two; WLFI -17.1% after its reserve wallet sold 12,121 ETH at a loss (PANews), no stated reason for the token's fall.\n• New on Reku: PONS is up about 15% in 24 hours, but no report explains the jump.\n\n**Bigger picture**\n• Next month leans down until Bitcoin wins back $73,807 (the 50-day average); the 3-6 month picture stays flat while price is under $71,712 (the 200-day average).\n\nhttps://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "digital",
+      "text": "**Paid / Digital · 28 Nov:** Stay defensive: the budget action is cut / defend with a stop-loss and no rally or drop window is open. Lower bids on active-trader audiences, keep stablecoin and new-user audiences running, and pause any campaign that misses its 30-day return target. Keep recovery creatives ready, but launch only if Bitcoin closes above $62,250 and then $68,351, or Rally watch opens at about $64,902."
+    },
+    {
+      "audience": "social",
+      "text": "**Social & content · 28 Nov:** Keep a calm, steady rhythm with no hype: Bitcoin has gone sideways near $60,000 for a week and fear is at 10 out of 100. Add one daily recap with the two weekly markers ($62,250 above, $58,799 below), a short explainer on Malaysia's Shariah-compliant Bitcoin fund listing on 2 December (PANews), and an anti-phishing tips post tied to this week's Atoshi and Chainflip attacks."
+    },
+    {
+      "audience": "crm",
+      "text": "**CRM · 28 Nov:** Reassure and educate, no promotional pressure. Send holders a calm note on where Bitcoin stands after a hard month and what the 8 December Fed meeting is, plus an account-safety reminder (update phone software, ignore links sent in chats). Get the welcome and first-deposit journeys ready now, since new sign-ups tend to arrive 2-4 weeks after a rally."
+    },
+    {
+      "audience": "seo",
+      "text": "**SEO · 28 Nov:** Competitors are focused on two time-sensitive topics. Has Bitcoin bottomed: Indodax ('Kapan Bitcoin Bangkit Lagi?'), Pintu (options expiry) and Pluang (Bitcoin under its long-term model) all cover it, so refresh a plain 'why is Bitcoin falling and what to watch' page with today's levels. The Fed and December: Indodax has 'Suku Bunga The Fed Bisa Terus Naik hingga 2027', so publish an 8 December Fed explainer without forecasts. Pintu is also running 'Apa itu ... Tokenized ETF' explainers; check against Reku's pages. Details: https://andrifa.github.io/crypto-market-state-dashboard/"
+    },
+    {
+      "audience": "altcoin",
+      "text": "**Altcoins · 28 Nov:** Top 10: Russia's VTB opened Bitcoin trading and Malaysia approved a spot Bitcoin fund (BTC -1.1%); XRP Ledger lending is one validator vote short, vaults may open 9 December (XRP +0.5%, CoinDesk via PANews); Anza urged Solana validators to upgrade now (SOL +0.8%); the Franklin Crypto Index ETF adds HYPE around 1 December (HYPE +2.7%, PANews). Themes: SKY +12.8% with Sky's buybacks at their highest since March 2025, and WLFI -17.1% after its reserve sold ETH at a loss, no stated reason for the fall (both PANews). New on Reku: ANTB, which tracks Anthropic shares, is near its all-time high (+8.2%), and PONS +15% has no reported reason."
+    }
+  ],
+  "posted": [
+    {
+      "audience": "general",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831761.992209",
+      "at": "2026-11-28T02:09:43Z"
+    },
+    {
+      "audience": "digital",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831767.119739",
+      "at": "2026-11-28T02:09:43Z"
+    },
+    {
+      "audience": "social",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831769.452309",
+      "at": "2026-11-28T02:09:43Z"
+    },
+    {
+      "audience": "crm",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831771.707509",
+      "at": "2026-11-28T02:09:43Z"
+    },
+    {
+      "audience": "seo",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831774.570009",
+      "at": "2026-11-28T02:09:43Z"
+    },
+    {
+      "audience": "altcoin",
+      "channel": "C0CJ3BYC683",
+      "ts": "1795831777.164549",
+      "at": "2026-11-28T02:09:43Z"
+    }
+  ]
+}
